@@ -154,14 +154,14 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
             {(["left", "right"] as const).map((side) => (
               <motion.div
                 key={side}
-                className={`absolute top-0 h-full w-1/2 ${side === "left" ? "left-0 border-r" : "right-0 border-l"} border-[#6e513a] bg-gradient-to-b from-[#a8855f] to-[#8a6749]`}
+                className={`absolute top-0 h-full w-1/2 ${side === "left" ? "left-0 border-r" : "right-0 border-l"} border-[#1f2328] bg-gradient-to-b from-[#434a54] to-[#30353c]`}
                 initial={{ x: 0 }}
                 animate={{ x: side === "left" ? "-100%" : "100%" }}
                 transition={{ delay: 0.25, duration: 0.8, ease: [0.6, 0, 0.3, 1] }}
               >
-                <div className={`absolute top-1/2 h-16 w-2.5 -translate-y-1/2 rounded bg-[#d9c7a8] ${side === "left" ? "right-5" : "left-5"}`} />
+                <div className={`absolute top-1/2 h-16 w-2.5 -translate-y-1/2 rounded bg-[#c9ced6] ${side === "left" ? "right-5" : "left-5"}`} />
                 {side === "left" && (
-                  <div className="absolute top-[18%] right-6 rounded border border-[#6e513a] bg-[#f6f1e7] px-3 py-1.5 text-sm font-bold text-[#3e2e20]">제2면접실</div>
+                  <div className="absolute top-[18%] right-6 rounded border border-[#1f2328] bg-[#f5f7fa] px-3 py-1.5 text-sm font-bold text-[#1f2328]">제2면접실</div>
                 )}
               </motion.div>
             ))}

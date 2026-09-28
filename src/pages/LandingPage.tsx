@@ -45,7 +45,7 @@ function RoomPreview() {
   const speaker = line.who === "me" ? null : panel[line.who];
 
   return (
-    <div className="relative w-full overflow-hidden rounded-2xl border border-line-strong bg-surface shadow-[0_24px_60px_-28px_rgba(23,35,59,0.45)]" aria-hidden>
+    <div className="relative w-full overflow-hidden rounded-2xl border border-line-strong bg-surface shadow-[0_24px_60px_-28px_rgba(15,27,46,0.45)]" aria-hidden>
       <div className="h-[230px] sm:h-[300px]">
         <InterviewRoom panel={panel} speaking={line.who === "me" ? null : line.who} mode={line.mode} activity={line.who === "me" ? 1 : 0} />
       </div>
@@ -68,7 +68,7 @@ function RoomPreview() {
             <p className={`mt-1 text-[15px] leading-relaxed ${line.mode === "reviewing" ? "text-faint" : "font-semibold text-ink"}`}>
               {line.who === "right" ? (
                 <>
-                  그 <mark className="rounded bg-[#fff1b8] px-1 text-ink">성능 문제</mark>의 원인은 구체적으로 어떻게 찾으셨나요?
+                  그 <mark className="rounded bg-[#dde6f3] px-1 text-ink">성능 문제</mark>의 원인은 구체적으로 어떻게 찾으셨나요?
                 </>
               ) : (
                 line.text

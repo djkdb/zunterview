@@ -105,7 +105,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
         )}
 
         {/* the evaluation sheet */}
-        <motion.article {...reveal(0.05)} className="relative rounded-sm border border-line-strong bg-surface px-4 py-7 shadow-[0_18px_50px_-24px_rgba(23,35,59,0.35)] sm:px-10 sm:py-10">
+        <motion.article {...reveal(0.05)} className="relative rounded-sm border border-line-strong bg-surface px-4 py-7 shadow-[0_18px_50px_-24px_rgba(15,27,46,0.35)] sm:px-10 sm:py-10">
           <Stamp className="absolute top-3 right-3 sm:top-8 sm:right-10" />
           <p className="font-mono text-[11px] tracking-[0.2em] text-faint">INTERVIEW//AI 모의면접센터</p>
           <h1 className="mt-2 text-2xl font-extrabold tracking-[0.3em] text-navy sm:text-3xl">모의면접 평가표</h1>

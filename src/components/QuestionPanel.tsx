@@ -96,7 +96,7 @@ export function QuestionPanel({ question, index, phase, stage, transitionText, s
                 <span className="rounded-md bg-surface-3 px-2 py-0.5 font-mono text-[11px] font-semibold text-muted">Q{pad2(index)}</span>
                 <span className="rounded-md border border-line px-2 py-0.5 text-[11px] text-muted">{QUESTION_TYPE_KO[question.type]}</span>
                 {question.origin && (
-                  <span className="rounded-md bg-[#fff1b8] px-2 py-0.5 text-[11px] font-semibold text-ink" title={question.origin === "후기" ? "공개 면접 후기에 보고된 질문을 바탕으로 재구성" : "기업 인재상·공식 자료 기반 예상 질문"}>
+                  <span className="rounded-md bg-[#dde6f3] px-2 py-0.5 text-[11px] font-semibold text-ink" title={question.origin === "후기" ? "공개 면접 후기에 보고된 질문을 바탕으로 재구성" : "기업 인재상·공식 자료 기반 예상 질문"}>
                     {question.origin === "후기" ? "기출 기반" : "인재상 기반"}
                   </span>
                 )}
@@ -123,7 +123,7 @@ export function QuestionPanel({ question, index, phase, stage, transitionText, s
               <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
                 {question.isFollowUp && question.anchor ? (
                   <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-[13px] text-muted">
-                    {copy.pickingUp} <mark className="rounded bg-[#fff1b8] px-1.5 py-0.5 font-semibold text-ink">“{question.anchor}”</mark>
+                    {copy.pickingUp} <mark className="rounded bg-[#dde6f3] px-1.5 py-0.5 font-semibold text-ink">“{question.anchor}”</mark>
                   </motion.p>
                 ) : (
                   <span />

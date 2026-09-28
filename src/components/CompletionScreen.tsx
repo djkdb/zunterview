@@ -9,7 +9,7 @@ export function CompletionScreen({ interview }: { interview: Interview }) {
   const answered = interview.questions.length;
   return (
     <div className="fixed inset-0 z-40 flex flex-col bg-bg" role="status" aria-live="polite">
-      <div className="w-full border-b border-line bg-[#e9e4dc]">
+      <div className="w-full border-b border-line bg-[#dfe3e8]">
         <div className="mx-auto aspect-[1200/520] h-[36vh] max-h-[420px] min-h-[170px] max-w-full overflow-hidden opacity-95">
         <InterviewRoom panel={buildPanel(interview.config.position)} speaking={null} mode="reviewing" companyName={getCompany(interview.config.companyId)?.shortName ?? getCompany(interview.config.companyId)?.name} />
         </div>

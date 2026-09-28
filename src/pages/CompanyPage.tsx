@@ -109,7 +109,7 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
             )}
           </div>
           <p className="mb-4 text-[12px] text-faint">
-            <span className="mr-1 rounded bg-[#fff1b8] px-1 font-semibold text-ink">기출 기반</span>공개 면접 후기에 보고된 질문을 재구성 ·
+            <span className="mr-1 rounded bg-[#dde6f3] px-1 font-semibold text-ink">기출 기반</span>공개 면접 후기에 보고된 질문을 재구성 ·
             <span className="mx-1 rounded bg-surface-3 px-1 font-semibold text-muted">인재상 기반</span>공식 자료에서 도출한 예상 질문
           </p>
           <div className="space-y-5">
@@ -121,7 +121,7 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
                     <li key={q.text} className="flex items-start gap-3 px-4 py-3 text-[14px] text-ink">
                       <span className="flex-1">{q.text}</span>
                       {q.track !== "공통" && <span className="shrink-0 rounded border border-line px-1.5 text-[11px] text-muted">{q.track}</span>}
-                      <span className={`shrink-0 rounded px-1.5 text-[11px] font-semibold ${q.basis === "후기" ? "bg-[#fff1b8] text-ink" : "bg-surface-3 text-muted"}`}>
+                      <span className={`shrink-0 rounded px-1.5 text-[11px] font-semibold ${q.basis === "후기" ? "bg-[#dde6f3] text-ink" : "bg-surface-3 text-muted"}`}>
                         {q.basis === "후기" ? "기출 기반" : "인재상 기반"}
                       </span>
                     </li>

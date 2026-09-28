@@ -16,13 +16,13 @@ export function ScoreRing({ score, size = 180 }: { score: number; size?: number 
   return (
     <div className="relative" style={{ width: size, height: size }} role="img" aria-label={`종합 점수 100점 만점에 ${score}점`}>
       <svg viewBox="0 0 100 100" className="h-full w-full -rotate-90">
-        <circle cx="50" cy="50" r={r} fill="none" stroke="#e7e2d9" strokeWidth="7" />
+        <circle cx="50" cy="50" r={r} fill="none" stroke="#e3e7ed" strokeWidth="7" />
         <motion.circle
           cx="50"
           cy="50"
           r={r}
           fill="none"
-          stroke="#1f4a86"
+          stroke="#1b3a6b"
           strokeWidth="7"
           strokeLinecap="round"
           strokeDasharray={circ}

@@ -29,14 +29,14 @@ export async function renderShareCard(i: Interview): Promise<Blob | null> {
   const sans = '"Pretendard Variable", Pretendard, system-ui, sans-serif';
   const mono = '"JetBrains Mono", ui-monospace, monospace';
   // paper
-  g.fillStyle = "#f3f1ed";
+  g.fillStyle = "#eef0f3";
   g.fillRect(0, 0, W, H);
   g.fillStyle = "#ffffff";
   g.fillRect(70, 70, W - 140, H - 140);
-  g.strokeStyle = "#d9d3c8";
+  g.strokeStyle = "#cfd5dd";
   g.lineWidth = 2;
   g.strokeRect(70, 70, W - 140, H - 140);
-  g.fillStyle = "#17233b";
+  g.fillStyle = "#0f1b2e";
   g.fillRect(70, 70, W - 140, 120);
 
   g.textAlign = "center";
@@ -44,7 +44,7 @@ export async function renderShareCard(i: Interview): Promise<Blob | null> {
   g.font = `800 50px ${sans}`;
   g.fillText("모의면접 평가표", W / 2, 150);
 
-  g.fillStyle = "#545a6a";
+  g.fillStyle = "#4b5563";
   g.font = `500 40px ${sans}`;
   g.fillText(i.config.position, W / 2, 290);
 
@@ -52,26 +52,26 @@ export async function renderShareCard(i: Interview): Promise<Blob | null> {
   const cy = 590;
   const r = 210;
   g.lineWidth = 26;
-  g.strokeStyle = "#e7e2d9";
+  g.strokeStyle = "#e3e7ed";
   g.beginPath();
   g.arc(cx, cy, r, 0, Math.PI * 2);
   g.stroke();
-  g.strokeStyle = "#1f4a86";
+  g.strokeStyle = "#1b3a6b";
   g.lineCap = "round";
   g.beginPath();
   g.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + (Math.PI * 2 * (i.overallScore ?? 0)) / 100);
   g.stroke();
-  g.fillStyle = "#17233b";
+  g.fillStyle = "#0f1b2e";
   g.font = `600 170px ${mono}`;
   g.fillText(String(i.overallScore), cx, cy + 55);
-  g.fillStyle = "#868b98";
+  g.fillStyle = "#7b8494";
   g.font = `500 34px ${sans}`;
   g.fillText(`/ 100점 · ${grade(i.overallScore ?? 0)}등급`, cx, cy + 115);
 
-  g.fillStyle = "#868b98";
+  g.fillStyle = "#7b8494";
   g.font = `600 30px ${sans}`;
   g.fillText("가장 우수한 항목", W / 2, 960);
-  g.fillStyle = "#1d7f55";
+  g.fillStyle = "#16704a";
   g.font = `800 60px ${sans}`;
   g.fillText(CATEGORY_KO[strongest], W / 2, 1040);
 
@@ -79,8 +79,8 @@ export async function renderShareCard(i: Interview): Promise<Blob | null> {
   g.save();
   g.translate(W - 200, 330);
   g.rotate(-0.21);
-  g.strokeStyle = "#c2372d";
-  g.fillStyle = "#c2372d";
+  g.strokeStyle = "#b3261e";
+  g.fillStyle = "#b3261e";
   g.lineWidth = 6;
   g.globalAlpha = 0.85;
   g.beginPath();
@@ -92,7 +92,7 @@ export async function renderShareCard(i: Interview): Promise<Blob | null> {
   g.fillText("연습용", 0, 40);
   g.restore();
 
-  g.fillStyle = "#868b98";
+  g.fillStyle = "#7b8494";
   g.font = `400 26px ${sans}`;
   g.fillText(`${shortDate(i.createdAt)} · ${i.questions.length}문항 · INTERVIEW//AI`, W / 2, 1200);
 

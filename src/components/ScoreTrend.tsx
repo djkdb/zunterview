@@ -3,9 +3,9 @@ import { grade } from "../config/labelsKo";
 import type { InterviewSummary } from "../types/interview";
 import { shortDate } from "../utils/format";
 
-const NAVY = "#1f4a86";
-const GRID = "#e7e2d9";
-const INK_MUTED = "#868b98";
+const NAVY = "#1b3a6b";
+const GRID = "#e3e7ed";
+const INK_MUTED = "#7b8494";
 
 interface Point {
   n: number;
@@ -82,7 +82,7 @@ export function ScoreTrend({ history }: { history: InterviewSummary[] }) {
                   const { x, y, index } = props as { x: number; y: number; index: number };
                   if (index !== data.length - 1) return null;
                   return (
-                    <text x={x} y={y - 10} textAnchor="middle" fontSize={12} fontWeight={700} fill="#1c2130">
+                    <text x={x} y={y - 10} textAnchor="middle" fontSize={12} fontWeight={700} fill="#111827">
                       {last.score}
                     </text>
                   );

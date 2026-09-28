@@ -19,6 +19,7 @@ import { INTERVIEW_TYPE_KO } from "../config/labelsKo";
 import { applicantNumber, buildPanel, seatFor, type Seat } from "../config/panel";
 import { getCompany } from "../../shared/companies";
 import type { InterviewController } from "../hooks/useInterview";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 import { useElapsed, useNow } from "../hooks/useTimer";
 import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
 import { isVoiceOutputAvailable } from "../services/speech/tts";
@@ -50,6 +51,8 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   const [draft, setDraft] = useState("");
   const [activity, setActivity] = useState(0);
   const [confirmEnd, setConfirmEnd] = useState(false);
+  // On desktop the room keeps its height while typing, so keep the desk (name plates) in view.
+  const wide = useMediaQuery("(min-width: 1024px)");
   const [notesOpen, setNotesOpen] = useState(false);
   const [composing, setComposing] = useState(false);
   const running = !["COMPLETED", "RESULT", "IDLE", "SETUP", "INTRO"].includes(state.phase);
@@ -114,11 +117,11 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
         <section className="flex min-h-0 flex-col">
           {/* the room, seen from the candidate's chair */}
           <div
-            className={`relative w-full overflow-hidden border-b border-line transition-[height] duration-300 lg:h-[clamp(240px,calc(100dvh-500px),470px)] ${
+            className={`relative w-full overflow-hidden border-b border-line transition-[height] duration-300 lg:h-[clamp(230px,calc(100dvh-560px),470px)] ${
               composing ? "h-[13vh] min-h-[96px]" : "h-[25vh] min-h-[160px] sm:h-[38vh]"
             }`}
           >
-            <InterviewRoom panel={panel} speaking={speakerSeat} mode={mode} activity={activity} companyName={company?.shortName ?? company?.name} />
+            <InterviewRoom panel={panel} speaking={speakerSeat} mode={mode} activity={activity} companyName={company?.shortName ?? company?.name} anchor={composing && !wide ? "center" : "bottom"} />
             {statusLine && (
               <div className="absolute top-2 left-2 flex max-w-[calc(100%-1rem)] items-center gap-2 rounded-md bg-black/55 px-2.5 py-1 text-[11px] text-white backdrop-blur-sm sm:top-auto sm:bottom-3 sm:left-3 sm:text-[12px]" role="status">
                 <span className={`h-1.5 w-1.5 rounded-full ${mode === "reviewing" ? "animate-pulse bg-[#f2c14e]" : mode === "listening" ? "bg-[#5fd39b]" : "animate-pulse bg-[#7fa6e0]"}`} />

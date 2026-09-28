@@ -37,11 +37,11 @@ export function buildReportHtml(i: Interview): string {
 <title>모의면접 평가표 — ${esc(i.config.position)}</title>
 <style>
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Noto Sans KR",sans-serif;max-width:760px;margin:40px auto;padding:0 20px;color:#16161d;line-height:1.55}
-h1{font-size:26px;letter-spacing:.3em;color:#17233b;margin:0}.brand{font-size:11px;letter-spacing:.2em;color:#868b98}.stamp{float:right;width:84px;height:84px;border:3px solid #c2372d;border-radius:50%;color:#c2372d;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);font-weight:800}h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6b6b78;margin:32px 0 10px;border-bottom:1px solid #e5e5ea;padding-bottom:6px}
+h1{font-size:26px;letter-spacing:.3em;color:#0f1b2e;margin:0}.brand{font-size:11px;letter-spacing:.2em;color:#7b8494}.stamp{float:right;width:84px;height:84px;border:3px solid #b3261e;border-radius:50%;color:#b3261e;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);font-weight:800}h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6b6b78;margin:32px 0 10px;border-bottom:1px solid #e5e5ea;padding-bottom:6px}
 .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 16px;font-size:13px;margin-top:18px}.meta span{color:#6b6b78;display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
 .overall{font-size:64px;font-weight:300;margin:10px 0 0}.overall small{font-size:18px;color:#6b6b78}
-.bar{display:grid;grid-template-columns:130px 1fr 36px;align-items:center;gap:10px;font-size:13px;margin:6px 0}.track{height:6px;background:#eee;border-radius:3px}.track div{height:100%;background:#1f4a86;border-radius:3px}
-.q{border:1px solid #e5e5ea;border-radius:12px;padding:14px 18px;margin:12px 0}.q h3{margin:0;font-size:13px}.q small{color:#6b6b78;font-weight:400}.q em{color:#1f4a86;font-style:normal}
+.bar{display:grid;grid-template-columns:130px 1fr 36px;align-items:center;gap:10px;font-size:13px;margin:6px 0}.track{height:6px;background:#eee;border-radius:3px}.track div{height:100%;background:#1b3a6b;border-radius:3px}
+.q{border:1px solid #e5e5ea;border-radius:12px;padding:14px 18px;margin:12px 0}.q h3{margin:0;font-size:13px}.q small{color:#6b6b78;font-weight:400}.q em{color:#1b3a6b;font-style:normal}
 .question{font-weight:600}.answer{background:#f6f6f9;border-radius:8px;padding:8px 12px;white-space:pre-wrap;font-size:14px}.label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#6b6b78;margin-bottom:4px}
 .note{font-size:12px;color:#6b6b78;margin-top:40px}
 </style></head><body>

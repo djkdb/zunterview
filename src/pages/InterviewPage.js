@@ -1,0 +1,94 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { useMemo, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { AnswerInput } from "../components/AnswerInput";
+import { CompletionScreen } from "../components/CompletionScreen";
+import { ErrorPanel } from "../components/ErrorPanel";
+import { InterviewHeader } from "../components/InterviewHeader";
+import { InterviewNotes } from "../components/InterviewNotes";
+import { InterviewRoom } from "../components/InterviewRoom";
+import { IntroSequence } from "../components/IntroSequence";
+import { LastAnswer } from "../components/LastAnswer";
+import { QuestionPanel } from "../components/QuestionPanel";
+import { QuestionStepper } from "../components/QuestionStepper";
+import { WaitingBar } from "../components/WaitingBar";
+import { Button } from "../components/ui/Button";
+import { Dialog } from "../components/ui/Dialog";
+import { CloseIcon } from "../components/ui/icons";
+import { COPY } from "../config/copy";
+import { INTERVIEW_TYPE_KO } from "../config/labelsKo";
+import { applicantNumber, buildPanel, seatFor } from "../config/panel";
+import { getCompany } from "../../shared/companies";
+import { useMediaQuery } from "../hooks/useMediaQuery";
+import { useElapsed, useNow } from "../hooks/useTimer";
+import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
+import { isVoiceOutputAvailable } from "../services/speech/tts";
+import { currentQuestion } from "../state/interviewMachine";
+function roomMode(s) {
+    switch (s.phase) {
+        case "ASKING":
+        case "FOLLOW_UP":
+        case "NEXT_QUESTION":
+            return "asking";
+        case "LISTENING":
+            return "listening";
+        case "ANALYZING":
+            return "reviewing";
+        default:
+            return "idle";
+    }
+}
+export function InterviewPage({ ctl, modeLabel, engineLabel }) {
+    const { state, actions, voiceOn, fallbackActive } = ctl;
+    const interview = state.interview;
+    const copy = COPY[interview.config.language];
+    const panel = useMemo(() => buildPanel(interview.config.position), [interview.config.position]);
+    const applicantNo = applicantNumber(interview.id);
+    const company = getCompany(interview.config.companyId);
+    const q = currentQuestion(state);
+    const [draft, setDraft] = useState("");
+    const [activity, setActivity] = useState(0);
+    const [confirmEnd, setConfirmEnd] = useState(false);
+    // On desktop the room keeps its height while typing, so keep the desk (name plates) in view.
+    const wide = useMediaQuery("(min-width: 1024px)");
+    const [notesOpen, setNotesOpen] = useState(false);
+    const [composing, setComposing] = useState(false);
+    const running = !["COMPLETED", "RESULT", "IDLE", "SETUP", "INTRO"].includes(state.phase);
+    const elapsed = useElapsed(state.startedAt, running);
+    const inputEnabled = (state.phase === "LISTENING" || state.phase === "ASKING") && !!q && !q.answer;
+    const lastAnswered = [...interview.questions].reverse().find((x) => x.answer);
+    const showLastAnswer = (state.phase === "ANALYZING" || state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION") && lastAnswered?.answer;
+    const answeredCount = interview.questions.filter((x) => x.feedback).length;
+    const canEnd = ["ASKING", "LISTENING", "ERROR"].includes(state.phase);
+    // Who is talking: the asker of the current question, or — while reacting — the asker of the last answered one.
+    const transitioning = state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION";
+    const speakerSeat = transitioning && lastAnswered ? seatFor(lastAnswered.type, lastAnswered.isFollowUp) : q ? seatFor(q.type, q.isFollowUp) : "center";
+    const mode = roomMode(state);
+    const now = useNow(state.phase === "LISTENING" && !draft.trim(), 1000);
+    const silentFor = state.phase === "LISTENING" && !draft.trim() && state.questionStartedAt ? (now - state.questionStartedAt) / 1000 : 0;
+    const statusLine = mode === "asking"
+        ? `${panel[speakerSeat].name} ${panel[speakerSeat].title}이 ${transitioning ? "답변에 반응하고 있습니다" : "질문하고 있습니다"}`
+        : mode === "listening"
+            ? silentFor > 20 && activity === 0
+                ? `${panel.center.name} ${panel.center.title}: “천천히 생각하셔도 괜찮습니다.”`
+                : "면접관들이 답변을 기다리고 있습니다"
+            : mode === "reviewing"
+                ? "면접관들이 답변을 검토하며 평가표를 작성하고 있습니다"
+                : "";
+    const submit = (answerMode) => {
+        actions.submitAnswer(draft, answerMode);
+        setDraft("");
+    };
+    const questionIndex = Math.max(1, interview.questions.length);
+    const busyText = state.phase === "ANALYZING"
+        ? "면접관들이 답변을 검토하고 있습니다"
+        : state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION"
+            ? "다음 질문을 준비하고 있습니다"
+            : null;
+    return (_jsxs("div", { className: "flex min-h-dvh flex-col", children: [_jsx(InterviewHeader, { index: questionIndex, total: interview.config.questionLimit, elapsed: elapsed, applicantNo: applicantNo, position: company ? `${company.shortName ?? company.name} · ${interview.config.position}` : interview.config.position, typeLabel: INTERVIEW_TYPE_KO[interview.config.interviewType], voiceOn: voiceOn, voiceSupported: isVoiceOutputAvailable(), onToggleVoice: () => actions.setVoice(!voiceOn), onEnd: () => setConfirmEnd(true), canEnd: canEnd, onOpenNotes: () => setNotesOpen(true), modeLabel: fallbackActive ? "MOCK (대체)" : modeLabel }), _jsxs("main", { className: "mx-auto grid w-full max-w-[1440px] flex-1 lg:grid-cols-[minmax(0,1fr)_340px]", children: [_jsxs("section", { className: "flex min-h-0 flex-col", children: [_jsxs("div", { className: `relative w-full overflow-hidden border-b border-line transition-[height] duration-300 lg:h-[clamp(230px,calc(100dvh-560px),470px)] ${composing ? "h-[13vh] min-h-[96px]" : "h-[25vh] min-h-[160px] sm:h-[38vh]"}`, children: [_jsx(InterviewRoom, { panel: panel, speaking: speakerSeat, mode: mode, activity: activity, companyName: company?.shortName ?? company?.name, anchor: composing && !wide ? "center" : "bottom" }), statusLine && (_jsxs("div", { className: "absolute top-2 left-2 flex max-w-[calc(100%-1rem)] items-center gap-2 rounded-md bg-black/55 px-2.5 py-1 text-[11px] text-white backdrop-blur-sm sm:top-auto sm:bottom-3 sm:left-3 sm:text-[12px]", role: "status", children: [_jsx("span", { className: `h-1.5 w-1.5 rounded-full ${mode === "reviewing" ? "animate-pulse bg-[#f2c14e]" : mode === "listening" ? "bg-[#5fd39b]" : "animate-pulse bg-[#7fa6e0]"}` }), statusLine] }))] }), _jsxs("div", { className: "mx-auto flex w-full max-w-3xl flex-1 flex-col gap-3 px-3 pt-3 pb-3 sm:px-6 sm:pt-4", children: [_jsx(QuestionStepper, { questions: interview.questions, total: interview.config.questionLimit, showScores: interview.config.liveFeedback }), state.phase === "ERROR" && state.error ? (_jsx(ErrorPanel, { error: state.error, canUseMock: !fallbackActive && ctl.status?.mode === "ai", onRetry: actions.retry, onMock: actions.continueWithMock })) : (_jsx(QuestionPanel, { question: q, index: questionIndex, phase: state.phase, stage: state.stage, transitionText: state.transitionText, speaker: panel[speakerSeat], copy: copy, onRepeat: isVoiceOutputAvailable() ? actions.repeatQuestion : undefined })), _jsx(AnimatePresence, { children: showLastAnswer && _jsx(LastAnswer, { text: lastAnswered.answer, label: copy.yourAnswer, lang: copy.lang }, lastAnswered.id) }), ctl.speaking && state.phase === "ASKING" && (_jsx("button", { type: "button", onClick: actions.skipSpeaking, className: "self-center text-[12px] text-faint hover:text-ink", children: "\uC74C\uC131 \uAC74\uB108\uB6F0\uAE30 \u203A" }))] }), _jsx("div", { className: "sticky bottom-0 z-20 mx-auto w-full max-w-3xl bg-gradient-to-t from-bg via-bg to-bg/0 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-6", children: busyText ? (_jsx(WaitingBar, { text: busyText })) : (_jsx(AnswerInput, { value: draft, onChange: setDraft, onSubmit: submit, enabled: inputEnabled, copy: copy, lang: interview.config.language === "ko" ? "ko-KR" : "en-US", timeLimit: interview.config.answerTimeLimit, questionStartedAt: state.phase === "LISTENING" ? state.questionStartedAt : null, onActivity: setActivity, onDontKnow: () => actions.submitAnswer(copy.dontKnowAnswer, "text"), onFocusChange: setComposing })) })] }), _jsx("aside", { className: "sticky top-[60px] hidden h-[calc(100dvh-60px)] border-l border-line bg-surface lg:block", "aria-label": "\uBA74\uC811 \uAE30\uB85D", children: _jsx(InterviewNotes, { questions: interview.questions, liveFeedback: interview.config.liveFeedback, copy: copy }) })] }), _jsx(AnimatePresence, { children: notesOpen && (_jsx(motion.div, { className: "fixed inset-0 z-40 bg-black/40 lg:hidden", initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 }, onClick: () => setNotesOpen(false), children: _jsxs(motion.div, { role: "dialog", "aria-label": "\uBA74\uC811 \uAE30\uB85D", className: "absolute inset-x-0 bottom-0 h-[75dvh] rounded-t-2xl border-t border-line-strong bg-surface", initial: { y: "100%" }, animate: { y: 0 }, exit: { y: "100%" }, transition: { type: "spring", damping: 30, stiffness: 300 }, onClick: (e) => e.stopPropagation(), children: [_jsx("button", { type: "button", "aria-label": "\uB2EB\uAE30", onClick: () => setNotesOpen(false), className: "absolute top-3 right-3 z-10 p-2 text-muted hover:text-ink", children: _jsx(CloseIcon, {}) }), _jsx(InterviewNotes, { questions: interview.questions, liveFeedback: interview.config.liveFeedback, copy: copy })] }) })) }), state.phase === "INTRO" && (_jsx(IntroSequence, { config: interview.config, applicantNo: applicantNo, engineLabel: engineLabel, voiceInput: isSpeechRecognitionSupported(), voiceOutput: interview.config.voiceEnabled && isVoiceOutputAvailable(), onDone: actions.onIntroDone })), state.phase === "COMPLETED" && _jsx(CompletionScreen, { interview: interview }), _jsx(Dialog, { open: confirmEnd, title: "\uBA74\uC811\uC744 \uC885\uB8CC\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?", onClose: () => setConfirmEnd(false), actions: _jsxs(_Fragment, { children: [_jsx(Button, { size: "sm", variant: "ghost", onClick: () => setConfirmEnd(false), children: "\uACC4\uC18D \uC9C4\uD589" }), _jsx(Button, { size: "sm", variant: "primary", onClick: () => {
+                                setConfirmEnd(false);
+                                actions.endInterview();
+                            }, children: "\uC885\uB8CC\uD558\uAE30" })] }), children: answeredCount > 0
+                    ? `${interview.config.questionLimit}문항 중 ${answeredCount}문항에 답변하셨습니다. 지금 종료하면 답변한 문항만으로 평가표가 작성됩니다.`
+                    : "아직 답변한 문항이 없어 평가표가 작성되지 않습니다. 그래도 종료하시겠습니까?" })] }));
+}

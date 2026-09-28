@@ -1,0 +1,67 @@
+export const EXPERIENCE_KO = {
+    entry: "신입",
+    junior: "주니어 (1~3년)",
+    mid: "미들 (4~7년)",
+    senior: "시니어 (8년+)",
+};
+export const INTERVIEW_TYPE_KO = {
+    hr: "인성 면접",
+    technical: "기술 면접",
+    project: "프로젝트 면접",
+    behavioral: "경험 면접",
+    mixed: "종합 면접",
+};
+export const INTERVIEW_TYPE_HINT_KO = {
+    hr: "지원동기 · 조직적합성",
+    technical: "기술 판단 · 깊이",
+    project: "수행 프로젝트 검증",
+    behavioral: "과거 경험 · STAR",
+    mixed: "실제 1차 면접처럼",
+};
+export const DIFFICULTY_KO = {
+    easy: "편안하게",
+    normal: "실전",
+    hard: "압박",
+};
+export const PERSONA_KO = {
+    professional: "정중한",
+    friendly: "친근한",
+    strict: "깐깐한",
+    technical: "기술 중심",
+};
+export const QUESTION_TYPE_KO = {
+    opening: "도입",
+    motivation: "지원동기·기업이해",
+    deep_dive: "심층",
+    technical: "기술",
+    challenge: "상황 가정",
+    reflection: "인성·성찰",
+    result: "성과 검증",
+};
+export const CATEGORY_KO = {
+    relevance: "질문 이해도",
+    logic: "논리성",
+    specificity: "구체성",
+    structure: "답변 구조",
+    communication: "전달력",
+    confidence: "자신감",
+};
+export const CATEGORY_DESC_KO = {
+    relevance: "질문의 의도에 맞게 답했는가",
+    logic: "판단의 근거와 인과가 분명한가",
+    specificity: "사례·방법·수치가 구체적인가",
+    structure: "두괄식·STAR 흐름으로 정리됐는가",
+    communication: "간결하고 명확하게 전달했는가",
+    confidence: "본인의 역할을 확신 있게 말했는가",
+};
+export function grade(score) {
+    if (score >= 90)
+        return "S";
+    if (score >= 80)
+        return "A";
+    if (score >= 70)
+        return "B";
+    if (score >= 60)
+        return "C";
+    return "D";
+}

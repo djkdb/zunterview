@@ -60,7 +60,7 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
                   <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[12px]">
                     <span className="text-faint">평가 근거:</span>
                     {f.evidence.map((e) => (
-                      <mark key={e} className="rounded bg-[#fff1b8] px-1.5 text-ink">
+                      <mark key={e} className="rounded bg-[#dde6f3] px-1.5 text-ink">
                         “{e}”
                       </mark>
                     ))}

@@ -1,0 +1,27 @@
+/**
+ * Question fingerprinting to stop the interviewer from repeating itself.
+ * Character bigrams work for both Korean (no reliable word boundaries) and English.
+ */
+const STRIP = /[\s"'“”‘’`.,!?…·:;()[\]{}\-_/]+/g;
+export function bigrams(text) {
+    const s = text.toLowerCase().replace(STRIP, "");
+    const out = new Set();
+    for (let i = 0; i < s.length - 1; i++)
+        out.add(s.slice(i, i + 2));
+    return out;
+}
+export function similarity(a, b) {
+    const A = bigrams(a);
+    const B = bigrams(b);
+    if (!A.size || !B.size)
+        return 0;
+    let inter = 0;
+    for (const x of A)
+        if (B.has(x))
+            inter++;
+    return inter / (A.size + B.size - inter);
+}
+export const DUPLICATE_THRESHOLD = 0.6;
+export function isDuplicateQuestion(candidate, asked) {
+    return asked.some((q) => similarity(candidate, q) >= DUPLICATE_THRESHOLD);
+}

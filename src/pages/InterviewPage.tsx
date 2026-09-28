@@ -106,7 +106,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
         <section className="flex min-h-0 flex-col">
           {/* the room, seen from the candidate's chair */}
           <div
-            className={`relative w-full overflow-hidden border-b border-line transition-[height] duration-300 lg:h-[46vh] lg:max-h-[470px] ${
+            className={`relative w-full overflow-hidden border-b border-line transition-[height] duration-300 lg:h-[clamp(240px,calc(100dvh-500px),470px)] ${
               composing ? "h-[16vh] min-h-[110px]" : "h-[34vh] min-h-[190px] sm:h-[40vh]"
             }`}
           >

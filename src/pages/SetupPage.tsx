@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 import { DIFFICULTIES, EXPERIENCE_LEVELS, INTERVIEW_TYPES, LIMITS, PERSONAS } from "../../shared/schemas";
 import { ModeBadge, TopBar } from "../components/TopBar";
 import { CompanyPicker } from "../components/CompanyPicker";
-import { COMPANIES, getCompany, guessTrack } from "../../shared/companies";
+import { COMPANIES, companyTracks, getCompany, guessTrack, type CompanyCategory } from "../../shared/companies";
+
+/** "전기" at a public enterprise → "전기직"; "개발" at a company → "개발자". */
+function positionForTrack(category: CompanyCategory, track: string): string {
+  if (category === "공기업" || category === "공공기관") return /직$/.test(track) ? track : `${track}직`;
+  if (track === "개발") return "개발자";
+  return track;
+}
 import { Button } from "../components/ui/Button";
 import { ArrowIcon } from "../components/ui/icons";
 import { Segmented } from "../components/ui/Segmented";
@@ -22,13 +29,25 @@ const DIFFICULTY_HINT: Record<InterviewConfig["difficulty"], string> = {
   hard: "압박 · 꼬리질문 多",
 };
 
+/** Apply a company choice, keeping the job consistent with the chosen track / institution type. */
+function withCompanyDefaults(p: InterviewConfig, id: string | undefined, track: string | undefined): InterviewConfig {
+  const next = { ...p, companyId: id, companyTrack: track };
+  const co = getCompany(id);
+  if (!co) return next;
+  if (track && track !== "공통") return { ...next, position: positionForTrack(co.category, track) };
+  const fromPreset = (POSITION_PRESETS as readonly string[]).includes(p.position);
+  if (fromPreset && (co.category === "공기업" || co.category === "공공기관") && guessTrack(co, p.position) === "공통") {
+    // Tech presets rarely fit a public institution; start from the administrative track.
+    const t = companyTracks(co).find((x) => /사무|행정/.test(x));
+    if (t) return { ...next, companyTrack: t, position: positionForTrack(co.category, t) };
+  }
+  return next;
+}
+
 function initialConfig(preset?: { companyId: string; track?: string } | null): InterviewConfig {
   const saved = loadLastConfig();
-  const merged: InterviewConfig = { ...DEFAULT_CONFIG, ...(saved ?? {}) };
-  if (preset) {
-    merged.companyId = preset.companyId;
-    merged.companyTrack = preset.track;
-  }
+  let merged: InterviewConfig = { ...DEFAULT_CONFIG, ...(saved ?? {}) };
+  if (preset) merged = withCompanyDefaults(merged, preset.companyId, preset.track === "공통" ? undefined : preset.track);
   if (!getCompany(merged.companyId)) {
     merged.companyId = undefined;
     merged.companyTrack = undefined;
@@ -94,7 +113,18 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
         >
           {COMPANIES.length > 0 && (
             <Section no={1} title="지원 기업 (선택)">
-              <CompanyPicker companyId={c.companyId} track={c.companyTrack} onChange={(id, track) => setC((p) => ({ ...p, companyId: id, companyTrack: track }))} />
+              <CompanyPicker
+                companyId={c.companyId}
+                track={c.companyTrack}
+                onChange={(id, track) => {
+                  const next = withCompanyDefaults(c, id, track);
+                  setC(next);
+                  if (next.position !== c.position) {
+                    setUseCustom(!(POSITION_PRESETS as readonly string[]).includes(next.position));
+                    setCustom(next.position);
+                  }
+                }}
+              />
             </Section>
           )}
 

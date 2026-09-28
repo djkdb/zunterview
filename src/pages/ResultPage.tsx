@@ -129,7 +129,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                 {r && <p className="text-[17px] leading-relaxed font-bold text-ink">{r.headline}</p>}
                 {company && company.talent.length > 0 && (
                   <p className="mt-2 text-[13px] text-muted">
-                    {company.name} 인재상: {company.talent.slice(0, 5).join(" · ")} — 답변에 이 키워드가 드러나는 경험을 연결해 보세요.
+                    {company.name} 인재상: {company.talent.slice(0, 5).map((t) => t.split(/[:(]/)[0].trim()).filter(Boolean).join(" · ")} — 답변에 이 키워드가 드러나는 경험을 연결해 보세요.
                   </p>
                 )}
                 <div className="mt-3 grid grid-cols-2 gap-2 text-[13px]">

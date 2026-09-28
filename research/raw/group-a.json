@@ -1,0 +1,372 @@
+{
+  "companies": [
+    {
+      "id": "samsung-electronics",
+      "name": "삼성전자",
+      "shortName": "삼성전자",
+      "category": "대기업",
+      "industry": "반도체·전자(DS·DX)",
+      "talent": [
+        "인재제일",
+        "최고지향",
+        "변화선도",
+        "정도경영",
+        "상생추구",
+        "창의·열정·소통의 가치창조인"
+      ],
+      "process": [
+        "GSAT 합격 후 하루에 모든 면접을 치르는 원데이 면접, 인성검사 병행",
+        "직무역량면접(PT): 약 20분 과제 준비 → 5분 발표 → 25~35분 질의응답",
+        "창의성면접: DX부문 등 일부에서 정답 없는 과제 해결 (DS부문은 직무+임원 2개)",
+        "임원면접: 자소서·이력서 기반 인성·조직적합성 평가 (20~30분)"
+      ],
+      "style": "면접관 3~4명과 지원자 1명의 다대일 방식이에요. 직무면접은 과정 중심으로 차분하게 묻지만, 임원면접은 자소서를 근거로 날카로운 꼬리질문이 이어진다는 후기가 많아요.",
+      "tips": [
+        "PT는 문제 정의 → 원인 분석 → 해결 방안 → 기대 효과 순서로 짧게 정리하세요.",
+        "전공 기초 이론을 실무 적용 사례(공정, 수율 등)와 연결해 설명하는 연습을 하세요.",
+        "학점, 휴학, 대외활동 등 자소서·이력서의 모든 항목에 꼬리질문이 나올 수 있어요.",
+        "외운 티가 나는 답보다 솔직하고 앞뒤가 일관된 답변이 좋은 평가를 받았다는 후기가 많아요.",
+        "창의성면접은 참신한 아이디어를 현실적인 근거로 뒷받침하는 것이 핵심이에요."
+      ],
+      "questions": [
+        {"text": "여러 기업 중 삼성전자에 지원한 이유는 무엇인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "경쟁사가 아닌 삼성전자의 이 직무를 선택한 이유를 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "지원 직무나 산업에서 최근 관심 있게 본 이슈를 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "삼성의 혁신 사례 중 인상 깊었던 것과 그 이유를 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "입사 후 5년, 10년 뒤 어떤 모습이 되고 싶은지 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "본인 성격의 장점과 단점을 사례와 함께 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "저희가 본인을 뽑아야 하는 이유를 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "성과보다 과정이 더 중요하다고 생각하는 때는 언제인가요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "실패를 극복한 경험과 그 과정에서 배운 점을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "팀 내 갈등을 조정했던 경험을 구체적으로 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "문제를 창의적인 방법으로 해결했던 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "수행한 프로젝트 중 가장 성과가 컸던 사례를 설명해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "휴학 기간에는 무엇을 했고, 휴학한 이유는 무엇인가요?", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "성적이 낮았던 학기가 있다면 그 이유를 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "감당하기 어려운 업무량이 주어진다면 어떻게 대처하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "원하지 않는 부서나 지역에 배치된다면 어떻게 하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "윤리적으로 판단하기 어려운 상황에서 어떻게 행동하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "교대근무가 필요한 업무도 잘 해낼 수 있다고 보시나요?", "category": "상황", "track": "반도체(DS)", "basis": "후기"},
+        {"text": "지원 직무를 수행하는 데 가장 중요한 역량은 무엇이라고 보나요?", "category": "직무", "track": "공통", "basis": "후기"},
+        {"text": "본인이 지원한 직무를 비전공자도 이해하게 설명해 주세요.", "category": "직무", "track": "공통", "basis": "후기"},
+        {"text": "반도체 8대 공정 중 하나를 골라 핵심 원리를 설명해 주세요.", "category": "기술", "track": "반도체(DS)", "basis": "후기"},
+        {"text": "DRAM과 NAND 플래시의 차이를 설명해 주세요.", "category": "기술", "track": "반도체(DS)", "basis": "후기"},
+        {"text": "수율이 떨어졌을 때 원인을 분석하고 개선하는 방법을 말씀해 주세요.", "category": "기술", "track": "반도체(DS)", "basis": "후기"},
+        {"text": "미세화가 진행될수록 소자 설계에서 중요해지는 요소는 무엇인가요?", "category": "기술", "track": "반도체(DS)", "basis": "후기"},
+        {"text": "AI 기반 설비 예지보전 시스템을 설계한다면 어떻게 구성하시겠어요?", "category": "PT·토론", "track": "반도체(DS)", "basis": "후기"}
+      ],
+      "sources": [
+        {"title": "삼성전자 면접 후기 총정리 – DS·DX 직무면접부터 임원면접까지 (DT당톡)", "url": "https://dangtalk.co.kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%A9%B4%EC%A0%91-%ED%9B%84%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC-ds%C2%B7dx-%EC%A7%81%EB%AC%B4%EB%A9%B4%EC%A0%91%EB%B6%80%ED%84%B0-%EC%9E%84%EC%9B%90%EB%A9%B4/"},
+        {"title": "삼성 면접 질문 리스트 2025 (링커리어)", "url": "https://community.linkareer.com/employment_data/4337630"},
+        {"title": "2025 삼성 면접 합격 후기 모음집 (링커리어)", "url": "https://community.linkareer.com/employment_data/4194945"},
+        {"title": "삼성전자 DS부문 합격 후기 (자소설닷컴)", "url": "https://jasoseol.com/blog/post/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-ds%EB%B6%80%EB%AC%B8-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EC%9E%90%EC%86%8C%EC%84%9C-%ED%8C%81-%EC%9D%B8%EC%A0%81%EC%84%B1-%EB%A9%B4%EC%A0%91-%EC%A7%88/"},
+        {"title": "삼성전자 실제 면접 후기 (잡코리아)", "url": "https://www.jobkorea.co.kr/starter/review/view?c_idx=1&ctgr_code=3"},
+        {"title": "25년 하반기 삼성 면접 준비 체크리스트 (윈스펙)", "url": "https://winspec.co.kr/community/lecture/120128759"},
+        {"title": "삼성그룹, 창의·열정·소통의 가치창조人 원해 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/201603271807337537"},
+        {"title": "삼성 핵심가치 (삼성SDS 지속가능경영체계)", "url": "https://www.samsungsds.com/kr/unsdgs/values.html"}
+      ]
+    },
+    {
+      "id": "sk-hynix",
+      "name": "SK하이닉스",
+      "shortName": "SK하이닉스",
+      "category": "대기업",
+      "industry": "반도체(메모리)",
+      "talent": [
+        "VWBE(자발적·의욕적인 두뇌활용)",
+        "SUPEX(인간이 도달할 수 있는 최고 수준)",
+        "패기(높은 목표에 도전, 틀을 깨는 실행)",
+        "기술역량",
+        "소통·협업"
+      ],
+      "process": [
+        "SKCT(역량검사) 합격 후 하루에 두 면접을 모두 치르는 원데이 면접",
+        "직무면접(약 30분): 전공·직무 지식 검증, 석·박사는 사전 제출한 발표자료 기반",
+        "인성(문화적합성)면접(약 30분): 자소서 기반 가치관·협업 경험 확인"
+      ],
+      "style": "면접관 2명과 지원자 1명으로 진행돼요. 떨어뜨리기보다 서류 내용과 진정성을 확인하는 대화형 분위기로, 편안했다는 후기가 많아요.",
+      "tips": [
+        "자소서 문장 하나하나에 꼬리질문이 나올 수 있으니 근거와 수치를 준비하세요.",
+        "DRAM·NAND 구조, 8대 공정, 소자 기초 개념을 본인 경험과 연결해 정리하세요.",
+        "HBM 등 SK하이닉스 관련 최신 뉴스를 파악해 두세요.",
+        "모르는 내용은 솔직히 인정하고 배우려는 태도를 보이는 편이 낫다는 후기가 많아요.",
+        "경험을 협업, 갈등 해결, 도전 등 여러 주제로 미리 정리해 두세요."
+      ],
+      "questions": [
+        {"text": "다른 반도체 기업이 아닌 SK하이닉스를 선택한 이유는 무엇인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "SK하이닉스에 지원한 이유와 입사 후 기여할 점을 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "최근 SK하이닉스 관련 뉴스 중 기억에 남는 것을 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "HBM 시장에서 SK하이닉스의 위치를 어떻게 평가하시나요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "입사 후 이루고 싶은 목표는 무엇인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "존경하는 멘토가 있다면 소개하고 이유를 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "본인의 부족한 점과 이를 극복하기 위한 노력을 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "주변 사람들은 본인을 어떤 사람이라고 평가하나요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "본인은 리더와 팔로워 중 어느 쪽에 더 가깝나요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "스트레스를 받을 때 어떻게 해소하시나요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "인생에서 내린 중요한 결정과 그 이유를 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "직무 역량을 쌓기 위해 어떤 노력을 해 왔는지 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "다른 팀이나 사람과 협업해 성과를 낸 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "갈등을 해결했던 사례를 구체적으로 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "최근에 겪은 가장 힘든 일과 극복 과정을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "스스로 동기를 부여해 높은 목표에 도전한 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "원하는 부서에 배치되지 않는다면 어떻게 하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "반도체 업계의 주요 이슈와 회사의 대응 방향을 말씀해 주세요.", "category": "직무", "track": "사무", "basis": "후기"},
+        {"text": "최근 공부한 공정이나 관심 있는 기술을 소개해 주세요.", "category": "기술", "track": "연구개발", "basis": "후기"},
+        {"text": "DRAM과 NAND의 기본 구조와 동작 원리를 설명해 주세요.", "category": "기술", "track": "연구개발", "basis": "후기"},
+        {"text": "단채널 효과와 DIBL이 무엇인지 설명해 주세요.", "category": "기술", "track": "연구개발", "basis": "후기"},
+        {"text": "8대 공정 중 하나에서 생길 수 있는 문제와 해결책을 설명해 주세요.", "category": "기술", "track": "연구개발", "basis": "후기"},
+        {"text": "발표하신 연구 주제의 가치와 한계는 무엇이라고 보시나요?", "category": "PT·토론", "track": "연구개발(석·박사)", "basis": "후기"}
+      ],
+      "sources": [
+        {"title": "2025 SK하이닉스 면접 합격 후기 모음 (링커리어)", "url": "https://community.linkareer.com/employment_data/5013893"},
+        {"title": "2025 하반기 SK 하이닉스 합격 후기 모음집 (링커리어)", "url": "https://community.linkareer.com/employment_data/4692188"},
+        {"title": "SK하이닉스 면접 기출 2024~2025 총정리 (윈스펙)", "url": "https://winspec.co.kr/community/lecture/120505606"},
+        {"title": "SK하이닉스 면접 합격전략 (이커리어)", "url": "https://ecareer.co.kr/sk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-%EB%A9%B4%EC%A0%91-%ED%95%A9%EA%B2%A9%EC%A0%84%EB%9E%B5/"},
+        {"title": "SK하이닉스 인재상 (SK커리어스 저널)", "url": "https://www.skcareersjournal.com/2792"},
+        {"title": "SK하이닉스 수시채용 시작…인재상 키워드 (EBN)", "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1473185"}
+      ]
+    },
+    {
+      "id": "hyundai-motor",
+      "name": "현대자동차",
+      "shortName": "현대차",
+      "category": "대기업",
+      "industry": "자동차·모빌리티",
+      "talent": [
+        "도전",
+        "창의",
+        "열정",
+        "협력",
+        "글로벌마인드"
+      ],
+      "process": [
+        "서류 → 인적성(HMAT)·AI역량검사 → 1차 면접 → 2차 면접 → 채용검진",
+        "1차 면접: 직무면접 + PT(직무별로 사전과제 발표 또는 당일 과제 풀이)",
+        "2차 면접: 임원진 종합면접(개인이력·인성·직무 질문)"
+      ],
+      "style": "실무진·임원이 지원자 한 명을 면접하는 다대일 개별면접이에요. 편안하게 해 주려 하지만, 준비한 답을 벗어나는 예리한 꼬리질문이 많다는 후기가 많아요.",
+      "tips": [
+        "IR 자료, 사업보고서, 최근 1~2년 뉴스로 현대차의 사업 전략과 신기술을 정리하세요.",
+        "전공 기초, 자동차 기초 지식, 제조 공정을 지원 직무와 연결해 준비하세요.",
+        "2차 면접은 대화형이라 한 주제에 꼬리질문이 5~6번 이어질 수 있어요.",
+        "PT는 글보다 이미지 위주로 구성하고 말로 풀어 설명하는 방식이 효과적이었다는 후기가 있어요.",
+        "당일 과제형 PT는 준비 시간이 짧으니 논리 구조를 미리 연습해 두세요."
+      ],
+      "questions": [
+        {"text": "현대자동차에 지원한 동기를 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "입사 후 하고 싶은 일과 장기적인 발전 계획을 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "요즘 어떤 기술이나 분야에 관심이 있으신가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "지원 직무와 관련된 최근 산업 동향을 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "본인이 생각하는 이상적인 회사는 어떤 모습인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "회사 문화를 개선한다면 어떤 방안을 제안하시겠어요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "본인만의 자랑거리를 하나 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "함께 일하고 싶은 동료는 어떤 사람인가요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "본인의 단점과 이를 보완하려는 노력을 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "스트레스는 어떻게 관리하시나요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "자동차와 관련해 해 본 활동이나 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "가장 자신 있는 프로젝트의 문제점과 개선 방안을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "도전적인 목표를 세우고 끝까지 추진한 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "팀 프로젝트에서 갈등을 겪고 해결한 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "팀을 이끌었던 경험과 그때 본인의 역할을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "실패했던 경험과 그 이후 달라진 점을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "다른 문화나 배경을 가진 사람과 협업한 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "상사와 의견이 충돌한다면 어떻게 해결하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "희망하지 않는 직무에 배정된다면 어떻게 하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "지방 사업장 근무도 가능하신가요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "이 직무에서 본인이 가장 잘할 수 있는 역할은 무엇인가요?", "category": "직무", "track": "공통", "basis": "후기"},
+        {"text": "관여도가 낮은 고객을 끌어들이기 위한 마케팅 방안은 무엇인가요?", "category": "직무", "track": "영업·마케팅", "basis": "후기"},
+        {"text": "부품 단위의 직접 원가 절감에 대해 어떻게 생각하시나요?", "category": "직무", "track": "사무", "basis": "후기"},
+        {"text": "미래 자동차의 전장에는 어떤 기능이 들어갈 것이라고 보시나요?", "category": "기술", "track": "연구개발", "basis": "후기"},
+        {"text": "5~10분 안에 본인의 직무 역량을 소개하는 PT를 해 주세요.", "category": "PT·토론", "track": "공통", "basis": "후기"}
+      ],
+      "sources": [
+        {"title": "현대자동차그룹 인재상", "url": "https://www.hyundaimotorgroup.com/ko/about-us/CONT0000000000000645"},
+        {"title": "2026 상반기 현대자동차 면접 질문 리스트 (링커리어)", "url": "https://community.linkareer.com/employment_data/5898194"},
+        {"title": "2025 하반기 현대자동차 필수 면접 질문 리스트 (링커리어)", "url": "https://community.linkareer.com/mentor_data/4984742"},
+        {"title": "현대자동차 실제 면접 후기 (잡코리아)", "url": "https://www.jobkorea.co.kr/starter/review/view?c_idx=7&ctgr_code=3"},
+        {"title": "현대자동차 합격 후기 (자소설닷컴)", "url": "https://jasoseol.com/blog/post/%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EC%9E%90%EC%86%8C%EC%84%9C-%ED%8C%81-%EC%9D%B8%EC%A0%81%EC%84%B1-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8%EA%B9%8C/"},
+        {"title": "현대자동차(주) 면접 후기 (사람인)", "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8%28%EC%A3%BC%29"}
+      ]
+    },
+    {
+      "id": "lg-electronics",
+      "name": "LG전자",
+      "shortName": "LG전자",
+      "category": "대기업",
+      "industry": "가전·전자",
+      "talent": [
+        "꿈과 열정을 가지고 세계 최고에 도전",
+        "고객을 최우선으로 생각하고 끊임없이 혁신",
+        "팀워크를 이루며 자율적이고 창의적으로 일함",
+        "꾸준히 실력을 배양해 정정당당하게 경쟁",
+        "LG Way: 고객을 위한 가치창조·인간존중의 경영·정도경영"
+      ],
+      "process": [
+        "서류 → AI면접·인적성검사(LG Way Fit Test) → 1차 면접 → 2차 면접",
+        "1차 직무/PT면접: 5장 이내 PT(직무 관련 프로젝트, 차별점·강점) 발표 후 전공 질의",
+        "2차 인성(임원)면접: 가치관·조직 적합성 중심의 대화형 면접",
+        "사업부·직무에 따라 토론면접이나 사전과제가 추가되기도 함"
+      ],
+      "style": "면접관이 잘 들어 주고 반응이 좋다는 후기가 많아요. 다만 1차는 PT 내용을 파고드는 전공 질문이 깊게 이어지고, 2차는 외운 답변을 싫어해 대화하듯 길게 진행돼요.",
+      "tips": [
+        "PT 자료에 적은 프로젝트는 부품, 원리 같은 세부 내용까지 설명할 수 있어야 해요.",
+        "전공 질문은 아는 범위까지 끝까지 설명하고, 모르는 부분은 솔직히 인정하세요.",
+        "LG전자 제품이나 서비스를 직접 써 보고 아쉬운 점과 개선 아이디어를 정리하세요.",
+        "대본을 외우기보다 핵심 키워드로 이야기를 이어 가는 연습을 하세요.",
+        "토론면접은 이기기보다 상대 의견을 요약하고 합의점을 찾는 협업형 태도가 중요해요."
+      ],
+      "questions": [
+        {"text": "LG전자에 지원한 동기와 지원 직무에 대한 이해를 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "LG전자 제품 중 가장 관심 있는 제품과 개선 아이디어는 무엇인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "스스로를 10점 만점에 몇 점이라고 평가하시나요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "일이 힘들어진다면 어떻게 하시겠어요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "팀 프로젝트에서 맡았던 역할을 구체적으로 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "계획을 세우고 실행에 옮겼던 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "여러 경험 중 이 프로젝트나 인턴 경험을 고른 이유는 무엇인가요?", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "높은 목표를 세우고 열정적으로 도전했던 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "고객 입장에서 생각해 문제를 개선했던 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "팀 안에서 자율적으로 창의적인 아이디어를 낸 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "실력을 꾸준히 키우기 위해 해 온 노력을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "딸기, 바나나, 수박 중 하나는 갖고 하나는 주고 하나는 버린다면요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "10시간짜리 업무 두 개를 19시간 안에 끝내야 한다면 어떻게 하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "글로벌 공급망 위기가 닥친다면 어떻게 대처하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "지원 직무에서 예상되는 어려움과 극복 방안을 말씀해 주세요.", "category": "직무", "track": "공통", "basis": "후기"},
+        {"text": "고객을 분석할 때 본인만의 노하우가 있다면 말씀해 주세요.", "category": "직무", "track": "영업·마케팅", "basis": "후기"},
+        {"text": "청소기 소음을 줄이는 것이 항상 좋은 일일까요?", "category": "기술", "track": "연구개발", "basis": "후기"},
+        {"text": "프로세스와 스레드의 차이를 설명해 주세요.", "category": "기술", "track": "개발", "basis": "후기"},
+        {"text": "컨버터의 동작 원리를 설명해 주세요.", "category": "기술", "track": "연구개발", "basis": "후기"},
+        {"text": "AI면접에서 아쉬웠던 답변을 다시 설명해 주시겠어요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "직무 관련 프로젝트와 본인의 차별점을 5장 이내로 발표해 주세요.", "category": "PT·토론", "track": "공통", "basis": "후기"},
+        {"text": "최근 산업 이슈 하나를 분석하고 대안을 제시해 주세요.", "category": "PT·토론", "track": "공통", "basis": "후기"}
+      ],
+      "sources": [
+        {"title": "LG전자 인재상 (LG전자 인재채용)", "url": "https://www.lge.co.kr/company/recruit/talent"},
+        {"title": "2025 LG전자 면접 합격 후기 모음 (링커리어)", "url": "https://community.linkareer.com/employment_data/4954307"},
+        {"title": "2025 하반기 LG전자 면접 대비 현직자 Q&A (링커리어)", "url": "https://community.linkareer.com/mentor_data/4957987"},
+        {"title": "LG전자 합격 후기 (자소설닷컴)", "url": "https://jasoseol.com/blog/post/lg%EC%A0%84%EC%9E%90-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EC%9E%90%EC%86%8C%EC%84%9C-%ED%8C%81-%EC%9D%B8%EC%A0%81%EC%84%B1-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8%EA%B9%8C%EC%A7%80/"},
+        {"title": "[LG전자] 2023 상반기 신입 PT 면접 합격 후기 (링커리어)", "url": "https://community.linkareer.com/interview/3265333"},
+        {"title": "LG Way (LG 소개)", "url": "https://www.lg.co.kr/about/lgway/4"}
+      ]
+    },
+    {
+      "id": "posco",
+      "name": "포스코",
+      "shortName": "포스코",
+      "category": "대기업",
+      "industry": "철강·소재",
+      "talent": [
+        "실천: 주인의식과 책임감으로 솔선",
+        "배려: 겸손과 존중으로 상생 실천",
+        "창의: 새로운 아이디어로 변화 주도",
+        "실천의식과 배려의 마인드를 갖춘 창의적 인재",
+        "핵심가치: 안전·상생·윤리·창의",
+        "기업시민"
+      ],
+      "process": [
+        "서류 → 인적성검사(PAT) → 1차 면접 → 2차 면접",
+        "1차 면접(하루 약 8시간): 개별 분석발표(AP), 그룹토론·그룹활동, 직무면접, 인성면접, 역사 에세이",
+        "2차 면접: 임원면접(자소서 기반 인성·가치관, 짧은 PT가 포함된 사례도 있음)"
+      ],
+      "style": "1차는 하루 종일 진행되며 협업 태도와 책임감을 관찰하지만 분위기는 비교적 편안하다는 후기가 많아요. 임원면접은 다대다로 압박감이 있어도 솔직한 답변을 원하는 편이에요.",
+      "tips": [
+        "실천·배려·창의 인재상에 맞는 경험을 하나씩 정리해 두세요.",
+        "기업시민 경영이념과 수소환원제철 같은 최근 이슈를 공부해 두세요.",
+        "금리나 세계 시황 같은 경제 뉴스에도 관심을 가지세요.",
+        "AP면접은 자료를 빠르게 골라 정리하는 시간 관리가 핵심이에요.",
+        "긴 일정 내내 태도를 보므로 체력 관리와 두괄식으로 또렷하게 답하는 연습을 하세요."
+      ],
+      "questions": [
+        {"text": "포스코에 지원한 동기를 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "포스코에 대해 알고 있는 것을 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "포스코의 강점과 약점을 분석해 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "포스코의 최신 제품 중 아는 것과 그 특징을 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "포스코의 경영이념인 기업시민을 어떻게 이해하고 있나요?", "category": "기업이해", "track": "공통", "basis": "공식자료"},
+        {"text": "수소환원제철 등 포스코의 최근 과제에 대해 어떻게 생각하시나요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "입사 후 포부를 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "본인만의 자랑거리를 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "본인이 생각하는 이상적인 회사는 어떤 곳인가요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "봉사활동을 하게 된 이유는 무엇인가요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "최근 사회 이슈 중 하나에 대한 본인의 견해를 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "실패했던 경험과 그 이후의 변화를 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "주인의식을 갖고 먼저 나서서 일을 해결한 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "상대를 배려하고 존중해 함께 성과를 낸 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "새로운 아이디어로 기존 방식을 바꿔 본 경험을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "공식자료"},
+        {"text": "조직 내에서 갈등이 생긴다면 어떻게 대처하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "지원 직무에 대해 어떻게 이해하고 있는지 말씀해 주세요.", "category": "직무", "track": "공통", "basis": "후기"},
+        {"text": "기초적인 재무 지식을 활용해 기업 상황을 설명해 주세요.", "category": "직무", "track": "사무", "basis": "후기"},
+        {"text": "재료역학이나 제선·제강의 기본 개념을 설명해 주세요.", "category": "기술", "track": "생산·설비", "basis": "후기"},
+        {"text": "제시된 통계 자료를 분석해 최적안을 5분 안에 발표해 주세요.", "category": "PT·토론", "track": "공통", "basis": "후기"},
+        {"text": "조원들과 함께 과제를 해결하고 결과를 발표해 주세요.", "category": "PT·토론", "track": "공통", "basis": "후기"}
+      ],
+      "sources": [
+        {"title": "2025 하반기 포스코 면접 합격 후기 모음 (링커리어)", "url": "https://community.linkareer.com/employment_data/4986021"},
+        {"title": "포스코 합격 후기 (자소설닷컴)", "url": "https://jasoseol.com/blog/post/%ED%8F%AC%EC%8A%A4%EC%BD%94-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EC%9E%90%EC%86%8C%EC%84%9C-%ED%8C%81-%EC%9D%B8%EC%A0%81%EC%84%B1-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8%EA%B9%8C%EC%A7%80/"},
+        {"title": "(주)포스코 면접 후기 (사람인)", "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=(%EC%A3%BC)%ED%8F%AC%EC%8A%A4%EC%BD%94"},
+        {"title": "인재경영&조직문화 (POSCO ESG)", "url": "https://sustainability.posco.co.kr/S91/S91F10/kor/cmspage.do?mmcd=1745995965009574"},
+        {"title": "[우리는 이렇게 채용합니다] 포스코 (서울경제)", "url": "https://www.sedaily.com/article/12330790"},
+        {"title": "포스코 생산기술직 대졸 질문 (코멘토)", "url": "https://comento.kr/job-questions/%ED%8F%AC%EC%8A%A4%EC%BD%94/%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0/%ED%8F%AC%EC%8A%A4%EC%BD%94_%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0%EC%A7%81_%EB%8C%80%EC%A1%B8_%EC%A7%88%EB%AC%B8-591590"},
+        {"title": "포스코그룹 인재상 (포스코스틸리온)", "url": "https://www.poscosteeleon.com/kr/recruit/talent.do"}
+      ]
+    },
+    {
+      "id": "samsung-sds",
+      "name": "삼성SDS",
+      "shortName": "삼성SDS",
+      "category": "대기업",
+      "industry": "IT서비스·클라우드·솔루션",
+      "talent": [
+        "인재제일",
+        "최고지향",
+        "변화선도",
+        "정도경영",
+        "상생추구"
+      ],
+      "process": [
+        "서류 → 코딩테스트(SW 직군) 또는 GSAT → 원데이 면접, 인성검사 병행",
+        "직무면접: 이력서 기반 프로젝트·포트폴리오 PT와 기술 질의(약 25분)",
+        "임원면접: 자소서·이력서 기반 인성·조직적합성(약 25~30분)",
+        "Pro 트랙(자격 보유자)은 직무면접이 면제되고 임원면접만 보는 사례가 있음"
+      ],
+      "style": "직무면접은 친절하고 편안했다는 후기가 많아요. 반면 임원면접은 반응이 적고 딱딱하며 압박 질문이 나올 수 있다는 후기가 많아요.",
+      "tips": [
+        "프로젝트마다 왜 그렇게 설계했는지, 다른 선택지와 비교해 설명할 수 있게 준비하세요.",
+        "코딩테스트는 요구사항을 쪼개고 엣지 케이스까지 점검하는 습관을 들이세요.",
+        "삼성SDS가 하는 사업과 앞으로의 방향성을 파악해 두세요.",
+        "포트폴리오는 회사가 제공하는 PPT 양식에 맞춰 자소서를 보충하는 식으로 준비하세요.",
+        "임원면접은 사실 → 행동 → 결과 → 배운 점 순서로 솔직하게 답하세요."
+      ],
+      "questions": [
+        {"text": "여러 IT 기업 중 삼성SDS에 지원한 이유는 무엇인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "삼성SDS가 하고 있는 사업에 대해 아는 대로 말씀해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "입사 후 삼성SDS에서 하고 싶은 일은 무엇인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "삼성SDS가 앞으로 나아가야 할 방향은 무엇이라고 보시나요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "디지털 트랜스포메이션이 무엇인지 설명해 주세요.", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "대기업 규제 중 꼭 필요하다고 생각하는 것은 무엇인가요?", "category": "기업이해", "track": "공통", "basis": "후기"},
+        {"text": "인프라 직군에 지원한 동기는 무엇인가요?", "category": "직무", "track": "인프라", "basis": "후기"},
+        {"text": "본인의 장점과 단점은 무엇인가요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "주변 사람들은 본인을 어떻게 평가하나요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "본인은 창의적인 편인가요, 현실적인 편인가요?", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "존경하는 인물이 있다면 그 이유와 함께 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "꿈이나 진로를 바꾸게 된 계기가 있다면 말씀해 주세요.", "category": "인성", "track": "공통", "basis": "후기"},
+        {"text": "갈등을 해결했던 경험과 본인의 방법을 말씀해 주세요.", "category": "경험", "track": "공통", "basis": "후기"},
+        {"text": "프로젝트에서 내린 주요 기술 선택과 그 이유를 설명해 주세요.", "category": "경험", "track": "개발", "basis": "후기"},
+        {"text": "시스템 성능을 개선하거나 장애에 대응했던 경험을 말씀해 주세요.", "category": "경험", "track": "개발", "basis": "후기"},
+        {"text": "프로젝트 중 팀원과 의견이 충돌하면 어떻게 대처하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "회사 안에서 세대 차이가 심하게 느껴진다면 어떻게 하시겠어요?", "category": "상황", "track": "공통", "basis": "후기"},
+        {"text": "금융권 모바일 시스템을 개발한다면 어떻게 구현하시겠어요?", "category": "기술", "track": "개발", "basis": "후기"},
+        {"text": "웹 기반 시스템을 모바일 기반으로 바꿀 때의 아키텍처를 그려 주세요.", "category": "기술", "track": "개발", "basis": "후기"},
+        {"text": "Hadoop이 무엇인지 설명해 주세요.", "category": "기술", "track": "개발", "basis": "후기"},
+        {"text": "Java를 어느 수준까지 다룰 수 있는지 말씀해 주세요.", "category": "기술", "track": "개발", "basis": "후기"},
+        {"text": "ERP 구축 프로젝트를 PM 입장에서 어떻게 추진할지 발표해 주세요.", "category": "PT·토론", "track": "개발", "basis": "후기"},
+        {"text": "주도적으로 참여한 프로젝트와 본인의 역할을 발표해 주세요.", "category": "PT·토론", "track": "공통", "basis": "후기"}
+      ],
+      "sources": [
+        {"title": "삼성에스디에스 실제 면접 후기 (잡코리아)", "url": "https://www.jobkorea.co.kr/starter/review/view?c_idx=129&ctgr_code=3"},
+        {"title": "삼성에스디에스 실제 면접 질문 (잡코리아)", "url": "https://www.jobkorea.co.kr/starter/review/view?c_idx=129&ctgr_code=5"},
+        {"title": "[삼성SDS] 2025 하반기 SW 신입 면접 후기 (링커리어)", "url": "https://community.linkareer.com/interview/5337876"},
+        {"title": "삼성SDS 개발자 면접 질문 및 원데이 면접 대비 (잘봐요)", "url": "https://welldone-interview.co.kr/interview/samsung-sds-sw-interview"},
+        {"title": "삼성SDS 핵심가치 (지속가능경영체계)", "url": "https://www.samsungsds.com/kr/unsdgs/values.html"}
+      ]
+    }
+  ]
+}

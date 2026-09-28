@@ -12,10 +12,12 @@ export function threadDepth(interview: Interview, q: InterviewQuestion): number 
 export function canAskFollowUp(interview: Interview, q: InterviewQuestion): boolean {
   const remaining = interview.config.questionLimit - interview.questions.length;
   if (remaining < 1) return false;
-  if (threadDepth(interview, q) >= MAX_DEPTH[interview.config.difficulty]) return false;
-  // Keep at least ~half of the interview for main questions.
+  // Company interviews should mostly use the company's own questions.
+  const company = Boolean(interview.config.companyId);
+  const maxDepth = company ? 1 : MAX_DEPTH[interview.config.difficulty];
+  if (threadDepth(interview, q) >= maxDepth) return false;
   const followUps = interview.questions.filter((x) => x.isFollowUp).length;
-  return followUps < Math.ceil(interview.config.questionLimit * 0.5);
+  return followUps < Math.ceil(interview.config.questionLimit * (company ? 0.35 : 0.5));
 }
 
 export function isLastQuestion(interview: Interview): boolean {

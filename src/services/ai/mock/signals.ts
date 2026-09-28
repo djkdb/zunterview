@@ -22,7 +22,7 @@ export const TOPICS: Topic[] = [
   { id: "collaboration", label: { ko: "협업 과정", en: "the collaboration" }, pattern: /협업|소통|커뮤니케이션|조율|이해관계자|collaborat|communicat|stakeholder|align/i },
   { id: "leadership", label: { ko: "리딩 경험", en: "leading the team" }, pattern: /리드|리더|이끌|멘토|주도|lead|mentor|drove|owned/i },
   { id: "failure", label: { ko: "실패 경험", en: "that failure" }, pattern: /실패|실수|잘못|놓친|fail|mistake|missed/i },
-  { id: "learning", label: { ko: "학습 과정", en: "the learning process" }, pattern: /배웠|배우|학습|공부|익혔|learn|studied|picked up/i },
+  { id: "learning", label: { ko: "학습 과정", en: "the learning process" }, pattern: /새로(?:운)?\s?(?:기술|언어|도구)?(?:을|를)?\s?(?:배우|익히|익혔|학습)|독학|학습\s?방법|공부\s?방법|learn(?:ed|ing)? (?:a |the )?new|picked up/i },
 ];
 
 /** Concrete methods/tools — the best anchors for a sharp follow-up. */
@@ -65,7 +65,7 @@ const VERB_ENDING = /(?:는|은|한|된|던|할|될|적인|하게|에서|으로|
 const PARTICLE = /(?:을|를|이|가|은|는|에서|에|과|와|도|으로|로|의)$/u;
 
 function projectPhrase(text: string): string {
-  const re = /([가-힣A-Za-z0-9]{2,12})\s?(프로젝트|서비스|기능|플랫폼|시스템|파이프라인|대시보드|캠페인|앱)/g;
+  const re = /([가-힣A-Za-z0-9]{2,12})\s?(프로젝트|서비스|기능|플랫폼|시스템|파이프라인|대시보드|캠페인|앱|현장실습|실습|인턴십|인턴|대외활동|동아리|공모전|아르바이트|봉사활동|연구)/g;
   for (const m of text.matchAll(re)) {
     const head = m[1].replace(PARTICLE, "");
     if (!head || VERB_ENDING.test(m[1]) || /^(?:팀|이|그|저|해당|여러|모든|사이드|개인|토이)$/.test(head)) continue;
@@ -147,7 +147,7 @@ export function readSignals(text: string, question: string, lang: Language): Sig
       situation: count(t, /당시|상황|프로젝트|회사|서비스|팀에서|인턴|동아리|수업|when|while|during|at the time|project|situation|company/gi),
       task: count(t, /목표|역할|맡|해야|과제|요구|책임|문제는|goal|task|responsible|needed to|my role|had to|objective/gi),
       action: count(t, /해결|구현|도입|개선|분석|적용|설계|만들|진행|사용|최적화|수정|제안|설득|정리|implemented|built|analy[sz]ed|introduced|designed|used|optimi[sz]ed|refactored|fixed|solved|proposed|created|led/gi),
-      result: count(t, /결과|개선되|줄었|줄였|감소|증가|향상|달성|단축|성과|절감|올랐|올렸|result|reduced|increased|improved|achieved|saved|faster|decreased|grew|cut/gi),
+      result: count(t, /결과|개선되|줄었|줄였|감소|증가|향상|달성|단축|성과|절감|올랐|올렸|마쳤|완료했|해냈|성공했|끝냈|수상|합격|result|reduced|increased|improved|achieved|saved|faster|decreased|grew|cut|completed|delivered|won/gi),
     },
     questionOverlap: bigramOverlap(question, t),
     dontKnow: t.replace(/\s/g, "").length < 60 && /잘\s?모르|모르겠|기억이\s?(?:잘\s?)?안|패스|넘어가겠|해\s?본\s?적(?:이)?\s?없|경험이\s?없|don'?t know|not sure|no idea|\bpass\b|\bskip\b/i.test(t),

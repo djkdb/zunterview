@@ -139,6 +139,13 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
       {/* desk front panel + name plates */}
       <rect x="4" y={DESK_Y + 33} width="1192" height={520 - DESK_Y - 33} fill="url(#deskFront)" />
       <rect x="4" y={DESK_Y + 33} width="1192" height="6" fill="#000" opacity="0.06" />
+      {/* table banner — visible at any crop since the scene is bottom-anchored */}
+      <g transform={`translate(600 ${DESK_Y + 106})`}>
+        <rect x="-190" y="0" width="380" height="30" rx="2" fill="#1f2b45" />
+        <text x="0" y="20" textAnchor="middle" fontSize="14" fontWeight="700" fill="#f4f1ec" letterSpacing="2" fontFamily="Pretendard Variable, sans-serif">
+          {companyName ? `${companyName} 모의면접` : "INTERVIEW//AI 모의면접"} · {roomLabel}
+        </text>
+      </g>
       {(["left", "center", "right"] as Seat[]).map((seat) => (
         <NamePlate key={seat} x={SEAT_X[seat]} member={panel[seat]} active={mode === "asking" && speaking === seat} />
       ))}

@@ -29,6 +29,7 @@ const sim = (a, b) => {
   return n / (A.size + B.size - n);
 };
 
+const curation = JSON.parse(readFileSync("research/curation.json", "utf8"));
 const companies = [];
 const report = [];
 for (const file of readdirSync(RAW).filter((f) => f.endsWith(".json")).sort()) {
@@ -39,7 +40,12 @@ for (const file of readdirSync(RAW).filter((f) => f.endsWith(".json")).sort()) {
     for (const q of c.questions ?? []) {
       const text = clean(q.text);
       const category = CATEGORY_ALIASES[clean(q.category)] ?? clean(q.category);
-      const basis = clean(q.basis) === "후기" ? "후기" : "공식자료";
+      if (curation.dropQuestions.some((d) => d.id === c.id && clean(d.text) === text)) {
+        dropped++;
+        continue;
+      }
+      const override = curation.reclassify.find((r) => r.id === c.id && (!r.category || r.category === category) && (!r.text || clean(r.text) === text));
+      const basis = override ? override.basis : clean(q.basis) === "후기" ? "후기" : "공식자료";
       if (text.length < 4 || text.length > 140 || !Q_CATEGORIES.has(category) || questions.some((x) => sim(x.text, text) >= 0.6)) {
         dropped++;
         continue;
@@ -49,6 +55,8 @@ for (const file of readdirSync(RAW).filter((f) => f.endsWith(".json")).sort()) {
     const sources = (c.sources ?? [])
       .map((s) => ({ title: clean(s.title).slice(0, 200), url: clean(s.url) }))
       .filter((s) => /^https?:\/\//.test(s.url))
+      .filter((s) => !curation.dropSources.some((d) => d.id === c.id && s.url.includes(d.urlIncludes)))
+      .filter((s) => !(curation.dropSourcesEverywhere ?? []).some((d) => s.url.includes(d)))
       .filter((s, i, arr) => arr.findIndex((x) => x.url === s.url) === i)
       .slice(0, 20);
     if (questions.length < 5 || !sources.length) {

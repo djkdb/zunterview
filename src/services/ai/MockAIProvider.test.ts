@@ -181,3 +181,24 @@ describe("hypothetical questions", () => {
     expect(f.question).toContain("설득");
   });
 });
+
+describe("self-introduction follow-ups", () => {
+  it("picks up a named experience instead of calling a detailed intro abstract", async () => {
+    const f = await ai.generateFollowUp(
+      ctx(),
+      { question: "먼저 1분 동안 간단하게 자기소개 부탁드립니다.", type: "opening", isFollowUp: false, answer: "안녕하세요. 저는 전기공학을 전공하고 변전소 현장실습을 통해 전력 설비 유지보수를 경험했습니다. 현장에서 안전 수칙의 중요성을 배웠고, 안정적인 전력 공급에 기여하고 싶습니다." },
+      0,
+    );
+    expect(f.question).not.toContain("추상적");
+    if (f.needed) expect(f.question).toContain("실습");
+  });
+});
+
+describe("experience wording", () => {
+  it("uses a verb that fits the experience", async () => {
+    const ask = async (answer: string) =>
+      (await ai.generateFollowUp(ctx(), { question: "먼저 1분 동안 간단하게 자기소개 부탁드립니다.", type: "opening", isFollowUp: false, answer }, 0)).question;
+    expect(await ask("저는 전기공학을 전공하고 변전소 현장실습을 통해 전력 설비 유지보수를 경험했습니다. 안전의 중요성을 느꼈습니다.")).toContain("현장실습에서");
+    expect(await ask("저는 사내 결제 시스템 개편에 참여했고 운영 경험을 쌓았습니다. 고객 불편을 줄이는 데 관심이 많습니다.")).toContain("결제 시스템을 만들면서");
+  });
+});

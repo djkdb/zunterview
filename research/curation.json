@@ -1,0 +1,75 @@
+{
+  "_comment": "Manual review applied on top of research/raw by scripts/build-company-data.mjs. Raw research files stay unmodified for provenance.",
+  "dropQuestions": [
+    {
+      "id": "samsung-sds",
+      "text": "프로젝트에서 내린 주요 기술 선택과 그 이유를 설명해 주세요.",
+      "why": "from a mock-interview prep site, not a candidate report"
+    },
+    {
+      "id": "samsung-sds",
+      "text": "시스템 성능을 개선하거나 장애에 대응했던 경험을 말씀해 주세요.",
+      "why": "from a mock-interview prep site, not a candidate report"
+    },
+    {
+      "id": "kogas",
+      "text": "LNG에 대해 아는 대로 설명해 주시겠습니까?",
+      "why": "only source was a paid-report listing"
+    },
+    {
+      "id": "kogas",
+      "text": "캐비테이션과 수격현상의 원인과 방지 대책을 설명해 주세요.",
+      "why": "only source was a paid-report listing"
+    },
+    {
+      "id": "kogas",
+      "text": "가스 플랜트 설계 시 고려해야 할 안전 기준은 무엇입니까?",
+      "why": "only source was a paid-report listing"
+    },
+    {
+      "id": "coupang",
+      "text": "MSA 구조와 로드밸런싱에 대해 설명해 주세요.",
+      "why": "only seen in a search summary, page not verified"
+    },
+    {
+      "id": "coupang",
+      "text": "Spring의 IoC, DI, AOP 개념을 설명해 주세요.",
+      "why": "only seen in a search summary, page not verified"
+    }
+  ],
+  "reclassify": [
+    {
+      "id": "nhis",
+      "category": "PT·토론",
+      "basis": "공식자료",
+      "why": "topics came from a paid-material preview, not candidates; kept as business-derived practice topics"
+    },
+    {
+      "id": "korea-expressway",
+      "text": "한국도로공사의 사업 중 알고 있는 것을 말씀해 주세요.",
+      "basis": "공식자료",
+      "why": "came from a paid-material preview; kept as generic institution-derived questions"
+    },
+    {
+      "id": "korea-expressway",
+      "text": "민원 응대에 가장 필요한 능력은 무엇이라고 생각하십니까?",
+      "basis": "공식자료",
+      "why": "came from a paid-material preview; kept as generic institution-derived questions"
+    }
+  ],
+  "dropSources": [
+    {
+      "id": "samsung-sds",
+      "urlIncludes": "welldone-interview.co.kr"
+    },
+    {
+      "id": "nhis",
+      "urlIncludes": "happycampus.com"
+    }
+  ],
+  "dropSourcesEverywhere": [
+    "happycampus.com",
+    "happyhaksul.com",
+    "welldone-interview.co.kr"
+  ]
+}

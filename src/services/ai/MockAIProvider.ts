@@ -214,7 +214,7 @@ export class MockAIProvider implements AIProvider {
       push(
         s.roleClaim
           ? { ko: `${k}${objectParticle(k)} 맡으시면서 가장 어려웠던 점은 무엇이었나요?`, en: `What was the hardest part of owning ${k}?` }
-          : { ko: `${k}${k.endsWith("프로젝트") ? "를 진행하면서" : "을 만들면서"} 가장 어려웠던 점은 무엇이었나요?`, en: `What was the hardest part of building ${k}?` },
+          : { ko: `${k}${projectVerb(k)} 가장 어려웠던 점은 무엇이었나요?`, en: `What was the hardest part of ${k}?` },
         "deep_dive",
         { ko: `'${k}'${josa(k, "을/를")} 언급했지만 그 과정에서의 어려움과 본인의 판단은 아직 나오지 않았습니다.`, en: `Mentions '${k}' but not the challenges or the candidate's decisions.` },
         k,
@@ -262,8 +262,8 @@ export class MockAIProvider implements AIProvider {
       );
     }
 
-    // 9) Vague.
-    if (!action && !topic && s.methods.length === 0 && !s.project && !s.roleClaim) {
+    // 9) Vague (a substantial self-introduction is not "abstract" — move on instead).
+    if (!action && !topic && s.methods.length === 0 && !s.project && !s.roleClaim && !(opening && s.chars > 80)) {
       push(
         { ko: "조금 추상적으로 들리는데, 실제 사례를 하나 들어주실 수 있을까요?", en: "That sounds a bit abstract — could you give me one real example?" },
         "deep_dive",
@@ -420,6 +420,13 @@ const CATEGORY_TO_TYPE: Record<CompanyQuestionCategory, QuestionType> = {
   직무: "technical",
   기술: "technical",
 };
+
+/** "쇼핑몰 프로젝트를 진행하면서", "결제 시스템을 만들면서", "현장실습에서" */
+function projectVerb(k: string): string {
+  if (/(?:서비스|기능|플랫폼|시스템|파이프라인|대시보드|앱)$/.test(k)) return `${objectParticle(k)} 만들면서`;
+  if (/(?:프로젝트|캠페인)$/.test(k)) return `${objectParticle(k)} 진행하면서`;
+  return "에서";
+}
 
 /** Only call an answer off-topic when there's nothing concrete to hold on to. */
 function isOffTopic(s: Signals): boolean {

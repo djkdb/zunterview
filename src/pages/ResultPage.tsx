@@ -1,20 +1,23 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { motion } from "framer-motion";
-import { CATEGORY_LABEL, DIFFICULTY_LABEL, INTERVIEW_TYPE_LABEL } from "../../shared/labels";
-import { CategoryBars } from "../components/CategoryBars";
+import { CATEGORY_KEYS } from "../../shared/schemas";
 import { FeedbackCard } from "../components/FeedbackCard";
 import { ScoreChart } from "../components/ScoreChart";
 import { ScoreRing } from "../components/ScoreRing";
+import { Stamp } from "../components/Stamp";
 import { TopBar } from "../components/TopBar";
 import { Button } from "../components/ui/Button";
 import { DownloadIcon, ShareIcon } from "../components/ui/icons";
-import { DISCLAIMER, INTERVIEWER_NAME } from "../config/options";
+import { CATEGORY_DESC_KO, CATEGORY_KO, DIFFICULTY_KO, EXPERIENCE_KO, INTERVIEW_TYPE_KO, grade } from "../config/labelsKo";
+import { DISCLAIMER } from "../config/options";
+import { applicantNumber, buildPanel, seatFor } from "../config/panel";
 import type { Interview } from "../types/interview";
 import { durationLabel, longDate } from "../utils/format";
 import { downloadReport } from "../utils/report";
-import { strongestAndWeakest } from "../utils/scoring";
+import { scoreTone, strongestAndWeakest } from "../utils/scoring";
 import { shareResult } from "../utils/shareCard";
 import { loadInterview, previousFor } from "../utils/storage";
+import { TONE_BG, TONE_TEXT } from "../utils/tones";
 
 interface Props {
   interview: Interview;
@@ -26,30 +29,53 @@ interface Props {
 }
 
 const reveal = (delay: number) => ({
-  initial: { opacity: 0, y: 16 },
+  initial: { opacity: 0, y: 12 },
   animate: { opacity: 1, y: 0 },
-  transition: { delay, duration: 0.5, ease: "easeOut" as const },
+  transition: { delay, duration: 0.45, ease: "easeOut" as const },
 });
+
+function SheetSection({ no, title, children, delay = 0 }: { no: number; title: string; children: ReactNode; delay?: number }) {
+  return (
+    <motion.section {...reveal(delay)} className="mt-8">
+      <h2 className="mb-3 border-b-2 border-navy pb-1.5 text-[15px] font-extrabold text-navy">
+        {no}. {title}
+      </h2>
+      {children}
+    </motion.section>
+  );
+}
 
 export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onHistory, onHome }: Props) {
   const [open, setOpen] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
+  const panel = useMemo(() => buildPanel(i.config.position), [i.config.position]);
   const scores = i.categoryScores!;
+  const overall = i.overallScore ?? 0;
   const { strongest, weakest } = strongestAndWeakest(scores);
   const r = i.report;
   const previous = useMemo(() => previousFor(i), [i]);
-  const previousScores = useMemo(() => (previous ? loadInterview(previous.id)?.categoryScores ?? null : null), [previous]);
-  const delta = previous ? (i.overallScore ?? 0) - previous.score : null;
+  const previousScores = useMemo(() => (previous ? (loadInterview(previous.id)?.categoryScores ?? null) : null), [previous]);
+  const delta = previous ? overall - previous.score : null;
 
   const flash = (msg: string) => {
     setToast(msg);
     setTimeout(() => setToast(null), 2600);
   };
-
   const share = async () => {
     const res = await shareResult(i);
-    flash(res === "shared" ? "Shared." : res === "downloaded" ? "Result card saved as an image." : res === "copied" ? "Result summary copied." : "Sharing isn't available here.");
+    flash(res === "shared" ? "공유했습니다." : res === "downloaded" ? "결과 카드 이미지를 저장했습니다." : res === "copied" ? "결과 요약을 복사했습니다." : "이 환경에서는 공유할 수 없습니다.");
   };
+
+  const info: [string, ReactNode][] = [
+    ["지원번호", applicantNumber(i.id)],
+    ["지원 직무", i.config.position],
+    ["면접 유형", `${INTERVIEW_TYPE_KO[i.config.interviewType]} · ${DIFFICULTY_KO[i.config.difficulty]}`],
+    ["경력 구분", EXPERIENCE_KO[i.config.experience]],
+    ["면접 일시", longDate(i.createdAt)],
+    ["소요 시간", durationLabel(i.duration)],
+    ["면접 위원", `${panel.center.name}(위원장) · ${panel.left.name} · ${panel.right.name}`],
+    ["답변 문항", `${i.questions.length} / ${i.config.questionLimit}문항${i.endedEarly ? " (조기 종료)" : ""}`],
+  ];
 
   return (
     <div className="min-h-dvh pb-20">
@@ -58,157 +84,194 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onHist
         right={
           <>
             <Button size="sm" variant="ghost" onClick={onHistory}>
-              History
+              나의 면접 기록
             </Button>
-            <Button size="sm" variant="secondary" onClick={onNew}>
-              New interview
+            <Button size="sm" variant="primary" onClick={onNew}>
+              다시 면접 보기
             </Button>
           </>
         }
       />
 
-      <main className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-        {/* hero */}
-        <section className="flex flex-col items-center pt-6 text-center sm:pt-10">
-          <motion.p {...reveal(0)} className="label text-accent">
-            {fromHistory ? "Interview report" : "Interview complete"}
+      <main className="mx-auto w-full max-w-4xl px-3 pt-6 sm:px-6 sm:pt-10">
+        {!fromHistory && (
+          <motion.p {...reveal(0)} className="no-print mb-4 text-center text-sm text-muted">
+            수고하셨습니다. 면접위원이 작성한 평가표입니다.
           </motion.p>
-          <motion.p {...reveal(0.05)} className="mt-2 text-sm text-muted">
-            {i.config.position} · {INTERVIEW_TYPE_LABEL[i.config.interviewType]} · {DIFFICULTY_LABEL[i.config.difficulty]} · {longDate(i.createdAt)} · {durationLabel(i.duration)}
-          </motion.p>
-          <motion.div {...reveal(0.15)} className="mt-8">
-            <p className="label mb-3">Overall</p>
-            <ScoreRing score={i.overallScore ?? 0} size={210} />
-          </motion.div>
-          {r && (
-            <motion.div {...reveal(0.9)} className="mt-6 max-w-2xl">
-              <p className="text-lg text-ink sm:text-xl">{r.headline}</p>
-              <p className="mt-3 text-sm text-faint">
-                <span className="font-mono tracking-[0.2em]">{INTERVIEWER_NAME}</span> — “{r.closingRemark}”
-              </p>
-            </motion.div>
-          )}
-          {i.endedEarly && <p className="mt-3 text-xs text-warn">Ended early — based on {i.questions.length} answered question(s).</p>}
-        </section>
-
-        {/* scores */}
-        <motion.section {...reveal(0.4)} className="mt-12 grid gap-6 lg:grid-cols-2" aria-label="Category scores">
-          <div className="rounded-3xl border border-line bg-surface/70 p-4 sm:p-6">
-            <div className="flex items-center justify-between">
-              <h2 className="label">Score profile</h2>
-              {previousScores && (
-                <span className="flex items-center gap-3 text-[11px] text-faint">
-                  <span className="flex items-center gap-1.5"><span className="h-0.5 w-4 bg-accent" />Current</span>
-                  <span className="flex items-center gap-1.5"><span className="h-0.5 w-4 border-t border-dashed border-faint" />Previous</span>
-                </span>
-              )}
-            </div>
-            <ScoreChart scores={scores} previous={previousScores} />
-          </div>
-          <div className="rounded-3xl border border-line bg-surface/70 p-5 sm:p-7">
-            <h2 className="label mb-5">Categories</h2>
-            <CategoryBars scores={scores} highlight={{ strongest, weakest }} />
-          </div>
-        </motion.section>
-
-        {/* highlights */}
-        <motion.section {...reveal(0.55)} className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-2xl border border-good/20 bg-good/[0.04] p-5">
-            <p className="label text-good/80">Strongest area</p>
-            <p className="mt-2 text-2xl font-semibold text-ink">{CATEGORY_LABEL[strongest]}</p>
-            <p className="mt-1 font-mono text-sm text-good">{scores[strongest]}</p>
-          </div>
-          <div className="rounded-2xl border border-warn/20 bg-warn/[0.04] p-5">
-            <p className="label text-warn/80">Needs improvement</p>
-            <p className="mt-2 text-2xl font-semibold text-ink">{CATEGORY_LABEL[weakest]}</p>
-            <p className="mt-1 font-mono text-sm text-warn">{scores[weakest]}</p>
-          </div>
-          <div className="rounded-2xl border border-accent/25 bg-accent-soft/40 p-5 sm:col-span-2 lg:col-span-1">
-            <p className="label text-accent">Top feedback</p>
-            <p className="mt-2 text-[15px] leading-relaxed text-ink">{r?.topFeedback ?? "—"}</p>
-          </div>
-        </motion.section>
-
-        {/* comparison */}
-        {previous && delta !== null && (
-          <motion.section {...reveal(0.65)} className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 rounded-2xl border border-line bg-surface/60 px-5 py-4">
-            <p className="label">Compared with previous</p>
-            <div className="flex items-center gap-6 font-mono">
-              <span className="text-sm text-muted">
-                Previous <span className="ml-1 text-lg text-ink">{previous.score}</span>
-              </span>
-              <span className="text-sm text-muted">
-                Current <span className="ml-1 text-lg text-ink">{i.overallScore}</span>
-              </span>
-              <span className={`text-lg ${delta > 0 ? "text-good" : delta < 0 ? "text-warn" : "text-muted"}`}>
-                {delta > 0 ? `+${delta}` : delta}
-              </span>
-            </div>
-            <p className="text-xs text-faint sm:ml-auto">
-              vs. {previous.position} on {longDate(previous.createdAt)}. Score differences vary by questions asked — not a definitive measure of improvement.
-            </p>
-          </motion.section>
         )}
 
-        {/* narrative */}
-        {r && (
-          <motion.section {...reveal(0.7)} className="mt-10 grid gap-6 md:grid-cols-3" lang={i.config.language}>
-            {[
-              { title: "Strengths", items: r.strengths, dot: "bg-good" },
-              { title: "Improvements", items: r.improvements, dot: "bg-warn" },
-              { title: "Next steps", items: r.nextSteps, dot: "bg-accent" },
-            ].map((b) => (
-              <div key={b.title}>
-                <h2 className="label mb-3">{b.title}</h2>
-                <ul className="space-y-2.5">
-                  {b.items.map((x) => (
-                    <li key={x} className="flex gap-2.5 text-sm leading-relaxed text-ink/90">
-                      <span className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${b.dot}`} />
-                      {x}
-                    </li>
-                  ))}
-                </ul>
+        {/* the evaluation sheet */}
+        <motion.article {...reveal(0.05)} className="relative rounded-sm border border-line-strong bg-surface px-4 py-7 shadow-[0_18px_50px_-24px_rgba(23,35,59,0.35)] sm:px-10 sm:py-10">
+          <Stamp className="absolute top-3 right-3 sm:top-8 sm:right-10" />
+          <p className="font-mono text-[11px] tracking-[0.2em] text-faint">INTERVIEW//AI 모의면접센터</p>
+          <h1 className="mt-2 text-2xl font-extrabold tracking-[0.3em] text-navy sm:text-3xl">모의면접 평가표</h1>
+
+          <dl className="mt-6 grid grid-cols-[84px_1fr] border-t border-l border-line text-[13px] sm:grid-cols-[96px_1fr_96px_1fr] sm:text-[14px]">
+            {info.map(([k, v]) => (
+              <FragmentRow key={k} k={k} v={v} />
+            ))}
+          </dl>
+
+          <SheetSection no={1} title="종합 평가" delay={0.15}>
+            <div className="grid items-center gap-6 sm:grid-cols-[auto_1fr]">
+              <div className="flex items-center gap-5">
+                <ScoreRing score={overall} size={160} />
+                <div className="text-center">
+                  <p className="label">종합 등급</p>
+                  <p className="mt-1 flex h-16 w-16 items-center justify-center rounded-full border-[3px] border-navy font-mono text-3xl font-bold text-navy">{grade(overall)}</p>
+                </div>
               </div>
-            ))}
-          </motion.section>
-        )}
+              <div>
+                {r && <p className="text-[17px] leading-relaxed font-bold text-ink">{r.headline}</p>}
+                <div className="mt-3 grid grid-cols-2 gap-2 text-[13px]">
+                  <div className="rounded-lg border border-good/25 bg-good/[0.05] px-3 py-2">
+                    <p className="text-faint">가장 우수한 항목</p>
+                    <p className="font-bold text-good">
+                      {CATEGORY_KO[strongest]} {scores[strongest]}
+                    </p>
+                  </div>
+                  <div className="rounded-lg border border-warn/25 bg-warn/[0.05] px-3 py-2">
+                    <p className="text-faint">보완이 필요한 항목</p>
+                    <p className="font-bold text-warn">
+                      {CATEGORY_KO[weakest]} {scores[weakest]}
+                    </p>
+                  </div>
+                </div>
+                {previous && delta !== null && (
+                  <p className="mt-3 text-[13px] text-muted">
+                    지난 면접 대비{" "}
+                    <span className="font-mono">
+                      {previous.score} → {overall}
+                    </span>{" "}
+                    <b className={delta > 0 ? "text-good" : delta < 0 ? "text-warn" : "text-muted"}>({delta > 0 ? `+${delta}` : delta})</b>
+                    <span className="block text-[12px] text-faint">질문 구성이 달라 점수 차이가 실력 변화를 그대로 뜻하지는 않습니다.</span>
+                  </p>
+                )}
+              </div>
+            </div>
+          </SheetSection>
 
-        {/* question review */}
-        <section className="mt-12" aria-label="Question review" lang={i.config.language}>
-          <div className="mb-4 flex items-end justify-between">
-            <h2 className="label">Question review</h2>
-            <span className="text-xs text-faint">Tap a question for your answer, feedback and how to improve</span>
-          </div>
-          <ol className="space-y-2.5">
-            {i.questions.map((q, idx) => (
-              <FeedbackCard key={q.id} q={q} index={idx + 1} open={open === q.id} onToggle={() => setOpen(open === q.id ? null : q.id)} />
-            ))}
-          </ol>
-        </section>
+          <SheetSection no={2} title="항목별 평가" delay={0.25}>
+            <div className="grid gap-4 lg:grid-cols-[1fr_280px]">
+              <table className="w-full border-collapse text-[13px] sm:text-[14px]">
+                <thead>
+                  <tr className="bg-surface-2 text-muted">
+                    <th className="border border-line px-2 py-2 text-left font-semibold">평가 항목</th>
+                    <th className="hidden border border-line px-2 py-2 text-left font-semibold sm:table-cell">평가 기준</th>
+                    <th className="w-14 border border-line px-2 py-2 font-semibold">점수</th>
+                    <th className="w-12 border border-line px-2 py-2 font-semibold">등급</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {CATEGORY_KEYS.map((k, idx) => (
+                    <tr key={k}>
+                      <td className="border border-line px-2 py-2">
+                        <span className="font-semibold text-ink">{CATEGORY_KO[k]}</span>
+                        <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-surface-3">
+                          <motion.div
+                            className={`h-full rounded-full ${TONE_BG[scoreTone(scores[k])]}`}
+                            initial={{ width: 0 }}
+                            whileInView={{ width: `${scores[k]}%` }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.1 + idx * 0.06 }}
+                          />
+                        </div>
+                      </td>
+                      <td className="hidden border border-line px-2 py-2 text-muted sm:table-cell">{CATEGORY_DESC_KO[k]}</td>
+                      <td className={`border border-line px-2 py-2 text-center font-mono font-semibold ${TONE_TEXT[scoreTone(scores[k])]}`}>{scores[k]}</td>
+                      <td className="border border-line px-2 py-2 text-center font-bold text-ink">{grade(scores[k])}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <div className="rounded-lg border border-line bg-surface-2/60">
+                <ScoreChart scores={scores} previous={previousScores} />
+                {previousScores && <p className="pb-2 text-center text-[11px] text-faint">점선: 지난 면접</p>}
+              </div>
+            </div>
+          </SheetSection>
 
-        {/* actions */}
-        <section className="no-print mt-10 flex flex-wrap items-center justify-center gap-3">
+          {r && (
+            <SheetSection no={3} title="면접위원 종합 의견" delay={0.35}>
+              <div className="rounded-lg border border-line bg-surface-2/60 p-4 sm:p-5">
+                <p className="text-[16px] leading-relaxed font-bold text-navy">“{r.topFeedback}”</p>
+                <div className="mt-4 grid gap-5 md:grid-cols-3">
+                  {[
+                    { title: "강점", items: r.strengths, dot: "bg-good" },
+                    { title: "보완점", items: r.improvements, dot: "bg-warn" },
+                    { title: "다음 연습 과제", items: r.nextSteps, dot: "bg-accent" },
+                  ].map((b) => (
+                    <div key={b.title}>
+                      <h3 className="mb-2 text-[13px] font-bold text-ink">{b.title}</h3>
+                      <ul className="space-y-2" lang={i.config.language}>
+                        {b.items.map((x) => (
+                          <li key={x} className="flex gap-2 text-[14px] leading-relaxed text-ink/90">
+                            <span className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${b.dot}`} />
+                            {x}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-5 text-right text-[13px] text-muted">
+                  “{r.closingRemark}” — 면접위원장 <b className="text-ink">{panel.center.name}</b>
+                </p>
+              </div>
+            </SheetSection>
+          )}
+
+          <SheetSection no={4} title="문항별 평가" delay={0.45}>
+            <p className="mb-3 text-[13px] text-faint">문항을 누르면 내 답변, 평가 근거, 개선 방향을 볼 수 있습니다.</p>
+            <ol className="space-y-2" lang={i.config.language}>
+              {i.questions.map((q, idx) => (
+                <FeedbackCard
+                  key={q.id}
+                  q={q}
+                  index={idx + 1}
+                  open={open === q.id}
+                  onToggle={() => setOpen(open === q.id ? null : q.id)}
+                  asker={panel[seatFor(q.type, q.isFollowUp)]}
+                />
+              ))}
+            </ol>
+          </SheetSection>
+
+          <p className="mt-10 border-t border-line pt-4 text-center text-[12px] leading-relaxed text-faint">
+            {DISCLAIMER}
+            <br />본 평가표는 연습용 자료이며 실제 기업의 채용 결과와 무관합니다.
+          </p>
+        </motion.article>
+
+        <section className="no-print mt-8 flex flex-wrap items-center justify-center gap-2.5">
           <Button variant="secondary" onClick={() => downloadReport(i)} icon={<DownloadIcon width={16} height={16} />}>
-            Download report
+            평가표 다운로드
           </Button>
           <Button variant="secondary" onClick={share} icon={<ShareIcon width={16} height={16} />}>
-            Share result
+            결과 공유
           </Button>
           <Button variant="primary" onClick={onNew}>
-            Start new interview
+            다시 면접 보기
           </Button>
         </section>
-        <p className="mt-3 text-center text-[11px] text-faint">Shared cards include only position, score and top strength — never your answers.</p>
-
-        {!storageOk && <p className="mt-6 text-center text-xs text-warn">This interview couldn't be saved to local history (browser storage unavailable).</p>}
-        <p className="mt-10 text-center text-xs text-faint">{DISCLAIMER}</p>
+        <p className="no-print mt-3 text-center text-[12px] text-faint">공유 카드에는 직무·점수·강점만 담기며, 답변 내용은 포함되지 않습니다.</p>
+        {!storageOk && <p className="mt-4 text-center text-[13px] text-warn">브라우저 저장소를 사용할 수 없어 이 면접은 기록에 저장되지 않았습니다.</p>}
       </main>
 
       {toast && (
-        <div role="status" className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-full border border-line-strong bg-surface-2 px-4 py-2 text-sm text-ink shadow-xl">
+        <div role="status" className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-lg bg-navy px-4 py-2.5 text-sm text-white shadow-xl">
           {toast}
         </div>
       )}
     </div>
+  );
+}
+
+function FragmentRow({ k, v }: { k: string; v: ReactNode }) {
+  return (
+    <>
+      <dt className="border-r border-b border-line bg-surface-2 px-2.5 py-2 font-semibold whitespace-nowrap text-muted">{k}</dt>
+      <dd className="border-r border-b border-line px-2.5 py-2 font-medium break-keep text-ink">{v}</dd>
+    </>
   );
 }

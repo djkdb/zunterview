@@ -73,12 +73,12 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
   return (
     <div className="w-full">
       <div
-        className={`relative rounded-2xl border bg-surface/90 transition-colors duration-300 ${
-          voice.recording ? "border-good/50" : enabled ? "border-line-strong focus-within:border-accent/60" : "border-line"
+        className={`relative rounded-xl border bg-surface shadow-sm transition-colors duration-300 ${
+          voice.recording ? "border-good" : enabled ? "border-line-strong focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/15" : "border-line bg-surface-2"
         }`}
       >
         <label htmlFor="answer" className="sr-only">
-          Your answer
+          내 답변
         </label>
         <textarea
           id="answer"
@@ -98,7 +98,7 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
           placeholder={enabled ? copy.placeholder : copy.placeholderWaiting}
           rows={4}
           maxLength={4000}
-          className="block max-h-[38vh] min-h-[112px] w-full resize-y rounded-2xl bg-transparent px-4 pt-4 pb-2 text-[16px] leading-relaxed text-ink placeholder:text-faint focus:outline-none disabled:cursor-not-allowed sm:min-h-[128px] sm:px-5"
+          className="block max-h-[38vh] min-h-[112px] w-full resize-y rounded-xl bg-transparent px-4 pt-4 pb-2 text-[16px] leading-relaxed text-ink placeholder:text-faint focus:outline-none disabled:cursor-not-allowed sm:min-h-[128px] sm:px-5"
         />
         <AnimatePresence>
           {voice.recording && voice.interim && (
@@ -106,7 +106,7 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="px-4 pb-2 text-sm text-good/80 italic sm:px-5"
+              className="px-4 pb-2 text-sm text-good italic sm:px-5"
               aria-live="polite"
             >
               {voice.interim}
@@ -125,12 +125,12 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
               icon={voice.recording ? <StopIcon width={14} height={14} /> : <MicIcon width={14} height={14} />}
               className="h-9"
             >
-              {voice.recording ? "Stop" : "Record"}
+              {voice.recording ? "정지" : "음성 답변"}
             </Button>
           ) : null}
           {voice.recording && (
-            <span className="flex items-center gap-1.5 font-mono text-[10px] tracking-[0.16em] text-good uppercase">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-good" /> REC
+            <span className="flex items-center gap-1.5 text-[12px] font-semibold text-low">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-low" /> 녹음 중
             </span>
           )}
 
@@ -138,9 +138,9 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
             {left !== null && enabled && (
               <span
                 className={`font-mono text-xs tabular-nums ${over ? "text-low" : warn ? "text-warn" : "text-faint"}`}
-                aria-label="Time left for this answer"
+                aria-label="남은 답변 시간"
               >
-                <span className="hidden sm:inline">TIME LEFT </span>
+                <span className="hidden font-sans sm:inline">남은 시간 </span>
                 {over ? "00:00" : mmss(left)}
               </span>
             )}
@@ -152,9 +152,9 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
               disabled={!canSubmit}
               icon={<SendIcon width={14} height={14} />}
               className="h-9 px-4"
-              title="Submit answer (Ctrl/⌘ + Enter)"
+              title="답변 제출 (Ctrl/⌘ + Enter)"
             >
-              Submit
+              답변 제출
             </Button>
           </span>
         </div>
@@ -168,7 +168,7 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
         ) : warn ? (
           <span className="text-warn">{copy.timeAlmostUp}</span>
         ) : voice.recording ? (
-          <span className="text-good/80">{copy.recording}</span>
+          <span className="text-good">{copy.recording}</span>
         ) : !voice.supported ? (
           <span className="text-faint">{copy.textMode}</span>
         ) : enabled && !value.trim() ? (

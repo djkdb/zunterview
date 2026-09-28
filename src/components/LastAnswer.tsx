@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 
-/** Keeps the candidate's just-submitted answer visible while the AI works. */
+/** Keeps the candidate's just-submitted answer visible while the panel reviews it. */
 export function LastAnswer({ text, label, lang }: { text: string; label: string; lang: string }) {
   return (
     <motion.figure
-      initial={{ opacity: 0, y: 12 }}
+      initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
       lang={lang}
-      transition={{ duration: 0.35 }}
-      className="w-full max-w-2xl rounded-2xl border border-line bg-surface-2/60 px-5 py-4"
+      className="w-full rounded-xl border border-dashed border-line-strong bg-surface-2 px-5 py-3.5"
     >
-      <figcaption className="label mb-2">{label}</figcaption>
-      <blockquote className="line-clamp-4 text-[15px] leading-relaxed text-muted">{text}</blockquote>
+      <figcaption className="label mb-1.5">{label}</figcaption>
+      <blockquote className="line-clamp-3 text-[15px] leading-relaxed text-muted">{text}</blockquote>
     </motion.figure>
   );
 }

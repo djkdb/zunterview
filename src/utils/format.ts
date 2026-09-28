@@ -6,15 +6,17 @@ export function mmss(totalSeconds: number): string {
 export const pad2 = (n: number) => String(n).padStart(2, "0");
 
 export function shortDate(ts: number): string {
-  return new Date(ts).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  const d = new Date(ts);
+  return `${d.getMonth() + 1}.${pad2(d.getDate())}`;
 }
 
 export function longDate(ts: number): string {
-  return new Date(ts).toLocaleString("en-US", { year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  const d = new Date(ts);
+  return `${d.getFullYear()}.${pad2(d.getMonth() + 1)}.${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
 }
 
 export function durationLabel(sec: number): string {
   const m = Math.floor(sec / 60);
   const s = sec % 60;
-  return m ? `${m}m ${pad2(s)}s` : `${s}s`;
+  return m ? `${m}분 ${pad2(s)}초` : `${s}초`;
 }

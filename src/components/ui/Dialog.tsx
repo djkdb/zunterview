@@ -28,7 +28,7 @@ export function Dialog({ open, title, children, onClose, actions }: Props) {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4 backdrop-blur-[2px]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -45,7 +45,7 @@ export function Dialog({ open, title, children, onClose, actions }: Props) {
             exit={{ y: 8, opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 id="dialog-title" className="font-mono text-sm tracking-[0.14em] text-ink uppercase">
+            <h2 id="dialog-title" className="text-base font-bold text-ink">
               {title}
             </h2>
             <div className="mt-3 text-sm leading-relaxed text-muted">{children}</div>

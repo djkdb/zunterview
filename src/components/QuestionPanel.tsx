@@ -1,6 +1,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { QUESTION_TYPE_LABEL } from "../../shared/labels";
 import type { Copy } from "../config/copy";
+import { QUESTION_TYPE_KO } from "../config/labelsKo";
+import type { PanelMember } from "../config/panel";
 import type { Phase, ProcessingStage } from "../state/interviewMachine";
 import type { InterviewQuestion } from "../types/interview";
 import { pad2 } from "../utils/format";
@@ -11,6 +12,8 @@ interface Props {
   phase: Phase;
   stage: ProcessingStage | null;
   transitionText: string | null;
+  /** Interviewer asking the current question / reacting. */
+  speaker: PanelMember;
   copy: Copy;
 }
 
@@ -24,9 +27,9 @@ function Words({ text, delay = 0 }: { text: string; delay?: number }) {
         <motion.span
           key={`${w}-${i}`}
           className="inline-block"
-          initial={{ opacity: 0, y: 6, filter: "blur(4px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ delay: delay + i * 0.045, duration: 0.35, ease: "easeOut" }}
+          initial={{ opacity: 0, y: 4 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: delay + i * 0.04, duration: 0.3, ease: "easeOut" }}
         >
           {w}
           {i < words.length - 1 ? " " : ""}
@@ -36,97 +39,94 @@ function Words({ text, delay = 0 }: { text: string; delay?: number }) {
   );
 }
 
-export function QuestionPanel({ question, index, phase, stage, transitionText, copy }: Props) {
+function Speaker({ m }: { m: PanelMember }) {
+  return (
+    <span className="flex items-center gap-2">
+      <span className="flex h-7 w-7 items-center justify-center rounded-full text-[11px] font-bold text-white" style={{ background: m.look.suit }} aria-hidden>
+        {m.name[0]}
+      </span>
+      <span className="text-[13px] text-muted">
+        <b className="font-semibold text-ink">
+          {m.name} {m.title}
+        </b>{" "}
+        · {m.role}
+      </span>
+    </span>
+  );
+}
+
+/** Subtitle-style card: who is asking and what. */
+export function QuestionPanel({ question, index, phase, stage, transitionText, speaker, copy }: Props) {
   const transitioning = phase === "FOLLOW_UP" || phase === "NEXT_QUESTION";
   const analyzing = phase === "ANALYZING";
   const stageIdx = stage === "submitted" ? 0 : stage === "thinking" ? 1 : stage === "analyzing" ? 2 : -1;
 
   return (
-    <section aria-label="Current question" lang={copy.lang} className="relative min-h-[150px] w-full">
+    <section aria-label="현재 질문" lang={copy.lang} className="w-full">
       <AnimatePresence mode="wait">
         {transitioning ? (
-          <motion.div
-            key="transition"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.3 }}
-            className="flex flex-col items-center text-center"
-          >
-            <p className="max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-              <Words text={transitionText ?? ""} />
+          <motion.div key="transition" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.25 }} className="rounded-xl border border-line bg-surface px-5 py-4 shadow-sm">
+            <Speaker m={speaker} />
+            <p className="mt-2.5 text-lg leading-relaxed text-ink sm:text-xl">
+              “<Words text={transitionText ?? ""} />”
             </p>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className={`mt-5 inline-flex items-center gap-2 rounded-full border px-3 py-1 font-mono text-[10px] tracking-[0.2em] uppercase ${
-                phase === "FOLLOW_UP" ? "border-accent/50 bg-accent-soft text-accent" : "border-line-strong text-muted"
+            <span
+              className={`mt-3 inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-[12px] font-semibold ${
+                phase === "FOLLOW_UP" ? "bg-accent-soft text-accent" : "bg-surface-3 text-muted"
               }`}
             >
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-current" />
-              {phase === "FOLLOW_UP" ? copy.followUp : copy.nextQuestion}
-            </motion.span>
+              {phase === "FOLLOW_UP" ? `이어서 ${copy.followUp}` : copy.nextQuestion}
+            </span>
           </motion.div>
         ) : question ? (
           <motion.div
             key={question.id}
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: analyzing ? 0.55 : 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="flex flex-col items-center text-center"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.35, ease: "easeOut" }}
+            className={`rounded-xl border bg-surface px-5 py-4 shadow-sm transition-colors ${question.isFollowUp && !analyzing ? "border-accent/40" : "border-line"}`}
           >
-            <div className="mb-4 flex flex-wrap items-center justify-center gap-2">
-              <span className="font-mono text-[11px] tracking-[0.2em] text-faint">Q{pad2(index)}</span>
-              <span className="rounded-full border border-line px-2.5 py-0.5 font-mono text-[10px] tracking-[0.16em] text-muted uppercase">
-                {QUESTION_TYPE_LABEL[question.type]}
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <Speaker m={speaker} />
+              <span className="flex items-center gap-1.5">
+                <span className="rounded-md bg-surface-3 px-2 py-0.5 font-mono text-[11px] font-semibold text-muted">Q{pad2(index)}</span>
+                <span className="rounded-md border border-line px-2 py-0.5 text-[11px] text-muted">{QUESTION_TYPE_KO[question.type]}</span>
+                {question.isFollowUp && (
+                  <motion.span
+                    initial={{ scale: 0.85, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ delay: 0.15, type: "spring", stiffness: 300, damping: 18 }}
+                    className="rounded-md bg-accent px-2 py-0.5 text-[11px] font-semibold text-white"
+                  >
+                    ↳ {copy.followUp}
+                  </motion.span>
+                )}
               </span>
-              {question.isFollowUp && (
-                <motion.span
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: 0.15, type: "spring", stiffness: 300, damping: 18 }}
-                  className="rounded-full border border-accent/50 bg-accent-soft px-2.5 py-0.5 font-mono text-[10px] tracking-[0.16em] text-accent uppercase"
-                >
-                  ↳ {copy.followUp}
-                </motion.span>
-              )}
             </div>
 
-            {question.reaction && !analyzing && (
-              <p className="mb-3 max-w-2xl text-sm text-faint sm:text-base">{question.reaction}</p>
-            )}
+            {question.reaction && !analyzing && <p className="mt-3 text-[14px] text-faint">“{question.reaction}”</p>}
 
-            <h1 className={`max-w-3xl font-semibold tracking-tight text-ink ${analyzing ? "text-lg sm:text-xl" : "text-[22px] leading-snug sm:text-3xl sm:leading-snug lg:text-[34px]"}`}>
-              <Words text={question.text} delay={0.1} />
+            <h1 className={`mt-2 font-bold tracking-tight text-ink transition-all ${analyzing ? "text-base text-muted sm:text-lg" : "text-[20px] leading-snug sm:text-2xl lg:text-[28px] lg:leading-snug"}`}>
+              <Words text={question.text} delay={0.05} />
             </h1>
 
             {question.isFollowUp && question.anchor && !analyzing && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6 }}
-                className="mt-4 text-xs text-muted"
-              >
-                <span className="font-mono tracking-[0.14em] text-faint uppercase">{copy.pickingUp}</span>{" "}
-                <mark className="rounded bg-accent-soft px-1.5 py-0.5 text-accent">“{question.anchor}”</mark>
+              <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-3 text-[13px] text-muted">
+                {copy.pickingUp} <mark className="rounded bg-[#fff1b8] px-1.5 py-0.5 font-semibold text-ink">“{question.anchor}”</mark>
               </motion.p>
             )}
 
             {analyzing && (
-              <ol className="mt-6 flex items-center gap-2 sm:gap-3" aria-label="Processing">
+              <ol className="mt-4 flex flex-wrap items-center gap-2" aria-label="답변 처리 단계">
                 {copy.stages.map((label, i) => (
-                  <li key={label} className="flex items-center gap-2 sm:gap-3">
-                    <span
-                      className={`flex items-center gap-1.5 font-mono text-[10px] tracking-[0.14em] uppercase transition-colors duration-300 sm:text-[11px] ${
-                        i < stageIdx ? "text-good" : i === stageIdx ? "text-ink" : "text-faint"
-                      }`}
-                    >
-                      <span className={`h-1.5 w-1.5 rounded-full ${i < stageIdx ? "bg-good" : i === stageIdx ? "animate-pulse bg-accent" : "bg-white/15"}`} />
+                  <li key={label} className="flex items-center gap-2">
+                    <span className={`flex items-center gap-1.5 text-[13px] transition-colors ${i < stageIdx ? "text-good" : i === stageIdx ? "font-semibold text-ink" : "text-faint"}`}>
+                      <span className={`h-2 w-2 rounded-full ${i < stageIdx ? "bg-good" : i === stageIdx ? "animate-pulse bg-accent" : "bg-line-strong"}`} />
                       {label}
                     </span>
-                    {i < copy.stages.length - 1 && <span className="h-px w-3 bg-line-strong sm:w-6" />}
+                    {i < copy.stages.length - 1 && <span className="h-px w-4 bg-line-strong sm:w-8" />}
                   </li>
                 ))}
               </ol>

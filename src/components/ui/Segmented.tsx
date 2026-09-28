@@ -46,10 +46,10 @@ export function Segmented<T extends string | number>({ label, value, options, on
               tabIndex={active ? 0 : -1}
               onKeyDown={(e) => onKey(e, i)}
               onClick={() => onChange(o.value)}
-              className={`min-h-11 rounded-xl border px-2 py-2 text-sm transition-colors duration-200 ${
+              className={`min-h-11 rounded-lg border px-2 py-2 text-sm transition-colors duration-200 ${
                 active
-                  ? "border-accent/60 bg-accent-soft text-ink"
-                  : "border-line bg-surface-2/60 text-muted hover:border-line-strong hover:text-ink"
+                  ? "border-accent bg-accent-soft font-semibold text-accent"
+                  : "border-line-strong bg-surface text-muted hover:border-accent/40 hover:text-ink"
               }`}
             >
               <span className="block leading-tight">{o.label}</span>

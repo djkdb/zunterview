@@ -1,4 +1,4 @@
-import { INTERVIEW_TYPE_LABEL } from "../../shared/labels";
+import { INTERVIEW_TYPE_KO, grade } from "../config/labelsKo";
 import type { InterviewSummary } from "../types/interview";
 import { durationLabel, pad2, shortDate } from "../utils/format";
 import { scoreTone } from "../utils/scoring";
@@ -17,17 +17,17 @@ interface Props {
 export function InterviewHistory({ items, onOpen, onStart, canOpen, compact }: Props) {
   if (!items.length) {
     return (
-      <div className="rounded-2xl border border-dashed border-line-strong px-6 py-10 text-center">
-        <p className="font-mono text-xs tracking-[0.24em] text-faint">NO INTERVIEW YET</p>
-        <p className="mt-2 text-sm text-muted">Your completed interviews will appear here. They're stored only in this browser.</p>
-        <Button variant="secondary" className="mt-5" onClick={onStart}>
-          Start your first interview
+      <div className="rounded-xl border border-dashed border-line-strong bg-surface px-6 py-10 text-center">
+        <p className="text-base font-bold text-ink">아직 응시한 면접이 없습니다</p>
+        <p className="mt-1.5 text-sm text-muted">면접을 마치면 평가표가 이곳에 보관됩니다. 기록은 이 브라우저에만 저장돼요.</p>
+        <Button variant="primary" className="mt-5" onClick={onStart}>
+          첫 모의면접 보기
         </Button>
       </div>
     );
   }
   return (
-    <ol className="divide-y divide-line overflow-hidden rounded-2xl border border-line">
+    <ol className="divide-y divide-line overflow-hidden rounded-xl border border-line bg-surface">
       {items.map((s, idx) => {
         const openable = canOpen(s.id);
         return (
@@ -36,18 +36,18 @@ export function InterviewHistory({ items, onOpen, onStart, canOpen, compact }: P
               type="button"
               disabled={!openable}
               onClick={() => onOpen(s.id)}
-              className="flex w-full items-center gap-4 bg-surface/50 px-4 py-3.5 text-left transition-colors hover:bg-surface-2 disabled:cursor-default disabled:hover:bg-surface/50 sm:px-5"
+              className="flex w-full items-center gap-4 px-4 py-3.5 text-left transition-colors hover:bg-surface-2 disabled:cursor-default disabled:hover:bg-surface sm:px-5"
             >
               <span className="font-mono text-xs text-faint">{pad2(idx + 1)}</span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-sm text-ink">{s.position}</span>
-                <span className="mt-0.5 block text-xs text-faint">
-                  {INTERVIEW_TYPE_LABEL[s.interviewType]} · {s.questionCount} Q{!compact && ` · ${durationLabel(s.duration)}`}
+                <span className="block truncate text-[15px] font-semibold text-ink">{s.position}</span>
+                <span className="mt-0.5 block text-[12px] text-faint">
+                  {INTERVIEW_TYPE_KO[s.interviewType]} · {s.questionCount}문항{!compact && ` · ${durationLabel(s.duration)}`} · {shortDate(s.createdAt)}
                 </span>
               </span>
-              <span className="text-right">
-                <span className={`block font-mono text-xl tabular-nums ${TONE_TEXT[scoreTone(s.score)]}`}>{s.score}</span>
-                <span className="block font-mono text-[10px] tracking-[0.1em] text-faint uppercase">{shortDate(s.createdAt)}</span>
+              <span className="flex items-baseline gap-2">
+                <span className="rounded border border-line px-1.5 text-[12px] font-bold text-muted">{grade(s.score)}</span>
+                <span className={`font-mono text-xl font-semibold tabular-nums ${TONE_TEXT[scoreTone(s.score)]}`}>{s.score}</span>
               </span>
               {openable && <ChevronIcon className="text-faint" />}
             </button>

@@ -19,7 +19,7 @@ export function roleFamily(position: string): RoleFamily {
   if (/\bai\b|ml|machine|머신|인공지능|data scien|데이터 ?사이언|llm/.test(p)) return "ai";
   if (/product|pm|po\b|기획|프로덕트/.test(p)) return "pm";
   if (/design|디자인|ux|ui\b/.test(p)) return "designer";
-  if (/market|마케팅|growth|그로스|brand|브랜드/.test(p)) return "marketing";
+  if (/market|마케팅|마케터|growth|그로스|brand|브랜드/.test(p)) return "marketing";
   return "general";
 }
 
@@ -32,10 +32,11 @@ export const TYPE_PLAN: Record<InterviewType, QuestionType[]> = {
 };
 
 export const OPENING: BankItem[] = [
-  { ko: "좋습니다. 먼저 최근에 작업한 프로젝트 하나를 소개해주세요.", en: "Let's begin. Tell me about a project you worked on recently.", tags: ["mixed", "technical"] },
+  { ko: "먼저 1분 동안 간단하게 자기소개 부탁드립니다.", en: "First, please introduce yourself in about a minute.", tags: ["mixed", "hr"] },
+  { ko: "최근에 작업한 프로젝트 하나를 소개해 주시겠어요?", en: "Tell me about a project you worked on recently.", tags: ["technical"] },
   { ko: "가장 어려웠던 프로젝트 하나를 설명해주세요.", en: "Walk me through the most challenging project you've worked on.", tags: ["project", "behavioral"] },
-  { ko: "간단하게 자기소개 부탁드립니다.", en: "Please give me a brief introduction of yourself.", tags: ["hr"] },
-  { ko: "{position} 직무에 지원하신 이유를 말씀해주세요.", en: "What made you apply for this {position} role?", tags: ["hr", "mixed"] },
+  { ko: "{position} 직무에 지원하신 이유를 말씀해주세요.", en: "What made you apply for this {position} role?", tags: ["hr"] },
+  { ko: "우리 회사에 지원하신 동기를 말씀해 주세요.", en: "Why do you want to join our company?", tags: ["hr", "mixed"] },
 ];
 
 export const GENERAL: Record<Exclude<QuestionType, "opening" | "technical">, BankItem[]> = {
@@ -50,12 +51,14 @@ export const GENERAL: Record<Exclude<QuestionType, "opening" | "technical">, Ban
     { ko: "팀원이 당신의 방식에 강하게 반대한다면 어떻게 설득하시겠어요?", en: "If a teammate strongly opposed your approach, how would you convince them?" },
     { ko: "요구사항이 출시 직전에 크게 바뀐다면 어떻게 대응하시겠어요?", en: "If the requirements changed drastically right before launch, how would you respond?" },
     { ko: "우선순위가 충돌하는 두 요청을 동시에 받는다면 어떻게 결정하시겠어요?", en: "If you received two conflicting high-priority requests at once, how would you decide?" },
+    { ko: "상사가 부당하다고 느껴지는 지시를 한다면 어떻게 하시겠어요?", en: "What would you do if your manager gave an instruction you felt was unfair?", tags: ["hr", "mixed"] },
   ],
   reflection: [
     { ko: "그 경험을 다시 한다면 무엇을 다르게 하시겠어요?", en: "If you could do that again, what would you do differently?" },
     { ko: "최근 1년 동안 가장 크게 성장했다고 느낀 부분은 무엇인가요?", en: "Where do you feel you've grown the most in the past year?" },
     { ko: "실패했던 경험 하나와 그 경험에서 배운 점을 말씀해주세요.", en: "Tell me about a failure and what you learned from it.", tags: ["hr", "behavioral"] },
     { ko: "본인의 가장 큰 약점은 무엇이고, 어떻게 보완하고 있나요?", en: "What is your biggest weakness, and how are you working on it?", tags: ["hr"] },
+    { ko: "입사 후 5년 뒤 본인의 모습은 어떨 것 같나요?", en: "Where do you see yourself five years after joining?", tags: ["hr", "mixed"] },
   ],
   result: [
     { ko: "지금까지 만든 성과 중 수치로 설명할 수 있는 것이 있나요?", en: "Which of your results can you describe with numbers?" },

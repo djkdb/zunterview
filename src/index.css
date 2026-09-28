@@ -4,24 +4,27 @@
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --color-bg: #07070a;
-  --color-surface: #0d0d12;
-  --color-surface-2: #14141b;
-  --color-surface-3: #1b1b24;
-  --color-line: rgb(255 255 255 / 0.08);
-  --color-line-strong: rgb(255 255 255 / 0.14);
-  --color-ink: #f3f3f6;
-  --color-muted: #a1a1ad;
-  --color-faint: #6b6b78;
+  --color-bg: #f3f1ed;
+  --color-surface: #ffffff;
+  --color-surface-2: #f8f6f2;
+  --color-surface-3: #ece8e1;
+  --color-line: rgb(29 34 48 / 0.10);
+  --color-line-strong: rgb(29 34 48 / 0.18);
+  --color-ink: #1c2130;
+  --color-muted: #545a6a;
+  --color-faint: #868b98;
 
-  --color-accent: #8b7cf6;
-  --color-accent-2: #6c8cff;
-  --color-accent-soft: rgb(139 124 246 / 0.14);
+  /* corporate navy + calm semantic colors */
+  --color-accent: #1f4a86;
+  --color-accent-2: #2e6bb0;
+  --color-accent-soft: rgb(31 74 134 / 0.08);
+  --color-navy: #17233b;
+  --color-stamp: #c2372d;
 
-  --color-good: #62d2a2;
-  --color-ok: #8fb6ff;
-  --color-warn: #e6b56c;
-  --color-low: #d99090;
+  --color-good: #1d7f55;
+  --color-ok: #2e6bb0;
+  --color-warn: #a86a12;
+  --color-low: #b0443a;
 
   --animate-breathe: breathe 5s ease-in-out infinite;
 }
@@ -32,7 +35,7 @@
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html, body, #root {
@@ -50,29 +53,17 @@ body {
   overflow-x: hidden;
 }
 
-/* Subtle ambient light — calm, not neon. */
+/* Soft office light. */
 .ambient {
   background:
-    radial-gradient(1200px 600px at 50% -10%, rgb(139 124 246 / 0.10), transparent 60%),
-    radial-gradient(800px 500px at 100% 100%, rgb(108 140 255 / 0.06), transparent 60%),
+    radial-gradient(1200px 500px at 50% -10%, rgb(255 255 255 / 0.9), transparent 60%),
     var(--color-bg);
 }
 
-.grain::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.035;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  z-index: 60;
-}
-
 .label {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--color-faint);
 }
 
@@ -82,15 +73,64 @@ body {
   border-radius: 6px;
 }
 
-/* Wide mono tracking reads badly on Hangul — tighten it inside Korean content. */
-[lang="ko"] [class*="tracking-"],
-[lang="ko"] .label,
-.label[lang="ko"] {
-  letter-spacing: 0.02em !important;
+body {
+  word-break: keep-all;
 }
 
 ::selection {
-  background: rgb(139 124 246 / 0.35);
+  background: rgb(31 74 134 / 0.18);
+}
+
+/* ── Interview room character animations (SVG) ─────────────────────────── */
+.iv-part {
+  transform-box: fill-box;
+}
+.iv-blink {
+  transform-origin: center;
+  animation: iv-blink 5s infinite;
+}
+@keyframes iv-blink {
+  0%, 94%, 100% { transform: scaleY(1); }
+  96% { transform: scaleY(0.1); }
+}
+.iv-talk {
+  transform-origin: center top;
+  animation: iv-talk 0.32s ease-in-out infinite alternate;
+}
+@keyframes iv-talk {
+  from { transform: scaleY(0.25); }
+  to { transform: scaleY(1.15); }
+}
+.iv-nod {
+  transform-origin: 50% 100%;
+  animation: iv-nod 3.2s ease-in-out infinite;
+}
+@keyframes iv-nod {
+  0%, 70%, 100% { transform: rotate(0deg) translateY(0); }
+  80% { transform: rotate(0deg) translateY(3px); }
+  90% { transform: rotate(0deg) translateY(0); }
+}
+.iv-look-down {
+  transform-origin: 50% 100%;
+  transform: translateY(5px) rotate(0deg);
+  transition: transform 0.5s ease;
+}
+.iv-write {
+  animation: iv-write 0.7s ease-in-out infinite alternate;
+}
+@keyframes iv-write {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(4px, -1px); }
+  100% { transform: translate(8px, 1px); }
+}
+.iv-dots span {
+  animation: iv-dot 1s ease-in-out infinite;
+}
+.iv-dots span:nth-child(2) { animation-delay: 0.15s; }
+.iv-dots span:nth-child(3) { animation-delay: 0.3s; }
+@keyframes iv-dot {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
 }
 
 textarea {
@@ -113,5 +153,6 @@ textarea {
 
 @media print {
   body { background: #fff; color: #111; }
+  .ambient { background: #fff; }
   .no-print { display: none !important; }
 }

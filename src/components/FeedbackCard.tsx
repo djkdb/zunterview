@@ -1,61 +1,66 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { CATEGORY_KEYS } from "../../shared/schemas";
-import { CATEGORY_LABEL, QUESTION_TYPE_LABEL } from "../../shared/labels";
+import { CATEGORY_KO, QUESTION_TYPE_KO, grade } from "../config/labelsKo";
+import type { PanelMember } from "../config/panel";
 import type { InterviewQuestion } from "../types/interview";
 import { pad2 } from "../utils/format";
 import { scoreTone } from "../utils/scoring";
-import { ScoreBadge } from "./ScoreBadge";
 import { TONE_TEXT } from "../utils/tones";
+import { ScoreBadge } from "./ScoreBadge";
 import { ChevronIcon } from "./ui/icons";
 
-const STAR_MARK = { present: "✓", partial: "△", missing: "–" } as const;
-const STAR_COLOR = { present: "text-good", partial: "text-warn", missing: "text-faint" } as const;
+const STAR_MARK = { present: "○", partial: "△", missing: "×" } as const;
+const STAR_COLOR = { present: "text-good", partial: "text-warn", missing: "text-low" } as const;
+const STAR_KO = { situation: "상황", task: "과제", action: "행동", result: "결과" } as const;
 
 interface Props {
   q: InterviewQuestion;
   index: number;
   open: boolean;
   onToggle: () => void;
+  asker: PanelMember;
 }
 
-/** One row in QUESTION REVIEW: question → your answer → feedback → how to improve. */
-export function FeedbackCard({ q, index, open, onToggle }: Props) {
+/** One row of 문항별 평가: question → my answer → feedback → how to improve. */
+export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
   const f = q.feedback;
   if (!f || q.score === null) return null;
   const tone = scoreTone(q.score);
   const panelId = `review-${q.id}`;
   return (
-    <li className={`rounded-2xl border transition-colors ${open ? "border-line-strong bg-surface" : "border-line bg-surface/50 hover:border-line-strong"}`}>
-      <button type="button" onClick={onToggle} aria-expanded={open} aria-controls={panelId} className="flex w-full items-center gap-3 px-4 py-4 text-left sm:gap-4 sm:px-5">
-        <span className="font-mono text-xs text-faint">Q{pad2(index)}</span>
+    <li className={`rounded-lg border bg-surface transition-colors ${open ? "border-accent/40 shadow-sm" : "border-line hover:border-line-strong"}`}>
+      <button type="button" onClick={onToggle} aria-expanded={open} aria-controls={panelId} className="flex w-full items-center gap-3 px-4 py-3.5 text-left sm:gap-4">
+        <span className="font-mono text-[13px] font-semibold text-faint">Q{pad2(index)}</span>
         <span className="min-w-0 flex-1">
-          <span className="flex items-center gap-2">
-            {q.isFollowUp && <span className="font-mono text-[10px] tracking-[0.14em] text-accent uppercase">↳ Follow-up</span>}
-            <span className="font-mono text-[10px] tracking-[0.14em] text-faint uppercase">{QUESTION_TYPE_LABEL[q.type]}</span>
+          <span className="flex items-center gap-1.5 text-[11px] text-faint">
+            {q.isFollowUp && <span className="rounded bg-accent px-1.5 py-px font-semibold text-white">↳ 꼬리질문</span>}
+            <span>{QUESTION_TYPE_KO[q.type]}</span>
+            <span>· {asker.name} {asker.title}</span>
           </span>
-          <span className="mt-0.5 block truncate text-sm text-ink sm:text-[15px]">{q.text}</span>
+          <span className="mt-0.5 block truncate text-[15px] font-semibold text-ink">{q.text}</span>
         </span>
-        <span className={`font-mono text-xl tabular-nums ${TONE_TEXT[tone]}`}>{q.score}</span>
+        <span className="rounded border border-line px-1.5 text-[12px] font-bold text-muted">{grade(q.score)}</span>
+        <span className={`w-9 text-right font-mono text-xl font-semibold tabular-nums ${TONE_TEXT[tone]}`}>{q.score}</span>
         <ChevronIcon className={`shrink-0 text-faint transition-transform ${open ? "rotate-90" : ""}`} />
       </button>
 
       <AnimatePresence initial={false}>
         {open && (
           <motion.div id={panelId} initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
-            <div className="space-y-5 border-t border-line px-4 pt-4 pb-5 sm:px-5">
+            <div className="space-y-5 border-t border-line px-4 pt-4 pb-5">
               <div>
-                <p className="label mb-1.5">Question</p>
+                <p className="label mb-1">질문</p>
                 <p className="text-[15px] text-ink">{q.text}</p>
-                {q.isFollowUp && q.followUpReason && <p className="mt-1 text-xs text-faint">Why it was asked: {q.followUpReason}</p>}
+                {q.isFollowUp && q.followUpReason && <p className="mt-1 text-[13px] text-faint">질문 의도: {q.followUpReason}</p>}
               </div>
               <div>
-                <p className="label mb-1.5">Your answer {q.answerMode === "voice" && <span className="text-accent">· voice</span>}</p>
-                <p className="rounded-xl bg-white/[0.03] px-3 py-2.5 text-sm leading-relaxed whitespace-pre-wrap text-muted">{q.answer}</p>
+                <p className="label mb-1">내 답변 {q.answerMode === "voice" && <span className="font-normal text-accent">· 음성 답변</span>}</p>
+                <p className="rounded-lg bg-surface-2 px-3.5 py-2.5 text-[14px] leading-relaxed whitespace-pre-wrap text-muted">{q.answer}</p>
                 {f.evidence.length > 0 && (
-                  <p className="mt-2 flex flex-wrap gap-1.5 text-xs">
-                    <span className="text-faint">Evidence used:</span>
+                  <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[12px]">
+                    <span className="text-faint">평가 근거:</span>
                     {f.evidence.map((e) => (
-                      <mark key={e} className="rounded bg-accent-soft px-1.5 text-accent">
+                      <mark key={e} className="rounded bg-[#fff1b8] px-1.5 text-ink">
                         “{e}”
                       </mark>
                     ))}
@@ -64,24 +69,24 @@ export function FeedbackCard({ q, index, open, onToggle }: Props) {
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2">
-                <div className="rounded-xl border border-good/20 bg-good/[0.05] p-3.5">
-                  <p className="label mb-1 text-good/80">Strength</p>
-                  <p className="text-sm text-ink/90">{f.strength}</p>
+                <div className="rounded-lg border border-good/25 bg-good/[0.05] p-3.5">
+                  <p className="label mb-1 text-good">잘한 점</p>
+                  <p className="text-[14px] text-ink">{f.strength}</p>
                 </div>
-                <div className="rounded-xl border border-warn/20 bg-warn/[0.05] p-3.5">
-                  <p className="label mb-1 text-warn/80">Improve</p>
-                  <p className="text-sm text-ink/90">{f.improve}</p>
+                <div className="rounded-lg border border-warn/25 bg-warn/[0.05] p-3.5">
+                  <p className="label mb-1 text-warn">보완할 점</p>
+                  <p className="text-[14px] text-ink">{f.improve}</p>
                 </div>
               </div>
 
               <div>
-                <p className="label mb-2">Scores</p>
+                <p className="label mb-2">항목별 점수</p>
                 <ul className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2">
                   {CATEGORY_KEYS.map((k) => (
-                    <li key={k} className="flex items-start gap-2 text-xs">
+                    <li key={k} className="flex items-start gap-2 text-[13px]">
                       <ScoreBadge score={f.scores[k].score} tone={scoreTone(f.scores[k].score)} small />
                       <span>
-                        <span className="text-ink/90">{CATEGORY_LABEL[k]}</span> <span className="text-faint">— {f.scores[k].reason}</span>
+                        <span className="font-semibold text-ink">{CATEGORY_KO[k]}</span> <span className="text-muted">— {f.scores[k].reason}</span>
                       </span>
                     </li>
                   ))}
@@ -90,50 +95,55 @@ export function FeedbackCard({ q, index, open, onToggle }: Props) {
 
               {f.star.applicable && (
                 <div>
-                  <p className="label mb-2">STAR structure</p>
-                  <div className="grid grid-cols-4 gap-2">
-                    {(["situation", "task", "action", "result"] as const).map((k) => (
-                      <div key={k} className="rounded-xl border border-line bg-white/[0.02] p-2.5 text-center" title={f.star[k].note}>
-                        <p className="font-mono text-[10px] tracking-[0.14em] text-faint uppercase">
-                          <span className="text-ink">{k[0].toUpperCase()}</span>
-                          <span className="hidden sm:inline">{k.slice(1)}</span>
-                        </p>
-                        <p className={`mt-1 text-lg ${STAR_COLOR[f.star[k].status]}`} aria-label={f.star[k].status}>
-                          {STAR_MARK[f.star[k].status]}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                  {(["situation", "task", "action", "result"] as const).some((k) => f.star[k].status !== "present") && (
-                    <p className="mt-2 text-xs text-muted">
-                      {(["result", "action", "task", "situation"] as const).map((k) => f.star[k]).find((p) => p.status !== "present")?.note}
-                    </p>
+                  <p className="label mb-2">STAR 구조 점검</p>
+                  <table className="w-full table-fixed border-collapse text-center text-[13px]">
+                    <thead>
+                      <tr>
+                        {(["situation", "task", "action", "result"] as const).map((k) => (
+                          <th key={k} className="border border-line bg-surface-2 py-1.5 font-semibold text-muted">
+                            {k[0].toUpperCase()} · {STAR_KO[k]}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        {(["situation", "task", "action", "result"] as const).map((k) => (
+                          <td key={k} className="border border-line py-2" title={f.star[k].note}>
+                            <span className={`text-lg font-bold ${STAR_COLOR[f.star[k].status]}`}>{STAR_MARK[f.star[k].status]}</span>
+                          </td>
+                        ))}
+                      </tr>
+                    </tbody>
+                  </table>
+                  {(["result", "action", "task", "situation"] as const).map((k) => f.star[k]).find((p) => p.status !== "present")?.note && (
+                    <p className="mt-2 text-[13px] text-muted">{(["result", "action", "task", "situation"] as const).map((k) => f.star[k]).find((p) => p.status !== "present")?.note}</p>
                   )}
                 </div>
               )}
 
-              <div className="rounded-xl border border-accent/20 bg-accent-soft/40 p-4">
-                <p className="label mb-3 text-accent">How to improve</p>
-                <dl className="space-y-2 text-sm">
+              <div className="rounded-lg border border-accent/25 bg-accent-soft p-4">
+                <p className="label mb-3 text-accent">이렇게 답하면 더 좋아요</p>
+                <dl className="space-y-2 text-[14px]">
                   <div className="flex gap-3">
-                    <dt className="w-16 shrink-0 font-mono text-[10px] tracking-[0.14em] text-faint uppercase">Problem</dt>
-                    <dd className="text-ink/90">{f.betterAnswer.problem}</dd>
+                    <dt className="w-14 shrink-0 font-semibold text-faint">문제점</dt>
+                    <dd className="text-ink">{f.betterAnswer.problem}</dd>
                   </div>
                   <div className="flex gap-3">
-                    <dt className="w-16 shrink-0 font-mono text-[10px] tracking-[0.14em] text-faint uppercase">Improve</dt>
-                    <dd className="text-ink/90">{f.betterAnswer.suggestion}</dd>
+                    <dt className="w-14 shrink-0 font-semibold text-faint">개선</dt>
+                    <dd className="text-ink">{f.betterAnswer.suggestion}</dd>
                   </div>
                   <div className="flex gap-3">
-                    <dt className="w-16 shrink-0 font-mono text-[10px] tracking-[0.14em] text-faint uppercase">Example</dt>
+                    <dt className="w-14 shrink-0 font-semibold text-faint">예시</dt>
                     <dd>
-                      <span className="text-ink/90 italic">{f.betterAnswer.example}</span>
-                      <span className="mt-1 block text-[11px] text-faint">Illustrative example only — fill the [brackets] with your real facts. Not a claim about your experience.</span>
+                      <span className="text-ink italic">{f.betterAnswer.example}</span>
+                      <span className="mt-1 block text-[12px] text-faint">※ 예시 문장입니다. [괄호]에는 본인의 실제 경험과 수치를 넣어 주세요.</span>
                     </dd>
                   </div>
                 </dl>
                 {f.notFound.length > 0 && (
-                  <p className="mt-3 text-xs text-muted">
-                    <span className="text-faint">Not found in your answer:</span> {f.notFound.join(" · ")}
+                  <p className="mt-3 text-[13px] text-muted">
+                    <span className="text-faint">답변에서 확인되지 않은 정보:</span> {f.notFound.join(" · ")}
                   </p>
                 )}
               </div>

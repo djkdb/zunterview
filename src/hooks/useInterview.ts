@@ -4,6 +4,7 @@
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { GeneratedQuestion, ReportRequest, Usage } from "../../shared/schemas";
+import { buildPanel, seatFor, type Seat } from "../config/panel";
 import { SAMPLE_ANSWERS } from "../config/sampleAnswers";
 import { AIRequestError, type AIProvider } from "../services/ai/AIProvider";
 import { injectFailure } from "../services/ai/faults";
@@ -92,12 +93,13 @@ export function useInterview() {
 
   /* ─────────────────────────── voice helpers ─────────────────────────── */
 
-  const say = useCallback(async (text: string, run: number) => {
+  const say = useCallback(async (text: string, run: number, seat: Seat = "center") => {
     const i = stateRef.current.interview;
     if (!i) return;
     if (voiceRef.current && isSpeechSynthesisSupported()) {
       setSpeaking(true);
-      await speak(text, speechLang(i.config));
+      const v = buildPanel(i.config.position)[seat].voice;
+      await speak(text, speechLang(i.config), { pitch: v.pitch, rate: v.rate, voiceIndex: v.index });
       if (runRef.current === run) setSpeaking(false);
     } else {
       // Give the reader time proportional to the text (short, never sluggish).
@@ -168,7 +170,11 @@ export function useInterview() {
         source: next.source,
       };
       dispatch({ type: "QUESTION", question, now: Date.now() });
-      await say(question.text, run);
+      const seat = seatFor(question.type, question.isFollowUp);
+      // First question: the panel chair greets the candidate, as in a real interview.
+      if (reaction && stateRef.current.interview?.questions.length === 1) await say(reaction, run, "center");
+      if (runRef.current !== run) return;
+      await say(question.text, run, seat);
       if (runRef.current === run) dispatch({ type: "LISTEN" });
     },
     [dispatch, say],
@@ -179,6 +185,10 @@ export function useInterview() {
       cancelSpeech();
       setSpeaking(false);
       dispatch({ type: "COMPLETE", endedEarly, now: Date.now() });
+      const lang = stateRef.current.interview?.config.language;
+      if (voiceRef.current && stateRef.current.interview?.questions.length) {
+        void say(lang === "en" ? "That concludes our interview. Thank you for your time." : "이상으로 면접을 마치겠습니다. 수고 많으셨습니다.", run, "center");
+      }
       const i = stateRef.current.interview!;
       if (!i.questions.length || !i.categoryScores || i.overallScore === null) {
         dispatch({ type: "OPEN_SETUP" });
@@ -213,7 +223,7 @@ export function useInterview() {
       dispatch({ type: "REPORT", report, source });
       setStorageOk(saveInterview(stateRef.current.interview!));
     },
-    [dispatch],
+    [dispatch, say],
   );
 
   const processAnswer = useCallback(
@@ -243,8 +253,9 @@ export function useInterview() {
         if (runRef.current !== run) return;
         dispatch({ type: "ANALYZED", questionId: q.id, analysis, score: answerScore(analysis), source: provider.kind });
 
+        const askedBy = seatFor(q.type, q.isFollowUp);
         if (last) {
-          await say(analysis.reaction, run);
+          await say(analysis.reaction, run, askedBy);
           if (runRef.current === run) await complete(false, run);
           return;
         }
@@ -272,7 +283,7 @@ export function useInterview() {
         if (runRef.current !== run) return;
 
         dispatch({ type: "TRANSITION", kind: next.isFollowUp ? "FOLLOW_UP" : "NEXT_QUESTION", text: analysis.reaction });
-        await say(analysis.reaction, run);
+        await say(analysis.reaction, run, askedBy);
         if (runRef.current !== run) return;
         await present(next, run, analysis.reaction);
       } catch (err) {
@@ -335,7 +346,8 @@ export function useInterview() {
     try {
       const first = await pending;
       if (runRef.current !== run) return;
-      await present(first, run);
+      const ko = stateRef.current.interview?.config.language !== "en";
+      await present(first, run, ko ? "반갑습니다. 편하게 앉으세요. 지금부터 면접을 시작하겠습니다." : "Welcome, please have a seat. Let's begin the interview.");
     } catch (err) {
       if (runRef.current !== run) return;
       fail(err, () => {

@@ -20,6 +20,7 @@ import {
 } from "../../../shared/schemas";
 import { clampScore, sanitizeAnalysis, sanitizeFollowUp } from "../../../shared/sanitize";
 import { CATEGORY_LABEL } from "../../../shared/labels";
+import { CATEGORY_KO } from "../../config/labelsKo";
 import { isDuplicateQuestion } from "../../utils/fingerprint";
 import { delay } from "../../utils/id";
 import type { AIProvider } from "./AIProvider";
@@ -306,7 +307,7 @@ export class MockAIProvider implements AIProvider {
     const worstTurn = [...req.turns].sort((a, b) => a.score - b.score)[0];
     const bestIdx = req.turns.indexOf(bestTurn) + 1;
     const worstIdx = req.turns.indexOf(worstTurn) + 1;
-    const names = lang === "ko" ? CATEGORY_LABEL_KO : CATEGORY_LABEL;
+    const names = lang === "ko" ? CATEGORY_KO : CATEGORY_LABEL;
     const sName = names[strongest];
     const wName = names[weakest];
 
@@ -447,15 +448,6 @@ function betterAnswerFor(k: CategoryKey, s: Signals): AnswerAnalysis["betterAnsw
   };
   return m[k];
 }
-
-const CATEGORY_LABEL_KO: Record<CategoryKey, string> = {
-  relevance: "관련성",
-  logic: "논리성",
-  specificity: "구체성",
-  structure: "구조",
-  communication: "전달력",
-  confidence: "자신감",
-};
 
 const TOP_FEEDBACK: Record<CategoryKey, Localized> = {
   relevance: { ko: "질문의 핵심에 대한 답을 첫 문장에 먼저 말하면 전달력이 크게 좋아집니다.", en: "Lead with a direct answer to the question in your first sentence." },

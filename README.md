@@ -3,15 +3,16 @@
 > AI가 질문만 하는 것이 아니라, 내 답변을 듣고 다시 파고든다.
 > *Your interviewer adapts to your answers.*
 
-브라우저에서 AI 면접관 **ALEX**와 실제 대화하듯 모의면접을 진행하는 웹앱입니다.
+브라우저에서 **실제 한국 기업 면접장**처럼 꾸민 모의면접실에서, AI 면접관 3인(인사팀 책임 · 면접위원장 · 실무 면접관)과 다대일 면접을 진행하는 웹앱입니다.
 
 ```
 질문 → 답변 → AI 분석 → 꼬리질문(Follow-up) → 다시 답변 → 다음 질문 → … → 종합 리포트
 ```
 
+- **면접장 연출**: 대기실(모의면접 수험표) → 호명("지원번호 ○○번 지원자님, 입실해 주세요") → 문이 열리며 입실 → 면접위원장의 인사로 시작. 면접실에는 긴 책상, 명패, 생수병, 벽시계(실제 시간), 회사 스크린이 있고, 질문 유형에 따라 면접관이 번갈아 질문합니다(기술 질문은 실무 면접관, 성찰·인성은 인사 면접관). 질문 중인 면접관은 입이 움직이고, 답변 검토 중에는 모두 평가표에 필기합니다.
 - **꼬리질문**: 답변에서 실제로 말한 표현(예: “성능 문제”)을 집어 다시 묻습니다. 화면에 *“답변에서 이어서 ‘성능 문제’”* 와 *이 질문을 한 이유* 가 함께 표시됩니다.
 - **답변 분석**: Relevance · Logic · Specificity · Structure · Communication · Confidence 6개 항목 + STAR + 근거 인용 + 개선 예시
-- **결과 화면**: 종합 점수 링, 레이더 차트, 항목별 바, 질문별 리뷰, 이전 면접과 비교, 리포트 다운로드(HTML), 결과 카드 공유(PNG)
+- **모의면접 평가표**: 인적사항 표, 종합 점수·등급(S~D), 항목별 평가표 + 레이더 차트, 면접위원 종합 의견, 문항별 평가(STAR ○△×), "모의면접 · 연습용" 도장, 평가표 다운로드(HTML), 결과 카드 공유(PNG)
 - **음성**: 질문 음성 출력(speechSynthesis), 답변 음성 입력(Web Speech API) — 미지원 브라우저는 자동으로 텍스트 모드
 - **MOCK MODE**: API 키 없이도 전체 흐름이 동작합니다 (답변을 실제로 읽고 꼬리질문을 만드는 규칙 기반 면접관)
 
@@ -89,8 +90,9 @@ src/
   services/speech/      speechRecognition · speechSynthesis
   state/                interviewMachine.ts — 단일 reducer 상태 머신
   hooks/                useInterview(오케스트레이터) · useTimer · useVoiceInput · useMediaQuery
-  components/           AIInterviewer · QuestionPanel · AnswerInput · InterviewNotes · IntroSequence
-                        ScoreRing · ScoreChart · CategoryBars · FeedbackCard · DebugPanel …
+  components/           InterviewRoom(면접실 SVG) · QuestionPanel · AnswerInput · InterviewNotes
+                        IntroSequence(대기실·호명·입실) · ScoreRing · ScoreChart · Stamp · FeedbackCard · DebugPanel …
+  config/               panel(면접관 3인·좌석 배정) · labelsKo(한국어 라벨·등급) · copy · options
   pages/                Landing · Setup · Interview · Result · History
   utils/                scoring · context · fingerprint · policy · storage · report · shareCard
 ```

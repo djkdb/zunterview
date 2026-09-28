@@ -71,12 +71,12 @@ export default function App() {
     setHistoryVersion((v) => v + 1);
   }, []);
 
-  const modeLabel = status?.mode === "ai" ? "AI MODE" : "MOCK MODE";
-  const engineLabel = status?.mode === "ai" ? `CLAUDE${status.model ? ` · ${status.model}` : ""}` : "MOCK";
+  const modeLabel = status?.mode === "ai" ? "AI 면접관" : "MOCK 모드";
+  const engineLabel = status?.mode === "ai" ? `Claude AI${status.model ? ` (${status.model})` : ""}` : "MOCK 면접관 (API 키 없음)";
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="ambient grain min-h-dvh">
+      <div className="ambient min-h-dvh">
         <AnimatePresence mode="wait">
           <motion.div key={screen} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
             {screen === "landing" && (

@@ -21,11 +21,11 @@ export function DebugPanel({ ctl, onClearData }: { ctl: InterviewController; onC
     ["TOKEN STATUS", tokens.calls ? `${tokens.calls} calls · in ${tokens.inputTokens} · out ${tokens.outputTokens}` : status?.mode === "ai" ? "0 calls" : "n/a (mock)"],
   ];
 
-  const btn = "rounded-md border border-white/10 bg-white/5 px-2 py-1.5 text-left text-[11px] text-ink hover:bg-white/10 disabled:opacity-30";
+  const btn = "rounded-md border border-white/10 bg-white/5 px-2 py-1.5 text-left text-[11px] text-white hover:bg-white/15 disabled:opacity-30";
 
   return (
-    <div className="no-print fixed right-3 bottom-3 z-[70] w-[300px] max-w-[calc(100vw-1.5rem)] rounded-xl border border-warn/30 bg-black/90 font-mono text-[11px] shadow-2xl backdrop-blur">
-      <button type="button" onClick={() => setOpen(!open)} className="flex w-full items-center justify-between px-3 py-2 text-warn">
+    <div className="no-print fixed right-3 bottom-3 z-[70] w-[300px] max-w-[calc(100vw-1.5rem)] rounded-xl border border-warn/30 bg-[#0f141f]/95 font-mono text-[11px] text-white shadow-2xl backdrop-blur">
+      <button type="button" onClick={() => setOpen(!open)} className="flex w-full items-center justify-between px-3 py-2 text-[#f2c14e]">
         <span>DEBUG</span>
         <span>{open ? "–" : "+"}</span>
       </button>
@@ -34,8 +34,8 @@ export function DebugPanel({ ctl, onClearData }: { ctl: InterviewController; onC
           <dl className="space-y-1">
             {rows.map(([k, v]) => (
               <div key={k} className="grid grid-cols-[92px_1fr] gap-2">
-                <dt className="text-faint">{k}</dt>
-                <dd className="line-clamp-2 break-words text-ink">{v}</dd>
+                <dt className="text-white/50">{k}</dt>
+                <dd className="line-clamp-2 break-words text-white">{v}</dd>
               </div>
             ))}
           </dl>

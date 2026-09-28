@@ -10,8 +10,8 @@ const HISTORY_WINDOW = 4;
 const ANSWER_CHARS_IN_HISTORY = 1500;
 
 export function toAIConfig(i: Interview): AIConfig {
-  const { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language } = i.config;
-  return { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language };
+  const { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack } = i.config;
+  return { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack };
 }
 
 const clip = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1)}…` : s);

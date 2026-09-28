@@ -40,7 +40,7 @@ export function InterviewHistory({ items, onOpen, onStart, canOpen, compact }: P
             >
               <span className="font-mono text-xs text-faint">{pad2(idx + 1)}</span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-[15px] font-semibold text-ink">{s.position}</span>
+                <span className="block truncate text-[15px] font-semibold text-ink">{s.company ? `${s.company} · ${s.position}` : s.position}</span>
                 <span className="mt-0.5 block text-[12px] text-faint">
                   {INTERVIEW_TYPE_KO[s.interviewType]} · {s.questionCount}문항{!compact && ` · ${durationLabel(s.duration)}`} · {shortDate(s.createdAt)}
                 </span>

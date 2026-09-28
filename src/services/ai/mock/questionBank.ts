@@ -24,11 +24,11 @@ export function roleFamily(position: string): RoleFamily {
 }
 
 export const TYPE_PLAN: Record<InterviewType, QuestionType[]> = {
-  hr: ["opening", "reflection", "challenge", "deep_dive", "result", "reflection"],
+  hr: ["opening", "motivation", "reflection", "challenge", "deep_dive", "result"],
   technical: ["opening", "technical", "deep_dive", "technical", "challenge", "reflection", "technical", "result"],
   project: ["opening", "deep_dive", "technical", "result", "challenge", "reflection"],
   behavioral: ["opening", "deep_dive", "challenge", "result", "reflection", "deep_dive"],
-  mixed: ["opening", "deep_dive", "technical", "challenge", "result", "reflection"],
+  mixed: ["opening", "motivation", "deep_dive", "technical", "challenge", "result", "reflection"],
 };
 
 export const OPENING: BankItem[] = [
@@ -40,6 +40,11 @@ export const OPENING: BankItem[] = [
 ];
 
 export const GENERAL: Record<Exclude<QuestionType, "opening" | "technical">, BankItem[]> = {
+  motivation: [
+    { ko: "{position} 직무에 지원하신 이유를 말씀해주세요.", en: "What made you apply for this {position} role?" },
+    { ko: "우리 회사에 지원하신 동기를 말씀해 주세요.", en: "Why do you want to join our company?" },
+    { ko: "입사 후 가장 먼저 해 보고 싶은 일은 무엇인가요?", en: "What would you most like to work on first after joining?" },
+  ],
   deep_dive: [
     { ko: "앞서 말씀하신 {topic} 경험에서 가장 중요했던 결정은 무엇이었나요?", en: "Going back to {topic} — what was the most important decision you made there?" },
     { ko: "최근 업무에서 가장 해결하기 어려웠던 문제를 하나 설명해주세요.", en: "Describe the hardest problem you had to solve in your recent work." },

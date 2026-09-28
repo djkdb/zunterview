@@ -10,6 +10,7 @@ import { z } from "zod";
 
 export const QUESTION_TYPES = [
   "opening",
+  "motivation",
   "deep_dive",
   "technical",
   "challenge",
@@ -66,6 +67,9 @@ export const AIConfigSchema = z.object({
   jobDescription: z.string().max(LIMITS.jobDescription),
   persona: z.enum(PERSONAS),
   language: z.enum(LANGUAGES),
+  /** Company interview mode: resolved server-side from our own dataset, never free text. */
+  companyId: z.string().regex(/^[a-z0-9-]{2,40}$/).optional(),
+  companyTrack: z.string().max(20).optional(),
 });
 export type AIConfig = z.infer<typeof AIConfigSchema>;
 

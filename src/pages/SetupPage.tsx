@@ -2,6 +2,8 @@ import { useState, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { DIFFICULTIES, EXPERIENCE_LEVELS, INTERVIEW_TYPES, LIMITS, PERSONAS } from "../../shared/schemas";
 import { ModeBadge, TopBar } from "../components/TopBar";
+import { CompanyPicker } from "../components/CompanyPicker";
+import { COMPANIES, getCompany, guessTrack } from "../../shared/companies";
 import { Button } from "../components/ui/Button";
 import { ArrowIcon } from "../components/ui/icons";
 import { Segmented } from "../components/ui/Segmented";
@@ -20,9 +22,17 @@ const DIFFICULTY_HINT: Record<InterviewConfig["difficulty"], string> = {
   hard: "압박 · 꼬리질문 多",
 };
 
-function initialConfig(): InterviewConfig {
+function initialConfig(preset?: { companyId: string; track?: string } | null): InterviewConfig {
   const saved = loadLastConfig();
-  const merged = { ...DEFAULT_CONFIG, ...(saved ?? {}) };
+  const merged: InterviewConfig = { ...DEFAULT_CONFIG, ...(saved ?? {}) };
+  if (preset) {
+    merged.companyId = preset.companyId;
+    merged.companyTrack = preset.track;
+  }
+  if (!getCompany(merged.companyId)) {
+    merged.companyId = undefined;
+    merged.companyTrack = undefined;
+  }
   if (!isSpeechSynthesisSupported()) merged.voiceEnabled = false;
   return merged;
 }
@@ -39,8 +49,15 @@ function Section({ no, title, children }: { no: number; title: string; children:
   );
 }
 
-export function SetupPage({ status, onStart, onHome }: { status: ProviderStatus | null; onStart: (c: InterviewConfig) => void; onHome: () => void }) {
-  const [c, setC] = useState<InterviewConfig>(initialConfig);
+interface SetupProps {
+  status: ProviderStatus | null;
+  onStart: (c: InterviewConfig) => void;
+  onHome: () => void;
+  preset?: { companyId: string; track?: string } | null;
+}
+
+export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
+  const [c, setC] = useState<InterviewConfig>(() => initialConfig(preset));
   const isPreset = (POSITION_PRESETS as readonly string[]).includes(c.position);
   const [custom, setCustom] = useState(isPreset ? "" : c.position);
   const [useCustom, setUseCustom] = useState(!isPreset);
@@ -52,7 +69,8 @@ export function SetupPage({ status, onStart, onHome }: { status: ProviderStatus 
 
   const start = () => {
     if (!valid) return;
-    const config = { ...c, position };
+    const company = getCompany(c.companyId);
+    const config = { ...c, position, companyTrack: company ? (c.companyTrack ?? guessTrack(company, position)) : undefined };
     saveLastConfig(config);
     onStart(config);
   };
@@ -74,7 +92,13 @@ export function SetupPage({ status, onStart, onHome }: { status: ProviderStatus 
             start();
           }}
         >
-          <Section no={1} title="지원 정보">
+          {COMPANIES.length > 0 && (
+            <Section no={1} title="지원 기업 (선택)">
+              <CompanyPicker companyId={c.companyId} track={c.companyTrack} onChange={(id, track) => setC((p) => ({ ...p, companyId: id, companyTrack: track }))} />
+            </Section>
+          )}
+
+          <Section no={2} title="지원 정보">
             <fieldset>
               <legend className="label mb-2.5">지원 직무</legend>
               <div className="flex flex-wrap gap-2">
@@ -144,7 +168,7 @@ export function SetupPage({ status, onStart, onHome }: { status: ProviderStatus 
             </div>
           </Section>
 
-          <Section no={2} title="면접 구성">
+          <Section no={3} title="면접 구성">
             <Segmented
               label="면접 유형"
               value={c.interviewType}
@@ -158,7 +182,7 @@ export function SetupPage({ status, onStart, onHome }: { status: ProviderStatus 
             </div>
           </Section>
 
-          <Section no={3} title="면접 환경">
+          <Section no={4} title="면접 환경">
             <Segmented label="면접관 스타일" value={c.persona} onChange={(v) => set("persona", v)} columns={4} options={PERSONAS.map((v) => ({ value: v, label: PERSONA_KO[v] }))} />
             <div className="grid gap-6 sm:grid-cols-2">
               <Segmented label="면접 언어" value={c.language} onChange={(v) => set("language", v)} options={[{ value: "ko", label: "한국어" }, { value: "en", label: "영어 면접" }]} />

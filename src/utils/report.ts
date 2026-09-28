@@ -3,6 +3,7 @@ import { CATEGORY_KEYS } from "../../shared/schemas";
 import { CATEGORY_KO, DIFFICULTY_KO, EXPERIENCE_KO, INTERVIEW_TYPE_KO, QUESTION_TYPE_KO, grade } from "../config/labelsKo";
 import { DISCLAIMER } from "../config/options";
 import { applicantNumber, buildPanel } from "../config/panel";
+import { getCompany } from "../../shared/companies";
 import type { Interview } from "../types/interview";
 import { durationLabel, longDate, pad2 } from "./format";
 import { strongestAndWeakest } from "./scoring";
@@ -49,7 +50,7 @@ h1{font-size:26px;letter-spacing:.3em;color:#17233b;margin:0}.brand{font-size:11
 <h1>모의면접 평가표</h1>
 <div class="meta">
 <div><span>지원번호</span>${applicantNumber(i.id)}</div>
-<div><span>지원 직무</span>${esc(i.config.position)}</div>
+<div><span>지원 직무</span>${esc(getCompany(i.config.companyId) ? `${getCompany(i.config.companyId)!.name} · ${i.config.position}` : i.config.position)}</div>
 <div><span>면접 유형</span>${INTERVIEW_TYPE_KO[i.config.interviewType]} · ${DIFFICULTY_KO[i.config.difficulty]}</div>
 <div><span>경력 구분</span>${EXPERIENCE_KO[i.config.experience]}</div>
 <div><span>면접 일시</span>${longDate(i.createdAt)}</div>

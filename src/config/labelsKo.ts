@@ -39,10 +39,11 @@ export const PERSONA_KO: Record<Persona, string> = {
 
 export const QUESTION_TYPE_KO: Record<QuestionType, string> = {
   opening: "도입",
+  motivation: "지원동기·기업이해",
   deep_dive: "심층",
   technical: "기술",
   challenge: "상황 가정",
-  reflection: "성찰",
+  reflection: "인성·성찰",
   result: "성과 검증",
 };
 

@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { DIFFICULTY_KO, INTERVIEW_TYPE_KO } from "../config/labelsKo";
 import { isSpeechSynthesisSupported, speak } from "../services/speech/speechSynthesis";
 import type { InterviewConfig } from "../types/interview";
+import { getCompany } from "../../shared/companies";
 
 interface Props {
   config: InterviewConfig;
@@ -54,8 +55,10 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  const company = getCompany(config.companyId);
   const rows: [string, string][] = [
     ["지원번호", applicantNo],
+    ...(company ? ([["지원 기업", `${company.name}${config.companyTrack && config.companyTrack !== "공통" ? ` · ${config.companyTrack}` : ""}`]] as [string, string][]) : []),
     ["지원 분야", config.position],
     ["면접 유형", `${INTERVIEW_TYPE_KO[config.interviewType]} · ${DIFFICULTY_KO[config.difficulty]}`],
     ["문항 수", `${config.questionLimit}문항${ko ? "" : " (영어 면접)"}`],

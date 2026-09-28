@@ -11,6 +11,7 @@ import { DownloadIcon, ShareIcon } from "../components/ui/icons";
 import { CATEGORY_DESC_KO, CATEGORY_KO, DIFFICULTY_KO, EXPERIENCE_KO, INTERVIEW_TYPE_KO, grade } from "../config/labelsKo";
 import { DISCLAIMER } from "../config/options";
 import { applicantNumber, buildPanel, seatFor } from "../config/panel";
+import { getCompany } from "../../shared/companies";
 import type { Interview } from "../types/interview";
 import { durationLabel, longDate } from "../utils/format";
 import { downloadReport } from "../utils/report";
@@ -68,9 +69,10 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
     flash(res === "shared" ? "공유했습니다." : res === "downloaded" ? "결과 카드 이미지를 저장했습니다." : res === "copied" ? "결과 요약을 복사했습니다." : "이 환경에서는 공유할 수 없습니다.");
   };
 
+  const company = getCompany(i.config.companyId);
   const info: [string, ReactNode][] = [
     ["지원번호", applicantNumber(i.id)],
-    ["지원 직무", i.config.position],
+    ["지원 직무", company ? `${company.name} · ${i.config.position}` : i.config.position],
     ["면접 유형", `${INTERVIEW_TYPE_KO[i.config.interviewType]} · ${DIFFICULTY_KO[i.config.difficulty]}`],
     ["경력 구분", EXPERIENCE_KO[i.config.experience]],
     ["면접 일시", longDate(i.createdAt)],
@@ -125,6 +127,11 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
               </div>
               <div>
                 {r && <p className="text-[17px] leading-relaxed font-bold text-ink">{r.headline}</p>}
+                {company && company.talent.length > 0 && (
+                  <p className="mt-2 text-[13px] text-muted">
+                    {company.name} 인재상: {company.talent.slice(0, 5).join(" · ")} — 답변에 이 키워드가 드러나는 경험을 연결해 보세요.
+                  </p>
+                )}
                 <div className="mt-3 grid grid-cols-2 gap-2 text-[13px]">
                   <div className="rounded-lg border border-good/25 bg-good/[0.05] px-3 py-2">
                     <p className="text-faint">가장 우수한 항목</p>

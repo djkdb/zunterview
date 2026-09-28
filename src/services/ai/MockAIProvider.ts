@@ -21,6 +21,7 @@ import {
 import { clampScore, sanitizeAnalysis, sanitizeFollowUp } from "../../../shared/sanitize";
 import { CATEGORY_LABEL } from "../../../shared/labels";
 import { CATEGORY_KO } from "../../config/labelsKo";
+import { getCompany, questionsForTrack, type CompanyQuestionCategory } from "../../../shared/companies";
 import { isDuplicateQuestion } from "../../utils/fingerprint";
 import { delay } from "../../utils/id";
 import type { AIProvider } from "./AIProvider";
@@ -82,6 +83,23 @@ export class MockAIProvider implements AIProvider {
       const openings = OPENING.filter((o) => o.tags?.includes(config.interviewType));
       const item = (openings.length ? openings : OPENING)[0];
       return { question: fill(item[lang], vars), type: "opening", intent: L(lang, "배경과 경험을 파악합니다.", "Understand background and experience.") };
+    }
+
+    // Company interview mode: ask from the researched question bank in a realistic order.
+    const company = getCompany(config.companyId);
+    if (company && lang === "ko") {
+      const bank = questionsForTrack(company, config.companyTrack).filter((q) => !isDuplicateQuestion(q.text, asked));
+      const lastT = ctx.usedTypes[ctx.usedTypes.length - 1];
+      const n = ctx.usedTypes.length;
+      for (let i = 0; i < COMPANY_PLAN.length; i++) {
+        const type = COMPANY_PLAN[(n - 1 + i + COMPANY_PLAN.length) % COMPANY_PLAN.length];
+        if (type === lastT) continue;
+        const pool = bank.filter((q) => CATEGORY_TO_TYPE[q.category] === type);
+        if (pool.length) {
+          const q = pool[Math.floor(Math.random() * pool.length)];
+          return { question: q.text, type, intent: `${company.name} ${q.basis === "후기" ? "면접 후기에 보고된" : "인재상·사업 기반"} ${q.category} 질문` };
+        }
+      }
     }
 
     const mainCount = ctx.usedTypes.length; // approximate position in plan
@@ -392,6 +410,17 @@ export class MockAIProvider implements AIProvider {
 
 /* ───────────────────────────── copy helpers ──────────────────────────── */
 
+const COMPANY_PLAN: QuestionType[] = ["motivation", "deep_dive", "technical", "challenge", "reflection", "technical", "deep_dive"];
+const CATEGORY_TO_TYPE: Record<CompanyQuestionCategory, QuestionType> = {
+  기업이해: "motivation",
+  경험: "deep_dive",
+  인성: "reflection",
+  상황: "challenge",
+  "PT·토론": "challenge",
+  직무: "technical",
+  기술: "technical",
+};
+
 /** Only call an answer off-topic when there's nothing concrete to hold on to. */
 function isOffTopic(s: Signals): boolean {
   return s.questionOverlap < 0.02 && s.chars > 80 && !s.topics.length && !s.methods.length && !s.techs.length && !s.project && !s.roleClaim;
@@ -420,6 +449,7 @@ const TOPIC_HOW: Record<string, Localized> = {
 function intentFor(type: QuestionType, lang: Language): string {
   const m: Record<QuestionType, Localized> = {
     opening: { ko: "배경과 경험을 파악합니다.", en: "Understand background." },
+    motivation: { ko: "지원 동기와 기업·직무 이해도를 확인합니다.", en: "Check motivation and company understanding." },
     deep_dive: { ko: "구체적인 상황을 깊게 확인합니다.", en: "Dig into a concrete situation." },
     technical: { ko: "기술적 판단 기준을 확인합니다.", en: "Check technical decision-making." },
     challenge: { ko: "예상치 못한 상황에서의 판단을 봅니다.", en: "Test judgment under a counter-scenario." },

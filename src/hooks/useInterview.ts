@@ -6,6 +6,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { GeneratedQuestion, ReportRequest, Usage } from "../../shared/schemas";
 import { buildPanel, seatFor, type Seat } from "../config/panel";
 import { SAMPLE_ANSWERS } from "../config/sampleAnswers";
+import { getCompany } from "../../shared/companies";
+import { similarity } from "../utils/fingerprint";
 import { AIRequestError, type AIProvider } from "../services/ai/AIProvider";
 import { injectFailure } from "../services/ai/faults";
 import { MockAIProvider } from "../services/ai/MockAIProvider";
@@ -170,6 +172,11 @@ export function useInterview() {
         followUps: [],
         source: next.source,
       };
+      const company = getCompany(stateRef.current.interview?.config.companyId);
+      if (company && !question.isFollowUp) {
+        const match = company.questions.find((q) => similarity(q.text, question.text) >= 0.55);
+        if (match) question.origin = match.basis;
+      }
       dispatch({ type: "QUESTION", question, now: Date.now() });
       const seat = seatFor(question.type, question.isFollowUp);
       // First question: the panel chair greets the candidate, as in a real interview.

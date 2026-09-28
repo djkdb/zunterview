@@ -3,13 +3,14 @@ import { buildPanel } from "../config/panel";
 import type { Interview } from "../types/interview";
 import { durationLabel } from "../utils/format";
 import { InterviewRoom } from "./InterviewRoom";
+import { getCompany } from "../../shared/companies";
 
 export function CompletionScreen({ interview }: { interview: Interview }) {
   const answered = interview.questions.length;
   return (
     <div className="fixed inset-0 z-40 flex flex-col bg-bg" role="status" aria-live="polite">
       <div className="h-[38vh] min-h-[200px] w-full overflow-hidden border-b border-line opacity-90">
-        <InterviewRoom panel={buildPanel(interview.config.position)} speaking={null} mode="reviewing" />
+        <InterviewRoom panel={buildPanel(interview.config.position)} speaking={null} mode="reviewing" companyName={getCompany(interview.config.companyId)?.shortName ?? getCompany(interview.config.companyId)?.name} />
       </div>
       <div className="flex flex-1 items-center justify-center px-6">
         <div className="text-center">

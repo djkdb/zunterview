@@ -31,6 +31,7 @@ export const PERSONA_LABEL: Record<Persona, string> = {
 
 export const QUESTION_TYPE_LABEL: Record<QuestionType, string> = {
   opening: "Opening",
+  motivation: "Motivation & company fit",
   deep_dive: "Deep Dive",
   technical: "Technical",
   challenge: "Challenge",

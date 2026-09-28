@@ -9,7 +9,8 @@ export function questionPrompt(ctx: InterviewContext) {
 Your task: choose the next main interview question.
 
 Question types and when to use them:
-- opening: background / motivation. Use for the first question.
+- opening: background / self-introduction. Use for the first question.
+- motivation: why this company/role, understanding of the company or institution.
 - deep_dive: pick up a concrete situation the candidate mentioned earlier and explore it.
 - technical: a technical decision relevant to the position and job description.
 - challenge: present a counter-scenario ("what if…", "what would you do differently if…").

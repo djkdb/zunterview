@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { InterviewHistory } from "../components/InterviewHistory";
+import { CompanyCard } from "../components/CompanyCard";
+import { COMPANIES, COMPANY_CATEGORIES } from "../../shared/companies";
 import { InterviewRoom, type RoomMode } from "../components/InterviewRoom";
 import { ModeBadge, TopBar } from "../components/TopBar";
 import { Button } from "../components/ui/Button";
@@ -84,6 +86,8 @@ interface Props {
   history: InterviewSummary[];
   onStart: () => void;
   onHistory: () => void;
+  onCompanies: () => void;
+  onOpenCompany: (id: string) => void;
   onOpenInterview: (id: string) => void;
   canOpen: (id: string) => boolean;
   active: ActiveInterview | null;
@@ -120,16 +124,26 @@ function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview
   );
 }
 
-export function LandingPage({ status, history, onStart, onHistory, onOpenInterview, canOpen, active, onResume, onDiscard }: Props) {
+/** A couple from each category so the section shows the range. */
+const FEATURED = COMPANY_CATEGORIES.flatMap((cat) => COMPANIES.filter((c) => c.category === cat).slice(0, 2)).slice(0, 8);
+
+export function LandingPage({ status, history, onStart, onHistory, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard }: Props) {
   return (
     <div className="flex min-h-dvh flex-col">
       <TopBar
         onHome={() => undefined}
         modeBadge={<ModeBadge mode={status?.mode ?? null} detail={status?.model ?? undefined} />}
         right={
-          <Button size="sm" variant="ghost" onClick={onHistory}>
-            나의 면접 기록
-          </Button>
+          <>
+            {COMPANIES.length > 0 && (
+              <Button size="sm" variant="ghost" onClick={onCompanies}>
+                기업별 면접
+              </Button>
+            )}
+            <Button size="sm" variant="ghost" onClick={onHistory}>
+              <span className="hidden sm:inline">나의 </span>면접 기록
+            </Button>
+          </>
         }
       />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 sm:px-6">
@@ -186,6 +200,29 @@ export function LandingPage({ status, history, onStart, onHistory, onOpenIntervi
             </div>
           ))}
         </section>
+
+        {FEATURED.length > 0 && (
+          <section className="pb-10" aria-label="기업별 모의면접">
+            <div className="mb-3 flex items-end justify-between gap-3">
+              <div>
+                <h2 className="text-base font-bold text-ink">기업별 모의면접</h2>
+                <p className="text-[13px] text-muted">
+                  {COMPANIES.length}개 기업·기관의 인재상, 면접 전형, 기출 기반 질문으로 연습해 보세요.
+                </p>
+              </div>
+              <button type="button" onClick={onCompanies} className="shrink-0 text-[13px] text-muted hover:text-ink">
+                전체 보기 ›
+              </button>
+            </div>
+            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {FEATURED.map((c) => (
+                <li key={c.id}>
+                  <CompanyCard c={c} onClick={() => onOpenCompany(c.id)} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <section className="pb-12" aria-label="최근 면접">
           <div className="mb-3 flex items-center justify-between">

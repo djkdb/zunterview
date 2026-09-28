@@ -6,6 +6,8 @@ import { HistoryPage } from "./pages/HistoryPage";
 import { InterviewPage } from "./pages/InterviewPage";
 import { LandingPage } from "./pages/LandingPage";
 import { SetupPage } from "./pages/SetupPage";
+import { CompaniesPage } from "./pages/CompaniesPage";
+import { CompanyPage } from "./pages/CompanyPage";
 import type { InterviewSummary } from "./types/interview";
 import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview } from "./utils/storage";
 
@@ -14,12 +16,15 @@ const ResultPage = lazy(loadResultPage);
 
 const DEBUG = new URLSearchParams(window.location.search).get("debug") === "true";
 
-type Screen = "landing" | "history" | "setup" | "interview" | "result";
+type Screen = "landing" | "history" | "companies" | "company" | "setup" | "interview" | "result";
+type IdleView = "landing" | "history" | "companies" | "company";
 
 export default function App() {
   const ctl = useInterview();
   const { state, status, actions } = ctl;
-  const [showHistory, setShowHistory] = useState(false);
+  const [idleView, setIdleView] = useState<IdleView>("landing");
+  const [companyView, setCompanyView] = useState<string | null>(null);
+  const [preset, setPreset] = useState<{ companyId: string; track?: string } | null>(null);
   const [fromHistory, setFromHistory] = useState(false);
   const [historyVersion, setHistoryVersion] = useState(0);
   const [activeVersion, setActiveVersion] = useState(0);
@@ -39,7 +44,7 @@ export default function App() {
   const screen: Screen = (() => {
     switch (state.phase) {
       case "IDLE":
-        return showHistory ? "history" : "landing";
+        return idleView === "company" && !companyView ? "companies" : idleView;
       case "SETUP":
         return "setup";
       case "RESULT":
@@ -49,19 +54,34 @@ export default function App() {
     }
   })();
 
-  const goHome = useCallback(() => {
-    setShowHistory(false);
-    actions.reset();
-  }, [actions]);
-  const goHistory = useCallback(() => {
-    setShowHistory(true);
-    actions.reset();
-  }, [actions]);
-  const goSetup = useCallback(() => {
-    void loadResultPage(); // warm the results chunk (charts) while the interview runs
-    setFromHistory(false);
-    actions.openSetup();
-  }, [actions]);
+  const goIdle = useCallback(
+    (v: IdleView) => {
+      setIdleView(v);
+      actions.reset();
+      window.scrollTo(0, 0);
+    },
+    [actions],
+  );
+  const goHome = useCallback(() => goIdle("landing"), [goIdle]);
+  const goHistory = useCallback(() => goIdle("history"), [goIdle]);
+  const goCompanies = useCallback(() => goIdle("companies"), [goIdle]);
+  const openCompany = useCallback(
+    (id: string) => {
+      setCompanyView(id);
+      goIdle("company");
+    },
+    [goIdle],
+  );
+  const goSetup = useCallback(
+    (p: { companyId: string; track?: string } | null = null) => {
+      void loadResultPage(); // warm the results chunk (charts) while the interview runs
+      setPreset(p);
+      setFromHistory(false);
+      actions.openSetup();
+      window.scrollTo(0, 0);
+    },
+    [actions],
+  );
   const openInterview = useCallback(
     (id: string) => {
       const i = loadInterview(id);
@@ -89,8 +109,10 @@ export default function App() {
               <LandingPage
                 status={status}
                 history={history}
-                onStart={goSetup}
+                onStart={() => goSetup()}
                 onHistory={goHistory}
+                onCompanies={goCompanies}
+                onOpenCompany={openCompany}
                 onOpenInterview={openInterview}
                 canOpen={canOpen}
                 active={activeInterview}
@@ -101,8 +123,12 @@ export default function App() {
                 }}
               />
             )}
-            {screen === "history" && <HistoryPage history={history} onOpen={openInterview} canOpen={canOpen} onStart={goSetup} onHome={goHome} onClear={clearData} />}
-            {screen === "setup" && <SetupPage status={status} onStart={actions.start} onHome={goHome} />}
+            {screen === "history" && <HistoryPage history={history} onOpen={openInterview} canOpen={canOpen} onStart={() => goSetup()} onHome={goHome} onClear={clearData} />}
+            {screen === "companies" && <CompaniesPage onOpen={openCompany} onHome={goHome} onStart={() => goSetup()} />}
+            {screen === "company" && companyView && (
+              <CompanyPage id={companyView} onStart={(companyId, track) => goSetup({ companyId, track })} onBack={goCompanies} onHome={goHome} />
+            )}
+            {screen === "setup" && <SetupPage status={status} onStart={actions.start} onHome={goHome} preset={preset} />}
             {screen === "interview" && state.interview && <InterviewPage ctl={ctl} modeLabel={modeLabel} engineLabel={engineLabel} />}
             {screen === "result" && state.interview && (
               <Suspense fallback={<div className="min-h-dvh" />}>
@@ -110,7 +136,7 @@ export default function App() {
                 interview={state.interview}
                 fromHistory={fromHistory}
                 storageOk={ctl.storageOk}
-                onNew={goSetup}
+                onNew={() => goSetup()}
                 onRetake={() => {
                   void loadResultPage();
                   setFromHistory(false);

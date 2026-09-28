@@ -5,6 +5,7 @@
  */
 import type { Interview, InterviewConfig, InterviewSummary } from "../types/interview";
 import { strongestAndWeakest } from "./scoring";
+import { getCompany } from "../../shared/companies";
 
 const KEYS = {
   summaries: "interview-ai:history:v1",
@@ -56,6 +57,7 @@ export function toSummary(i: Interview): InterviewSummary {
     duration: i.duration,
     questionCount: i.questions.filter((q) => q.answer).length,
     strongest: i.categoryScores ? strongestAndWeakest(i.categoryScores).strongest : null,
+    company: getCompany(i.config.companyId)?.name,
   };
 }
 

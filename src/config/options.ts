@@ -33,3 +33,6 @@ export const DEFAULT_CONFIG: InterviewConfig = {
 
 export const INTERVIEWER_NAME = "ALEX";
 export const DISCLAIMER = "AI가 생성한 모의면접 피드백입니다. 점수는 연습용 참고 지표이며 실제 채용 평가가 아닙니다.";
+
+export const COMPANY_DISCLAIMER =
+  "기업별 질문은 공개된 면접 후기와 각 기업·기관의 공식 자료를 바탕으로 재구성한 연습용 예상 질문입니다. 해당 기업·기관과 무관하며, 실제 면접 내용·전형과 다를 수 있습니다.";

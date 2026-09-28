@@ -15,6 +15,7 @@ import { CloseIcon } from "../components/ui/icons";
 import { COPY } from "../config/copy";
 import { INTERVIEW_TYPE_KO } from "../config/labelsKo";
 import { applicantNumber, buildPanel, seatFor, type Seat } from "../config/panel";
+import { getCompany } from "../../shared/companies";
 import type { InterviewController } from "../hooks/useInterview";
 import { useElapsed, useNow } from "../hooks/useTimer";
 import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
@@ -42,6 +43,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   const copy = COPY[interview.config.language];
   const panel = useMemo(() => buildPanel(interview.config.position), [interview.config.position]);
   const applicantNo = applicantNumber(interview.id);
+  const company = getCompany(interview.config.companyId);
   const q = currentQuestion(state);
   const [draft, setDraft] = useState("");
   const [activity, setActivity] = useState(0);
@@ -89,7 +91,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
         total={interview.config.questionLimit}
         elapsed={elapsed}
         applicantNo={applicantNo}
-        position={interview.config.position}
+        position={company ? `${company.shortName ?? company.name} · ${interview.config.position}` : interview.config.position}
         typeLabel={INTERVIEW_TYPE_KO[interview.config.interviewType]}
         voiceOn={voiceOn}
         voiceSupported={isSpeechSynthesisSupported()}
@@ -108,7 +110,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
               composing ? "h-[16vh] min-h-[110px]" : "h-[34vh] min-h-[190px] sm:h-[40vh]"
             }`}
           >
-            <InterviewRoom panel={panel} speaking={speakerSeat} mode={mode} activity={activity} />
+            <InterviewRoom panel={panel} speaking={speakerSeat} mode={mode} activity={activity} companyName={company?.shortName ?? company?.name} />
             {statusLine && (
               <div className="absolute top-2 left-2 flex max-w-[calc(100%-1rem)] items-center gap-2 rounded-md bg-black/55 px-2.5 py-1 text-[11px] text-white backdrop-blur-sm sm:top-auto sm:bottom-3 sm:left-3 sm:text-[12px]" role="status">
                 <span className={`h-1.5 w-1.5 rounded-full ${mode === "reviewing" ? "animate-pulse bg-[#f2c14e]" : mode === "listening" ? "bg-[#5fd39b]" : "animate-pulse bg-[#7fa6e0]"}`} />

@@ -19,13 +19,15 @@ interface Props {
   /** 0-1: candidate is typing/speaking — the panel nods along. */
   activity?: number;
   roomLabel?: string;
+  /** Company/institution the mock interview is modeled on (shown on the wall screen). */
+  companyName?: string;
   className?: string;
 }
 
 const SEAT_X: Record<Seat, number> = { left: 330, center: 600, right: 870 };
 const DESK_Y = 372;
 
-export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel = "제2면접실", className = "" }: Props) {
+export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel = "제2면접실", companyName, className = "" }: Props) {
   return (
     <svg
       viewBox="0 0 1200 520"
@@ -88,7 +90,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
           INTERVIEW<tspan fill="#7fa6e0">//</tspan>AI
         </text>
         <text x="600" y="100" textAnchor="middle" fill="#9fb0c9" fontSize="13" fontFamily="Pretendard Variable, sans-serif">
-          모의면접 · {roomLabel}
+          {companyName ? `${companyName} 모의면접` : "모의면접"} · {roomLabel}
         </text>
 
       </g>

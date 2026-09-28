@@ -95,6 +95,11 @@ export function QuestionPanel({ question, index, phase, stage, transitionText, s
               <span className="flex items-center gap-1.5">
                 <span className="rounded-md bg-surface-3 px-2 py-0.5 font-mono text-[11px] font-semibold text-muted">Q{pad2(index)}</span>
                 <span className="rounded-md border border-line px-2 py-0.5 text-[11px] text-muted">{QUESTION_TYPE_KO[question.type]}</span>
+                {question.origin && (
+                  <span className="rounded-md bg-[#fff1b8] px-2 py-0.5 text-[11px] font-semibold text-ink" title={question.origin === "후기" ? "공개 면접 후기에 보고된 질문을 바탕으로 재구성" : "기업 인재상·공식 자료 기반 예상 질문"}>
+                    {question.origin === "후기" ? "기출 기반" : "인재상 기반"}
+                  </span>
+                )}
                 {question.isFollowUp && (
                   <motion.span
                     initial={{ scale: 0.85, opacity: 0 }}

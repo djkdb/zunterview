@@ -69,7 +69,7 @@ export function buildPanel(position: string): Record<Seat, PanelMember> {
 export function seatFor(type: QuestionType, isFollowUp: boolean): Seat {
   if (type === "technical") return "right";
   if (isFollowUp) return type === "deep_dive" ? "right" : "center";
-  if (type === "reflection") return "left";
+  if (type === "reflection" || type === "motivation") return "left";
   return "center";
 }
 

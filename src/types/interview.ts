@@ -40,6 +40,8 @@ export interface InterviewQuestion {
   /** IDs of follow-up questions asked on this question. */
   followUps: string[];
   source: ProviderKind;
+  /** Matches a researched company question: reported by candidates, or derived from official values. */
+  origin?: "후기" | "공식자료";
 }
 
 export type CategoryScores = Record<CategoryKey, number>;
@@ -69,4 +71,5 @@ export interface InterviewSummary {
   duration: number;
   questionCount: number;
   strongest: CategoryKey | null;
+  company?: string;
 }

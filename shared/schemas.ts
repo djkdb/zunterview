@@ -219,5 +219,18 @@ export const HealthSchema = z.object({
   ok: z.boolean(),
   ai: z.boolean(),
   model: z.string().nullable(),
+  /** Server-side neural TTS provider, when configured. */
+  tts: z.enum(["fish"]).nullable().optional(),
 });
+
+/** Who is speaking: the three interviewers, or the staff member calling the candidate in. */
+export const VOICES = ["left", "center", "right", "staff"] as const;
+export type Voice = (typeof VOICES)[number];
+
+export const TtsRequestSchema = z.object({
+  text: z.string().trim().min(1).max(400),
+  voice: z.enum(VOICES),
+  speed: z.number().min(0.5).max(2).optional(),
+});
+export type TtsRequest = z.infer<typeof TtsRequestSchema>;
 export type Health = z.infer<typeof HealthSchema>;

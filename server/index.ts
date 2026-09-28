@@ -37,6 +37,8 @@ const { questionPrompt } = await import("./prompts/questionPrompt");
 const { followUpPrompt } = await import("./prompts/followupPrompt");
 const { analysisPrompt } = await import("./prompts/analysisPrompt");
 const { reportPrompt } = await import("./prompts/reportPrompt");
+const { TtsRequestSchema } = await import("../shared/schemas");
+const { TtsError, isFishConfigured, synthesize } = await import("./tts");
 type PromptParts = import("./claude").PromptParts;
 
 const PORT = Number(process.env.PORT ?? 8787);
@@ -161,7 +163,32 @@ const server = createServer(async (req, res) => {
   res.setHeader("Permissions-Policy", "microphone=(self), camera=()");
 
   if (url.pathname === "/api/health") {
-    return send(res, 200, { ok: true, ai: isAIConfigured(), model: isAIConfigured() ? MODEL : null });
+    return send(res, 200, { ok: true, ai: isAIConfigured(), model: isAIConfigured() ? MODEL : null, tts: isFishConfigured() ? "fish" : null });
+  }
+
+  if (url.pathname === "/api/tts") {
+    if (req.method !== "POST") return send(res, 405, { error: "method_not_allowed" });
+    if (!isFishConfigured()) return send(res, 503, { error: "tts_not_configured" });
+    const ip = req.socket.remoteAddress ?? "unknown";
+    if (rateLimited(`tts:${ip}`)) return send(res, 429, { error: "rate_limited" });
+    let body: unknown;
+    try {
+      body = await readJson(req);
+    } catch {
+      return send(res, 400, { error: "invalid_body" });
+    }
+    const parsed = TtsRequestSchema.safeParse(body);
+    if (!parsed.success) return send(res, 400, { error: "invalid_request" });
+    try {
+      const { audio, cached } = await synthesize(parsed.data.text, parsed.data.voice, parsed.data.speed);
+      console.log(`[tts] ${parsed.data.voice} ${audio.length}B ${cached ? "cache" : `${Date.now() - started}ms`}`);
+      res.writeHead(200, { "Content-Type": "audio/mpeg", "Content-Length": audio.length, "Cache-Control": "no-store" });
+      return res.end(audio);
+    } catch (err) {
+      const status = err instanceof TtsError ? err.status : 502;
+      console.warn(`[tts] failed (${status}) ${Date.now() - started}ms`);
+      return send(res, status, { error: "tts_failed" });
+    }
   }
 
   const aiRoute = AI_ROUTES[url.pathname as keyof typeof AI_ROUTES];
@@ -200,6 +227,6 @@ const server = createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(
-    `INTERVIEW//AI api → http://localhost:${PORT}  (${isAIConfigured() ? `AI MODE · ${MODEL}` : "no ANTHROPIC_API_KEY → clients run in MOCK MODE"})`,
+    `INTERVIEW//AI api → http://localhost:${PORT}  (${isAIConfigured() ? `AI MODE · ${MODEL}` : "no ANTHROPIC_API_KEY → clients run in MOCK MODE"}; TTS: ${isFishConfigured() ? "Fish Audio" : "browser speech"})`,
   );
 });

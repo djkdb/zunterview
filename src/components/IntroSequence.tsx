@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { DIFFICULTY_KO, INTERVIEW_TYPE_KO } from "../config/labelsKo";
-import { isSpeechSynthesisSupported, speak } from "../services/speech/speechSynthesis";
+import { isVoiceOutputAvailable, speakLine } from "../services/speech/tts";
 import type { InterviewConfig } from "../types/interview";
 import { getCompany } from "../../shared/companies";
 
@@ -36,18 +36,40 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
     };
   });
 
+  const speaksCall = voiceOutput && isVoiceOutputAvailable();
+
   useEffect(() => {
+    // With voice on, the doors open only after the call has been spoken (see below).
     const schedule: [Step | "end", number][] = reduce
-      ? [["call", 700], ["end", 1500]]
-      : [["call", 2300], ["door", 4500], ["end", 5500]];
+      ? [["call", 700], ...(speaksCall ? [] : ([["end", 1500]] as [Step | "end", number][]))]
+      : [["call", 2300], ...(speaksCall ? [] : ([["door", 4500], ["end", 5500]] as [Step | "end", number][]))];
     const timers = schedule.map(([s, t]) => setTimeout(() => (s === "end" ? finishRef.current() : setStep(s)), t));
     return () => timers.forEach(clearTimeout);
-  }, [reduce]);
+  }, [reduce, speaksCall]);
 
-  // The staff member's call is spoken aloud when interviewer voice is on.
+  // The staff member's call is spoken aloud; neural voices take a moment to arrive, so wait for it (max 8s).
   useEffect(() => {
-    if (step === "call" && voiceOutput && isSpeechSynthesisSupported()) void speak(callText, "ko-KR", { pitch: 1.1, voiceIndex: 1 });
-  }, [step, voiceOutput, callText]);
+    if (step !== "call" || !speaksCall) return;
+    let alive = true;
+    const minShow = new Promise((r) => setTimeout(r, reduce ? 600 : 2000));
+    const spoken = speakLine(callText, { voice: "staff", lang: "ko-KR", pitch: 1.1, voiceIndex: 1 });
+    const cap = new Promise((r) => setTimeout(r, 8000));
+    Promise.race([Promise.all([spoken, minShow]), cap]).then(() => {
+      if (!alive) return;
+      if (reduce) return finishRef.current();
+      setStep("door");
+    });
+    return () => {
+      alive = false;
+    };
+  }, [step, speaksCall, callText, reduce]);
+
+  // Doors opened after the spoken call → enter the room a moment later.
+  useEffect(() => {
+    if (step !== "door" || !speaksCall) return;
+    const t = setTimeout(() => finishRef.current(), 1000);
+    return () => clearTimeout(t);
+  }, [step, speaksCall]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && finishRef.current();

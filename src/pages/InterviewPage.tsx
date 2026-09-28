@@ -21,7 +21,7 @@ import { getCompany } from "../../shared/companies";
 import type { InterviewController } from "../hooks/useInterview";
 import { useElapsed, useNow } from "../hooks/useTimer";
 import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
-import { isSpeechSynthesisSupported } from "../services/speech/speechSynthesis";
+import { isVoiceOutputAvailable } from "../services/speech/tts";
 import { currentQuestion, type InterviewState } from "../state/interviewMachine";
 
 function roomMode(s: InterviewState): RoomMode {
@@ -102,7 +102,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
         position={company ? `${company.shortName ?? company.name} · ${interview.config.position}` : interview.config.position}
         typeLabel={INTERVIEW_TYPE_KO[interview.config.interviewType]}
         voiceOn={voiceOn}
-        voiceSupported={isSpeechSynthesisSupported()}
+        voiceSupported={isVoiceOutputAvailable()}
         onToggleVoice={() => actions.setVoice(!voiceOn)}
         onEnd={() => setConfirmEnd(true)}
         canEnd={canEnd}
@@ -132,7 +132,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
             {state.phase === "ERROR" && state.error ? (
               <ErrorPanel error={state.error} canUseMock={!fallbackActive && ctl.status?.mode === "ai"} onRetry={actions.retry} onMock={actions.continueWithMock} />
             ) : (
-              <QuestionPanel question={q} index={questionIndex} phase={state.phase} stage={state.stage} transitionText={state.transitionText} speaker={panel[speakerSeat]} copy={copy} onRepeat={isSpeechSynthesisSupported() ? actions.repeatQuestion : undefined} />
+              <QuestionPanel question={q} index={questionIndex} phase={state.phase} stage={state.stage} transitionText={state.transitionText} speaker={panel[speakerSeat]} copy={copy} onRepeat={isVoiceOutputAvailable() ? actions.repeatQuestion : undefined} />
             )}
             <AnimatePresence>{showLastAnswer && <LastAnswer key={lastAnswered!.id} text={lastAnswered!.answer!} label={copy.yourAnswer} lang={copy.lang} />}</AnimatePresence>
             {ctl.speaking && state.phase === "ASKING" && (
@@ -197,7 +197,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
           applicantNo={applicantNo}
           engineLabel={engineLabel}
           voiceInput={isSpeechRecognitionSupported()}
-          voiceOutput={interview.config.voiceEnabled && isSpeechSynthesisSupported()}
+          voiceOutput={interview.config.voiceEnabled && isVoiceOutputAvailable()}
           onDone={actions.onIntroDone}
         />
       )}

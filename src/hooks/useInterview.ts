@@ -12,7 +12,7 @@ import { AIRequestError, type AIProvider } from "../services/ai/AIProvider";
 import { injectFailure } from "../services/ai/faults";
 import { MockAIProvider } from "../services/ai/MockAIProvider";
 import { createProvider, detectProviderStatus, type ProviderStatus } from "../services/ai/providerFactory";
-import { cancelSpeech, isSpeechSynthesisSupported, speak } from "../services/speech/speechSynthesis";
+import { cancelLine, isVoiceOutputAvailable, speakLine } from "../services/speech/tts";
 import { currentQuestion, initialState, reducer, type Action, type InterviewState } from "../state/interviewMachine";
 import type { Interview, InterviewConfig, InterviewQuestion, ProviderKind } from "../types/interview";
 import { buildContext, toAIConfig, toCurrentTurn } from "../utils/context";
@@ -98,11 +98,11 @@ export function useInterview() {
   const say = useCallback(async (text: string, run: number, seat: Seat = "center", force = false) => {
     const i = stateRef.current.interview;
     if (!i) return;
-    if ((voiceRef.current || force) && isSpeechSynthesisSupported()) {
+    if ((voiceRef.current || force) && isVoiceOutputAvailable()) {
       setSpeaking(true);
       const v = buildPanel(i.config.position)[seat].voice;
       // Even if the browser's speech engine fails instantly, give people time to read the line.
-      await Promise.all([speak(text, speechLang(i.config), { pitch: v.pitch, rate: v.rate, voiceIndex: v.index }), force ? null : delay(Math.min(1500, 500 + text.length * 12))]);
+      await Promise.all([speakLine(text, { voice: seat, lang: speechLang(i.config), pitch: v.pitch, rate: v.rate, voiceIndex: v.index }), force ? null : delay(Math.min(1500, 500 + text.length * 12))]);
       if (runRef.current === run) setSpeaking(false);
     } else {
       // Give the reader time proportional to the text (short, never sluggish).
@@ -114,13 +114,13 @@ export function useInterview() {
     voiceRef.current = on;
     setVoiceOn(on);
     if (!on) {
-      cancelSpeech();
+      cancelLine();
       setSpeaking(false);
     }
   }, []);
 
   const skipSpeaking = useCallback(() => {
-    cancelSpeech();
+    cancelLine();
     setSpeaking(false);
   }, []);
 
@@ -131,7 +131,7 @@ export function useInterview() {
       const kind = err instanceof AIRequestError ? err.kind : "unknown";
       const message = err instanceof Error ? err.message : "Something went wrong.";
       retryRef.current = retry;
-      cancelSpeech();
+      cancelLine();
       setSpeaking(false);
       dispatch({ type: "FAIL", error: { kind, message } });
     },
@@ -190,7 +190,7 @@ export function useInterview() {
 
   const complete = useCallback(
     async (endedEarly: boolean, run: number) => {
-      cancelSpeech();
+      cancelLine();
       setSpeaking(false);
       dispatch({ type: "COMPLETE", endedEarly, now: Date.now() });
       const lang = stateRef.current.interview?.config.language;
@@ -333,7 +333,7 @@ export function useInterview() {
 
   const openSetup = useCallback(() => {
     runRef.current++;
-    cancelSpeech();
+    cancelLine();
     dispatch({ type: "OPEN_SETUP" });
   }, [dispatch]);
 
@@ -398,7 +398,7 @@ export function useInterview() {
       const q = currentQuestion(s);
       const answer = text.trim();
       if (!q || q.answer || !answer || (s.phase !== "LISTENING" && s.phase !== "ASKING")) return;
-      cancelSpeech();
+      cancelLine();
       setSpeaking(false);
       const durationSec = s.questionStartedAt ? Math.round((Date.now() - s.questionStartedAt) / 1000) : 0;
       dispatch({ type: "SUBMIT", questionId: q.id, answer, mode, durationSec });
@@ -411,7 +411,7 @@ export function useInterview() {
     const run = ++runRef.current;
     const answeredCount = stateRef.current.interview?.questions.filter((q) => q.feedback).length ?? 0;
     if (!answeredCount) {
-      cancelSpeech();
+      cancelLine();
       dispatch({ type: "OPEN_SETUP" });
       return;
     }
@@ -475,7 +475,7 @@ export function useInterview() {
 
   const reset = useCallback(() => {
     runRef.current++;
-    cancelSpeech();
+    cancelLine();
     setSpeaking(false);
     dispatch({ type: "RESET" });
   }, [dispatch]);
@@ -483,7 +483,7 @@ export function useInterview() {
   const viewInterview = useCallback(
     (i: Interview) => {
       runRef.current++;
-      cancelSpeech();
+      cancelLine();
       dispatch({ type: "VIEW_RESULT", interview: i });
     },
     [dispatch],
@@ -496,7 +496,7 @@ export function useInterview() {
       const s = stateRef.current;
       if (s.phase !== "LISTENING" && s.phase !== "ASKING") return;
       const run = ++runRef.current;
-      cancelSpeech();
+      cancelLine();
       dispatch({ type: "DROP_CURRENT" });
       try {
         const next = await nextMainQuestion(stateRef.current.interview!);
@@ -518,12 +518,12 @@ export function useInterview() {
     completeNow: endInterview,
     testVoice: useCallback(() => {
       const lang = stateRef.current.interview ? speechLang(stateRef.current.interview.config) : "ko-KR";
-      void speak(lang.startsWith("ko") ? "안녕하세요. 면접관 알렉스입니다. 음성이 잘 들리시나요?" : "Hi, I'm Alex, your interviewer. Can you hear me?", lang);
+      void speakLine(lang.startsWith("ko") ? "안녕하세요. 면접위원장 김도윤입니다. 음성이 잘 들리시나요?" : "Hello, I'm the panel chair. Can you hear me clearly?", { voice: "center", lang });
     }, []),
     testError: useCallback(() => injectFailure(1), []),
   };
 
-  useEffect(() => () => cancelSpeech(), []);
+  useEffect(() => () => cancelLine(), []);
 
   return {
     state,

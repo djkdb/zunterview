@@ -19,7 +19,7 @@ import { DIFFICULTY_KO, EXPERIENCE_KO, INTERVIEW_TYPE_HINT_KO, INTERVIEW_TYPE_KO
 import { ANSWER_TIME_OPTIONS, DEFAULT_CONFIG, POSITION_PRESETS, QUESTION_LENGTHS } from "../config/options";
 import type { ProviderStatus } from "../services/ai/providerFactory";
 import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
-import { isSpeechSynthesisSupported } from "../services/speech/speechSynthesis";
+import { isNeuralTts, isVoiceOutputAvailable } from "../services/speech/tts";
 import type { InterviewConfig } from "../types/interview";
 import { loadLastConfig, saveLastConfig } from "../utils/storage";
 
@@ -52,7 +52,7 @@ function initialConfig(preset?: { companyId: string; track?: string } | null): I
     merged.companyId = undefined;
     merged.companyTrack = undefined;
   }
-  if (!isSpeechSynthesisSupported()) merged.voiceEnabled = false;
+  if (!isVoiceOutputAvailable()) merged.voiceEnabled = false;
   return merged;
 }
 
@@ -84,7 +84,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
 
   const position = (useCustom ? custom : c.position).trim();
   const valid = position.length > 0 && position.length <= LIMITS.position;
-  const ttsOk = isSpeechSynthesisSupported();
+  const ttsOk = isVoiceOutputAvailable();
 
   const company = getCompany(c.companyId);
   const summaryRows: [string, string][] = [
@@ -235,7 +235,9 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
             <div className="grid gap-3 sm:grid-cols-2">
               <Toggle
                 label="면접관 음성"
-                description={ttsOk ? "면접관이 질문을 소리 내어 읽어 줍니다" : "이 브라우저는 음성 출력을 지원하지 않아요"}
+                description={
+                  !ttsOk ? "이 브라우저는 음성 출력을 지원하지 않아요" : isNeuralTts() ? "Fish Audio 음성 · 면접관마다 다른 목소리" : "면접관이 질문을 소리 내어 읽어 줍니다"
+                }
                 checked={c.voiceEnabled && ttsOk}
                 onChange={(v) => set("voiceEnabled", v)}
                 disabled={!ttsOk}

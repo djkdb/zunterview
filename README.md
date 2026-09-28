@@ -50,6 +50,23 @@ npm run dev
 
 URL로 강제 목업: `/?mode=mock`
 
+### 면접관 목소리 (Fish Audio, 선택)
+
+기본은 브라우저 내장 음성(Web Speech)이라 면접관 3명의 목소리가 높낮이·속도만 다릅니다. [Fish Audio](https://fish.audio) 키를 넣으면 면접관마다 **서로 다른 실제 음성 모델**로 말합니다.
+
+```bash
+# .env (서버 전용 — 브라우저로 전달되지 않음)
+FISH_AUDIO_API_KEY=...
+FISH_VOICE_CENTER=<면접위원장 음성 모델 ID>
+FISH_VOICE_LEFT=<인사팀 면접관>
+FISH_VOICE_RIGHT=<실무 면접관>
+FISH_VOICE_STAFF=<호명하는 안내 직원>   # 선택
+```
+
+- 음성 모델 ID는 fish.audio에서 원하는 목소리 페이지 URL의 ID(또는 직접 클론한 모델 ID)입니다.
+- 브라우저 → `/api/tts` → Fish Audio 순서로 호출하며, 최근 음성은 서버에 캐시되어 "질문 다시 듣기"는 추가 비용이 없습니다.
+- Fish Audio 호출이 실패(네트워크·잔액 부족 등)하면 자동으로 브라우저 음성으로 이어서 말합니다.
+
 ### 프로덕션
 
 ```bash

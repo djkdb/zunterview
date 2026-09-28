@@ -4,7 +4,9 @@ import { consumeInjectedFailure } from "./faults";
 import { MockAIProvider } from "./MockAIProvider";
 import { RealAIProvider } from "./RealAIProvider";
 
-export const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL ?? "").replace(/\/$/, "");
+import { API_BASE_URL } from "../../config/env";
+import { setNeuralTts } from "../speech/tts";
+export { API_BASE_URL };
 const CONFIGURED_MODE = (import.meta.env.VITE_AI_MODE ?? "auto") as "auto" | "mock";
 
 export interface ProviderStatus {
@@ -24,6 +26,7 @@ export async function detectProviderStatus(): Promise<ProviderStatus> {
     clearTimeout(timer);
     const health = HealthSchema.safeParse(await res.json());
     if (!health.success) return { mode: "mock", reason: "unreachable", model: null };
+    setNeuralTts(health.data.tts === "fish");
     return health.data.ai
       ? { mode: "ai", reason: "ok", model: health.data.model }
       : { mode: "mock", reason: "no-key", model: null };

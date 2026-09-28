@@ -1,4 +1,4 @@
-import type { Company } from "../../shared/companies";
+import { talentKeyword, type Company } from "../../shared/companies";
 
 export function CompanyCard({ c, onClick, active, compact }: { c: Company; onClick: () => void; active?: boolean; compact?: boolean }) {
   const reported = c.questions.filter((q) => q.basis === "후기").length;
@@ -17,9 +17,9 @@ export function CompanyCard({ c, onClick, active, compact }: { c: Company; onCli
       </span>
       <span className="mt-0.5 text-[12px] text-faint">{c.industry}</span>
       {!compact && c.talent.length > 0 && (
-        <span className="mt-3 flex flex-wrap gap-1">
-          {c.talent.slice(0, 3).map((t) => (
-            <span key={t} className="rounded bg-accent-soft px-1.5 py-0.5 text-[11px] text-accent">
+        <span className="mt-3 flex h-[22px] flex-wrap gap-1 overflow-hidden" title={c.talent.join(" · ")}>
+          {[...new Set(c.talent.map(talentKeyword))].slice(0, 3).map((t) => (
+            <span key={t} className="rounded bg-accent-soft px-1.5 py-0.5 text-[11px] whitespace-nowrap text-accent">
               {t}
             </span>
           ))}

@@ -26,7 +26,7 @@ import { loadLastConfig, saveLastConfig } from "../utils/storage";
 const DIFFICULTY_HINT: Record<InterviewConfig["difficulty"], string> = {
   easy: "분위기 적응용",
   normal: "실제 1차 면접",
-  hard: "압박 · 꼬리질문 多",
+  hard: "압박 면접",
 };
 
 /** Apply a company choice, keeping the job consistent with the chosen track / institution type. */
@@ -86,6 +86,18 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
   const valid = position.length > 0 && position.length <= LIMITS.position;
   const ttsOk = isSpeechSynthesisSupported();
 
+  const company = getCompany(c.companyId);
+  const summaryRows: [string, string][] = [
+    ["지원 기업", company ? `${company.name}${c.companyTrack && c.companyTrack !== "공통" ? ` · ${c.companyTrack}` : ""}` : "일반 면접"],
+    ["지원 직무", position || "—"],
+    ["경력", EXPERIENCE_KO[c.experience]],
+    ["면접", `${INTERVIEW_TYPE_KO[c.interviewType]} · ${DIFFICULTY_KO[c.difficulty]}`],
+    ["분량", `${c.questionLimit}문항 · 약 ${c.questionLimit * 2}분`],
+    ["면접관", `${PERSONA_KO[c.persona]} · 음성 ${c.voiceEnabled && ttsOk ? "켜짐" : "꺼짐"}`],
+    ["답변 시간", c.answerTimeLimit ? `문항당 ${c.answerTimeLimit / 60}분` : "제한 없음"],
+  ];
+  const summaryLine = `${company ? `${company.shortName ?? company.name} · ` : ""}${INTERVIEW_TYPE_KO[c.interviewType]} · ${DIFFICULTY_KO[c.difficulty]} · ${c.questionLimit}문항 · 약 ${c.questionLimit * 2}분`;
+
   const start = () => {
     if (!valid) return;
     const company = getCompany(c.companyId);
@@ -97,14 +109,16 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
   return (
     <div className="min-h-dvh pb-28 sm:pb-16">
       <TopBar onHome={onHome} modeBadge={<ModeBadge mode={status?.mode ?? null} detail={status?.model ?? undefined} />} />
-      <main className="mx-auto w-full max-w-3xl px-4 sm:px-6">
+      <main className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:max-w-5xl">
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="pt-8 pb-6">
           <p className="text-sm font-semibold text-accent">면접 접수</p>
           <h1 className="mt-1.5 text-2xl font-extrabold text-navy sm:text-3xl">어떤 면접을 준비하시나요?</h1>
           <p className="mt-2 text-[15px] text-muted">입력한 정보와 내 답변을 바탕으로 면접관이 다음 질문을 정합니다.</p>
         </motion.div>
 
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-6">
         <form
+          id="setup-form"
           className="space-y-4"
           onSubmit={(e) => {
             e.preventDefault();
@@ -236,12 +250,35 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
             </p>
           </Section>
 
-          <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur sm:static sm:border-0 sm:bg-transparent sm:p-0 sm:pt-4">
+          <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 px-4 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur sm:static sm:border-0 sm:bg-transparent sm:p-0 sm:pt-4 lg:hidden">
+            <p className="mb-2 truncate text-center text-[12px] text-muted sm:hidden">{summaryLine}</p>
             <Button type="submit" variant="primary" size="lg" disabled={!valid} className="w-full flex-row-reverse sm:w-auto sm:px-12" icon={<ArrowIcon width={18} height={18} />}>
               접수하고 대기실로 이동
             </Button>
           </div>
         </form>
+
+        {/* desktop: sticky application summary */}
+        <aside className="sticky top-20 hidden lg:block" aria-label="접수 요약">
+          <div className="overflow-hidden rounded-xl border border-line-strong bg-surface shadow-sm">
+            <div className="bg-navy px-5 py-3 text-[14px] font-bold text-white">접수 요약</div>
+            <dl className="divide-y divide-line text-[13px]">
+              {summaryRows.map(([k, v]) => (
+                <div key={k} className="flex gap-3 px-5 py-2.5">
+                  <dt className="w-16 shrink-0 text-faint">{k}</dt>
+                  <dd className="min-w-0 flex-1 font-semibold break-keep text-ink">{v}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="border-t border-line p-4">
+              <Button type="submit" form="setup-form" variant="primary" size="lg" disabled={!valid} className="w-full flex-row-reverse" icon={<ArrowIcon width={18} height={18} />}>
+                접수하고 대기실로 이동
+              </Button>
+              <p className="mt-2.5 text-center text-[11px] leading-relaxed text-faint">면접관 3인이 번갈아 질문하고, 답변에 따라 꼬리질문이 이어집니다.</p>
+            </div>
+          </div>
+        </aside>
+        </div>
       </main>
     </div>
   );

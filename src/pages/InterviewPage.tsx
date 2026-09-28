@@ -9,6 +9,8 @@ import { InterviewRoom, type RoomMode } from "../components/InterviewRoom";
 import { IntroSequence } from "../components/IntroSequence";
 import { LastAnswer } from "../components/LastAnswer";
 import { QuestionPanel } from "../components/QuestionPanel";
+import { QuestionStepper } from "../components/QuestionStepper";
+import { WaitingBar } from "../components/WaitingBar";
 import { Button } from "../components/ui/Button";
 import { Dialog } from "../components/ui/Dialog";
 import { CloseIcon } from "../components/ui/icons";
@@ -83,6 +85,12 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   };
 
   const questionIndex = Math.max(1, interview.questions.length);
+  const busyText =
+    state.phase === "ANALYZING"
+      ? "면접관들이 답변을 검토하고 있습니다"
+      : state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION"
+        ? "다음 질문을 준비하고 있습니다"
+        : null;
 
   return (
     <div className="flex min-h-dvh flex-col">
@@ -107,7 +115,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
           {/* the room, seen from the candidate's chair */}
           <div
             className={`relative w-full overflow-hidden border-b border-line transition-[height] duration-300 lg:h-[clamp(240px,calc(100dvh-500px),470px)] ${
-              composing ? "h-[16vh] min-h-[110px]" : "h-[34vh] min-h-[190px] sm:h-[40vh]"
+              composing ? "h-[13vh] min-h-[96px]" : "h-[25vh] min-h-[160px] sm:h-[38vh]"
             }`}
           >
             <InterviewRoom panel={panel} speaking={speakerSeat} mode={mode} activity={activity} companyName={company?.shortName ?? company?.name} />
@@ -119,7 +127,8 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
             )}
           </div>
 
-          <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-3 px-3 pt-4 pb-3 sm:px-6">
+          <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-3 px-3 pt-3 pb-3 sm:px-6 sm:pt-4">
+            <QuestionStepper questions={interview.questions} total={interview.config.questionLimit} showScores={interview.config.liveFeedback} />
             {state.phase === "ERROR" && state.error ? (
               <ErrorPanel error={state.error} canUseMock={!fallbackActive && ctl.status?.mode === "ai"} onRetry={actions.retry} onMock={actions.continueWithMock} />
             ) : (
@@ -134,6 +143,9 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
           </div>
 
           <div className="sticky bottom-0 z-20 mx-auto w-full max-w-3xl bg-gradient-to-t from-bg via-bg to-bg/0 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-6">
+            {busyText ? (
+              <WaitingBar text={busyText} />
+            ) : (
             <AnswerInput
               value={draft}
               onChange={setDraft}
@@ -147,6 +159,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
               onDontKnow={() => actions.submitAnswer(copy.dontKnowAnswer, "text")}
               onFocusChange={setComposing}
             />
+            )}
           </div>
         </section>
 

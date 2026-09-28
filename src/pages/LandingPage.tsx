@@ -168,9 +168,16 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
               <br className="hidden sm:inline" /> 면접이 끝나면 항목별 <b className="text-ink">면접 평가표</b>를 받아보세요.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="mt-8 flex flex-col items-center gap-2.5 lg:items-start">
-              <Button variant="primary" size="lg" onClick={onStart} icon={<ArrowIcon width={18} height={18} />} className="flex-row-reverse px-10">
-                면접 시작하기
-              </Button>
+              <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
+                <Button variant="primary" size="lg" onClick={onStart} icon={<ArrowIcon width={18} height={18} />} className="flex-row-reverse px-10">
+                  면접 시작하기
+                </Button>
+                {COMPANIES.length > 0 && (
+                  <Button variant="secondary" size="lg" onClick={onCompanies} className="px-6">
+                    기업별 면접 보기
+                  </Button>
+                )}
+              </div>
               <span className="text-[13px] text-faint">
                 {status?.mode === "mock" ? "API 키 없이 MOCK 면접관으로 바로 체험할 수 있어요." : status?.mode === "ai" ? "실제 AI 면접관이 연결되어 있습니다." : "면접관 연결 상태를 확인하는 중…"}
               </span>
@@ -214,9 +221,9 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
                 전체 보기 ›
               </button>
             </div>
-            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <ul className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
               {FEATURED.map((c) => (
-                <li key={c.id}>
+                <li key={c.id} className="w-[78%] shrink-0 snap-start sm:w-auto">
                   <CompanyCard c={c} onClick={() => onOpenCompany(c.id)} />
                 </li>
               ))}

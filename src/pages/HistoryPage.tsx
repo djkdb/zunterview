@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { InterviewHistory } from "../components/InterviewHistory";
+const ScoreTrend = lazy(() => import("../components/ScoreTrend").then((m) => ({ default: m.ScoreTrend })));
 import { TopBar } from "../components/TopBar";
 import { Button } from "../components/ui/Button";
 import { Dialog } from "../components/ui/Dialog";
@@ -51,6 +52,13 @@ export function HistoryPage({ history, onOpen, canOpen, onStart, onHome, onClear
             </dl>
           )}
         </div>
+        {history.length >= 2 && (
+          <div className="mb-5">
+            <Suspense fallback={<div className="h-[250px] rounded-xl border border-line bg-surface" />}>
+              <ScoreTrend history={history} />
+            </Suspense>
+          </div>
+        )}
         <InterviewHistory items={history} onOpen={onOpen} onStart={onStart} canOpen={canOpen} />
         {history.length > 0 && (
           <div className="mt-5 flex items-center justify-between gap-4 text-[12px] text-faint">

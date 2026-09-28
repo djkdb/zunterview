@@ -51,6 +51,13 @@ export function getCompany(id: string | null | undefined): Company | null {
   return id ? (BY_ID.get(id) ?? null) : null;
 }
 
+/** "Passionate: 끊임없이 도전하는 열정人" → "Passionate", "핵심가치: 안전(우선)" → "안전" */
+export function talentKeyword(t: string): string {
+  let s = t.replace(/^(?:핵심가치|인재상|가치)\s*[:：]\s*/, "");
+  s = s.split(/\s*[:：(（]/)[0].trim();
+  return s.length > 14 ? `${s.slice(0, 13)}…` : s;
+}
+
 export function companyTracks(c: Company): string[] {
   const tracks = new Set(c.questions.map((q) => q.track).filter((t) => t !== "공통"));
   return ["공통", ...tracks];

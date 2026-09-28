@@ -17,6 +17,9 @@ export const COPY = {
     nextQuestion: "다음 질문",
     stages: ["답변 제출", "면접관 검토", "평가 기록"],
     whyFollowUp: "질문 의도",
+    repeat: "질문 다시 듣기",
+    dontKnow: "잘 모르겠어요",
+    dontKnowAnswer: "죄송합니다. 그 부분은 잘 모르겠습니다.",
   },
   en: {
     lang: "en",
@@ -33,6 +36,9 @@ export const COPY = {
     nextQuestion: "Next question",
     stages: ["Submitted", "Panel reviewing", "Scoring"],
     whyFollowUp: "Intent",
+    repeat: "Hear it again",
+    dontKnow: "I don't know",
+    dontKnowAnswer: "I'm sorry, I don't know the answer to that.",
   },
 } satisfies Record<Language, unknown>;
 

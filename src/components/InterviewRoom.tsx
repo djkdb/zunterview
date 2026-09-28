@@ -82,12 +82,12 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
 
       {/* wall screen with the "company" sign */}
       <g>
-        <rect x="462" y="14" width="276" height="92" rx="6" fill="#2a2f39" />
-        <rect x="468" y="20" width="264" height="80" rx="3" fill="url(#screen)" />
-        <text x="600" y="58" textAnchor="middle" fill="#e9edf5" fontSize="22" fontFamily="JetBrains Mono, monospace" letterSpacing="3">
+        <rect x="468" y="36" width="264" height="84" rx="6" fill="#2a2f39" />
+        <rect x="474" y="42" width="252" height="72" rx="3" fill="url(#screen)" />
+        <text x="600" y="76" textAnchor="middle" fill="#e9edf5" fontSize="22" fontFamily="JetBrains Mono, monospace" letterSpacing="3">
           INTERVIEW<tspan fill="#7fa6e0">//</tspan>AI
         </text>
-        <text x="600" y="84" textAnchor="middle" fill="#9fb0c9" fontSize="13" fontFamily="Pretendard Variable, sans-serif">
+        <text x="600" y="100" textAnchor="middle" fill="#9fb0c9" fontSize="13" fontFamily="Pretendard Variable, sans-serif">
           모의면접 · {roomLabel}
         </text>
 
@@ -166,7 +166,7 @@ const WallClock = memo(function WallClock() {
     return <line x1="0" y1="0" x2={Math.cos(r) * len} y2={Math.sin(r) * len} stroke={color} strokeWidth={w} strokeLinecap="round" />;
   };
   return (
-    <g transform="translate(1030 104)" aria-hidden>
+    <g transform="translate(1030 124)" aria-hidden>
       <circle r="38" fill="#2d3038" />
       <circle r="33" fill="#fbfaf7" />
       {Array.from({ length: 12 }).map((_, i) => {

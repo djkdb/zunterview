@@ -154,7 +154,7 @@ export function SetupPage({ status, onStart, onHome }: { status: ProviderStatus 
             />
             <div className="grid gap-6 sm:grid-cols-2">
               <Segmented label="난이도" value={c.difficulty} onChange={(v) => set("difficulty", v)} options={DIFFICULTIES.map((v) => ({ value: v, label: DIFFICULTY_KO[v], hint: DIFFICULTY_HINT[v] }))} />
-              <Segmented label="문항 수" value={c.questionLimit} onChange={(v) => set("questionLimit", v)} options={QUESTION_LENGTHS.map((v) => ({ value: v, label: `${v}문항`, hint: `약 ${v * 2}분` }))} />
+              <Segmented label="문항 수 (꼬리질문 포함)" value={c.questionLimit} onChange={(v) => set("questionLimit", v)} options={QUESTION_LENGTHS.map((v) => ({ value: v, label: `${v}문항`, hint: `약 ${v * 2}분` }))} />
             </div>
           </Section>
 

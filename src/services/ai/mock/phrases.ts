@@ -8,7 +8,7 @@ const REACTIONS: Record<AnswerQuality, Pool> = {
     en: ["Good — that was clear and specific.", "Great, that was easy to follow.", "Good. The key point came through clearly."],
   },
   adequate: {
-    ko: ["네, 잘 들었습니다.", "알겠습니다. 방향은 충분히 이해했습니다.", "네, 좋습니다."],
+    ko: ["네, 잘 들었습니다.", "네, 감사합니다.", "네, 좋습니다."],
     en: ["Okay, thank you.", "Understood — I get the general direction.", "Alright, thanks."],
   },
   vague: {
@@ -16,8 +16,8 @@ const REACTIONS: Record<AnswerQuality, Pool> = {
     en: ["That sounds a bit abstract.", "I get the direction, but I'd like more specifics."],
   },
   insufficient: {
-    ko: ["답변이 조금 짧았던 것 같습니다.", "그 상황에서 본인이 직접 한 행동에 초점을 맞춰 보면 좋겠습니다."],
-    en: ["That answer was a little short.", "Let's focus more on what you personally did."],
+    ko: ["답변이 조금 짧았던 것 같습니다.", "네, 조금 더 자세히 들을 수 있으면 좋겠네요."],
+    en: ["That answer was a little short.", "Okay — I'd have liked a bit more detail."],
   },
   off_topic: {
     ko: ["질문의 의도와 조금 다른 방향의 답변인 것 같습니다."],

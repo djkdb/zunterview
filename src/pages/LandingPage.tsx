@@ -9,6 +9,9 @@ import { DISCLAIMER } from "../config/options";
 import { buildPanel, type Seat } from "../config/panel";
 import type { ProviderStatus } from "../services/ai/providerFactory";
 import type { InterviewSummary } from "../types/interview";
+import type { ActiveInterview } from "../utils/storage";
+import { INTERVIEW_TYPE_KO } from "../config/labelsKo";
+import { longDate } from "../utils/format";
 
 const FEATURES = [
   { title: "꼬리질문", body: "내 답변에서 말한 내용을 짚어 다시 묻습니다." },
@@ -83,9 +86,41 @@ interface Props {
   onHistory: () => void;
   onOpenInterview: (id: string) => void;
   canOpen: (id: string) => boolean;
+  active: ActiveInterview | null;
+  onResume: () => void;
+  onDiscard: () => void;
 }
 
-export function LandingPage({ status, history, onStart, onHistory, onOpenInterview, canOpen }: Props) {
+function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview; onResume: () => void; onDiscard: () => void }) {
+  const i = active.interview;
+  const answered = i.questions.filter((q) => q.answer).length;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -6 }}
+      animate={{ opacity: 1, y: 0 }}
+      role="region"
+      aria-label="진행 중인 면접"
+      className="mt-6 flex flex-wrap items-center gap-4 rounded-xl border border-accent/30 bg-accent-soft px-5 py-4"
+    >
+      <div className="min-w-0 flex-1">
+        <p className="text-[15px] font-bold text-accent">진행 중이던 면접이 있습니다</p>
+        <p className="mt-0.5 text-[13px] text-muted">
+          {i.config.position} · {INTERVIEW_TYPE_KO[i.config.interviewType]} · {answered}/{i.config.questionLimit}문항 답변 · {longDate(active.savedAt)} 저장
+        </p>
+      </div>
+      <div className="flex gap-2">
+        <Button size="sm" variant="ghost" onClick={onDiscard}>
+          삭제
+        </Button>
+        <Button size="sm" variant="primary" onClick={onResume}>
+          이어서 면접 보기
+        </Button>
+      </div>
+    </motion.div>
+  );
+}
+
+export function LandingPage({ status, history, onStart, onHistory, onOpenInterview, canOpen, active, onResume, onDiscard }: Props) {
   return (
     <div className="flex min-h-dvh flex-col">
       <TopBar
@@ -98,6 +133,7 @@ export function LandingPage({ status, history, onStart, onHistory, onOpenIntervi
         }
       />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 sm:px-6">
+        {active && <ResumeBanner active={active} onResume={onResume} onDiscard={onDiscard} />}
         <section className="grid items-center gap-10 py-10 lg:grid-cols-[1fr_1.15fr] lg:py-14">
           <div className="text-center lg:text-left">
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-sm font-semibold text-accent">

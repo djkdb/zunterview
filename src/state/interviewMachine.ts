@@ -45,7 +45,7 @@ export type Action =
   | { type: "OPEN_SETUP" }
   | { type: "START"; interview: Interview }
   | { type: "QUESTION"; question: InterviewQuestion; now: number }
-  | { type: "LISTEN" }
+  | { type: "LISTEN"; now: number }
   | { type: "SUBMIT"; questionId: string; answer: string; mode: "text" | "voice"; durationSec: number }
   | { type: "STAGE"; stage: ProcessingStage }
   | { type: "ANALYZED"; questionId: string; analysis: AnswerAnalysis; score: number; source: ProviderKind }
@@ -56,6 +56,7 @@ export type Action =
   | { type: "FAIL"; error: InterviewError }
   | { type: "RECOVER" }
   | { type: "VIEW_RESULT"; interview: Interview }
+  | { type: "RESTORE"; interview: Interview; elapsedSec: number; now: number }
   | { type: "RESET" };
 
 export const initialState: InterviewState = {
@@ -113,7 +114,8 @@ export function reducer(state: InterviewState, action: Action): InterviewState {
     }
 
     case "LISTEN":
-      return state.phase === "ASKING" ? { ...state, phase: "LISTENING", transitionText: null } : state;
+      // The answer clock starts once the interviewer has finished asking.
+      return state.phase === "ASKING" ? { ...state, phase: "LISTENING", transitionText: null, questionStartedAt: action.now } : state;
 
     case "SUBMIT": {
       if (!state.interview) return state;
@@ -182,6 +184,19 @@ export function reducer(state: InterviewState, action: Action): InterviewState {
 
     case "VIEW_RESULT":
       return { ...initialState, phase: "RESULT", interview: action.interview };
+
+    case "RESTORE": {
+      const last = action.interview.questions[action.interview.questions.length - 1];
+      const phase: Phase = !last ? "NEXT_QUESTION" : !last.answer ? "LISTENING" : !last.feedback ? "ANALYZING" : "NEXT_QUESTION";
+      return {
+        ...initialState,
+        phase,
+        stage: phase === "ANALYZING" ? "thinking" : null,
+        interview: action.interview,
+        startedAt: action.now - action.elapsedSec * 1000,
+        questionStartedAt: action.now,
+      };
+    }
 
     case "RESET":
       return initialState;

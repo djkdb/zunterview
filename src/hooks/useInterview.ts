@@ -18,7 +18,7 @@ import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
 import { canAskFollowUp, isLastQuestion, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
-import { saveInterview } from "../utils/storage";
+import { clearActiveInterview, saveActiveInterview, saveInterview, type ActiveInterview } from "../utils/storage";
 
 const speechLang = (c: InterviewConfig) => (c.language === "ko" ? "ko-KR" : "en-US");
 
@@ -93,17 +93,18 @@ export function useInterview() {
 
   /* ─────────────────────────── voice helpers ─────────────────────────── */
 
-  const say = useCallback(async (text: string, run: number, seat: Seat = "center") => {
+  const say = useCallback(async (text: string, run: number, seat: Seat = "center", force = false) => {
     const i = stateRef.current.interview;
     if (!i) return;
-    if (voiceRef.current && isSpeechSynthesisSupported()) {
+    if ((voiceRef.current || force) && isSpeechSynthesisSupported()) {
       setSpeaking(true);
       const v = buildPanel(i.config.position)[seat].voice;
-      await speak(text, speechLang(i.config), { pitch: v.pitch, rate: v.rate, voiceIndex: v.index });
+      // Even if the browser's speech engine fails instantly, give people time to read the line.
+      await Promise.all([speak(text, speechLang(i.config), { pitch: v.pitch, rate: v.rate, voiceIndex: v.index }), force ? null : delay(Math.min(1500, 500 + text.length * 12))]);
       if (runRef.current === run) setSpeaking(false);
     } else {
       // Give the reader time proportional to the text (short, never sluggish).
-      await delay(Math.min(1700, 650 + text.length * 14));
+      if (!force) await delay(Math.min(1700, 650 + text.length * 14));
     }
   }, []);
 
@@ -175,7 +176,7 @@ export function useInterview() {
       if (reaction && stateRef.current.interview?.questions.length === 1) await say(reaction, run, "center");
       if (runRef.current !== run) return;
       await say(question.text, run, seat);
-      if (runRef.current === run) dispatch({ type: "LISTEN" });
+      if (runRef.current === run) dispatch({ type: "LISTEN", now: Date.now() });
     },
     [dispatch, say],
   );
@@ -300,6 +301,27 @@ export function useInterview() {
     [complete, dispatch, fail, nextMainQuestion, present, say],
   );
 
+  /* ─────────────────────────── persistence ─────────────────────────── */
+
+  // Keep the in-progress interview in storage; warn before leaving the page mid-interview.
+  useEffect(() => {
+    const active = ["ASKING", "LISTENING", "ANALYZING", "FOLLOW_UP", "NEXT_QUESTION", "ERROR"].includes(state.phase);
+    const i = state.interview;
+    if (active && i && i.questions.length) {
+      const elapsedSec = state.startedAt ? Math.round((Date.now() - state.startedAt) / 1000) : 0;
+      saveActiveInterview({ interview: i, elapsedSec, savedAt: Date.now() });
+    } else if (["COMPLETED", "RESULT", "SETUP", "INTRO"].includes(state.phase)) {
+      clearActiveInterview();
+    }
+    if (!active) return;
+    const warn = (e: BeforeUnloadEvent) => {
+      e.preventDefault();
+      e.returnValue = "";
+    };
+    window.addEventListener("beforeunload", warn);
+    return () => window.removeEventListener("beforeunload", warn);
+  }, [state.phase, state.interview, state.startedAt]);
+
   /* ─────────────────────────── public actions ─────────────────────────── */
 
   const openSetup = useCallback(() => {
@@ -400,6 +422,50 @@ export function useInterview() {
     retry();
   }, [retry, switchToMock]);
 
+  /** Continue an interview saved before a refresh / closed tab. */
+  const resume = useCallback(
+    async (saved: ActiveInterview) => {
+      const run = ++runRef.current;
+      setVoice(saved.interview.config.voiceEnabled);
+      if (status) {
+        providerRef.current = createProvider(status.mode, status.model, onUsage);
+        setProviderLabel(providerRef.current.label);
+      }
+      dispatch({ type: "RESTORE", interview: saved.interview, elapsedSec: saved.elapsedSec, now: Date.now() });
+      const s = stateRef.current;
+      const last = currentQuestion(s)!;
+      if (s.phase === "LISTENING") {
+        const ko = s.interview!.config.language !== "en";
+        await say(ko ? `다시 여쭤보겠습니다. ${last.text}` : `Let me ask again. ${last.text}`, run, seatFor(last.type, last.isFollowUp));
+      } else if (s.phase === "ANALYZING") {
+        void processRef.current(last, last.answer!, run);
+      } else if (isLastQuestion(s.interview!)) {
+        await complete(false, run);
+      } else {
+        try {
+          const next = await nextMainQuestion(s.interview!);
+          if (runRef.current === run) await present(next, run);
+        } catch (err) {
+          const retryNext = () => {
+            dispatch({ type: "RECOVER" });
+            nextMainQuestion(stateRef.current.interview!)
+              .then((next) => present(next, runRef.current))
+              .catch((e) => fail(e, retryNext));
+          };
+          fail(err, retryNext);
+        }
+      }
+    },
+    [complete, dispatch, fail, nextMainQuestion, onUsage, present, say, setVoice, status],
+  );
+
+  /** "다시 한번 말씀해 주시겠어요?" — replay the current question aloud. */
+  const repeatQuestion = useCallback(() => {
+    const q = currentQuestion(stateRef.current);
+    if (!q || q.answer) return;
+    void say(q.text, runRef.current, seatFor(q.type, q.isFollowUp), true);
+  }, [say]);
+
   const reset = useCallback(() => {
     runRef.current++;
     cancelSpeech();
@@ -471,6 +537,8 @@ export function useInterview() {
       continueWithMock,
       reset,
       viewInterview,
+      resume,
+      repeatQuestion,
       setVoice,
       skipSpeaking,
     },

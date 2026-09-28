@@ -10,6 +10,7 @@ const KEYS = {
   summaries: "interview-ai:history:v1",
   interview: (id: string) => `interview-ai:interview:v1:${id}`,
   lastConfig: "interview-ai:last-config:v1",
+  active: "interview-ai:active:v1",
   prefs: "interview-ai:prefs:v1",
 } as const;
 const MAX_FULL_RECORDS = 10;
@@ -82,7 +83,28 @@ export function clearAllLocalData() {
   for (const s of loadHistory()) remove(KEYS.interview(s.id));
   remove(KEYS.summaries);
   remove(KEYS.lastConfig);
+  remove(KEYS.active);
   remove(KEYS.prefs);
+}
+
+/* In-progress interview, so a refresh or closed tab doesn't lose everything. */
+export interface ActiveInterview {
+  interview: Interview;
+  elapsedSec: number;
+  savedAt: number;
+}
+const ACTIVE_TTL_MS = 24 * 60 * 60 * 1000;
+
+export const saveActiveInterview = (a: ActiveInterview) => write(KEYS.active, a);
+export const clearActiveInterview = () => remove(KEYS.active);
+export function loadActiveInterview(): ActiveInterview | null {
+  const a = read<ActiveInterview | null>(KEYS.active, null);
+  if (!a || !a.interview || !Array.isArray(a.interview.questions) || !a.interview.config) return null;
+  if (Date.now() - a.savedAt > ACTIVE_TTL_MS || !a.interview.questions.length) {
+    clearActiveInterview();
+    return null;
+  }
+  return a;
 }
 
 export const loadLastConfig = (): Partial<InterviewConfig> | null => read(KEYS.lastConfig, null);

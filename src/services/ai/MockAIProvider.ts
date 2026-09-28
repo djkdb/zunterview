@@ -34,12 +34,16 @@ import {
   type Localized,
 } from "./mock/questionBank";
 import { CLOSING, hash, reactionFor } from "./mock/phrases";
-import { extractMethods, extractTechs, objectParticle, quoteAround, readSignals, topicPhrase, TOPICS, type Signals } from "./mock/signals";
+import { extractMethods, extractTechs, josa, objectParticle, quoteAround, readSignals, topicPhrase, TOPICS, type Signals } from "./mock/signals";
 
 const L = (lang: Language, ko: string, en: string) => (lang === "ko" ? ko : en);
 
+/** Fills {var} and {var:을/를}-style slots (the particle is chosen to match the value). */
 const fill = (tpl: string, vars: Record<string, string>) =>
-  tpl.replace(/\{(\w+)\}/g, (_, k: string) => vars[k] ?? "");
+  tpl.replace(/\{(\w+)(?::(을\/를|이\/가|은\/는|와\/과))?\}/g, (_, k: string, pair?: "을/를" | "이/가" | "은/는" | "와/과") => {
+    const v = vars[k] ?? "";
+    return pair ? v + josa(v, pair) : v;
+  });
 
 export class MockAIProvider implements AIProvider {
   readonly kind = "mock" as const;
@@ -62,8 +66,15 @@ export class MockAIProvider implements AIProvider {
 
     // Earlier topics the candidate brought up — used to make "deep_dive" feel continuous.
     const earlierText = ctx.history.map((h) => h.answer).join("\n");
+    const earlier = readSignals(earlierText, "", lang);
     const earlierTopic = TOPICS.find((t) => t.pattern.test(earlierText));
-    vars.topic = earlierTopic ? earlierTopic.label[lang] : L(lang, "최근 프로젝트", "your recent project");
+    vars.topic = earlier.project
+      ? `‘${earlier.project}’`
+      : earlier.roleClaim
+        ? `‘${earlier.roleClaim}’`
+        : earlierTopic
+          ? earlierTopic.label[lang]
+          : L(lang, "최근 프로젝트", "your recent project");
 
     const jdKeywords = [...extractTechs(config.jobDescription), ...extractMethods(config.jobDescription)];
 
@@ -121,97 +132,125 @@ export class MockAIProvider implements AIProvider {
     const asked = ctx.askedQuestions;
     const ok = (f: FollowUpDecision) => (isDuplicateQuestion(f.question, asked) ? null : sanitizeFollowUp(f, turn.answer));
 
-    if (s.questionOverlap < 0.04 && s.chars > 40 && s.topics.length === 0) {
+    if (s.dontKnow) {
+      return none(L(lang, "지원자가 잘 모른다고 답해 다른 주제로 넘어갑니다.", "The candidate didn't know; moving to another topic."));
+    }
+    // Already asked them to elaborate and it's still one line — a real interviewer moves on.
+    const concrete = s.topics.length > 0 || s.methods.length > 0 || s.techs.length > 0 || Boolean(s.project || s.roleClaim || s.metric);
+    if (turn.isFollowUp && s.chars < 25 && !concrete) {
+      return none(L(lang, "추가 설명을 요청했지만 답변이 짧아 다음 질문으로 넘어갑니다.", "Still brief after a follow-up; moving on."));
+    }
+    if (isOffTopic(s)) {
       return none(L(lang, "질문과 관련성이 낮아 다음 주제로 넘어갑니다.", "Answer drifted off-topic; moving on."));
     }
 
     const topic = s.topics[0];
     const action = s.star.action > 0;
+    const opening = turn.type === "opening";
     const candidates: FollowUpDecision[] = [];
+    const push = (question: Localized, type: QuestionType, reason: Localized, anchor = "") =>
+      candidates.push({ needed: true, question: question[lang], type, reason: reason[lang], anchor });
 
     // 1) Two+ concrete methods → ask them to pick the most effective one.
     if (s.methods.length >= 2) {
       const [a, b] = s.methods;
-      candidates.push({
-        needed: true,
-        question: L(lang, `${a}, ${b} 중 가장 효과적이었던 방법 하나를 골라 설명해주세요.`, `Between ${a} and ${b}, pick the one that helped most and explain how you used it.`),
-        type: "technical",
-        reason: L(lang, `답변에서 '${a}'와(과) '${b}'를 언급했지만 각각을 어떻게 활용했는지는 설명되지 않았습니다.`, `The answer mentions '${a}' and '${b}' but not how each was used.`),
-        anchor: a,
-      });
+      push(
+        { ko: `${a}, ${b} 중 가장 효과적이었던 방법 하나를 골라 설명해주세요.`, en: `Between ${a} and ${b}, pick the one that helped most and explain how you used it.` },
+        "technical",
+        { ko: `'${a}'${josa(a, "와/과")} '${b}'${josa(b, "을/를")} 언급했지만 각각을 어떻게 활용했는지는 설명되지 않았습니다.`, en: `Mentions '${a}' and '${b}' but not how each was used.` },
+        a,
+      );
     }
 
     // 2) A topic claim without the "how".
     if (topic && (!action || s.chars < 40) && s.methods.length < 2) {
-      const how: Record<string, Localized> = {
-        performance: { ko: "그 성능 문제의 원인은 구체적으로 어떻게 찾으셨나요?", en: "How exactly did you find the cause of that performance issue?" },
-        incident: { ko: "그 장애의 원인은 어떻게 파악하셨나요?", en: "How did you identify the root cause of that incident?" },
-        conflict: { ko: "그 의견 차이는 구체적으로 어떻게 좁히셨나요?", en: "How exactly did you close that disagreement?" },
-        deadline: { ko: "촉박한 일정 속에서 무엇을 먼저 하기로 결정하셨나요?", en: "Under that deadline, what did you decide to do first?" },
-        architecture: { ko: "그 구조를 선택한 가장 큰 이유는 무엇이었나요?", en: "What was the main reason you chose that structure?" },
-        data: { ko: "그 분석에서 어떤 지표를 가장 중요하게 보셨나요?", en: "Which metric did you focus on most in that analysis?" },
-        user: { ko: "사용자의 문제를 어떤 방법으로 확인하셨나요?", en: "How did you confirm what the users' problem really was?" },
-        collaboration: { ko: "협업 과정에서 본인이 맡은 역할은 무엇이었나요?", en: "What was your specific role in that collaboration?" },
-        leadership: { ko: "팀을 이끌면서 가장 어려웠던 순간은 언제였나요?", en: "What was the hardest moment while leading the team?" },
-        failure: { ko: "그 실패의 원인을 스스로 어떻게 분석하셨나요?", en: "How did you analyze why it failed?" },
-        learning: { ko: "새로운 내용을 익힐 때 어떤 방법이 가장 효과적이었나요?", en: "What method worked best for you when learning it?" },
-      };
-      const q = how[topic.id];
-      if (q) {
-        const anchor = topicPhrase(turn.answer, topic.pattern);
-        candidates.push({
-          needed: true,
-          question: q[lang],
-          type: "deep_dive",
-          reason: L(lang, `'${topic.label.ko}'을(를) 언급했지만 해결 과정이 구체적으로 설명되지 않았습니다.`, `Mentions ${topic.label.en} but not how it was handled.`),
-          anchor,
-        });
-      }
+      const q = TOPIC_HOW[topic.id];
+      if (q) push(q, "deep_dive", { ko: `'${topic.label.ko}'${josa(topic.label.ko, "을/를")} 언급했지만 해결 과정이 구체적으로 설명되지 않았습니다.`, en: `Mentions ${topic.label.en} but not how it was handled.` }, topicPhrase(turn.answer, topic.pattern));
+    }
+
+    // Hypothetical ("what would you do if…") answers get a stress-test, not "what did you do".
+    const hypothetical = turn.type === "challenge";
+    if (hypothetical && depth === 0 && s.chars >= 25) {
+      push(
+        /팀|합의|설득|동료|상사|team|agree/i.test(turn.answer)
+          ? { ko: "만약 팀원들이 그 우선순위에 반대한다면 어떻게 설득하시겠어요?", en: "What if your team disagreed with those priorities — how would you persuade them?" }
+          : { ko: "그렇게 했을 때 생길 수 있는 리스크는 무엇이고, 어떻게 대비하시겠어요?", en: "What risks does that choice create, and how would you handle them?" },
+        "challenge",
+        { ko: "가정 상황에 대한 판단 기준이 실제로 버틸 수 있는지 확인합니다.", en: "Stress-test the judgment behind the hypothetical answer." },
+      );
     }
 
     // 3) Team did it — what did *you* do?
-    if (s.teamOnly) {
-      candidates.push({
-        needed: true,
-        question: L(lang, "그중 본인이 직접 해결한 부분은 무엇인가요?", "Which part of that did you personally handle?"),
-        type: "deep_dive",
-        reason: L(lang, "팀 단위의 활동은 설명했지만 본인의 역할이 확인되지 않습니다.", "Describes team work but not the candidate's own role."),
-        anchor: turn.answer.match(/팀|우리|저희|\bwe\b|\bteam\b/i)?.[0] ?? "",
-      });
+    if (s.teamOnly && !hypothetical) {
+      push(
+        { ko: "그중 본인이 직접 해결한 부분은 무엇인가요?", en: "Which part of that did you personally handle?" },
+        "deep_dive",
+        { ko: "팀 단위의 활동은 설명했지만 본인의 역할이 확인되지 않습니다.", en: "Describes team work but not the candidate's own role." },
+        turn.answer.match(/팀|우리|저희|\bwe\b|\bteam\b/i)?.[0] ?? "",
+      );
     }
 
-    // 4) Vague / too short.
-    if (s.chars < 25 || (!action && !topic && s.methods.length === 0)) {
-      candidates.push({
-        needed: true,
-        question: L(lang, "조금 추상적으로 들리는데, 실제 사례를 하나 들어주실 수 있을까요?", "That sounds a bit abstract — could you give me one real example?"),
-        type: "deep_dive",
-        reason: L(lang, "답변에서 구체적인 사례가 확인되지 않습니다.", "No concrete example in the answer."),
-        anchor: "",
-      });
+    // 4) Something they owned or built — real interviewers dig into it.
+    if (depth === 0 && (s.roleClaim || s.project)) {
+      const k = s.roleClaim || s.project;
+      push(
+        s.roleClaim
+          ? { ko: `${k}${objectParticle(k)} 맡으시면서 가장 어려웠던 점은 무엇이었나요?`, en: `What was the hardest part of owning ${k}?` }
+          : { ko: `${k}${k.endsWith("프로젝트") ? "를 진행하면서" : "을 만들면서"} 가장 어려웠던 점은 무엇이었나요?`, en: `What was the hardest part of building ${k}?` },
+        "deep_dive",
+        { ko: `'${k}'${josa(k, "을/를")} 언급했지만 그 과정에서의 어려움과 본인의 판단은 아직 나오지 않았습니다.`, en: `Mentions '${k}' but not the challenges or the candidate's decisions.` },
+        k,
+      );
     }
 
     // 5) Actions but no result.
-    if (action && s.star.result === 0 && s.numbers.length === 0) {
-      candidates.push({
-        needed: true,
-        question: L(lang, "그 결과 어떤 변화가 있었나요? 가능하면 수치로 말씀해주세요.", "What changed as a result? Numbers would help if you have them."),
-        type: "result",
-        reason: L(lang, "행동은 설명했지만 결과나 성과가 언급되지 않았습니다.", "Actions described, but no result or impact."),
-        anchor: "",
-      });
+    if (action && s.star.result === 0 && s.numbers.length === 0 && !opening) {
+      push(
+        { ko: "그 결과 어떤 변화가 있었나요? 가능하면 수치로 말씀해주세요.", en: "What changed as a result? Numbers would help if you have them." },
+        "result",
+        { ko: "행동은 설명했지만 결과나 성과가 언급되지 않았습니다.", en: "Actions described, but no result or impact." },
+      );
     }
 
-    // 6) One technology → why that one?
-    if (s.techs.length === 1 || (s.methods.length === 1 && s.techs.length === 0)) {
-      const k = s.techs[0] ?? s.methods[0];
-      candidates.push({
-        needed: true,
-        question: L(lang, `${k}${objectParticle(k)} 선택한 이유는 무엇이었나요? 다른 대안과 비교해서 설명해주세요.`, `Why ${k}? How did it compare to the alternatives?`),
-        type: "technical",
-        reason: L(lang, `'${k}'을(를) 사용했다고 했지만 선택 이유는 언급되지 않았습니다.`, `Uses '${k}' but doesn't say why.`),
-        anchor: k,
-      });
+    // 6) A number claim — verify how it was measured.
+    if (depth === 0 && s.metric) {
+      push(
+        { ko: `말씀하신 '${s.metric}'${josa(s.metric, "은/는")} 어떻게 측정하거나 확인하셨나요?`, en: `How did you measure or verify the '${s.metric}' you mentioned?` },
+        "result",
+        { ko: `'${s.metric}'이라는 수치를 제시했지만 측정 방법은 언급되지 않았습니다.`, en: `Gives '${s.metric}' but not how it was measured.` },
+        s.metric,
+      );
+    }
+
+    // 7) A technology choice → why that one? (prefer frameworks/infra over languages)
+    const tech = s.techs.find((t) => !/^(?:TypeScript|JavaScript|Java|Python|Go|Golang|Kotlin|Rust|SQL)$/i.test(t)) ?? (s.techs.length === 1 ? s.techs[0] : undefined) ?? (s.methods.length === 1 ? s.methods[0] : undefined);
+    if (tech) {
+      push(
+        { ko: `${tech}${objectParticle(tech)} 선택한 이유는 무엇이었나요? 다른 대안과 비교해서 설명해주세요.`, en: `Why ${tech}? How did it compare to the alternatives?` },
+        "technical",
+        { ko: `'${tech}'${josa(tech, "을/를")} 사용했다고 했지만 선택 이유는 언급되지 않았습니다.`, en: `Uses '${tech}' but doesn't say why.` },
+        tech,
+      );
+    }
+
+    // 8) Too short to work with — ask them to expand (naturally, depending on the question).
+    if (s.chars < 25) {
+      push(
+        opening
+          ? { ko: "조금 더 자세히 말씀해 주시겠어요? 어떤 경험을 해 오셨는지 궁금합니다.", en: "Could you tell me a bit more? I'd like to hear what you've worked on." }
+          : { ko: "조금 더 구체적으로 말씀해 주시겠어요? 실제 경험 한 가지를 예로 들어 주세요.", en: "Could you be more specific? Give me one real example." },
+        "deep_dive",
+        { ko: "답변이 짧아 판단할 근거가 부족합니다.", en: "The answer is too short to assess." },
+      );
+    }
+
+    // 9) Vague.
+    if (!action && !topic && s.methods.length === 0 && !s.project && !s.roleClaim) {
+      push(
+        { ko: "조금 추상적으로 들리는데, 실제 사례를 하나 들어주실 수 있을까요?", en: "That sounds a bit abstract — could you give me one real example?" },
+        "deep_dive",
+        { ko: "답변에서 구체적인 사례가 확인되지 않습니다.", en: "No concrete example in the answer." },
+      );
     }
 
     // Deeper threads need a stronger reason to continue.
@@ -252,7 +291,7 @@ export class MockAIProvider implements AIProvider {
 
     const avg = CATEGORY_KEYS.reduce((a, k) => a + scores[k].score, 0) / CATEGORY_KEYS.length;
     const quality: AnswerQuality =
-      s.chars < 20 ? "insufficient" : s.questionOverlap < 0.04 && s.topics.length === 0 && s.chars > 40 ? "off_topic" : avg >= 78 ? "strong" : avg >= 62 ? "adequate" : s.chars < 60 ? "insufficient" : "vague";
+      s.dontKnow || s.chars < 20 ? "insufficient" : isOffTopic(s) ? "off_topic" : avg >= 78 ? "strong" : avg >= 62 ? "adequate" : s.chars < 60 ? "insufficient" : "vague";
 
     const starApplicable = turn.type !== "technical" || /경험|사례|프로젝트|때|experience|time|project/i.test(turn.question);
     const part = (n: number, strongAt: number, notes: [string, string, string]): StarPart => ({
@@ -286,12 +325,28 @@ export class MockAIProvider implements AIProvider {
         quality,
         scores,
         star,
-        strength: strengthFor(best, s),
-        improve: improveFor(worst, s),
-        betterAnswer: betterAnswerFor(worst, s),
+        strength: s.dontKnow
+          ? L(lang, "모르는 부분을 솔직하게 인정했습니다.", "You were honest about what you don't know.")
+          : avg < 55
+            ? s.firstPerson
+              ? L(lang, "본인의 입장을 분명하게 말했습니다.", "You stated your own position clearly.")
+              : L(lang, "질문에 바로 답하려는 태도가 보였습니다.", "You responded directly.")
+            : strengthFor(best, s),
+        improve: s.dontKnow
+          ? L(lang, "모르는 질문도 '직접 해 보진 않았지만 저라면 ~부터 확인하겠습니다'처럼 접근 방법을 말하면 좋습니다.", "Even when you don't know, explain how you would approach it.")
+          : s.chars < 25
+            ? L(lang, "답변이 너무 짧습니다. 결론 한 문장에 근거가 되는 경험을 2~3문장 덧붙여 보세요.", "Too short — add two or three sentences of supporting experience.")
+            : improveFor(worst, s),
+        betterAnswer: s.dontKnow
+          ? {
+              problem: L(lang, "답변을 포기함", "Declined to answer"),
+              suggestion: L(lang, "모른다고 끝내지 말고 생각의 순서를 보여주기", "Show how you'd reason about it"),
+              example: L(lang, "“직접 경험은 없지만, 저라면 먼저 [확인할 지표]를 보고 [접근 방법]으로 원인을 좁혀 보겠습니다.”", "“I haven't done it myself, but I'd start by checking [metric] and narrow it down with [approach].”"),
+            }
+          : betterAnswerFor(worst, s),
         evidence,
         notFound,
-        reaction: reactionFor(quality, ctx.config.persona, lang, seed),
+        reaction: s.dontKnow ? dontKnowReaction(ctx.config.persona, lang) : reactionFor(quality, ctx.config.persona, lang, seed),
       },
       turn.answer,
     );
@@ -313,9 +368,9 @@ export class MockAIProvider implements AIProvider {
 
     const headline =
       overall >= 80
-        ? L(lang, `전반적으로 안정적인 면접이었습니다. 특히 ${sName}이(가) 돋보였습니다.`, `A solid interview overall — ${sName} stood out.`)
+        ? L(lang, `전반적으로 안정적인 면접이었습니다. 특히 ${sName}${josa(sName, "이/가")} 돋보였습니다.`, `A solid interview overall — ${sName} stood out.`)
         : overall >= 65
-          ? L(lang, `기본기는 갖췄지만 ${wName}을(를) 보완하면 답변이 훨씬 강해질 수 있습니다.`, `Good foundations; improving ${wName} would make your answers much stronger.`)
+          ? L(lang, `기본기는 갖췄지만 ${wName}${josa(wName, "을/를")} 보완하면 답변이 훨씬 강해질 수 있습니다.`, `Good foundations; improving ${wName} would make your answers much stronger.`)
           : L(lang, `답변을 더 구체적으로 구성하는 연습이 필요합니다.`, `Practice making your answers more concrete and structured.`);
 
     return {
@@ -336,6 +391,31 @@ export class MockAIProvider implements AIProvider {
 }
 
 /* ───────────────────────────── copy helpers ──────────────────────────── */
+
+/** Only call an answer off-topic when there's nothing concrete to hold on to. */
+function isOffTopic(s: Signals): boolean {
+  return s.questionOverlap < 0.02 && s.chars > 80 && !s.topics.length && !s.methods.length && !s.techs.length && !s.project && !s.roleClaim;
+}
+
+function dontKnowReaction(persona: InterviewContext["config"]["persona"], lang: Language): string {
+  if (persona === "strict") return L(lang, "알겠습니다. 다음으로 넘어가죠.", "Understood. Let's move on.");
+  if (persona === "friendly") return L(lang, "괜찮아요. 다른 질문으로 넘어가 볼게요.", "That's fine — let's try another question.");
+  return L(lang, "괜찮습니다. 다음 질문으로 넘어가겠습니다.", "That's alright. Let's move to the next question.");
+}
+
+const TOPIC_HOW: Record<string, Localized> = {
+  performance: { ko: "그 성능 문제의 원인은 구체적으로 어떻게 찾으셨나요?", en: "How exactly did you find the cause of that performance issue?" },
+  incident: { ko: "그 장애의 원인은 어떻게 파악하셨나요?", en: "How did you identify the root cause of that incident?" },
+  conflict: { ko: "그 의견 차이는 구체적으로 어떻게 좁히셨나요?", en: "How exactly did you close that disagreement?" },
+  deadline: { ko: "촉박한 일정 속에서 무엇을 먼저 하기로 결정하셨나요?", en: "Under that deadline, what did you decide to do first?" },
+  architecture: { ko: "그 구조를 선택한 가장 큰 이유는 무엇이었나요?", en: "What was the main reason you chose that structure?" },
+  data: { ko: "그 분석에서 어떤 지표를 가장 중요하게 보셨나요?", en: "Which metric did you focus on most in that analysis?" },
+  user: { ko: "사용자의 문제를 어떤 방법으로 확인하셨나요?", en: "How did you confirm what the users' problem really was?" },
+  collaboration: { ko: "협업 과정에서 본인이 맡은 역할은 무엇이었나요?", en: "What was your specific role in that collaboration?" },
+  leadership: { ko: "팀을 이끌면서 가장 어려웠던 순간은 언제였나요?", en: "What was the hardest moment while leading the team?" },
+  failure: { ko: "그 실패의 원인을 스스로 어떻게 분석하셨나요?", en: "How did you analyze why it failed?" },
+  learning: { ko: "새로운 내용을 익힐 때 어떤 방법이 가장 효과적이었나요?", en: "What method worked best for you when learning it?" },
+};
 
 function intentFor(type: QuestionType, lang: Language): string {
   const m: Record<QuestionType, Localized> = {

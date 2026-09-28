@@ -55,6 +55,29 @@ describe("MockAIProvider follow-ups", () => {
     expect(f.question).toContain("본인이 직접");
   });
 
+  it("moves on gracefully when the candidate doesn't know", async () => {
+    const turn = { question: "트래픽이 10배로 늘어난다면 어디부터 병목을 확인하시겠어요?", type: "technical" as const, isFollowUp: false, answer: "잘 모르겠습니다." };
+    const f = await ai.generateFollowUp(ctx(), turn, 0);
+    const a = await ai.analyzeAnswer(ctx(), turn);
+    expect(f.needed).toBe(false);
+    expect(a.reaction).toContain("넘어가");
+    expect(a.strength).toContain("솔직");
+  });
+
+  it("digs into what the candidate said they owned in a self-introduction", async () => {
+    const f = await ai.generateFollowUp(
+      ctx(),
+      { question: "먼저 1분 동안 간단하게 자기소개 부탁드립니다.", type: "opening", isFollowUp: false, answer: "저는 부트캠프에서 React와 TypeScript로 팀 프로젝트 3개를 진행했고, 그중 쇼핑몰 프로젝트에서는 장바구니 기능을 맡았습니다." },
+      0,
+    );
+    expect(f.question).toContain("장바구니 기능");
+  });
+
+  it("asks to elaborate only once", async () => {
+    const f = await ai.generateFollowUp(ctx(), { question: "조금 더 자세히 말씀해 주시겠어요?", type: "deep_dive", isFollowUp: true, answer: "성장하고 싶어서요." }, 1);
+    expect(f.needed).toBe(false);
+  });
+
   it("stops following up at depth 2", async () => {
     const f = await ai.generateFollowUp(ctx(), { question: "q", type: "deep_dive", isFollowUp: true, answer: "로그와 profiling을 사용했습니다." }, 2);
     expect(f.needed).toBe(false);
@@ -114,5 +137,47 @@ describe("MockAIProvider questions & report", () => {
       },
     });
     expect(FinalReportSchema.safeParse(r).success).toBe(true);
+  });
+});
+
+describe("Korean particles after English terms", () => {
+  it("picks 을/를 by pronunciation", async () => {
+    const { objectParticle } = await import("./mock/signals");
+    expect(objectParticle("Zustand")).toBe("를");
+    expect(objectParticle("React")).toBe("를");
+    expect(objectParticle("Kotlin")).toBe("을");
+    expect(objectParticle("SQL")).toBe("을");
+    expect(objectParticle("API")).toBe("를");
+    expect(objectParticle("장바구니 기능")).toBe("을");
+    expect(objectParticle("캐시")).toBe("를");
+  });
+});
+
+describe("job-description driven questions", () => {
+  it("asks about a JD keyword with a natural particle", async () => {
+    const qs: string[] = [];
+    const types: InterviewContext["usedTypes"] = ["opening"];
+    for (let i = 1; i < 4; i++) {
+      const c = ctx({ config: { ...ctx().config, interviewType: "technical" }, progress: { asked: i, total: 5 }, askedQuestions: [...qs], usedTypes: [...types] });
+      const q = await ai.generateQuestion(c);
+      qs.push(q.question);
+      types.push(q.type);
+    }
+    const jd = qs.find((q) => q.includes("React"));
+    expect(jd).toBeDefined();
+    expect(jd).not.toMatch(/\(|\{/);
+  });
+});
+
+describe("hypothetical questions", () => {
+  it("stress-tests a what-if answer instead of asking what the candidate did", async () => {
+    const f = await ai.generateFollowUp(
+      ctx(),
+      { question: "만약 같은 일을 일정 절반으로 끝내야 했다면 무엇을 포기하시겠어요?", type: "challenge", isFollowUp: false, answer: "핵심 기능을 먼저 만들고 추천 기능은 미루겠습니다. 팀과 우선순위를 합의하겠습니다." },
+      0,
+    );
+    expect(f.needed).toBe(true);
+    expect(f.question).not.toContain("직접 해결");
+    expect(f.question).toContain("설득");
   });
 });

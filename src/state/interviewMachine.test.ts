@@ -53,7 +53,8 @@ describe("interview state machine", () => {
     expect(s.phase).toBe("INTRO");
     s = reducer(s, { type: "QUESTION", question: q("a"), now: 1000 });
     expect(s.phase).toBe("ASKING");
-    s = reducer(s, { type: "LISTEN" });
+    s = reducer(s, { type: "LISTEN", now: 3000 });
+    expect(s.questionStartedAt).toBe(3000); // answer clock starts after the question is asked
     expect(s.phase).toBe("LISTENING");
     s = reducer(s, { type: "SUBMIT", questionId: "a", answer: "answer", mode: "text", durationSec: 5 });
     expect(s.phase).toBe("ANALYZING");
@@ -76,5 +77,17 @@ describe("interview state machine", () => {
     expect(s.phase).toBe("ERROR");
     s = reducer(s, { type: "RECOVER" });
     expect(s.phase).toBe("ANALYZING");
+  });
+
+  it("restores an interrupted interview at the right step", () => {
+    const answered = { ...q("a"), answer: "x", feedback: analysis, score: 80 };
+    const pending = { ...q("b"), answer: "y" };
+    let s = reducer(initialState, { type: "RESTORE", interview: { ...interview, questions: [answered, q("c")] }, elapsedSec: 90, now: 100_000 });
+    expect(s.phase).toBe("LISTENING");
+    expect(s.startedAt).toBe(10_000);
+    s = reducer(initialState, { type: "RESTORE", interview: { ...interview, questions: [answered, pending] }, elapsedSec: 0, now: 0 });
+    expect(s.phase).toBe("ANALYZING");
+    s = reducer(initialState, { type: "RESTORE", interview: { ...interview, questions: [answered] }, elapsedSec: 0, now: 0 });
+    expect(s.phase).toBe("NEXT_QUESTION");
   });
 });

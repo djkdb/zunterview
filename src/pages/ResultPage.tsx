@@ -24,6 +24,8 @@ interface Props {
   fromHistory: boolean;
   storageOk: boolean;
   onNew: () => void;
+  /** Start again immediately with the same settings. */
+  onRetake: () => void;
   onHistory: () => void;
   onHome: () => void;
 }
@@ -45,7 +47,7 @@ function SheetSection({ no, title, children, delay = 0 }: { no: number; title: s
   );
 }
 
-export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onHistory, onHome }: Props) {
+export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onRetake, onHistory, onHome }: Props) {
   const [open, setOpen] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const panel = useMemo(() => buildPanel(i.config.position), [i.config.position]);
@@ -84,10 +86,10 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onHist
         right={
           <>
             <Button size="sm" variant="ghost" onClick={onHistory}>
-              나의 면접 기록
+              <span className="hidden sm:inline">나의 </span>면접 기록
             </Button>
             <Button size="sm" variant="primary" onClick={onNew}>
-              다시 면접 보기
+              새 면접<span className="hidden sm:inline"> 보기</span>
             </Button>
           </>
         }
@@ -250,8 +252,11 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onHist
           <Button variant="secondary" onClick={share} icon={<ShareIcon width={16} height={16} />}>
             결과 공유
           </Button>
-          <Button variant="primary" onClick={onNew}>
-            다시 면접 보기
+          <Button variant="secondary" onClick={onNew}>
+            설정 바꿔서 보기
+          </Button>
+          <Button variant="primary" onClick={onRetake}>
+            같은 조건으로 다시 보기
           </Button>
         </section>
         <p className="no-print mt-3 text-center text-[12px] text-faint">공유 카드에는 직무·점수·강점만 담기며, 답변 내용은 포함되지 않습니다.</p>

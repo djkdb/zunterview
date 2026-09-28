@@ -15,6 +15,8 @@ interface Props {
   /** Interviewer asking the current question / reacting. */
   speaker: PanelMember;
   copy: Copy;
+  /** Replay the question aloud (shown when speech output exists). */
+  onRepeat?: () => void;
 }
 
 function Words({ text, delay = 0 }: { text: string; delay?: number }) {
@@ -56,7 +58,7 @@ function Speaker({ m }: { m: PanelMember }) {
 }
 
 /** Subtitle-style card: who is asking and what. */
-export function QuestionPanel({ question, index, phase, stage, transitionText, speaker, copy }: Props) {
+export function QuestionPanel({ question, index, phase, stage, transitionText, speaker, copy, onRepeat }: Props) {
   const transitioning = phase === "FOLLOW_UP" || phase === "NEXT_QUESTION";
   const analyzing = phase === "ANALYZING";
   const stageIdx = stage === "submitted" ? 0 : stage === "thinking" ? 1 : stage === "analyzing" ? 2 : -1;
@@ -112,10 +114,21 @@ export function QuestionPanel({ question, index, phase, stage, transitionText, s
               <Words text={question.text} delay={0.05} />
             </h1>
 
-            {question.isFollowUp && question.anchor && !analyzing && (
-              <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-3 text-[13px] text-muted">
-                {copy.pickingUp} <mark className="rounded bg-[#fff1b8] px-1.5 py-0.5 font-semibold text-ink">“{question.anchor}”</mark>
-              </motion.p>
+            {!analyzing && ((question.isFollowUp && question.anchor) || (onRepeat && !question.answer)) && (
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+                {question.isFollowUp && question.anchor ? (
+                  <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-[13px] text-muted">
+                    {copy.pickingUp} <mark className="rounded bg-[#fff1b8] px-1.5 py-0.5 font-semibold text-ink">“{question.anchor}”</mark>
+                  </motion.p>
+                ) : (
+                  <span />
+                )}
+                {onRepeat && !question.answer && (
+                  <button type="button" onClick={onRepeat} className="rounded-md px-2 py-1 text-[12px] text-muted hover:bg-surface-3 hover:text-ink">
+                    🔊 {copy.repeat}
+                  </button>
+                )}
+              </div>
             )}
 
             {analyzing && (

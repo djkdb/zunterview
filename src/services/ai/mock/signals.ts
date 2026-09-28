@@ -18,7 +18,7 @@ export const TOPICS: Topic[] = [
   { id: "deadline", label: { ko: "촉박한 일정", en: "the tight deadline" }, pattern: /마감|일정|데드라인|기한|deadline|timeline|schedule|time pressure/i },
   { id: "architecture", label: { ko: "구조 설계", en: "the architecture decision" }, pattern: /아키텍처|설계|구조|마이그레이션|리팩(?:터|토)링|architecture|design|migration|refactor/i },
   { id: "data", label: { ko: "데이터 분석", en: "the data analysis" }, pattern: /데이터|지표|분석|대시보드|전환율|리텐션|metric|data|analytics|conversion|retention/i },
-  { id: "user", label: { ko: "사용자 문제", en: "the user problem" }, pattern: /사용자|고객|유저|사용성|피드백|user|customer|usability|feedback/i },
+  { id: "user", label: { ko: "사용자 문제", en: "the user problem" }, pattern: /사용자\s?(?:문제|불편|불만|인터뷰|리서치|피드백)|고객\s?(?:불만|문의|피드백)|VOC|사용성|유저\s?리서치|user research|usability|customer complaint/i },
   { id: "collaboration", label: { ko: "협업 과정", en: "the collaboration" }, pattern: /협업|소통|커뮤니케이션|조율|이해관계자|collaborat|communicat|stakeholder|align/i },
   { id: "leadership", label: { ko: "리딩 경험", en: "leading the team" }, pattern: /리드|리더|이끌|멘토|주도|lead|mentor|drove|owned/i },
   { id: "failure", label: { ko: "실패 경험", en: "that failure" }, pattern: /실패|실수|잘못|놓친|fail|mistake|missed/i },
@@ -51,6 +51,34 @@ export interface Signals {
   causal: number;
   star: { situation: number; task: number; action: number; result: number };
   questionOverlap: number;
+  /** "잘 모르겠습니다" / "패스" — the candidate declined to answer. */
+  dontKnow: boolean;
+  /** Something the candidate said they owned ("장바구니 기능을 맡았습니다" → "장바구니 기능"). */
+  roleClaim: string;
+  /** A named project/system ("쇼핑몰 프로젝트", "결제 시스템"). */
+  project: string;
+  /** A number with its unit, as written ("100만 건", "40%"). */
+  metric: string;
+}
+
+const VERB_ENDING = /(?:는|은|한|된|던|할|될|적인|하게|에서|으로|로)$/;
+const PARTICLE = /(?:을|를|이|가|은|는|에서|에|과|와|도|으로|로|의)$/u;
+
+function projectPhrase(text: string): string {
+  const re = /([가-힣A-Za-z0-9]{2,12})\s?(프로젝트|서비스|기능|플랫폼|시스템|파이프라인|대시보드|캠페인|앱)/g;
+  for (const m of text.matchAll(re)) {
+    const head = m[1].replace(PARTICLE, "");
+    if (!head || VERB_ENDING.test(m[1]) || /^(?:팀|이|그|저|해당|여러|모든|사이드|개인|토이)$/.test(head)) continue;
+    return `${head} ${m[2]}`;
+  }
+  return "";
+}
+
+function roleClaimPhrase(text: string): string {
+  const m = text.match(/([가-힣A-Za-z0-9]{1,12}(?:\s[가-힣A-Za-z0-9]{1,12})?)\s?(?:을|를)\s?(?:맡았|맡아|담당했|담당하|주도했|리드했|책임졌)/);
+  if (!m) return "";
+  const words = m[1].trim().split(/\s+/).filter((w) => !VERB_ENDING.test(w) && !/^(?:제가|저는|그중|주로|직접|혼자)$/.test(w));
+  return words.join(" ");
 }
 
 const count = (text: string, re: RegExp) => (text.match(re) ?? []).length;
@@ -122,6 +150,10 @@ export function readSignals(text: string, question: string, lang: Language): Sig
       result: count(t, /결과|개선되|줄었|줄였|감소|증가|향상|달성|단축|성과|절감|올랐|올렸|result|reduced|increased|improved|achieved|saved|faster|decreased|grew|cut/gi),
     },
     questionOverlap: bigramOverlap(question, t),
+    dontKnow: t.replace(/\s/g, "").length < 60 && /잘\s?모르|모르겠|기억이\s?(?:잘\s?)?안|패스|넘어가겠|해\s?본\s?적(?:이)?\s?없|경험이\s?없|don'?t know|not sure|no idea|\bpass\b|\bskip\b/i.test(t),
+    roleClaim: roleClaimPhrase(t),
+    project: projectPhrase(t),
+    metric: (t.match(/\d+(?:[.,]\d+)?\s?(?:%|퍼센트|배|초|ms|분|시간|명|개|건|만\s?건|만\s?명|만|천|x|times|users|percent)/i)?.[0] ?? "").trim(),
   };
 }
 
@@ -146,10 +178,26 @@ export function quoteAround(text: string, needle: string, max = 48): string {
   return text.slice(start, end).trim().replace(/[,.]$/, "");
 }
 
-/** Korean object particle 을/를 for a word, falling back to "을(를)". */
-export function objectParticle(word: string): string {
-  const last = word.trim().slice(-1);
+/** Does the word, as read aloud in Korean, end in a final consonant (받침)? */
+export function hasBatchim(word: string): boolean {
+  const w = word.trim().replace(/[^\p{L}\p{N}]+$/u, "");
+  const last = w.slice(-1);
   const code = last.charCodeAt(0);
-  if (code >= 0xac00 && code <= 0xd7a3) return (code - 0xac00) % 28 === 0 ? "를" : "을";
-  return "을(를)";
+  if (code >= 0xac00 && code <= 0xd7a3) return (code - 0xac00) % 28 !== 0;
+  if (/\d/.test(last)) return "0136780".includes(last); // 영·일·삼·육·칠·팔·(십)
+  // Acronyms are read letter by letter: L(엘) M(엠) N(엔) R(알) end in a consonant.
+  if (/^[A-Z0-9]{2,}$/.test(w)) return "LMNR".includes(last);
+  // English words: -m/-n/-l/-ng keep a final consonant ("Kotlin", "Python"); others add 으 ("React"→리액트).
+  return /[mnl]$/i.test(w) || /ng$/i.test(w);
+}
+
+/** Pick the particle form that fits the word: josa("캐시", "을/를") → "를". */
+export function josa(word: string, pair: "을/를" | "이/가" | "은/는" | "와/과"): string {
+  const [withB, without] = pair.split("/");
+  return hasBatchim(word) ? withB : without;
+}
+
+/** Korean object particle 을/를 that reads naturally after the word. */
+export function objectParticle(word: string): string {
+  return hasBatchim(word) ? "을" : "를";
 }

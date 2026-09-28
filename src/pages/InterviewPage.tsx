@@ -16,7 +16,7 @@ import { COPY } from "../config/copy";
 import { INTERVIEW_TYPE_KO } from "../config/labelsKo";
 import { applicantNumber, buildPanel, seatFor, type Seat } from "../config/panel";
 import type { InterviewController } from "../hooks/useInterview";
-import { useElapsed } from "../hooks/useTimer";
+import { useElapsed, useNow } from "../hooks/useTimer";
 import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
 import { isSpeechSynthesisSupported } from "../services/speech/speechSynthesis";
 import { currentQuestion, type InterviewState } from "../state/interviewMachine";
@@ -47,6 +47,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   const [activity, setActivity] = useState(0);
   const [confirmEnd, setConfirmEnd] = useState(false);
   const [notesOpen, setNotesOpen] = useState(false);
+  const [composing, setComposing] = useState(false);
   const running = !["COMPLETED", "RESULT", "IDLE", "SETUP", "INTRO"].includes(state.phase);
   const elapsed = useElapsed(state.startedAt, running);
 
@@ -60,12 +61,16 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   const transitioning = state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION";
   const speakerSeat: Seat = transitioning && lastAnswered ? seatFor(lastAnswered.type, lastAnswered.isFollowUp) : q ? seatFor(q.type, q.isFollowUp) : "center";
   const mode = roomMode(state);
+  const now = useNow(state.phase === "LISTENING" && !draft.trim(), 1000);
+  const silentFor = state.phase === "LISTENING" && !draft.trim() && state.questionStartedAt ? (now - state.questionStartedAt) / 1000 : 0;
 
   const statusLine =
     mode === "asking"
       ? `${panel[speakerSeat].name} ${panel[speakerSeat].title}이 ${transitioning ? "답변에 반응하고 있습니다" : "질문하고 있습니다"}`
       : mode === "listening"
-        ? "면접관들이 답변을 기다리고 있습니다"
+        ? silentFor > 20 && activity === 0
+          ? `${panel.center.name} ${panel.center.title}: “천천히 생각하셔도 괜찮습니다.”`
+          : "면접관들이 답변을 기다리고 있습니다"
         : mode === "reviewing"
           ? "면접관들이 답변을 검토하며 평가표를 작성하고 있습니다"
           : "";
@@ -98,7 +103,11 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
       <main className="mx-auto grid w-full max-w-[1440px] flex-1 lg:grid-cols-[minmax(0,1fr)_340px]">
         <section className="flex min-h-0 flex-col">
           {/* the room, seen from the candidate's chair */}
-          <div className="relative h-[34vh] min-h-[190px] w-full overflow-hidden border-b border-line sm:h-[40vh] lg:h-[46vh] lg:max-h-[470px]">
+          <div
+            className={`relative w-full overflow-hidden border-b border-line transition-[height] duration-300 lg:h-[46vh] lg:max-h-[470px] ${
+              composing ? "h-[16vh] min-h-[110px]" : "h-[34vh] min-h-[190px] sm:h-[40vh]"
+            }`}
+          >
             <InterviewRoom panel={panel} speaking={speakerSeat} mode={mode} activity={activity} />
             {statusLine && (
               <div className="absolute top-2 left-2 flex max-w-[calc(100%-1rem)] items-center gap-2 rounded-md bg-black/55 px-2.5 py-1 text-[11px] text-white backdrop-blur-sm sm:top-auto sm:bottom-3 sm:left-3 sm:text-[12px]" role="status">
@@ -112,7 +121,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
             {state.phase === "ERROR" && state.error ? (
               <ErrorPanel error={state.error} canUseMock={!fallbackActive && ctl.status?.mode === "ai"} onRetry={actions.retry} onMock={actions.continueWithMock} />
             ) : (
-              <QuestionPanel question={q} index={questionIndex} phase={state.phase} stage={state.stage} transitionText={state.transitionText} speaker={panel[speakerSeat]} copy={copy} />
+              <QuestionPanel question={q} index={questionIndex} phase={state.phase} stage={state.stage} transitionText={state.transitionText} speaker={panel[speakerSeat]} copy={copy} onRepeat={isSpeechSynthesisSupported() ? actions.repeatQuestion : undefined} />
             )}
             <AnimatePresence>{showLastAnswer && <LastAnswer key={lastAnswered!.id} text={lastAnswered!.answer!} label={copy.yourAnswer} lang={copy.lang} />}</AnimatePresence>
             {ctl.speaking && state.phase === "ASKING" && (
@@ -131,8 +140,10 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
               copy={copy}
               lang={interview.config.language === "ko" ? "ko-KR" : "en-US"}
               timeLimit={interview.config.answerTimeLimit}
-              questionStartedAt={state.questionStartedAt}
+              questionStartedAt={state.phase === "LISTENING" ? state.questionStartedAt : null}
               onActivity={setActivity}
+              onDontKnow={() => actions.submitAnswer(copy.dontKnowAnswer, "text")}
+              onFocusChange={setComposing}
             />
           </div>
         </section>

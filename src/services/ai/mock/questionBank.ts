@@ -110,6 +110,6 @@ export const TECHNICAL: Record<RoleFamily, Localized[]> = {
 
 /** Questions that reference the job description's own keywords. */
 export const JD_TECHNICAL: Localized[] = [
-  { ko: "직무 설명에 {jd}이(가) 있는데, 실제로 사용해본 경험을 말씀해주세요.", en: "The job description mentions {jd}. Tell me about your hands-on experience with it." },
-  { ko: "{jd}을(를) 사용하면서 겪었던 가장 까다로운 문제는 무엇이었나요?", en: "What was the trickiest problem you faced while working with {jd}?" },
+  { ko: "채용공고에 {jd:이/가} 있는데, 실제로 사용해 본 경험을 말씀해 주세요.", en: "The job description mentions {jd}. Tell me about your hands-on experience with it." },
+  { ko: "{jd:을/를} 사용하면서 겪었던 가장 까다로운 문제는 무엇이었나요?", en: "What was the trickiest problem you faced while working with {jd}?" },
 ];

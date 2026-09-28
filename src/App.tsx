@@ -7,7 +7,7 @@ import { InterviewPage } from "./pages/InterviewPage";
 import { LandingPage } from "./pages/LandingPage";
 import { SetupPage } from "./pages/SetupPage";
 import type { InterviewSummary } from "./types/interview";
-import { clearAllLocalData, loadHistory, loadInterview } from "./utils/storage";
+import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview } from "./utils/storage";
 
 const loadResultPage = () => import("./pages/ResultPage").then((m) => ({ default: m.ResultPage }));
 const ResultPage = lazy(loadResultPage);
@@ -22,6 +22,12 @@ export default function App() {
   const [showHistory, setShowHistory] = useState(false);
   const [fromHistory, setFromHistory] = useState(false);
   const [historyVersion, setHistoryVersion] = useState(0);
+  const [activeVersion, setActiveVersion] = useState(0);
+  // An interview interrupted by a refresh / closed tab can be resumed from the landing page.
+  const activeInterview = useMemo(() => {
+    void activeVersion;
+    return state.phase === "IDLE" ? loadActiveInterview() : null;
+  }, [state.phase, activeVersion]);
 
   // History is re-read whenever a new result lands or data is cleared.
   const history: InterviewSummary[] = useMemo(() => {
@@ -80,7 +86,20 @@ export default function App() {
         <AnimatePresence mode="wait">
           <motion.div key={screen} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
             {screen === "landing" && (
-              <LandingPage status={status} history={history} onStart={goSetup} onHistory={goHistory} onOpenInterview={openInterview} canOpen={canOpen} />
+              <LandingPage
+                status={status}
+                history={history}
+                onStart={goSetup}
+                onHistory={goHistory}
+                onOpenInterview={openInterview}
+                canOpen={canOpen}
+                active={activeInterview}
+                onResume={() => activeInterview && void actions.resume(activeInterview)}
+                onDiscard={() => {
+                  clearActiveInterview();
+                  setActiveVersion((v) => v + 1);
+                }}
+              />
             )}
             {screen === "history" && <HistoryPage history={history} onOpen={openInterview} canOpen={canOpen} onStart={goSetup} onHome={goHome} onClear={clearData} />}
             {screen === "setup" && <SetupPage status={status} onStart={actions.start} onHome={goHome} />}
@@ -92,6 +111,11 @@ export default function App() {
                 fromHistory={fromHistory}
                 storageOk={ctl.storageOk}
                 onNew={goSetup}
+                onRetake={() => {
+                  void loadResultPage();
+                  setFromHistory(false);
+                  actions.start(state.interview!.config);
+                }}
                 onHistory={goHistory}
                 onHome={goHome}
               />

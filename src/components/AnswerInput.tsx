@@ -17,9 +17,12 @@ interface Props {
   timeLimit: number;
   questionStartedAt: number | null;
   onActivity: (level: number) => void;
+  /** Submit a candid "I don't know" (moves the interview on). */
+  onDontKnow: () => void;
+  onFocusChange?: (focused: boolean) => void;
 }
 
-export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, timeLimit, questionStartedAt, onActivity }: Props) {
+export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, timeLimit, questionStartedAt, onActivity, onDontKnow, onFocusChange }: Props) {
   const textRef = useRef<HTMLTextAreaElement>(null);
   const usedVoice = useRef(false);
   const valueRef = useRef(value);
@@ -54,7 +57,7 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
   };
 
   const now = useNow(enabled && timeLimit > 0 && questionStartedAt !== null, 500);
-  const left = timeLimit > 0 && questionStartedAt ? timeLimit - Math.floor((now - questionStartedAt) / 1000) : null;
+  const left = timeLimit > 0 && questionStartedAt ? Math.min(timeLimit, timeLimit - Math.floor(Math.max(0, now - questionStartedAt) / 1000)) : null;
   const warn = left !== null && left <= 20 && left > 0;
   const over = left !== null && left <= 0;
 
@@ -66,8 +69,9 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
     usedVoice.current = false;
   };
 
+  // Focus the box for keyboard users on desktop; on phones this would pop the keyboard over the question.
   useEffect(() => {
-    if (enabled) textRef.current?.focus({ preventScroll: true });
+    if (enabled && window.matchMedia("(pointer: fine)").matches) textRef.current?.focus({ preventScroll: true });
   }, [enabled]);
 
   return (
@@ -89,6 +93,8 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
             onChange(e.target.value);
             pulseTyping();
           }}
+          onFocus={() => onFocusChange?.(true)}
+          onBlur={() => onFocusChange?.(false)}
           onKeyDown={(e) => {
             if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
               e.preventDefault();
@@ -144,7 +150,12 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
                 {over ? "00:00" : mmss(left)}
               </span>
             )}
-            <span className="hidden text-[11px] text-faint tabular-nums sm:inline">{value.length}/4000</span>
+            {value.trim() && (
+              <span className={`text-[11px] tabular-nums ${lengthHint(value).tone}`} title="말하기 기준 약 1분 ≈ 250~350자">
+                <span className="hidden sm:inline">{value.length}자 · </span>
+                {lengthHint(value).label}
+              </span>
+            )}
             <Button
               size="sm"
               variant="primary"
@@ -160,7 +171,8 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
         </div>
       </div>
 
-      <div className="mt-2 min-h-5 px-1 text-xs" aria-live="polite" lang={copy.lang}>
+      <div className="mt-2 flex min-h-5 items-start justify-between gap-3 px-1 text-xs" lang={copy.lang}>
+      <div aria-live="polite">
         {voice.error ? (
           <span className="text-warn">{voice.error}</span>
         ) : over ? (
@@ -175,6 +187,20 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
           <span className="text-faint">{copy.emptyAnswer}</span>
         ) : null}
       </div>
+      {enabled && !value.trim() && !voice.recording && (
+        <button type="button" onClick={onDontKnow} className="shrink-0 rounded px-1.5 py-0.5 text-faint underline-offset-2 hover:text-ink hover:underline">
+          {copy.dontKnow}
+        </button>
+      )}
+      </div>
     </div>
   );
+}
+
+/** Real interviews expect ~1-minute answers (≈250–350 Korean characters spoken). */
+function lengthHint(v: string): { label: string; tone: string } {
+  const n = v.replace(/\s/g, "").length;
+  if (n < 60) return { label: "조금 짧아요", tone: "text-warn" };
+  if (n <= 450) return { label: "적당해요", tone: "text-good" };
+  return { label: "길어요 · 핵심만", tone: "text-warn" };
 }

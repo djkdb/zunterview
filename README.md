@@ -150,7 +150,7 @@ Chromium(Playwright)으로 실제 앱을 구동해 확인한 시나리오:
 | 12 | API 실패: 디버그 Test Error → 일시정지 패널 → Retry 복구 / 깨진 JSON 응답 → Continue in Mock Mode | ✅ |
 | 13 | Mock Mode 전체 흐름 | ✅ |
 | 14 | 모바일 375 / 390 / 430px — 가로 스크롤 없음 | ✅ |
-| 15 | lint · typecheck · unit test(12) · build | ✅ |
+| 15 | lint · typecheck · unit test(19) · build | ✅ |
 
 AI MODE는 로컬 가짜 Messages API로 서버 요청 형태(모델, 구조화 출력, fallback 헤더)와 브라우저 흐름(꼬리질문 표시, 환각 인용 제거)을 검증했습니다. 실제 Claude 응답 품질은 `ANTHROPIC_API_KEY` 를 넣고 확인이 필요합니다.
 

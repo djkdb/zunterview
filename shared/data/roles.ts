@@ -163,7 +163,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "데이터·AI",
    "nameEn": "Data & AI",
    "group": "it",
-   "q": 222
+   "q": 227
   },
   {
    "id": "infra",
@@ -184,14 +184,14 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "디자인",
    "nameEn": "Design",
    "group": "media",
-   "q": 193
+   "q": 200
   },
   {
    "id": "content",
    "name": "콘텐츠·미디어",
    "nameEn": "Content & Media",
    "group": "media",
-   "q": 112
+   "q": 116
   },
   {
    "id": "broadcast",
@@ -219,14 +219,14 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "기계·자동차",
    "nameEn": "Mechanical & Automotive",
    "group": "rnd",
-   "q": 102
+   "q": 110
   },
   {
    "id": "chemical",
    "name": "화학·소재",
    "nameEn": "Chemicals & Materials",
    "group": "rnd",
-   "q": 108
+   "q": 112
   },
   {
    "id": "bio",
@@ -240,7 +240,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "환경",
    "nameEn": "Environment",
    "group": "rnd",
-   "q": 91
+   "q": 95
   },
   {
    "id": "energy",
@@ -644,7 +644,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Data",
    "dept": "데이터팀",
    "archetype": "data_analytic",
-   "q": 92
+   "q": 95
   },
   {
    "id": "ai",
@@ -653,7 +653,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "AI & Machine Learning",
    "dept": "AI연구소",
    "archetype": "tech_dev",
-   "q": 130
+   "q": 132
   },
   {
    "id": "infra",
@@ -698,7 +698,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Digital Product Design",
    "dept": "디자인팀",
    "archetype": "design_creative",
-   "q": 79
+   "q": 86
   },
   {
    "id": "visual_design",
@@ -716,7 +716,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Content",
    "dept": "콘텐츠팀",
    "archetype": "media_content",
-   "q": 112
+   "q": 116
   },
   {
    "id": "broadcast",
@@ -761,7 +761,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Mechanical & Automotive",
    "dept": "기계설계팀",
    "archetype": "engineering_design",
-   "q": 102
+   "q": 110
   },
   {
    "id": "chemical",
@@ -770,7 +770,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Chemicals & Materials",
    "dept": "소재연구소",
    "archetype": "research_science",
-   "q": 108
+   "q": 112
   },
   {
    "id": "bio_pharma",
@@ -788,7 +788,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Environment",
    "dept": "환경안전팀",
    "archetype": "safety_environment",
-   "q": 91
+   "q": 95
   },
   {
    "id": "energy",
@@ -2596,7 +2596,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Business Intelligence Analyst",
     "Reporting Analyst"
    ],
-   "q": 20
+   "q": 23
   },
   {
    "id": "data_scientist",
@@ -2676,7 +2676,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "리서치 사이언티스트",
     "ML Researcher"
    ],
-   "q": 16
+   "q": 18
   },
   {
    "id": "ai_pm",
@@ -2907,7 +2907,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "UI/UX 디자이너",
     "UXUI 디자이너"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "ui_designer",
@@ -2936,7 +2936,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "PD(디자인)",
     "제품 디자이너(디지털)"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "graphic_designer",
@@ -3068,7 +3068,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "온라인 기자",
     "에디터(언론)"
    ],
-   "q": 18
+   "q": 22
   },
   {
    "id": "broadcast_pd",
@@ -3371,7 +3371,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Automotive Engineer",
     "Vehicle Engineer"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "cae_engineer",
@@ -3390,7 +3390,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Simulation Engineer",
     "FEA Engineer"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "robotics_engineer",
@@ -3475,7 +3475,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "전극 공정",
     "Cell Engineer"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "bio_researcher",
@@ -3594,7 +3594,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "환경 조사",
     "EIA Specialist"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "esg_manager",
@@ -5299,16 +5299,16 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
   "roles": 256,
   "domains": 51,
   "families": 72,
-  "questions": 7929,
+  "questions": 7961,
   "commonQuestions": 383,
   "byBasis": {
-   "공개후기": 929,
-   "공식자료": 764,
+   "공개후기": 956,
+   "공식자료": 770,
    "공고기반": 140,
-   "직무기반": 5769,
+   "직무기반": 5768,
    "일반면접": 327
   },
-  "sources": 704,
+  "sources": 722,
   "generatedAt": "2026-09-30"
  }
 };

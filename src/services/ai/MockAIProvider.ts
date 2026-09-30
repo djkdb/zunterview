@@ -218,7 +218,7 @@ export class MockAIProvider implements AIProvider {
     }
     const triage = triageAnswer(turn.answer, lang);
     if (triage) return none(L(lang, "평가할 수 있는 답변이 아니어서 다음 질문으로 넘어갑니다.", "Not an answer that can be followed up; moving on."));
-    if (repeatsEarlier(turn.answer, ctx.history.map((h) => h.answer))) {
+    if (repeatsEarlier(turn.answer, earlierAnswers(ctx, turn))) {
       return none(L(lang, "앞선 답변을 반복해 다음 질문으로 넘어갑니다.", "Repeated an earlier answer; moving on."));
     }
     const dodge = dodgedQuestion(turn, s);
@@ -417,7 +417,7 @@ export class MockAIProvider implements AIProvider {
     const triage = triageAnswer(turn.answer, lang);
     if (triage && triage !== "clarify") return triagedAnalysis(triage, ctx, turn, seed);
     // Answers that don't address the question, or repeat an earlier answer, can't score on length alone.
-    const repeated = !s.dontKnow && repeatsEarlier(turn.answer, ctx.history.map((h) => h.answer));
+    const repeated = !s.dontKnow && repeatsEarlier(turn.answer, earlierAnswers(ctx, turn));
     const dodge = s.dontKnow || repeated ? null : dodgedQuestion(turn, s);
     const profane = hasProfanity(turn.answer);
 
@@ -641,6 +641,11 @@ function projectVerb(k: string): string {
   if (/(?:서비스|기능|플랫폼|시스템|파이프라인|대시보드|앱)$/.test(k)) return `${objectParticle(k)} 만들면서`;
   if (/(?:프로젝트|캠페인)$/.test(k)) return `${objectParticle(k)} 진행하면서`;
   return "에서";
+}
+
+/** Answers to other questions. The follow-up request's history already contains this very turn. */
+function earlierAnswers(ctx: InterviewContext, turn: CurrentTurn): string[] {
+  return ctx.history.filter((h) => !(h.question === turn.question && h.answer === turn.answer)).map((h) => h.answer);
 }
 
 /** Question types about something specific, where an answer can miss the point (not open questions or follow-ups). */

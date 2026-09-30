@@ -47,6 +47,12 @@ describe("mock interviewer: replies that aren't answers", () => {
     expect((await provider.analyzeAnswer(ctx(), turn)).improve).toContain("모르는 질문");
   });
 
+  it("still follows up when the request's history already holds this answer (as the app sends it)", async () => {
+    const turn = { question: "먼저 1분 동안 간단하게 자기소개 부탁드립니다.", type: "opening" as const, isFollowUp: false, answer: "안녕하세요. 대학병원 내과 병동에서 8주간 실습하면서 낙상 고위험 환자 체크리스트를 인수인계에 넣자고 제안했습니다." };
+    const f = await provider.generateFollowUp(ctx({ history: [turn] }), turn, 0);
+    expect(f.needed).toBe(true);
+  });
+
   it("opens a non-engineering job with work, not a 'project'", async () => {
     const q = await provider.generateQuestion(ctx({ progress: { asked: 0, total: 5, followUps: 0 }, usedTypes: [] }, { position: "회계", roleId: "accountant", interviewType: "technical", experience: "mid" }));
     expect(q.question).not.toContain("프로젝트");

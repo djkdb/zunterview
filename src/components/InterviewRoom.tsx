@@ -6,7 +6,7 @@
  * The interviewer who asks the current question talks; while answers are
  * reviewed the whole panel looks down and writes on the evaluation sheet.
  */
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { useNow } from "../hooks/useTimer";
 import type { PanelMember, Seat } from "../config/panel";
@@ -30,14 +30,45 @@ interface Props {
 
 const SEAT_X: Record<Seat, number> = { left: 330, center: 600, right: 870 };
 const DESK_Y = 372;
+const SCENE = { width: 1200, height: 520 };
+/** Just above the tallest hair. However short the room gets, the crop never starts below this. */
+const FACE_TOP = 136;
+/** Eye line: a band too thin for whole heads is centred here, so it shows eyes to chin rather than hair. */
+const EYE_Y = 208;
+
+/**
+ * The part of the scene to show for the element's size. Wider than the scene: the full width and a
+ * horizontal band — bottom-anchored (or centred), but never cutting into the heads; the name plates
+ * go first. Taller (phones): the full height, cropped at the sides by preserveAspectRatio.
+ */
+function useViewBox(anchor: "bottom" | "center") {
+  const ref = useRef<SVGSVGElement>(null);
+  const [size, setSize] = useState<{ w: number; h: number } | null>(null);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const measure = () => setSize({ w: el.clientWidth, h: el.clientHeight });
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+  const visible = size && size.w > 0 ? (SCENE.width * size.h) / size.w : SCENE.height;
+  if (visible >= SCENE.height) return { ref, viewBox: `0 0 ${SCENE.width} ${SCENE.height}` };
+  const spare = SCENE.height - visible;
+  const y = visible < 2 * (EYE_Y - FACE_TOP) ? EYE_Y - visible / 2 : Math.min(anchor === "center" ? spare / 2 : spare, FACE_TOP);
+  return { ref, viewBox: `0 ${y.toFixed(1)} ${SCENE.width} ${visible.toFixed(1)}` };
+}
 
 export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel = "제2면접실", companyName, anchor = "bottom", className = "" }: Props) {
   const [photos] = useState(photosEnabled);
+  const { ref, viewBox } = useViewBox(anchor);
   const photoSeat = (seat: Seat) => photos && PANEL_PHOTOS[seat] !== undefined;
   return (
     <svg
-      viewBox="0 0 1200 520"
-      preserveAspectRatio={anchor === "center" ? "xMidYMid slice" : "xMidYMax slice"}
+      ref={ref}
+      viewBox={viewBox}
+      preserveAspectRatio="xMidYMid slice"
       className={`block h-full w-full ${className}`}
       role="img"
       aria-label={`면접실. 면접관 3명이 책상에 앉아 있습니다. ${
@@ -154,7 +185,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
       {/* desk front panel + name plates */}
       <rect x="4" y={DESK_Y + 33} width="1192" height={520 - DESK_Y - 33} fill="url(#deskFront)" />
       <rect x="4" y={DESK_Y + 33} width="1192" height="6" fill="#000" opacity="0.06" />
-      {/* table banner — visible at any crop since the scene is bottom-anchored */}
+      {/* table banner — visible unless the room is squeezed so flat that the faces need the space */}
       <g transform={`translate(600 ${DESK_Y + 106})`}>
         <rect x="-190" y="0" width="380" height="30" rx="2" fill="#1f2b45" />
         <text x="0" y="20" textAnchor="middle" fontSize="14" fontWeight="700" fill="#eef1f4" letterSpacing="2" fontFamily="Pretendard Variable, sans-serif">
@@ -167,7 +198,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
 
       {/* speech bubble over the interviewer who is talking */}
       {mode === "asking" && speaking && (
-        <g transform={`translate(${SEAT_X[speaking] + 44} ${DESK_Y - 262})`}>
+        <g transform={photoSeat(speaking) ? `translate(${SEAT_X[speaking] + 74} ${DESK_Y - 214})` : `translate(${SEAT_X[speaking] + 44} ${DESK_Y - 232})`}>
           <path d="M0 0 h58 a10 10 0 0 1 10 10 v18 a10 10 0 0 1 -10 10 h-40 l-14 12 l2 -12 h-6 a10 10 0 0 1 -10 -10 v-18 a10 10 0 0 1 10 -10 z" fill="#ffffff" stroke="#1b3a6b" strokeOpacity="0.35" />
           {[0, 1, 2].map((d) => (
             <circle key={d} cx={18 + d * 14} cy="19" r="4" fill="#1b3a6b" className="iv-part" style={{ animation: `iv-dot 1s ease-in-out ${d * 0.15}s infinite` }} />

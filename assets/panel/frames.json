@@ -2,12 +2,93 @@
   "_comment": "Pose sheets (6 x 5 grid, transparent background) → public/panel/<seat>/<state>-<n>.webp. Cells are r<row>c<col>, 0-based. Run: python3 scripts/build-panel-photos.py",
   "left": {
     "sheet": "left-sheet.webp",
-    "grid": [6, 5],
+    "grid": [
+      6,
+      5
+    ],
     "frames": {
-      "idle": ["r0c3", "r1c3", "r4c0"],
-      "think": ["r0c2", "r2c0", "r2c2"],
-      "talk": ["r0c4", "r1c4", "r4c1", "r2c4"],
-      "review": ["r1c1", "r3c4", "r1c0"]
+      "idle": [
+        "r0c3",
+        "r1c3",
+        "r4c0"
+      ],
+      "think": [
+        "r0c2",
+        "r2c0",
+        "r2c2"
+      ],
+      "talk": [
+        "r0c4",
+        "r1c4",
+        "r4c1",
+        "r2c4"
+      ],
+      "review": [
+        "r1c1",
+        "r3c4",
+        "r1c0"
+      ]
+    }
+  },
+  "center": {
+    "sheet": "center-sheet.webp",
+    "grid": [
+      6,
+      5
+    ],
+    "frames": {
+      "idle": [
+        "r0c0",
+        "r1c4",
+        "r0c5"
+      ],
+      "think": [
+        "r0c2",
+        "r1c5",
+        "r2c4"
+      ],
+      "talk": [
+        "r0c1",
+        "r0c4",
+        "r2c3",
+        "r1c3"
+      ],
+      "review": [
+        "r2c2",
+        "r1c0",
+        "r3c4"
+      ]
+    }
+  },
+  "right": {
+    "sheet": "right-sheet.webp",
+    "grid": [
+      6,
+      5
+    ],
+    "background": "checker",
+    "frames": {
+      "idle": [
+        "r0c0",
+        "r1c4",
+        "r0c5"
+      ],
+      "think": [
+        "r0c2",
+        "r1c5",
+        "r2c4"
+      ],
+      "talk": [
+        "r0c1",
+        "r0c4",
+        "r2c3",
+        "r1c3"
+      ],
+      "review": [
+        "r2c2",
+        "r1c0",
+        "r4c0"
+      ]
     }
   }
 }

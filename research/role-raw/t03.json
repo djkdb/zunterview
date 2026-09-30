@@ -1,0 +1,64 @@
+{
+  "batch": "t03",
+  "sources": [
+    {"id": "t03s1", "title": "네이버 블로그 — 손해보험사 장기보험심사(언더라이터) 최종면접 후기 (간호사 지원자)", "url": "https://m.blog.naver.com/with_minee/223806854043", "type": "interview_review", "year": 2025},
+    {"id": "t03s2", "title": "네이버 블로그 — [면접 후기] 손해보험사 장기심사파트(언더라이터) 면접 질문 복기", "url": "https://m.blog.naver.com/zeteng/224150068592", "type": "interview_review", "year": 2026},
+    {"id": "t03s3", "title": "네이버 블로그 — [면접 후기] 손해보험사 장기 U/W(언더라이팅) 직무 면접 복기", "url": "https://m.blog.naver.com/zeteng/223947824942", "type": "interview_review", "year": 2025},
+    {"id": "t03s4", "title": "네이버 블로그 — 생명보험사 인턴십(상품개발·계리 계열) 1차 면접 후기", "url": "https://m.blog.naver.com/save718210/224365915733", "type": "interview_review", "year": 2025},
+    {"id": "t03s5", "title": "네이버 블로그 — [인턴 면접 후기] 대형 증권사 IB", "url": "https://m.blog.naver.com/flipsid3/224178795357", "type": "interview_review", "year": 2026},
+    {"id": "t03s6", "title": "네이버 블로그 — 사내변호사 면접 후기 (증권사·은행·게임회사)", "url": "https://m.blog.naver.com/kingdom_mycube/223944336668", "type": "interview_review", "year": 2025},
+    {"id": "t03s7", "title": "네이버 블로그 — 사내변호사 면접 후기 2 (방송사 1·2차 면접)", "url": "https://m.blog.naver.com/kingdom_mycube/224062494381", "type": "interview_review", "year": 2025},
+    {"id": "t03s8", "title": "네이버 블로그 — [면접후기] 지식재산 보호 전문기관 면접 후기", "url": "https://m.blog.naver.com/tmxhvldk2/223853505403", "type": "interview_review", "year": 2025},
+    {"id": "t03s9", "title": "네이버 블로그 — 첫 개인정보보호 직무(경력직) 면접 후기", "url": "https://m.blog.naver.com/rich_flavor/224415203016", "type": "interview_review", "year": 2026},
+    {"id": "t03s10", "title": "네이버 블로그 — 디지털 광고대행사 퍼포먼스 마케팅 인턴 서류 합격 & 면접 후기", "url": "https://m.blog.naver.com/angks5096/224265150995", "type": "interview_review", "year": 2026},
+    {"id": "t03s11", "title": "사람인 면접후기 — 영업관리(수·발주, B2B) 경력 면접 (66,022번째 면접경험)", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66022", "type": "interview_review", "year": 2026},
+    {"id": "t03s12", "title": "사람인 면접후기 — 외식 프랜차이즈 영업관리(SV) 면접 (67,961번째 면접경험)", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67961", "type": "interview_review", "year": 2026},
+    {"id": "t03s13", "title": "네이버 블로그 — 외국계 화장품사 면세 영업관리직 면접 합격 후기 (엑셀 과제 포함)", "url": "https://m.blog.naver.com/iammingyeong/224086894258", "type": "interview_review", "year": 2025},
+    {"id": "t03s14", "title": "사람인 채용공고 — 주류회사 OFF-Trade Key Account Manager(CVS·대형마트 담당)", "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55067027", "type": "job_description", "year": 2026},
+    {"id": "t03s15", "title": "사람인 채용공고 — 외국계 식품회사 [리테일/영업] Key Account Manager", "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55072225", "type": "job_description", "year": 2026}
+  ],
+  "profiles": [],
+  "questions": [
+    {"text": "간호간병통합서비스 병동 입원을 보장하는 상품이라면 가입 한도를 어느 수준으로 정해야 할지 어떻게 판단하시겠어요?", "scope": "role:underwriter", "category": "직무전문성", "type": "role_specific", "difficulty": "hard", "basis": "공개후기", "src": "t03s1", "confidence": "high"},
+    {"text": "병원 같은 임상 현장에서 일하다가 보험사 심사 업무로 오면 일하는 방식에서 무엇이 가장 달라질 거라고 보세요?", "scope": "role:underwriter", "category": "직무이해", "type": "role_understanding", "difficulty": "normal", "basis": "공개후기", "src": "t03s1", "confidence": "high"},
+    {"text": "언더라이팅은 비슷한 심사를 반복하는 일이 많은데, 지루해지지 않도록 본인은 어떻게 관리하시겠어요?", "scope": "role:underwriter", "category": "가치관", "type": "reflection", "difficulty": "normal", "basis": "공개후기", "src": "t03s2", "confidence": "high"},
+    {"text": "언더라이터 입장에서 보험설계사와는 어떤 관계를 만들어 가야 한다고 생각하세요?", "scope": "role:underwriter", "category": "커뮤니케이션", "type": "communication", "difficulty": "normal", "basis": "공개후기", "src": "t03s2", "confidence": "high"},
+    {"text": "요즘 관심 있게 본 보험상품이 있다면 무엇이고 왜 눈에 들어왔는지 말씀해 주세요.", "scope": "role:underwriter", "category": "산업", "type": "industry", "difficulty": "easy", "basis": "공개후기", "src": "t03s2", "confidence": "high"},
+    {"text": "현장에서 일하면서 이런 보장이 있으면 좋겠다고 느꼈던 보험상품 아이디어가 있나요?", "scope": "role:underwriter", "category": "경험", "type": "experience", "difficulty": "hard", "basis": "공개후기", "src": "t03s3", "confidence": "high"},
+
+    {"text": "보험상품을 개발할 때 이율이 왜 그렇게 중요한지 본인의 말로 설명해 주세요.", "scope": "role:actuary", "category": "직무전문성", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t03s4", "confidence": "medium"},
+    {"text": "아무런 규제나 제약이 없다고 가정하면 직접 개발해 보고 싶은 보험상품은 무엇이고, 그 이유는 무엇인가요?", "scope": "role:actuary", "category": "사례", "type": "case", "difficulty": "normal", "basis": "공개후기", "src": "t03s4", "confidence": "medium"},
+    {"text": "보험계리사 자격 취득은 준비하고 계신가요? 앞으로 어떻게 계획하고 있는지 말씀해 주세요.", "scope": "role:actuary", "category": "성장", "type": "motivation", "difficulty": "easy", "levels": ["entry", "junior"], "basis": "공개후기", "src": "t03s4", "confidence": "medium"},
+
+    {"text": "대기업보다 중소·중견기업 고객을 주로 맡게 되더라도 IB 업무에서 매력을 느낄 수 있는 이유는 무엇인가요?", "scope": "role:investment_banker", "category": "압박", "type": "challenge", "difficulty": "hard", "basis": "공개후기", "src": "t03s5", "confidence": "high"},
+    {"text": "딜 실무 경험이 많지 않은데, 업무 중 실수가 생기면 어떻게 대처하고 만회하시겠어요?", "scope": "role:investment_banker", "category": "상황대처", "type": "situational", "difficulty": "normal", "levels": ["entry", "junior"], "basis": "공개후기", "src": "t03s5", "confidence": "high"},
+
+    {"text": "로펌 변호사와 사내 변호사는 일하는 방식에서 무엇이 가장 크게 다르다고 보세요?", "scope": "role:lawyer", "category": "직무이해", "type": "role_understanding", "difficulty": "normal", "basis": "공개후기", "src": "t03s7", "confidence": "high"},
+    {"text": "수사기관에서 고객의 금융거래정보를 달라는 공문이 오면 법무 담당 변호사로서 무엇부터 검토하시겠어요?", "scope": "role:lawyer", "category": "직무전문성", "type": "role_specific", "difficulty": "hard", "basis": "공개후기", "src": "t03s6", "confidence": "high"},
+    {"text": "채무초과 상태인 거래처로부터 뒤늦게 담보를 설정받으려 한다면 어떤 법적 위험을 먼저 따져 보시겠어요?", "scope": "role:lawyer", "category": "직무전문성", "type": "role_specific", "difficulty": "hard", "basis": "공개후기", "src": "t03s6", "confidence": "high"},
+    {"text": "현장 영업점 직원들이 사내 법무팀의 주된 고객이라면, 이들과 소통할 때 무엇을 가장 신경 쓰시겠어요?", "scope": "role:lawyer", "category": "커뮤니케이션", "type": "communication", "difficulty": "normal", "basis": "공개후기", "src": "t03s6", "confidence": "high"},
+    {"text": "잘 모르는 분야의 법률 질의에 급하게 회신해야 한다면 어떤 순서로 처리하시겠어요?", "scope": "role:lawyer", "category": "상황대처", "type": "situational", "difficulty": "normal", "basis": "공개후기", "src": "t03s7", "confidence": "high"},
+    {"text": "현업 부서에서 시도 때도 없이 법률 문의가 들어온다면 어떻게 대응하시겠어요?", "scope": "role:lawyer", "category": "상황대처", "type": "situational", "difficulty": "normal", "basis": "공개후기", "src": "t03s7", "confidence": "high"},
+
+    {"text": "직접 관여한 발명이나 특허가 실제 권리 보호로 이어졌던 사례가 있다면 말씀해 주세요.", "scope": "role:ip_specialist", "category": "경험", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t03s8", "confidence": "medium"},
+    {"text": "출원했거나 다뤄 본 특허 가운데 가장 애착이 가는 기술 하나를 골라 핵심 내용을 설명해 주세요.", "scope": "role:ip_specialist", "category": "경험", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t03s8", "confidence": "medium"},
+
+    {"text": "다른 직무에서 일하다가 개인정보보호 업무로 옮긴다면 기존 경험을 어떻게 살리실 수 있을까요?", "scope": "role:privacy_officer", "category": "지원동기", "type": "motivation", "difficulty": "normal", "levels": ["junior", "mid"], "basis": "공개후기", "src": "t03s9", "confidence": "high"},
+    {"text": "이해관계자들의 이해가 서로 부딪히는 상황에서 이를 조율해 본 경험을 말씀해 주세요.", "scope": "role:privacy_officer", "category": "갈등", "type": "behavioral", "difficulty": "normal", "basis": "공개후기", "src": "t03s9", "confidence": "high"},
+    {"text": "개인정보보호 직무를 택한 뒤에도 다른 분야로 관심이 다시 옮겨 갈 가능성은 없을까요?", "scope": "role:privacy_officer", "category": "압박", "type": "challenge", "difficulty": "hard", "basis": "공개후기", "src": "t03s9", "confidence": "high"},
+
+    {"text": "광고 캠페인을 한 차례 집행한 뒤 다음 집행까지 어떤 부분을 중점적으로 개선하셨는지 말씀해 주세요.", "scope": "role:performance_marketer", "category": "경험", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t03s10", "confidence": "high"},
+    {"text": "지금까지 직접 운영해 보거나 공부해 본 광고 매체에는 어떤 것들이 있나요?", "scope": "role:performance_marketer", "category": "도구", "type": "experience", "difficulty": "easy", "levels": ["entry", "junior"], "basis": "공개후기", "src": "t03s10", "confidence": "high"},
+    {"text": "광고 운영이나 성과 분석을 할 때 AI 도구를 어느 정도, 어떤 방식으로 활용하셨나요?", "scope": "role:performance_marketer", "category": "도구", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t03s10", "confidence": "high"},
+
+    {"text": "영업관리 업무가 무엇이라고 생각하는지 본인의 말로 설명해 주세요.", "scope": "role:sales_manager", "category": "직무이해", "type": "role_understanding", "difficulty": "easy", "basis": "공개후기", "src": "t03s11", "confidence": "high"},
+    {"text": "지원하기 전에 담당하게 될 매장을 직접 가 봤다면, 영업관리 담당자로서 어떤 점을 개선해야겠다고 느꼈나요?", "scope": "role:sales_manager", "category": "실무", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t03s12", "confidence": "high"},
+    {"text": "여러 매장을 관리하는 담당자로서 가장 중점적으로 챙겨야 할 것은 무엇이라고 보세요?", "scope": "role:sales_manager", "category": "직무전문성", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t03s12", "confidence": "high"},
+    {"text": "여러 판매처에서 받은 원천 데이터를 발주 목록과 대조해 수량을 맞춰야 한다면 엑셀로 어떻게 작업하시겠어요?", "scope": "role:sales_manager", "category": "도구", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t03s13", "confidence": "high"},
+
+    {"text": "핵심 거래처와의 연간 협상을 앞두고 가격 조건, 프로모션, 매장 노출 가운데 무엇부터 정리하시겠어요?", "scope": "role:key_account", "category": "직무전문성", "type": "role_specific", "difficulty": "hard", "basis": "공고기반", "src": "t03s14", "confidence": "high"},
+    {"text": "거래처에 쓴 프로모션 비용이 제값을 했는지 어떤 지표로 판단하시겠어요?", "scope": "role:key_account", "category": "데이터", "type": "analytical", "difficulty": "normal", "basis": "공고기반", "src": "t03s14", "confidence": "high"},
+    {"text": "주요 거래처에서 주력 제품의 품절이 반복된다면 공급망 부서와 어떻게 풀어 가시겠어요?", "scope": "role:key_account", "category": "상황대처", "type": "situational", "difficulty": "normal", "basis": "공고기반", "src": "t03s14", "confidence": "high"},
+    {"text": "유통 파트너와 매달 판매와 재고 계획을 맞추는 회의를 이끈다면 어떤 숫자를 중심으로 논의하시겠어요?", "scope": "role:key_account", "category": "실무", "type": "role_specific", "difficulty": "normal", "basis": "공고기반", "src": "t03s15", "confidence": "high"}
+  ]
+}

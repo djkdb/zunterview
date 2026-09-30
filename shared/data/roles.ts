@@ -86,28 +86,28 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "금융·은행·보험",
    "nameEn": "Banking, Securities & Insurance",
    "group": "fin",
-   "q": 299
+   "q": 310
   },
   {
    "id": "legal",
    "name": "법무·컴플라이언스",
    "nameEn": "Legal & Compliance",
    "group": "biz",
-   "q": 162
+   "q": 173
   },
   {
    "id": "marketing",
    "name": "마케팅·광고·브랜드",
    "nameEn": "Marketing, Advertising & Brand",
    "group": "mkt",
-   "q": 263
+   "q": 266
   },
   {
    "id": "sales",
    "name": "영업·영업관리",
    "nameEn": "Sales",
    "group": "mkt",
-   "q": 213
+   "q": 221
   },
   {
    "id": "trade",
@@ -500,7 +500,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Securities & Asset Management",
    "dept": "투자사업부",
    "archetype": "finance_markets",
-   "q": 109
+   "q": 111
   },
   {
    "id": "insurance",
@@ -509,7 +509,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Insurance",
    "dept": "보험사업부",
    "archetype": "finance_markets",
-   "q": 93
+   "q": 102
   },
   {
    "id": "legal",
@@ -518,7 +518,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Legal",
    "dept": "법무팀",
    "archetype": "legal_compliance",
-   "q": 87
+   "q": 95
   },
   {
    "id": "compliance",
@@ -527,7 +527,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Compliance",
    "dept": "준법감시팀",
    "archetype": "legal_compliance",
-   "q": 75
+   "q": 78
   },
   {
    "id": "digital_marketing",
@@ -536,7 +536,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Digital Marketing",
    "dept": "마케팅팀",
    "archetype": "marketing_growth",
-   "q": 99
+   "q": 102
   },
   {
    "id": "brand",
@@ -572,7 +572,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Sales Management",
    "dept": "영업관리팀",
    "archetype": "sales_customer",
-   "q": 60
+   "q": 68
   },
   {
    "id": "trade",
@@ -1625,7 +1625,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "M&A 자문",
     "IB Analyst"
    ],
-   "q": 17
+   "q": 19
   },
   {
    "id": "asset_manager",
@@ -1672,7 +1672,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "계약심사",
     "인수심사"
    ],
-   "q": 24
+   "q": 30
   },
   {
    "id": "actuary",
@@ -1688,7 +1688,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "상품계리",
     "Actuarial Analyst"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "claims_adjuster",
@@ -1739,7 +1739,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Attorney",
     "Legal Counsel"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "ip_specialist",
@@ -1758,7 +1758,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "특허 엔지니어",
     "Patent Manager"
    ],
-   "q": 18
+   "q": 20
   },
   {
    "id": "compliance_officer",
@@ -1791,7 +1791,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Privacy Manager",
     "DPO"
    ],
-   "q": 24
+   "q": 27
   },
   {
    "id": "performance_marketer",
@@ -1808,7 +1808,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Paid Media",
     "UA 마케터"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "growth_marketer",
@@ -2062,7 +2062,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Sales Operations",
     "Sales Admin"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "key_account",
@@ -2077,7 +2077,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "대형 거래처 영업",
     "Key Account Management"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "overseas_sales",
@@ -5299,16 +5299,16 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
   "roles": 256,
   "domains": 51,
   "families": 72,
-  "questions": 7660,
+  "questions": 7693,
   "commonQuestions": 383,
   "byBasis": {
-   "공개후기": 669,
+   "공개후기": 698,
    "공식자료": 764,
-   "공고기반": 131,
+   "공고기반": 135,
    "직무기반": 5769,
    "일반면접": 327
   },
-  "sources": 566,
+  "sources": 581,
   "generatedAt": "2026-09-30"
  }
 };

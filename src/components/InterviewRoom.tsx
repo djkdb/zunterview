@@ -26,8 +26,6 @@ interface Props {
   roomLabel?: string;
   /** Company/institution the mock interview is modeled on (shown on the wall screen). */
   companyName?: string;
-  /** "center" keeps the faces in view when the room is squeezed (e.g. while typing on a phone). */
-  anchor?: "bottom" | "center";
   className?: string;
 }
 
@@ -35,22 +33,27 @@ const SEAT_X: Record<Seat, number> = { left: 330, center: 600, right: 870 };
 const DESK_Y = 372;
 const SCENE = { width: 1200, height: 520 };
 /**
- * Where the faces are in each scene. `top`: just above the tallest hair — however short the room
- * gets, the crop never starts below it. `eyes`: a band too thin for whole heads is centred here, so
- * it shows eyes to chin rather than hair.
+ * Where things are in each scene. `top`: just above the tallest hair — however short the room gets,
+ * the crop never starts below it. `eyes`: a band too thin for whole heads is centred here, so it shows
+ * eyes to chin rather than hair. `bottom`: the lowest part worth showing (name plates).
  */
 interface FaceBand {
   top: number;
   eyes: number;
+  bottom: number;
 }
-const DRAWN_FACES: FaceBand = { top: 136, eyes: 208 };
+const DRAWN_FACES: FaceBand = { top: 136, eyes: 208, bottom: 520 };
+/** On a phone the room shows only the panel — from the left interviewer's shoulder to the right one's. */
+const PANEL_SPAN = { x: 240, width: 720 };
+const NARROW_PX = 640;
 
 /**
- * The part of the scene to show for the element's size. Wider than the scene: the full width and a
- * horizontal band — bottom-anchored (or centred), but never cutting into the heads; the name plates
- * go first. Taller (phones): the full height, cropped at the sides by preserveAspectRatio.
+ * The part of the scene to show for the element's size. Phones zoom in on the panel (PANEL_SPAN);
+ * wider screens show the full width. When that leaves a horizontal band, it is bottom-anchored but
+ * never cuts into the heads — the name plates go first. When the element is taller
+ * than the scene, the full height shows and preserveAspectRatio crops the sides.
  */
-function useViewBox(anchor: "bottom" | "center", faces: FaceBand) {
+function useViewBox(faces: FaceBand) {
   const ref = useRef<SVGSVGElement>(null);
   const [size, setSize] = useState<{ w: number; h: number } | null>(null);
   useLayoutEffect(() => {
@@ -62,16 +65,20 @@ function useViewBox(anchor: "bottom" | "center", faces: FaceBand) {
     ro.observe(el);
     return () => ro.disconnect();
   }, []);
-  const visible = size && size.w > 0 ? (SCENE.width * size.h) / size.w : SCENE.height;
+  if (!size || size.w === 0) return { ref, viewBox: `0 0 ${SCENE.width} ${SCENE.height}` };
+  const narrow = size.w < NARROW_PX;
+  const x = narrow ? PANEL_SPAN.x : 0;
+  const width = narrow ? PANEL_SPAN.width : SCENE.width;
+  const visible = (width * size.h) / size.w;
   if (visible >= SCENE.height) return { ref, viewBox: `0 0 ${SCENE.width} ${SCENE.height}` };
-  const spare = SCENE.height - visible;
-  const y = visible < 2 * (faces.eyes - faces.top) ? faces.eyes - visible / 2 : Math.min(anchor === "center" ? spare / 2 : spare, faces.top);
-  return { ref, viewBox: `0 ${y.toFixed(1)} ${SCENE.width} ${visible.toFixed(1)}` };
+  const spare = faces.bottom - visible;
+  const y = visible < 2 * (faces.eyes - faces.top) ? faces.eyes - visible / 2 : Math.max(0, Math.min(spare, faces.top));
+  return { ref, viewBox: `${x} ${y.toFixed(1)} ${width} ${visible.toFixed(1)}` };
 }
 
-export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel = "제2면접실", companyName, anchor = "bottom", className = "" }: Props) {
+export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel = "제2면접실", companyName, className = "" }: Props) {
   const [photos] = useState(photosEnabled);
-  const { ref, viewBox } = useViewBox(anchor, photos ? PHOTO_FACES : DRAWN_FACES);
+  const { ref, viewBox } = useViewBox(photos ? PHOTO_FACES : DRAWN_FACES);
   return (
     <svg
       ref={ref}
@@ -411,7 +418,7 @@ const PHOTO_DESK_Y = 414;
 const PHOTO_W = 240;
 const PHOTO_H = (PHOTO_W * PHOTO_BOX.height) / PHOTO_BOX.width;
 const PHOTO_TOP = PHOTO_DESK_Y + 4 - PHOTO_H;
-const PHOTO_FACES: FaceBand = { top: PHOTO_TOP - 4, eyes: PHOTO_TOP + 52 };
+const PHOTO_FACES: FaceBand = { top: PHOTO_TOP - 4, eyes: PHOTO_TOP + 52, bottom: PHOTO_DESK_Y + 64 };
 /** How long each frame holds, per state (ms). Talking changes gesture often; listening barely moves. */
 const HOLD: Record<PhotoState, number> = { talk: 2300, review: 3400, think: 4200, idle: 6500 };
 

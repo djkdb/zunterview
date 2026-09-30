@@ -1,0 +1,490 @@
+{
+  "batch": "t04",
+  "sources": [
+    {
+      "id": "t04s1",
+      "title": "사람인 면접후기 — 기획MD 경력 면접 (2026 상반기)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/61035",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s2",
+      "title": "사람인 면접후기 — 기획MD 면접 (2025 상반기, 합격)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/61460",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t04s3",
+      "title": "사람인 면접후기 — 온라인MD·영업MD 면접 (2025 하반기, 합격)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/61446",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t04s4",
+      "title": "사람인 면접후기 — 온라인MD 신입 면접 (2026 상반기)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/62008",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s5",
+      "title": "네이버 블로그 — 경력직 온라인MD 면접에서 받은 질문들 (최근 면접 후기)",
+      "url": "https://blog.naver.com/black__kitten/224268684251",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s6",
+      "title": "네이버 블로그 — 이커머스 플랫폼 해외쇼핑 MD 면접 후기",
+      "url": "https://blog.naver.com/paradlso/224073352325",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t04s7",
+      "title": "네이버 블로그 — 6년차 패션MD의 기획MD 경력직 면접 후기",
+      "url": "https://blog.naver.com/nyenimi/224384781866",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s8",
+      "title": "사람인 면접후기 — 패션MD 신입 면접 (2025 하반기, 합격)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/59036",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t04s9",
+      "title": "네이버 블로그 — 고객센터 인바운드 상담 화상면접 후기 (당일 합격)",
+      "url": "https://blog.naver.com/90_km/224205796411",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s10",
+      "title": "사람인 면접후기 — CS 신입 면접 (2025 하반기, 합격)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/61562",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t04s11",
+      "title": "사람인 면접후기 — 인바운드 CS 면접 (2026 상반기)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/62927",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s12",
+      "title": "네이버 블로그 — CS·CX 운영 포지션 면접 후기 ('고객경험개선' 공고)",
+      "url": "https://blog.naver.com/kopierpapier/224171569076",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s13",
+      "title": "네이버 블로그 — IT 서비스 운영 매니저(고객 경험 개선·운영 효율화) 1·2차 면접 후기",
+      "url": "https://blog.naver.com/polymath_anon/224239193478",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s14",
+      "title": "네이버 블로그 — Junior Full Stack Developer 스크리닝·대면 면접 복기",
+      "url": "https://blog.naver.com/snejne/224219044177",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t04s15",
+      "title": "네이버 블로그 — 풀스택 포지션 이직 면접 후기 (백엔드 API 구현 과제)",
+      "url": "https://blog.naver.com/aaamy91/223857439346",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t04s16",
+      "title": "사람인 면접후기 — 풀스택·백엔드 신입 면접 (2025 하반기, 합격)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/60373",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t04s17",
+      "title": "네이버 블로그 — Supply Chain Planning 포지션 면접 후기 (2차 부서장 면접 질문)",
+      "url": "https://blog.naver.com/antiochcan/223681354404",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t04s18",
+      "title": "네이버 블로그 — 외주생산 Tactical Planner 면접 후기 (플래닝과 소싱 사이)",
+      "url": "https://blog.naver.com/antiochcan/223537157263",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t04s19",
+      "title": "네이버 블로그 — 식품 제조사 SCM(플래닝) 인턴 면접·근무 후기",
+      "url": "https://blog.naver.com/gusdl3454/224085895760",
+      "type": "interview_review",
+      "year": 2025
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "상품을 기획하면서 샘플을 만들고 최종 확정하기까지 어떤 과정을 거치셨는지 말씀해 주세요.",
+      "scope": "role:md",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s1",
+      "confidence": "high"
+    },
+    {
+      "text": "담당했던 상품의 매출을 평소 어떤 방식으로 관리하셨는지 구체적으로 말씀해 주세요.",
+      "scope": "role:md",
+      "category": "성과",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s1",
+      "confidence": "high"
+    },
+    {
+      "text": "좋아하는 아티스트나 콘텐츠로 상품을 하나 기획한다면 어떤 걸 만들어 보고 싶으세요?",
+      "scope": "role:md",
+      "category": "직무전문성",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "지금까지 다뤄 본 판매 채널 가운데 본인이 가장 강점을 가진 채널은 어디인가요?",
+      "scope": "role:online_md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "특정 분야에 특화된 버티컬 플랫폼에 입점하거나 운영해 본 경험이 있나요?",
+      "scope": "role:online_md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "온라인 MD가 실제로 어떤 일을 하는 직무라고 이해하고 계신지 말씀해 주세요.",
+      "scope": "role:online_md",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t04s4",
+      "confidence": "high"
+    },
+    {
+      "text": "직접 주도한 프로모션 하나를 골라 기획부터 실행, 협업까지 어떻게 진행했는지 말씀해 주세요.",
+      "scope": "role:online_md",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s5",
+      "confidence": "high"
+    },
+    {
+      "text": "전환율이나 광고 수익률 같은 지표를 개선해 본 적이 있다면, 무엇을 바꿔서 그렇게 만들었나요?",
+      "scope": "role:online_md",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t04s5",
+      "confidence": "high"
+    },
+    {
+      "text": "지원한 카테고리에서 요즘 잘 팔리는 상품은 무엇이고, 어떤 전략으로 더 키워 보시겠어요?",
+      "scope": "role:online_md",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "오프라인과 온라인 상품 기획을 나눌 때 어떤 판매 수치를 근거로 물량과 예산을 배분하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t04s7",
+      "confidence": "high"
+    },
+    {
+      "text": "임가공과 완사입 중 어떤 방식으로 진행할지 기획 단계에서 어떻게 판단하시나요?",
+      "scope": "role:fashion_md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t04s7",
+      "confidence": "high"
+    },
+    {
+      "text": "소재를 수배하거나 수입 소재를 쓸 때 MD로서 어디까지 직접 관여해 보셨나요?",
+      "scope": "role:fashion_md",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t04s7",
+      "confidence": "high"
+    },
+    {
+      "text": "시즌 상품 기획 캘린더를 직접 짜 본 적이 있다면 어떻게 구성하셨는지 말씀해 주세요.",
+      "scope": "role:fashion_md",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s8",
+      "confidence": "high"
+    },
+    {
+      "text": "이전 일에서 항의나 민원에 대응했던 경험을 상담 업무에 어떻게 살릴 수 있을지 말씀해 주세요.",
+      "scope": "role:cs_agent",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s9",
+      "confidence": "high"
+    },
+    {
+      "text": "컴플레인을 제기한 고객을 응대할 때 본인이 지키는 대응 순서가 있다면 말씀해 주세요.",
+      "scope": "role:cs_agent",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "상담 업무에 쓰이는 전산 프로그램이나 상담 툴을 다뤄 본 경험을 말씀해 주세요.",
+      "scope": "role:cs_agent",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t04s11",
+      "confidence": "medium"
+    },
+    {
+      "text": "처리 속도가 중요한 CS 조직에서 꼼꼼함을 강점으로 내세운다면, 그로 인해 생기는 비용은 어떻게 보시나요?",
+      "scope": "role:cs_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "상담 채널을 운영하면서 CX팀 같은 유관 부서와는 어떤 방식으로 협업하셨는지 말씀해 주세요.",
+      "scope": "role:cs_manager",
+      "category": "커뮤니케이션",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t04s13",
+      "confidence": "medium"
+    },
+    {
+      "text": "운영 개선 과제의 성과 지표를 여러 개 정했다면, 그중 무엇을 가장 중요하게 보시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t04s13",
+      "confidence": "medium"
+    },
+    {
+      "text": "지금까지 주로 어떤 종류의 고객 클레임을 다뤄 보셨는지 말씀해 주세요.",
+      "scope": "role:cs_manager",
+      "category": "고객",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t04s13",
+      "confidence": "medium"
+    },
+    {
+      "text": "프로젝트에서 백엔드 쪽은 구체적으로 어떤 작업까지 직접 해 보셨나요?",
+      "scope": "role:fullstack",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s14",
+      "confidence": "high"
+    },
+    {
+      "text": "React에서 useCallback과 useMemo는 각각 어떤 경우에 쓰는지 설명해 주세요.",
+      "scope": "role:fullstack",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s14",
+      "confidence": "high"
+    },
+    {
+      "text": "적은 인원이 프론트와 서버를 함께 맡는 작은 팀에서 일하는 것에 대해 어떻게 생각하세요?",
+      "scope": "role:fullstack",
+      "category": "조직적합성",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t04s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "면접에서 간단한 백엔드 API를 직접 구현하라는 과제를 받는다면 어떤 순서로 설계하고 구현하시겠어요?",
+      "scope": "role:fullstack",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "진행한 프로젝트의 전체 흐름을 화면에서 서버, 데이터베이스까지 이어서 설명해 주세요.",
+      "scope": "role:fullstack",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t04s16",
+      "confidence": "high"
+    },
+    {
+      "text": "빠르게 대응하는 공급망과 정확한 수요예측 중 하나만 고른다면 어느 쪽이고, 그 이유는 무엇인가요?",
+      "scope": "role:demand_planner",
+      "category": "가치관",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t04s17",
+      "confidence": "high"
+    },
+    {
+      "text": "반복되는 계획 업무를 표준화하는 것과 자동화하는 것 중 무엇을 먼저 하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s17",
+      "confidence": "high"
+    },
+    {
+      "text": "계획 업무를 할 때 엑셀과 BI 대시보드 중 하나를 택해야 한다면 무엇을 고르고, 왜 그런가요?",
+      "scope": "role:demand_planner",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s17",
+      "confidence": "high"
+    },
+    {
+      "text": "기준정보 관리와 매일의 운영 대응 중 수급 계획 담당자에게 더 중요한 건 무엇이라고 보세요?",
+      "scope": "role:demand_planner",
+      "category": "직무이해",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t04s17",
+      "confidence": "high"
+    },
+    {
+      "text": "외부 생산처와 수급을 맞추면서 가장 어려웠던 점은 무엇이었는지 말씀해 주세요.",
+      "scope": "role:demand_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t04s18",
+      "confidence": "medium"
+    },
+    {
+      "text": "여름 한철에 판매가 몰리는 제품을 다룬다면 수급 계획에서 가장 신경 써야 할 부분은 무엇일까요?",
+      "scope": "role:demand_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t04s19",
+      "confidence": "medium"
+    }
+  ]
+}

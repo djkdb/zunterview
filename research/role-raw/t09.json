@@ -1,0 +1,64 @@
+{
+  "batch": "t09",
+  "sources": [
+    {"id": "t09s1", "title": "네이버 블로그 — 34기 공인노무사 3차 면접 후기(응시자 본인이 받은 질문)", "url": "https://m.blog.naver.com/binlogin/224101495288", "type": "interview_review", "year": 2025},
+    {"id": "t09s2", "title": "네이버 블로그 — 34기 노무사 수습 노무법인 면접 후기(합격자 본인)", "url": "https://m.blog.naver.com/jjolmang22/224168496574", "type": "interview_review", "year": 2026},
+    {"id": "t09s3", "title": "네이버 블로그 — 관세사 합격 후 관세사무소·관세법인 면접 후기(수습 관세사 본인)", "url": "https://m.blog.naver.com/certified_k/223624610619", "type": "interview_review", "year": 2024},
+    {"id": "t09s4", "title": "네이버 블로그 — 감정평가법인 면접 후기(35기 감정평가사 본인, 대형·중소형 법인)", "url": "https://m.blog.naver.com/gee1v/223838474650", "type": "interview_review", "year": 2025},
+    {"id": "t09s5", "title": "사람인 면접후기 — CBRE KOREA 감정평가사(1-3년차) 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/59080", "type": "interview_review", "year": 2024},
+    {"id": "t09s6", "title": "네이버 블로그 — 부동산 PM 직무 취업 후기 3: 면접에서 받은 질문(합격자 본인)", "url": "https://m.blog.naver.com/amanthatearthforgot/224144203771", "type": "interview_review", "year": 2026},
+    {"id": "t09s7", "title": "네이버 블로그 — 부동산자산관리 회사 자산관리(PM) 직무 면접후기", "url": "https://m.blog.naver.com/0120816/223687621382", "type": "interview_review", "year": 2024},
+    {"id": "t09s8", "title": "네이버 블로그 — 중국어 통번역 면접 후기(보건소 의료센터 통번역 지원자 본인)", "url": "https://m.blog.naver.com/applexgy/224113566837", "type": "interview_review", "year": 2025},
+    {"id": "t09s9", "title": "사람인 면접후기 — (주)이노바이오써지 통/번역·무역영어 신입 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/41484", "type": "interview_review", "year": 2024},
+    {"id": "t09s10", "title": "사람인 면접후기 — (주)밥게이트 통/번역(일본어) 신입 면접·실기번역시험", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/45427", "type": "interview_review", "year": 2024},
+    {"id": "t09s11", "title": "사람인 면접후기 — (주)코리아테크노에이전시 통/번역(일본어) 신입 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/26655", "type": "interview_review", "year": 2023},
+    {"id": "t09s12", "title": "사람인 면접후기 — 엑슬레이션 통/번역 신입 면접(번역 테스트 후 면접)", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/22623", "type": "interview_review", "year": 2022},
+    {"id": "t09s13", "title": "사람인 면접후기 — (주)닐리리아 통/번역(1-3년차) 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/20359", "type": "interview_review", "year": 2022},
+    {"id": "t09s14", "title": "사람인 면접후기 — (주)유섭 통/번역 신입 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/52952", "type": "interview_review", "year": 2024},
+    {"id": "t09s15", "title": "사람인 면접후기 — 운동과학연구센터 헬스(트레이너) 신입 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/43122", "type": "interview_review", "year": 2024},
+    {"id": "t09s16", "title": "사람인 면접후기 — 서울대/포스코스포츠센터 헬스 트레이너(경력) 면접·실기", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/39150", "type": "interview_review", "year": 2021},
+    {"id": "t09s17", "title": "사람인 면접후기 — (주)웰사이언스 운동치료사·트레이너(4-8년차) 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67952", "type": "interview_review", "year": 2023},
+    {"id": "t09s18", "title": "사람인 면접후기 — (주)헬스보이짐컴퍼니 트레이너 면접(당일 체험수업 진행)", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/23162", "type": "interview_review", "year": 2021},
+    {"id": "t09s19", "title": "사람인 면접후기 — (주)론픽 트레이너·재활(팀장 제안) 면접", "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/30126", "type": "interview_review", "year": 2023}
+  ],
+  "profiles": [],
+  "questions": [
+    {"text": "공인노무사에게 가장 필요한 역량은 무엇이라고 생각하시나요?", "scope": "role:labor_attorney", "category": "직무이해", "type": "role_understanding", "difficulty": "easy", "basis": "공개후기", "src": "t09s1", "confidence": "high"},
+    {"text": "해고를 유형별로 나눈다면 어떻게 구분하고, 각각 무엇을 따져 봐야 할까요?", "scope": "role:labor_attorney", "category": "직무전문성", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t09s1", "confidence": "high"},
+    {"text": "단체협약의 효력이 조합원이 아닌 근로자에게까지 확장되는 제도는 어떤 취지라고 보시나요?", "scope": "role:labor_attorney", "category": "직무전문성", "type": "role_specific", "difficulty": "hard", "basis": "공개후기", "src": "t09s1", "confidence": "high"},
+    {"text": "노동 사건을 다루는 변호사도 있는데, 굳이 노무사를 택하신 이유는 무엇인가요?", "scope": "role:labor_attorney", "category": "지원동기", "type": "motivation", "difficulty": "normal", "basis": "공개후기", "src": "t09s2", "confidence": "high"},
+    {"text": "근로자가 주휴수당과 연차휴가를 제대로 받고 있는지 물어오면 무엇부터 확인하시겠어요?", "scope": "role:labor_attorney", "category": "실무", "type": "role_specific", "difficulty": "normal", "levels": ["entry", "junior"], "basis": "공개후기", "src": "t09s2", "confidence": "medium"},
+
+    {"text": "관세사 자격을 딴 뒤 첫 실무 경력을 이곳에서 시작하려는 이유는 무엇인가요?", "scope": "role:customs_broker", "category": "지원동기", "type": "motivation", "difficulty": "easy", "levels": ["entry", "junior"], "basis": "공개후기", "src": "t09s3", "confidence": "high"},
+    {"text": "시험 준비 때 가장 자신 있던 과목을 실무에서는 어떻게 살리고 싶으신가요?", "scope": "role:customs_broker", "category": "강점", "type": "reflection", "difficulty": "easy", "levels": ["entry", "junior"], "basis": "공개후기", "src": "t09s3", "confidence": "high"},
+    {"text": "신고 건 처리 방식을 두고 대표 관세사와 의견이 다르면 어떻게 하시겠어요?", "scope": "role:customs_broker", "category": "갈등", "type": "situational", "difficulty": "normal", "basis": "공개후기", "src": "t09s3", "confidence": "medium"},
+
+    {"text": "감정평가사로서 직접 영업을 한다면 본인의 어떤 강점을 살리시겠어요?", "scope": "role:appraiser", "category": "강점", "type": "reflection", "difficulty": "normal", "basis": "공개후기", "src": "t09s4", "confidence": "high"},
+    {"text": "감정평가사로 일하면서 특화하고 싶은 분야가 있다면 무엇이고, 왜 그 분야인가요?", "scope": "role:appraiser", "category": "성장", "type": "motivation", "difficulty": "normal", "basis": "공개후기", "src": "t09s4", "confidence": "high"},
+    {"text": "함께 평가 업무를 하는 팀원이 맡은 몫을 제대로 하지 않는다면 어떻게 대응하시겠어요?", "scope": "role:appraiser", "category": "팀워크", "type": "situational", "difficulty": "normal", "levels": ["junior", "mid"], "basis": "공개후기", "src": "t09s5", "confidence": "medium"},
+
+    {"text": "번역할 때 작업 속도와 정확성 중 어느 쪽을 더 중시하시나요?", "scope": "role:translator", "category": "가치관", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t09s9", "confidence": "high"},
+    {"text": "CAT 툴을 써 보셨다면 어떤 작업에 어떻게 활용하셨나요?", "scope": "role:translator", "category": "도구", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t09s10", "confidence": "high"},
+    {"text": "번역 작업에 생성형 AI를 써 본 적이 있다면 결과물을 어떻게 검수하셨나요?", "scope": "role:translator", "category": "도구", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t09s11", "confidence": "medium"},
+    {"text": "통역과 번역 중 어느 쪽이 본인 적성에 더 맞는다고 보시나요?", "scope": "role:translator", "category": "직무이해", "type": "role_understanding", "difficulty": "easy", "basis": "공개후기", "src": "t09s12", "confidence": "high"},
+    {"text": "번역 작업을 하면서 가장 힘들었던 경험과 그것을 어떻게 풀어 갔는지 말씀해 주세요.", "scope": "role:translator", "category": "경험", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t09s13", "confidence": "high"},
+    {"text": "번역 결과물을 두고 고객사와 문제가 생기면 어떻게 대처하시겠어요?", "scope": "role:translator", "category": "고객", "type": "situational", "difficulty": "normal", "basis": "공개후기", "src": "t09s14", "confidence": "medium"},
+    {"text": "짧은 생활 용어를 즉석에서 옮겨 달라는 요청을 받으면 정확한 대응어를 어떻게 고르시나요?", "scope": "role:translator", "category": "직무전문성", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t09s8", "confidence": "medium"},
+
+    {"text": "장애가 있는 회원을 지도할 때 비장애인 수업과 무엇을 다르게 준비하시겠어요?", "scope": "role:fitness_trainer", "category": "직무전문성", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t09s15", "confidence": "high"},
+    {"text": "유산소 운동과 무산소 운동은 어떤 기준으로 나뉜다고 회원에게 설명하시겠어요?", "scope": "role:fitness_trainer", "category": "직무전문성", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t09s16", "confidence": "high"},
+    {"text": "스쿼트·벤치프레스·데드리프트를 처음 배우는 회원에게 어떤 순서로 가르치시겠어요?", "scope": "role:fitness_trainer", "category": "실무", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t09s16", "confidence": "high"},
+    {"text": "엘리트 선수를 지도하다가 일반 직장인을 맡게 되면 지도 방식을 어떻게 바꾸시겠어요?", "scope": "role:fitness_trainer", "category": "상황대처", "type": "situational", "difficulty": "normal", "basis": "공개후기", "src": "t09s17", "confidence": "high"},
+    {"text": "어깨 관절와순(SLAP) 손상 이후 재활 운동을 맡는다면 어떤 순서로 진행하시겠어요?", "scope": "role:fitness_trainer", "category": "직무전문성", "type": "role_specific", "difficulty": "hard", "basis": "공개후기", "src": "t09s17", "confidence": "high"},
+    {"text": "처음 방문한 회원에게 체험 수업을 한 번 진행한다면 어떤 흐름으로 이끌어 가시겠어요?", "scope": "role:fitness_trainer", "category": "실무", "type": "situational", "difficulty": "normal", "basis": "공개후기", "src": "t09s18", "confidence": "medium"},
+    {"text": "운동 센터 운영에 참여해 본 경험이 있다면 어떤 일을 맡았는지 말씀해 주세요.", "scope": "role:fitness_trainer", "category": "경험", "type": "experience", "difficulty": "normal", "levels": ["mid", "senior"], "basis": "공개후기", "src": "t09s19", "confidence": "high"},
+
+    {"text": "임대인과 임차인이 갈등을 빚을 때 자산관리자는 어느 쪽에 서야 한다고 보시나요?", "scope": "role:real_estate_manager", "category": "윤리", "type": "ethics", "difficulty": "hard", "basis": "공개후기", "src": "t09s6", "confidence": "high"},
+    {"text": "NOC가 무엇인지, 어떻게 계산하는지 설명해 주실 수 있나요?", "scope": "role:real_estate_manager", "category": "직무전문성", "type": "role_specific", "difficulty": "normal", "basis": "공개후기", "src": "t09s6", "confidence": "high"},
+    {"text": "특정 지역에 있는 보유 자산의 공실이 길어지고 있다면 어떤 해소 전략을 제안하시겠어요?", "scope": "role:real_estate_manager", "category": "전략", "type": "case", "difficulty": "hard", "basis": "공개후기", "src": "t09s6", "confidence": "high"},
+    {"text": "임차인 민원을 직접 처리해 본 경험이 있다면 어떻게 해결했는지 말씀해 주세요.", "scope": "role:real_estate_manager", "category": "경험", "type": "experience", "difficulty": "normal", "basis": "공개후기", "src": "t09s6", "confidence": "high"},
+    {"text": "앞으로 부동산 PM 업계는 어떻게 달라질 것이라고 보시나요?", "scope": "role:real_estate_manager", "category": "산업", "type": "industry", "difficulty": "normal", "basis": "공개후기", "src": "t09s6", "confidence": "high"},
+    {"text": "PM은 을의 입장에서 일하는 경우가 많은데, 그런 위치에서 일해 본 경험이 있으신가요?", "scope": "role:real_estate_manager", "category": "조직적합성", "type": "behavioral", "difficulty": "normal", "basis": "공개후기", "src": "t09s6", "confidence": "high"},
+    {"text": "부동산 관련 일을 하면서 어려웠던 점과 그것을 어떻게 극복했는지 말씀해 주세요.", "scope": "role:real_estate_manager", "category": "경험", "type": "experience", "difficulty": "normal", "levels": ["junior", "mid"], "basis": "공개후기", "src": "t09s7", "confidence": "high"}
+  ]
+}

@@ -1,0 +1,696 @@
+{
+  "batch": "t02",
+  "sources": [
+    {
+      "id": "t02s1",
+      "title": "네이버 블로그 — 세무법인에서 기업 자금팀으로, 자금팀 면접 후기 (회계쟁이 #5)",
+      "url": "https://m.blog.naver.com/minseonee_/224414699311",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s2",
+      "title": "네이버 블로그 — 회계팀 이직 면접 후기, 실제로 받은 질문 (회계쟁이 #6)",
+      "url": "https://m.blog.naver.com/minseonee_/224416004424",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s3",
+      "title": "네이버 블로그 — 세무법인 신입 면접 후기 (회계쟁이 #4)",
+      "url": "https://m.blog.naver.com/minseonee_/224413767500",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s4",
+      "title": "링커리어 면접 합격 후기 — 재경팀 회계직무 신입 면접 후기 (2022)",
+      "url": "https://community.linkareer.com/interview/854203",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "t02s5",
+      "title": "네이버 블로그 — 회계직무 이직 면접 후기 모음집",
+      "url": "https://m.blog.naver.com/klk1196/224339652950",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s6",
+      "title": "사람인 면접후기 — 에이스택 원가회계 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66478",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s7",
+      "title": "사람인 면접후기 — 코오롱인더스트리 관리회계 신입 면접 (2025)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/60197",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t02s8",
+      "title": "사람인 면접후기 — 웰파인 원가관리·원가회계 면접 (2023)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/31502",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t02s9",
+      "title": "원티드 채용공고 — 미트박스글로벌 내부회계 담당자",
+      "url": "https://www.wanted.co.kr/wd/386820",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "t02s10",
+      "title": "원티드 채용공고 — 쏘카 내부회계관리제도 운영 담당자",
+      "url": "https://www.wanted.co.kr/wd/383977",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "t02s11",
+      "title": "원티드 채용공고 — 인크로스 내부회계관리제도 운영담당",
+      "url": "https://www.wanted.co.kr/wd/382228",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "t02s12",
+      "title": "사람인 면접후기 — 에코심플렉스 자금관리 신입 면접 (2025)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/54505",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t02s13",
+      "title": "사람인 면접후기 — 지엠스코리아 경리·자금관리 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69571",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s14",
+      "title": "사람인 면접후기 — 미래에셋자산운용 재무·자금관리 신입 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/63775",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s15",
+      "title": "네이버 블로그 — FP&A 포지션 면접 후기",
+      "url": "https://m.blog.naver.com/terry0330_/224258909260",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s16",
+      "title": "사람인 면접후기 — 세무회계사무소 세무기장·신고 경력 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/62531",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s17",
+      "title": "사람인 면접후기 — 세무법인 기장·신고 경력 면접 (2024)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/45176",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t02s18",
+      "title": "사람인 면접후기 — 크리에이티브파트너스 법인세·부가세 신고 경력 면접 (2024)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/37761",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t02s19",
+      "title": "네이버 블로그 — 2024년도 4대 회계법인 감사·택스 면접 후기",
+      "url": "https://m.blog.naver.com/pat810/223943564906",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t02s20",
+      "title": "네이버 블로그 — 2026년 회계법인 파트타임 회계사 면접 후기",
+      "url": "https://m.blog.naver.com/ny_inluck/224411442641",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s21",
+      "title": "사람인 면접후기 — 아우토크립트 내부감사 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69722",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s22",
+      "title": "사람인 면접후기 — 누리플렉스 내부감사 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66225",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t02s23",
+      "title": "사람인 면접후기 — 서플러스글로벌 내부감사 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/68021",
+      "type": "interview_review",
+      "year": 2026
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "K-IFRS와 일반기업회계기준은 실무에서 어떤 부분이 가장 다르게 처리된다고 알고 계세요?",
+      "scope": "role:accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s2",
+      "confidence": "high"
+    },
+    {
+      "text": "K-IFRS 기준으로 회계처리를 직접 해 본 적이 있다면 어떤 거래였는지 말씀해 주세요.",
+      "scope": "role:accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t02s2",
+      "confidence": "high"
+    },
+    {
+      "text": "이전 직장에서 회계 업무를 계정이나 프로세스별로 어디까지 직접 맡아 보셨나요?",
+      "scope": "role:accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s2",
+      "confidence": "high"
+    },
+    {
+      "text": "결산을 다른 사람 도움 없이 혼자 마감해 본 적이 있다면 어디까지 직접 하셨는지 말씀해 주세요.",
+      "scope": "role:accountant",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "hard",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t02s2",
+      "confidence": "high"
+    },
+    {
+      "text": "회계 프로그램 도입이나 결산 업무 개선을 직접 주도해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:accountant",
+      "category": "성과",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s2",
+      "confidence": "high"
+    },
+    {
+      "text": "재무상태표가 회사의 어떤 모습을 보여 주는 표인지 본인 말로 설명해 주세요.",
+      "scope": "role:accountant",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "부가가치세가 어떤 구조로 계산되고 신고되는지 아는 대로 설명해 주세요.",
+      "scope": "role:accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "최근 알려진 분식회계 사례를 하나 들어 어떤 회계처리가 문제였는지 말씀해 주세요.",
+      "scope": "role:accountant",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t02s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "제조업에서 원재료 투입부터 제품 완성까지 원가가 어떻게 흘러가는지 설명해 주세요.",
+      "scope": "role:cost_accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s6",
+      "confidence": "high"
+    },
+    {
+      "text": "제조업 회사에서 원가 계산이나 원가 분석을 맡았다면 구체적으로 어떤 일을 하셨는지 말씀해 주세요.",
+      "scope": "role:cost_accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s6",
+      "confidence": "high"
+    },
+    {
+      "text": "관리회계 담당자가 회사에서 실제로 어떤 일을 한다고 알고 계신지 말씀해 주세요.",
+      "scope": "role:cost_accountant",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s7",
+      "confidence": "high"
+    },
+    {
+      "text": "원가 관리와 관련된 ERP 구축이나 개편에 참여했다면 어떤 역할을 맡으셨나요?",
+      "scope": "role:cost_accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s8",
+      "confidence": "high"
+    },
+    {
+      "text": "RCM이나 업무 흐름도 같은 내부통제 문서를 최신 상태로 유지하려면 어떻게 관리하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "t02s9",
+      "confidence": "high"
+    },
+    {
+      "text": "현업 부서를 대상으로 내부회계 교육을 준비한다면 어떤 내용을 가장 먼저 다루시겠어요?",
+      "scope": "role:internal_control",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "t02s9",
+      "confidence": "high"
+    },
+    {
+      "text": "사업 구조가 빠르게 바뀌는 회사에서 기존 통제를 다시 설계해야 한다면 무엇부터 살펴보시겠어요?",
+      "scope": "role:internal_control",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공고기반",
+      "src": "t02s10",
+      "confidence": "high"
+    },
+    {
+      "text": "ERP 환경에서 IT 통제가 제대로 운영되는지 점검할 때 어떤 부분을 먼저 확인하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공고기반",
+      "src": "t02s10",
+      "confidence": "high"
+    },
+    {
+      "text": "외부감사인이 내부회계관리제도를 감사할 때 담당자로서 어떤 자료와 설명을 미리 준비하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "t02s11",
+      "confidence": "high"
+    },
+    {
+      "text": "회계팀과 자금팀이 하는 일은 어떻게 다르다고 이해하고 계세요?",
+      "scope": "role:treasury",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t02s1",
+      "confidence": "high"
+    },
+    {
+      "text": "자금일보를 작성하거나 검토해 본 적이 있다면 어떤 항목을 관리하셨는지 말씀해 주세요.",
+      "scope": "role:treasury",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t02s1",
+      "confidence": "high"
+    },
+    {
+      "text": "거래처에 대금을 지급하기 전에 어떤 것들을 확인하시겠어요?",
+      "scope": "role:treasury",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s1",
+      "confidence": "high"
+    },
+    {
+      "text": "지급 요청 금액이 증빙과 맞지 않거나 증빙이 빠져 있다면 어떻게 처리하시겠어요?",
+      "scope": "role:treasury",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s1",
+      "confidence": "high"
+    },
+    {
+      "text": "회계가 아니라 자금 직무를 선택한 이유는 무엇인가요?",
+      "scope": "role:treasury",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s12",
+      "confidence": "high"
+    },
+    {
+      "text": "자금 업무를 할 때 가장 중요하게 지켜야 할 원칙은 무엇이라고 생각하세요?",
+      "scope": "role:treasury",
+      "category": "가치관",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s13",
+      "confidence": "high"
+    },
+    {
+      "text": "금융과 직접 관련 없는 경험이 자금 업무에는 어떻게 연결된다고 보세요?",
+      "scope": "role:treasury",
+      "category": "경험",
+      "type": "motivation",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "자금 이체 요청이 수시로 들어와 담당자가 자리를 비우기 어렵다면 어떻게 대비하시겠어요?",
+      "scope": "role:treasury",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "이전 회사의 매출 구조와 수익성을 어떻게 분석하셨는지 설명해 주세요.",
+      "scope": "role:fpa",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s15",
+      "confidence": "high"
+    },
+    {
+      "text": "해마다 바뀌는 세법을 놓치지 않으려고 평소 어떤 방법으로 공부하고 계신가요?",
+      "scope": "role:tax_specialist",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "신고 기한이 몰리는 시기에 거래처 업무가 한꺼번에 쏟아지면 어떻게 우선순위를 정하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "기장을 맡았던 거래처에서 직접 세무조정했던 항목 중 기억에 남는 것을 말씀해 주세요.",
+      "scope": "role:tax_specialist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t02s16",
+      "confidence": "high"
+    },
+    {
+      "text": "부가세, 법인세, 종합소득세 가운데 직접 신고까지 마쳐 본 세목은 무엇인지 말씀해 주세요.",
+      "scope": "role:tax_specialist",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t02s17",
+      "confidence": "high"
+    },
+    {
+      "text": "그동안 맡았던 거래처 업종에 따라 세무 처리에서 특히 신경 쓴 점은 무엇이었나요?",
+      "scope": "role:tax_specialist",
+      "category": "직무전문성",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s18",
+      "confidence": "high"
+    },
+    {
+      "text": "최근 세무 이슈 가운데 관심 있게 지켜본 것이 있다면 말씀해 주세요.",
+      "scope": "role:tax_specialist",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s19",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사본부에서 일하기 위해 그동안 어떤 준비를 해 오셨나요?",
+      "scope": "role:auditor",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s19",
+      "confidence": "high"
+    },
+    {
+      "text": "관심 있는 산업의 회사 감사보고서를 읽어 봤다면 어떤 점이 눈에 띄었나요?",
+      "scope": "role:auditor",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s19",
+      "confidence": "high"
+    },
+    {
+      "text": "온라인 플랫폼이 판매자 정산대금을 제때 주지 못한 사태를 감사인이 미리 짚어낼 방법이 있었을까요?",
+      "scope": "role:auditor",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t02s19",
+      "confidence": "high"
+    },
+    {
+      "text": "회계사에게 가장 중요한 역량은 무엇이라고 생각하시나요?",
+      "scope": "role:auditor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s20",
+      "confidence": "high"
+    },
+    {
+      "text": "클라이언트는 빨리 결론을 달라고 하는데 추가 확인이 더 필요하다면 어떻게 대응하시겠어요?",
+      "scope": "role:auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s20",
+      "confidence": "high"
+    },
+    {
+      "text": "성과를 내는 것과 감사 원칙을 지키는 것이 부딪친다면 어떻게 판단하시겠어요?",
+      "scope": "role:auditor",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t02s20",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계법인 인턴 기간에 기억에 남는 고객사가 있다면 그 이유를 말씀해 주세요.",
+      "scope": "role:auditor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t02s20",
+      "confidence": "high"
+    },
+    {
+      "text": "내부회계를 담당하는 조직을 재무팀 안에 두면 안 된다고 하는 이유는 무엇일까요?",
+      "scope": "role:internal_auditor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s21",
+      "confidence": "high"
+    },
+    {
+      "text": "감사 시즌에 외부감사인이 여러 명 투입되면 내부감사 담당자로서 어떻게 대응하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s21",
+      "confidence": "medium"
+    },
+    {
+      "text": "내부감사를 계획부터 결과 보고까지 어떤 절차로 진행하시는지 설명해 주세요.",
+      "scope": "role:internal_auditor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t02s22",
+      "confidence": "high"
+    },
+    {
+      "text": "내부회계관리제도 운영을 함께 맡게 된다면 연간 일정을 어떻게 잡으시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s22",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사나 점검 업무를 하면서 본인이 주도해 개선한 프로세스와 그 결과를 말씀해 주세요.",
+      "scope": "role:internal_auditor",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t02s23",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,684 @@
+{
+  "batch": "t07",
+  "sources": [
+    {
+      "id": "t07s1",
+      "title": "네이버 블로그 — 공공병원 물리치료사 인턴 면접 후기(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/two5587/223699515009",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t07s2",
+      "title": "네이버 블로그 — 장애인복지관 물리치료사 면접 후기·질문(8년차 지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/rnjsgodnjs95/223258136295",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t07s3",
+      "title": "네이버 블로그 — 지방의료원 작업치료사 면접 후기(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/myohho/224231285975",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s4",
+      "title": "네이버 블로그 — 대학병원 영양사 계약직 단체면접 후기(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/thfl0201/224425201091",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s5",
+      "title": "네이버 블로그 — 위탁급식업체 신입 영양사(병원군) 면접 후기(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/z62423993/224156713837",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s6",
+      "title": "네이버 블로그 — 종합병원 원무팀 면접 후기(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/wotjd6483/222278658981",
+      "type": "interview_review",
+      "year": 2021
+    },
+    {
+      "id": "t07s7",
+      "title": "네이버 블로그 — 지방의료원 원무 행정원 면접 후기(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/freescarlet/224421003826",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s8",
+      "title": "네이버 블로그 — 서울 초등 임용 2차 심층면접 후기·문제 복기(응시자 본인 후기)",
+      "url": "https://m.blog.naver.com/yunawa1/223757235478",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t07s9",
+      "title": "네이버 블로그 — 경기 초등 임용 2차 심층면접 복기(응시자 본인 후기)",
+      "url": "https://m.blog.naver.com/khmh99777/224144282978",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s10",
+      "title": "네이버 블로그 — 2025 중등 임용 2차 평가원 심층면접 복기(응시자 본인 후기)",
+      "url": "https://m.blog.naver.com/ekfkrqkd79/224083919873",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t07s11",
+      "title": "네이버 블로그 — 경기 중등 임용 2차(도덕·윤리) 면접 복기(응시자 본인 후기)",
+      "url": "https://m.blog.naver.com/comfysee/224084405221",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t07s12",
+      "title": "네이버 블로그 — 2026 초등특수 임용 2차 면접 후기(응시자 본인 후기)",
+      "url": "https://m.blog.naver.com/sunrise0q0/224138356131",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s13",
+      "title": "네이버 블로그 — 유치원 특수학급 기간제 교사 면접 후기·질문(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/daram_24_/224189361121",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s14",
+      "title": "네이버 블로그 — 2026 경기 중등특수 임용 2차 심층면접 복기(응시자 본인 후기)",
+      "url": "https://m.blog.naver.com/dnrud000/224155261597",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s15",
+      "title": "네이버 블로그 — 국공립 어린이집 보육교사 면접 후기(지원자 본인 후기, 실제 받은 질문)",
+      "url": "https://m.blog.naver.com/jjoop509/223723006590",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t07s16",
+      "title": "네이버 블로그 — 병설유치원 교육과정 대체교사 면접 후기(지원자 본인 후기)",
+      "url": "https://m.blog.naver.com/penny_p/223767263780",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t07s17",
+      "title": "사람인 면접후기 — CS 교육 강사(시범강의·출장 강의) 경력 면접",
+      "url": "https://m.saramin.co.kr/interview-review/detail?idx=39812",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t07s18",
+      "title": "사람인 면접후기 — CS 강사(고객사 원장 대상 교육) 경력 면접",
+      "url": "https://m.saramin.co.kr/interview-review/detail?idx=26047",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t07s19",
+      "title": "사람인 면접후기 — 치매안심센터 작업치료사 경력 면접",
+      "url": "https://m.saramin.co.kr/interview-review/detail?idx=66044",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t07s20",
+      "title": "사람인 면접후기 — 치매지원센터 작업치료사 면접",
+      "url": "https://m.saramin.co.kr/interview-review/detail?idx=58411",
+      "type": "interview_review",
+      "year": 2025
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "환자를 평가할 때 가장 중요하게 봐야 한다고 생각하는 것은 무엇인가요?",
+      "scope": "role:physical_therapist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s1",
+      "confidence": "high"
+    },
+    {
+      "text": "치료 중에 환자가 쓰러지는 등 응급 상황이 생기면 어떻게 대처하시겠어요?",
+      "scope": "role:physical_therapist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s1",
+      "confidence": "high"
+    },
+    {
+      "text": "직무 교육 일정과 치료실 환자 일정이 겹친다면 어떻게 조율하시겠어요?",
+      "scope": "role:physical_therapist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t07s1",
+      "confidence": "high"
+    },
+    {
+      "text": "병원이 아닌 복지관에서 물리치료사로서 어떤 역할을 하고 싶으신가요?",
+      "scope": "role:physical_therapist",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s2",
+      "confidence": "high"
+    },
+    {
+      "text": "여러 대상자를 함께 보는 그룹치료를 맡는다면 무엇에 중점을 두시겠어요?",
+      "scope": "role:physical_therapist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s2",
+      "confidence": "high"
+    },
+    {
+      "text": "치료 업무 외에 서류 업무나 소아 치료까지 맡게 된다면 어떻게 준비하시겠어요?",
+      "scope": "role:physical_therapist",
+      "category": "실무",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s2",
+      "confidence": "high"
+    },
+    {
+      "text": "물리치료 업무를 하면서 가장 스트레스를 받았던 일과 극복한 방법을 말씀해 주세요.",
+      "scope": "role:physical_therapist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t07s2",
+      "confidence": "high"
+    },
+    {
+      "text": "병원 말고 다른 관련 기관에서 실습이나 봉사로 경험한 일을 말씀해 주세요.",
+      "scope": "role:occupational_therapist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t07s3",
+      "confidence": "high"
+    },
+    {
+      "text": "치료사에게 가장 필요한 능력은 무엇이고, 현장에서 어떻게 발휘하시겠어요?",
+      "scope": "role:occupational_therapist",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s3",
+      "confidence": "high"
+    },
+    {
+      "text": "이전 근무지에서 주로 어떤 대상자에게 어떤 치료를 했는지 구체적으로 말씀해 주세요.",
+      "scope": "role:occupational_therapist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t07s3",
+      "confidence": "high"
+    },
+    {
+      "text": "치매안심센터에서 작업치료사로 일한다면 어떤 프로그램을 어떻게 운영해 보고 싶으신가요?",
+      "scope": "role:occupational_therapist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s19",
+      "confidence": "medium"
+    },
+    {
+      "text": "치매 관련 지역 센터에서 작업치료사가 하는 일을 어떻게 이해하고 계신가요?",
+      "scope": "role:occupational_therapist",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s20",
+      "confidence": "medium"
+    },
+    {
+      "text": "대학병원 영양사에게 필요한 인재상은 무엇이고, 본인은 얼마나 맞는다고 보세요?",
+      "scope": "role:dietitian",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s4",
+      "confidence": "high"
+    },
+    {
+      "text": "식단 변경이 반영되지 않아 환자에게 잘못된 식사가 나갔다면 어떻게 대처하시겠어요?",
+      "scope": "role:dietitian",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s4",
+      "confidence": "high"
+    },
+    {
+      "text": "일반식은 어떤 기준으로 구성하는 식사인지 설명해 주세요.",
+      "scope": "role:dietitian",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t07s4",
+      "confidence": "high"
+    },
+    {
+      "text": "당뇨식 식단을 짤 때 영양 구성에서 무엇을 가장 신경 쓰시겠어요?",
+      "scope": "role:dietitian",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s4",
+      "confidence": "high"
+    },
+    {
+      "text": "병원 급식을 맡은 영양사가 해야 하는 업무를 이해하신 대로 설명해 주세요.",
+      "scope": "role:dietitian",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t07s5",
+      "confidence": "high"
+    },
+    {
+      "text": "임상영양사 자격 취득에 관심이 있다면 지금까지 어떤 준비를 해 오셨나요?",
+      "scope": "role:dietitian",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t07s5",
+      "confidence": "high"
+    },
+    {
+      "text": "원무 업무에서 가장 중요하다고 생각하는 것은 무엇인가요?",
+      "scope": "role:hospital_admin",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t07s6",
+      "confidence": "high"
+    },
+    {
+      "text": "여러 병원 업무 가운데 원무팀에 지원하게 된 이유를 말씀해 주세요.",
+      "scope": "role:hospital_admin",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t07s6",
+      "confidence": "high"
+    },
+    {
+      "text": "원무과 직원들이 일하는 모습을 보며 배울 점이라고 느낀 것이 있다면 말씀해 주세요.",
+      "scope": "role:hospital_admin",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s7",
+      "confidence": "high"
+    },
+    {
+      "text": "원무 창구를 찾는 환자의 만족도를 높이려면 무엇을 해야 한다고 보세요?",
+      "scope": "role:hospital_admin",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s7",
+      "confidence": "high"
+    },
+    {
+      "text": "공공병원 원무 직원이 가장 중요하게 지켜야 할 가치는 무엇이라고 보세요?",
+      "scope": "role:hospital_admin",
+      "category": "가치관",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s7",
+      "confidence": "high"
+    },
+    {
+      "text": "폭력적인 행동이 잦은 학생의 학부모와 상담한다면 협력을 어떻게 이끌어 내시겠어요?",
+      "scope": "role:elementary_teacher",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s8",
+      "confidence": "high"
+    },
+    {
+      "text": "교직을 일찍 그만두는 젊은 교사가 늘고 있는데, 본인은 그런 어려움을 어떻게 이겨 내시겠어요?",
+      "scope": "role:elementary_teacher",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s8",
+      "confidence": "high"
+    },
+    {
+      "text": "안전하고 행복한 학급을 만들기 위해 실천하고 싶은 교육활동을 구체적으로 말씀해 주세요.",
+      "scope": "role:elementary_teacher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s8",
+      "confidence": "high"
+    },
+    {
+      "text": "미래 교육에서 교사가 맡아야 할 가장 중요한 역할은 무엇이라고 보시나요?",
+      "scope": "role:elementary_teacher",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s9",
+      "confidence": "high"
+    },
+    {
+      "text": "반 학생이 온라인 도박에 빠진 것을 알게 되었다면 담임으로서 어떻게 지도하시겠어요?",
+      "scope": "role:elementary_teacher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s9",
+      "confidence": "high"
+    },
+    {
+      "text": "학부모와 협력적인 관계를 만들기 위해 학기 초부터 어떤 노력을 하시겠어요?",
+      "scope": "role:elementary_teacher",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s9",
+      "confidence": "high"
+    },
+    {
+      "text": "학급 전체에 지각이 습관처럼 번지고 있다면 담임으로서 어떻게 해결하시겠어요?",
+      "scope": "role:secondary_teacher",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s10",
+      "confidence": "high"
+    },
+    {
+      "text": "학생 피드백에서 수업의 문제점이 드러났다면 수업 설계를 어떻게 바꾸시겠어요?",
+      "scope": "role:secondary_teacher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s10",
+      "confidence": "high"
+    },
+    {
+      "text": "원하지 않는 업무를 맡게 되었다면 어떻게 받아들이고 수행하시겠어요?",
+      "scope": "role:secondary_teacher",
+      "category": "조직적합성",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s10",
+      "confidence": "high"
+    },
+    {
+      "text": "학교 교육과정을 지역사회와 함께 설계하는 것에 대해 어떤 입장이신지 말씀해 주세요.",
+      "scope": "role:secondary_teacher",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s10",
+      "confidence": "high"
+    },
+    {
+      "text": "학생들 사이에 사이버 언어폭력이 늘고 있다면 수업에서 어떻게 다루시겠어요?",
+      "scope": "role:secondary_teacher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s11",
+      "confidence": "high"
+    },
+    {
+      "text": "가정 사정이 어려운 학생에게 규정 예외를 둘지를 두고 생활지도 담당 교사와 의견이 갈리면 어떻게 하시겠어요?",
+      "scope": "role:secondary_teacher",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s11",
+      "confidence": "high"
+    },
+    {
+      "text": "통합학급에서 순서를 지키지 않고 친구를 공격하는 장애 학생을 어떻게 지원하시겠어요?",
+      "scope": "role:special_ed_teacher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s12",
+      "confidence": "high"
+    },
+    {
+      "text": "소리에 예민한 학생이 있는 반의 화재 대피 훈련을 통합학급 교사에게 어떻게 조언하시겠어요?",
+      "scope": "role:special_ed_teacher",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s12",
+      "confidence": "high"
+    },
+    {
+      "text": "AI·디지털 교육이 특수교육대상학생에게 왜 필요하다고 보시나요?",
+      "scope": "role:special_ed_teacher",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s12",
+      "confidence": "high"
+    },
+    {
+      "text": "아이가 혼자 수저를 쓰게 해 달라는 학부모와 상담한다면 어떤 지원 방안을 제안하시겠어요?",
+      "scope": "role:special_ed_teacher",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s12",
+      "confidence": "high"
+    },
+    {
+      "text": "특수교육 실무원이 교사의 역할까지 대신하고 있다면 어떻게 하시겠어요?",
+      "scope": "role:special_ed_teacher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s13",
+      "confidence": "high"
+    },
+    {
+      "text": "장애 유아와 함께 지내게 하기 싫다는 학부모 민원에는 어떻게 대응하시겠어요?",
+      "scope": "role:special_ed_teacher",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s13",
+      "confidence": "high"
+    },
+    {
+      "text": "학부모와 함께하는 진로·직업교육 프로그램을 운영할 때 특수교사에게 필요한 역량은 무엇일까요?",
+      "scope": "role:special_ed_teacher",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s14",
+      "confidence": "high"
+    },
+    {
+      "text": "만 0세 반을 맡게 된다면 어떤 점에 가장 신경 쓰시겠어요?",
+      "scope": "role:early_childhood_teacher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s15",
+      "confidence": "high"
+    },
+    {
+      "text": "함께 반을 맡은 교사와 보육 방식이 달라 갈등이 생기면 어떻게 하시겠어요?",
+      "scope": "role:early_childhood_teacher",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s15",
+      "confidence": "high"
+    },
+    {
+      "text": "아이가 주체하지 못할 만큼 흥분해 난동을 부린다면 어떻게 대처하시겠어요?",
+      "scope": "role:early_childhood_teacher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s15",
+      "confidence": "high"
+    },
+    {
+      "text": "특정 교육철학을 중심으로 운영하는 기관이라면 그 방식에 어떻게 적응하시겠어요?",
+      "scope": "role:early_childhood_teacher",
+      "category": "조직적합성",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s15",
+      "confidence": "high"
+    },
+    {
+      "text": "혼합연령 반에서 세 살과 다섯 살 아이가 다툰다면 어떻게 해결하시겠어요?",
+      "scope": "role:early_childhood_teacher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s16",
+      "confidence": "high"
+    },
+    {
+      "text": "발달 수준이 다른 아이들이 섞인 혼합연령 반에서 활동을 어떻게 지도하시겠어요?",
+      "scope": "role:early_childhood_teacher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s16",
+      "confidence": "high"
+    },
+    {
+      "text": "짧은 시범 강의를 준비한다면 도입과 마무리를 어떻게 구성하시겠어요?",
+      "scope": "role:corporate_trainer",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s17",
+      "confidence": "medium"
+    },
+    {
+      "text": "출장 강의가 잦은 일정에서도 강의 품질을 일정하게 유지하려면 어떻게 하시겠어요?",
+      "scope": "role:corporate_trainer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t07s17",
+      "confidence": "medium"
+    },
+    {
+      "text": "현장 경력이 많은 매장 원장들을 대상으로 교육해야 한다면 어떻게 신뢰를 얻으시겠어요?",
+      "scope": "role:corporate_trainer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t07s18",
+      "confidence": "medium"
+    }
+  ]
+}

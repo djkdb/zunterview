@@ -1,0 +1,833 @@
+{
+  "batch": "t08",
+  "sources": [
+    {
+      "id": "t08s1",
+      "title": "네이버 블로그 — 2026 소방공무원 합격후기 면접편(발표 주제 구급대원 폭행방지)",
+      "url": "https://m.blog.naver.com/cacanas123/224313050810",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s2",
+      "title": "네이버 블로그 — 소방공무원 합격 면접 복기(발표 주제 전통시장 화재·꼬리질문)",
+      "url": "https://m.blog.naver.com/pizzafrenchfries/224310643698",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s3",
+      "title": "네이버 블로그 — 23 소방공무원 공채 면접에서 내가 받은 질문(초고층 화재 발표·인성면접)",
+      "url": "https://m.blog.naver.com/tpflaldzl/223163820720",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t08s4",
+      "title": "네이버 블로그(경찰학원 게시 합격자 수기) — 충남청 경찰 면접 후기(집단·개별 면접 질문)",
+      "url": "https://m.blog.naver.com/acl_academy/223842711267",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t08s5",
+      "title": "네이버 블로그 — 2026 순경 공채 경찰 면접 후기(발표면접 주제 악성민원)",
+      "url": "https://m.blog.naver.com/skskdkrl789/224312192261",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s6",
+      "title": "네이버 블로그 — 국가직 9급 세무직 면접 후기(5분 발표·경험·상황과제 전체 복기)",
+      "url": "https://m.blog.naver.com/cherish4235/224341526099",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s7",
+      "title": "네이버 블로그 — 2026 지방직 9급 일반행정 공무원 면접 후기(받은 질문)",
+      "url": "https://m.blog.naver.com/bbu0207/224383300475",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s8",
+      "title": "네이버 블로그 — 2026 경기도 지방직 일반행정직 면접 후기(받았던 질문 복기)",
+      "url": "https://m.blog.naver.com/knh6951/224399174981",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s9",
+      "title": "네이버 블로그 — 9급 공무원 토목직 합격(면접 질문 공유)",
+      "url": "https://m.blog.naver.com/finally015/224218055337",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s10",
+      "title": "네이버 블로그 — 공군 학사장교 최종면접 후기",
+      "url": "https://m.blog.naver.com/sungsoojo12/224342975119",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s11",
+      "title": "네이버 블로그 — 육군 학사장교 면접 후기(개인발표·개별면접 질문)",
+      "url": "https://m.blog.naver.com/yang_ddack_gi/223886358710",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t08s12",
+      "title": "사람인 면접후기 — 리조트 조리사(1-3년차) 2026 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66619",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s13",
+      "title": "사람인 면접후기 — 호텔 요리사(신입) 2026 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67253",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s14",
+      "title": "사람인 면접후기 — 리조트 요리사(경력) 2026 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67184",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s15",
+      "title": "사람인 면접후기 — 리조트 요리사·주방장(경력) 2025 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/50050",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t08s16",
+      "title": "사람인 면접후기 — 호텔 조리사(신입) 2023 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/24299",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t08s17",
+      "title": "사람인 면접후기 — 호텔 조리사(신입) 2023 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/54033",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t08s18",
+      "title": "사람인 면접후기 — 유제품 기업 연구원(신입) 2025 하반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/62297",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t08s19",
+      "title": "사람인 면접후기 — 제과 기업 연구원·R&D(신입) 2023 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/26038",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t08s20",
+      "title": "사람인 면접후기 — 식품공장 식품연구(신입) 2021 하반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/40341",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t08s21",
+      "title": "사람인 면접후기 — 식품 기업 R&D(신입) 2023 하반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/32343",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t08s22",
+      "title": "사람인 면접후기 — 식품 기업 R&D(신입, 논문 PT) 2020 하반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/10052",
+      "type": "interview_review",
+      "year": 2020
+    },
+    {
+      "id": "t08s23",
+      "title": "사람인 면접후기 — 컨벤션 기획사 행사기획(신입) 2025 하반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/61445",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s24",
+      "title": "사람인 면접후기 — 행사·MICE 기획사 행사기획/MICE(경력) 2024 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/39502",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t08s25",
+      "title": "사람인 면접후기 — 행사 기획사 행사기획(신입) 2026 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67072",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t08s26",
+      "title": "사람인 면접후기 — 행사 기획사 행사기획(신입) 2024 상반기",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/32946",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t08s27",
+      "title": "네이버 블로그 — 2025 지방직 9급 경북 기계직 면접 질문/후기",
+      "url": "https://m.blog.naver.com/dora_y/224339676029",
+      "type": "interview_review",
+      "year": 2026
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "MICE 산업이 어떤 분야로 이뤄져 있고 요즘 어떤 흐름인지 알고 계신 대로 말씀해 주세요.",
+      "scope": "role:mice_planner",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s23",
+      "confidence": "high"
+    },
+    {
+      "text": "이전에 행사 제안서를 직접 쓰셨다면 어떤 순서로 구성하셨는지 말씀해 주세요.",
+      "scope": "role:mice_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t08s24",
+      "confidence": "high"
+    },
+    {
+      "text": "행사 기획서를 PPT로 만들어 본 경험이 있다면 어떤 점에 신경 써서 구성하셨나요?",
+      "scope": "role:mice_planner",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s25",
+      "confidence": "high"
+    },
+    {
+      "text": "앞으로 꼭 기획해 보고 싶은 행사나 프로젝트가 있다면 무엇인가요?",
+      "scope": "role:mice_planner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t08s25",
+      "confidence": "medium"
+    },
+    {
+      "text": "행사를 앞두고는 야근과 주말 근무가 잦은데, 이런 근무 방식을 어떻게 생각하세요?",
+      "scope": "role:mice_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s26",
+      "confidence": "medium"
+    },
+    {
+      "text": "주방에서 실수했던 경험과 그 뒤로 일하는 방식이 어떻게 달라졌는지 말씀해 주세요.",
+      "scope": "role:chef",
+      "category": "실패",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s12",
+      "confidence": "high"
+    },
+    {
+      "text": "가장 자신 있게 만들 수 있는 요리는 무엇이고, 왜 그 요리를 꼽으셨나요?",
+      "scope": "role:chef",
+      "category": "강점",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s13",
+      "confidence": "high"
+    },
+    {
+      "text": "바쁜 주방에서 동료와 갈등이 생기면 어떻게 풀어 가시나요?",
+      "scope": "role:chef",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s14",
+      "confidence": "high"
+    },
+    {
+      "text": "3년 뒤 주방에서 어떤 역할을 맡고 있고 싶으신가요?",
+      "scope": "role:chef",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t08s14",
+      "confidence": "high"
+    },
+    {
+      "text": "지역 특산물을 활용해 메뉴를 하나 제안한다면 어떤 요리를 만드시겠어요?",
+      "scope": "role:chef",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s15",
+      "confidence": "high"
+    },
+    {
+      "text": "본인에게 조리란 어떤 일인지 한마디로 정의하고 이유를 말씀해 주세요.",
+      "scope": "role:chef",
+      "category": "가치관",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s16",
+      "confidence": "high"
+    },
+    {
+      "text": "주방에 들어오면 어느 파트에서 먼저 일해 보고 싶으신가요?",
+      "scope": "role:chef",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s17",
+      "confidence": "high"
+    },
+    {
+      "text": "진행했던 연구에서 실험을 그렇게 설계한 이유를 절차와 함께 설명해 주시겠어요?",
+      "scope": "role:food_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "t08s18",
+      "confidence": "high"
+    },
+    {
+      "text": "HACCP 7원칙 가운데 신제품 개발 단계에서 먼저 챙겨야 할 원칙은 무엇이라고 보세요?",
+      "scope": "role:food_researcher",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s18",
+      "confidence": "high"
+    },
+    {
+      "text": "관심 있는 식품 제품군 하나를 골라 앞으로의 발전 가능성을 말씀해 주세요.",
+      "scope": "role:food_researcher",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s18",
+      "confidence": "high"
+    },
+    {
+      "text": "설비로 만든 제품의 물성이 연구실에서 의도한 물성과 다르다면 어떻게 접근하시겠어요?",
+      "scope": "role:food_researcher",
+      "category": "문제해결",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s19",
+      "confidence": "high"
+    },
+    {
+      "text": "수분활성도가 식품의 품질과 저장성에 어떤 영향을 주는지 설명해 주시겠어요?",
+      "scope": "role:food_researcher",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s19",
+      "confidence": "high"
+    },
+    {
+      "text": "굽거나 튀기는 제품에서 아크릴아마이드를 줄이려면 어떤 조건을 조절하시겠어요?",
+      "scope": "role:food_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s19",
+      "confidence": "high"
+    },
+    {
+      "text": "레토르트 제품의 살균 조건을 정할 때 F값이 왜 중요한지 설명해 주시겠어요?",
+      "scope": "role:food_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s20",
+      "confidence": "high"
+    },
+    {
+      "text": "연구개발 업무에 바로 쓸 수 있는 본인의 실험 기술 가운데 가장 자신 있는 것은 무엇인가요?",
+      "scope": "role:food_researcher",
+      "category": "강점",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s21",
+      "confidence": "high"
+    },
+    {
+      "text": "졸업 연구나 논문 주제를 왜 그 주제로 정했는지 말씀해 주세요.",
+      "scope": "role:food_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s22",
+      "confidence": "high"
+    },
+    {
+      "text": "상사가 규정에도 없고 누가 봐도 부당한 지시를 한다면 어떻게 하시겠어요?",
+      "scope": "role:admin_civil_servant",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s7",
+      "confidence": "high"
+    },
+    {
+      "text": "동료가 일부러 일을 미뤄 본인의 업무가 크게 늘어난다면 어떻게 하시겠어요?",
+      "scope": "role:admin_civil_servant",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s7",
+      "confidence": "high"
+    },
+    {
+      "text": "지원한 지역에서 지금 가장 중요한 현안은 무엇이라고 보시나요?",
+      "scope": "role:admin_civil_servant",
+      "category": "직무이해",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s7",
+      "confidence": "high"
+    },
+    {
+      "text": "관광객이 늘어나는 것이 지역 주민의 생활에 주는 장점과 단점은 무엇이라고 보세요?",
+      "scope": "role:admin_civil_servant",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s8",
+      "confidence": "high"
+    },
+    {
+      "text": "지역 발전을 위해 관광과 산업 경제 중 어디에 먼저 힘을 실어야 한다고 보세요?",
+      "scope": "role:admin_civil_servant",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s8",
+      "confidence": "high"
+    },
+    {
+      "text": "지원한 지역의 인구 변화나 재정 여건에 대해 알고 있는 것을 말씀해 주세요.",
+      "scope": "role:admin_civil_servant",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s8",
+      "confidence": "high"
+    },
+    {
+      "text": "직접 행정 서비스를 이용해 보면서 어떤 점을 느끼셨나요?",
+      "scope": "role:admin_civil_servant",
+      "category": "고객",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t08s8",
+      "confidence": "high"
+    },
+    {
+      "text": "공무원이 되면 본인이 잘 해내기 어려울 것 같은 업무는 무엇인가요?",
+      "scope": "role:admin_civil_servant",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s8",
+      "confidence": "high"
+    },
+    {
+      "text": "세금을 부과하고 거두는 일에서 가장 중요한 태도는 무엇이라고 보시나요?",
+      "scope": "role:tax_official",
+      "category": "가치관",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s6",
+      "confidence": "high"
+    },
+    {
+      "text": "세무서에서 일한다면 어느 분야 업무를 해 보고 싶고, 그 이유는 무엇인가요?",
+      "scope": "role:tax_official",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t08s6",
+      "confidence": "high"
+    },
+    {
+      "text": "주변 사람에게 꼭 알려 주고 싶은 세정 서비스나 제도가 있다면 무엇인가요?",
+      "scope": "role:tax_official",
+      "category": "직무이해",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s6",
+      "confidence": "high"
+    },
+    {
+      "text": "중소기업은 공공 세무 상담을 원하고 세무업계는 반대한다면 어떻게 조정하시겠어요?",
+      "scope": "role:tax_official",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s6",
+      "confidence": "high"
+    },
+    {
+      "text": "새로 도입한 납세자 지원 서비스의 참여율이 낮다면 어떻게 끌어올리시겠어요?",
+      "scope": "role:tax_official",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s6",
+      "confidence": "high"
+    },
+    {
+      "text": "새 업무가 늘어 팀원들이 부담을 느낄 때 그 필요성을 어떻게 설득하시겠어요?",
+      "scope": "role:tax_official",
+      "category": "리더십",
+      "type": "leadership",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t08s6",
+      "confidence": "high"
+    },
+    {
+      "text": "세무 전문성을 기르기 위해 준비하고 있는 공부나 자격증이 있나요?",
+      "scope": "role:tax_official",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s6",
+      "confidence": "high"
+    },
+    {
+      "text": "교량 상부를 시공하는 가설 공법에는 어떤 것들이 있는지 아는 대로 설명해 주시겠어요?",
+      "scope": "role:tech_civil_servant",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s9",
+      "confidence": "medium"
+    },
+    {
+      "text": "최근 일어난 구조물 붕괴 사고 하나를 골라 공학적으로 원인을 설명해 주시겠어요?",
+      "scope": "role:tech_civil_servant",
+      "category": "기술",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s9",
+      "confidence": "high"
+    },
+    {
+      "text": "혼자 해내기 어려운 업무를 맡게 된다면 어떻게 해결해 나가시겠어요?",
+      "scope": "role:tech_civil_servant",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s9",
+      "confidence": "high"
+    },
+    {
+      "text": "젊은 공무원의 이른 퇴직이 늘어나는 이유는 무엇이라고 보세요?",
+      "scope": "role:tech_civil_servant",
+      "category": "조직적합성",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s9",
+      "confidence": "high"
+    },
+    {
+      "text": "금속 부품을 열처리하는 이유를 전공 지식을 바탕으로 설명해 주시겠어요?",
+      "scope": "role:tech_civil_servant",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s27",
+      "confidence": "medium"
+    },
+    {
+      "text": "기계 설비에서 윤활유가 하는 역할을 설명해 주시겠어요?",
+      "scope": "role:tech_civil_servant",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t08s27",
+      "confidence": "medium"
+    },
+    {
+      "text": "동료가 육아시간을 쓰면서 그 업무가 본인에게 넘어온다면 어떻게 하시겠어요?",
+      "scope": "role:tech_civil_servant",
+      "category": "팀워크",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s27",
+      "confidence": "high"
+    },
+    {
+      "text": "업무 중 사적인 이해관계가 얽히는 상황이 생긴다면 어떻게 처리하시겠어요?",
+      "scope": "role:tech_civil_servant",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s27",
+      "confidence": "high"
+    },
+    {
+      "text": "테러 위협이 커지는 상황에서 경찰관으로서 할 수 있는 일은 무엇이라고 보세요?",
+      "scope": "role:police_officer",
+      "category": "직무이해",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s4",
+      "confidence": "high"
+    },
+    {
+      "text": "경찰에 대한 부정적인 기사가 자주 나오는 이유는 무엇이라고 보세요?",
+      "scope": "role:police_officer",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s4",
+      "confidence": "high"
+    },
+    {
+      "text": "주변 사람이 경찰의 부정적인 모습을 이야기한다면 어떻게 설명하시겠어요?",
+      "scope": "role:police_officer",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s4",
+      "confidence": "high"
+    },
+    {
+      "text": "경찰관을 상대로 한 악성 민원 문제를 줄일 방안을 발표해 주시겠어요?",
+      "scope": "role:police_officer",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s5",
+      "confidence": "high"
+    },
+    {
+      "text": "구급대원 폭행을 막기 위한 방안을 자료를 바탕으로 발표해 주시겠어요?",
+      "scope": "role:firefighter",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s1",
+      "confidence": "high"
+    },
+    {
+      "text": "화재에 취약한 전통시장의 안전 대책을 발표한다면 어떻게 구성하시겠어요?",
+      "scope": "role:firefighter",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s2",
+      "confidence": "high"
+    },
+    {
+      "text": "출동로가 불법 주정차로 막혔는데 차주와 연락이 닿지 않는다면 어떻게 하시겠어요?",
+      "scope": "role:firefighter",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s2",
+      "confidence": "high"
+    },
+    {
+      "text": "화재 알림 시스템이 자주 오작동한다면 어떤 문제가 생길 수 있다고 보세요?",
+      "scope": "role:firefighter",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s2",
+      "confidence": "high"
+    },
+    {
+      "text": "시장 상인들을 대상으로 화재 예방 교육을 한다면 무엇을 가르치시겠어요?",
+      "scope": "role:firefighter",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s2",
+      "confidence": "high"
+    },
+    {
+      "text": "초고층 건물 중간층에서 불이 났다면 위층과 아래층 사람들의 대피를 어떻게 안내하시겠어요?",
+      "scope": "role:firefighter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s3",
+      "confidence": "high"
+    },
+    {
+      "text": "고층 화재에서 호스를 들고 계단으로 오르기 어렵다면 어떻게 진압하시겠어요?",
+      "scope": "role:firefighter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s3",
+      "confidence": "high"
+    },
+    {
+      "text": "주어진 정보가 거의 없는 상태에서 일을 처리해야 했던 경험을 말씀해 주세요.",
+      "scope": "role:firefighter",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s3",
+      "confidence": "high"
+    },
+    {
+      "text": "개인 시간이 제한되는 등 개인의 불편과 조직의 요구가 부딪치면 어떤 자세를 가지시겠어요?",
+      "scope": "role:military_officer",
+      "category": "가치관",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s10",
+      "confidence": "high"
+    },
+    {
+      "text": "군인이 투철한 국가관을 가져야 하는 이유를 짧게 발표해 보시겠어요?",
+      "scope": "role:military_officer",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t08s11",
+      "confidence": "high"
+    },
+    {
+      "text": "병사로 복무하며 간부들의 일을 가까이서 보고도 장교를 택한 이유는 무엇인가요?",
+      "scope": "role:military_officer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "t08s11",
+      "confidence": "high"
+    },
+    {
+      "text": "인성검사에서 결단력이 부족하다고 나온다면 그 부분을 어떻게 보완하고 계신가요?",
+      "scope": "role:military_officer",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t08s11",
+      "confidence": "medium"
+    }
+  ]
+}

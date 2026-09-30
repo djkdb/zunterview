@@ -7,3 +7,7 @@ dist
 .DS_Store
 coverage
 *.tsbuildinfo
+
+# stray tsc output next to TypeScript sources (the project is TS-only)
+src/**/*.js
+shared/**/*.js

@@ -10,7 +10,8 @@ import type { Usage } from "../shared/schemas";
 type Effort = "low" | "medium" | "high" | "xhigh" | "max";
 const EFFORTS: readonly Effort[] = ["low", "medium", "high", "xhigh", "max"];
 
-export const MODEL = process.env.AI_MODEL?.trim() || "claude-opus-5";
+// Claude Opus 5.5 by default; AI_MODEL=claude-sonnet-5-5 runs about half the price and a bit faster.
+export const MODEL = process.env.AI_MODEL?.trim() || "claude-opus-5-5";
 // Interview turns are latency-sensitive, so default to low effort; raise via AI_EFFORT.
 const EFFORT: Effort = EFFORTS.includes(process.env.AI_EFFORT as Effort)
   ? (process.env.AI_EFFORT as Effort)

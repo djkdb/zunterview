@@ -1,0 +1,1338 @@
+{
+ "batch": "s08",
+ "sources": [
+  {
+   "id": "s08s1",
+   "title": "잡코리아 면접후기 — 서울 소재 대학병원 의료기사(임상병리·병리) 신입 공채 (2020 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=7262&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2020
+  },
+  {
+   "id": "s08s2",
+   "title": "잡코리아 면접후기 — 의료재단 병원 의료기사(병리) 신입 직무·인성 면접 (2020 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=7288&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2020
+  },
+  {
+   "id": "s08s3",
+   "title": "잡코리아 면접후기 — 대학병원 전공의(레지던트) 지원 면접 (2018 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=7856&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2018
+  },
+  {
+   "id": "s08s4",
+   "title": "대한임상병리사협회 — 임상병리사 소개(정의·주요업무·업무범위)",
+   "url": "https://www.kamt.or.kr/page/selectPage.do?stNo=4&muNo=1880&muGpNo=1877",
+   "type": "job_description"
+  },
+  {
+   "id": "s08s5",
+   "title": "중앙보훈병원 2024년 상반기 정규직 공개채용 — 직무설명서(보건직 임상병리사 채혈담당 등)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=2868568",
+   "type": "job_description",
+   "year": 2024
+  },
+  {
+   "id": "s08s6",
+   "title": "근로복지공단 소속병원 의료직 채용 — NCS 기반 직무기술서(방사선사·임상병리사 등)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3075948",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s7",
+   "title": "대한적십자사 경인권역재활병원 — NCS 기반 채용 직무 설명자료: 보건직(방사선사)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3075239",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s9",
+   "title": "네이버 블로그 — 대학병원 방사선사 면접에 가보고 느낀 점(방사선사 지원자 본인 후기)",
+   "url": "https://m.blog.naver.com/wsdxc1/223132969275",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s08s10",
+   "title": "대한치과위생사협회 — 치과위생사 소개(역할·업무범위·윤리강령)",
+   "url": "https://www.kdha.or.kr/introduce/dentalhygienist.aspx",
+   "type": "job_description"
+  },
+  {
+   "id": "s08s11",
+   "title": "국립대학 치과병원 정규직 치과위생사 채용 — 능력중심 채용직무 설명자료(NCS 치과위생)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3065924",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s12",
+   "title": "광주보훈병원 계약직 보건직(치과위생사) 채용 — NCS 기반 직무기술서",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3074886",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s13",
+   "title": "네이버 블로그 — 대학병원 치과위생사 면접 후기(경력 치과위생사 본인 후기)",
+   "url": "https://m.blog.naver.com/rladptmf980/223827304202",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s08s14",
+   "title": "네이버 블로그 — 서울시 보건직 공무원 면접후기(개별면접 질문 복기)",
+   "url": "https://m.blog.naver.com/leemoqu/224425418117",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s08s15",
+   "title": "네이버 블로그 — 2025 경기도 보건직 면접 후기(현직 보건직 공무원 본인 후기)",
+   "url": "https://m.blog.naver.com/dolosimook/223969762747",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s08s16",
+   "title": "중앙보훈병원 약무직(약사) 채용 — 직무설명서(처방조제·감사·복약상담·마약류 관리)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3066466",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s08s17",
+   "title": "동남권원자력의학원 별정직 약무직 채용 — NCS 기반 직무설명서(조제 및 복약상담)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3074245",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s18",
+   "title": "분당서울대학교병원 2027년도 전공약사(레지던트약사) 채용 — 직무소개서",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3077111",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s08s19",
+   "title": "네이버 블로그 — 병원약사 면접후기(약대 졸업예정자 본인의 병원 세 곳 면접 후기)",
+   "url": "https://m.blog.naver.com/ggomayaksa_/224056225430",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s08s20",
+   "title": "분당서울대학교병원 2026년도 하반기 레지던트 1년차 모집 — 직무소개서",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3065858",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s08s21",
+   "title": "중앙보훈병원 2026년도 하반기 전공의 채용 — NCS 기반 직무기술서(전공의)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3066048",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s22",
+   "title": "국립중앙의료원 업무지원직 콜센터 매니저(원무팀) 채용 재공고 — 직무내용·자격(병원코디네이터 자격 우대)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3077175",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s08s23",
+   "title": "국립중앙의료원 업무지원직 행정지원(원무팀) 채용 공고 — 접수·수납·병원 안내(국제의료관광코디네이터 우대)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3053045",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s08s24",
+   "title": "네이버 블로그 — 피부과 코디네이터 면접 후기 1편(신입 지원자 본인 후기)",
+   "url": "https://m.blog.naver.com/veiwveiw/224251016590",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s08s25",
+   "title": "네이버 블로그 — 병원 영어 코디네이터 면접 후기(지원자 본인 후기)",
+   "url": "https://m.blog.naver.com/1023nkim/224401984821",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s08s26",
+   "title": "반도체 기업 공식 뉴스룸 — 직무 소개: 양산기술(공정·장비 엔지니어의 역할과 필요 역량)",
+   "url": "https://news.skhynix.co.kr/ambassador-job-log-ep1/",
+   "type": "official_recruitment",
+   "year": 2025
+  },
+  {
+   "id": "s08s27",
+   "title": "반도체 기업 공식 뉴스룸 — 직무 리포트: 양산관리(생산 계획·Capa·물류 최적화)",
+   "url": "https://news.skhynix.co.kr/ambassador-job-report-ep4/",
+   "type": "official_recruitment",
+   "year": 2026
+  },
+  {
+   "id": "s08s28",
+   "title": "네이버 블로그 — 반도체 파운드리 공정기술 최종합격 후기(면접편, 합격자 본인)",
+   "url": "https://m.blog.naver.com/whaehowl/223043922961",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s08s29",
+   "title": "잡코리아 면접후기 — 대형 화학사 생산기술·품질·R&D 신입 면접 후기 모음",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=24&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "s08s30",
+   "title": "잡코리아 면접후기 — 디스플레이 제조사 신입 면접(DMAIC 적용 질문 포함)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=17&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s08s31",
+   "title": "한국생산성본부 — 제조 & 품질혁신 컨설팅 소개(TPS/LEAN 기반 현장 개선·표준화·낭비 개선)",
+   "url": "https://www.kpc.or.kr/kpc/PTWHP002_consulting_005.do",
+   "type": "job_description"
+  },
+  {
+   "id": "s08s32",
+   "title": "잡코리아 면접후기 — 정부출연 연구기관 R&D·연구원 면접 (2023 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=1285&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s08s34",
+   "title": "잡코리아 면접후기 — 의료·바이오 그룹 바이오·제약연구원 신입 면접 (2018 하반기)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=2204&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2018
+  },
+  {
+   "id": "s08s35",
+   "title": "잡코리아 면접후기 — 제약사 바이오·제약연구원 신입 면접 (2021 하반기)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=1475&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "s08s36",
+   "title": "기초과학연구원 2026-11회 생명과학 연구클러스터 연구직 채용 — 직무기술서",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3075851",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s08s37",
+   "title": "잡코리아 면접후기 — 제약사 품질관리(QC) 신입 면접 후기 모음",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=2116&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2022
+  },
+  {
+   "id": "s08s38",
+   "title": "한국통계진흥원 2026년 제6차 직원 채용 — NCS 기반 직무기술서(통계분석부)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3050873",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s39",
+   "title": "잡코리아 면접후기 — 대형 입시교육 기업(학원강사·생활지도·콘텐츠 기획) 면접 후기 모음",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=944&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2018
+  },
+  {
+   "id": "s08s40",
+   "title": "네이버 블로그 — 처음이자 마지막 영어학원 강사 면접 후기(지원자 본인 후기)",
+   "url": "https://m.blog.naver.com/pobbomin/224029939677",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s08s41",
+   "title": "네이버 블로그 — 성인 어학원 영어강사 면접 후기(지원자 본인 후기)",
+   "url": "https://m.blog.naver.com/jininstructor/224355660476",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s08s42",
+   "title": "잡코리아 면접후기 — 교육출판 기업 교재개발·교수설계 인턴 면접 (2022 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/Review/view?C_Idx=1891&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2022
+  },
+  {
+   "id": "s08s43",
+   "title": "국가과학기술인력개발원 2026년 제3회 채용 — NCS 기반 직무기술서(교육과정 운영 및 사무지원: 기업교육)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3046559",
+   "type": "ncs",
+   "year": 2026
+  },
+  {
+   "id": "s08s44",
+   "title": "한국보건복지인재원 교수직·사회복무전임교수직 채용 — NCS 기반 직무기술서(기업교육·강의)",
+   "url": "https://www.alio.go.kr/download/download.json?fileNo=3058400",
+   "type": "ncs",
+   "year": 2026
+  }
+ ],
+ "profiles": [],
+ "questions": [
+  {
+   "text": "장비 이슈가 생산 일정에 영향을 줄 때 여러 조치 중 무엇을 먼저 할지 어떻게 정하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s26",
+   "confidence": "high"
+  },
+  {
+   "text": "공정 파라미터를 표준화해 두는 것이 양산 안정성에 왜 중요하다고 보시나요?",
+   "scope": "role:process_engineer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s26",
+   "confidence": "high"
+  },
+  {
+   "text": "처음 겪는 공정 이슈가 생기면 데이터와 현장 정보를 어떻게 모아 해결책을 찾아가시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "문제해결",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s26",
+   "confidence": "high"
+  },
+  {
+   "text": "장비사 엔지니어나 유관 부서와 조율할 일이 많을 때 협업을 원활하게 하려면 어떻게 하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s26",
+   "confidence": "high"
+  },
+  {
+   "text": "현장을 잘 모르는 신입 엔지니어로 배치된다면 그 부족함을 어떻게 메워 가시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "성장",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s29",
+   "confidence": "high",
+   "levels": [
+    "entry",
+    "junior"
+   ]
+  },
+  {
+   "text": "공정기술 엔지니어로 일한다면 가장 맡아 보고 싶은 공정과 그 이유를 말씀해 주세요.",
+   "scope": "role:process_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s28",
+   "confidence": "medium",
+   "levels": [
+    "entry",
+    "junior"
+   ]
+  },
+  {
+   "text": "공정기술 직무가 회사 안에서 맡는 역할을 한 문장으로 설명해 보시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s28",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 에너지 비용을 줄이는 과제를 맡으면 DMAIC의 정의 단계에서 과제 범위와 목표를 어떻게 잡으시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s08s29",
+   "confidence": "high"
+  },
+  {
+   "text": "6시그마 개선 절차를 현장 담당자가 이해하기 쉽게 설명해 보시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s29",
+   "confidence": "medium"
+  },
+  {
+   "text": "제품 불량률을 낮추는 과제를 DMAIC 단계로 나눈다면 각 단계에서 어떤 결과물을 남기시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s08s30",
+   "confidence": "high"
+  },
+  {
+   "text": "재고가 계속 늘어나는 공장이라면 원인을 어디서부터 찾아 개선 과제로 만드시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s31",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 작업 표준이 없는 상태에서 MES 같은 시스템부터 도입하면 어떤 문제가 생길 수 있을까요?",
+   "scope": "role:process_innovation",
+   "category": "전략",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s31",
+   "confidence": "medium"
+  },
+  {
+   "text": "반복되는 현장 업무를 표준화하고 자동화하는 개선 과제를 이끈다면 어떤 순서로 진행하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s26",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산 라인에서 병목 공정을 찾으려면 어떤 데이터를 먼저 보시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s27",
+   "confidence": "high"
+  },
+  {
+   "text": "설비 생산 능력(Capa)을 산정할 때 가동률과 대기 시간을 어떻게 반영하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s27",
+   "confidence": "high"
+  },
+  {
+   "text": "영업이 요구하는 물량과 현장 생산 능력이 맞지 않을 때 어떻게 합의점을 찾으시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s27",
+   "confidence": "high",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "공정 사이에 대기 물량이 계속 쌓인다면 어떤 원인부터 의심하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s27",
+   "confidence": "high"
+  },
+  {
+   "text": "제품이 투입부터 완성까지 걸리는 시간을 줄여야 한다면 어디부터 손보시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s27",
+   "confidence": "high"
+  },
+  {
+   "text": "생산 데이터를 직접 뽑아 분석하려면 어떤 도구나 역량을 갖춰야 한다고 보시나요?",
+   "scope": "role:industrial_engineer",
+   "category": "도구",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s08s27",
+   "confidence": "high"
+  },
+  {
+   "text": "공장 간 물류 이동 경로를 개선할 때 시뮬레이션을 어떻게 활용하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "선행 연구가 거의 없는 실험을 맡았을 때 어떻게 방법을 찾아 나가셨는지 말씀해 주세요.",
+   "scope": "role:research_scientist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s32",
+   "confidence": "high"
+  },
+  {
+   "text": "기초 연구와 제품 개발 중 어느 쪽에서 일하고 싶은지 이유와 함께 말씀해 주세요.",
+   "scope": "role:research_scientist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s29",
+   "confidence": "high"
+  },
+  {
+   "text": "연구 성과가 실제 제품이나 치료로 이어진 사례 중 기억에 남는 것을 말씀해 주세요.",
+   "scope": "role:research_scientist",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s34",
+   "confidence": "high"
+  },
+  {
+   "text": "실험 데이터를 분석할 때 어떤 통계 프로그램을 써 보셨고 어떻게 활용하셨나요?",
+   "scope": "role:research_scientist",
+   "category": "도구",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s35",
+   "confidence": "high"
+  },
+  {
+   "text": "본인의 연구를 영어로 짧게 발표해야 한다면 어떤 흐름으로 구성하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "커뮤니케이션",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s36",
+   "confidence": "high"
+  },
+  {
+   "text": "다른 분야 연구자와 융합 연구를 할 때 서로의 용어와 방법 차이를 어떻게 좁히시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "팀워크",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s36",
+   "confidence": "high"
+  },
+  {
+   "text": "외국인 연구원과 함께 실험을 진행하다 소통 문제로 일정이 어긋난다면 어떻게 하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s36",
+   "confidence": "medium"
+  },
+  {
+   "text": "다뤄 본 분석기기 하나를 골라 측정 원리를 쉽게 설명해 주세요.",
+   "scope": "role:lab_analyst",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s37",
+   "confidence": "high"
+  },
+  {
+   "text": "GMP가 적용되는 시험실에서는 대학 실험실과 일하는 방식이 어떻게 달라진다고 보시나요?",
+   "scope": "role:lab_analyst",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s37",
+   "confidence": "high"
+  },
+  {
+   "text": "공정 중에 채취한 검체를 시험해 합격 여부를 판정할 때 무엇을 가장 신경 쓰시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s37",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 통계를 만들어 달라는 요청이 들어오면 개발이 필요한지 판단하기 위해 무엇부터 확인하시겠어요?",
+   "scope": "role:statistician",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s38",
+   "confidence": "high"
+  },
+  {
+   "text": "표본추출틀이 모집단을 제대로 포괄하고 있는지 어떻게 점검하시겠어요?",
+   "scope": "role:statistician",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s38",
+   "confidence": "high"
+  },
+  {
+   "text": "조사 결과에 가중치를 줄 때 어떤 기준으로 산정해 대표성을 확보하시겠어요?",
+   "scope": "role:statistician",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s38",
+   "confidence": "high"
+  },
+  {
+   "text": "표본오차보다 비표본오차가 더 큰 문제가 되는 상황은 언제라고 보시나요?",
+   "scope": "role:statistician",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s38",
+   "confidence": "high"
+  },
+  {
+   "text": "설문 문항을 설계할 때 응답이 한쪽으로 유도되지 않도록 어떤 원칙을 지키시겠어요?",
+   "scope": "role:statistician",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s38",
+   "confidence": "high"
+  },
+  {
+   "text": "행정자료와 조사 데이터를 결합해 분석할 때 가장 조심해야 할 부분은 무엇일까요?",
+   "scope": "role:statistician",
+   "category": "데이터",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s38",
+   "confidence": "high"
+  },
+  {
+   "text": "통계적으로 유의한 결과가 정책적으로도 의미가 있는지 보고서에서 어떻게 구분해 설명하시겠어요?",
+   "scope": "role:statistician",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s38",
+   "confidence": "medium"
+  },
+  {
+   "text": "방금 한 설명을 초등학교 6학년이 듣는다고 생각하고 더 쉽게 다시 해 보시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "실무",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s40",
+   "confidence": "high"
+  },
+  {
+   "text": "준비해 오지 않은 개념을 즉석에서 칠판에 설명해 보라고 하면 어떻게 시작하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s08s40",
+   "confidence": "high"
+  },
+  {
+   "text": "학원 강사가 되기 위해 지금까지 어떤 준비와 노력을 해 오셨나요?",
+   "scope": "role:academy_instructor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s40",
+   "confidence": "high",
+   "levels": [
+    "entry",
+    "junior"
+   ]
+  },
+  {
+   "text": "희망한 대상과 다른 연령대 학생을 맡아 달라는 제안을 받으면 어떻게 하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s41",
+   "confidence": "high"
+  },
+  {
+   "text": "공부나 진로 고민으로 상담을 청한 학생과 어떻게 상담을 진행하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s39",
+   "confidence": "medium"
+  },
+  {
+   "text": "학원 강사가 수업 외에 실제로 어떤 일을 하는지 알고 계신 대로 설명해 주세요.",
+   "scope": "role:academy_instructor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s39",
+   "confidence": "medium"
+  },
+  {
+   "text": "평소 글을 쓰는 일을 어떻게 생각하시고, 글쓰기 실력은 어떻게 다듬고 계신가요?",
+   "scope": "role:edu_planner",
+   "category": "강점",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s42",
+   "confidence": "high"
+  },
+  {
+   "text": "학창 시절 써 본 교재 중 기억에 남는 것이 있다면 어떤 점이 좋았는지 말씀해 주세요.",
+   "scope": "role:edu_planner",
+   "category": "직무이해",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s42",
+   "confidence": "high"
+  },
+  {
+   "text": "여러 강사의 강의를 비교해 각자의 특징과 강점을 정리한다면 어떤 기준으로 보시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s39",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 교육 기관의 강의를 보고 우리 콘텐츠에 반영할 점을 찾는다면 무엇을 살펴보시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "경쟁",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s39",
+   "confidence": "medium"
+  },
+  {
+   "text": "집합교육을 운영할 때 교육 일정과 참가자 정보를 누락 없이 관리하려면 어떻게 하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s43",
+   "confidence": "high"
+  },
+  {
+   "text": "정부 지원 제도를 교육 사업에 활용하려면 무엇부터 파악하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s43",
+   "confidence": "high"
+  },
+  {
+   "text": "새 교육 과정을 홍보해 목표 인원을 모아야 한다면 어떤 방법을 쓰시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s43",
+   "confidence": "high"
+  },
+  {
+   "text": "하루 과정을 설계할 때 강의 모듈을 어떤 기준으로 나누시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s44",
+   "confidence": "high"
+  },
+  {
+   "text": "현장 자료를 가공해 교안과 실습 자료를 만들 때 무엇을 가장 신경 쓰시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s44",
+   "confidence": "high"
+  },
+  {
+   "text": "워크숍 토론 결과가 실제 업무 과제로 이어지도록 퍼실리테이터로서 어떻게 정리하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s44",
+   "confidence": "high"
+  },
+  {
+   "text": "교육생의 경력과 수준 차이가 큰 반에서는 강의를 어떻게 맞춰 진행하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s44",
+   "confidence": "high"
+  },
+  {
+   "text": "디지털 협업 도구를 강의에 활용한다면 어떤 방식으로 쓰시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "도구",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s08s44",
+   "confidence": "high"
+  },
+  {
+   "text": "외래 강사의 강의 품질을 관리하는 역할을 맡는다면 무엇을 기준으로 점검하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "리더십",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s44",
+   "confidence": "high",
+   "levels": [
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "지원하는 전문과목과 관련해 최근 관심 있게 본 이슈를 말씀해 주세요.",
+   "scope": "role:physician",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s3",
+   "confidence": "high"
+  },
+  {
+   "text": "최근 깊이 읽은 책 가운데 의사로서의 생각에 영향을 준 책이 있다면 소개해 주세요.",
+   "scope": "role:physician",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s3",
+   "confidence": "high"
+  },
+  {
+   "text": "수련을 마친 뒤 어떤 전문의가 되고 싶은지 수련 계획과 함께 말씀해 주세요.",
+   "scope": "role:physician",
+   "category": "성장",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s3",
+   "confidence": "high"
+  },
+  {
+   "text": "수련 중 진료와 학술 연구를 함께 해야 한다면 연구 시간을 어떻게 확보하시겠어요?",
+   "scope": "role:physician",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s20",
+   "confidence": "high"
+  },
+  {
+   "text": "입원 환자와 외래 환자를 진료할 때 각각 특히 신경 써야 할 점은 무엇이라고 보세요?",
+   "scope": "role:physician",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s20",
+   "confidence": "high"
+  },
+  {
+   "text": "공공병원에서 수련한다면 공공의료에 어떤 방식으로 기여할 수 있다고 보시나요?",
+   "scope": "role:physician",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s21",
+   "confidence": "high"
+  },
+  {
+   "text": "진료 전 몹시 불안해하는 환자를 어떻게 안정시키고 진료를 이어 가시겠어요?",
+   "scope": "role:physician",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s21",
+   "confidence": "high"
+  },
+  {
+   "text": "약대에서 배운 과목 중 병원 약제부 업무에 가장 도움이 될 과목과 그 이유를 말씀해 주세요.",
+   "scope": "role:pharmacist",
+   "category": "직무이해",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s19",
+   "confidence": "medium",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "병원약사로 입사한다면 첫 몇 년 동안 역량을 어떻게 쌓아 갈 계획인가요?",
+   "scope": "role:pharmacist",
+   "category": "성장",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s19",
+   "confidence": "medium",
+   "levels": [
+    "entry",
+    "junior"
+   ]
+  },
+  {
+   "text": "마약류 의약품을 조제하고 관리할 때 특히 지켜야 할 절차는 무엇이라고 보세요?",
+   "scope": "role:pharmacist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s16",
+   "confidence": "high"
+  },
+  {
+   "text": "조제 장비와 조제실 환경을 관리할 때 어떤 점을 정기적으로 점검하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s17",
+   "confidence": "high"
+  },
+  {
+   "text": "소아나 노인 환자의 처방을 검토할 때 성인 처방보다 더 꼼꼼히 보는 부분은 무엇인가요?",
+   "scope": "role:pharmacist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s18",
+   "confidence": "high"
+  },
+  {
+   "text": "의사, 간호사와 함께하는 팀 의료에서 약사가 가장 크게 기여할 수 있는 부분은 무엇일까요?",
+   "scope": "role:pharmacist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s18",
+   "confidence": "high"
+  },
+  {
+   "text": "특정 약물의 사용평가를 맡는다면 어떤 자료를 모아 검토하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s18",
+   "confidence": "high"
+  },
+  {
+   "text": "진료 과목의 전문 용어를 빠르게 익히기 위해 어떻게 공부하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "성장",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s24",
+   "confidence": "high",
+   "levels": [
+    "entry",
+    "junior"
+   ]
+  },
+  {
+   "text": "하루 종일 데스크에서 고객을 응대하면서도 친절한 태도를 유지하려면 어떻게 하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "고객",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s24",
+   "confidence": "high"
+  },
+  {
+   "text": "시술 후 생길 수 있는 멍이나 붓기를 외국인 고객에게 쉽게 설명해 보시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "고객",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s25",
+   "confidence": "high"
+  },
+  {
+   "text": "진료 예약 문의가 한꺼번에 몰려 대기 전화가 쌓이면 어떻게 대응하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s08s22",
+   "confidence": "high"
+  },
+  {
+   "text": "예약·안내 상담 스크립트를 고친다면 어떤 기준으로 개선하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s08s22",
+   "confidence": "high"
+  },
+  {
+   "text": "상담원들의 통화 응대 품질을 높이도록 코칭한다면 무엇을 먼저 살펴보시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "리더십",
+   "type": "leadership",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s08s22",
+   "confidence": "high",
+   "levels": [
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "처음 온 환자에게 접수부터 진료, 수납까지의 동선을 어떻게 안내하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공고기반",
+   "src": "s08s23",
+   "confidence": "high"
+  },
+  {
+   "text": "임상병리사로서 전문성을 높이기 위해 어떤 분야의 자격이나 교육을 계획하고 계신가요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "성장",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s1",
+   "confidence": "high"
+  },
+  {
+   "text": "실습 중 가장 인상 깊었던 검사 파트와 그 검사 과정을 설명해 주세요.",
+   "scope": "role:clinical_lab_scientist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s2",
+   "confidence": "high",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "지금 쓰고 있는 검사법을 평가하고 개선하는 일에 임상병리사가 어떻게 참여할 수 있다고 보시나요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s4",
+   "confidence": "high"
+  },
+  {
+   "text": "검사 항목마다 다른 채혈 용기와 검체량을 헷갈리지 않으려면 어떻게 관리하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s08s5",
+   "confidence": "high"
+  },
+  {
+   "text": "검체를 운송하고 보관할 때 온도나 시간 조건을 지키기 위해 무엇을 확인하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s5",
+   "confidence": "high"
+  },
+  {
+   "text": "처방대로 촬영하면 되는 일인데 방사선사에게 현장 대처 능력이 왜 필요한지 설명해 보시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s08s9",
+   "confidence": "high"
+  },
+  {
+   "text": "영상 장비의 정도관리를 할 때 주기적으로 확인해야 할 항목은 무엇이라고 보세요?",
+   "scope": "role:radiologic_technologist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s7",
+   "confidence": "high"
+  },
+  {
+   "text": "PACS로 영상을 전송하기 전에 환자 정보와 촬영 부위를 어떻게 다시 확인하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s7",
+   "confidence": "high"
+  },
+  {
+   "text": "촬영실 소모품과 비품이 떨어져 검사가 지연되지 않도록 어떻게 관리하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s08s7",
+   "confidence": "high"
+  },
+  {
+   "text": "원서나 최신 학회 자료로 새로운 촬영 기법을 익혀야 한다면 어떻게 공부하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "성장",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s6",
+   "confidence": "high"
+  },
+  {
+   "text": "치과위생사에게 가장 중요한 자질은 무엇이라고 생각하시나요?",
+   "scope": "role:dental_hygienist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s13",
+   "confidence": "high"
+  },
+  {
+   "text": "치과위생사로 일하거나 실습하면서 가장 어려웠던 경험과 극복 과정을 말씀해 주세요.",
+   "scope": "role:dental_hygienist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s13",
+   "confidence": "high"
+  },
+  {
+   "text": "정기 검진을 권해도 다시 오지 않는 환자들을 계속관리하려면 어떻게 하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s10",
+   "confidence": "high"
+  },
+  {
+   "text": "치과위생사의 업무 범위를 벗어난 시술을 해 달라는 지시를 받는다면 어떻게 하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s08s10",
+   "confidence": "high"
+  },
+  {
+   "text": "소아 환자의 진료를 도울 때 성인 환자와 다르게 신경 쓸 점은 무엇인가요?",
+   "scope": "role:dental_hygienist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s11",
+   "confidence": "high"
+  },
+  {
+   "text": "불소도포를 마친 뒤 환자나 보호자에게 어떤 주의사항을 안내하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s08s11",
+   "confidence": "high"
+  },
+  {
+   "text": "구내 방사선 촬영을 할 때 재촬영을 줄이기 위해 무엇을 신경 쓰시나요?",
+   "scope": "role:dental_hygienist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s08s12",
+   "confidence": "high"
+  },
+  {
+   "text": "학교에서 식중독이 의심되는데 학교 측이 역학조사에 협조하지 않는다면 어떻게 설득하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s08s14",
+   "confidence": "high"
+  },
+  {
+   "text": "처음 맡아 보는 보건 업무가 배정되면 어떻게 익혀 나가시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s14",
+   "confidence": "high"
+  },
+  {
+   "text": "업무에 걸림돌이 되는 규정이나 관행을 바꿔 본 경험이 있으신가요?",
+   "scope": "role:public_health_officer",
+   "category": "문제해결",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s14",
+   "confidence": "high"
+  },
+  {
+   "text": "위생 점검에서 딱한 사정을 호소하는 업주를 만나면 원칙과 융통성 사이에서 어떻게 판단하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s08s15",
+   "confidence": "high"
+  },
+  {
+   "text": "보건직 공무원으로서 전문성을 앞으로 어떻게 키워 가실 계획인가요?",
+   "scope": "role:public_health_officer",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s08s15",
+   "confidence": "high"
+  },
+  {
+   "text": "공직자에게 가장 중요한 가치는 무엇이고, 보건 업무에서는 그것이 어떻게 드러난다고 보세요?",
+   "scope": "role:public_health_officer",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s08s15",
+   "confidence": "high"
+  }
+ ]
+}

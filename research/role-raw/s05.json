@@ -1,0 +1,1034 @@
+{
+ "batch": "s05",
+ "sources": [
+  {
+   "id": "s05s1",
+   "title": "대입정보포털 직업정보 — 시각디자이너 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=415404",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s2",
+   "title": "대입정보포털 직업정보 — 제품디자이너 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=415101",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s3",
+   "title": "대입정보포털 직업정보 — 실내장식디자이너 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=415301",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s4",
+   "title": "대입정보포털 직업정보 — 의상디자이너 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=415201",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s5",
+   "title": "대입정보포털 직업정보 — 출판물기획자 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=411301",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s7",
+   "title": "대입정보포털 직업정보 — 광고·홍보·마케팅전문가 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=K000000872",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s8",
+   "title": "대입정보포털 직업정보 — 방송작가 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=411104",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s9",
+   "title": "대입정보포털 직업정보 — 아나운서 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=416301",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s12",
+   "title": "대입정보포털 직업정보 — 전기기기·제품개발기술자 및 연구원 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=K000000826",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s13",
+   "title": "대입정보포털 직업정보 — 전자계측제어기술자 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=K000001191",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s14",
+   "title": "대입정보포털 직업정보 — 전기계측제어기술자 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=K000001202",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s15",
+   "title": "대입정보포털 직업정보 — 연구관리자 (한국고용정보원 제공)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=K000001190",
+   "type": "job_description"
+  },
+  {
+   "id": "s05s16",
+   "title": "전자기업 디자인센터 공식 채용 안내 — 디자이너 채용 FAQ(포트폴리오·직무 실기·면접)",
+   "url": "https://design.samsung.com/kr/contents/design-career-3/",
+   "type": "official_recruitment",
+   "year": 2024
+  },
+  {
+   "id": "s05s20",
+   "title": "디자인 전공 취준생의 브랜드·그래픽 스튜디오 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/jybang75/224318855156",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s21",
+   "title": "뷰티 브랜드 디자인 매니저 1차·최종 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/blue_milktea/224413708072",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s22",
+   "title": "인테리어 디자이너 신입 면접후기 모음 (네이버 블로그)",
+   "url": "https://blog.naver.com/hong_e__/224320302567",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s23",
+   "title": "패션디자인과 졸업 후 여성복 디자이너 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/su_su111/224175943784",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s24",
+   "title": "출판편집자 면접 후기 — 출판사 두 곳 (네이버 블로그)",
+   "url": "https://blog.naver.com/42000-/223790607211",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s05s25",
+   "title": "신입 출판편집자 취업 후기 2023 — 기획편집자 면접 질문 (네이버 블로그)",
+   "url": "https://blog.naver.com/ramon623/223274933329",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s05s26",
+   "title": "광고회사 카피라이터(CW) 공채 1차 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/ingoodseason/222260259972",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "s05s27",
+   "title": "광고대행사 신입 카피라이터 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/tut0110/222908514441",
+   "type": "interview_review",
+   "year": 2022
+  },
+  {
+   "id": "s05s28",
+   "title": "미디어 콘텐츠 제작팀 에디터 인턴 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/od1spec/224345728299",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s29",
+   "title": "콘텐츠 마케팅·채널 운영 인턴 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/tpqls526/224375950817",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s30",
+   "title": "잡코리아 면접질문 — 지상파 방송사 아나운서·시사교양 PD·라디오 PD 신입 (2016 하반기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?c_idx=433&ctgr_code=5",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s05s31",
+   "title": "막내 방송작가 이직 면접 후기 2편 (네이버 블로그)",
+   "url": "https://blog.naver.com/lovelyato93/224371460646",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s32",
+   "title": "교통방송 교통캐스터 실기 합격 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/lhr2009/224351794547",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s33",
+   "title": "신문사 영상 인턴 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/filmotioner/223775506964",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s05s34",
+   "title": "방송국 디지털 콘텐츠 편집자 면접·실기 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/wapisnna/224354530867",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s35",
+   "title": "방송사 디지털 콘텐츠 영상편집 인턴 면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/yoodang_blog/224184692294",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s36",
+   "title": "연구관리 전문기관 이공계 연구관리직 필기·면접 후기 (네이버 블로그)",
+   "url": "https://blog.naver.com/younhee2003/224340503976",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s05s37",
+   "title": "잡코리아 면접질문 — 자동차부품사 연구개발 신입 (2016 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=35&Crr_Year=2016&Half_Year_Type_Code=1&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=1%2C2016%2C1",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s05s38",
+   "title": "잡코리아 면접질문 — 가전·전자기업 기계·기구설계 신입 (2015 하반기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=8&Crr_Year=2015&Half_Year_Type_Code=2&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=2%2C2015%2C2",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s05s39",
+   "title": "잡코리아 면접질문 — 가전·전자기업 기계엔지니어 신입 (2018 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=8&Crr_Year=2018&Half_Year_Type_Code=1&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=1%2C2018%2C1",
+   "type": "interview_review",
+   "year": 2018
+  },
+  {
+   "id": "s05s40",
+   "title": "잡코리아 면접질문 — 자동차부품사 R&D 신입 (2015 상반기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=35&Crr_Year=2015&Half_Year_Type_Code=1&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=1%2C2015%2C1",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s05s41",
+   "title": "잡코리아 면접질문 — 가전·전자기업 설계엔지니어 신입 (2021 하반기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=8&Crr_Year=2021&Half_Year_Type_Code=2&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=2%2C2021%2C2",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "s05s42",
+   "title": "잡코리아 면접질문 — 자동차부품사 R&D 신입 (2014 하반기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=35&Crr_Year=2014&Half_Year_Type_Code=2&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=2%2C2014%2C2",
+   "type": "interview_review",
+   "year": 2014
+  }
+ ],
+ "profiles": [],
+ "questions": [
+  {
+   "text": "디자인 작업 과정에서 본인이 가장 좋아하는 단계는 어디이고, 그 이유는 무엇인가요?",
+   "scope": "role:graphic_designer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s20",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 제품 라인의 패키지와 브랜드 비주얼을 맡게 된다면 어떤 방향으로 풀어 가시겠어요?",
+   "scope": "role:graphic_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s21",
+   "confidence": "medium"
+  },
+  {
+   "text": "디자인 의뢰를 받은 뒤 결과물을 넘길 때까지 보통 어떤 순서로 작업하시나요?",
+   "scope": "role:graphic_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s21",
+   "confidence": "medium"
+  },
+  {
+   "text": "사진, 텍스트, 일러스트가 함께 들어가는 지면에서 무엇을 가장 크게 보여 줄지 어떻게 정하시나요?",
+   "scope": "role:graphic_designer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s1",
+   "confidence": "medium"
+  },
+  {
+   "text": "제품 디자인 콘셉트를 잡기 전에 생산기술이나 영업 담당자에게서 어떤 정보를 들어 두시겠어요?",
+   "scope": "role:industrial_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s2",
+   "confidence": "medium"
+  },
+  {
+   "text": "제품 스케치를 생산 쪽에 넘길 명세서나 작업도로 정리할 때 무엇을 꼭 담으시겠어요?",
+   "scope": "role:industrial_designer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s2",
+   "confidence": "medium"
+  },
+  {
+   "text": "하루 안에 주어진 주제로 제품 디자인 실기를 치른다면 단계별로 시간을 어떻게 나눠 쓰시겠어요?",
+   "scope": "role:industrial_designer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s16",
+   "confidence": "medium",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "팀으로 진행한 제품 디자인 프로젝트에서 본인이 맡은 역할과 기여도를 구체적으로 말씀해 주세요.",
+   "scope": "role:industrial_designer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s16",
+   "confidence": "medium"
+  },
+  {
+   "text": "요즘 디자인이나 생활 문화의 흐름 가운데 다음 제품 디자인에 담아 보고 싶은 것은 무엇인가요?",
+   "scope": "role:industrial_designer",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s16",
+   "confidence": "medium"
+  },
+  {
+   "text": "지금 이 면접실을 투시도로 스케치해 보라고 하면 어떤 순서로 그리시겠어요?",
+   "scope": "role:interior_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s22",
+   "confidence": "medium",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "병원처럼 기능 조건이 까다로운 공간의 인테리어를 맡는다면 무엇부터 파악하시겠어요?",
+   "scope": "role:interior_designer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s22",
+   "confidence": "medium"
+  },
+  {
+   "text": "포트폴리오 속 공간에서 그 배치와 마감재를 고른 이유를 설명해 주시겠어요?",
+   "scope": "role:interior_designer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s22",
+   "confidence": "medium"
+  },
+  {
+   "text": "건물 용도에 따라 이용자 특성이 다를 때 인테리어 설계 방향을 잡기 전에 무엇을 조사하시나요?",
+   "scope": "role:interior_designer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "시공이 도면대로 진행되는지 현장에서 확인할 때 어떤 항목을 중점적으로 보시나요?",
+   "scope": "role:interior_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원하는 복종의 옷 구조와 패턴을 이해하려고 따로 공부해 온 것이 있다면 말씀해 주세요.",
+   "scope": "role:fashion_designer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s23",
+   "confidence": "medium"
+  },
+  {
+   "text": "직접 만든 도식화나 작업지시서가 공장에 바로 넘길 수준인지 어떻게 점검하시나요?",
+   "scope": "role:fashion_designer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s23",
+   "confidence": "medium"
+  },
+  {
+   "text": "완성된 의류를 검품할 때 디자이너로서 특히 확인하는 부분은 무엇인가요?",
+   "scope": "role:fashion_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장에서 들은 소비자 의견을 다음 시즌 디자인에 어떻게 반영하시겠어요?",
+   "scope": "role:fashion_designer",
+   "category": "고객",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 트렌드를 발견하면 콘텐츠로 만들기 전에 어떻게 깊이 파고드시나요?",
+   "scope": "role:content_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s28",
+   "confidence": "medium"
+  },
+  {
+   "text": "콘텐츠에 필요한 인터뷰 대상을 어떻게 찾고 섭외하시나요?",
+   "scope": "role:content_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s28",
+   "confidence": "medium"
+  },
+  {
+   "text": "숏폼 콘텐츠를 기획할 때 긴 영상과 무엇을 다르게 설계해야 한다고 보세요?",
+   "scope": "role:content_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s29",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원한 브랜드 채널의 콘텐츠를 분석해 본다면 무엇을 바꿔 보고 싶으신가요?",
+   "scope": "role:content_planner",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s29",
+   "confidence": "medium"
+  },
+  {
+   "text": "우리 출판사에서 기획해 보고 싶은 책이 있다면 어떤 책인지 말씀해 주세요.",
+   "scope": "role:editor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s24",
+   "confidence": "medium"
+  },
+  {
+   "text": "편집 실무 경력이 없는데 경력자 대신 본인을 뽑아야 하는 이유는 무엇인가요?",
+   "scope": "role:editor",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s05s24",
+   "confidence": "medium",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "평소 즐겨 읽는 책 분야와 잘 손이 가지 않는 분야는 각각 무엇인가요?",
+   "scope": "role:editor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s25",
+   "confidence": "medium"
+  },
+  {
+   "text": "직접 책을 만들어 본 경험이 있다면 편집하면서 가장 고민했던 점은 무엇이었나요?",
+   "scope": "role:editor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s25",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원한 출판사의 책을 읽고 편집 면에서 눈에 띈 특징이나 보완할 점을 말씀해 주세요.",
+   "scope": "role:editor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s25",
+   "confidence": "medium"
+  },
+  {
+   "text": "책에 들어갈 삽화나 사진을 외부 작가와 협의할 때 편집자는 무엇을 챙겨야 할까요?",
+   "scope": "role:editor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "출간 전에 홍보와 판매 방법을 마케팅팀과 함께 세울 때 편집자는 어떤 역할을 해야 할까요?",
+   "scope": "role:editor",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "카피 한 줄처럼 본인을 표현하는 노래 가사 한 구절을 골라 이유를 말씀해 주세요.",
+   "scope": "role:copywriter",
+   "category": "자기소개",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s26",
+   "confidence": "medium"
+  },
+  {
+   "text": "광고 기획이 아니라 카피라이터를 택한 이유는 무엇인가요?",
+   "scope": "role:copywriter",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s26",
+   "confidence": "medium"
+  },
+  {
+   "text": "누구나 아는 브랜드가 새 제품을 내놓는다면 어떤 광고 카피로 알리시겠어요?",
+   "scope": "role:copywriter",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "카피를 쓸 때 영감을 주는 소설이나 영화 속 인물이 있다면 누구인지 말씀해 주세요.",
+   "scope": "role:copywriter",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "광고 목표가 정해진 뒤 표현 콘셉트를 잡을 때 카피라이터는 무엇을 근거로 삼아야 할까요?",
+   "scope": "role:copywriter",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "시사교양 프로그램에서 인터뷰할 사람을 고를 때 어떤 기준을 두시겠어요?",
+   "scope": "role:broadcast_pd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "인기 있는 웹툰이나 드라마 한 편을 교양 프로그램으로 바꾼다면 어떻게 구성하시겠어요?",
+   "scope": "role:broadcast_pd",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s05s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "좋은 시사 라디오 프로그램의 조건은 무엇이라고 생각하세요?",
+   "scope": "role:broadcast_pd",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원한 채널의 영상 중 가장 아쉬웠던 한 편을 고른다면 어떻게 바꿔 보시겠어요?",
+   "scope": "role:video_producer",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s33",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 만든 영상에 악성 댓글이 계속 달린다면 어떻게 대응하시겠어요?",
+   "scope": "role:video_producer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s33",
+   "confidence": "medium"
+  },
+  {
+   "text": "사회 이슈를 다룬 영상은 조회수가 잘 안 나오는데, 더 많은 사람이 보게 하려면 어떻게 하시겠어요?",
+   "scope": "role:video_producer",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s05s33",
+   "confidence": "medium"
+  },
+  {
+   "text": "영상 제작에서 촬영과 편집 중 본인이 가장 자신 있는 역할은 무엇인가요?",
+   "scope": "role:video_producer",
+   "category": "강점",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s33",
+   "confidence": "medium"
+  },
+  {
+   "text": "방송 본편으로 짧은 클립을 만든다면 어떤 장면을 골라 기존 클립과 다르게 편집하시겠어요?",
+   "scope": "role:video_editor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s34",
+   "confidence": "medium"
+  },
+  {
+   "text": "정해진 방송 소재로 유튜브 썸네일을 만든다면 이미지와 문구를 어떻게 구성하시겠어요?",
+   "scope": "role:video_editor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s34",
+   "confidence": "medium"
+  },
+  {
+   "text": "업로드한 영상의 성과를 유튜브 분석 지표로 확인하고 편집에 반영해 본 경험이 있으신가요?",
+   "scope": "role:video_editor",
+   "category": "데이터",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s34",
+   "confidence": "medium"
+  },
+  {
+   "text": "쇼츠 한 편을 편집하는 데 보통 얼마나 걸리는지 작업 흐름과 함께 말씀해 주세요.",
+   "scope": "role:video_editor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s35",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 스타일보다 정해진 편집 방식을 따라야 하는 일이 많다면 어떻게 받아들이시겠어요?",
+   "scope": "role:video_editor",
+   "category": "조직적합성",
+   "type": "challenge",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s35",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원한 프로그램을 모니터링해 보셨다면 가장 인상 깊었던 회차와 그 이유를 말씀해 주세요.",
+   "scope": "role:broadcast_writer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s31",
+   "confidence": "medium"
+  },
+  {
+   "text": "전화나 현장에서 처음 보는 일반인을 섭외하는 일이 많은데 잘 해낼 수 있으신가요?",
+   "scope": "role:broadcast_writer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s31",
+   "confidence": "medium",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "방송 일정에 쫓겨 도망치고 싶을 만큼 힘든 순간이 오면 어떻게 버티시겠어요?",
+   "scope": "role:broadcast_writer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s05s31",
+   "confidence": "medium"
+  },
+  {
+   "text": "촬영 원본을 프리뷰하며 프리뷰 노트를 쓸 때 무엇을 중심으로 기록하시겠어요?",
+   "scope": "role:broadcast_writer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "시청자 사연이나 게시판 글을 원고에 활용할 때 어떤 기준으로 고르고 다듬으시겠어요?",
+   "scope": "role:broadcast_writer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "다큐멘터리 완성본을 보며 내레이션 원고를 쓸 때 무엇을 가장 신경 쓰시겠어요?",
+   "scope": "role:broadcast_writer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "생방송 중 진행자가 매끄럽게 진행하도록 작가는 현장에서 어떤 도움을 줄 수 있을까요?",
+   "scope": "role:broadcast_writer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "뉴스 진행 중 현장의 취재기자를 연결할 때 앵커로서 무엇을 준비하시겠어요?",
+   "scope": "role:announcer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "시사 토론 프로그램을 진행할 때 패널 사이에서 균형을 어떻게 지키시겠어요?",
+   "scope": "role:announcer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s05s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "경기장이나 행사장에서 현장 안내 방송을 맡는다면 스튜디오 방송과 무엇을 다르게 하시겠어요?",
+   "scope": "role:announcer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "준비해 오셨지만 아직 보여 주지 못한 진행이나 리딩이 있다면 지금 보여 주시겠어요?",
+   "scope": "role:announcer",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "카메라나 마이크 앞에서 실제로 방송을 진행해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:announcer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "라디오 교통 정보처럼 짧은 정보 방송을 할 때 뉴스 리딩과 무엇을 다르게 하시겠어요?",
+   "scope": "role:announcer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원한 방송의 진행 톤을 익히기 위해 방송을 어떻게 모니터링해 보셨나요?",
+   "scope": "role:announcer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 성과가 후속 연구나 기술 사업화로 이어지지 않는 원인과 개선 방안을 발표해 주세요.",
+   "scope": "role:rnd_planner",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s05s36",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 과제를 운영하는 기준과 절차를 새로 만든다면 무엇부터 정하시겠어요?",
+   "scope": "role:rnd_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s15",
+   "confidence": "medium"
+  },
+  {
+   "text": "정부 연구개발 정책 자문에 참여할 때 연구기획 담당자는 무엇을 준비해야 할까요?",
+   "scope": "role:rnd_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s15",
+   "confidence": "medium",
+   "levels": [
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "새 제품의 설계사양서를 작성할 때 기능과 수명 목표를 어떻게 정하시겠어요?",
+   "scope": "role:product_developer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s12",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 모형으로 개발계획을 심사받을 때 무엇을 중점적으로 보여 주시겠어요?",
+   "scope": "role:product_developer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s12",
+   "confidence": "medium"
+  },
+  {
+   "text": "최종 검사를 통과한 제품의 양산 도면을 발주하기 전에 무엇을 다시 확인하시겠어요?",
+   "scope": "role:product_developer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s12",
+   "confidence": "medium"
+  },
+  {
+   "text": "희망하던 설계 분야가 아닌 다른 제품 개발 업무를 맡게 된다면 어떻게 하시겠어요?",
+   "scope": "role:product_developer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s37",
+   "confidence": "medium"
+  },
+  {
+   "text": "지금 시장에 없는 제품을 하나 개발한다면 어떤 제품을 만들어 보고 싶으신가요?",
+   "scope": "role:product_developer",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s38",
+   "confidence": "medium"
+  },
+  {
+   "text": "드물게 생기는 큰 하중까지 모두 견디도록 설계하면 되지 않느냐는 질문에 어떻게 답하시겠어요?",
+   "scope": "role:product_developer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s05s39",
+   "confidence": "medium"
+  },
+  {
+   "text": "개발 제품에 들어갈 부품의 협력사를 고를 때 어떤 기준을 두시겠어요?",
+   "scope": "role:product_developer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s40",
+   "confidence": "medium"
+  },
+  {
+   "text": "제어 설비를 새로 늘리거나 개보수할 때 기술적 타당성을 어떻게 검토하시겠어요?",
+   "scope": "role:control_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s13",
+   "confidence": "medium"
+  },
+  {
+   "text": "계측제어 설비의 고장을 조사해 정비 계획을 세운다면 어떤 순서로 하시겠어요?",
+   "scope": "role:control_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s13",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정도를 보고 계장 방식과 계측기 위치를 정할 때 무엇을 먼저 고려하시겠어요?",
+   "scope": "role:control_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s05s14",
+   "confidence": "medium"
+  },
+  {
+   "text": "전기제어 시스템 공사를 앞두고 시공 사양서를 쓸 때 무엇을 꼭 담으시겠어요?",
+   "scope": "role:control_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s05s14",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 공학 분야 가운데 제어에 관심을 두게 된 이유는 무엇인가요?",
+   "scope": "role:control_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s05s40",
+   "confidence": "medium"
+  },
+  {
+   "text": "저역 통과 필터를 제어 신호에 적용할 때 어떤 효과와 부작용이 있는지 설명해 주세요.",
+   "scope": "role:control_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s41",
+   "confidence": "medium"
+  },
+  {
+   "text": "회로나 센서 신호의 노이즈를 줄이려면 어떤 방법을 쓰시겠어요?",
+   "scope": "role:control_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s05s42",
+   "confidence": "medium"
+  }
+ ]
+}

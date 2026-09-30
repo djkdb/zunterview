@@ -1,0 +1,1094 @@
+{
+ "batch": "s06",
+ "sources": [
+  {
+   "id": "s06s1",
+   "title": "대입정보포털 직업정보(고용24 제공) — 전자제품 및 부품 개발기술자: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=153201",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s2",
+   "title": "자동차 부품사 채용 공고 — IVI 제품 회로설계(HW 아키텍처·회로·PCB·EMC 개선)",
+   "url": "https://careers.mobis.com/jobs-view?seq=1885",
+   "type": "job_description",
+   "year": 2024
+  },
+  {
+   "id": "s06s3",
+   "title": "사람인 면접후기 — 전장 부품사 회로설계 경력 면접(소자 관련 꼬리질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%AA%A8%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%A0%84%EC%9E%90",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s4",
+   "title": "NCS기반 채용 직무설명서 — 공기업 5급 전기(전기설비설계·내선공사)",
+   "url": "https://raspfiles2.incruit.com/lh/data/106/SuccessData/addFile/14.%205%EA%B8%89%20%EC%A0%84%EA%B8%B0.pdf",
+   "type": "ncs"
+  },
+  {
+   "id": "s06s5",
+   "title": "사람인 면접후기 — 전기공사·설계 업체 전기설계 신입 면접",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%B6%80%ED%98%84%EC%A0%84%EA%B8%B0",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s6",
+   "title": "사람인 면접후기 — 전기기기 제조사 전기설계 신입 면접(변압기 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EC%82%B0%EC%9D%BC%EC%A0%84%EA%B8%B0",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s7",
+   "title": "링커리어 — 공기업 5급 전기직 PT·인성 면접 후기(제로에너지 건축물 PT)",
+   "url": "https://community.linkareer.com/interview/2295889",
+   "type": "interview_review",
+   "year": 2022
+  },
+  {
+   "id": "s06s8",
+   "title": "대입정보포털 직업정보(고용24 제공) — 디스플레이연구 및 개발자: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=153204",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s9",
+   "title": "링커리어 — 디스플레이 기업 2024 상반기 신입(연구개발) 면접 합격 후기",
+   "url": "https://community.linkareer.com/interview/3342018",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s10",
+   "title": "링커리어 — 디스플레이 기업 2024 상반기 신입 면접 합격 후기(직무 문제풀이 면접)",
+   "url": "https://community.linkareer.com/interview/3340525",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s11",
+   "title": "사람인 면접후기 — 디스플레이 기업 회로·제품설계 신입 면접(W-OLED 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EC%97%98%EC%A7%80%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4",
+   "type": "interview_review",
+   "year": 2019
+  },
+  {
+   "id": "s06s12",
+   "title": "사람인 면접후기 — 기계 제조사 기계설계·기구설계 경력 면접",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EC%82%BC%EC%98%81%EA%B8%B0%EA%B3%84",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s13",
+   "title": "사람인 면접후기 — 펌프 제조사 기계설계 신입 면접(CAD·3D 활용 능력)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%ED%95%9C%EC%8B%A0%EA%B8%B0%EA%B3%84%EA%B3%B5%EC%97%85",
+   "type": "interview_review",
+   "year": 2018
+  },
+  {
+   "id": "s06s14",
+   "title": "링커리어 — IT서비스 기업 2025 하반기 로보틱스 신입 1차 실무 면접 후기",
+   "url": "https://community.linkareer.com/interview/6426585",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s15",
+   "title": "사람인 면접후기 — 협동로봇 기업 로봇엔지니어 신입 면접",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EC%98%A8%EB%A1%9C%EB%B4%87",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s16",
+   "title": "대입정보포털 직업정보(고용24 제공) — 로봇공학기술자: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=151201",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s17",
+   "title": "링커리어 — 첨단소재 기업 생산기술 신입 면접 후기(연신 공정 질문, 전공과목 발표)",
+   "url": "https://community.linkareer.com/interview/1998434",
+   "type": "interview_review",
+   "year": 2022
+  },
+  {
+   "id": "s06s18",
+   "title": "사람인 면접후기 — 화학 연구기관 공정설계·공정엔지니어 신입 면접",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%ED%95%9C%EA%B5%AD%ED%99%94%ED%95%99%EC%97%B0%EA%B5%AC%EC%9B%90",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s19",
+   "title": "링커리어 — 화학 기업 2023 상반기 신입 연구개발 1차 면접 후기(전구체 연구)",
+   "url": "https://community.linkareer.com/interview/3305642",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s06s20",
+   "title": "링커리어 — 석유화학 기업 첨단소재 연구개발 신입 면접 후기",
+   "url": "https://community.linkareer.com/interview/6371026",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s22",
+   "title": "사람인 면접후기 — 화학 기업 연구원 신입 면접(신규 분석법·규격외 품질 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EC%A0%9C%EC%9D%B4%EC%94%A8%EC%BC%80%EB%AF%B8%EC%B9%BC",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s23",
+   "title": "사람인 면접후기 — 화학 기업 시료분석 신입 면접(정밀도·정확도, 미지시료)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EC%95%A0%EA%B2%BD%EC%BC%80%EB%AF%B8%EC%B9%BC",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s24",
+   "title": "사람인 면접후기 — 정밀화학 기업 연구원 신입 면접(술폰화 반응 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%AF%B8%EC%9B%90%ED%99%94%ED%95%99",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s25",
+   "title": "대입정보포털 직업정보(고용24 제공) — 화학연구원: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=121102",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s26",
+   "title": "링커리어 — 생명공학 연구기관 바이오 산업화 분야 면접 후기",
+   "url": "https://community.linkareer.com/interview/1276295",
+   "type": "interview_review",
+   "year": 2022
+  },
+  {
+   "id": "s06s27",
+   "title": "사람인 면접후기 — 바이오 기업 연구원(세포배양·미생물) 경력 면접(파일럿 배양 질문, 목록 2쪽)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%B0%94%EC%9D%B4%EC%98%A4%EC%A0%9C%EB%8B%89%EC%8A%A4&page=2",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s28",
+   "title": "사람인 면접후기 — 비임상 CRO 연구원 신입 면접(실험 핵심 요소 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%B0%94%EC%9D%B4%EC%98%A4%ED%86%A1%EC%8A%A4%ED%85%8D",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s29",
+   "title": "사람인 면접후기 — 바이오 기업 R&D 경력 면접(실험 설계 경험 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%A6%AC%EC%8A%A4%ED%81%90%EC%96%B4%EB%B0%94%EC%9D%B4%EC%98%A4",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s30",
+   "title": "대입정보포털 직업정보(고용24 제공) — 생물학연구원: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=121104",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s31",
+   "title": "링커리어 — 백신 기업 DS(원액 생산) 면접 후기(시험법 기술이전·세포배양 질문)",
+   "url": "https://community.linkareer.com/interview/5471407",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s32",
+   "title": "사람인 면접후기 — 제약사 연구원 경력 면접(가장 힘들었던 분석법 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%A7%88%EB%8D%94%EC%8A%A4%EC%A0%9C%EC%95%BD",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s33",
+   "title": "사람인 면접후기 — 제약사 공정관리 신입 면접(제제공정 프로세스 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%ED%99%98%EC%9D%B8%EC%A0%9C%EC%95%BD",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s34",
+   "title": "대입정보포털 직업정보(고용24 제공) — 약학연구원: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=122102",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s35",
+   "title": "사람인 면접후기 — 임상 CRO CRA(임상연구원) 신입 면접",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%B0%94%EC%9D%B4%EC%98%A4%EC%9D%B8%ED%94%84%EB%9D%BC",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s36",
+   "title": "링커리어 — 제약사 메디컬(임상) 직무 경력 서류·면접 후기",
+   "url": "https://community.linkareer.com/interview/4213292",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s37",
+   "title": "국가임상시험지원재단 임상교육원 — 교육과정안내(임상시험모니터요원 CRA·코디네이터 CRC 직능 정의)",
+   "url": "https://lms.konect.or.kr/web/intro/courseInfo.do",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s38",
+   "title": "사람인 면접후기 — 제약사 RA 신입 면접(GMP, 순도·함량 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EC%84%B1%EC%9B%90%EC%95%A0%EB%93%9C%EC%BD%95%EC%A0%9C%EC%95%BD",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s39",
+   "title": "의료기기 공공기관 채용 직무기술서 — 의료기기 맞춤형 기술지원(국내외 인허가·기술문서)",
+   "url": "https://nids.recruiton.kr/files/fileData/gongo/241/%5B%EB%B3%84%EC%B2%A8%5D%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C.pdf",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s40",
+   "title": "링커리어 — 수자원 공기업 환경직 신입 면접 후기(PT: 고도정수처리 등)",
+   "url": "https://community.linkareer.com/interview/5707538",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s06s41",
+   "title": "링커리어 — 환경 공기업 기계직 면접 후기(PT 주제: 소각로·펌프)",
+   "url": "https://community.linkareer.com/interview/1193924",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "s06s42",
+   "title": "사람인 면접후기 — 환경측정분석 기관 면접(COD→TOC 관련 질문)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review?company_nm=%EB%8F%99%EB%82%A8%EC%9D%98%ED%99%94%ED%95%99%EC%97%B0%EA%B5%AC%EC%9B%90",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s06s43",
+   "title": "대입정보포털 직업정보(고용24 제공) — 대기환경기술자 및 연구원: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=155301",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s44",
+   "title": "비철금속 기업 채용사이트 직무인터뷰 — 본사 ESG경영팀(업무·필요역량)",
+   "url": "https://careers.koreazinc.co.kr/recruit/jobIntroDetail_0108",
+   "type": "official_recruitment"
+  },
+  {
+   "id": "s06s45",
+   "title": "링커리어 — 식품 기업 2024 하반기 ESG 기획 신입 면접 후기",
+   "url": "https://community.linkareer.com/interview/4164024",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s46",
+   "title": "링커리어 — 회계법인 ESG센터 신입 면접 후기",
+   "url": "https://community.linkareer.com/interview/3832088",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s06s47",
+   "title": "링커리어 — 발전설비 기업 2026 상반기 복합발전 엔지니어 신입 면접 후기",
+   "url": "https://community.linkareer.com/interview/6538694",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s06s48",
+   "title": "링커리어 — 발전 공기업 2024 신입 1차 면접(PT·토론) 후기(발전기계)",
+   "url": "https://community.linkareer.com/interview/3785200",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s49",
+   "title": "대입정보포털 직업정보(고용24 제공) — 발전설비기술자: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=153103",
+   "type": "job_description"
+  },
+  {
+   "id": "s06s50",
+   "title": "링커리어 — 발전 공기업 2024 신입(전기) 1차·2차 면접 후기(GD·PT 주제)",
+   "url": "https://community.linkareer.com/interview/3331314",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s06s51",
+   "title": "대입정보포털 직업정보(고용24 제공) — 송·배전설비기술자: 직무개요·수행직무",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=153104",
+   "type": "job_description"
+  }
+ ],
+ "profiles": [],
+ "questions": [
+  {
+   "text": "고객 요구사항을 받아 하드웨어 구조를 잡을 때 주요 부품과 전원 블록을 어떤 순서로 검토하시겠어요?",
+   "scope": "role:hw_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s06s2",
+   "confidence": "high"
+  },
+  {
+   "text": "시제품 단계에서 전자파 시험을 통과하지 못했다면 회로와 PCB에서 무엇부터 손보시겠어요?",
+   "scope": "role:hw_engineer",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s06s2",
+   "confidence": "high"
+  },
+  {
+   "text": "하드웨어 설계 초기부터 기구나 소프트웨어 엔지니어와 협업할 때 무엇을 먼저 맞춰 두시겠어요?",
+   "scope": "role:hw_engineer",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s06s2",
+   "confidence": "high"
+  },
+  {
+   "text": "현장에서 전자 장치에 기능 장애가 생겼을 때 설계 수정안을 내려면 어떤 자료부터 모으시겠어요?",
+   "scope": "role:hw_engineer",
+   "category": "문제해결",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s1",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 설계한 회로에서 핵심 소자 하나를 골라 그 소자를 선택한 이유를 설명해 주세요.",
+   "scope": "role:hw_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축물 수변전설비를 설계할 때 용량 계산부터 기기 배치까지 어떤 순서로 진행하시겠어요?",
+   "scope": "role:electrical_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s4",
+   "confidence": "high"
+  },
+  {
+   "text": "피뢰와 접지 시스템을 설계할 때 건물 용도에 따라 무엇을 다르게 검토하시겠어요?",
+   "scope": "role:electrical_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s06s4",
+   "confidence": "high"
+  },
+  {
+   "text": "설계 과업지시서와 관련 설계 기준이 서로 다르게 읽힌다면 전기설계 담당자로서 어떻게 판단하시겠어요?",
+   "scope": "role:electrical_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "발전소에서 만든 전기가 수용가까지 전달되는 과정을 설명해 주세요.",
+   "scope": "role:electrical_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s06s5",
+   "confidence": "high"
+  },
+  {
+   "text": "수변전설비의 핵심인 변압기가 어떤 원리로 동작하는지 설명해 주세요.",
+   "scope": "role:electrical_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s06s6",
+   "confidence": "high"
+  },
+  {
+   "text": "제로에너지 건축물 인증을 목표로 하는 건물이라면 전기설비 설계에서 어떤 방안을 제안하시겠어요?",
+   "scope": "role:electrical_engineer",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s7",
+   "confidence": "high"
+  },
+  {
+   "text": "기존 패널 제조 공정의 문제점을 개선할 때 공정 조건과 장비 중 무엇부터 검토하시겠어요?",
+   "scope": "role:display_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 공정 장비를 시험 가동해 양산성을 평가한다면 어떤 지표를 중심으로 보시겠어요?",
+   "scope": "role:display_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 발광 소재나 공정 기술을 도입하기 전에 어떤 내용을 검토해야 한다고 보세요?",
+   "scope": "role:display_engineer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s06s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구개발을 희망했는데 공정기술 업무에 배치된다면 어떻게 받아들이고 적응하시겠어요?",
+   "scope": "role:display_engineer",
+   "category": "조직적합성",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s9",
+   "confidence": "high"
+  },
+  {
+   "text": "본인의 전공이 디스플레이 업무와 어떻게 연결된다고 생각하시나요?",
+   "scope": "role:display_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s06s10",
+   "confidence": "high"
+  },
+  {
+   "text": "화이트 OLED 방식이 어떤 구조로 색을 구현하는지 설명해 주세요.",
+   "scope": "role:display_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s11",
+   "confidence": "high"
+  },
+  {
+   "text": "이전에 맡았던 설계 대상과 본인이 책임진 설계 범위를 구체적으로 말씀해 주세요.",
+   "scope": "role:mechanical_designer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "공개후기",
+   "src": "s06s12",
+   "confidence": "high"
+  },
+  {
+   "text": "2D 도면 작업과 3D 모델링 툴을 각각 어느 수준까지 다룰 수 있는지 말씀해 주세요.",
+   "scope": "role:mechanical_designer",
+   "category": "도구",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s06s13",
+   "confidence": "high"
+  },
+  {
+   "text": "PID 제어가 로봇 관절 제어에서 어떻게 쓰이는지 설명해 주세요.",
+   "scope": "role:robotics_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s14",
+   "confidence": "high"
+  },
+  {
+   "text": "모션 플래닝과 궤적 계획이 각각 무엇을 다루는지 구분해서 설명해 주세요.",
+   "scope": "role:robotics_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s06s14",
+   "confidence": "high"
+  },
+  {
+   "text": "로봇 기구를 직접 설계해서 제작까지 해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:robotics_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s15",
+   "confidence": "high"
+  },
+  {
+   "text": "로봇 작업에 맞는 엔드이펙터를 설계할 때 무엇부터 검토하시겠어요?",
+   "scope": "role:robotics_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s16",
+   "confidence": "medium"
+  },
+  {
+   "text": "고분자 섬유를 만드는 공정에서 연신 공정을 거치는 이유를 설명해 주세요.",
+   "scope": "role:chemical_process",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s17",
+   "confidence": "high"
+  },
+  {
+   "text": "수강한 전공 과목 중 공정 업무와 가장 관련이 깊은 과목과 배운 내용을 설명해 주세요.",
+   "scope": "role:chemical_process",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "공개후기",
+   "src": "s06s17",
+   "confidence": "high"
+  },
+  {
+   "text": "공정 모사 프로그램으로 정상상태 말고 동적 모사까지 다뤄 본 경험이 있나요?",
+   "scope": "role:chemical_process",
+   "category": "도구",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s18",
+   "confidence": "high"
+  },
+  {
+   "text": "최근 관심 있게 읽은 소재 관련 논문이 있다면 어떤 내용이었는지 말씀해 주세요.",
+   "scope": "role:materials_researcher",
+   "category": "성장",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s19",
+   "confidence": "high"
+  },
+  {
+   "text": "공침법으로 전구체를 합성할 때 생길 수 있는 문제와 중점적으로 관리할 부분은 무엇일까요?",
+   "scope": "role:materials_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s06s19",
+   "confidence": "high"
+  },
+  {
+   "text": "지원 분야의 소재가 본인이 연구해 온 소재와 다르다면 그 차이를 어떻게 메우시겠어요?",
+   "scope": "role:materials_researcher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s06s20",
+   "confidence": "high"
+  },
+  {
+   "text": "확립된 분석법이 없는 물질을 분석해야 한다면 어떤 순서로 방법을 찾아가시겠어요?",
+   "scope": "role:chemical_researcher",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s06s22",
+   "confidence": "high"
+  },
+  {
+   "text": "제품이 규격을 벗어나 고객사 불만이 들어왔다면 연구원으로서 원인을 어떤 순서로 찾으시겠어요?",
+   "scope": "role:chemical_researcher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s22",
+   "confidence": "high"
+  },
+  {
+   "text": "분석 결과에서 정밀도와 정확도는 어떻게 다르고 각각 어떻게 확보하시나요?",
+   "scope": "role:chemical_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s23",
+   "confidence": "high"
+  },
+  {
+   "text": "성분을 전혀 모르는 미지 시료를 받았다면 어떤 순서로 분석하시겠어요?",
+   "scope": "role:chemical_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s23",
+   "confidence": "high"
+  },
+  {
+   "text": "술폰화 반응이 어떤 원리로 진행되는지 설명해 주세요.",
+   "scope": "role:chemical_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s06s24",
+   "confidence": "high"
+  },
+  {
+   "text": "합성한 물질의 구조를 분광 분석으로 확인할 때 어떤 기법을 어떻게 조합하시겠어요?",
+   "scope": "role:chemical_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s25",
+   "confidence": "medium"
+  },
+  {
+   "text": "바이오 연구 성과를 산업화로 잇는 과정에서 본인이 맡을 수 있는 역할은 무엇이라고 보세요?",
+   "scope": "role:bio_researcher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s26",
+   "confidence": "high"
+  },
+  {
+   "text": "파일럿 규모까지 배양을 진행해 본 적이 있다면 규모와 그때 겪은 어려움을 말씀해 주세요.",
+   "scope": "role:bio_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "공개후기",
+   "src": "s06s27",
+   "confidence": "high"
+  },
+  {
+   "text": "본인이 자주 해 온 실험에서 결과를 좌우하는 가장 중요한 요소는 무엇이라고 보세요?",
+   "scope": "role:bio_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s28",
+   "confidence": "high"
+  },
+  {
+   "text": "가설 설정부터 대조군 구성까지 실험을 직접 설계해 본 경험을 말씀해 주세요.",
+   "scope": "role:bio_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s29",
+   "confidence": "high"
+  },
+  {
+   "text": "실험으로 얻은 생물학 데이터를 통계적으로 분석해 보고서로 정리할 때 무엇을 가장 신경 쓰시나요?",
+   "scope": "role:bio_researcher",
+   "category": "데이터",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "시험법이나 공정을 다른 부서로 기술이전해 본 경험이 있다면 어떻게 진행했는지 말씀해 주세요.",
+   "scope": "role:pharma_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s31",
+   "confidence": "medium"
+  },
+  {
+   "text": "지금까지 다뤄 본 분석법 중 가장 까다로웠던 것과 그 이유를 말씀해 주세요.",
+   "scope": "role:pharma_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s32",
+   "confidence": "high"
+  },
+  {
+   "text": "정제 같은 고형제의 제제 공정 흐름을 단계별로 설명해 주세요.",
+   "scope": "role:pharma_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s33",
+   "confidence": "high"
+  },
+  {
+   "text": "동물실험에서 얻은 약효 결과를 임상 투약 기준으로 연결할 때 무엇을 고려해야 할까요?",
+   "scope": "role:pharma_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s06s34",
+   "confidence": "medium"
+  },
+  {
+   "text": "모니터링 방문 때문에 외근과 출장이 잦은데 이런 근무 방식에서 업무를 어떻게 관리하시겠어요?",
+   "scope": "role:cra",
+   "category": "직무이해",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s35",
+   "confidence": "high"
+  },
+  {
+   "text": "다른 분야에서 일하다가 임상시험 직무로 옮기려는 이유는 무엇인가요?",
+   "scope": "role:cra",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "공개후기",
+   "src": "s06s36",
+   "confidence": "medium"
+  },
+  {
+   "text": "임상시험 모니터요원과 임상시험 코디네이터의 역할은 어떻게 다르다고 이해하고 계세요?",
+   "scope": "role:cra",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s06s37",
+   "confidence": "high"
+  },
+  {
+   "text": "기관의 시험 기록이 계획서와 GCP에 맞게 작성됐는지 확인할 때 어떤 순서로 검토하시겠어요?",
+   "scope": "role:cra",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s37",
+   "confidence": "high"
+  },
+  {
+   "text": "GMP가 무엇이고 인허가 업무와 어떻게 맞닿아 있는지 설명해 주세요.",
+   "scope": "role:regulatory_affairs",
+   "category": "직무이해",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s06s38",
+   "confidence": "high"
+  },
+  {
+   "text": "의약품 규격에서 순도와 함량은 각각 무엇을 뜻하고 어떻게 다른지 설명해 주세요.",
+   "scope": "role:regulatory_affairs",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s38",
+   "confidence": "high"
+  },
+  {
+   "text": "허가를 받은 제품의 시판 후 관리 단계에서 인허가 담당자가 챙겨야 할 문서와 절차는 무엇일까요?",
+   "scope": "role:regulatory_affairs",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s39",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 제품에 어떤 규격과 법령이 적용되는지 판단할 때 무엇부터 확인하시나요?",
+   "scope": "role:regulatory_affairs",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s39",
+   "confidence": "medium"
+  },
+  {
+   "text": "고도정수처리가 필요한 상황과 적용할 수 있는 처리 방식을 설명해 주세요.",
+   "scope": "role:env_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s40",
+   "confidence": "high"
+  },
+  {
+   "text": "폐기물 소각로를 운영하면서 생길 수 있는 문제와 개선 방안을 말씀해 주세요.",
+   "scope": "role:env_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s06s41",
+   "confidence": "medium"
+  },
+  {
+   "text": "수질 유기물 지표를 COD 대신 TOC로 관리하는 흐름이 현장 관리에 어떤 변화를 준다고 보세요?",
+   "scope": "role:env_engineer",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s42",
+   "confidence": "high"
+  },
+  {
+   "text": "굴뚝 자동측정기로 모은 배출 자료를 방지시설 개선 계획에 활용하려면 어떻게 분석하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s43",
+   "confidence": "medium"
+  },
+  {
+   "text": "국내외 ESG 기준과 모범규준의 변화를 어떻게 파악해 회사 활동에 반영하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s44",
+   "confidence": "high"
+  },
+  {
+   "text": "ESG 업무는 거의 모든 부서와 맞닿아 있는데, 여러 부서와 일할 때 무엇을 가장 신경 쓰시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s44",
+   "confidence": "high"
+  },
+  {
+   "text": "국내외 ESG 평가에 대응할 때 담당자로서 어떤 순서로 준비하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s44",
+   "confidence": "high"
+  },
+  {
+   "text": "지속가능경영보고서에 회사의 활동과 실적을 담을 때 무엇을 가장 중요하게 보시나요?",
+   "scope": "role:esg_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s44",
+   "confidence": "medium"
+  },
+  {
+   "text": "ESG 직무를 준비하면서 실무 감각을 기르기 위해 해 온 노력을 말씀해 주세요.",
+   "scope": "role:esg_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공식자료",
+   "src": "s06s44",
+   "confidence": "high"
+  },
+  {
+   "text": "본인이 생각하는 ESG 담당자의 역할은 무엇인지 말씀해 주세요.",
+   "scope": "role:esg_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s06s45",
+   "confidence": "medium"
+  },
+  {
+   "text": "이전에 맡았던 ESG 관련 업무 하나를 골라 본인이 한 일을 구체적으로 설명해 주세요.",
+   "scope": "role:esg_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "공개후기",
+   "src": "s06s46",
+   "confidence": "high"
+  },
+  {
+   "text": "가스터빈의 구성과 작동 원리를 아는 만큼 설명해 주세요.",
+   "scope": "role:power_plant_ops",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s47",
+   "confidence": "high"
+  },
+  {
+   "text": "복합화력 발전이 어떤 방식으로 발전 효율을 높이는지 설명해 주세요.",
+   "scope": "role:power_plant_ops",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s47",
+   "confidence": "high"
+  },
+  {
+   "text": "열병합 발전소를 증설하는 문제에 대해 찬성과 반대 중 한쪽 입장에서 말씀해 주세요.",
+   "scope": "role:power_plant_ops",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s06s48",
+   "confidence": "high"
+  },
+  {
+   "text": "발전설비 성능 진단 결과를 보고 정비나 교체 시기를 어떻게 정하시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s49",
+   "confidence": "medium"
+  },
+  {
+   "text": "재생에너지 비중이 커질 때 간헐성을 보완해 전력 공급을 안정시킬 방안을 말씀해 주세요.",
+   "scope": "role:power_grid",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s06s50",
+   "confidence": "high"
+  },
+  {
+   "text": "스마트그리드를 도입할 때 예상되는 제약과 그 해결 방안을 말씀해 주세요.",
+   "scope": "role:power_grid",
+   "category": "전략",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s06s50",
+   "confidence": "high"
+  },
+  {
+   "text": "배전 설비를 새로 늘릴 때 적정 변압기 용량을 어떤 자료로 검토하시겠어요?",
+   "scope": "role:power_grid",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s51",
+   "confidence": "medium"
+  },
+  {
+   "text": "노후 송배전 설비를 현장 조사한 뒤 교체 우선순위를 어떻게 정하시겠어요?",
+   "scope": "role:power_grid",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s06s51",
+   "confidence": "medium"
+  }
+ ]
+}

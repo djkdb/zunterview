@@ -1,0 +1,1340 @@
+{
+ "batch": "s01",
+ "sources": [
+  {
+   "id": "s01s1",
+   "title": "커리어넷 직업정보 — 경영컨설턴트",
+   "url": "https://www.career.go.kr/cnet/app/base/job/jobView.m?SEQ=202",
+   "type": "job_description"
+  },
+  {
+   "id": "s01s2",
+   "title": "커리어넷 직업정보 — 노무사(인사 및 노사 관련 전문가)",
+   "url": "https://www.career.go.kr/cnet/app/base/job/jobView.m?SEQ=205",
+   "type": "job_description"
+  },
+  {
+   "id": "s01s3",
+   "title": "커리어넷 직업정보 — 전문비서",
+   "url": "https://www.career.go.kr/cnet/app/base/job/jobView.m?SEQ=378",
+   "type": "job_description"
+  },
+  {
+   "id": "s01s4",
+   "title": "NCS 기반 채용 직무기술서(일반직군 사무행정직렬) — 경영기획·인사(인력채용·교육훈련운영·핵심인재관리·조직문화관리)",
+   "url": "https://raspfiles2.incruit.com/upa/data/104/SuccessData/addFile/%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C(%EC%82%AC%EB%AC%B4%ED%96%89%EC%A0%95).pdf",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "s01s5",
+   "title": "잡코리아 채용공고 — 재무팀 IR 및 공시 담당자(IR 자료·애널리스트 소통·공시 메시지 검토)",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49868251",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s01s6",
+   "title": "잡코리아 채용공고 — IR/공시 담당자(수시공시 검토·감독기관 대응)",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49766625",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s01s7",
+   "title": "잡코리아 채용공고 — 본사 기획직(신사업 기획·M&A 실무: Deal Structure·Valuation·Due Diligence)",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50042634",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s01s8",
+   "title": "잡코리아 채용공고 — 전략기획 및 M&A 전문가(딜 관리·계열사 시너지 검토·펀드 출자 검토)",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49711947",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s01s9",
+   "title": "잡코리아 채용공고 — 전략사업투자본부(투자 검토·투자심사 보고서·포트폴리오 사후관리)",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49940211",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s01s10",
+   "title": "잡코리아 채용공고 — People팀 조직개발 담당자(HRBP)",
+   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49927134",
+   "type": "job_description",
+   "year": 2026
+  },
+  {
+   "id": "s01s11",
+   "title": "사람인 면접후기 — 윌로그 사업기획 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69271",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s12",
+   "title": "사람인 면접후기 — 허니스트 사업기획 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67316",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s13",
+   "title": "사람인 면접후기 — 라온넥스텝 사업기획·전략기획 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66110",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s14",
+   "title": "사람인 면접후기 — 세화병원 경영관리 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69519",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s15",
+   "title": "사람인 면접후기 — 경신 경영관리 면접 (2023)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/60138",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s01s16",
+   "title": "사람인 면접후기 — 클로토 경영관리·사업관리 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/65726",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s17",
+   "title": "사람인 면접후기 — 전략컨설팅집현 경영컨설팅 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67464",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s18",
+   "title": "사람인 면접후기 — 러닝크루 HRD·HR컨설팅 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/46891",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s19",
+   "title": "사람인 면접후기 — 티비앤에이 컨설턴트 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/61083",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s20",
+   "title": "사람인 면접후기 — 서울옥션 IR/공시 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/65415",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s21",
+   "title": "사람인 면접후기 — 아이알큐더스 IR/공시 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/64456",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s22",
+   "title": "사람인 면접후기 — 아이알큐더스 IR/공시 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69150",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s23",
+   "title": "사람인 면접후기 — 엔켐 IR/공시 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67564",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s24",
+   "title": "사람인 면접후기 — 컨두잇 사업기획(주주·자본시장 플랫폼) 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/62796",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s25",
+   "title": "사람인 면접후기 — 파수에이아이 인사 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/68050",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s26",
+   "title": "사람인 면접후기 — 쿠팡로지스틱스서비스 채용대행 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/43601",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s27",
+   "title": "사람인 면접후기 — 키스템프그룹 헤드헌터·채용담당자 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/50485",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s28",
+   "title": "사람인 면접후기 — 부스터스 인사·채용담당자 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/63537",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s29",
+   "title": "사람인 면접후기 — 쿠팡풀필먼트서비스 채용담당자 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/34770",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s30",
+   "title": "사람인 면접후기 — 시앤피컨설팅 HRD 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/62000",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s31",
+   "title": "사람인 면접후기 — 러닝크루 HRD 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/44989",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s32",
+   "title": "사람인 면접후기 — 에스엘 HRD 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/46717",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s33",
+   "title": "사람인 면접후기 — 한국생산성본부 HRD·인사교육 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/54945",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s34",
+   "title": "사람인 면접후기 — 씨앤 경영지원·인사·총무 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67241",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s35",
+   "title": "사람인 면접후기 — 신젠타코리아 인사 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66014",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s36",
+   "title": "사람인 면접후기 — 이지케어텍 인사·HRD·채용 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/56793",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s37",
+   "title": "사람인 면접후기 — 십일번가 인사·조직문화 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/42661",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s38",
+   "title": "사람인 면접후기 — 엘오티베큠 급여(Payroll) 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/65106",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s39",
+   "title": "사람인 면접후기 — 우진플라임 HRD·ER(노무관리) 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/60583",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s40",
+   "title": "사람인 면접후기 — 노무법인이안 급여(Payroll) 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/49096",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s41",
+   "title": "사람인 면접후기 — 무림페이퍼 인사·복리후생 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/68501",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s42",
+   "title": "사람인 면접후기 — 에이스휴먼파워 잡매니저(아웃소싱) 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66046",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s43",
+   "title": "사람인 면접후기 — 무신사트레이딩 인사·급여 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/54735",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s44",
+   "title": "사람인 면접후기 — 다이트랩 인사 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69272",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s45",
+   "title": "사람인 면접후기 — 씨알에스큐브 총무 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67647",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s46",
+   "title": "사람인 면접후기 — 누비랩 총무 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66951",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s47",
+   "title": "사람인 면접후기 — 슈퍼캣 총무 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66946",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s48",
+   "title": "사람인 면접후기 — 마젠타로보틱스 전산총무 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67179",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s49",
+   "title": "사람인 면접후기 — 강원랜드 시설관리 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66553",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s50",
+   "title": "사람인 면접후기 — 에이치플랜즈 자산관리 면접 (2023)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/48573",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s01s51",
+   "title": "사람인 면접후기 — 삼성전자 비서 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/55197",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s52",
+   "title": "사람인 면접후기 — 진앤리법률사무소 비서 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/56624",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s53",
+   "title": "사람인 면접후기 — 씨아이템프러리 비서 면접 (2024)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/44917",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s01s54",
+   "title": "사람인 면접후기 — 성우하이텍 총무·임원비서 면접 (2025)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/65099",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s01s55",
+   "title": "사람인 면접후기 — 이노바인코리아 재무 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69373",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s56",
+   "title": "사람인 면접후기 — 한길안과병원 재무 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/65361",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s57",
+   "title": "사람인 면접후기 — 모아이스 재무회계 면접 (2026)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/65843",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "s01s58",
+   "title": "잡코리아 신입 면접후기 — 가구·인테리어 기업 재무 면접",
+   "url": "https://www.jobkorea.co.kr/starter/live/View/70593",
+   "type": "interview_review"
+  },
+  {
+   "id": "s01s59",
+   "title": "잡코리아 신입 면접후기 — 손해보험사 사업기획 면접",
+   "url": "https://www.jobkorea.co.kr/starter/live/View/70597",
+   "type": "interview_review"
+  },
+  {
+   "id": "s01s60",
+   "title": "잡코리아 신입 면접후기 — 식품 대기업 사업기획 직무면접",
+   "url": "https://www.jobkorea.co.kr/starter/live/View/70564",
+   "type": "interview_review"
+  },
+  {
+   "id": "s01s61",
+   "title": "잡코리아 신입 면접후기 — 물류기업 기획 직무 임원면접",
+   "url": "https://www.jobkorea.co.kr/starter/live/View/70561",
+   "type": "interview_review"
+  },
+  {
+   "id": "s01s62",
+   "title": "잡코리아 신입 면접후기 — 공공기관 경영지원 면접",
+   "url": "https://www.jobkorea.co.kr/starter/live/View/70528",
+   "type": "interview_review"
+  },
+  {
+   "id": "s01s63",
+   "title": "잡코리아 신입 면접후기 — 연금공단 경영지원 면접",
+   "url": "https://www.jobkorea.co.kr/starter/live/View/70576",
+   "type": "interview_review"
+  },
+  {
+   "id": "s01s64",
+   "title": "잡코리아 신입 면접후기 — 은행 IT본부 시설 직군 면접",
+   "url": "https://www.jobkorea.co.kr/starter/live/View/70550",
+   "type": "interview_review"
+  }
+ ],
+ "profiles": [],
+ "questions": [
+  {
+   "text": "최근 맡았던 가장 복잡한 문제를 어떻게 정의했고, 어떤 데이터를 근거로 결정했는지 말씀해 주세요.",
+   "scope": "role:business_planner",
+   "category": "문제해결",
+   "type": "experience",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s11",
+   "confidence": "high",
+   "levels": [
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "사업계획서를 직접 작성해 본 적이 있다면 어떤 구성으로 썼는지 말씀해 주세요.",
+   "scope": "role:business_planner",
+   "category": "실무",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s12",
+   "confidence": "high"
+  },
+  {
+   "text": "기획 업무에서 발표와 문서 작성 중 본인은 어느 쪽에 더 강점이 있다고 보세요?",
+   "scope": "role:business_planner",
+   "category": "강점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s13",
+   "confidence": "high"
+  },
+  {
+   "text": "기술 변화로 기존 판매 채널이 위협받는다면 사업기획 담당자로서 어떻게 대응하시겠어요?",
+   "scope": "role:business_planner",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s59",
+   "confidence": "medium"
+  },
+  {
+   "text": "최근 출시된 신제품 하나를 골라 경쟁 제품과 비교해 잘 팔릴지 평가해 주세요.",
+   "scope": "role:business_planner",
+   "category": "시장",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s60",
+   "confidence": "medium"
+  },
+  {
+   "text": "기획이란 무엇이라고 생각하시는지 본인의 말로 정의해 주세요.",
+   "scope": "role:business_planner",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s61",
+   "confidence": "medium"
+  },
+  {
+   "text": "조직의 수익성을 높이려면 경영관리 담당자로서 무엇부터 살펴보시겠어요?",
+   "scope": "role:business_management",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s14",
+   "confidence": "high"
+  },
+  {
+   "text": "지원한 회사의 최근 재무제표를 보고 눈에 띈 점을 말씀해 주세요.",
+   "scope": "role:business_management",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s15",
+   "confidence": "high"
+  },
+  {
+   "text": "사업비를 관리하다 문제가 생겼을 때 해결했던 경험과 그 과정을 말씀해 주세요.",
+   "scope": "role:business_management",
+   "category": "문제해결",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s16",
+   "confidence": "high"
+  },
+  {
+   "text": "업무용 소프트웨어를 정품으로 구매해 써야 하는 이유를 경영지원 관점에서 말씀해 주세요.",
+   "scope": "role:business_management",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s62",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 전공 지식을 경영지원 업무에 어떻게 활용할 수 있을지 말씀해 주세요.",
+   "scope": "role:business_management",
+   "category": "강점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s63",
+   "confidence": "medium",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "컨설팅 프로젝트를 따내기 위한 제안서를 쓴다면 무엇을 가장 앞에 두시겠어요?",
+   "scope": "role:management_consultant",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s1",
+   "confidence": "high"
+  },
+  {
+   "text": "고객사 내부 사정에 휘둘리지 않고 객관적으로 문제를 진단하려면 어떻게 해야 할까요?",
+   "scope": "role:management_consultant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s01s1",
+   "confidence": "high"
+  },
+  {
+   "text": "컨설팅 분석에 쓸 수 있는 도구 중 다룰 줄 아는 것과 실제로 활용한 사례를 말씀해 주세요.",
+   "scope": "role:management_consultant",
+   "category": "도구",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s17",
+   "confidence": "high"
+  },
+  {
+   "text": "컨설턴트는 짧은 시간 안에 전문가 수준이 되어야 하는데, 이 부담을 어떻게 받아들이세요?",
+   "scope": "role:management_consultant",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s18",
+   "confidence": "medium"
+  },
+  {
+   "text": "지금까지의 경력이 컨설팅과 다른 분야라면 어떻게 빠르게 적응하시겠어요?",
+   "scope": "role:management_consultant",
+   "category": "성장",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s19",
+   "confidence": "high"
+  },
+  {
+   "text": "분기보고서 작성이나 주주총회 준비에 참여해 본 경험이 있다면 맡았던 역할을 말씀해 주세요.",
+   "scope": "role:ir_manager",
+   "category": "실무",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s20",
+   "confidence": "high"
+  },
+  {
+   "text": "기업 분석 과제에서 동종 기업들과 수익성·밸류에이션 지표를 비교해 본 경험을 말씀해 주세요.",
+   "scope": "role:ir_manager",
+   "category": "데이터",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s21",
+   "confidence": "high",
+   "levels": [
+    "entry",
+    "junior"
+   ]
+  },
+  {
+   "text": "IR이나 PR과 관련해 직접 해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:ir_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s22",
+   "confidence": "high",
+   "levels": [
+    "entry",
+    "junior"
+   ]
+  },
+  {
+   "text": "IR 업무를 앞으로 어떤 방향으로 발전시켜 나가고 싶은지 말씀해 주세요.",
+   "scope": "role:ir_manager",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s23",
+   "confidence": "high"
+  },
+  {
+   "text": "지금 국내 자본시장이 가진 가장 큰 문제는 무엇이라고 보세요?",
+   "scope": "role:ir_manager",
+   "category": "시장",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s24",
+   "confidence": "medium"
+  },
+  {
+   "text": "공시 내용이 시장에서 오해를 살 수 있다고 판단되면 사전에 어떤 자료를 준비하시겠어요?",
+   "scope": "role:ir_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s5",
+   "confidence": "high"
+  },
+  {
+   "text": "동종 업계 기업들의 IR 자료를 비교 분석한다면 무엇을 중점적으로 보시겠어요?",
+   "scope": "role:ir_manager",
+   "category": "경쟁",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s5",
+   "confidence": "high"
+  },
+  {
+   "text": "주가나 수급에 영향을 줄 만한 이슈가 생기면 경영진 보고 자료를 어떻게 구성하시겠어요?",
+   "scope": "role:ir_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s5",
+   "confidence": "high"
+  },
+  {
+   "text": "거래소나 감독기관에서 공시 관련 문의가 오면 어떤 순서로 대응하시겠어요?",
+   "scope": "role:ir_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s01s6",
+   "confidence": "high"
+  },
+  {
+   "text": "여러 투자 사업 후보가 동시에 올라오면 우선순위를 어떤 기준으로 정하시겠어요?",
+   "scope": "role:corporate_investment",
+   "category": "의사결정",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s4",
+   "confidence": "high"
+  },
+  {
+   "text": "인수 거래 구조를 설계할 때 어떤 요소들을 함께 고려하시겠어요?",
+   "scope": "role:corporate_investment",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s01s7",
+   "confidence": "high"
+  },
+  {
+   "text": "외부 자문사와 함께 딜을 진행할 때 회사 내부 담당자가 해야 할 역할은 무엇이라고 보세요?",
+   "scope": "role:corporate_investment",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s8",
+   "confidence": "high"
+  },
+  {
+   "text": "계열사 간 시너지나 사업 재편을 검토한다면 어떤 기준으로 판단하시겠어요?",
+   "scope": "role:corporate_investment",
+   "category": "전략",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s01s8",
+   "confidence": "high",
+   "levels": [
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "펀드 출자와 직접 투자 중 어떤 방식을 택할지 무엇을 기준으로 판단하시겠어요?",
+   "scope": "role:corporate_investment",
+   "category": "의사결정",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s01s8",
+   "confidence": "high"
+  },
+  {
+   "text": "투자심사 보고서를 쓸 때 반드시 담아야 할 내용은 무엇이라고 보세요?",
+   "scope": "role:corporate_investment",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s9",
+   "confidence": "high"
+  },
+  {
+   "text": "처음 보는 기술 기업을 검토할 때 기술을 잘 모르는 경영진에게 어떻게 설명하시겠어요?",
+   "scope": "role:corporate_investment",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s9",
+   "confidence": "high"
+  },
+  {
+   "text": "채용 공고를 내기 전에 해당 직무를 어떻게 분석해서 필요한 역량을 정하시겠어요?",
+   "scope": "role:recruiter",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s4",
+   "confidence": "high"
+  },
+  {
+   "text": "지원자로서 여러 채용 과정을 겪으며 아쉬웠던 점과 개선할 방법을 말씀해 주세요.",
+   "scope": "role:recruiter",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s25",
+   "confidence": "high"
+  },
+  {
+   "text": "단기·일용직 인력을 채용할 때 근로계약서는 어떻게 작성해야 할까요?",
+   "scope": "role:recruiter",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s26",
+   "confidence": "high"
+  },
+  {
+   "text": "처음 만나는 후보자와 통화하거나 면담할 때 어떻게 분위기를 풀어 가시겠어요?",
+   "scope": "role:recruiter",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s27",
+   "confidence": "high"
+  },
+  {
+   "text": "인사팀 업무를 하면서 가장 힘들 것 같은 부분은 무엇이라고 생각하세요?",
+   "scope": "role:recruiter",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s28",
+   "confidence": "high",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "채용 담당자로 일하게 된다면 첫 1년 안에 이루고 싶은 목표는 무엇인가요?",
+   "scope": "role:recruiter",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s29",
+   "confidence": "high"
+  },
+  {
+   "text": "핵심 인재 육성 프로그램의 대상자를 고른다면 어떤 기준을 쓰시겠어요?",
+   "scope": "role:hrd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s4",
+   "confidence": "high"
+  },
+  {
+   "text": "교육 자료를 만드는 일과 직접 강의하는 일 중 어느 쪽에 더 강점이 있나요?",
+   "scope": "role:hrd",
+   "category": "강점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s30",
+   "confidence": "high"
+  },
+  {
+   "text": "AI가 빠르게 발전하는 환경에서 HRD의 역할은 어떻게 달라질 것 같나요?",
+   "scope": "role:hrd",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s31",
+   "confidence": "high"
+  },
+  {
+   "text": "일을 통한 성장과 교육을 통한 성장 중 무엇이 더 중요하다고 보세요?",
+   "scope": "role:hrd",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s32",
+   "confidence": "high"
+  },
+  {
+   "text": "반복되는 교육 운영 업무와 새 과정을 만드는 업무 중 어느 쪽이 더 잘 맞으세요?",
+   "scope": "role:hrd",
+   "category": "조직적합성",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s33",
+   "confidence": "medium"
+  },
+  {
+   "text": "현업 부서가 인력 충원을 요청하면 적정 인원을 어떻게 판단하시겠어요?",
+   "scope": "role:hrbp",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s4",
+   "confidence": "high"
+  },
+  {
+   "text": "경영진이 정한 방침에 직원들이 불만을 제기하면 중간에서 어떻게 대응하시겠어요?",
+   "scope": "role:hrbp",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s34",
+   "confidence": "high"
+  },
+  {
+   "text": "현업 부서와 협업하다 부딪혔던 문제와 그 해결 과정을 말씀해 주세요.",
+   "scope": "role:hrbp",
+   "category": "팀워크",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s35",
+   "confidence": "high"
+  },
+  {
+   "text": "담당 조직의 문제를 찾기 위해 인사 데이터를 본다면 어떤 지표부터 확인하시겠어요?",
+   "scope": "role:hrbp",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s10",
+   "confidence": "high"
+  },
+  {
+   "text": "조직 구조나 역할 분담이 효과적인지 진단한다면 무엇을 살펴보시겠어요?",
+   "scope": "role:hrbp",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s01s10",
+   "confidence": "high"
+  },
+  {
+   "text": "리더에게 기대하는 역할을 정의하고 리더십을 진단한다면 무엇부터 하시겠어요?",
+   "scope": "role:hrbp",
+   "category": "리더십",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s01s10",
+   "confidence": "high",
+   "levels": [
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "조직문화 개선 활동이 효과가 있었는지 어떤 지표로 확인하시겠어요?",
+   "scope": "role:org_culture",
+   "category": "성과",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s4",
+   "confidence": "high"
+  },
+  {
+   "text": "지금까지 몸담았던 조직의 문화를 한 가지 특징으로 설명하고, 바꾸고 싶은 점을 말씀해 주세요.",
+   "scope": "role:org_culture",
+   "category": "조직적합성",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s36",
+   "confidence": "high"
+  },
+  {
+   "text": "인사 관련 전공이 아니라면 이 분야 역량을 쌓기 위해 어떤 노력을 해 오셨나요?",
+   "scope": "role:org_culture",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s37",
+   "confidence": "high",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "조직에서 반복되는 문제를 개인이 아닌 구조의 관점에서 본다는 건 어떤 의미라고 생각하세요?",
+   "scope": "role:org_culture",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s01s10",
+   "confidence": "high"
+  },
+  {
+   "text": "함께 일하고 싶은 동료와 그렇지 않은 동료는 어떤 점에서 갈린다고 보세요?",
+   "scope": "role:org_culture",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s33",
+   "confidence": "medium"
+  },
+  {
+   "text": "통상임금에 어떤 항목이 들어가는지 판단할 때 무엇을 기준으로 보세요?",
+   "scope": "role:compensation",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s38",
+   "confidence": "high"
+  },
+  {
+   "text": "퇴직연금을 확정급여형과 확정기여형 중 어느 방식으로 운영하는 게 회사에 유리하다고 보세요?",
+   "scope": "role:compensation",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s39",
+   "confidence": "high",
+   "levels": [
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "연말정산 오류로 세금이 추가로 징수됐다면 책임 소재를 어떻게 판단하시겠어요?",
+   "scope": "role:compensation",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s39",
+   "confidence": "high"
+  },
+  {
+   "text": "연차수당을 계산할 때 어떤 순서로 금액을 산정하시나요?",
+   "scope": "role:compensation",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s40",
+   "confidence": "high"
+  },
+  {
+   "text": "노사분쟁을 예방하려면 평소에 어떤 활동을 해 두어야 한다고 보세요?",
+   "scope": "role:labor_relations",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s2",
+   "confidence": "high"
+  },
+  {
+   "text": "단체교섭을 앞두고 기존 단체협약을 분석할 때 무엇을 중점적으로 보시겠어요?",
+   "scope": "role:labor_relations",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s01s2",
+   "confidence": "high"
+  },
+  {
+   "text": "노동조합과의 관계는 어떻게 가져가야 한다고 생각하세요?",
+   "scope": "role:labor_relations",
+   "category": "가치관",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s41",
+   "confidence": "high"
+  },
+  {
+   "text": "파견과 도급은 어떤 점에서 다르고, 실무에서 이 구분이 왜 중요할까요?",
+   "scope": "role:labor_relations",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s42",
+   "confidence": "high"
+  },
+  {
+   "text": "노동청 점검이나 직원 진정에 대응해 본 경험이 있다면 어떻게 처리했는지 말씀해 주세요.",
+   "scope": "role:labor_relations",
+   "category": "실무",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s43",
+   "confidence": "high",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ]
+  },
+  {
+   "text": "근로계약서를 작성할 때 특히 중요하게 확인하는 부분과 그 이유를 말씀해 주세요.",
+   "scope": "role:labor_relations",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s44",
+   "confidence": "high"
+  },
+  {
+   "text": "사내 행사 하루 전에 건물 측에서 행사 진행이 어렵다고 통보하면 어떻게 대응하시겠어요?",
+   "scope": "role:general_affairs",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s45",
+   "confidence": "high"
+  },
+  {
+   "text": "사내 PC 문제로 외부 업체를 선정해야 한다면 어떤 기준으로 고르시겠어요?",
+   "scope": "role:general_affairs",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s45",
+   "confidence": "high"
+  },
+  {
+   "text": "송년회 만족도가 낮았다는 의견이 나왔다면 다음 행사를 어떻게 개선하시겠어요?",
+   "scope": "role:general_affairs",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s46",
+   "confidence": "high"
+  },
+  {
+   "text": "총무 업무 중 자동화하기 어려운 일은 무엇이고 그 이유는 무엇이라고 보세요?",
+   "scope": "role:general_affairs",
+   "category": "직무이해",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s47",
+   "confidence": "high"
+  },
+  {
+   "text": "회사의 유형자산을 어떤 방식으로 관리해 보셨는지 말씀해 주세요.",
+   "scope": "role:facility_asset",
+   "category": "실무",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s48",
+   "confidence": "high"
+  },
+  {
+   "text": "시설에 문제가 생겼을 때 먼저 조치할지 먼저 보고할지 어떤 기준으로 판단하시겠어요?",
+   "scope": "role:facility_asset",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s49",
+   "confidence": "high"
+  },
+  {
+   "text": "부동산 자산관리 업무가 어떤 일들로 이루어진다고 이해하고 계신지 말씀해 주세요.",
+   "scope": "role:facility_asset",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s50",
+   "confidence": "high",
+   "levels": [
+    "entry"
+   ]
+  },
+  {
+   "text": "전산센터처럼 중요한 설비가 모인 건물을 관리한다면 무엇을 가장 먼저 챙기시겠어요?",
+   "scope": "role:facility_asset",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s64",
+   "confidence": "medium"
+  },
+  {
+   "text": "시설관리 시스템을 도입하면 관리 업무가 어떻게 달라진다고 보세요?",
+   "scope": "role:facility_asset",
+   "category": "도구",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s64",
+   "confidence": "medium"
+  },
+  {
+   "text": "상사에게 올라오는 문서와 전화를 검토해 보고할 때 무엇을 걸러 내고 무엇을 바로 올리시겠어요?",
+   "scope": "role:secretary",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s3",
+   "confidence": "high"
+  },
+  {
+   "text": "상사의 회의에 배석해 회의록을 쓸 때 어떤 내용을 중심으로 요약하시겠어요?",
+   "scope": "role:secretary",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s01s3",
+   "confidence": "high"
+  },
+  {
+   "text": "모시는 임원이 업무와 관계없는 사적인 일을 부탁하면 어떻게 대응하시겠어요?",
+   "scope": "role:secretary",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s51",
+   "confidence": "high"
+  },
+  {
+   "text": "퇴근 이후에 급한 업무 요청을 받았을 때 어떻게 대처하셨는지 말씀해 주세요.",
+   "scope": "role:secretary",
+   "category": "상황대처",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s51",
+   "confidence": "high"
+  },
+  {
+   "text": "여러 업무가 한꺼번에 몰릴 때 어떤 순서로 처리하시나요?",
+   "scope": "role:secretary",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s52",
+   "confidence": "high"
+  },
+  {
+   "text": "업무 스타일이 잘 맞지 않는 상사를 보좌하게 되면 어떻게 맞춰 가시겠어요?",
+   "scope": "role:secretary",
+   "category": "조직적합성",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s53",
+   "confidence": "high"
+  },
+  {
+   "text": "상사의 일정을 관리할 때 어떤 방식과 도구를 쓰시나요?",
+   "scope": "role:secretary",
+   "category": "도구",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s54",
+   "confidence": "high"
+  },
+  {
+   "text": "재무계획을 세울 때 어떤 자료를 바탕으로 어떤 순서로 수립하시겠어요?",
+   "scope": "role:finance_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s55",
+   "confidence": "high"
+  },
+  {
+   "text": "경영진에게 재무 보고를 할 때 어떤 방식으로 정리해 전달하셨는지 말씀해 주세요.",
+   "scope": "role:finance_manager",
+   "category": "커뮤니케이션",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s55",
+   "confidence": "high"
+  },
+  {
+   "text": "업무 중 실수를 발견하면 먼저 보고하고 고칠지, 고친 뒤 보고할지 어떻게 판단하시겠어요?",
+   "scope": "role:finance_manager",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s01s56",
+   "confidence": "high"
+  },
+  {
+   "text": "자금 횡령을 막으려면 재무팀이 어떤 내부 통제 장치를 둬야 할까요?",
+   "scope": "role:finance_manager",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s01s57",
+   "confidence": "high"
+  },
+  {
+   "text": "재무 직무가 회사에서 구체적으로 어떤 일을 한다고 알고 계신지 말씀해 주세요.",
+   "scope": "role:finance_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s01s58",
+   "confidence": "medium",
+   "levels": [
+    "entry"
+   ]
+  }
+ ]
+}

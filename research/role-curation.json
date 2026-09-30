@@ -127,6 +127,14 @@
     {
       "urlIncludes": "gamejob.co.kr/Community/Talk/Detail?talk_Stat=13&idx=33505",
       "why": "game-localization PM review, not a translator interview"
+    },
+    {
+      "urlIncludes": "community.linkareer.com/interview/4164024",
+      "why": "the candidate describes what they prepared, not a question they were asked"
+    },
+    {
+      "urlIncludes": "m.blog.naver.com/whaehowl/223043922961",
+      "why": "a list of questions the author prepared, not a record of what was asked"
     }
   ]
 }

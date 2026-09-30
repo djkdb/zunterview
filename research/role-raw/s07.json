@@ -1,0 +1,1472 @@
+{
+ "batch": "s07",
+ "sources": [
+  {
+   "id": "s07s1",
+   "title": "NCS 세분류 — 소방안전관리(05020104): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202300051",
+   "type": "ncs",
+   "year": 2023
+  },
+  {
+   "id": "s07s2",
+   "title": "NCS 세분류 — 건축설비시공(14030302): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200331",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "s07s3",
+   "title": "NCS 세분류 — 건축설비유지관리(14030304): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500026",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "s07s4",
+   "title": "NCS 세분류 — 가설시공(14030208): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100025",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "s07s5",
+   "title": "NCS 세분류 — 건설공사품질관리(14010202): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500023",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "s07s6",
+   "title": "NCS 세분류 — 설계기획관리(14010101): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC201500820",
+   "type": "ncs",
+   "year": 2015
+  },
+  {
+   "id": "s07s7",
+   "title": "NCS 세분류 — 건설공사공무관리(14010204): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500025",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "s07s8",
+   "title": "NCS 세분류 — 도로설계(14020101): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400187",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "s07s9",
+   "title": "NCS 세분류 — 지반설계(14020108): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400195",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "s07s10",
+   "title": "NCS 세분류 — 상하수도설계(14020106): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400190",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "s07s11",
+   "title": "NCS 세분류 — 토공(14020201): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200417",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "s07s12",
+   "title": "NCS 세분류 — 포장(14020203): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC201500796",
+   "type": "ncs",
+   "year": 2015
+  },
+  {
+   "id": "s07s13",
+   "title": "NCS 세분류 — 유지관리(14010301): 직무정의·능력단위(안전점검·정밀안전진단·보수보강)",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500015",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "s07s14",
+   "title": "NCS 세분류 — 공정관리(02040103): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202300124",
+   "type": "ncs",
+   "year": 2023
+  },
+  {
+   "id": "s07s15",
+   "title": "NCS 세분류 — 기계생산관리계획(15030201): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500039",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "s07s16",
+   "title": "NCS 세분류 — 기계공정관리(15030203): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100095",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "s07s17",
+   "title": "NCS 세분류 — 기계생산성관리(15030204): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100096",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "s07s18",
+   "title": "NCS 세분류 — 기계작업감독(15030205): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500041",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "s07s19",
+   "title": "NCS 세분류 — 스마트공장 기계설비유지관리(15110302): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200385",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "s07s20",
+   "title": "NCS 세분류 — QM/QC관리(02040201): 직무정의·능력단위(공정품질·협력사품질·품질보증체계·신뢰성관리 등)",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC201600738",
+   "type": "ncs",
+   "year": 2016
+  },
+  {
+   "id": "s07s21",
+   "title": "NCS 세분류 — 기계품질관리(15040102): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100093",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "s07s22",
+   "title": "NCS 세분류 — 기계품질평가(15040103): 직무정의·능력단위(공정 신뢰성 평가·품질 데이터 분석)",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100094",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "s07s23",
+   "title": "현대모비스 채용 — 전장품 부품품질관리 직무 공고(수입검사·4M 공정감사·귀책 판정·클레임)",
+   "url": "https://careers.mobis.com/jobs-view?seq=1984",
+   "type": "job_description",
+   "year": 2024
+  },
+  {
+   "id": "s07s24",
+   "title": "현대모비스 채용 — 품질경영_품질시스템 경력 공고(QMS 구축·고도화, IATF 16949 우대)",
+   "url": "https://careers.mobis.com/jobs-view?seq=959",
+   "type": "job_description",
+   "year": 2024
+  },
+  {
+   "id": "s07s25",
+   "title": "현대모비스 채용 — 반도체 품질 직무 공고(신뢰성 평가·제조공정 점검·불량 분석)",
+   "url": "https://careers.mobis.com/jobs-view?seq=2067",
+   "type": "job_description",
+   "year": 2024
+  },
+  {
+   "id": "s07s26",
+   "title": "현대모비스 채용 — 품질_신제품품질 경력 공고(개발 단계 품질리스크 점검·내구/열화 분석)",
+   "url": "https://careers.mobis.com/jobs-view?seq=1783",
+   "type": "job_description",
+   "year": 2024
+  },
+  {
+   "id": "s07s27",
+   "title": "SK하이닉스 뉴스룸 — 품질보증팀 직무 인터뷰(개발·양산·고객 품질 보증 업무)",
+   "url": "https://news.skhynix.co.kr/securing-customer-happiness-and-trust/",
+   "type": "official_recruitment",
+   "year": 2016
+  },
+  {
+   "id": "s07s28",
+   "title": "잡코리아 신입공채 면접질문 — 정림건축 (건축설계 포트폴리오·실기 발표)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=7640&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2019
+  },
+  {
+   "id": "s07s29",
+   "title": "잡코리아 신입공채 면접질문 — GS건설 (건축시공)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=1631&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s07s30",
+   "title": "잡코리아 신입공채 면접질문 — 호반건설 (건축)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=758&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s07s31",
+   "title": "잡코리아 신입공채 면접질문 — 두산건설 (시공)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=133&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2014
+  },
+  {
+   "id": "s07s32",
+   "title": "잡코리아 신입공채 면접질문 — 두산건설 (토목)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=133&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=2",
+   "type": "interview_review",
+   "year": 2014
+  },
+  {
+   "id": "s07s33",
+   "title": "잡코리아 신입공채 면접질문 — 코오롱글로벌 (현장관리자·토목)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=197&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "s07s34",
+   "title": "잡코리아 신입공채 면접질문 — 현대엔지니어링 (현장관리자)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=242&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "s07s35",
+   "title": "잡코리아 신입공채 면접질문 — 현대엔지니어링 (건설)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=242&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=3",
+   "type": "interview_review",
+   "year": 2014
+  },
+  {
+   "id": "s07s36",
+   "title": "잡코리아 신입공채 면접질문 — 금호건설 (시공)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=130&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s07s37",
+   "title": "잡코리아 신입공채 면접질문 — 삼성물산 (기계파트)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=33&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=3",
+   "type": "interview_review",
+   "year": 2011
+  },
+  {
+   "id": "s07s38",
+   "title": "잡코리아 신입공채 면접질문 — SK에코플랜트 (설비공사)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=75&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s07s39",
+   "title": "잡코리아 신입공채 면접질문 — 한국종합기술 (설계사 신입)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=5292&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2020
+  },
+  {
+   "id": "s07s40",
+   "title": "잡코리아 신입공채 면접질문 — 한국토지주택공사 (토목)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=2827&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2020
+  },
+  {
+   "id": "s07s41",
+   "title": "잡코리아 신입공채 면접질문 — 국가철도공단 (토목)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=5556&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s07s42",
+   "title": "잡코리아 신입공채 면접질문 — 한국도로공사 (토목)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=2740&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s07s43",
+   "title": "잡코리아 신입공채 면접질문 — 동부건설 (주택전기)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=136&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2014
+  },
+  {
+   "id": "s07s44",
+   "title": "잡코리아 신입공채 면접질문 — 삼성전자 (설비엔지니어)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=1&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2022
+  },
+  {
+   "id": "s07s45",
+   "title": "잡코리아 신입공채 면접질문 — 현대자동차 (품질관리자)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=7&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=3",
+   "type": "interview_review",
+   "year": 2019
+  },
+  {
+   "id": "s07s46",
+   "title": "잡코리아 신입공채 면접질문 — 현대자동차 (생산관리)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=7&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=5",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s07s47",
+   "title": "잡코리아 신입공채 면접질문 — 기아 (생산관리)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=20&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=4",
+   "type": "interview_review",
+   "year": 2012
+  },
+  {
+   "id": "s07s48",
+   "title": "잡코리아 신입공채 면접질문 — CJ제일제당 (생산기술)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=82&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=5",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s07s49",
+   "title": "잡코리아 신입공채 면접질문 — 효성 (생산기술)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=45&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=3",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s07s50",
+   "title": "잡코리아 신입공채 면접질문 — 대상 (생산관리)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=260&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=3",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "s07s51",
+   "title": "잡코리아 신입공채 면접질문 — 현대트랜시스 (품질관리자·기계엔지니어)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=1620&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2017
+  },
+  {
+   "id": "s07s52",
+   "title": "잡코리아 신입공채 면접질문 — 현대트랜시스 (생산·품질)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=1620&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=2",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s07s53",
+   "title": "잡코리아 신입공채 면접질문 — 오뚜기 (품질관리자)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=196&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2020
+  },
+  {
+   "id": "s07s54",
+   "title": "잡코리아 신입공채 면접질문 — 현대모비스 (품질관리 PT)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=35&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=7",
+   "type": "interview_review",
+   "year": 2013
+  },
+  {
+   "id": "s07s55",
+   "title": "잡코리아 신입공채 면접질문 — 현대위아 (품질관리)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=101&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s07s56",
+   "title": "잡코리아 신입공채 면접질문 — 삼성SDI (소재 PT)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=92&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2014
+  },
+  {
+   "id": "s07s57",
+   "title": "잡코리아 신입공채 면접질문 — 삼성SDI (화학2차전지)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=92&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=2",
+   "type": "interview_review",
+   "year": 2014
+  },
+  {
+   "id": "s07s58",
+   "title": "잡코리아 신입공채 면접질문 — LG전자 (기계엔지니어)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=8&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=2",
+   "type": "interview_review",
+   "year": 2018
+  },
+  {
+   "id": "s07s59",
+   "title": "잡코리아 신입공채 면접질문 — 아모레퍼시픽 (생산관리 PT)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=166&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1",
+   "type": "interview_review",
+   "year": 2015
+  },
+  {
+   "id": "s07s60",
+   "title": "잡코리아 신입공채 면접질문 — LIG (R&D)",
+   "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=274&Ctgr_Code=5&FavorCo_Stat=0&G_ID=0&Page=1&VPage=3",
+   "type": "interview_review",
+   "year": 2014
+  }
+ ],
+ "profiles": [],
+ "questions": [
+  {
+   "text": "졸업설계 작품에서 공간 구성을 정할 때 가장 공들인 부분은 무엇이었나요?",
+   "scope": "role:architect",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s07s28",
+   "confidence": "high"
+  },
+  {
+   "text": "설계안을 발표할 때 이용자가 들어와서 나가기까지의 동선을 어떻게 계획했는지 설명해 주세요.",
+   "scope": "role:architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s28",
+   "confidence": "high"
+  },
+  {
+   "text": "기본구상 단계에서 발주처의 요구 조건을 설계 목표로 정리하는 과정을 말씀해 주세요.",
+   "scope": "role:architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s6",
+   "confidence": "high"
+  },
+  {
+   "text": "프로젝트에 BIM을 적용하기 전에 수행 계획에서 미리 정해 두어야 할 것은 무엇인가요?",
+   "scope": "role:architect",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s07s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "시공 전에 도면을 검토할 때 함께 확인해야 하는 관련 법규에는 어떤 것들이 있나요?",
+   "scope": "role:building_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s29",
+   "confidence": "high"
+  },
+  {
+   "text": "타설을 마쳤는데 주문한 레미콘이 남았다면 물량이 어디서 어긋났는지 어떻게 확인하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s30",
+   "confidence": "high"
+  },
+  {
+   "text": "아파트 골조 공사에서 한 개 층을 올리는 데 걸리는 기간은 무엇에 따라 달라진다고 보시나요?",
+   "scope": "role:building_construction",
+   "category": "실무",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s30",
+   "confidence": "high"
+  },
+  {
+   "text": "도심지에서 건축 공사를 할 때 특히 유의해야 할 사항은 무엇이라고 보시나요?",
+   "scope": "role:building_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s31",
+   "confidence": "high"
+  },
+  {
+   "text": "탑다운 공법은 어떤 현장 조건에서 쓰이고 어떤 장점이 있는지 설명해 주세요.",
+   "scope": "role:building_construction",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s31",
+   "confidence": "high"
+  },
+  {
+   "text": "알고 있는 흙막이 공법을 설명하고, 현장 여건에 따라 어떻게 고르는지 말씀해 주세요.",
+   "scope": "role:building_construction",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s33",
+   "confidence": "high"
+  },
+  {
+   "text": "거푸집과 동바리를 해체하는 시기는 어떤 기준으로 판단하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s4",
+   "confidence": "high"
+  },
+  {
+   "text": "현장에 반입되는 자재가 설계 기준에 맞는지 품질시험과 검사를 어떻게 계획하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s5",
+   "confidence": "high"
+  },
+  {
+   "text": "건물 급수 방식의 종류를 설명하고, 고층 건물에는 어떤 방식이 맞다고 보시나요?",
+   "scope": "role:building_services",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s37",
+   "confidence": "high"
+  },
+  {
+   "text": "고층 건물에서 기계실과 전기실을 따로 두는 이유는 무엇이라고 생각하세요?",
+   "scope": "role:building_services",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s37",
+   "confidence": "high"
+  },
+  {
+   "text": "지열을 이용한 냉난방 시스템의 방식과 장단점을 설명해 주세요.",
+   "scope": "role:building_services",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s37",
+   "confidence": "medium"
+  },
+  {
+   "text": "쉬는 날 본인이 시공한 건물에서 배관 누수 신고가 들어온다면 어떻게 처리하시겠어요?",
+   "scope": "role:building_services",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s38",
+   "confidence": "high"
+  },
+  {
+   "text": "설비 배관과 덕트 공사에 들어가기 전에 설계도서에서 무엇을 먼저 검토하시겠어요?",
+   "scope": "role:building_services",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s2",
+   "confidence": "high"
+  },
+  {
+   "text": "설비 공사를 마치고 건물 운영자에게 운전 교육과 인수인계를 할 때 무엇을 넘겨주시겠어요?",
+   "scope": "role:building_services",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s2",
+   "confidence": "high"
+  },
+  {
+   "text": "운영 중인 건물에서 설비 보수공사가 필요할 때 입주자 불편을 줄이려면 어떻게 진행하시겠어요?",
+   "scope": "role:building_services",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s3",
+   "confidence": "high"
+  },
+  {
+   "text": "도면으로 계산한 콘크리트 물량과 실제 타설량이 차이 나는 이유는 무엇이라고 보시나요?",
+   "scope": "role:cost_estimator",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s34",
+   "confidence": "high"
+  },
+  {
+   "text": "초기 공사비가 조금 높아도 생애주기비용이 낮은 안을 택해야 하는 경우를 설명해 주세요.",
+   "scope": "role:cost_estimator",
+   "category": "직무전문성",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s36",
+   "confidence": "medium"
+  },
+  {
+   "text": "착공 초기에 공무 담당자가 현장 개설을 위해 챙겨야 할 업무에는 무엇이 있을까요?",
+   "scope": "role:cost_estimator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s7",
+   "confidence": "high"
+  },
+  {
+   "text": "공사 중 실제 투입 원가를 어떻게 집계해서 실행예산과 비교하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s7",
+   "confidence": "high"
+  },
+  {
+   "text": "준공 후 하자 보수 요청이 들어오면 공무 담당자로서 어떻게 처리하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s7",
+   "confidence": "high"
+  },
+  {
+   "text": "도로 설계에 쓰이는 프로그램을 다뤄 본 경험이 있다면 어떤 작업까지 해 보셨나요?",
+   "scope": "role:civil_designer",
+   "category": "도구",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s07s39",
+   "confidence": "high"
+  },
+  {
+   "text": "단지설계는 어떤 일을 하는 분야라고 알고 계신가요?",
+   "scope": "role:civil_designer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s07s40",
+   "confidence": "high"
+  },
+  {
+   "text": "철도 승강장을 섬식과 상대식 중 무엇으로 할지 어떤 기준으로 판단하는지 설명해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s41",
+   "confidence": "high"
+  },
+  {
+   "text": "도로 교통사고를 줄이기 위해 설계 단계에서 반영할 수 있는 방안을 발표해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s42",
+   "confidence": "high"
+  },
+  {
+   "text": "도로 설계에서 교통수요 분석 결과가 설계에 어떻게 반영되는지 설명해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s8",
+   "confidence": "high"
+  },
+  {
+   "text": "지반조사 결과를 바탕으로 설계에 쓸 지반정수를 정할 때 무엇을 주의하시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s07s9",
+   "confidence": "high"
+  },
+  {
+   "text": "상하수도 사업의 타당성을 검토할 때 어떤 기초 자료부터 모으시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s10",
+   "confidence": "high"
+  },
+  {
+   "text": "유토곡선을 그려 보면 토공 계획에서 어떤 것들을 알 수 있나요?",
+   "scope": "role:civil_construction",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s32",
+   "confidence": "high"
+  },
+  {
+   "text": "알고 있는 지반 개량 공법 하나를 골라 원리와 적용 조건을 설명해 주세요.",
+   "scope": "role:civil_construction",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s33",
+   "confidence": "high"
+  },
+  {
+   "text": "굴착 공사에서 히빙이나 보일링을 미리 막으려면 어떤 대책이 필요할까요?",
+   "scope": "role:civil_construction",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s33",
+   "confidence": "high"
+  },
+  {
+   "text": "토공 착수 전 현장조사에서 도면과 비교해 확인할 사항은 무엇인가요?",
+   "scope": "role:civil_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s11",
+   "confidence": "high"
+  },
+  {
+   "text": "암 깎기 구간에서 발파를 계획할 때 주변 안전과 민원을 위해 무엇을 검토하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s11",
+   "confidence": "high"
+  },
+  {
+   "text": "아스팔트 포장을 시공할 때 품질을 좌우하는 관리 포인트는 무엇이라고 보시나요?",
+   "scope": "role:civil_construction",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s12",
+   "confidence": "high"
+  },
+  {
+   "text": "포장 공사에 쓸 골재나 아스콘 공급원을 정할 때 어떤 점을 확인하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s12",
+   "confidence": "high"
+  },
+  {
+   "text": "철근콘크리트 부재에 최소 철근비를 두는 이유는 무엇인가요?",
+   "scope": "role:structural_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s33",
+   "confidence": "high"
+  },
+  {
+   "text": "현수교처럼 케이블로 지지되는 구조물에서 반력과 케이블 장력을 어떻게 구하는지 설명해 주세요.",
+   "scope": "role:structural_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s35",
+   "confidence": "high"
+  },
+  {
+   "text": "정밀안전진단에서 보강이 필요하다고 나온 구조물의 보강 설계를 어떤 순서로 진행하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s07s13",
+   "confidence": "high"
+  },
+  {
+   "text": "보수·보강을 마친 구조물의 성능이 실제로 회복됐는지 어떻게 평가하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s13",
+   "confidence": "high"
+  },
+  {
+   "text": "공동주택과 업무시설처럼 건물 용도에 따라 화재 대책이 어떻게 달라져야 할까요?",
+   "scope": "role:fire_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s43",
+   "confidence": "medium"
+  },
+  {
+   "text": "소방시설 자체점검에서 지적된 사항이 실제 정비까지 이어지도록 어떻게 관리하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s1",
+   "confidence": "high"
+  },
+  {
+   "text": "가스계 소화설비를 점검할 때 오방출 사고를 막기 위해 어떤 점을 지키시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s07s1",
+   "confidence": "high"
+  },
+  {
+   "text": "유도등이나 완강기 같은 피난구조설비를 점검할 때 주로 무엇을 확인하시나요?",
+   "scope": "role:fire_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s1",
+   "confidence": "high"
+  },
+  {
+   "text": "근무 중 건물 한 층에서 화재 신고가 들어오면 처음 몇 분 동안 무엇을 하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s1",
+   "confidence": "high"
+  },
+  {
+   "text": "여러 제품 주문이 한꺼번에 몰리면 생산 우선순위를 어떤 기준으로 정해 계획을 세우시겠어요?",
+   "scope": "role:production_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s47",
+   "confidence": "high"
+  },
+  {
+   "text": "생산팀과 연구개발팀이 요구하는 부품 수급 일정이 서로 다르면 어떻게 조율하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s51",
+   "confidence": "high"
+  },
+  {
+   "text": "생산과 품질 중 무엇이 더 중요하냐고 묻는다면 어떻게 답하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s52",
+   "confidence": "high"
+  },
+  {
+   "text": "제품의 가격 경쟁력을 높이기 위해 생산 쪽에서 할 수 있는 일은 무엇이라고 보시나요?",
+   "scope": "role:production_manager",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s46",
+   "confidence": "high"
+  },
+  {
+   "text": "해외 공장의 생산 효율을 높이는 방안을 발표한다면 어떤 내용을 담으시겠어요?",
+   "scope": "role:production_manager",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s59",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 공정은 납기를 맞추지만 불량 위험이 있고 기존 공정은 납기를 못 맞춘다면 어떻게 결정하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s56",
+   "confidence": "high"
+  },
+  {
+   "text": "생산 가용 능력을 분석해 보니 수요를 감당하기 어렵다면 어떤 대안을 검토하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s15",
+   "confidence": "high"
+  },
+  {
+   "text": "외주 생산을 맡길 때 생산관리 담당자가 챙겨야 할 관리 항목은 무엇인가요?",
+   "scope": "role:production_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s14",
+   "confidence": "high"
+  },
+  {
+   "text": "현장 경험이 많은 작업자분이 신입 엔지니어의 개선안을 받아들이지 않으면 어떻게 설득하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s48",
+   "confidence": "high"
+  },
+  {
+   "text": "지원 분야 제품의 제조 공정을 하나 골라 흐름과 핵심 관리 포인트를 설명해 주세요.",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s49",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정을 표준화할 때 작업 조건과 설비 조건을 문서로 어떻게 정리하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s16",
+   "confidence": "high"
+  },
+  {
+   "text": "공정 변경 이력을 제대로 관리하지 않으면 어떤 문제가 생길 수 있다고 보시나요?",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s16",
+   "confidence": "high"
+  },
+  {
+   "text": "재공품이 특정 공정 앞에 계속 쌓인다면 생산기술 담당자로서 무엇을 분석하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s17",
+   "confidence": "high"
+  },
+  {
+   "text": "라인 밸런싱을 할 때 작업을 공정별로 나누는 기준을 설명해 주세요.",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s14",
+   "confidence": "high"
+  },
+  {
+   "text": "긴급 수리 요청이 왔는데 잠금·표지 같은 안전 조치를 건너뛰자는 압박이 있다면 어떻게 하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s44",
+   "confidence": "high"
+  },
+  {
+   "text": "설비보전 업무에서 가장 중요하다고 생각하는 것은 무엇인가요?",
+   "scope": "role:maintenance_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s07s45",
+   "confidence": "high"
+  },
+  {
+   "text": "센서나 데이터 수집 장치에서 값이 들어오지 않으면 어떤 순서로 원인을 찾으시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s19",
+   "confidence": "high"
+  },
+  {
+   "text": "로봇 설비의 유지관리 계획을 세울 때 어떤 항목을 주기적으로 점검하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s19",
+   "confidence": "high"
+  },
+  {
+   "text": "설비 이력과 예비품 관리 체계가 없는 공장이라면 무엇부터 만드시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s14",
+   "confidence": "high"
+  },
+  {
+   "text": "처음 배치될 생산 현장은 어떤 모습일 거라고 예상하시나요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s07s50",
+   "confidence": "high"
+  },
+  {
+   "text": "생산과 품질이 모두 승인한 제품에서 문제가 나왔는데 품질 부서가 생산 책임이라고 몰아간다면 어떻게 하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s52",
+   "confidence": "high"
+  },
+  {
+   "text": "작업자, 자재, 작업 방법, 설비 중 하나가 바뀌는 변경점이 생기면 현장에서 어떻게 관리하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s18",
+   "confidence": "high"
+  },
+  {
+   "text": "교대 중간에 작업 진도가 계획보다 늦어진 걸 알았다면 어떻게 조치하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s18",
+   "confidence": "high"
+  },
+  {
+   "text": "현장에서 부적합품이 나오면 격리부터 처리까지 어떤 순서로 관리하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s18",
+   "confidence": "high"
+  },
+  {
+   "text": "작업 현장 개선 활동을 이끌 때 작업자들의 아이디어를 어떻게 끌어내시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "리더십",
+   "type": "leadership",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s18",
+   "confidence": "high"
+  },
+  {
+   "text": "품질 기준에 못 미친 제품이라면 출하하시겠어요, 보류하시겠어요? 이유와 함께 말씀해 주세요.",
+   "scope": "role:quality_control",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s53",
+   "confidence": "high"
+  },
+  {
+   "text": "품질관리에 쓰이는 기법 중 하나를 골라 실제로 어떻게 활용할 수 있는지 설명해 주세요.",
+   "scope": "role:quality_control",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s54",
+   "confidence": "high"
+  },
+  {
+   "text": "생산관리와 품질관리는 어떤 점에서 역할이 다르다고 보시나요?",
+   "scope": "role:quality_control",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s07s55",
+   "confidence": "high"
+  },
+  {
+   "text": "비 오는 날이나 특정 계절에만 불량률이 올라간다면 어떤 원인부터 의심하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s57",
+   "confidence": "high"
+  },
+  {
+   "text": "생산라인에서 불량이 발견돼 예정된 납품이 어려워졌다면 품질 담당자로서 어떻게 대응하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s51",
+   "confidence": "high"
+  },
+  {
+   "text": "공정에서 중점 관리 항목을 정할 때 어떤 기준으로 고르시겠어요?",
+   "scope": "role:quality_control",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s20",
+   "confidence": "high"
+  },
+  {
+   "text": "측정기 교정 주기가 지난 걸 발견했다면 그동안의 검사 결과를 어떻게 처리하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s07s21",
+   "confidence": "high"
+  },
+  {
+   "text": "부적합품을 재작업, 특채, 폐기 중 무엇으로 처리할지 어떻게 결정하시나요?",
+   "scope": "role:quality_control",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s21",
+   "confidence": "high"
+  },
+  {
+   "text": "규격에 살짝 못 미친 제품을 다시 맞추면 고객 납기를 넘겨 위약금이 생긴다면 품질 책임자로서 어떻게 하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "윤리",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s51",
+   "confidence": "high"
+  },
+  {
+   "text": "고객 클레임 데이터를 보고 어떤 제품을 중점 관리할지 정한다면 어떤 기준을 쓰시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s51",
+   "confidence": "high"
+  },
+  {
+   "text": "개발 단계에서 품질 문제가 발견되면 양산에서 재발하지 않도록 어떤 절차로 대응하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s27",
+   "confidence": "high"
+  },
+  {
+   "text": "품질보증 담당자가 개발, 양산, 고객 대응 전 과정에 관여해야 하는 이유는 무엇이라고 보시나요?",
+   "scope": "role:quality_assurance",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s27",
+   "confidence": "high"
+  },
+  {
+   "text": "품질 업무를 전산 시스템으로 옮길 때 현업 사용자의 요구를 어떻게 반영하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "공고기반",
+   "src": "s07s24",
+   "confidence": "medium"
+  },
+  {
+   "text": "신제품 개발 단계에서 품질 리스크를 점검할 때 어떤 항목을 체크리스트에 넣으시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s07s26",
+   "confidence": "high"
+  },
+  {
+   "text": "품질비용을 예방, 평가, 실패 비용으로 나눠 관리하면 어떤 점이 좋다고 보시나요?",
+   "scope": "role:quality_assurance",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s20",
+   "confidence": "high"
+  },
+  {
+   "text": "운영 중인 품질보증 체계가 실제로 효과가 있는지 어떻게 평가하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s07s20",
+   "confidence": "high"
+  },
+  {
+   "text": "싸고 바로 쓸 수 있지만 불량률이 높은 부품과, 비싸고 불량률은 낮지만 한 달 넘게 기다려야 하는 부품 중 무엇을 택하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s52",
+   "confidence": "high"
+  },
+  {
+   "text": "협력사를 관리할 때 품질, 비용, 납기 중 무엇을 가장 중요하게 보시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "가치관",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s07s52",
+   "confidence": "medium"
+  },
+  {
+   "text": "불량이 협력사 책임인지 우리 공정 책임인지 귀책을 판정할 때 무엇을 근거로 삼으시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공고기반",
+   "src": "s07s23",
+   "confidence": "high"
+  },
+  {
+   "text": "입고 부품이 수입검사에서 불합격하면 협력사에 어떤 절차로 통보하고 조치를 요구하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s07s23",
+   "confidence": "high"
+  },
+  {
+   "text": "협력사가 제출한 개선대책이 실제로 효과가 있는지 어떻게 확인하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s07s23",
+   "confidence": "high"
+  },
+  {
+   "text": "불량 클레임 비용을 협력사에 청구할 때 금액 산정 근거를 어떻게 준비하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s07s23",
+   "confidence": "high"
+  },
+  {
+   "text": "부품마다 수입검사 수준을 다르게 정한다면 어떤 기준으로 나누시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s21",
+   "confidence": "high"
+  },
+  {
+   "text": "드물게 일어나는 큰 외력까지 모두 견디도록 설계하면 안 되는 이유는 무엇이라고 보시나요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s07s58",
+   "confidence": "high"
+  },
+  {
+   "text": "신뢰성공학 같은 과목을 공부해 보셨다면 무엇이 실무에 가장 도움이 될 거라고 보시나요?",
+   "scope": "role:reliability_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "s07s60",
+   "confidence": "medium"
+  },
+  {
+   "text": "전자 부품이 차량용으로 적합한지 신뢰성을 검증할 때 어떤 시험을 고려하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s07s25",
+   "confidence": "high"
+  },
+  {
+   "text": "필드에서 회수된 불량품을 분석할 때 시료를 망가뜨리기 전에 무엇부터 확인하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s07s25",
+   "confidence": "high"
+  },
+  {
+   "text": "부품의 내구성이나 열화 정도를 개발 초기에 예측하려면 어떤 방법을 쓰시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공고기반",
+   "src": "s07s26",
+   "confidence": "high"
+  },
+  {
+   "text": "제조 공정의 신뢰성을 평가할 때 공정 특성에 맞는 평가 항목을 어떻게 고르시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s07s22",
+   "confidence": "high"
+  },
+  {
+   "text": "회사에 신뢰성 시험 체계가 없다면 어떤 순서로 만들어 가시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "공식자료",
+   "src": "s07s20",
+   "confidence": "high"
+  }
+ ]
+}

@@ -1,0 +1,1058 @@
+{
+  "batch": "s10",
+  "sources": [
+    {
+      "id": "s10s1",
+      "title": "커리어넷 직업정보 — 사회단체활동가(직무·수행업무)",
+      "url": "https://www.career.go.kr/cloud/w/job/view?seq=934",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s2",
+      "title": "밀알복지재단 인재채용 — 직무소개(마케팅/모금)",
+      "url": "https://recruit.miral.org/sub01/03.php?tab=3",
+      "type": "official_recruitment"
+    },
+    {
+      "id": "s10s3",
+      "title": "밀알복지재단 인재채용 — 직무소개(국제개발협력)",
+      "url": "https://recruit.miral.org/sub01/03.php?tab=2",
+      "type": "official_recruitment"
+    },
+    {
+      "id": "s10s4",
+      "title": "잡코리아 신입공채 면접질문 — 굿네이버스인터내셔날(펀드레이징·국제구호개발 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=5599&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2016
+    },
+    {
+      "id": "s10s5",
+      "title": "잡코리아 신입공채 면접질문 — 사회복지공동모금회(사무담당자 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=2135&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2016
+    },
+    {
+      "id": "s10s6",
+      "title": "NCS 기반 채용 직무기술서(일반직군 사무행정직렬) — 항만공사 채용 첨부",
+      "url": "https://raspfiles2.incruit.com/upa/data/104/SuccessData/addFile/%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C(%EC%82%AC%EB%AC%B4%ED%96%89%EC%A0%95).pdf",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s7",
+      "title": "국민건강보험공단 직무기술서 — 행정직(6급나), 2025년 상반기",
+      "url": "https://raspfiles2.incruit.com/nhis/data/116/SuccessData/addFile/2.%20%ED%96%89%EC%A0%95%EC%A7%81%206%EA%B8%89%EB%82%98%20%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C_2025%EC%83%81.pdf",
+      "type": "job_description",
+      "year": 2025
+    },
+    {
+      "id": "s10s8",
+      "title": "잡코리아 신입공채 면접질문 — 국민건강보험공단(사무담당자 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=5324&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2019
+    },
+    {
+      "id": "s10s9",
+      "title": "잡코리아 신입공채 면접질문 — 근로복지공단(지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=4986&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2020
+    },
+    {
+      "id": "s10s10",
+      "title": "잡코리아 신입공채 면접질문 — 국민연금공단(사무담당자 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=1749&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2016
+    },
+    {
+      "id": "s10s12",
+      "title": "한국생산기술연구원 NCS 기반 직무기술서 — 전문행정·일반행정·일반사무(연구지원) (ALIO 첨부)",
+      "url": "https://www.alio.go.kr/download/download.json?fileNo=2822223",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s13",
+      "title": "한국과학기술원 NCS 기반 직무기술서 — 행정직(일반행정/연구행정)",
+      "url": "https://www.kaist.ac.kr/_prog/download/?site_dvs_cd=kr&func_gbn_cd=kr_0814&file_id=45650",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s14",
+      "title": "잡코리아 신입공채 면접질문 — 한국과학기술연구원(지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=5742&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2020
+    },
+    {
+      "id": "s10s15",
+      "title": "NCS 기반 채용 직무기술서 — 연구직(재료 및 관련 공정 연구개발), 한국재료연구원 (ALIO 첨부)",
+      "url": "https://www.alio.go.kr/download/download.json?fileNo=2684000",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s16",
+      "title": "잡코리아 신입공채 면접질문 — 한국전자통신연구원(연구직 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=1067&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2016
+    },
+    {
+      "id": "s10s17",
+      "title": "NCS 기반 직무기술서 — 정책컨설팅센터 부연구위원(중소벤처기업 정책연구) (링커리어 첨부)",
+      "url": "https://media-cdn.linkareer.com/activity_manager/applications/556872",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s18",
+      "title": "국토안전관리원 NCS기반 채용 직무 설명자료 — 연구(경제/통계), 2022년도 제1차 채용",
+      "url": "https://raspfiles2.incruit.com/kalis/data/103/SuccessData/addFile/2022%EB%85%84%EB%8F%84%20%EC%A0%9C1%EC%B0%A8%20%EC%A7%81%EC%9B%90%20%EC%B1%84%EC%9A%A9%20%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C.pdf",
+      "type": "job_description",
+      "year": 2022
+    },
+    {
+      "id": "s10s19",
+      "title": "잡코리아 신입공채 면접질문 — 한국개발연구원(연구개발 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=5662&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2015
+    },
+    {
+      "id": "s10s20",
+      "title": "커리어넷 직업정보 — 학예사(큐레이터)",
+      "url": "https://www.career.go.kr/cloud/w/job/view?seq=348",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s21",
+      "title": "잡코리아 신입공채 면접질문 — 서울문화재단(지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=1471&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2020
+    },
+    {
+      "id": "s10s22",
+      "title": "링커리어 커뮤니티 면접후기 — 문화재단 문화행정 1차 직무면접(2022 하반기)",
+      "url": "https://community.linkareer.com/interview/1187114",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "s10s23",
+      "title": "서대문구도시관리공단 NCS 기반 직무기술서 — 공연기획",
+      "url": "https://customerfile.incruit.com/newjobpost/2017/06_sscmc/%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC%EB%8F%84%EC%8B%9C%EA%B4%80%EB%A6%AC%EA%B3%B5%EB%8B%A8_%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C_%EA%B3%B5%EC%97%B0%EA%B8%B0%ED%9A%8D.pdf",
+      "type": "job_description",
+      "year": 2017
+    },
+    {
+      "id": "s10s24",
+      "title": "NCS기반 채용 직무 설명자료 — 문화예술행정(문화예술재단 채용 첨부)",
+      "url": "https://raspfiles2.incruit.com/jfac/data/103/SuccessData/addFile/%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C(%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%96%89%EC%A0%95).pdf",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s25",
+      "title": "한국문화예술교육진흥원 — 문화예술교육사 자격제도 소개",
+      "url": "https://arte.or.kr/business/professionalTraining/history/intro/index.do",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s26",
+      "title": "문화예술교육사 시스템(한국문화예술교육진흥원) — 문화예술교육 지원법(문화예술교육사 정의·기본원칙)",
+      "url": "https://acei.arte.or.kr/contents/statute/decree01.do",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s27",
+      "title": "브런치 — 3년만에 다시 써보는 프로야구단 취업 후기(구단 홍보팀 합격자)",
+      "url": "https://brunch.co.kr/@effort/82",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "s10s28",
+      "title": "국민체육진흥공단 스포츠산업 일자리센터 채용공고 — 스포츠 마케터",
+      "url": "https://spobiz.kspo.or.kr/job/front/job/search/recruit/view.do?recruitSeq=14121",
+      "type": "job_description",
+      "year": 2025
+    },
+    {
+      "id": "s10s29",
+      "title": "커리어넷 직업정보 — 스포츠트레이너",
+      "url": "https://www.career.go.kr/cloud/w/job/view?seq=392",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s30",
+      "title": "커리어넷 직업정보 — 스포츠강사",
+      "url": "https://www.career.go.kr/cloud/w/job/view?seq=421",
+      "type": "job_description"
+    },
+    {
+      "id": "s10s31",
+      "title": "대한체육회 2025년도 정규직 신입직원 공개채용 — 별첨 직무기술서(일반직 7급 사무)",
+      "url": "https://www.sports.or.kr/sports/bbs/BMSR00024/view.do?menuNo=200027&boardId=71053",
+      "type": "official_recruitment",
+      "year": 2025
+    },
+    {
+      "id": "s10s32",
+      "title": "잡코리아 신입공채 면접질문 — 서울올림픽기념국민체육진흥공단(사무담당자 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=4911&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2015
+    },
+    {
+      "id": "s10s33",
+      "title": "잡코리아 신입공채 면접질문 — 대한체육회(사무담당자 지원자 후기)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?C_Idx=3329&Ctgr_Code=5",
+      "type": "interview_review",
+      "year": 2019
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "해외 복지사업 전략을 세울 때 현지 상황을 파악하려면 무엇부터 조사하시겠어요?",
+      "scope": "role:ngo_program",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s3",
+      "confidence": "high"
+    },
+    {
+      "text": "사업에 필요한 의료나 재활 같은 전문 자원이 현지에 부족하다면 어떻게 확보하시겠어요?",
+      "scope": "role:ngo_program",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "긴급 인도적 지원 사업과 장기 개발 사업은 기획 방식이 어떻게 달라야 한다고 보세요?",
+      "scope": "role:ngo_program",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "직접 서비스를 제공한 사업의 경험을 정책 개선 제안으로 연결하려면 무엇이 필요하다고 보세요?",
+      "scope": "role:ngo_program",
+      "category": "직무이해",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "새로운 사회서비스 프로그램을 만들기 전에 실제 수요가 있는지 어떻게 확인하시겠어요?",
+      "scope": "role:ngo_program",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "국제협력 사업에서 한국 NGO가 가진 강점과 약점은 무엇이고, 약점은 어떻게 보완할 수 있을까요?",
+      "scope": "role:ngo_program",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10s4",
+      "confidence": "high"
+    },
+    {
+      "text": "현장 상담 인력이 몇 년 만에 소진되는 문제를 줄이려면 사업 차원에서 어떤 방안이 있을까요?",
+      "scope": "role:ngo_program",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10s4",
+      "confidence": "high"
+    },
+    {
+      "text": "스스로 약자의 입장이 되어 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:ngo_program",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s10s4",
+      "confidence": "high"
+    },
+    {
+      "text": "아동권리협약의 원칙을 실제 사업 설계에 어떻게 반영할 수 있을까요?",
+      "scope": "role:ngo_program",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "학교나 지역 단체처럼 기업이 아닌 곳을 새 후원처로 개발한다면 어떻게 접근하시겠어요?",
+      "scope": "role:fundraiser",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s2",
+      "confidence": "high"
+    },
+    {
+      "text": "기업에 사회공헌 방향을 컨설팅하듯 제안하는 것은 단순한 후원 요청과 무엇이 달라야 할까요?",
+      "scope": "role:fundraiser",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "모금 제안서를 발표할 때 설득력을 높이려면 어떤 순서로 구성하시겠어요?",
+      "scope": "role:fundraiser",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "기억에 남는 모금 캠페인을 하나 들고 왜 효과적이었는지 말씀해 주세요.",
+      "scope": "role:fundraiser",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s10s4",
+      "confidence": "high"
+    },
+    {
+      "text": "모금 활동에서 가장 중요한 것은 무엇이라고 생각하세요?",
+      "scope": "role:fundraiser",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s10s4",
+      "confidence": "high"
+    },
+    {
+      "text": "연말 국내 모금 캠페인을 직접 기획한다면 어떻게 구성하시겠어요?",
+      "scope": "role:fundraiser",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s4",
+      "confidence": "high"
+    },
+    {
+      "text": "해외 지원과 국내 지원 중 어느 쪽을 우선해야 한다고 보시는지 이유와 함께 말씀해 주세요.",
+      "scope": "role:fundraiser",
+      "category": "가치관",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s5",
+      "confidence": "high"
+    },
+    {
+      "text": "‘퍼주기식 복지’라는 비판에 대해 어떻게 생각하시나요?",
+      "scope": "role:fundraiser",
+      "category": "가치관",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s5",
+      "confidence": "high"
+    },
+    {
+      "text": "기관 경영평가 보고서를 준비할 때 실적 자료를 어떻게 모으고 검증하시겠어요?",
+      "scope": "role:public_institution_staff",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s6",
+      "confidence": "high"
+    },
+    {
+      "text": "기관에 불리한 기사가 보도됐을 때 홍보 담당자라면 무엇부터 하시겠어요?",
+      "scope": "role:public_institution_staff",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 부서가 모두 예산을 더 달라고 할 때 어떤 기준으로 조정하시겠어요?",
+      "scope": "role:public_institution_staff",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s6",
+      "confidence": "high"
+    },
+    {
+      "text": "공문서를 기안할 때 규정과 지침에서 특히 무엇을 확인하시겠어요?",
+      "scope": "role:public_institution_staff",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s10s7",
+      "confidence": "high"
+    },
+    {
+      "text": "민원인의 개인정보가 담긴 자료를 다룰 때 어떤 점을 가장 조심하시겠어요?",
+      "scope": "role:public_institution_staff",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s7",
+      "confidence": "high"
+    },
+    {
+      "text": "공공기관 직원이 다른 조직보다 더 높은 도덕성을 요구받는 이유는 무엇이라고 보세요?",
+      "scope": "role:public_institution_staff",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s8",
+      "confidence": "high"
+    },
+    {
+      "text": "다른 부서 소관인 민원 문의가 본인에게 들어오면 어떻게 처리하시겠어요?",
+      "scope": "role:public_institution_staff",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s9",
+      "confidence": "high"
+    },
+    {
+      "text": "아직 업무를 익히기 전인데 잘 모르는 제도에 대한 민원 전화를 받으면 어떻게 대처하시겠어요?",
+      "scope": "role:public_institution_staff",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s10",
+      "confidence": "high"
+    },
+    {
+      "text": "새로운 정책연구 주제를 발굴할 때 어떤 과정을 거쳐 연구 아젠다를 정하시겠어요?",
+      "scope": "role:policy_researcher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s17",
+      "confidence": "high"
+    },
+    {
+      "text": "진행 중인 장기 과제가 있는데 급한 현안 과제가 들어오면 일정을 어떻게 조정하시겠어요?",
+      "scope": "role:policy_researcher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s17",
+      "confidence": "high"
+    },
+    {
+      "text": "분석 결과를 가치중립적으로 해석하기 위해 평소 어떤 점을 경계하시나요?",
+      "scope": "role:policy_researcher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s17",
+      "confidence": "high"
+    },
+    {
+      "text": "보고서가 나온 뒤에도 연구 결과가 정책에 실제로 쓰이도록 무엇을 하시겠어요?",
+      "scope": "role:policy_researcher",
+      "category": "성과",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s17",
+      "confidence": "medium"
+    },
+    {
+      "text": "심층 인터뷰나 FGI 결과를 정량 분석과 함께 보고서에 담는다면 어떻게 엮으시겠어요?",
+      "scope": "role:policy_researcher",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s18",
+      "confidence": "medium"
+    },
+    {
+      "text": "표본을 설계할 때 모집단을 잘 대표하도록 무엇부터 정하시겠어요?",
+      "scope": "role:policy_researcher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s18",
+      "confidence": "medium"
+    },
+    {
+      "text": "법·제도나 데이터 같은 근거로 공무원이나 이해관계자를 설득해 본 경험이 있나요?",
+      "scope": "role:policy_researcher",
+      "category": "커뮤니케이션",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s18",
+      "confidence": "medium"
+    },
+    {
+      "text": "학위 논문의 핵심을 짧게 요약해서 설명해 주세요.",
+      "scope": "role:policy_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s10s19",
+      "confidence": "high"
+    },
+    {
+      "text": "실험실 수준의 결과를 실제 환경에서 검증하는 실증 연구에서 가장 어려운 점은 무엇이라고 보세요?",
+      "scope": "role:gov_researcher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "공인 시험평가나 표준화 업무가 연구 과제와 함께 맡겨진다면 어떻게 병행하시겠어요?",
+      "scope": "role:gov_researcher",
+      "category": "실무",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "분석 장비로 얻은 측정 결과를 믿을 수 있는지 어떻게 검증하시나요?",
+      "scope": "role:gov_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "실험이나 공정 조건을 최적화해 본 경험이 있다면 어떤 방법으로 접근하셨나요?",
+      "scope": "role:gov_researcher",
+      "category": "기술",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "박사 학위 없이도 연구원으로서 제 몫을 할 수 있다고 보시는 근거는 무엇인가요?",
+      "scope": "role:gov_researcher",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10s16",
+      "confidence": "high"
+    },
+    {
+      "text": "박사 과정 진학 대신 연구기관 취업을 선택한 이유는 무엇인가요?",
+      "scope": "role:gov_researcher",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s16",
+      "confidence": "high"
+    },
+    {
+      "text": "논문 실적이 많지 않다면 본인의 연구 역량을 어떻게 보여 주시겠어요?",
+      "scope": "role:gov_researcher",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10s16",
+      "confidence": "high"
+    },
+    {
+      "text": "과제별 연구원 참여율과 연구수당 지급 현황을 관리할 때 무엇을 가장 주의하시겠어요?",
+      "scope": "role:research_admin",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s12",
+      "confidence": "high"
+    },
+    {
+      "text": "정부 수탁 과제가 끝난 뒤 기술이전 계약과 기술료 징수는 행정적으로 어떻게 챙기시겠어요?",
+      "scope": "role:research_admin",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s12",
+      "confidence": "high"
+    },
+    {
+      "text": "연구 결과물의 소유권 문제로 연구자가 문의해 온다면 무엇을 근거로 안내하시겠어요?",
+      "scope": "role:research_admin",
+      "category": "직무전문성",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "연구실 안전과 보안 관리 업무를 맡게 되면 무엇부터 점검하시겠어요?",
+      "scope": "role:research_admin",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s12",
+      "confidence": "high"
+    },
+    {
+      "text": "연구직 개인 평가와 조직 평가 실적을 취합할 때 자료의 정확성을 어떻게 확보하시겠어요?",
+      "scope": "role:research_admin",
+      "category": "성과",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s12",
+      "confidence": "high"
+    },
+    {
+      "text": "과제 협약 단계에서 연구비 예산을 세울 때 연구책임자와 무엇을 먼저 맞추시겠어요?",
+      "scope": "role:research_admin",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s13",
+      "confidence": "medium"
+    },
+    {
+      "text": "지금 우리나라가 가장 먼저 키워야 할 기술 분야는 무엇이라고 보세요?",
+      "scope": "role:research_admin",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "예술성과 대중성 중 하나만 고른다면 무엇을 택하고, 왜 그런가요?",
+      "scope": "family:culture_arts",
+      "category": "가치관",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s21",
+      "confidence": "high"
+    },
+    {
+      "text": "문화는 개인이 누리는 것인데 왜 공공이 지원하고 공공성을 가져야 한다고 보세요?",
+      "scope": "family:culture_arts",
+      "category": "가치관",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10s22",
+      "confidence": "high"
+    },
+    {
+      "text": "관심 있는 청년 대상 문화사업을 하나 꼽고, 그 사업에서 소외될 수 있는 대상은 누구인지 말씀해 주세요.",
+      "scope": "family:culture_arts",
+      "category": "산업",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s22",
+      "confidence": "high"
+    },
+    {
+      "text": "전시하거나 소장하려는 작품의 진위가 의심된다면 어떤 절차로 확인하시겠어요?",
+      "scope": "role:curator",
+      "category": "직무전문성",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s20",
+      "confidence": "medium"
+    },
+    {
+      "text": "소장품이 훼손되지 않도록 평소 수장고와 전시실에서 무엇을 점검하시겠어요?",
+      "scope": "role:curator",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s20",
+      "confidence": "medium"
+    },
+    {
+      "text": "학예 인력이 한두 명뿐인 작은 박물관에서 업무를 모두 맡게 된다면 무엇을 우선하시겠어요?",
+      "scope": "role:curator",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s20",
+      "confidence": "medium"
+    },
+    {
+      "text": "공연 제작비를 마련하기 위해 공공 지원금과 협찬 같은 재원을 어떻게 조성하시겠어요?",
+      "scope": "role:performance_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s23",
+      "confidence": "high"
+    },
+    {
+      "text": "기획 의도에 맞는 작품과 예술가를 고를 때 무엇을 기준으로 판단하시겠어요?",
+      "scope": "role:performance_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s23",
+      "confidence": "high"
+    },
+    {
+      "text": "공연 전 스태프 회의와 리허설에서 기획자가 꼭 확인해야 할 사항은 무엇인가요?",
+      "scope": "role:performance_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s23",
+      "confidence": "high"
+    },
+    {
+      "text": "공연장 관객 만족도 조사를 한다면 어떻게 설계하고 결과를 어디에 활용하시겠어요?",
+      "scope": "role:performance_planner",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s23",
+      "confidence": "high"
+    },
+    {
+      "text": "공연 당일 객석에서 관객 불만이 터졌을 때 하우스 운영 담당으로서 어떻게 응대하시겠어요?",
+      "scope": "role:performance_planner",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s23",
+      "confidence": "high"
+    },
+    {
+      "text": "공모 지원사업을 운영하며 선정 단체의 정산 증빙을 관리할 때 무엇을 주의하시겠어요?",
+      "scope": "role:performance_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s24",
+      "confidence": "medium"
+    },
+    {
+      "text": "학교 안에서 하는 문화예술교육과 지역 문화시설에서 하는 교육은 운영 방식이 어떻게 달라야 할까요?",
+      "scope": "role:arts_educator",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s26",
+      "confidence": "high"
+    },
+    {
+      "text": "사는 지역이나 경제적 여건 때문에 예술교육을 접하기 어려운 사람들에게 어떻게 다가가시겠어요?",
+      "scope": "role:arts_educator",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s26",
+      "confidence": "high"
+    },
+    {
+      "text": "성인이나 노년층을 위한 평생 문화예술교육은 아동 대상 교육과 무엇이 달라야 한다고 보세요?",
+      "scope": "role:arts_educator",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s26",
+      "confidence": "medium"
+    },
+    {
+      "text": "예술가로서의 전문성과 교육자로서의 역량 중 본인이 더 보완해야 할 쪽은 무엇이고 어떻게 채우고 있나요?",
+      "scope": "role:arts_educator",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s25",
+      "confidence": "high"
+    },
+    {
+      "text": "스포츠 브랜드의 디지털 광고 성과를 분석해 개선 방향을 찾는다면 어떤 지표부터 보시겠어요?",
+      "scope": "role:sports_marketer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s10s28",
+      "confidence": "high"
+    },
+    {
+      "text": "선수와 팀, 팬을 이해하기 위한 리서치를 한다면 어떤 방법으로 인사이트를 얻으시겠어요?",
+      "scope": "role:sports_marketer",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s10s28",
+      "confidence": "high"
+    },
+    {
+      "text": "스포츠 팬으로서 얻은 인사이트를 실제 마케팅 기획에 적용해 본 경험이 있나요?",
+      "scope": "role:sports_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s10s28",
+      "confidence": "high"
+    },
+    {
+      "text": "선수나 팬 커뮤니티와의 접점을 활용한 마케팅을 기획한다면 어떤 방식을 쓰시겠어요?",
+      "scope": "role:sports_marketer",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s10s28",
+      "confidence": "high"
+    },
+    {
+      "text": "프로구단 SNS 채널 하나를 골라 개선하고 싶은 점을 말씀해 주세요.",
+      "scope": "role:sports_marketer",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s27",
+      "confidence": "high"
+    },
+    {
+      "text": "구단 안에서 홍보와 마케팅의 업무 경계는 어디라고 생각하세요?",
+      "scope": "role:sports_marketer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10s27",
+      "confidence": "high"
+    },
+    {
+      "text": "기자와 선수 사이에서 요청이 엇갈릴 때 중간에서 어떻게 조율하시겠어요?",
+      "scope": "role:sports_marketer",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10s27",
+      "confidence": "high"
+    },
+    {
+      "text": "감독이나 코치와 협의해 선수 개인의 운동량을 정할 때 어떤 정보를 먼저 확인하시겠어요?",
+      "scope": "role:fitness_trainer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s29",
+      "confidence": "high"
+    },
+    {
+      "text": "훈련 중 선수가 다쳤을 때 현장 응급조치에서 가장 먼저 확인할 것은 무엇인가요?",
+      "scope": "role:fitness_trainer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s29",
+      "confidence": "high"
+    },
+    {
+      "text": "의사 진단을 받은 선수의 재활 훈련 계획을 세울 때 의료진과 어떻게 소통하시겠어요?",
+      "scope": "role:fitness_trainer",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s29",
+      "confidence": "high"
+    },
+    {
+      "text": "선수나 회원에게 부상 예방 안전교육을 한다면 어떤 내용을 꼭 담으시겠어요?",
+      "scope": "role:fitness_trainer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s10s29",
+      "confidence": "medium"
+    },
+    {
+      "text": "감량을 원하는 회원에게 식단 정보를 줄 때 트레이너로서 어디까지 조언하시겠어요?",
+      "scope": "role:fitness_trainer",
+      "category": "윤리",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s30",
+      "confidence": "medium"
+    },
+    {
+      "text": "운동을 처음 배우는 사람에게 종목의 기본 동작을 어떤 순서로 가르치시겠어요?",
+      "scope": "role:fitness_trainer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s10s30",
+      "confidence": "high"
+    },
+    {
+      "text": "건강 유지와 스트레스 해소처럼 목적이 다른 회원에게 프로그램을 어떻게 다르게 짜시겠어요?",
+      "scope": "role:fitness_trainer",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s30",
+      "confidence": "high"
+    },
+    {
+      "text": "종목단체나 지역 체육회와 의견이 엇갈릴 때 어떻게 합의를 이끌어내시겠어요?",
+      "scope": "role:sports_admin",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s31",
+      "confidence": "high"
+    },
+    {
+      "text": "생활체육 참여자와 선수처럼 성격이 다른 고객의 요구를 파악하려면 어떤 자료를 모으시겠어요?",
+      "scope": "role:sports_admin",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s31",
+      "confidence": "medium"
+    },
+    {
+      "text": "체육 사업 예산이 계획과 다르게 집행되고 있다면 어떤 순서로 원인을 찾고 조정하시겠어요?",
+      "scope": "role:sports_admin",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s31",
+      "confidence": "high"
+    },
+    {
+      "text": "체육 분야 신규 사업을 기획할 때 정부 정책과 법규 흐름을 어떻게 반영하시겠어요?",
+      "scope": "role:sports_admin",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10s31",
+      "confidence": "high"
+    },
+    {
+      "text": "대회나 사업 추진 중 이해관계자 사이에 분쟁 조짐이 보이면 어떻게 관리하시겠어요?",
+      "scope": "role:sports_admin",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s10s31",
+      "confidence": "medium"
+    },
+    {
+      "text": "체육계에서 가장 영향력 있는 인물은 누구라고 보시는지 이유와 함께 말씀해 주세요.",
+      "scope": "role:sports_admin",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s10s32",
+      "confidence": "high"
+    },
+    {
+      "text": "체육 단체가 실제로 어떤 일을 하는지 알고 계신 대로 설명해 주세요.",
+      "scope": "role:sports_admin",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s10s33",
+      "confidence": "high"
+    }
+  ]
+}

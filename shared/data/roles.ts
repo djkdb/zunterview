@@ -58,56 +58,56 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "경영·전략",
    "nameEn": "Strategy & Management",
    "group": "biz",
-   "q": 191
+   "q": 223
   },
   {
    "id": "hr",
    "name": "인사·노무",
    "nameEn": "HR & Labor Relations",
    "group": "biz",
-   "q": 175
+   "q": 207
   },
   {
    "id": "admin",
    "name": "총무·사무",
    "nameEn": "General Affairs & Office",
    "group": "biz",
-   "q": 94
+   "q": 110
   },
   {
    "id": "accounting",
    "name": "회계·재무·세무",
    "nameEn": "Accounting, Finance & Tax",
    "group": "fin",
-   "q": 237
+   "q": 242
   },
   {
    "id": "finance",
    "name": "금융·은행·보험",
    "nameEn": "Banking, Securities & Insurance",
    "group": "fin",
-   "q": 272
+   "q": 299
   },
   {
    "id": "legal",
    "name": "법무·컴플라이언스",
    "nameEn": "Legal & Compliance",
    "group": "biz",
-   "q": 143
+   "q": 162
   },
   {
    "id": "marketing",
    "name": "마케팅·광고·브랜드",
    "nameEn": "Marketing, Advertising & Brand",
    "group": "mkt",
-   "q": 249
+   "q": 263
   },
   {
    "id": "sales",
    "name": "영업·영업관리",
    "nameEn": "Sales",
    "group": "mkt",
-   "q": 186
+   "q": 213
   },
   {
    "id": "trade",
@@ -121,7 +121,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "MD·상품",
    "nameEn": "Merchandising",
    "group": "mkt",
-   "q": 93
+   "q": 96
   },
   {
    "id": "purchasing",
@@ -184,175 +184,175 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "디자인",
    "nameEn": "Design",
    "group": "media",
-   "q": 175
+   "q": 193
   },
   {
    "id": "content",
    "name": "콘텐츠·미디어",
    "nameEn": "Content & Media",
    "group": "media",
-   "q": 96
+   "q": 112
   },
   {
    "id": "broadcast",
    "name": "영상·방송",
    "nameEn": "Video & Broadcasting",
    "group": "media",
-   "q": 114
+   "q": 140
   },
   {
    "id": "rnd",
    "name": "연구개발",
    "nameEn": "Research & Development",
    "group": "rnd",
-   "q": 78
+   "q": 95
   },
   {
    "id": "electronics",
    "name": "반도체·전자",
    "nameEn": "Semiconductors & Electronics",
    "group": "rnd",
-   "q": 176
+   "q": 193
   },
   {
    "id": "mechanical",
    "name": "기계·자동차",
    "nameEn": "Mechanical & Automotive",
    "group": "rnd",
-   "q": 96
+   "q": 102
   },
   {
    "id": "chemical",
    "name": "화학·소재",
    "nameEn": "Chemicals & Materials",
    "group": "rnd",
-   "q": 96
+   "q": 108
   },
   {
    "id": "bio",
    "name": "바이오·제약",
    "nameEn": "Bio & Pharma",
    "group": "rnd",
-   "q": 115
+   "q": 132
   },
   {
    "id": "environment",
    "name": "환경",
    "nameEn": "Environment",
    "group": "rnd",
-   "q": 80
+   "q": 91
   },
   {
    "id": "energy",
    "name": "에너지",
    "nameEn": "Energy",
    "group": "rnd",
-   "q": 79
+   "q": 87
   },
   {
    "id": "architecture",
    "name": "건축",
    "nameEn": "Architecture",
    "group": "rnd",
-   "q": 98
+   "q": 122
   },
   {
    "id": "civil",
    "name": "토목",
    "nameEn": "Civil Engineering",
    "group": "rnd",
-   "q": 124
+   "q": 142
   },
   {
    "id": "safety",
    "name": "안전",
    "nameEn": "Safety",
    "group": "mfg",
-   "q": 98
+   "q": 103
   },
   {
    "id": "production",
    "name": "생산·제조",
    "nameEn": "Production & Manufacturing",
    "group": "mfg",
-   "q": 100
+   "q": 125
   },
   {
    "id": "quality",
    "name": "품질",
    "nameEn": "Quality",
    "group": "mfg",
-   "q": 96
+   "q": 126
   },
   {
    "id": "process",
    "name": "공정",
    "nameEn": "Process Engineering",
    "group": "mfg",
-   "q": 79
+   "q": 99
   },
   {
    "id": "science",
    "name": "연구원·과학",
    "nameEn": "Science & Research",
    "group": "rnd",
-   "q": 80
+   "q": 97
   },
   {
    "id": "education",
    "name": "교육",
    "nameEn": "Education",
    "group": "edu",
-   "q": 178
+   "q": 197
   },
   {
    "id": "medical",
    "name": "의료·간호",
    "nameEn": "Medicine & Nursing",
    "group": "med",
-   "q": 166
+   "q": 187
   },
   {
    "id": "health_tech",
    "name": "보건·의료기술",
    "nameEn": "Allied Health",
    "group": "med",
-   "q": 170
+   "q": 193
   },
   {
    "id": "welfare",
    "name": "사회복지",
    "nameEn": "Social Welfare",
    "group": "edu",
-   "q": 92
+   "q": 121
   },
   {
    "id": "counseling",
    "name": "상담",
    "nameEn": "Counseling",
    "group": "edu",
-   "q": 76
+   "q": 99
   },
   {
    "id": "hospitality",
    "name": "호텔·관광",
    "nameEn": "Hotels & Tourism",
    "group": "svc",
-   "q": 113
+   "q": 140
   },
   {
    "id": "aviation",
    "name": "항공",
    "nameEn": "Aviation",
    "group": "svc",
-   "q": 112
+   "q": 116
   },
   {
    "id": "food",
    "name": "외식·식음료",
    "nameEn": "Food & Beverage",
    "group": "svc",
-   "q": 139
+   "q": 172
   },
   {
    "id": "retail",
@@ -380,28 +380,28 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "비영리·공공기관",
    "nameEn": "Nonprofits & Public Institutions",
    "group": "pub",
-   "q": 76
+   "q": 101
   },
   {
    "id": "research_institute",
    "name": "연구기관",
    "nameEn": "Research Institutes",
    "group": "pub",
-   "q": 76
+   "q": 98
   },
   {
    "id": "culture_arts",
    "name": "문화·예술",
    "nameEn": "Culture & Arts",
    "group": "media",
-   "q": 77
+   "q": 93
   },
   {
    "id": "sports",
    "name": "스포츠",
    "nameEn": "Sports",
    "group": "svc",
-   "q": 76
+   "q": 97
   },
   {
    "id": "professional",
@@ -419,7 +419,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Strategy & Planning",
    "dept": "전략기획팀",
    "archetype": "strategy_business",
-   "q": 130
+   "q": 146
   },
   {
    "id": "investment_ir",
@@ -428,7 +428,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Investment & IR",
    "dept": "재무전략팀",
    "archetype": "strategy_business",
-   "q": 61
+   "q": 77
   },
   {
    "id": "hr_people",
@@ -437,7 +437,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Human Resources",
    "dept": "인사팀",
    "archetype": "hr_people",
-   "q": 130
+   "q": 156
   },
   {
    "id": "labor",
@@ -446,7 +446,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Labor Relations",
    "dept": "인사팀",
    "archetype": "hr_people",
-   "q": 45
+   "q": 51
   },
   {
    "id": "general_affairs",
@@ -455,7 +455,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "General Affairs & Office",
    "dept": "경영지원팀",
    "archetype": "admin_support",
-   "q": 94
+   "q": 110
   },
   {
    "id": "accounting",
@@ -473,7 +473,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Corporate Finance",
    "dept": "재무팀",
    "archetype": "finance_accounting",
-   "q": 79
+   "q": 84
   },
   {
    "id": "tax",
@@ -500,7 +500,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Securities & Asset Management",
    "dept": "투자사업부",
    "archetype": "finance_markets",
-   "q": 96
+   "q": 109
   },
   {
    "id": "insurance",
@@ -509,7 +509,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Insurance",
    "dept": "보험사업부",
    "archetype": "finance_markets",
-   "q": 79
+   "q": 93
   },
   {
    "id": "legal",
@@ -518,7 +518,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Legal",
    "dept": "법무팀",
    "archetype": "legal_compliance",
-   "q": 81
+   "q": 87
   },
   {
    "id": "compliance",
@@ -527,7 +527,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Compliance",
    "dept": "준법감시팀",
    "archetype": "legal_compliance",
-   "q": 62
+   "q": 75
   },
   {
    "id": "digital_marketing",
@@ -536,7 +536,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Digital Marketing",
    "dept": "마케팅팀",
    "archetype": "marketing_growth",
-   "q": 96
+   "q": 99
   },
   {
    "id": "brand",
@@ -554,7 +554,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Advertising",
    "dept": "광고기획팀",
    "archetype": "marketing_growth",
-   "q": 59
+   "q": 70
   },
   {
    "id": "sales",
@@ -563,7 +563,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Sales",
    "dept": "영업팀",
    "archetype": "sales_customer",
-   "q": 126
+   "q": 153
   },
   {
    "id": "sales_ops",
@@ -590,7 +590,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Merchandising",
    "dept": "상품기획팀",
    "archetype": "commerce_md",
-   "q": 93
+   "q": 96
   },
   {
    "id": "purchasing",
@@ -707,7 +707,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Visual & Industrial Design",
    "dept": "디자인팀",
    "archetype": "design_creative",
-   "q": 96
+   "q": 114
   },
   {
    "id": "content",
@@ -716,7 +716,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Content",
    "dept": "콘텐츠팀",
    "archetype": "media_content",
-   "q": 96
+   "q": 112
   },
   {
    "id": "broadcast",
@@ -725,7 +725,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Video & Broadcasting",
    "dept": "제작팀",
    "archetype": "media_content",
-   "q": 114
+   "q": 140
   },
   {
    "id": "rnd",
@@ -734,7 +734,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "R&D",
    "dept": "R&D센터",
    "archetype": "engineering_design",
-   "q": 78
+   "q": 95
   },
   {
    "id": "semiconductor",
@@ -752,7 +752,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Electrical & Electronics",
    "dept": "전자개발팀",
    "archetype": "engineering_design",
-   "q": 78
+   "q": 95
   },
   {
    "id": "mechanical",
@@ -761,7 +761,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Mechanical & Automotive",
    "dept": "기계설계팀",
    "archetype": "engineering_design",
-   "q": 96
+   "q": 102
   },
   {
    "id": "chemical",
@@ -770,7 +770,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Chemicals & Materials",
    "dept": "소재연구소",
    "archetype": "research_science",
-   "q": 96
+   "q": 108
   },
   {
    "id": "bio_pharma",
@@ -779,7 +779,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Bio & Pharma",
    "dept": "연구소",
    "archetype": "research_science",
-   "q": 115
+   "q": 132
   },
   {
    "id": "environment",
@@ -788,7 +788,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Environment",
    "dept": "환경안전팀",
    "archetype": "safety_environment",
-   "q": 80
+   "q": 91
   },
   {
    "id": "energy",
@@ -797,7 +797,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Energy",
    "dept": "발전사업팀",
    "archetype": "manufacturing_quality",
-   "q": 79
+   "q": 87
   },
   {
    "id": "architecture",
@@ -806,7 +806,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Architecture",
    "dept": "건축사업팀",
    "archetype": "field_construction",
-   "q": 98
+   "q": 122
   },
   {
    "id": "civil",
@@ -815,7 +815,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Civil Engineering",
    "dept": "토목사업팀",
    "archetype": "field_construction",
-   "q": 79
+   "q": 97
   },
   {
    "id": "landscape",
@@ -833,7 +833,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Safety & Health",
    "dept": "안전보건팀",
    "archetype": "safety_environment",
-   "q": 98
+   "q": 103
   },
   {
    "id": "production",
@@ -842,7 +842,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Production",
    "dept": "생산팀",
    "archetype": "manufacturing_quality",
-   "q": 100
+   "q": 125
   },
   {
    "id": "quality",
@@ -851,7 +851,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Quality",
    "dept": "품질팀",
    "archetype": "manufacturing_quality",
-   "q": 96
+   "q": 126
   },
   {
    "id": "process",
@@ -860,7 +860,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Process",
    "dept": "공정기술팀",
    "archetype": "manufacturing_quality",
-   "q": 79
+   "q": 99
   },
   {
    "id": "science",
@@ -869,7 +869,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Science",
    "dept": "연구소",
    "archetype": "research_science",
-   "q": 80
+   "q": 97
   },
   {
    "id": "school",
@@ -887,7 +887,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Education Services",
    "dept": "교육사업팀",
    "archetype": "education",
-   "q": 79
+   "q": 98
   },
   {
    "id": "nursing",
@@ -905,7 +905,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Medical",
    "dept": "진료부",
    "archetype": "clinical_care",
-   "q": 93
+   "q": 114
   },
   {
    "id": "allied_health",
@@ -914,7 +914,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Allied Health",
    "dept": "의료기술부",
    "archetype": "clinical_care",
-   "q": 126
+   "q": 143
   },
   {
    "id": "public_health",
@@ -923,7 +923,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Public Health",
    "dept": "보건사업팀",
    "archetype": "clinical_care",
-   "q": 44
+   "q": 50
   },
   {
    "id": "welfare",
@@ -932,7 +932,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Social Welfare",
    "dept": "사회복지팀",
    "archetype": "social_care",
-   "q": 92
+   "q": 121
   },
   {
    "id": "counseling",
@@ -941,7 +941,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Counseling",
    "dept": "상담센터",
    "archetype": "social_care",
-   "q": 76
+   "q": 99
   },
   {
    "id": "hotel_tourism",
@@ -950,7 +950,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Hotels & Tourism",
    "dept": "객실팀",
    "archetype": "service_hospitality",
-   "q": 113
+   "q": 140
   },
   {
    "id": "aviation",
@@ -959,7 +959,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Aviation",
    "dept": "운항·객실본부",
    "archetype": "service_hospitality",
-   "q": 112
+   "q": 116
   },
   {
    "id": "food_service",
@@ -968,7 +968,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Food Service",
    "dept": "외식사업팀",
    "archetype": "service_hospitality",
-   "q": 78
+   "q": 98
   },
   {
    "id": "food_industry",
@@ -977,7 +977,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Food Industry",
    "dept": "식품연구소",
    "archetype": "research_science",
-   "q": 61
+   "q": 74
   },
   {
    "id": "retail",
@@ -1013,7 +1013,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Nonprofits & Public Institutions",
    "dept": "사업운영팀",
    "archetype": "public_service",
-   "q": 76
+   "q": 101
   },
   {
    "id": "research_institute",
@@ -1022,7 +1022,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Research Institutes",
    "dept": "연구기획실",
    "archetype": "research_science",
-   "q": 76
+   "q": 98
   },
   {
    "id": "culture_arts",
@@ -1031,7 +1031,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Culture & Arts",
    "dept": "기획팀",
    "archetype": "media_content",
-   "q": 77
+   "q": 93
   },
   {
    "id": "sports",
@@ -1040,7 +1040,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Sports",
    "dept": "스포츠사업팀",
    "archetype": "service_hospitality",
-   "q": 76
+   "q": 97
   },
   {
    "id": "licensed",
@@ -1093,7 +1093,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Business Planning",
     "사업전략"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "corporate_planner",
@@ -1125,7 +1125,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Business Support",
     "관리팀"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "new_business",
@@ -1157,7 +1157,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Strategy Consultant",
     "Business Analyst"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "ir_manager",
@@ -1173,7 +1173,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "IRO",
     "IR·공시"
    ],
-   "q": 17
+   "q": 26
   },
   {
    "id": "corporate_investment",
@@ -1191,7 +1191,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Corporate Development",
     "투자 담당"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "recruiter",
@@ -1209,7 +1209,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Recruiter",
     "TA"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "hr_planner",
@@ -1242,7 +1242,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "사내교육",
     "교육 담당자"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "hrbp",
@@ -1256,7 +1256,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "사업부 인사",
     "현업 인사"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "compensation",
@@ -1274,7 +1274,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Total Rewards",
     "급여·복리후생"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "org_culture",
@@ -1291,7 +1291,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Culture & Engagement",
     "사내 커뮤니케이션"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "labor_relations",
@@ -1309,7 +1309,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Employee Relations",
     "ER"
    ],
-   "q": 18
+   "q": 24
   },
   {
    "id": "general_affairs",
@@ -1325,7 +1325,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "GA",
     "경영지원 총무"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "office_admin",
@@ -1357,7 +1357,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Secretary",
     "EA"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "facility_asset",
@@ -1376,7 +1376,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "사옥관리",
     "부동산 관리"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "accountant",
@@ -1445,7 +1445,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "기업재무",
     "Finance Manager"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "treasury",
@@ -1607,7 +1607,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Equity Research",
     "Securities Sales"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "investment_banker",
@@ -1641,7 +1641,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Portfolio Manager",
     "Fund Manager"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "risk_manager",
@@ -1657,7 +1657,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "신용리스크",
     "Risk Analyst"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "underwriter",
@@ -1672,7 +1672,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "계약심사",
     "인수심사"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "actuary",
@@ -1704,7 +1704,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "클레임",
     "Loss Adjuster"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "corporate_legal",
@@ -1722,7 +1722,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "In-house Counsel",
     "Corporate Legal"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "lawyer",
@@ -1775,7 +1775,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "윤리경영",
     "Compliance Manager"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "privacy_officer",
@@ -1791,7 +1791,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Privacy Manager",
     "DPO"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "performance_marketer",
@@ -1854,7 +1854,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "브랜디드 콘텐츠",
     "마케팅 에디터"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "brand_marketer",
@@ -1935,7 +1935,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "캠페인 기획",
     "Account Planner"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "account_executive",
@@ -1950,7 +1950,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "광고대행사 AE",
     "Account Manager"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "domestic_sales",
@@ -1967,7 +1967,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "루트 영업",
     "Sales Representative"
    ],
-   "q": 16
+   "q": 21
   },
   {
    "id": "b2b_sales",
@@ -1981,7 +1981,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "산업재 영업",
     "Corporate Sales"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "technical_sales",
@@ -1996,7 +1996,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "FAE",
     "Sales Engineer"
    ],
-   "q": 16
+   "q": 21
   },
   {
    "id": "solution_sales",
@@ -2011,7 +2011,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "엔터프라이즈 영업",
     "Enterprise Sales"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "auto_sales",
@@ -2028,7 +2028,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Car Sales",
     "Automotive Sales Consultant"
    ],
-   "q": 16
+   "q": 21
   },
   {
    "id": "pharma_sales",
@@ -2176,7 +2176,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "백화점 바이어",
     "Retail Buyer"
    ],
-   "q": 16
+   "q": 19
   },
   {
    "id": "fashion_md",
@@ -2956,7 +2956,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "시각 디자이너",
     "패키지 디자이너"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "industrial_designer",
@@ -2973,7 +2973,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "프로덕트 디자이너(하드웨어)",
     "CMF 디자이너"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "interior_designer",
@@ -2989,7 +2989,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "인테리어 설계",
     "VMD(공간)"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "fashion_designer",
@@ -3005,7 +3005,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "잡화 디자이너",
     "니트 디자이너"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "content_planner",
@@ -3020,7 +3020,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "채널 운영",
     "브랜디드 콘텐츠 기획"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "editor",
@@ -3035,7 +3035,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "책 편집",
     "출판 기획"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "copywriter",
@@ -3050,7 +3050,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "크리에이티브",
     "브랜드 카피라이터"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "journalist",
@@ -3087,7 +3087,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "AD",
     "TV Producer"
    ],
-   "q": 18
+   "q": 21
   },
   {
    "id": "video_producer",
@@ -3106,7 +3106,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "영상 크리에이터",
     "Content Producer"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "video_editor",
@@ -3122,7 +3122,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "유튜브 편집자",
     "Post-production Editor"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "broadcast_writer",
@@ -3141,7 +3141,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "라디오 작가",
     "Scriptwriter"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "announcer",
@@ -3160,7 +3160,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "News Anchor",
     "Presenter"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "rnd_planner",
@@ -3176,7 +3176,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "R&D PM",
     "Technology Planning"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "product_developer",
@@ -3191,7 +3191,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "NPD 엔지니어",
     "제품 설계 엔지니어"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "control_engineer",
@@ -3209,7 +3209,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Controls Engineer",
     "Automation Engineer"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "semi_process",
@@ -3303,7 +3303,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "PCB 설계",
     "Electronics Engineer"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "electrical_engineer",
@@ -3319,7 +3319,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "플랜트 전기",
     "Electrical Engineer"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "display_engineer",
@@ -3336,7 +3336,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "디스플레이 회로",
     "Panel Engineer"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "mechanical_designer",
@@ -3352,7 +3352,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "기구 엔지니어",
     "Mechanical Engineer"
    ],
-   "q": 17
+   "q": 19
   },
   {
    "id": "automotive_engineer",
@@ -3407,7 +3407,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "로봇 제어",
     "Mechatronics Engineer"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "chemical_process",
@@ -3423,7 +3423,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "플랜트 공정",
     "생산기술(화학)"
    ],
-   "q": 18
+   "q": 21
   },
   {
    "id": "materials_researcher",
@@ -3439,7 +3439,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "고분자 연구원",
     "Materials Scientist"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "chemical_researcher",
@@ -3457,7 +3457,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Synthetic Chemist",
     "Analytical Chemist"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "battery_engineer",
@@ -3491,7 +3491,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "분자생물학 연구원",
     "Life Science Researcher"
    ],
-   "q": 18
+   "q": 23
   },
   {
    "id": "pharma_researcher",
@@ -3509,7 +3509,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Formulation Scientist",
     "Drug Discovery Scientist"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "pharma_qa",
@@ -3544,7 +3544,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "임상 모니터",
     "Clinical Monitor"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "regulatory_affairs",
@@ -3561,7 +3561,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "규제 대응",
     "Regulatory Specialist"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "env_engineer",
@@ -3577,7 +3577,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "대기 엔지니어",
     "EHS 환경"
    ],
-   "q": 18
+   "q": 22
   },
   {
    "id": "env_consultant",
@@ -3610,7 +3610,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "탄소중립 담당",
     "Sustainability Manager"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "power_plant_ops",
@@ -3626,7 +3626,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Power Plant Operator",
     "Plant Operations Engineer"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "renewable_energy",
@@ -3656,7 +3656,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "계통 운영",
     "Grid Operator"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "architect",
@@ -3671,7 +3671,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "건축가",
     "Architect"
    ],
-   "q": 18
+   "q": 22
   },
   {
    "id": "building_construction",
@@ -3688,7 +3688,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "공사 담당",
     "Site Engineer"
    ],
-   "q": 18
+   "q": 26
   },
   {
    "id": "building_services",
@@ -3704,7 +3704,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "전기설비",
     "HVAC Engineer"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "cost_estimator",
@@ -3720,7 +3720,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Cost Estimator",
     "Project Controls"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "civil_designer",
@@ -3734,7 +3734,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "도로설계",
     "교량설계"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "civil_construction",
@@ -3748,7 +3748,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "토목 공사 관리",
     "Site Engineer (Civil)"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "structural_engineer",
@@ -3762,7 +3762,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "구조설계",
     "구조기술자"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "landscape_architect",
@@ -3838,7 +3838,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "방재 담당",
     "시설 소방"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "production_manager",
@@ -3857,7 +3857,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Production Control",
     "생산운영"
    ],
-   "q": 18
+   "q": 26
   },
   {
    "id": "production_engineer",
@@ -3874,7 +3874,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Manufacturing Engineer",
     "Production Engineering"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "maintenance_engineer",
@@ -3891,7 +3891,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Maintenance",
     "설비 유지보수"
    ],
-   "q": 19
+   "q": 24
   },
   {
    "id": "shop_floor_supervisor",
@@ -3909,7 +3909,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Production Supervisor",
     "현장 감독"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "quality_control",
@@ -3925,7 +3925,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "QC 엔지니어",
     "공정품질"
    ],
-   "q": 17
+   "q": 25
   },
   {
    "id": "quality_assurance",
@@ -3939,7 +3939,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "고객품질",
     "품질시스템"
    ],
-   "q": 17
+   "q": 25
   },
   {
    "id": "supplier_quality",
@@ -3958,7 +3958,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Supplier Quality",
     "부품 품질"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "reliability_engineer",
@@ -3975,7 +3975,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "수명 평가",
     "RE"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "process_engineer",
@@ -3990,7 +3990,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "공정관리",
     "PE"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "process_innovation",
@@ -4012,7 +4012,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "GB",
     "개선 활동"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "industrial_engineer",
@@ -4030,7 +4030,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Industrial Engineering",
     "IE 담당"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "research_scientist",
@@ -4049,7 +4049,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "R&D 연구원",
     "과학자"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "lab_analyst",
@@ -4066,7 +4066,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "분석 담당",
     "QC 분석"
    ],
-   "q": 18
+   "q": 21
   },
   {
    "id": "statistician",
@@ -4083,7 +4083,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "통계 담당",
     "통계 컨설팅"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "elementary_teacher",
@@ -4169,7 +4169,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Private Tutor",
     "강사"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "edu_planner",
@@ -4187,7 +4187,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Instructional Designer",
     "이러닝 기획"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "corporate_trainer",
@@ -4204,7 +4204,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Facilitator",
     "직무교육 강사"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "nurse",
@@ -4257,7 +4257,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Physician",
     "Medical Doctor"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "pharmacist",
@@ -4273,7 +4273,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "개국약사",
     "Clinical Pharmacist"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "hospital_admin",
@@ -4306,7 +4306,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "피부과 코디",
     "Patient Coordinator"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "physical_therapist",
@@ -4350,7 +4350,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "생리기능검사",
     "Medical Technologist"
    ],
-   "q": 16
+   "q": 21
   },
   {
    "id": "radiologic_technologist",
@@ -4365,7 +4365,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "MRI 방사선사",
     "Radiographer"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "dental_hygienist",
@@ -4378,7 +4378,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "치위생사",
     "덴탈 하이지니스트"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "dietitian",
@@ -4410,7 +4410,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "보건행정",
     "지방보건직"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "social_worker",
@@ -4424,7 +4424,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "복지관 사회복지사",
     "사례관리자"
    ],
-   "q": 16
+   "q": 25
   },
   {
    "id": "care_manager",
@@ -4442,7 +4442,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "센터장",
     "돌봄 코디네이터"
    ],
-   "q": 16
+   "q": 24
   },
   {
    "id": "youth_worker",
@@ -4456,7 +4456,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "청소년 활동 지도자",
     "청소년센터"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "medical_social_worker",
@@ -4470,7 +4470,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "사회사업팀",
     "정신건강사회복지사"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "counselor",
@@ -4486,7 +4486,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Counselor",
     "Psychotherapist"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "career_counselor",
@@ -4503,7 +4503,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "커리어 컨설턴트",
     "잡매니저"
    ],
-   "q": 16
+   "q": 24
   },
   {
    "id": "school_counselor",
@@ -4517,7 +4517,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Wee클래스",
     "학교상담"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "hotelier",
@@ -4537,7 +4537,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "호텔 객실관리",
     "컨시어지"
    ],
-   "q": 18
+   "q": 24
   },
   {
    "id": "hotel_sales",
@@ -4556,7 +4556,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "연회 세일즈",
     "Revenue"
    ],
-   "q": 17
+   "q": 25
   },
   {
    "id": "travel_planner",
@@ -4572,7 +4572,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "여행사 기획",
     "패키지 기획"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "tour_guide",
@@ -4588,7 +4588,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "인바운드 가이드",
     "관광 가이드"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "mice_planner",
@@ -4658,7 +4658,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Captain",
     "항공기조종사"
    ],
-   "q": 18
+   "q": 22
   },
   {
    "id": "aircraft_mechanic",
@@ -4691,7 +4691,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "외식 점포관리",
     "Store Manager(F&B)"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "chef",
@@ -4709,7 +4709,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Cook",
     "조리 담당"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "barista",
@@ -4723,7 +4723,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "커피 전문가",
     "카페 매니저"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "food_researcher",
@@ -4740,7 +4740,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Food Scientist",
     "식품공학"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "food_quality",
@@ -4761,7 +4761,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "위생관리",
     "Food Safety"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "store_manager",
@@ -5027,7 +5027,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "사업팀",
     "Program Manager"
    ],
-   "q": 17
+   "q": 26
   },
   {
    "id": "fundraiser",
@@ -5046,7 +5046,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "대외협력",
     "Donor Relations"
    ],
-   "q": 16
+   "q": 24
   },
   {
    "id": "public_institution_staff",
@@ -5061,7 +5061,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "진흥원 행정",
     "재단 행정직"
    ],
-   "q": 16
+   "q": 24
   },
   {
    "id": "policy_researcher",
@@ -5076,7 +5076,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "부연구위원",
     "싱크탱크 연구원"
    ],
-   "q": 17
+   "q": 25
   },
   {
    "id": "gov_researcher",
@@ -5090,7 +5090,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "국가연구소 연구원",
     "Government Research Institute Researcher"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "research_admin",
@@ -5103,7 +5103,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "과제 행정",
     "연구원 행정직"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "curator",
@@ -5118,7 +5118,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "학예연구사",
     "학예연구관"
    ],
-   "q": 18
+   "q": 21
   },
   {
    "id": "performance_planner",
@@ -5133,7 +5133,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "공연 PD",
     "문화행사 기획"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "arts_educator",
@@ -5148,7 +5148,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "문화예술교육 담당",
     "교육 코디네이터"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "sports_marketer",
@@ -5163,7 +5163,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "스포츠 마케팅 매니저",
     "스폰서십 담당"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "fitness_trainer",
@@ -5181,7 +5181,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "건강운동관리사",
     "재활 트레이너"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "sports_admin",
@@ -5196,7 +5196,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "체육단체 행정",
     "대회 운영"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "labor_attorney",
@@ -5299,16 +5299,16 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
   "roles": 256,
   "domains": 51,
   "families": 72,
-  "questions": 6935,
+  "questions": 7660,
   "commonQuestions": 383,
   "byBasis": {
-   "공개후기": 295,
-   "공식자료": 480,
-   "공고기반": 67,
-   "직무기반": 5766,
+   "공개후기": 669,
+   "공식자료": 764,
+   "공고기반": 131,
+   "직무기반": 5769,
    "일반면접": 327
   },
-  "sources": 197,
+  "sources": 566,
   "generatedAt": "2026-09-30"
  }
 };

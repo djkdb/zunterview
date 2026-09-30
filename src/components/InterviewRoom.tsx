@@ -6,9 +6,11 @@
  * The interviewer who asks the current question talks; while answers are
  * reviewed the whole panel looks down and writes on the evaluation sheet.
  */
-import { memo } from "react";
+import { memo, useEffect, useState } from "react";
+import { useReducedMotion } from "framer-motion";
 import { useNow } from "../hooks/useTimer";
 import type { PanelMember, Seat } from "../config/panel";
+import { PANEL_PHOTOS, PHOTO_BOX, photoSrc, photosEnabled, type PhotoState } from "../config/panelPhotos";
 
 export type RoomMode = "idle" | "asking" | "listening" | "reviewing";
 
@@ -30,6 +32,8 @@ const SEAT_X: Record<Seat, number> = { left: 330, center: 600, right: 870 };
 const DESK_Y = 372;
 
 export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel = "제2면접실", companyName, anchor = "bottom", className = "" }: Props) {
+  const [photos] = useState(photosEnabled);
+  const photoSeat = (seat: Seat) => photos && PANEL_PHOTOS[seat] !== undefined;
   return (
     <svg
       viewBox="0 0 1200 520"
@@ -112,7 +116,15 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
       </g>
 
       {/* ── panel (behind the desk) ─────────────────────────── */}
-      {(["left", "center", "right"] as Seat[]).map((seat, i) => (
+      {(["left", "center", "right"] as Seat[]).map((seat, i) =>
+        photoSeat(seat) ? (
+          <PhotoInterviewer
+            key={seat}
+            seat={seat}
+            state={mode === "asking" && speaking === seat ? "talk" : mode === "reviewing" ? "review" : mode === "listening" && activity > 0 && seat !== "center" ? "think" : "idle"}
+            offset={i}
+          />
+        ) : (
         <InterviewerBody
           key={seat}
           x={SEAT_X[seat]}
@@ -122,7 +134,8 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
           nodding={mode === "listening" && (activity > 0 ? seat !== "right" || i % 2 === 0 : seat === "center")}
           nodDelay={i * 0.9}
         />
-      ))}
+        ),
+      )}
 
       {/* ── desk ─────────────────────────────────────────── */}
       <path d={`M36 ${DESK_Y} L1164 ${DESK_Y} L1196 ${DESK_Y + 32} L4 ${DESK_Y + 32} Z`} fill="url(#deskTop)" />
@@ -135,7 +148,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
         <rect x="-10" y="7" width="20" height="3" fill="#1b3a6b" opacity="0.5" />
       </g>
       {(["left", "center", "right"] as Seat[]).map((seat) => (
-        <DeskItems key={seat} x={SEAT_X[seat]} writing={mode === "reviewing"} member={panel[seat]} />
+        <DeskItems key={seat} x={SEAT_X[seat]} writing={mode === "reviewing"} member={panel[seat]} photo={photoSeat(seat)} />
       ))}
 
       {/* desk front panel + name plates */}
@@ -355,7 +368,44 @@ function InterviewerBody({ x, member, talking, reviewing, nodding, nodDelay }: {
   );
 }
 
-function DeskItems({ x, writing, member }: { x: number; writing: boolean; member: PanelMember }) {
+/** How long each frame holds, per state (ms). Talking changes gesture often; listening barely moves. */
+const HOLD: Record<PhotoState, number> = { talk: 2300, review: 3400, think: 4200, idle: 6500 };
+const PHOTO_W = 300;
+const PHOTO_H = (PHOTO_W * PHOTO_BOX.height) / PHOTO_BOX.width;
+
+/** A photographed interviewer: cross-fades between pose frames for the current state. */
+function PhotoInterviewer({ seat, state, offset }: { seat: Seat; state: PhotoState; offset: number }) {
+  const set = PANEL_PHOTOS[seat]!;
+  const reduce = useReducedMotion();
+  const [tick, setTick] = useState(offset);
+  useEffect(() => {
+    if (reduce || set[state] < 2) return;
+    const id = window.setInterval(() => setTick((t) => t + 1), HOLD[state] + offset * 370);
+    return () => window.clearInterval(id);
+  }, [reduce, set, state, offset]);
+  const active = tick % set[state];
+  const states = Object.keys(set) as PhotoState[];
+  return (
+    <g transform={`translate(${SEAT_X[seat] - PHOTO_W / 2} ${DESK_Y + 4 - PHOTO_H})`}>
+      {/* chair back behind the shoulders */}
+      <path d={`M${PHOTO_W / 2 - 70} ${PHOTO_H} L${PHOTO_W / 2 - 70} ${PHOTO_H - 250} C${PHOTO_W / 2 - 70} ${PHOTO_H - 268} ${PHOTO_W / 2 - 58} ${PHOTO_H - 278} ${PHOTO_W / 2 - 40} ${PHOTO_H - 278} L${PHOTO_W / 2 + 40} ${PHOTO_H - 278} C${PHOTO_W / 2 + 58} ${PHOTO_H - 278} ${PHOTO_W / 2 + 70} ${PHOTO_H - 268} ${PHOTO_W / 2 + 70} ${PHOTO_H - 250} L${PHOTO_W / 2 + 70} ${PHOTO_H} Z`} fill="#23272e" />
+      {states.flatMap((st) =>
+        Array.from({ length: set[st] }, (_, n) => (
+          <image
+            key={`${st}-${n}`}
+            href={photoSrc(seat, st, n)}
+            width={PHOTO_W}
+            height={PHOTO_H}
+            preserveAspectRatio="xMidYMax meet"
+            style={{ opacity: st === state && n === active ? 1 : 0, transition: reduce ? undefined : "opacity 420ms ease" }}
+          />
+        )),
+      )}
+    </g>
+  );
+}
+
+function DeskItems({ x, writing, member, photo }: { x: number; writing: boolean; member: PanelMember; photo: boolean }) {
   const { look } = member;
   return (
     <g transform={`translate(${x} ${DESK_Y})`}>
@@ -364,6 +414,8 @@ function DeskItems({ x, writing, member }: { x: number; writing: boolean; member
       {[10, 15, 20].map((y) => (
         <line key={y} x1={-36 - (y - 4) * 0.2} y1={y} x2={30 + (y - 4) * 0.2} y2={y} stroke="#9aa3b5" strokeWidth="1" opacity="0.6" />
       ))}
+      {!photo && (
+        <>
       {/* sleeves resting on the desk */}
       <g transform={member.look.hairStyle === "bob" ? "scale(0.93 1)" : undefined}>
         <path d="M-60 -119 C-78 -114 -87 -103 -88 -80 C-91 -44 -92 -6 -80 8 C-70 16 -58 20 -45 20 L-41 5 C-52 1 -60 -9 -63 -30 C-66 -58 -66 -92 -60 -119 Z" fill={look.suit} />
@@ -386,6 +438,8 @@ function DeskItems({ x, writing, member }: { x: number; writing: boolean; member
         <path d="M22 9 C18 8 16 12 19 14 C21 15 24 13 22 9 Z" fill={look.skin} />
         <path d="M22 9 C18 8 16 12 19 14" stroke="#000" strokeOpacity="0.14" strokeWidth="0.9" fill="none" />
       </g>
+        </>
+      )}
       {/* water bottle */}
       <g transform="translate(92 0)">
         <rect x="-9" y="-40" width="18" height="52" rx="6" fill="#dbeaf5" opacity="0.85" stroke="#b9cfe0" />

@@ -104,8 +104,8 @@ const domainOfRole = (id: string) => familyById.get(roleById.get(id)!.family)!.d
 /* ─────────────────────────────── raw files ──────────────────────────── */
 
 const rawFiles = readdirSync(RAW)
-  // b*: batch research (profiles + questions) · s*: sourcing supplements · common: every role
-  .filter((f) => /^(?:[bs]\d+.*|common)\.json$/.test(f))
+  // b*: batch research (profiles + questions) · s*/t*: sourcing supplements · common: every role
+  .filter((f) => /^(?:[bst]\d+.*|common)\.json$/.test(f))
   .sort();
 
 const PAID = [/happycampus/i, /reportworld/i, /happyhaksul/i, /welldone/i, /allreport/i, ...(curation.dropSourcesEverywhere ?? []).map((d) => new RegExp(d.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"))];

@@ -16,8 +16,8 @@ const REACTIONS: Record<AnswerQuality, Pool> = {
     en: ["That sounds a bit abstract.", "I get the direction, but I'd like more specifics."],
   },
   insufficient: {
-    ko: ["답변이 조금 짧았던 것 같습니다.", "네, 조금 더 자세히 들을 수 있으면 좋겠네요."],
-    en: ["That answer was a little short.", "Okay — I'd have liked a bit more detail."],
+    ko: ["답변이 조금 짧았던 것 같습니다.", "네, 조금 더 자세히 들을 수 있으면 좋겠네요.", "알겠습니다. 근거가 조금 더 있었으면 좋겠습니다.", "네. 다음에는 예를 하나 들어 주시면 좋겠습니다."],
+    en: ["That answer was a little short.", "Okay — I'd have liked a bit more detail.", "Understood. A bit more support would help.", "Okay. An example next time would help."],
   },
   off_topic: {
     ko: ["질문의 의도와 조금 다른 방향의 답변인 것 같습니다."],

@@ -458,7 +458,7 @@ function PhotoScene({ panel, speaking, mode, activity, roomLabel, companyName }:
           <NamePlate x={PHOTO_SEAT_X[seat]} y={0} member={panel[seat]} active={mode === "asking" && speaking === seat} />
         </g>
       ))}
-      {mode === "asking" && speaking && <SpeechBubble x={PHOTO_SEAT_X[speaking] + 56} y={PHOTO_TOP + 10} />}
+      {mode === "asking" && speaking && <SpeechBubble x={speaking === "right" ? PHOTO_SEAT_X[speaking] - 124 : PHOTO_SEAT_X[speaking] + 56} y={PHOTO_TOP + 10} />}
     </>
   );
 }

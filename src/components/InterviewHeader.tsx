@@ -29,7 +29,7 @@ export function InterviewHeader(p: Props) {
             INTERVIEW<span className="text-[#7fa6e0]">//</span>AI
           </span>
           <span className="hidden h-4 w-px bg-white/20 lg:inline" />
-          <span className="rounded bg-white/10 px-2 py-0.5 text-[12px] font-semibold whitespace-nowrap">
+          <span className="rounded bg-white/10 px-2 py-0.5 text-[12px] font-semibold whitespace-nowrap max-[400px]:hidden">
             <span className="hidden sm:inline">지원번호 </span>
             <span className="sm:hidden">No.</span>
             {p.applicantNo}

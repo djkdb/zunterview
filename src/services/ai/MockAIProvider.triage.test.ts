@@ -59,3 +59,16 @@ describe("mock interviewer: replies that aren't answers", () => {
     expect(q.question).toContain("업무");
   });
 });
+
+describe("found in persona runs", () => {
+  it("doesn't ask what happened next when the answer told no story", async () => {
+    const turn = { question: "본인이 생각하는 리더십이란 무엇입니까?", type: "reflection" as const, isFollowUp: false, answer: "그 부분은 아직 경험이 부족하지만, 병동 매뉴얼을 먼저 확인하고 선배님께 배우면서 빠르게 익히겠습니다." };
+    const f = await provider.generateFollowUp(ctx({ history: [turn] }), turn, 0);
+    expect(f.question).not.toContain("그 후 환자");
+  });
+  it("calls a bare resolution what it is", async () => {
+    const turn = { question: "동시에 여러 요청을 받았을 때 우선순위를 정해 처리한 경험을 말씀해 주세요.", type: "behavioral" as const, isFollowUp: false, answer: "최선을 다하겠습니다." };
+    const a = await provider.analyzeAnswer(ctx(), turn);
+    expect(a.reaction).toContain("각오는");
+  });
+});

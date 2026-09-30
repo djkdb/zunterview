@@ -102,7 +102,7 @@ export class MockAIProvider implements AIProvider {
     // Company + role interview: company questions for fit/motivation/culture, the role bank for the job.
     if (company && lang === "ko") {
       // The interview already opened with a self-introduction — skip the bank's "자기소개와 함께 …" variants.
-      const bank = questionsForTrack(await loadCompanyQuestions(company.id), config.companyTrack).filter((q) => !/자기\s?소개/.test(q.text) && !isDuplicateQuestion(q.text, asked));
+      const bank = questionsForTrack(await loadCompanyQuestions(company.id), config.companyTrack).filter((q) => !/자기\s?소개/.test(q.text) && !NEEDS_WHITEBOARD.test(q.text) && !isDuplicateQuestion(q.text, asked));
       const bucket = TYPE_BUCKET[planned];
       const wantCompany = planned === "company_understanding" || planned === "motivation" || bucket === "fit" || (bucket !== "job" && mainIndex % 2 === 1) || (bucket === "job" && mainIndex % 3 === 0);
       if (wantCompany) {
@@ -146,8 +146,12 @@ export class MockAIProvider implements AIProvider {
         limit: 6,
         seed,
       });
-      if (ranked.length) {
-        const pick = ranked[seed % Math.min(3, ranked.length)];
+      // Don't re-ask a posting requirement the JD question already covered ("K-IFRS …" twice).
+      const coveredReqs = jdReqs.slice(0, jdAsked).map((r) => r.split(/\s/)[0]).filter((w) => w.length >= 2);
+      const fresh = ranked.filter((c) => !coveredReqs.some((w) => c.text.includes(w)) && !NEEDS_WHITEBOARD.test(c.text));
+      const choices = fresh.length ? fresh : ranked;
+      if (choices.length) {
+        const pick = choices[seed % Math.min(3, choices.length)];
         return { question: pick.text, type: pick.q.type, intent: roleIntent(pick.q.type, role, lang) };
       }
     }
@@ -157,6 +161,7 @@ export class MockAIProvider implements AIProvider {
       const profile = await loadRoleProfile(role).catch(() => null);
       const topics = profile?.topics.en ?? [];
       for (const [i, topic] of topics.entries()) {
+        if (asked.some((a) => a.toLowerCase().includes(topic.toLowerCase()))) continue;
         const tpl = EN_TEMPLATES[TYPE_BUCKET[planned]][(i + mainIndex) % EN_TEMPLATES[TYPE_BUCKET[planned]].length];
         const q = fill(tpl, { topic, role: role.titleEn });
         if (!isDuplicateQuestion(q, asked)) return { question: q, type: planned === "opening" ? "role_specific" : planned, intent: roleIntent(planned, role, lang) };
@@ -320,7 +325,9 @@ export class MockAIProvider implements AIProvider {
     }
     // 3c) The field's own follow-up path (마케팅: 목표→타깃→채널→KPI, 회계: 기준→오류→처리…):
     // ask for the first step the answer (or this thread) hasn't covered yet.
-    const chainStep = !opening && s.chars >= 25 ? bp.chain.find((st) => !st.covered.test(threadText) && !isDuplicateQuestion(st.ask[lang], asked)) : undefined;
+    // The field's path ("그 후 환자는…", "그 업무에서…") presumes the answer told a story of something done.
+    const story = s.star.action > 0 && /(?:했|었|았|였)/.test(turn.answer) && !/(?:겠습니다|겠어요|ㄹ\s?것)/.test(turn.answer.slice(-20));
+    const chainStep = !opening && story && s.chars >= 25 ? bp.chain.find((st) => !st.covered.test(threadText) && !isDuplicateQuestion(st.ask[lang], asked)) : undefined;
     const chainAsk = chainStep
       ? () =>
           push(chainStep.ask, chainStep.key === "result" ? "result" : "deep_dive", {
@@ -416,6 +423,7 @@ export class MockAIProvider implements AIProvider {
 
     const triage = triageAnswer(turn.answer, lang);
     if (triage && triage !== "clarify") return triagedAnalysis(triage, ctx, turn, seed);
+    const platitude = isPlatitude(turn.answer);
     // Answers that don't address the question, or repeat an earlier answer, can't score on length alone.
     const repeated = !s.dontKnow && repeatsEarlier(turn.answer, earlierAnswers(ctx, turn));
     const dodge = s.dontKnow || repeated ? null : dodgedQuestion(turn, s);
@@ -497,7 +505,9 @@ export class MockAIProvider implements AIProvider {
               : strengthFor(best, s),
         improve: s.dontKnow
           ? L(lang, "모르는 질문도 '직접 해 보진 않았지만 저라면 ~부터 확인하겠습니다'처럼 접근 방법을 말하면 좋습니다.", "Even when you don't know, explain how you would approach it.")
-          : repeated
+          : platitude
+            ? L(lang, "'열심히 하겠습니다' 같은 다짐은 답변이 되지 않습니다. 질문에 대한 본인의 생각이나 실제 경험을 한두 문장이라도 말해 보세요.", "A promise to work hard isn't an answer — give your actual view or one real example.")
+            : repeated
             ? L(lang, "앞선 질문에 했던 답변을 그대로 반복했습니다. 질문마다 그 질문에 맞는 다른 경험이나 근거를 준비해 두세요.", "You repeated an earlier answer. Prepare a different example or reason for each question.")
             : dodge
               ? L(lang, `질문은 '${dodge}'에 관한 것이었는데 답변에서 다루지 않았습니다. 첫 문장에서 질문에 바로 답하고 경험을 덧붙이세요.`, `The question was about '${dodge}', which the answer didn't address. Answer it directly first, then add your experience.`)
@@ -518,6 +528,8 @@ export class MockAIProvider implements AIProvider {
         notFound,
         reaction: s.dontKnow
           ? dontKnowReaction(ctx.config.persona, lang)
+          : platitude && turn.type !== "opening"
+            ? L(lang, "각오는 잘 들었습니다. 다만 제가 여쭌 것에 대한 답을 듣고 싶었습니다.", "I hear the commitment, but I was looking for an answer to the question.")
           : repeated
             ? L(lang, "앞에서 하신 말씀과 같은 내용이네요.", "That's the same as your earlier answer.")
             : reactionFor(quality, ctx.config.persona, lang, seed),
@@ -646,6 +658,15 @@ function projectVerb(k: string): string {
 /** Answers to other questions. The follow-up request's history already contains this very turn. */
 function earlierAnswers(ctx: InterviewContext, turn: CurrentTurn): string[] {
   return ctx.history.filter((h) => !(h.question === turn.question && h.answer === turn.answer)).map((h) => h.answer);
+}
+
+/** Questions that need a whiteboard, a live editor, material on screen or a résumé the app never asked for. */
+const NEEDS_WHITEBOARD = /(?:이력서|자기소개서|자소서|포트폴리오)에\s?(?:적|쓴|쓰신|적으신|기재)|라이브\s?코딩|화이트보드|코드를\s?(?:직접\s?)?(?:작성|짜)|손으로\s?(?:풀|그려)|^이\s?(?:부분|코드|화면|문제)을?/;
+
+/** Nothing but a resolution ("열심히 하겠습니다", "최선을 다하겠습니다") in place of an answer. */
+function isPlatitude(answer: string): boolean {
+  const t = answer.replace(/\s+/g, "");
+  return t.length <= 30 && /(?:열심히|최선을\s?다|성실히|노력하|배우겠|배우며|잘\s?하겠|하겠습니다)/.test(answer) && !/\d/.test(answer);
 }
 
 /** Question types about something specific, where an answer can miss the point (not open questions or follow-ups). */
@@ -885,7 +906,7 @@ function betterAnswerFor(k: CategoryKey, s: Signals): AnswerAnalysis["betterAnsw
 const TOP_FEEDBACK: Record<CategoryKey, Localized> = {
   relevance: { ko: "질문의 핵심에 대한 답을 첫 문장에 먼저 말하면 전달력이 크게 좋아집니다.", en: "Lead with a direct answer to the question in your first sentence." },
   logic: { ko: "무엇을 했는지뿐 아니라 왜 그렇게 판단했는지를 함께 설명해보세요.", en: "Explain not just what you did, but why you decided to do it." },
-  specificity: { ko: "답변의 핵심은 명확하지만 결과와 수치를 조금 더 구체적으로 표현하면 좋습니다.", en: "Your points are clear — add concrete results and numbers to make them land." },
+  specificity: { ko: "무엇을 했고 그래서 무엇이 얼마나 달라졌는지, 결과와 수치를 구체적으로 말하는 연습이 가장 필요합니다.", en: "Say what you did and what changed as a result — concrete results and numbers are what's missing most." },
   structure: { ko: "상황 → 행동 → 결과 순서로 답변을 정리하면 훨씬 설득력 있게 들립니다.", en: "Organize answers as situation → action → result to sound more convincing." },
   communication: { ko: "한 문장에 한 가지 내용만 담아 짧고 명확하게 말하는 연습을 해보세요.", en: "Practice short sentences with one idea each." },
   confidence: { ko: "'저는 ~했습니다'처럼 본인의 역할과 결정을 분명하게 말해보세요.", en: "State your own role and decisions plainly — 'I did…'." },

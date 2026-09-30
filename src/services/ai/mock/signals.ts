@@ -12,7 +12,7 @@ export interface Topic {
 }
 
 export const TOPICS: Topic[] = [
-  { id: "performance", label: { ko: "성능 문제", en: "the performance issue" }, pattern: /성능|느려|느린|속도|지연|렌더링|로딩|병목|latency|performance|slow|bottleneck|load time/i },
+  { id: "performance", label: { ko: "성능 문제", en: "the performance issue" }, pattern: /성능|느려|느린|속도|지연|렌더링|로딩|병목|latency|performance(?!\s*market)|slow|bottleneck|load time/i },
   { id: "incident", label: { ko: "장애 상황", en: "that incident" }, pattern: /장애|버그|오류|에러|크래시|다운|incident|outage|bug|error|crash|downtime/i },
   { id: "conflict", label: { ko: "의견 차이", en: "the disagreement" }, pattern: /갈등|의견 ?차이|충돌|반대|설득|conflict|disagree|pushback|persuad/i },
   { id: "deadline", label: { ko: "촉박한 일정", en: "the tight deadline" }, pattern: /(?<!(?:월|분기|연|결산|회계)\s?)마감|일정|데드라인|기한|deadline|timeline|schedule|time pressure/i },

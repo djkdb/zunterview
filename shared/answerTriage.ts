@@ -13,9 +13,11 @@ const compact = (t: string) => t.replace(/\s+/g, "");
 const CLARIFY =
   /질문(?:이|을|의)?\s?(?:잘\s?)?(?:이해|무슨|뭔|다시)|(?:무슨|어떤)\s?(?:말씀|뜻|의미)|이해가\s?(?:잘\s?)?안|이해\s?못|잘\s?못\s?알아|못\s?알아\s?들|다시\s?(?:한\s?번\s?)?(?:말씀|설명|질문)|(?:뭘|무엇을|뭐를|뭐라고)\s?(?:말|답|대답)해야|(?:뭘|뭐를|무엇을|무슨)\s?.{0,14}(?:해야|들어야|말해야)\s?(?:되|하)(?:죠|나요|는지|는데|요)|질문을?\s?(?:좀\s?)?쉽게|what do you mean|(?:could|can) you (?:repeat|rephrase|say that again)|(?:didn'?t|don'?t) understand the question|pardon\?|sorry\?$/i;
 
-/** Insults and swearing, including the common jamo spellings. */
-const HOSTILE =
-  /씨발|시발|ㅅㅂ|ㅆㅂ|씨바|좆|존나|ㅈㄴ|병신|ㅂㅅ|븅신|개새|새끼|꺼져|꺼지|닥쳐|닥치|지랄|ㅈㄹ|엿\s?먹|미친\s?(?:놈|년|새)|fuck|shit|bitch|stfu|shut up|piss off/i;
+/** Swearing, including the common jamo spellings — never acceptable, wherever it appears ("시발점" is fine). */
+const PROFANITY =
+  /씨발|씨바|(?<![가-힣])시발(?!점|역|택시)|ㅅㅂ|ㅆㅂ|좆|존나|ㅈㄴ|병신|ㅂㅅ|븅신|개새|새끼|지랄|ㅈㄹ|엿\s?먹|미친\s?(?:놈|년|새)|fuck|shit|bitch/i;
+/** Telling the interviewer off — only as the reply itself ("전원이 꺼지는 장애" is an answer). */
+const RUDE = /꺼져|꺼지(?:쇼|세요|라|시오|시지)|닥쳐|닥치(?:세요|라|쇼|시지)|어쩌라고|알\s?바\s?(?:야|냐|아님)|너나\s?잘|웃기(?:네|시네|고\s?있네)|stfu|shut up|piss off/i;
 
 const REFUSE =
   /^(?:싫어요?|싫습니다|싫은데요?|안\s?할래요?|대답\s?(?:안\s?할래요?|하기\s?싫(?:어요|습니다)?)|말\s?(?:안\s?할래요?|하기\s?싫(?:어요|습니다)?)|노\s?코멘트|그냥요?|글쎄요?|몰라도\s?돼요?|no comment|pass)[.!~…]*$/i;
@@ -30,7 +32,7 @@ export function triageAnswer(answer: string, lang: Language): Triage | null {
   if (!c) return "nonsense";
   // A short question back ("질문이 잘 이해가 안 돼요", "무슨 뜻이죠?") asks for the question again.
   if (c.length <= 50 && CLARIFY.test(t)) return "clarify";
-  if (HOSTILE.test(t) && c.length <= 60) return "hostile";
+  if ((PROFANITY.test(t) || RUDE.test(t)) && c.length <= 60) return "hostile";
   if (REFUSE.test(t)) return "refuse";
   // Keyboard mash, lone jamo, laughter, "ㅇㅇ", one repeated character, a single symbol.
   if (/^[ㄱ-ㅎㅏ-ㅣ.,!?~^;:\-_=+*/\\|'"`()[\]{}<>@#$%&0-9\s]+$/.test(t)) return "nonsense";
@@ -43,9 +45,14 @@ export function triageAnswer(answer: string, lang: Language): Triage | null {
   return null;
 }
 
-/** Swearing inside an otherwise real answer — scored as an attitude problem, not ignored. */
+/** Swearing anywhere in the reply. */
 export function hasProfanity(answer: string): boolean {
-  return HOSTILE.test(answer);
+  return PROFANITY.test(answer);
+}
+
+/** Conduct that ends a real interview on the spot: an insult as the reply, or swearing anywhere. */
+export function isMisconduct(answer: string, lang: Language): boolean {
+  return triageAnswer(answer, lang) === "hostile" || hasProfanity(answer);
 }
 
 /**

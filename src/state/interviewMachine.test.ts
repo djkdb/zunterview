@@ -91,3 +91,16 @@ describe("interview state machine", () => {
     expect(s.phase).toBe("NEXT_QUESTION");
   });
 });
+
+describe("ending an interview over conduct", () => {
+  it("records why the panel stopped and shows the closing line, not 'next question'", () => {
+    let s: InterviewState = reducer(initialState, { type: "START", interview });
+    s = reducer(s, { type: "QUESTION", question: q("q1"), now: 0 });
+    s = reducer(s, { type: "SUBMIT", questionId: "q1", answer: "꺼지쇼", mode: "text", durationSec: 1 });
+    s = reducer(s, { type: "TRANSITION", kind: "CLOSING", text: "오늘 면접은 여기서 종료하겠습니다." });
+    expect(s.closing).toBe(true);
+    expect(s.phase).toBe("NEXT_QUESTION");
+    s = reducer(s, { type: "COMPLETE", endedEarly: true, now: 1000, terminated: "conduct" });
+    expect(s.interview?.terminated).toBe("conduct");
+  });
+});

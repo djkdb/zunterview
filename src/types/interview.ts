@@ -66,6 +66,8 @@ export interface Interview {
   duration: number;
   completed: boolean;
   endedEarly: boolean;
+  /** The panel stopped the interview because of the candidate's conduct (swearing, insults). */
+  terminated?: "conduct";
   providers: ProviderKind[];
 }
 

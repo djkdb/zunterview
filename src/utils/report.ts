@@ -56,7 +56,7 @@ h1{font-size:26px;letter-spacing:.3em;color:#0f1b2e;margin:0}.brand{font-size:11
 <div><span>경력 구분</span>${EXPERIENCE_KO[i.config.experience]}</div>
 <div><span>면접 일시</span>${longDate(i.createdAt)}</div>
 <div><span>소요 시간</span>${durationLabel(i.duration)}</div>
-<div><span>답변 문항</span>${i.questions.length}문항${i.endedEarly ? " (조기 종료)" : ""}</div>
+<div><span>답변 문항</span>${i.questions.length}문항${i.terminated ? " (면접관 중단 — 부적절한 발언)" : i.endedEarly ? " (조기 종료)" : ""}</div>
 <div><span>면접 위원</span>${panel.center.name}(위원장) · ${panel.left.name} · ${panel.right.name}</div>
 </div>
 <h2>1. 종합 평가</h2>

@@ -7,6 +7,7 @@ import { getCompany } from "../../shared/companies";
 
 export function CompletionScreen({ interview }: { interview: Interview }) {
   const answered = interview.questions.length;
+  const stopped = interview.terminated === "conduct";
   return (
     <div className="fixed inset-0 z-40 flex flex-col bg-bg" role="status" aria-live="polite">
       <div className="w-full border-b border-line bg-[#dfe3e8]">
@@ -16,14 +17,14 @@ export function CompletionScreen({ interview }: { interview: Interview }) {
       </div>
       <div className="flex flex-1 items-center justify-center px-6">
         <div className="text-center">
-          <motion.p className="text-sm font-semibold text-accent" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            {interview.endedEarly ? "면접이 조기 종료되었습니다" : "모든 질문에 답변하셨습니다"}
+          <motion.p className={`text-sm font-semibold ${stopped ? "text-low" : "text-accent"}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            {stopped ? "면접위원장이 면접을 중단했습니다" : interview.endedEarly ? "면접이 조기 종료되었습니다" : "모든 질문에 답변하셨습니다"}
           </motion.p>
           <motion.h1 className="mt-3 text-3xl font-bold text-ink sm:text-4xl" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            면접이 종료되었습니다
+            {stopped ? "면접이 중단되었습니다" : "면접이 종료되었습니다"}
           </motion.h1>
           <motion.p className="mt-2 text-muted" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-            수고 많으셨습니다. 안녕히 가세요.
+            {stopped ? "면접 자리에 맞지 않는 발언이 있어 더 진행하지 않습니다." : "수고 많으셨습니다. 안녕히 가세요."}
           </motion.p>
           <motion.div className="mt-6 flex justify-center gap-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
             <span className="text-sm text-muted">

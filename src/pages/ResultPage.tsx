@@ -78,7 +78,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
     ["면접 일시", longDate(i.createdAt)],
     ["소요 시간", durationLabel(i.duration)],
     ["면접 위원", `${panel.center.name}(위원장) · ${panel.left.name} · ${panel.right.name}`],
-    ["답변 문항", `메인 ${i.questions.filter((q) => !q.isFollowUp).length} / ${i.config.questionLimit}문항 · 꼬리질문 ${i.questions.filter((q) => q.isFollowUp).length}${i.endedEarly ? " (조기 종료)" : ""}`],
+    ["답변 문항", `메인 ${i.questions.filter((q) => !q.isFollowUp).length} / ${i.config.questionLimit}문항 · 꼬리질문 ${i.questions.filter((q) => q.isFollowUp).length}${i.terminated ? " (면접관 중단)" : i.endedEarly ? " (조기 종료)" : ""}`],
   ];
 
   return (
@@ -100,7 +100,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
       <main className="mx-auto w-full max-w-4xl px-3 pt-6 sm:px-6 sm:pt-10">
         {!fromHistory && (
           <motion.p {...reveal(0)} className="no-print mb-4 text-center text-sm text-muted">
-            수고하셨습니다. 면접위원이 작성한 평가표입니다.
+            {i.terminated === "conduct" ? "면접이 중단되었습니다. 면접위원이 작성한 평가표입니다." : "수고하셨습니다. 면접위원이 작성한 평가표입니다."}
           </motion.p>
         )}
 
@@ -126,6 +126,9 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                 </div>
               </div>
               <div>
+                {i.terminated === "conduct" && (
+                  <p className="mb-2 inline-flex items-center gap-1.5 rounded border border-low/40 bg-low/10 px-2 py-1 text-[12px] font-semibold text-low">면접 중단 · 부적절한 발언</p>
+                )}
                 {r && <p className="text-[17px] leading-relaxed font-bold text-ink">{r.headline}</p>}
                 {company && company.talent.length > 0 && (
                   <p className="mt-2 text-[13px] text-muted">

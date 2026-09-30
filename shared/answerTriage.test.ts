@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { questionCoverage, repeatsEarlier, triageAnswer } from "./answerTriage";
+import { isMisconduct, questionCoverage, repeatsEarlier, triageAnswer } from "./answerTriage";
 
 describe("triageAnswer", () => {
   it.each([
@@ -56,5 +56,14 @@ describe("questionCoverage ignores words any answer could share", () => {
     const q = "영업이익은 늘었는데 영업활동 현금흐름이 크게 줄었다면 어떤 원인부터 의심하시겠어요?";
     expect(questionCoverage(q, "결산 일정을 앞당겨 월 결산이 7일에서 5일로 줄었습니다.").coverage).toBe(0);
     expect(questionCoverage(q, "매출채권이 늘어 현금흐름이 줄었을 가능성부터 보겠습니다.").coverage).toBeGreaterThan(0);
+  });
+});
+
+describe("isMisconduct", () => {
+  it.each(["꺼지쇼", "닥쳐", "어쩌라고", "아 씨발 뭐래", "저는 결산 업무를 맡았는데 솔직히 존나 힘들었습니다. 그래도 끝까지 마감했습니다."])("%s ends the interview", (a) => {
+    expect(isMisconduct(a, "ko")).toBe(true);
+  });
+  it.each(["서버 전원이 꺼지는 장애가 있었을 때 로그부터 확인했습니다.", "그 경험이 제 진로의 시발점이 되었습니다.", "잘 모르겠습니다", "싫어요"])("%s does not", (a) => {
+    expect(isMisconduct(a, "ko")).toBe(false);
   });
 });

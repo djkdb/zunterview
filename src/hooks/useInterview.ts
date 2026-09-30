@@ -21,7 +21,8 @@ import { buildContext, toAIConfig, toCurrentTurn } from "../utils/context";
 import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
 import { clarifyLine } from "../utils/clarify";
-import { triageAnswer } from "../../shared/answerTriage";
+import { isMisconduct, triageAnswer } from "../../shared/answerTriage";
+import { conductLine, conductReport } from "../utils/conduct";
 import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
 import { clearActiveInterview, saveActiveInterview, saveInterview, type ActiveInterview } from "../utils/storage";
@@ -205,12 +206,12 @@ export function useInterview() {
   );
 
   const complete = useCallback(
-    async (endedEarly: boolean, run: number) => {
+    async (endedEarly: boolean, run: number, terminated?: "conduct") => {
       cancelLine();
       setSpeaking(false);
-      dispatch({ type: "COMPLETE", endedEarly, now: Date.now() });
+      dispatch({ type: "COMPLETE", endedEarly, now: Date.now(), terminated });
       const lang = stateRef.current.interview?.config.language;
-      if (voiceRef.current && stateRef.current.interview?.questions.length) {
+      if (voiceRef.current && stateRef.current.interview?.questions.length && !terminated) {
         void say(lang === "en" ? "That concludes our interview. Thank you for your time." : "이상으로 면접을 마치겠습니다. 수고 많으셨습니다.", run, "center");
       }
       const i = stateRef.current.interview!;
@@ -242,6 +243,7 @@ export function useInterview() {
         report = await mockRef.current.generateFinalReport(req);
         source = "mock";
       }
+      if (terminated) report = { ...report, ...conductReport(i.config.language) };
       await minShow;
       if (runRef.current !== run) return;
       dispatch({ type: "REPORT", report, source });
@@ -255,14 +257,17 @@ export function useInterview() {
       const before = stateRef.current.interview!;
       const ctxBefore = buildContext({ ...before, questions: before.questions.map((x) => (x.id === q.id ? { ...x, answer: null } : x)) });
       const turn = toCurrentTurn(q, answer);
+      const lang = before.config.language;
+      // Swearing or telling the interviewer off ends the interview, as it would in a real one.
+      const misconduct = isMisconduct(answer, lang);
       // Rude, meaningless or refused replies are handled the same way in every mode, without an AI call.
-      const provider = triageAnswer(answer, before.config.language) ? mockRef.current : providerRef.current;
+      const provider = misconduct || triageAnswer(answer, lang) ? mockRef.current : providerRef.current;
       const mainsDone = allMainsAsked(before);
       const forceFollowUp = forceFollowUpRef.current;
       const forceNext = forceNextRef.current;
       forceFollowUpRef.current = false;
       forceNextRef.current = false;
-      const wantFollowUp = !forceNext && (forceFollowUp || canAskFollowUp(before, q));
+      const wantFollowUp = !misconduct && !forceNext && (forceFollowUp || canAskFollowUp(before, q));
       // The last main question is answered and nothing left to dig into → wrap up.
       const last = mainsDone && !wantFollowUp;
       const root = q.parentId ?? q.id;
@@ -275,12 +280,19 @@ export function useInterview() {
         const minThink = delay(1900);
         const analysisP = provider.analyzeAnswer(ctxBefore, turn);
         const followP = wantFollowUp ? provider.generateFollowUp(buildContext(before), turn, threadDepth(before, q)) : null;
-        const mainP = !mainsDone && !wantFollowUp ? nextMainQuestion(before) : null;
+        const mainP = !misconduct && !mainsDone && !wantFollowUp ? nextMainQuestion(before) : null;
         const [analysis, follow, main] = await Promise.all([analysisP, followP, mainP, minThink]);
         if (runRef.current !== run) return;
         dispatch({ type: "ANALYZED", questionId: q.id, analysis, score: answerScore(analysis), source: provider.kind });
 
         const askedBy = seatFor(q.type, q.isFollowUp);
+        if (misconduct) {
+          const line = conductLine(lang);
+          dispatch({ type: "TRANSITION", kind: "CLOSING", text: line });
+          await say(line, run, "center");
+          if (runRef.current === run) await complete(true, run, "conduct");
+          return;
+        }
         if (last) {
           await say(analysis.reaction, run, askedBy);
           if (runRef.current === run) await complete(false, run);

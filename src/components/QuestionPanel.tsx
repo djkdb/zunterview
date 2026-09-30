@@ -18,6 +18,8 @@ interface Props {
   copy: Copy;
   /** Replay the question aloud (shown when speech output exists). */
   onRepeat?: () => void;
+  /** The chair is ending the interview. */
+  closing?: boolean;
 }
 
 function Words({ text, delay = 0 }: { text: string; delay?: number }) {
@@ -59,7 +61,7 @@ function Speaker({ m }: { m: PanelMember }) {
 }
 
 /** Subtitle-style card: who is asking and what. */
-export function QuestionPanel({ question, index, phase, stage, transitionText, speaker, copy, onRepeat }: Props) {
+export function QuestionPanel({ question, index, phase, stage, transitionText, speaker, copy, onRepeat, closing }: Props) {
   const transitioning = phase === "FOLLOW_UP" || phase === "NEXT_QUESTION";
   const analyzing = phase === "ANALYZING";
   const stageIdx = stage === "submitted" ? 0 : stage === "thinking" ? 1 : stage === "analyzing" ? 2 : -1;
@@ -79,7 +81,7 @@ export function QuestionPanel({ question, index, phase, stage, transitionText, s
               }`}
             >
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-current" />
-              {phase === "FOLLOW_UP" ? `이어서 ${copy.followUp}` : copy.nextQuestion}
+              {closing ? copy.interviewEnded : phase === "FOLLOW_UP" ? `이어서 ${copy.followUp}` : copy.nextQuestion}
             </span>
           </motion.div>
         ) : question ? (

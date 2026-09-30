@@ -35,6 +35,8 @@ export interface InterviewState {
   stage: ProcessingStage | null;
   /** Interviewer's reaction line shown between questions. */
   transitionText: string | null;
+  /** The reaction on screen is the chair ending the interview, not a lead-in to another question. */
+  closing?: boolean;
   startedAt: number | null;
   questionStartedAt: number | null;
   error: InterviewError | null;
@@ -49,10 +51,10 @@ export type Action =
   | { type: "SUBMIT"; questionId: string; answer: string; mode: "text" | "voice"; durationSec: number }
   | { type: "STAGE"; stage: ProcessingStage }
   | { type: "ANALYZED"; questionId: string; analysis: AnswerAnalysis; score: number; source: ProviderKind }
-  | { type: "TRANSITION"; kind: "FOLLOW_UP" | "NEXT_QUESTION"; text: string }
+  | { type: "TRANSITION"; kind: "FOLLOW_UP" | "NEXT_QUESTION" | "CLOSING"; text: string }
   | { type: "DROP_CURRENT" }
   | { type: "CLARIFY"; questionId: string; text: string; now: number }
-  | { type: "COMPLETE"; endedEarly: boolean; now: number }
+  | { type: "COMPLETE"; endedEarly: boolean; now: number; terminated?: "conduct" }
   | { type: "REPORT"; report: FinalReport; source: ProviderKind }
   | { type: "FAIL"; error: InterviewError }
   | { type: "RECOVER" }
@@ -144,7 +146,8 @@ export function reducer(state: InterviewState, action: Action): InterviewState {
     }
 
     case "TRANSITION":
-      return { ...state, phase: action.kind, stage: null, transitionText: action.text };
+      if (action.kind === "CLOSING") return { ...state, phase: "NEXT_QUESTION", closing: true, stage: null, transitionText: action.text };
+      return { ...state, phase: action.kind, closing: false, stage: null, transitionText: action.text };
 
     case "CLARIFY": {
       // The candidate asked what the question meant: no answer is recorded, the interviewer explains and asks again.
@@ -170,6 +173,7 @@ export function reducer(state: InterviewState, action: Action): InterviewState {
         ...state.interview,
         questions,
         endedEarly: action.endedEarly,
+        ...(action.terminated ? { terminated: action.terminated } : {}),
         duration: state.startedAt ? Math.round((action.now - state.startedAt) / 1000) : 0,
         overallScore: overallScore(questions),
         categoryScores: categoryAverages(questions),

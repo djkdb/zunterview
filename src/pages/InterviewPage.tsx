@@ -63,13 +63,14 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
 
   // Who is talking: the asker of the current question, or — while reacting — the asker of the last answered one.
   const transitioning = state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION";
-  const speakerSeat: Seat = transitioning && lastAnswered ? seatFor(lastAnswered.type, lastAnswered.isFollowUp) : q ? seatFor(q.type, q.isFollowUp) : "center";
+  const speakerSeat: Seat = state.closing ? "center" : transitioning && lastAnswered ? seatFor(lastAnswered.type, lastAnswered.isFollowUp) : q ? seatFor(q.type, q.isFollowUp) : "center";
   const mode = roomMode(state);
   const now = useNow(state.phase === "LISTENING" && !draft.trim(), 1000);
   const silentFor = state.phase === "LISTENING" && !draft.trim() && state.questionStartedAt ? (now - state.questionStartedAt) / 1000 : 0;
 
-  const statusLine =
-    mode === "asking"
+  const statusLine = state.closing
+    ? `${panel.center.name} ${panel.center.title}이 면접을 중단하고 있습니다`
+    : mode === "asking"
       ? `${panel[speakerSeat].name} ${panel[speakerSeat].title}이 ${transitioning ? "답변에 반응하고 있습니다" : "질문하고 있습니다"}`
       : mode === "listening"
         ? silentFor > 20 && activity === 0
@@ -88,8 +89,10 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   const busyText =
     state.phase === "ANALYZING"
       ? "면접관들이 답변을 검토하고 있습니다"
-      : state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION"
-        ? "다음 질문을 준비하고 있습니다"
+      : state.closing
+        ? "면접을 종료하고 있습니다"
+        : state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION"
+          ? "다음 질문을 준비하고 있습니다"
         : null;
 
   return (
@@ -132,7 +135,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
             {state.phase === "ERROR" && state.error ? (
               <ErrorPanel error={state.error} canUseMock={!fallbackActive && ctl.status?.mode === "ai"} onRetry={actions.retry} onMock={actions.continueWithMock} />
             ) : (
-              <QuestionPanel question={q} index={questionIndex} phase={state.phase} stage={state.stage} transitionText={state.transitionText} speaker={panel[speakerSeat]} copy={copy} onRepeat={isVoiceOutputAvailable() ? actions.repeatQuestion : undefined} />
+              <QuestionPanel question={q} index={questionIndex} phase={state.phase} stage={state.stage} transitionText={state.transitionText} speaker={panel[speakerSeat]} copy={copy} onRepeat={isVoiceOutputAvailable() ? actions.repeatQuestion : undefined} closing={state.closing} />
             )}
             <AnimatePresence>{showLastAnswer && <LastAnswer key={lastAnswered!.id} text={lastAnswered!.answer!} label={copy.yourAnswer} lang={copy.lang} />}</AnimatePresence>
             {ctl.speaking && state.phase === "ASKING" && (

@@ -54,7 +54,7 @@ export type Action =
   | { type: "TRANSITION"; kind: "FOLLOW_UP" | "NEXT_QUESTION" | "CLOSING"; text: string }
   | { type: "DROP_CURRENT" }
   | { type: "CLARIFY"; questionId: string; text: string; now: number }
-  | { type: "COMPLETE"; endedEarly: boolean; now: number; terminated?: "conduct" }
+  | { type: "COMPLETE"; endedEarly: boolean; now: number; terminated?: "conduct" | "informal" }
   | { type: "REPORT"; report: FinalReport; source: ProviderKind }
   | { type: "FAIL"; error: InterviewError }
   | { type: "RECOVER" }

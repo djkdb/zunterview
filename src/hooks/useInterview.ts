@@ -21,7 +21,7 @@ import { buildContext, toAIConfig, toCurrentTurn } from "../utils/context";
 import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
 import { clarifyLine } from "../utils/clarify";
-import { isMisconduct, triageAnswer } from "../../shared/answerTriage";
+import { misconductOf, triageAnswer } from "../../shared/answerTriage";
 import { conductLine, conductReport } from "../utils/conduct";
 import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
@@ -206,7 +206,7 @@ export function useInterview() {
   );
 
   const complete = useCallback(
-    async (endedEarly: boolean, run: number, terminated?: "conduct") => {
+    async (endedEarly: boolean, run: number, terminated?: "conduct" | "informal") => {
       cancelLine();
       setSpeaking(false);
       dispatch({ type: "COMPLETE", endedEarly, now: Date.now(), terminated });
@@ -243,7 +243,7 @@ export function useInterview() {
         report = await mockRef.current.generateFinalReport(req);
         source = "mock";
       }
-      if (terminated) report = { ...report, ...conductReport(i.config.language) };
+      if (terminated) report = { ...report, ...conductReport(i.config.language, terminated) };
       await minShow;
       if (runRef.current !== run) return;
       dispatch({ type: "REPORT", report, source });
@@ -259,7 +259,7 @@ export function useInterview() {
       const turn = toCurrentTurn(q, answer);
       const lang = before.config.language;
       // Swearing or telling the interviewer off ends the interview, as it would in a real one.
-      const misconduct = isMisconduct(answer, lang);
+      const misconduct = misconductOf(answer, lang);
       // Rude, meaningless or refused replies are handled the same way in every mode, without an AI call.
       const provider = misconduct || triageAnswer(answer, lang) ? mockRef.current : providerRef.current;
       const mainsDone = allMainsAsked(before);
@@ -287,10 +287,11 @@ export function useInterview() {
 
         const askedBy = seatFor(q.type, q.isFollowUp);
         if (misconduct) {
-          const line = conductLine(lang);
+          const reason = misconduct === "informal" ? "informal" : "conduct";
+          const line = conductLine(lang, reason);
           dispatch({ type: "TRANSITION", kind: "CLOSING", text: line });
           await say(line, run, "center");
-          if (runRef.current === run) await complete(true, run, "conduct");
+          if (runRef.current === run) await complete(true, run, reason);
           return;
         }
         if (last) {

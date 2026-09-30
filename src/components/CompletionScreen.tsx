@@ -7,7 +7,7 @@ import { getCompany } from "../../shared/companies";
 
 export function CompletionScreen({ interview }: { interview: Interview }) {
   const answered = interview.questions.length;
-  const stopped = interview.terminated === "conduct";
+  const stopped = Boolean(interview.terminated);
   return (
     <div className="fixed inset-0 z-40 flex flex-col bg-bg" role="status" aria-live="polite">
       <div className="w-full border-b border-line bg-[#dfe3e8]">
@@ -24,7 +24,11 @@ export function CompletionScreen({ interview }: { interview: Interview }) {
             {stopped ? "면접이 중단되었습니다" : "면접이 종료되었습니다"}
           </motion.h1>
           <motion.p className="mt-2 text-muted" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-            {stopped ? "면접 자리에 맞지 않는 발언이 있어 더 진행하지 않습니다." : "수고 많으셨습니다. 안녕히 가세요."}
+            {stopped
+              ? interview.terminated === "informal"
+                ? "면접관에게 반말·채팅체로 답해 더 진행하지 않습니다."
+                : "면접 자리에 맞지 않는 발언이 있어 더 진행하지 않습니다."
+              : "수고 많으셨습니다. 안녕히 가세요."}
           </motion.p>
           <motion.div className="mt-6 flex justify-center gap-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
             <span className="text-sm text-muted">

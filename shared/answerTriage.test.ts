@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isMisconduct, questionCoverage, repeatsEarlier, triageAnswer } from "./answerTriage";
+import { isMisconduct, misconductOf, questionCoverage, repeatsEarlier, triageAnswer } from "./answerTriage";
 
 describe("triageAnswer", () => {
   it.each([
@@ -9,8 +9,8 @@ describe("triageAnswer", () => {
     ["네? 저는 지금 얘기한 게 아무 것도 없는데 뭐를 실제 사례를 들어야 되죠?", "clarify"],
     ["꺼지쇼", "hostile"],
     ["아 씨발 뭐래", "hostile"],
-    ["ㅇㅇ", "nonsense"],
-    ["ㅋㅋㅋㅋㅋ", "nonsense"],
+    ["ㅇㅇ", "informal"],
+    ["ㅋㅋㅋㅋㅋ", "informal"],
     ["asdf asdf", "nonsense"],
     ["...", "nonsense"],
     ["싫어요", "refuse"],
@@ -65,5 +65,31 @@ describe("isMisconduct", () => {
   });
   it.each(["서버 전원이 꺼지는 장애가 있었을 때 로그부터 확인했습니다.", "그 경험이 제 진로의 시발점이 되었습니다.", "잘 모르겠습니다", "싫어요"])("%s does not", (a) => {
     expect(isMisconduct(a, "ko")).toBe(false);
+  });
+});
+
+describe("misconductOf — what makes the chair end the interview", () => {
+  it.each(["ㅅㅂ", "ㅂㅅ", "ㅄ", "시1발", "씨.발 몰라", "ㅗ", "어쩔티비", "개소리하네", "미친", "아 존나 어렵네요"])("%s is an insult", (a) => {
+    expect(misconductOf(a, "ko")).toBe("insult");
+  });
+  it.each(["ㅇㅇ", "ㅋㅋㅋ", "싫어", "몰라", "응", "그냥", "왜?", "그냥 했어", "그거 제가 다 했음", "내가 왜 말해야 돼?", "팀 프로젝트였는데 제가 리더였거든. 그래서 다 내가 했어"])("%s is banmal / chat-speak", (a) => {
+    expect(misconductOf(a, "ko")).toBe("informal");
+  });
+  it.each([
+    "싫어요",
+    "잘 모르겠습니다",
+    "네",
+    "3년입니다",
+    "영어",
+    "React",
+    "팀장님이 '빨리 해'라고 하셔서 일정을 다시 짰습니다.",
+    "처음에는 “왜 이렇게 해야 하지?”라고 생각했지만 결국 이해했습니다.",
+    "그 결과 매출이 20% 늘었다. 저는 그 과정에서 데이터를 정리했다.",
+    "제 강점은 끈기입니다. 포기하지 않는 편이거든요.",
+    "그 경험이 제 진로의 시발점이 되었습니다.",
+    "서버 전원이 꺼지는 장애가 있었을 때 로그부터 확인했습니다.",
+    "미친 듯이 노력했다고 말할 수 있을 만큼 준비했습니다.",
+  ])("%s is fine", (a) => {
+    expect(misconductOf(a, "ko")).toBeNull();
   });
 });

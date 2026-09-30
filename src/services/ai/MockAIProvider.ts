@@ -658,7 +658,7 @@ function dodgedQuestion(turn: CurrentTurn, s: Signals): string | null {
 function triagedAnalysis(kind: Exclude<Triage, "clarify">, ctx: InterviewContext, turn: CurrentTurn, seed: number): AnswerAnalysis {
   const lang = ctx.config.language;
   const strict = ctx.config.persona === "strict";
-  const base = kind === "hostile" ? 4 : kind === "nonsense" ? 6 : 10;
+  const base = kind === "hostile" ? 4 : kind === "informal" ? 5 : kind === "nonsense" ? 6 : 10;
   const copy: Record<typeof kind, { reason: Localized; improve: Localized; problem: Localized; suggestion: Localized; example: Localized; reaction: Localized }> = {
     hostile: {
       reason: { ko: "면접에 적절하지 않은 표현으로, 답변 내용이 없습니다.", en: "Inappropriate language; no answer content." },
@@ -669,6 +669,14 @@ function triagedAnalysis(kind: Exclude<Triage, "clarify">, ctx: InterviewContext
       reaction: strict
         ? { ko: "지금 답변은 면접에서 적절하지 않습니다. 다음 질문으로 넘어가겠습니다.", en: "That's not an appropriate answer in an interview. Next question." }
         : { ko: "면접 자리인 만큼 표현은 정중하게 부탁드립니다. 다음 질문으로 넘어가겠습니다.", en: "This is an interview, so please keep it polite. Let's move on." },
+    },
+    informal: {
+      reason: { ko: "면접관에게 반말이나 채팅체로 답해 답변으로 평가할 수 없습니다.", en: "Answered the panel in an overly casual register." },
+      improve: { ko: "면접에서는 짧은 대답이라도 '네, ~입니다', '잘 모르겠습니다'처럼 존댓말로 답해야 합니다. 반말이나 'ㅇㅇ' 같은 채팅체는 그 자체로 탈락 사유가 됩니다.", en: "Answer in a polite register even when brief — casual or chat-style replies alone can end an interview." },
+      problem: { ko: "반말·채팅체 답변", en: "Casual, chat-style reply" },
+      suggestion: { ko: "짧게 답하더라도 존댓말로, 결론 한 문장부터 말하기", en: "Even when brief, answer politely with a one-sentence conclusion" },
+      example: { ko: "“네, 저는 [결론]이라고 생각합니다. 예를 들어 [경험]에서 …”", en: "“Yes — I think [conclusion]. For example, in [experience] …”" },
+      reaction: { ko: "면접 자리에서 반말이나 채팅체로 답하시는 건 적절하지 않습니다.", en: "That's not an appropriate way to answer in an interview." },
     },
     nonsense: {
       reason: { ko: "의미 있는 답변 내용이 없습니다.", en: "No meaningful answer content." },
@@ -695,7 +703,7 @@ function triagedAnalysis(kind: Exclude<Triage, "clarify">, ctx: InterviewContext
   const missing = (ko: string, en: string): StarPart => ({ status: "missing", note: L(lang, ko, en) });
   return sanitizeAnalysis(
     {
-      quality: kind === "refuse" || kind === "nonsense" ? "insufficient" : "off_topic",
+      quality: kind === "hostile" || kind === "informal" ? "off_topic" : "insufficient",
       scores,
       star: {
         applicable: false,

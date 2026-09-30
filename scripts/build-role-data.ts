@@ -104,7 +104,8 @@ const domainOfRole = (id: string) => familyById.get(roleById.get(id)!.family)!.d
 /* ─────────────────────────────── raw files ──────────────────────────── */
 
 const rawFiles = readdirSync(RAW)
-  .filter((f) => /^(?:b\d+.*|common)\.json$/.test(f))
+  // b*: batch research (profiles + questions) · s*: sourcing supplements · common: every role
+  .filter((f) => /^(?:[bs]\d+.*|common)\.json$/.test(f))
   .sort();
 
 const PAID = [/happycampus/i, /reportworld/i, /happyhaksul/i, /welldone/i, /allreport/i, ...(curation.dropSourcesEverywhere ?? []).map((d) => new RegExp(d.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"))];
@@ -367,7 +368,10 @@ const relevant = candidates.filter((c) => {
 
 // Order: common first, then broader scopes, so the specific rewording is the one dropped.
 const RANK: Record<string, number> = { common: 0, domain: 1, family: 2, role: 3 };
-relevant.sort((a, b) => RANK[a.scope.split(":")[0]] - RANK[b.scope.split(":")[0]]);
+// Within a scope, sourced questions go first: when a practice question and a sourced one mean
+// the same thing, the sourced one is kept.
+const SOURCED = (c: Candidate) => (c.basis === "공개후기" || c.basis === "공식자료" || c.basis === "공고기반" ? 0 : 1);
+relevant.sort((a, b) => RANK[a.scope.split(":")[0]] - RANK[b.scope.split(":")[0]] || SOURCED(a) - SOURCED(b));
 
 /** Visibility keys: a question competes only with questions the same role could also be asked. */
 function visibility(scope: string): { own: string; sees: string[] } {

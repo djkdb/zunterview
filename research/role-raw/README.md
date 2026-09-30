@@ -9,6 +9,9 @@ research/role-raw/
   taxonomy.json      domain → family → role skeleton (ids are fixed)
   common.json        questions for every role (scope "common")
   b01*.json … b12*.json   role profiles + family/role questions, one batch of domains each
+  s01*.json … s11*.json   sourcing supplements: only sourced questions (공개후기/공식자료/공고기반) for
+                          roles that had few; no profiles. When one means the same as an existing
+                          practice question, the sourced one is kept.
 research/role-curation.json   manual review applied on top (drop / reclassify)
 ```
 

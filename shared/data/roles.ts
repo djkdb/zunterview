@@ -163,21 +163,21 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "데이터·AI",
    "nameEn": "Data & AI",
    "group": "it",
-   "q": 222
+   "q": 185
   },
   {
    "id": "infra",
    "name": "보안·인프라·클라우드",
    "nameEn": "Security, Infrastructure & Cloud",
    "group": "it",
-   "q": 213
+   "q": 190
   },
   {
    "id": "game",
    "name": "게임",
    "nameEn": "Games",
    "group": "it",
-   "q": 134
+   "q": 121
   },
   {
    "id": "design",
@@ -644,7 +644,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Data",
    "dept": "데이터팀",
    "archetype": "data_analytic",
-   "q": 92
+   "q": 77
   },
   {
    "id": "ai",
@@ -653,7 +653,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "AI & Machine Learning",
    "dept": "AI연구소",
    "archetype": "tech_dev",
-   "q": 130
+   "q": 108
   },
   {
    "id": "infra",
@@ -662,7 +662,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Infrastructure & Cloud",
    "dept": "인프라팀",
    "archetype": "tech_dev",
-   "q": 151
+   "q": 128
   },
   {
    "id": "security",
@@ -680,7 +680,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Game Development",
    "dept": "게임개발팀",
    "archetype": "tech_dev",
-   "q": 68
+   "q": 61
   },
   {
    "id": "game_business",
@@ -689,7 +689,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Game Design & Business",
    "dept": "게임사업팀",
    "archetype": "product_planning",
-   "q": 66
+   "q": 60
   },
   {
    "id": "digital_design",
@@ -2580,7 +2580,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Product Analyst",
     "데이터 애널"
    ],
-   "q": 23
+   "q": 17
   },
   {
    "id": "bi_analyst",
@@ -2596,7 +2596,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Business Intelligence Analyst",
     "Reporting Analyst"
    ],
-   "q": 20
+   "q": 16
   },
   {
    "id": "data_scientist",
@@ -2610,7 +2610,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "DS",
     "Applied Scientist"
    ],
-   "q": 18
+   "q": 16
   },
   {
    "id": "data_engineer",
@@ -2626,7 +2626,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "빅데이터 엔지니어",
     "Data Platform Engineer"
    ],
-   "q": 22
+   "q": 16
   },
   {
    "id": "ml_engineer",
@@ -2642,7 +2642,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "MLOps 엔지니어",
     "ML Engineer"
    ],
-   "q": 20
+   "q": 16
   },
   {
    "id": "ai_engineer",
@@ -2660,7 +2660,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Applied AI Engineer",
     "인공지능 엔지니어"
    ],
-   "q": 22
+   "q": 16
   },
   {
    "id": "ai_researcher",
@@ -2692,7 +2692,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "AI PO",
     "AI Product Owner"
    ],
-   "q": 22
+   "q": 16
   },
   {
    "id": "devops",
@@ -2709,7 +2709,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "배포 엔지니어",
     "CI/CD 엔지니어"
    ],
-   "q": 21
+   "q": 17
   },
   {
    "id": "sre",
@@ -2723,7 +2723,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "서비스 운영 엔지니어",
     "프로덕션 엔지니어"
    ],
-   "q": 22
+   "q": 17
   },
   {
    "id": "cloud_engineer",
@@ -2740,7 +2740,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "MSP 엔지니어",
     "클라우드 운영"
    ],
-   "q": 20
+   "q": 15
   },
   {
    "id": "system_engineer",
@@ -2773,7 +2773,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "NE",
     "네트워크 운영"
    ],
-   "q": 21
+   "q": 17
   },
   {
    "id": "dba",
@@ -2788,7 +2788,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "데이터베이스 엔지니어",
     "DB 운영"
    ],
-   "q": 22
+   "q": 17
   },
   {
    "id": "security_engineer",
@@ -2840,7 +2840,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "게임 프로그래머",
     "콘텐츠 프로그래머"
    ],
-   "q": 20
+   "q": 17
   },
   {
    "id": "game_server",
@@ -2856,7 +2856,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "라이브 서버 개발",
     "백엔드(게임)"
    ],
-   "q": 20
+   "q": 16
   },
   {
    "id": "game_designer",
@@ -2892,7 +2892,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "게임 사업",
     "퍼블리싱 PM"
    ],
-   "q": 22
+   "q": 16
   },
   {
    "id": "ux_designer",
@@ -5299,16 +5299,16 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
   "roles": 256,
   "domains": 51,
   "families": 72,
-  "questions": 6892,
+  "questions": 6819,
   "commonQuestions": 383,
   "byBasis": {
-   "공개후기": 293,
-   "공식자료": 461,
-   "공고기반": 50,
+   "공개후기": 268,
+   "공식자료": 452,
+   "공고기반": 11,
    "직무기반": 5761,
    "일반면접": 327
   },
-  "sources": 185,
+  "sources": 152,
   "generatedAt": "2026-09-30"
  }
 };

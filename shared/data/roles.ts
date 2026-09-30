@@ -163,21 +163,21 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "데이터·AI",
    "nameEn": "Data & AI",
    "group": "it",
-   "q": 185
+   "q": 222
   },
   {
    "id": "infra",
    "name": "보안·인프라·클라우드",
    "nameEn": "Security, Infrastructure & Cloud",
    "group": "it",
-   "q": 190
+   "q": 213
   },
   {
    "id": "game",
    "name": "게임",
    "nameEn": "Games",
    "group": "it",
-   "q": 121
+   "q": 134
   },
   {
    "id": "design",
@@ -408,7 +408,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "기타 전문직",
    "nameEn": "Other Professions",
    "group": "etc",
-   "q": 154
+   "q": 197
   }
  ],
  "families": [
@@ -644,7 +644,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Data",
    "dept": "데이터팀",
    "archetype": "data_analytic",
-   "q": 77
+   "q": 92
   },
   {
    "id": "ai",
@@ -653,7 +653,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "AI & Machine Learning",
    "dept": "AI연구소",
    "archetype": "tech_dev",
-   "q": 108
+   "q": 130
   },
   {
    "id": "infra",
@@ -662,7 +662,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Infrastructure & Cloud",
    "dept": "인프라팀",
    "archetype": "tech_dev",
-   "q": 128
+   "q": 151
   },
   {
    "id": "security",
@@ -680,7 +680,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Game Development",
    "dept": "게임개발팀",
    "archetype": "tech_dev",
-   "q": 61
+   "q": 68
   },
   {
    "id": "game_business",
@@ -689,7 +689,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Game Design & Business",
    "dept": "게임사업팀",
    "archetype": "product_planning",
-   "q": 60
+   "q": 66
   },
   {
    "id": "digital_design",
@@ -1049,7 +1049,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Licensed Professions",
    "dept": "전문위원",
    "archetype": "legal_compliance",
-   "q": 94
+   "q": 124
   },
   {
    "id": "language_realestate",
@@ -1058,7 +1058,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Translation & Real Estate",
    "dept": "전문위원",
    "archetype": "media_content",
-   "q": 60
+   "q": 73
   }
  ],
  "roles": [
@@ -2580,7 +2580,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Product Analyst",
     "데이터 애널"
    ],
-   "q": 17
+   "q": 23
   },
   {
    "id": "bi_analyst",
@@ -2596,7 +2596,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Business Intelligence Analyst",
     "Reporting Analyst"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "data_scientist",
@@ -2610,7 +2610,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "DS",
     "Applied Scientist"
    ],
-   "q": 16
+   "q": 18
   },
   {
    "id": "data_engineer",
@@ -2626,7 +2626,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "빅데이터 엔지니어",
     "Data Platform Engineer"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "ml_engineer",
@@ -2642,7 +2642,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "MLOps 엔지니어",
     "ML Engineer"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "ai_engineer",
@@ -2660,7 +2660,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Applied AI Engineer",
     "인공지능 엔지니어"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "ai_researcher",
@@ -2692,7 +2692,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "AI PO",
     "AI Product Owner"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "devops",
@@ -2709,7 +2709,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "배포 엔지니어",
     "CI/CD 엔지니어"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "sre",
@@ -2723,7 +2723,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "서비스 운영 엔지니어",
     "프로덕션 엔지니어"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "cloud_engineer",
@@ -2740,7 +2740,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "MSP 엔지니어",
     "클라우드 운영"
    ],
-   "q": 15
+   "q": 20
   },
   {
    "id": "system_engineer",
@@ -2773,7 +2773,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "NE",
     "네트워크 운영"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "dba",
@@ -2788,7 +2788,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "데이터베이스 엔지니어",
     "DB 운영"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "security_engineer",
@@ -2840,7 +2840,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "게임 프로그래머",
     "콘텐츠 프로그래머"
    ],
-   "q": 17
+   "q": 20
   },
   {
    "id": "game_server",
@@ -2856,7 +2856,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "라이브 서버 개발",
     "백엔드(게임)"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "game_designer",
@@ -2892,7 +2892,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "게임 사업",
     "퍼블리싱 PM"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "ux_designer",
@@ -5212,7 +5212,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Labor Attorney",
     "Certified Public Labor Attorney"
    ],
-   "q": 17
+   "q": 26
   },
   {
    "id": "customs_broker",
@@ -5227,7 +5227,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Licensed Customs Broker",
     "Customs Specialist"
    ],
-   "q": 17
+   "q": 25
   },
   {
    "id": "patent_attorney",
@@ -5242,7 +5242,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "수습 변리사",
     "Patent Agent"
    ],
-   "q": 16
+   "q": 23
   },
   {
    "id": "appraiser",
@@ -5257,7 +5257,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Real Estate Appraiser",
     "Appraiser"
    ],
-   "q": 16
+   "q": 22
   },
   {
    "id": "translator",
@@ -5275,7 +5275,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Translator",
     "Interpreter"
    ],
-   "q": 17
+   "q": 24
   },
   {
    "id": "real_estate_manager",
@@ -5292,23 +5292,23 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Property Manager",
     "Property Management Specialist"
    ],
-   "q": 16
+   "q": 22
   }
  ],
  "stats": {
   "roles": 256,
   "domains": 51,
   "families": 72,
-  "questions": 6819,
+  "questions": 6935,
   "commonQuestions": 383,
   "byBasis": {
-   "공개후기": 268,
-   "공식자료": 452,
-   "공고기반": 11,
-   "직무기반": 5761,
+   "공개후기": 295,
+   "공식자료": 480,
+   "공고기반": 67,
+   "직무기반": 5766,
    "일반면접": 327
   },
-  "sources": 152,
+  "sources": 197,
   "generatedAt": "2026-09-30"
  }
 };

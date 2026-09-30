@@ -1,0 +1,562 @@
+{
+  "batch": "s11",
+  "sources": [
+    {
+      "id": "s11s1",
+      "title": "한국공인노무사회 — 공인노무사 직무의 범위(공인노무사법 제2조)",
+      "url": "https://www.kcplaa.or.kr/labor/wage",
+      "type": "job_description"
+    },
+    {
+      "id": "s11s2",
+      "title": "노무법인 산재보상 업무 공인노무사 채용공고(한국공인노무사회 구인게시판)",
+      "url": "https://www.kcplaa.or.kr/worker/view/22783?scd=1",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s11s3",
+      "title": "외자기업 대상 인사노무 자문 경력 노무사 채용공고(한국공인노무사회 구인게시판)",
+      "url": "https://www.kcplaa.or.kr/worker/view/22782?scd=1",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s11s4",
+      "title": "노무법인 경력 노무사 채용공고 — 인사노무 자문·HR 컨설팅·단체교섭(한국공인노무사회 구인게시판)",
+      "url": "https://www.kcplaa.or.kr/worker/view/22788?scd=1",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s11s5",
+      "title": "한국관세사회 — 관세사의 직무(관세사법 제2조)와 관세사가 하는 일",
+      "url": "https://krcaa.or.kr/_Document/Intro/I10201V.aspx?MenuCode=I10201",
+      "type": "job_description"
+    },
+    {
+      "id": "s11s6",
+      "title": "관세무역 연구기관 연구직(관세사) 채용공고 — 관세리스크 점검 컨설팅 우대, 계량 분석",
+      "url": "https://www.kctdi.or.kr/kctdi/inform/inform07.do?mode=view&articleNo=5544&article.offset=0&articleLimit=10",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s11s7",
+      "title": "링커리어 합격후기 — 특허법률사무소 변리사 취업·면접 후기",
+      "url": "https://community.linkareer.com/final_review/4115394",
+      "type": "interview_review"
+    },
+    {
+      "id": "s11s8",
+      "title": "사내 변리사 채용공고 — 명세서 검토·OA 대응·FTO·회피설계(대한변리사회 구인정보)",
+      "url": "https://www.kpaa.or.kr/kpaa/info/readJobOfferView.do?seq=26777&srch_job_type=9",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s11s9",
+      "title": "바이오 기업 사내 변리사 채용공고 — 발명 발굴·해외 출원·포트폴리오(대한변리사회 구인정보)",
+      "url": "https://www.kpaa.or.kr/kpaa/info/readJobOfferView.do?seq=26774&srch_job_type=9",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s11s10",
+      "title": "한국감정평가사협회 — 감정평가 업무 소개(수행 직무)",
+      "url": "https://www.kapanet.or.kr/about/business_introduction.asp",
+      "type": "job_description"
+    },
+    {
+      "id": "s11s11",
+      "title": "사람인 면접후기 — 감정평가법인 면접(부동산 법률 지식 질문, 사무직 지원자)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/5165/(%EC%A3%BC)%EB%8C%80%ED%95%9C%EA%B0%90%EC%A0%95%ED%8F%89%EA%B0%80%EB%B2%95%EC%9D%B8-%EB%A9%B4%EC%A0%91-%ED%9B%84%EA%B8%B0",
+      "type": "interview_review",
+      "year": 2018
+    },
+    {
+      "id": "s11s12",
+      "title": "게임잡 취업·면접후기 — 게임사 로컬라이제이션 직군 번역 테스트·실무 면접",
+      "url": "https://www.gamejob.co.kr/Community/Talk/Detail?talk_Stat=13&idx=33505",
+      "type": "interview_review",
+      "year": 2020
+    },
+    {
+      "id": "s11s13",
+      "title": "정부 부처 영문 통·번역 전문관 채용 공고 — 주요 직무·필요 역량(정책브리핑 채용정보)",
+      "url": "https://www.korea.kr/archive/recruitInfoView.do?dataId=243976",
+      "type": "official_recruitment",
+      "year": 2018
+    },
+    {
+      "id": "s11s14",
+      "title": "오피스 PM 담당자 채용공고 — 임대차·정산·MR·리츠 자산관리",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=55090558&rec_seq=0",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s11s15",
+      "title": "건물 운영 PM 채용공고 — 임대관리·민원·시설·협력업체·PMS 데이터",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=55021554&rec_seq=0",
+      "type": "job_description",
+      "year": 2026
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "근로자를 대리해 관계 기관에 권리 구제를 신청할 때 신청서에 꼭 담아야 할 내용은 무엇이라고 보시나요?",
+      "scope": "role:labor_attorney",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s1",
+      "confidence": "high"
+    },
+    {
+      "text": "국민연금이나 건강보험 관련 처분에 이의가 있는 의뢰인을 대리한다면 어떻게 준비하시겠어요?",
+      "scope": "role:labor_attorney",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s1",
+      "confidence": "high"
+    },
+    {
+      "text": "노사 분쟁에서 사적 조정인으로 선임된다면 양쪽의 신뢰를 얻기 위해 무엇을 하시겠어요?",
+      "scope": "role:labor_attorney",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s1",
+      "confidence": "high"
+    },
+    {
+      "text": "노무관리진단을 마치고 사업주에게 개선 사항을 보고할 때 우선순위를 어떻게 정하시겠어요?",
+      "scope": "role:labor_attorney",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s1",
+      "confidence": "high"
+    },
+    {
+      "text": "노무 상담 중 사업주가 법 위반 소지가 있는 운영 방식을 고집한다면 어떻게 지도하시겠어요?",
+      "scope": "role:labor_attorney",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s1",
+      "confidence": "high"
+    },
+    {
+      "text": "산재로 힘든 시기를 보내는 근로자에게 복잡한 보상 절차를 어떻게 안내하고 신뢰를 얻으시겠어요?",
+      "scope": "role:labor_attorney",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s2",
+      "confidence": "high"
+    },
+    {
+      "text": "외국계 기업 인사 담당자에게 국내 해고 규제를 설명해야 한다면 어떤 점을 중심으로 풀어 가시겠어요?",
+      "scope": "role:labor_attorney",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "hard",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공고기반",
+      "src": "s11s3",
+      "confidence": "high"
+    },
+    {
+      "text": "본인이 작성한 의견서 하나를 골라 어떤 논리로 결론을 이끌어 냈는지 설명해 주세요.",
+      "scope": "role:labor_attorney",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공고기반",
+      "src": "s11s4",
+      "confidence": "high"
+    },
+    {
+      "text": "인사평가나 보상 제도 개편 컨설팅을 맡으면 현황 진단을 어떻게 시작하시겠어요?",
+      "scope": "role:labor_attorney",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공고기반",
+      "src": "s11s4",
+      "confidence": "high"
+    },
+    {
+      "text": "수출용 원재료에 대한 관세 환급을 대리한다면 어떤 서류와 요건부터 확인하시겠어요?",
+      "scope": "role:customs_broker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s5",
+      "confidence": "high"
+    },
+    {
+      "text": "세관 조사에 의뢰인 측 대리인으로 입회하게 되면 조사 전에 무엇을 준비하시겠어요?",
+      "scope": "role:customs_broker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s5",
+      "confidence": "high"
+    },
+    {
+      "text": "세관 처분에 불복해 심사청구를 대리한다면 청구서를 어떤 논리 구조로 작성하시겠어요?",
+      "scope": "role:customs_broker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s5",
+      "confidence": "high"
+    },
+    {
+      "text": "수입자가 신고 세액을 스스로 점검하는 자율심사를 도울 때 어떤 항목을 중점적으로 보시겠어요?",
+      "scope": "role:customs_broker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s5",
+      "confidence": "high"
+    },
+    {
+      "text": "의뢰받은 물품이 국민 건강이나 안전을 해칠 수 있다는 의심이 들면 어떻게 판단하고 행동하시겠어요?",
+      "scope": "role:customs_broker",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s5",
+      "confidence": "high"
+    },
+    {
+      "text": "수출입 신고를 앞둔 의뢰인이 절차를 물어올 때 상담에서 꼭 확인하는 사항은 무엇인가요?",
+      "scope": "role:customs_broker",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공식자료",
+      "src": "s11s5",
+      "confidence": "high"
+    },
+    {
+      "text": "통관 실무 경험이 기업의 관세 리스크 점검 컨설팅에 어떻게 도움이 된다고 보시나요?",
+      "scope": "role:customs_broker",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s6",
+      "confidence": "high"
+    },
+    {
+      "text": "품목별 수입 데이터를 분석해 관세 정책의 영향을 살펴본다면 어떤 방식으로 접근하시겠어요?",
+      "scope": "role:customs_broker",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공고기반",
+      "src": "s11s6",
+      "confidence": "high"
+    },
+    {
+      "text": "전공 수업에서 배운 과목 중 특허 실무에 도움이 될 만한 것을 소개해 주세요.",
+      "scope": "role:patent_attorney",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "s11s7",
+      "confidence": "high"
+    },
+    {
+      "text": "해외 대리인과 영어로 연락할 일이 많은데, 영어로 업무 소통은 어느 정도 가능하신가요?",
+      "scope": "role:patent_attorney",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s11s7",
+      "confidence": "high"
+    },
+    {
+      "text": "신제품 출시 전에 FTO 조사를 의뢰받으면 어떤 범위부터 검토하시겠어요?",
+      "scope": "role:patent_attorney",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공고기반",
+      "src": "s11s8",
+      "confidence": "high"
+    },
+    {
+      "text": "경쟁사 특허를 피하는 회피설계를 연구 부서에 제안한다면 어떻게 설명하시겠어요?",
+      "scope": "role:patent_attorney",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s8",
+      "confidence": "high"
+    },
+    {
+      "text": "같은 발명에 대해 여러 나라 특허청의 거절이유에 대응해야 할 때 국가별 차이를 어떻게 관리하시겠어요?",
+      "scope": "role:patent_attorney",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공고기반",
+      "src": "s11s8",
+      "confidence": "high"
+    },
+    {
+      "text": "연구원들이 발명이라고 생각하지 못한 성과에서 특허거리를 발굴하려면 어떻게 접근하시겠어요?",
+      "scope": "role:patent_attorney",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s9",
+      "confidence": "high"
+    },
+    {
+      "text": "해외 특허법인에 중간사건 대응을 맡길 때 기한과 품질을 어떻게 관리하시겠어요?",
+      "scope": "role:patent_attorney",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s9",
+      "confidence": "high"
+    },
+    {
+      "text": "금융기관의 담보 목적 평가를 맡으면 일반 시가 평가와 비교해 어떤 점을 더 신중히 보시겠어요?",
+      "scope": "role:appraiser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s10",
+      "confidence": "high"
+    },
+    {
+      "text": "표준지 공시지가를 조사·평가할 때 인근 지역과의 가격 균형을 어떻게 검토하시겠어요?",
+      "scope": "role:appraiser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s10",
+      "confidence": "high"
+    },
+    {
+      "text": "기업 자산 재평가에서 기계기구처럼 부동산이 아닌 자산은 어떻게 평가에 접근하시겠어요?",
+      "scope": "role:appraiser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s10",
+      "confidence": "high"
+    },
+    {
+      "text": "국토계획법상 제도 중 토지 가치에 특히 큰 영향을 주는 것을 하나 골라 설명해 주세요.",
+      "scope": "role:appraiser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s11s11",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 주거지역이라도 종 세분에 따라 토지 가치 판단이 어떻게 달라진다고 보시나요?",
+      "scope": "role:appraiser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s11s11",
+      "confidence": "medium"
+    },
+    {
+      "text": "물권 가운데 하나를 골라 감정평가 실무에서 왜 중요한지 말씀해 주세요.",
+      "scope": "role:appraiser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "s11s11",
+      "confidence": "medium"
+    },
+    {
+      "text": "장관급 인사의 면담을 통역한다면 일반 실무 회의 통역과 비교해 무엇을 더 준비하시겠어요?",
+      "scope": "role:translator",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s13",
+      "confidence": "high"
+    },
+    {
+      "text": "기관 명의의 영문 서한을 작성할 때 격식과 명확성을 어떻게 함께 챙기시나요?",
+      "scope": "role:translator",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s13",
+      "confidence": "high"
+    },
+    {
+      "text": "무역협정이나 양해각서 같은 약정 문서를 번역할 때 용어의 정확성을 어떻게 확보하시겠어요?",
+      "scope": "role:translator",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s11s13",
+      "confidence": "high"
+    },
+    {
+      "text": "통역 중 예상치 못한 상황이 벌어졌을 때 순발력 있게 대처했던 경험을 말씀해 주세요.",
+      "scope": "role:translator",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s13",
+      "confidence": "high"
+    },
+    {
+      "text": "공적 회의를 통역하면서 알게 된 민감한 내용을 다룰 때 어떤 원칙을 지키시겠어요?",
+      "scope": "role:translator",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s11s13",
+      "confidence": "high"
+    },
+    {
+      "text": "게임이나 콘텐츠의 로컬라이제이션은 단순 번역과 어떻게 다르다고 생각하시나요?",
+      "scope": "role:translator",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s11s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "이전에 맡았던 번역 일을 의뢰부터 납품까지 어떤 과정으로 진행했는지 설명해 주세요.",
+      "scope": "role:translator",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s11s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "연간 관리비 정산 결과를 두고 임차인이 부과 기준을 문제 삼으면 어떻게 설명하시겠어요?",
+      "scope": "role:real_estate_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s14",
+      "confidence": "high"
+    },
+    {
+      "text": "리츠나 펀드가 소유한 건물을 관리할 때 보고와 의사결정 방식이 어떻게 달라진다고 보시나요?",
+      "scope": "role:real_estate_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공고기반",
+      "src": "s11s14",
+      "confidence": "high"
+    },
+    {
+      "text": "리테일이나 F&B 임차인이 많은 건물은 오피스 건물과 비교해 무엇을 더 관리해야 한다고 보시나요?",
+      "scope": "role:real_estate_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s14",
+      "confidence": "high"
+    },
+    {
+      "text": "누수 신고, 주차설비 고장, 임차인 민원이 한꺼번에 들어오면 무엇부터 처리하시겠어요?",
+      "scope": "role:real_estate_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s15",
+      "confidence": "high"
+    },
+    {
+      "text": "같은 민원이 반복된다면 운영 기록을 어떻게 활용해 재발을 막으시겠어요?",
+      "scope": "role:real_estate_manager",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s11s15",
+      "confidence": "high"
+    },
+    {
+      "text": "수리 업체 견적이 여러 개 들어왔을 때 비용과 효과를 어떻게 비교해 고르시나요?",
+      "scope": "role:real_estate_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공고기반",
+      "src": "s11s15",
+      "confidence": "high"
+    }
+  ]
+}

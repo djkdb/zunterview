@@ -119,6 +119,14 @@
     {
       "urlIncludes": "saramin.co.kr/career-information/job-interview-view",
       "why": "practitioner job interview (career article), not a candidate report"
+    },
+    {
+      "urlIncludes": "saramin.co.kr/zf_user/interview-review/detail/idx/5165",
+      "why": "review of an office-clerk application at an appraisal firm, not an appraiser interview"
+    },
+    {
+      "urlIncludes": "gamejob.co.kr/Community/Talk/Detail?talk_Stat=13&idx=33505",
+      "why": "game-localization PM review, not a translator interview"
     }
   ]
 }

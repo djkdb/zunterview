@@ -204,7 +204,7 @@ const server = createServer(async (req, res) => {
       return res.end(audio);
     } catch (err) {
       const status = err instanceof TtsError ? err.status : 502;
-      console.warn(`[tts] failed (${status}) ${Date.now() - started}ms`);
+      console.warn(`[tts] failed (${status}) ${Date.now() - started}ms — ${err instanceof Error ? err.message : "unknown error"}`);
       return send(res, status, { error: "tts_failed" });
     }
   }

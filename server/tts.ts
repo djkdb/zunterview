@@ -81,7 +81,11 @@ export async function synthesize(text: string, voice: Voice, speed?: number): Pr
   } finally {
     clearTimeout(timer);
   }
-  if (!res.ok) throw new TtsError(res.status === 401 || res.status === 402 ? 503 : 502, `Fish Audio error ${res.status}`);
+  if (!res.ok) {
+    // Fish's error body says why (bad key, no API credit, unknown voice…); logged server-side only.
+    const detail = (await res.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 200);
+    throw new TtsError(res.status === 401 || res.status === 402 ? 503 : 502, `Fish Audio ${res.status}${detail ? `: ${detail}` : ""}`);
+  }
   const audio = Buffer.from(await res.arrayBuffer());
   if (!audio.length) throw new TtsError(502, "Fish Audio returned no audio");
   remember(key, audio);

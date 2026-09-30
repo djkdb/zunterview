@@ -74,6 +74,7 @@ FISH_VOICE_STAFF=<호명하는 안내 직원>   # 선택
 
 - 음성 모델 ID는 fish.audio에서 원하는 목소리 페이지 URL의 ID(또는 직접 클론한 모델 ID)입니다.
 - 브라우저 → `/api/tts` → Fish Audio 순서로 호출하며, 최근 음성은 서버에 캐시되어 "질문 다시 듣기"는 추가 비용이 없습니다.
+- API 호출은 fish.audio 웹 앱의 크레딧과 **별도인 API 크레딧**을 씁니다([Developers](https://fish.audio/app/developers)에서 충전). 크레딧이 없거나 키가 틀리면 서버 로그에 `[tts] failed (503) … Fish Audio 402: Insufficient API credit…`처럼 이유가 남고, 브라우저는 자동으로 내장 음성으로 읽습니다.
 - Fish Audio 호출이 실패(네트워크·잔액 부족 등)하면 자동으로 브라우저 음성으로 이어서 말합니다.
 
 ### 프로덕션

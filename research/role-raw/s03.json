@@ -1,0 +1,720 @@
+{
+  "batch": "s03",
+  "sources": [
+    {
+      "id": "s03s1",
+      "title": "문과 SCM 구매 직무 취준일기 면접편 1탄 — 배터리 제조사 SCM 직무 원데이면접 후기 (네이버 블로그)",
+      "url": "https://m.blog.naver.com/9cloud99/224384651787",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "s03s2",
+      "title": "문과 SCM 구매 직무 취준일기 면접편 2탄 — 완성차 통합구매 직무면접 후기 (네이버 블로그)",
+      "url": "https://m.blog.naver.com/9cloud99/224395313513",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "s03s3",
+      "title": "GS네트웍스 센터운영담당 1차·최종면접 후기 (네이버 블로그)",
+      "url": "https://m.blog.naver.com/wkd3373/223359068385",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "s03s4",
+      "title": "대기업 종합상사 해외영업 및 물류 취업 후기 — 직무·PT면접 복기 (네이버 블로그)",
+      "url": "https://m.blog.naver.com/agreesin/224298938933",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "s03s5",
+      "title": "면접 후기 3: OTT 서비스 기획(Product Manager) 경력 면접 (네이버 블로그)",
+      "url": "https://m.blog.naver.com/22gori/224186266869",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "s03s6",
+      "title": "대기업에서 IT 스타트업 PO 경력직 이직 면접 후기, 면접 질문 공유 (네이버 블로그)",
+      "url": "https://m.blog.naver.com/jyakeun/223329500126",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "s03s7",
+      "title": "SSD 컨트롤러 기업 펌웨어 엔지니어 지원 후기 — 원데이 PT 면접 (네이버 블로그)",
+      "url": "https://m.blog.naver.com/bell3621/224354814074",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "s03s8",
+      "title": "코레일로지스 NCS 직무기술서 — 운송사무(SCM·QM/QC·물류관리) (알리오 공시 첨부)",
+      "url": "https://www.alio.go.kr/download/download.json?fileNo=2618481",
+      "type": "job_description",
+      "year": 2021
+    },
+    {
+      "id": "s03s9",
+      "title": "CJ그룹 채용 직무정보 — CJ푸드빌 SCM",
+      "url": "https://recruit.cj.net/recruit/ko/recruit/job_inside/job_preview_view.fo?company=B40&job_fm_cd=A&job_fn_cd=0045",
+      "type": "official_recruitment",
+      "year": 2026
+    },
+    {
+      "id": "s03s10",
+      "title": "CJ그룹 채용 직무정보 — CJ푸드빌 물류기획",
+      "url": "https://recruit.cj.net/recruit/ko/recruit/job_inside/job_preview_view.fo?company=B40&job_fm_cd=A&job_fn_cd=5589",
+      "type": "official_recruitment",
+      "year": 2026
+    },
+    {
+      "id": "s03s11",
+      "title": "CJ그룹 채용 직무정보 — CJ대한통운 W&D(물류센터·수송 운영)",
+      "url": "https://recruit.cj.net/recruit/ko/recruit/job_inside/job_preview_view.fo?company=C53&business_unit=&job_fm_cd=V&job_fn_cd=6663&recruit_yn=",
+      "type": "official_recruitment",
+      "year": 2026
+    },
+    {
+      "id": "s03s12",
+      "title": "CJ그룹 채용 직무정보 — CJ제일제당 구매",
+      "url": "https://recruit.cj.net/recruit/ko/recruit/job_inside/job_preview_view.fo?company=B10&business_unit=&job_fm_cd=A&job_fn_cd=0040&recruit_yn=",
+      "type": "official_recruitment",
+      "year": 2026
+    },
+    {
+      "id": "s03s13",
+      "title": "삼양그룹 채용 직무소개 — 구매",
+      "url": "https://www.samyang.com/kr/careers/job-introduction/purchase",
+      "type": "official_recruitment",
+      "year": 2026
+    },
+    {
+      "id": "s03s14",
+      "title": "부천시 공공기관 통합채용 NCS기반 직무기술서 — 부천문화재단 전산운영(IT기술지원·IT프로젝트관리)",
+      "url": "https://www.best.or.kr/File/d9a957124babb84600d48bd1c01f0e8a",
+      "type": "job_description",
+      "year": 2026
+    },
+    {
+      "id": "s03s15",
+      "title": "한국공항공사 NCS기반 채용 직무 설명자료 — 임베디드SW 개발 (알리오 공시 첨부)",
+      "url": "https://alio.go.kr/download/download.json?fileNo=2819528",
+      "type": "job_description",
+      "year": 2023
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "단가 협상 자리에서 협력사는 무엇을 가장 지키고 싶어 한다고 보세요?",
+      "scope": "role:purchaser",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s03s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "플랜트 공사나 설비 수선 공사를 구매할 때는 업체를 어떤 기준으로 선정하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s13",
+      "confidence": "high"
+    },
+    {
+      "text": "해외에서 직접 수입한 원료가 입고되기까지 구매 담당자가 챙겨야 할 절차는 무엇인가요?",
+      "scope": "role:purchaser",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s13",
+      "confidence": "high"
+    },
+    {
+      "text": "처음 접하는 설비 기자재의 구매 요청을 받으면 사양과 시세를 어떻게 파악하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s13",
+      "confidence": "high"
+    },
+    {
+      "text": "협력사에 우리 쪽 요구 조건을 오해 없이 전달하려면 어떻게 소통하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s03s13",
+      "confidence": "high"
+    },
+    {
+      "text": "구매가 가치사슬의 출발점이라는 말을 어떻게 이해하고 계신지 말씀해 주세요.",
+      "scope": "role:purchaser",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s03s13",
+      "confidence": "high"
+    },
+    {
+      "text": "공급처를 고를 때 가격과 품질을 각각 몇 퍼센트 비중으로 둘지 근거와 함께 말씀해 주세요.",
+      "scope": "role:strategic_sourcing",
+      "category": "의사결정",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s03s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사와 기간을 정해 계약하자고 제안한다면 그 기간은 어떤 근거로 정하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s03s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "새로 거래할 협력사의 재무 안정성은 어떤 자료로 확인하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s12",
+      "confidence": "high"
+    },
+    {
+      "text": "구매 담당자가 파악한 시장 흐름을 제품 기획에 연결한다면 어떤 제안을 할 수 있을까요?",
+      "scope": "role:strategic_sourcing",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s12",
+      "confidence": "high"
+    },
+    {
+      "text": "공급 안정성을 높이려 할 때 재고를 더 확보하는 것과 공급처를 늘리는 것 중 무엇을 먼저 검토하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s03s12",
+      "confidence": "high"
+    },
+    {
+      "text": "협력사와 상생하면서도 공정거래 원칙을 지키려면 어떤 점을 경계해야 할까요?",
+      "scope": "role:strategic_sourcing",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s12",
+      "confidence": "high"
+    },
+    {
+      "text": "공급망을 계획, 조달, 생산, 배송 단계로 나눠 본다면 단계마다 무엇을 관리해야 할까요?",
+      "scope": "family:scm",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s8",
+      "confidence": "high"
+    },
+    {
+      "text": "물류 업무에서 정확성과 신속성이 부딪치면 어느 쪽을 먼저 챙기시겠어요?",
+      "scope": "family:scm",
+      "category": "가치관",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s8",
+      "confidence": "high"
+    },
+    {
+      "text": "공급망 성과를 비용 말고 고객이나 업무 프로세스 관점에서도 본다면 무엇을 측정하시겠어요?",
+      "scope": "family:scm",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s03s8",
+      "confidence": "high"
+    },
+    {
+      "text": "변동이 큰 산업에서 공급망 불확실성을 줄이려면 어떤 방안을 제시하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s03s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "학회나 팀 프로젝트에서 공급망 문제를 직접 분석해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:scm_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "s03s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매·공급 계획을 실행한 뒤에는 무엇을 추적해서 계획 수정 시점을 판단하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s9",
+      "confidence": "high"
+    },
+    {
+      "text": "고객 주문부터 납품까지의 리드타임을 줄이려면 어느 구간부터 들여다보시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s9",
+      "confidence": "high"
+    },
+    {
+      "text": "SCM 담당자로서 생산 현장이나 협력업체를 방문한다면 무엇을 확인하고 오시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s03s9",
+      "confidence": "high"
+    },
+    {
+      "text": "재고, 반품, 결품, 폐기 손실 가운데 무엇부터 줄일지 어떻게 판단하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s9",
+      "confidence": "high"
+    },
+    {
+      "text": "원재료 국제 시세가 급변하면 수급 계획에서 무엇부터 다시 보시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s9",
+      "confidence": "high"
+    },
+    {
+      "text": "신제품 출시를 앞두고 생산, 주문, 구매 수량을 맞추려면 누구와 무엇을 조율하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s9",
+      "confidence": "high"
+    },
+    {
+      "text": "유통기한이 짧아 폐기 위험이 큰 품목은 수급 계획을 어떻게 다르게 세우시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s03s9",
+      "confidence": "high"
+    },
+    {
+      "text": "분쟁 때문에 유럽으로 가는 운송 경로가 막힌다면 어떤 대체 방안을 제시하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s03s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "학생 입장에서도 실행해 볼 수 있는 물류비 절감 방안을 하나 말씀해 주세요.",
+      "scope": "role:logistics_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "s03s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "화물 특성에 따라 포장, 하역, 운송 방법을 어떻게 다르게 정하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s8",
+      "confidence": "high"
+    },
+    {
+      "text": "운송 수단별 원가를 비교한다면 어떤 비용 항목을 넣어 계산하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s8",
+      "confidence": "high"
+    },
+    {
+      "text": "철도와 트럭을 이어 쓰는 연계 운송에서 가장 신경 써야 할 부분은 무엇인가요?",
+      "scope": "role:logistics_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s8",
+      "confidence": "high"
+    },
+    {
+      "text": "매일 배차를 짤 때 차량 대수와 배송 경로는 어떤 순서로 정하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s10",
+      "confidence": "high"
+    },
+    {
+      "text": "물류센터 운영 담당자가 하루 동안 실제로 하는 일을 아는 대로 말씀해 주세요.",
+      "scope": "role:warehouse_ops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "s03s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 생각하는 물류 전문가는 어떤 사람인가요?",
+      "scope": "role:warehouse_ops",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s03s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "센터에 등록된 상품 기준정보가 틀려 있으면 현장에서 어떤 문제가 생길까요?",
+      "scope": "role:warehouse_ops",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s10",
+      "confidence": "high"
+    },
+    {
+      "text": "점포 반품과 클레임이 한꺼번에 몰려 들어오면 센터에서 어떻게 처리하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s10",
+      "confidence": "high"
+    },
+    {
+      "text": "고객사 물류센터 운영을 새로 맡게 되면 현재 운영 수준을 어떻게 진단하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "문제해결",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공식자료",
+      "src": "s03s11",
+      "confidence": "high"
+    },
+    {
+      "text": "화물을 쌓아 보관할 때 안전과 공간 효율을 위해 어떤 원칙을 지키시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s8",
+      "confidence": "high"
+    },
+    {
+      "text": "같은 문의가 반복된다면 사용자용 매뉴얼을 어떻게 만들어 대응하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "기술지원 요청이 한꺼번에 여러 건 들어오면 처리 순서를 어떻게 정하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "정기 점검을 나가면 PC와 네트워크, 백업 상태에서 무엇을 확인하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "장애를 처리한 뒤 처리 이력과 보고서에는 무엇을 꼭 남기시겠어요?",
+      "scope": "role:tech_support",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "답답해하는 사용자의 문제를 끝까지 책임지고 해결했던 경험을 말씀해 주세요.",
+      "scope": "role:tech_support",
+      "category": "고객",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "다른 산업에서 일하다 새 서비스로 오면 사용자 특성 차이를 어떻게 파악하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "고객",
+      "type": "analytical",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "s03s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "데이터를 읽고 해석하는 역량을 실제 업무에서 어떻게 보여 주셨는지 말씀해 주세요.",
+      "scope": "role:product_manager",
+      "category": "데이터",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s03s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획 업무에 AI 도구를 어떻게 활용하고 계신지 말씀해 주세요.",
+      "scope": "role:product_manager",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s03s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "제안하신 서비스를 고객이 돈을 내고 써야 하는 이유는 무엇인가요?",
+      "scope": "role:product_owner",
+      "category": "고객",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s03s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "새 서비스의 가격을 정할 때 어떤 기준으로 정하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s03s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "시장을 먼저 차지한 경쟁사가 가격을 더 내리면 우리 서비스는 무엇으로 경쟁하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "경쟁",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s03s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획안에 넣은 시장 규모 수치는 어떤 근거로 잡으셨는지 말씀해 주세요.",
+      "scope": "role:product_owner",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s03s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "외부 업체가 만든 산출물이 제대로 동작하는지 인수 전에 어떻게 검증하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "IT 사업을 발주할 때 계약과 조달 단계에서 PM이 꼭 챙길 것은 무엇인가요?",
+      "scope": "role:project_manager_it",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "하도급이 섞인 공동 수행 프로젝트에서 역할과 책임을 어떻게 나누시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "프로젝트 팀원 간 갈등이 일정에 영향을 주기 시작하면 어떻게 하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s14",
+      "confidence": "high"
+    },
+    {
+      "text": "부트로더를 직접 구현한다면 어떤 기능부터 넣으시겠어요?",
+      "scope": "role:embedded_sw",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s03s15",
+      "confidence": "high"
+    },
+    {
+      "text": "처음 보는 운영체제 커널 소스를 분석해야 한다면 어디서부터 읽어 나가시겠어요?",
+      "scope": "role:embedded_sw",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s15",
+      "confidence": "high"
+    },
+    {
+      "text": "디바이스 드라이버 코드를 인스펙션할 때 특히 무엇을 살펴보시나요?",
+      "scope": "role:embedded_sw",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s15",
+      "confidence": "high"
+    },
+    {
+      "text": "새 보드가 나왔을 때 하드웨어 테스트용 펌웨어로 무엇을 먼저 검증하시겠어요?",
+      "scope": "role:embedded_sw",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s03s15",
+      "confidence": "high"
+    },
+    {
+      "text": "진행하신 펌웨어 프로젝트에서 그 기능이 왜 필요했는지 설계 배경부터 말씀해 주세요.",
+      "scope": "role:embedded_sw",
+      "category": "경험",
+      "type": "deep_dive",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s03s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "지금과 비슷한 펌웨어 업무를 하게 되는데도 옮기려는 이유는 무엇인가요?",
+      "scope": "role:embedded_sw",
+      "category": "지원동기",
+      "type": "challenge",
+      "difficulty": "hard",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "s03s7",
+      "confidence": "medium"
+    }
+  ]
+}

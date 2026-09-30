@@ -15,7 +15,7 @@
 질문 → 답변 → AI 분석 → 꼬리질문(Follow-up) → 다시 답변 → 다음 질문 → … → 종합 리포트
 ```
 
-- **면접장 연출**: 대기실(모의면접 수험표) → 호명("지원번호 ○○번 지원자님, 입실해 주세요") → 문이 열리며 입실 → 면접위원장의 인사로 시작. 면접실에는 긴 책상, 명패, 생수병, 벽시계(실제 시간), 회사 스크린이 있고, 질문 유형에 따라 면접관이 번갈아 질문합니다(기술 질문은 실무 면접관, 성찰·인성은 인사 면접관). 질문 중인 면접관은 입이 움직이고, 답변 검토 중에는 모두 평가표에 필기합니다.
+- **면접장 연출**: 대기실(모의면접 수험표) → 호명("지원번호 ○○번 지원자님, 입실해 주세요") → 문이 열리며 입실 → 면접위원장의 인사로 시작. 면접실은 실사 회의실 사진에 면접관 3인의 포즈 사진을 합성한 장면이고(벽 스크린에 회사명, 책상 위 명패), 질문 유형에 따라 면접관이 번갈아 질문합니다(기술 질문은 실무 면접관, 성찰·인성은 인사 면접관). 면접관은 상태에 따라 포즈가 바뀝니다 — 질문할 때는 손짓하며 말하고, 답변을 들을 때는 생각하는 자세, 검토 중에는 평가표에 필기하거나 서류를 봅니다. 면접실 높이가 낮아져도 얼굴이 잘리지 않도록 보이는 영역을 조정합니다. `?panel=svg`로 일러스트 버전 면접실을 볼 수 있습니다.
 - **전 직무 면접**: 직무를 검색(한글·영어·약어 — "FE", "HRD", "BM", "데이터 애널")하거나 분야 → 직무로 고르면, 그 직무의 프로필(핵심 역량·업무·주제)과 **면접 설계도(blueprint)**에 맞춰 질문이 구성됩니다. 회계는 결산·재무제표·내부통제, 마케팅은 캠페인·KPI·퍼널, 간호는 환자안전·상황대응, 생산관리는 계획·납기·품질을 묻고, 회계·간호 같은 직무에는 개발자 기술 질문이 나오지 않습니다. 목록에 없는 직무("방송 기술감독")도 가장 가까운 분야를 추정해 질문하고(AI 모드에서는 AI가 연습용 직무 프로필을 추론), "사무직"처럼 넓은 입력에는 "어떤 업무에 가까운가요?"로 되묻습니다.
 - **기업별 모의면접 (54곳, 질문 1,547개)**: 대기업·IT·금융·공기업·공공기관·병원(서울대병원·서울아산병원) 등. 기업마다 인재상, 면접 전형, 준비 팁, 직무 트랙별 연습 질문과 출처를 제공합니다. 기업을 고르면 **기업 질문(지원동기·인재상·조직적합성) + 직무 질문 + JD**를 조합해 면접합니다. 기업 선택은 선택 사항입니다.
 - **질문 출처 표시**: "공개후기 기반"(공개 면접 후기를 연습용으로 재구성) · "공식자료 기반"(인재상·직무기술서·NCS) · "공고기반" · "직무기반"(직무 특성으로 만든 연습 질문). 어떤 질문도 "기출"로 표시하지 않습니다.
@@ -164,12 +164,13 @@ server/                 API 레이어 (비밀키 보관)
   claude.ts             Anthropic SDK · beta.messages.parse + JSON schema 구조화 출력
   prompts/              questionPrompt · followupPrompt · analysisPrompt · reportPrompt · rolePrompt · common
 scripts/                build-role-data.ts · validate-data.ts · build-company-data.mjs
+                        build-panel-photos.py — assets/panel 포즈 시트 → public/panel/<seat>/<state>-<n>.webp
 src/
   services/ai/          AIProvider 인터페이스 · RealAIProvider · MockAIProvider · providerFactory
   services/speech/      speechRecognition · speechSynthesis
   state/                interviewMachine.ts — 단일 reducer 상태 머신
   hooks/                useInterview(오케스트레이터) · useTimer · useVoiceInput · useMediaQuery
-  components/           InterviewRoom(면접실 SVG) · QuestionPanel · AnswerInput · InterviewNotes
+  components/           InterviewRoom(면접실: 사진 합성 / SVG 일러스트) · QuestionPanel · AnswerInput · InterviewNotes
                         IntroSequence(대기실·호명·입실) · ScoreRing · ScoreChart · Stamp · FeedbackCard · DebugPanel …
   config/               panel(면접관 3인·좌석 배정) · labelsKo(한국어 라벨·등급) · copy · options
   pages/                Landing · Setup · Interview · Result · History

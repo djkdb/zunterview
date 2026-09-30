@@ -5,6 +5,9 @@
  *
  * The interviewer who asks the current question talks; while answers are
  * reviewed the whole panel looks down and writes on the evaluation sheet.
+ *
+ * Two scenes: the photographed room and panel (PhotoScene) when every seat has
+ * photos, otherwise the drawn room with SVG figures.
  */
 import { memo, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useReducedMotion } from "framer-motion";
@@ -31,17 +34,23 @@ interface Props {
 const SEAT_X: Record<Seat, number> = { left: 330, center: 600, right: 870 };
 const DESK_Y = 372;
 const SCENE = { width: 1200, height: 520 };
-/** Just above the tallest hair. However short the room gets, the crop never starts below this. */
-const FACE_TOP = 136;
-/** Eye line: a band too thin for whole heads is centred here, so it shows eyes to chin rather than hair. */
-const EYE_Y = 208;
+/**
+ * Where the faces are in each scene. `top`: just above the tallest hair — however short the room
+ * gets, the crop never starts below it. `eyes`: a band too thin for whole heads is centred here, so
+ * it shows eyes to chin rather than hair.
+ */
+interface FaceBand {
+  top: number;
+  eyes: number;
+}
+const DRAWN_FACES: FaceBand = { top: 136, eyes: 208 };
 
 /**
  * The part of the scene to show for the element's size. Wider than the scene: the full width and a
  * horizontal band — bottom-anchored (or centred), but never cutting into the heads; the name plates
  * go first. Taller (phones): the full height, cropped at the sides by preserveAspectRatio.
  */
-function useViewBox(anchor: "bottom" | "center") {
+function useViewBox(anchor: "bottom" | "center", faces: FaceBand) {
   const ref = useRef<SVGSVGElement>(null);
   const [size, setSize] = useState<{ w: number; h: number } | null>(null);
   useLayoutEffect(() => {
@@ -56,14 +65,13 @@ function useViewBox(anchor: "bottom" | "center") {
   const visible = size && size.w > 0 ? (SCENE.width * size.h) / size.w : SCENE.height;
   if (visible >= SCENE.height) return { ref, viewBox: `0 0 ${SCENE.width} ${SCENE.height}` };
   const spare = SCENE.height - visible;
-  const y = visible < 2 * (EYE_Y - FACE_TOP) ? EYE_Y - visible / 2 : Math.min(anchor === "center" ? spare / 2 : spare, FACE_TOP);
+  const y = visible < 2 * (faces.eyes - faces.top) ? faces.eyes - visible / 2 : Math.min(anchor === "center" ? spare / 2 : spare, faces.top);
   return { ref, viewBox: `0 ${y.toFixed(1)} ${SCENE.width} ${visible.toFixed(1)}` };
 }
 
 export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel = "제2면접실", companyName, anchor = "bottom", className = "" }: Props) {
   const [photos] = useState(photosEnabled);
-  const { ref, viewBox } = useViewBox(anchor);
-  const photoSeat = (seat: Seat) => photos && PANEL_PHOTOS[seat] !== undefined;
+  const { ref, viewBox } = useViewBox(anchor, photos ? PHOTO_FACES : DRAWN_FACES);
   return (
     <svg
       ref={ref}
@@ -75,6 +83,10 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
         mode === "asking" && speaking ? `${panel[speaking].name} ${panel[speaking].title}이 질문하고 있습니다.` : mode === "reviewing" ? "면접관들이 답변을 검토하고 있습니다." : ""
       }`}
     >
+      {photos ? (
+        <PhotoScene panel={panel} speaking={speaking} mode={mode} activity={activity} roomLabel={roomLabel} companyName={companyName} />
+      ) : (
+      <>
       <defs>
         <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#eef1f4" />
@@ -147,15 +159,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
       </g>
 
       {/* ── panel (behind the desk) ─────────────────────────── */}
-      {(["left", "center", "right"] as Seat[]).map((seat, i) =>
-        photoSeat(seat) ? (
-          <PhotoInterviewer
-            key={seat}
-            seat={seat}
-            state={mode === "asking" && speaking === seat ? "talk" : mode === "reviewing" ? "review" : mode === "listening" && activity > 0 && seat !== "center" ? "think" : "idle"}
-            offset={i}
-          />
-        ) : (
+      {(["left", "center", "right"] as Seat[]).map((seat, i) => (
         <InterviewerBody
           key={seat}
           x={SEAT_X[seat]}
@@ -165,8 +169,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
           nodding={mode === "listening" && (activity > 0 ? seat !== "right" || i % 2 === 0 : seat === "center")}
           nodDelay={i * 0.9}
         />
-        ),
-      )}
+      ))}
 
       {/* ── desk ─────────────────────────────────────────── */}
       <path d={`M36 ${DESK_Y} L1164 ${DESK_Y} L1196 ${DESK_Y + 32} L4 ${DESK_Y + 32} Z`} fill="url(#deskTop)" />
@@ -179,7 +182,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
         <rect x="-10" y="7" width="20" height="3" fill="#1b3a6b" opacity="0.5" />
       </g>
       {(["left", "center", "right"] as Seat[]).map((seat) => (
-        <DeskItems key={seat} x={SEAT_X[seat]} writing={mode === "reviewing"} member={panel[seat]} photo={photoSeat(seat)} />
+        <DeskItems key={seat} x={SEAT_X[seat]} writing={mode === "reviewing"} member={panel[seat]} />
       ))}
 
       {/* desk front panel + name plates */}
@@ -196,14 +199,9 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
         <NamePlate key={seat} x={SEAT_X[seat]} member={panel[seat]} active={mode === "asking" && speaking === seat} />
       ))}
 
-      {/* speech bubble over the interviewer who is talking */}
-      {mode === "asking" && speaking && (
-        <g transform={photoSeat(speaking) ? `translate(${SEAT_X[speaking] + 74} ${DESK_Y - 214})` : `translate(${SEAT_X[speaking] + 44} ${DESK_Y - 232})`}>
-          <path d="M0 0 h58 a10 10 0 0 1 10 10 v18 a10 10 0 0 1 -10 10 h-40 l-14 12 l2 -12 h-6 a10 10 0 0 1 -10 -10 v-18 a10 10 0 0 1 10 -10 z" fill="#ffffff" stroke="#1b3a6b" strokeOpacity="0.35" />
-          {[0, 1, 2].map((d) => (
-            <circle key={d} cx={18 + d * 14} cy="19" r="4" fill="#1b3a6b" className="iv-part" style={{ animation: `iv-dot 1s ease-in-out ${d * 0.15}s infinite` }} />
-          ))}
-        </g>
+      {/* speech bubble beside the interviewer who is talking */}
+      {mode === "asking" && speaking && <SpeechBubble x={SEAT_X[speaking] + 44} y={DESK_Y - 232} />}
+      </>
       )}
     </svg>
   );
@@ -399,10 +397,64 @@ function InterviewerBody({ x, member, talking, reviewing, nodding, nodDelay }: {
   );
 }
 
+/* ─────────────────────────── photographed panel ─────────────────────────── */
+
+/**
+ * The photo room (public/panel/room.webp, drawn at 1200x520): three chairs behind a wooden desk
+ * whose far edge is at PHOTO_DESK_Y. The room is drawn twice — whole, then only the desk on top —
+ * so the interviewers sit in the chairs behind the desk.
+ */
+const ROOM_SRC = "/panel/room.webp";
+const PHOTO_SEAT_X: Record<Seat, number> = { left: 316, center: 600, right: 886 };
+const PHOTO_DESK_Y = 414;
+/** Frame width in scene units: shoulders about as wide as the chair backs. */
+const PHOTO_W = 240;
+const PHOTO_H = (PHOTO_W * PHOTO_BOX.height) / PHOTO_BOX.width;
+const PHOTO_TOP = PHOTO_DESK_Y + 4 - PHOTO_H;
+const PHOTO_FACES: FaceBand = { top: PHOTO_TOP - 4, eyes: PHOTO_TOP + 52 };
 /** How long each frame holds, per state (ms). Talking changes gesture often; listening barely moves. */
 const HOLD: Record<PhotoState, number> = { talk: 2300, review: 3400, think: 4200, idle: 6500 };
-const PHOTO_W = 300;
-const PHOTO_H = (PHOTO_W * PHOTO_BOX.height) / PHOTO_BOX.width;
+
+function PhotoScene({ panel, speaking, mode, activity, roomLabel, companyName }: Required<Pick<Props, "panel" | "speaking" | "mode" | "activity" | "roomLabel">> & Pick<Props, "companyName">) {
+  return (
+    <>
+      <defs>
+        <clipPath id="photo-desk">
+          <rect x="0" y={PHOTO_DESK_Y} width={SCENE.width} height={SCENE.height - PHOTO_DESK_Y} />
+        </clipPath>
+      </defs>
+      <image href={ROOM_SRC} width={SCENE.width} height={SCENE.height} preserveAspectRatio="none" />
+
+      {/* the wall display */}
+      <text x="601" y="170" textAnchor="middle" fill="#e9edf5" fontSize="22" fontFamily="JetBrains Mono, monospace" letterSpacing="3" opacity="0.92">
+        INTERVIEW<tspan fill="#7fa6e0">//</tspan>AI
+      </text>
+      <text x="601" y="196" textAnchor="middle" fill="#9fb0c9" fontSize="14" fontFamily="Pretendard Variable, sans-serif" opacity="0.92">
+        {companyName ? `${companyName} 모의면접` : "모의면접"} · {roomLabel}
+      </text>
+
+      {(["left", "center", "right"] as Seat[]).map((seat, i) => (
+        <PhotoInterviewer
+          key={seat}
+          seat={seat}
+          state={mode === "asking" && speaking === seat ? "talk" : mode === "reviewing" ? "review" : mode === "listening" && activity > 0 && seat !== "center" ? "think" : "idle"}
+          offset={i}
+        />
+      ))}
+
+      <image href={ROOM_SRC} width={SCENE.width} height={SCENE.height} preserveAspectRatio="none" clipPath="url(#photo-desk)" />
+      {/* contact shadow where the panel meets the desk */}
+      <rect x="0" y={PHOTO_DESK_Y} width={SCENE.width} height="5" fill="#000" opacity="0.12" />
+
+      {(["left", "center", "right"] as Seat[]).map((seat) => (
+        <g key={seat} transform={`translate(${PHOTO_SEAT_X[seat]} ${PHOTO_DESK_Y + 12}) scale(0.86) translate(${-PHOTO_SEAT_X[seat]} 0)`}>
+          <NamePlate x={PHOTO_SEAT_X[seat]} y={0} member={panel[seat]} active={mode === "asking" && speaking === seat} />
+        </g>
+      ))}
+      {mode === "asking" && speaking && <SpeechBubble x={PHOTO_SEAT_X[speaking] + 56} y={PHOTO_TOP + 10} />}
+    </>
+  );
+}
 
 /** A photographed interviewer: cross-fades between pose frames for the current state. */
 function PhotoInterviewer({ seat, state, offset }: { seat: Seat; state: PhotoState; offset: number }) {
@@ -417,9 +469,7 @@ function PhotoInterviewer({ seat, state, offset }: { seat: Seat; state: PhotoSta
   const active = tick % set[state];
   const states = Object.keys(set) as PhotoState[];
   return (
-    <g transform={`translate(${SEAT_X[seat] - PHOTO_W / 2} ${DESK_Y + 4 - PHOTO_H})`}>
-      {/* chair back behind the shoulders */}
-      <path d={`M${PHOTO_W / 2 - 70} ${PHOTO_H} L${PHOTO_W / 2 - 70} ${PHOTO_H - 250} C${PHOTO_W / 2 - 70} ${PHOTO_H - 268} ${PHOTO_W / 2 - 58} ${PHOTO_H - 278} ${PHOTO_W / 2 - 40} ${PHOTO_H - 278} L${PHOTO_W / 2 + 40} ${PHOTO_H - 278} C${PHOTO_W / 2 + 58} ${PHOTO_H - 278} ${PHOTO_W / 2 + 70} ${PHOTO_H - 268} ${PHOTO_W / 2 + 70} ${PHOTO_H - 250} L${PHOTO_W / 2 + 70} ${PHOTO_H} Z`} fill="#23272e" />
+    <g transform={`translate(${PHOTO_SEAT_X[seat] - PHOTO_W / 2} ${PHOTO_TOP})`}>
       {states.flatMap((st) =>
         Array.from({ length: set[st] }, (_, n) => (
           <image
@@ -436,7 +486,18 @@ function PhotoInterviewer({ seat, state, offset }: { seat: Seat; state: PhotoSta
   );
 }
 
-function DeskItems({ x, writing, member, photo }: { x: number; writing: boolean; member: PanelMember; photo: boolean }) {
+function SpeechBubble({ x, y }: { x: number; y: number }) {
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <path d="M0 0 h58 a10 10 0 0 1 10 10 v18 a10 10 0 0 1 -10 10 h-40 l-14 12 l2 -12 h-6 a10 10 0 0 1 -10 -10 v-18 a10 10 0 0 1 10 -10 z" fill="#ffffff" stroke="#1b3a6b" strokeOpacity="0.35" />
+      {[0, 1, 2].map((d) => (
+        <circle key={d} cx={18 + d * 14} cy="19" r="4" fill="#1b3a6b" className="iv-part" style={{ animation: `iv-dot 1s ease-in-out ${d * 0.15}s infinite` }} />
+      ))}
+    </g>
+  );
+}
+
+function DeskItems({ x, writing, member }: { x: number; writing: boolean; member: PanelMember }) {
   const { look } = member;
   return (
     <g transform={`translate(${x} ${DESK_Y})`}>
@@ -445,8 +506,6 @@ function DeskItems({ x, writing, member, photo }: { x: number; writing: boolean;
       {[10, 15, 20].map((y) => (
         <line key={y} x1={-36 - (y - 4) * 0.2} y1={y} x2={30 + (y - 4) * 0.2} y2={y} stroke="#9aa3b5" strokeWidth="1" opacity="0.6" />
       ))}
-      {!photo && (
-        <>
       {/* sleeves resting on the desk */}
       <g transform={member.look.hairStyle === "bob" ? "scale(0.93 1)" : undefined}>
         <path d="M-60 -119 C-78 -114 -87 -103 -88 -80 C-91 -44 -92 -6 -80 8 C-70 16 -58 20 -45 20 L-41 5 C-52 1 -60 -9 -63 -30 C-66 -58 -66 -92 -60 -119 Z" fill={look.suit} />
@@ -469,8 +528,6 @@ function DeskItems({ x, writing, member, photo }: { x: number; writing: boolean;
         <path d="M22 9 C18 8 16 12 19 14 C21 15 24 13 22 9 Z" fill={look.skin} />
         <path d="M22 9 C18 8 16 12 19 14" stroke="#000" strokeOpacity="0.14" strokeWidth="0.9" fill="none" />
       </g>
-        </>
-      )}
       {/* water bottle */}
       <g transform="translate(92 0)">
         <rect x="-9" y="-40" width="18" height="52" rx="6" fill="#dbeaf5" opacity="0.85" stroke="#b9cfe0" />
@@ -481,9 +538,9 @@ function DeskItems({ x, writing, member, photo }: { x: number; writing: boolean;
   );
 }
 
-function NamePlate({ x, member, active }: { x: number; member: PanelMember; active: boolean }) {
+function NamePlate({ x, y = DESK_Y + 44, member, active }: { x: number; y?: number; member: PanelMember; active: boolean }) {
   return (
-    <g transform={`translate(${x} ${DESK_Y + 44})`}>
+    <g transform={`translate(${x} ${y})`}>
       <rect x="-70" y="0" width="140" height="44" rx="3" fill="#ffffff" stroke={active ? "#1b3a6b" : "#c3cad3"} strokeWidth={active ? 2 : 1} />
       <rect x="-70" y="0" width="140" height="5" rx="2" fill={active ? "#1b3a6b" : "#8a94a3"} />
       <text x="0" y="20" textAnchor="middle" fontSize="11" fill="#6b6f7a" fontFamily="Pretendard Variable, sans-serif">

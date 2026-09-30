@@ -2,9 +2,8 @@
  * Photo frames for the interview panel, cut from pose sheets by
  * scripts/build-panel-photos.py (see assets/panel/frames.json).
  *
- * The room shows photos only once every seat has a set — a photo next to a
- * drawn figure looks wrong — and falls back to the SVG figures otherwise.
- * `?panel=photo` previews whatever photos exist; `?panel=svg` forces the drawings.
+ * With a set for every seat the room is the photographed one (public/panel/room.webp);
+ * otherwise, or with `?panel=svg`, it is the drawn room with SVG figures.
  */
 import type { Seat } from "./panel";
 
@@ -26,8 +25,6 @@ export function photoSrc(seat: Seat, state: PhotoState, n: number): string {
 }
 
 export function photosEnabled(): boolean {
-  const param = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("panel") : null;
-  if (param === "svg") return false;
-  if (param === "photo") return true;
+  if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("panel") === "svg") return false;
   return (["left", "center", "right"] as Seat[]).every((s) => PANEL_PHOTOS[s]);
 }

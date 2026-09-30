@@ -186,7 +186,7 @@ export function readSignals(text: string, question: string, lang: Language): Sig
       result: count(t, /결과|개선되|줄었|줄였|감소|증가|향상|달성|단축|성과|절감|올랐|올렸|마쳤|완료했|해냈|성공했|끝냈|수상|합격|result|reduced|increased|improved|achieved|saved|faster|decreased|grew|cut|completed|delivered|won/gi),
     },
     questionOverlap: bigramOverlap(question, t),
-    dontKnow: t.replace(/\s/g, "").length < 60 && /잘\s?모르|모르겠|기억이\s?(?:잘\s?)?안|패스|넘어가겠|해\s?본\s?적(?:이)?\s?없|경험이\s?없|don'?t know|not sure|no idea|\bpass\b|\bskip\b/i.test(t),
+    dontKnow: t.replace(/\s/g, "").length < 60 && /잘\s?모르|모르겠|몰라|모릅니다|모름|기억이\s?(?:잘\s?)?안|패스|넘어가겠|해\s?본\s?적(?:이)?\s?없|경험이\s?없|don'?t know|not sure|no idea|\bpass\b|\bskip\b/i.test(t),
     roleClaim: roleClaimPhrase(t),
     project: projectPhrase(t),
     metric: (t.match(/\d+(?:[.,]\d+)?\s?(?:%|퍼센트|배|초|ms|분|시간|명|개|건|만\s?건|만\s?명|만|천|x|times|users|percent)/i)?.[0] ?? "").trim(),

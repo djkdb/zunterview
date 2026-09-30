@@ -122,6 +122,12 @@ function concepts(q: string): Concepts {
   return { canon, words, frame: frameOf(q) };
 }
 
+/** Content words of any text (particles, endings and filler words stripped) plus synonym concepts. */
+export function contentTerms(text: string): { canon: Set<string>; words: Set<string> } {
+  const { canon, words } = concepts(text);
+  return { canon, words };
+}
+
 /** Canonical concept tokens + other content words + frame for a question. */
 export function conceptTokens(q: string): Set<string> {
   const c = concepts(q);

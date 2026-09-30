@@ -33,6 +33,8 @@ export interface InterviewQuestion {
   anchor?: string;
   /** Spoken lead-in before the question (reaction to the previous answer). */
   reaction?: string;
+  /** The candidate asked what the question meant and the interviewer explained it (once per question). */
+  clarified?: boolean;
   askedAt: number;
   answer: string | null;
   answerMode?: "text" | "voice";

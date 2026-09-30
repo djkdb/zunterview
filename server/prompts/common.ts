@@ -70,7 +70,7 @@ export async function describeCompany(config: AIConfig, opts: { asked?: string[]
   const c = getCompany(config.companyId);
   if (!c) return "";
   const asked = opts.asked ?? [];
-  const fresh = questionsForTrack(await loadCompanyQuestions(c.id), config.companyTrack).filter((q) => !asked.some((a) => isNearDuplicate(a, q.text)));
+  const fresh = questionsForTrack(await loadCompanyQuestions(c.id), config.companyTrack).filter((q) => !(asked.length && /자기\s?소개/.test(q.text)) && !asked.some((a) => isNearDuplicate(a, q.text)));
   const bucket = opts.next ? TYPE_BUCKET[opts.next] : null;
   const ordered = bucket ? [...fresh.filter((q) => COMPANY_BUCKET[q.category] === bucket), ...fresh.filter((q) => COMPANY_BUCKET[q.category] !== bucket)] : fresh;
   const qs = ordered.slice(0, opts.max ?? 14);

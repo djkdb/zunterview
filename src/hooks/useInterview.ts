@@ -20,6 +20,8 @@ import type { Interview, InterviewConfig, InterviewQuestion, ProviderKind, Quest
 import { buildContext, toAIConfig, toCurrentTurn } from "../utils/context";
 import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
+import { clarifyLine } from "../utils/clarify";
+import { triageAnswer } from "../../shared/answerTriage";
 import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
 import { clearActiveInterview, saveActiveInterview, saveInterview, type ActiveInterview } from "../utils/storage";
@@ -253,7 +255,8 @@ export function useInterview() {
       const before = stateRef.current.interview!;
       const ctxBefore = buildContext({ ...before, questions: before.questions.map((x) => (x.id === q.id ? { ...x, answer: null } : x)) });
       const turn = toCurrentTurn(q, answer);
-      const provider = providerRef.current;
+      // Rude, meaningless or refused replies are handled the same way in every mode, without an AI call.
+      const provider = triageAnswer(answer, before.config.language) ? mockRef.current : providerRef.current;
       const mainsDone = allMainsAsked(before);
       const forceFollowUp = forceFollowUpRef.current;
       const forceNext = forceNextRef.current;
@@ -432,11 +435,25 @@ export function useInterview() {
       if (!q || q.answer || !answer || (s.phase !== "LISTENING" && s.phase !== "ASKING")) return;
       cancelLine();
       setSpeaking(false);
+      const config = s.interview!.config;
+      // "질문이 잘 이해가 안 돼요" is not an answer: explain what the question is after and ask it again (once).
+      if (!q.clarified && triageAnswer(answer, config.language) === "clarify") {
+        const line = clarifyLine(q.type, config.persona, config.language);
+        const run = runRef.current;
+        const seat = seatFor(q.type, q.isFollowUp);
+        dispatch({ type: "CLARIFY", questionId: q.id, text: line, now: Date.now() });
+        void (async () => {
+          await say(line, run, seat);
+          if (runRef.current === run) await say(q.text, run, seat);
+          if (runRef.current === run) dispatch({ type: "LISTEN", now: Date.now() });
+        })();
+        return;
+      }
       const durationSec = s.questionStartedAt ? Math.round((Date.now() - s.questionStartedAt) / 1000) : 0;
       dispatch({ type: "SUBMIT", questionId: q.id, answer, mode, durationSec });
       void processAnswer(q, answer, runRef.current);
     },
-    [dispatch, processAnswer],
+    [dispatch, processAnswer, say],
   );
 
   const endInterview = useCallback(() => {

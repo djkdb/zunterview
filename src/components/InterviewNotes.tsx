@@ -46,7 +46,12 @@ export function InterviewNotes({ questions, liveFeedback, copy }: Props) {
               )}
               {q.answer && <p className="mt-2 line-clamp-2 border-l-2 border-line-strong pl-2 text-[12px] leading-snug text-muted">{q.answer}</p>}
               {liveFeedback && q.feedback && (
-                <p className="mt-1.5 text-[11px] leading-snug text-good">+ {q.feedback.strength}</p>
+                // A weak answer has no strength worth a "+" — show what to fix instead.
+                (q.score ?? 0) >= 45 ? (
+                  <p className="mt-1.5 text-[11px] leading-snug text-good">+ {q.feedback.strength}</p>
+                ) : (
+                  <p className="mt-1.5 text-[11px] leading-snug text-warn">− {q.feedback.improve}</p>
+                )
               )}
             </motion.li>
           ))}

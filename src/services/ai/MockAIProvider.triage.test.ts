@@ -1,0 +1,55 @@
+import { describe, expect, it } from "vitest";
+import type { AIConfig, InterviewContext } from "../../../shared/schemas";
+import { MockAIProvider } from "./MockAIProvider";
+
+const provider = new MockAIProvider(false);
+const ctx = (over: Partial<InterviewContext> = {}, config: Partial<AIConfig> = {}): InterviewContext => ({
+  config: { position: "간호사", roleId: "nurse", experience: "entry", interviewType: "mixed", difficulty: "normal", questionLimit: 5, jobDescription: "", persona: "professional", language: "ko", ...config },
+  progress: { asked: 2, total: 5, followUps: 0 },
+  history: [],
+  askedQuestions: [],
+  usedTypes: ["opening"],
+  ...over,
+});
+const avg = (a: Awaited<ReturnType<MockAIProvider["analyzeAnswer"]>>) => Object.values(a.scores).reduce((s, x) => s + x.score, 0) / 6;
+
+describe("mock interviewer: replies that aren't answers", () => {
+  it.each(["꺼지쇼", "ㅇㅇ", "asdf asdf", "싫어요"])("scores %s near zero, praises nothing, and moves on", async (answer) => {
+    const turn = { question: "먼저 1분 동안 간단하게 자기소개 부탁드립니다.", type: "opening" as const, isFollowUp: false, answer };
+    const a = await provider.analyzeAnswer(ctx(), turn);
+    expect(avg(a)).toBeLessThan(20);
+    expect(a.strength).toContain("평가할 수 있는 답변 내용이 없었습니다");
+    expect((await provider.generateFollowUp(ctx(), turn, 0)).needed).toBe(false);
+  });
+
+  it("marks down an answer that ignores a specific question and asks it again", async () => {
+    const turn = { question: "격리와 역격리는 대상과 목적이 어떻게 다른지 설명해 주세요.", type: "role_specific" as const, isFollowUp: false, answer: "저는 간호학과를 졸업하고 내과 병동에서 8주간 실습을 했습니다. 환자 안전을 가장 먼저 생각하는 간호사가 되고 싶습니다." };
+    const a = await provider.analyzeAnswer(ctx(), turn);
+    expect(a.quality).toBe("off_topic");
+    expect(a.scores.relevance.score).toBeLessThanOrEqual(45);
+    const f = await provider.generateFollowUp(ctx(), turn, 0);
+    expect(f.needed).toBe(true);
+    expect(f.question).toContain("제가 여쭌 건");
+  });
+
+  it("notices the same answer given twice", async () => {
+    const answer = "결산 일정을 앞당기기 위해 마감 체크리스트를 만들고 부서별 자료 제출 기한을 D-3으로 바꿨습니다. 그 결과 월 결산이 7일에서 5일로 줄었습니다.";
+    const history = [{ question: "결산 경험을 말씀해 주세요.", type: "experience" as const, isFollowUp: false, answer }];
+    const turn = { question: "감사인과 의견이 달랐던 경험이 있나요?", type: "experience" as const, isFollowUp: false, answer };
+    const a = await provider.analyzeAnswer(ctx({ history }, { position: "회계", roleId: "accountant" }), turn);
+    expect(a.reaction).toContain("같은 내용");
+    expect(a.improve).toContain("반복");
+  });
+
+  it("takes '몰라요' as not knowing, not as a short answer to dig into", async () => {
+    const turn = { question: "본인에게 점수를 준다면 몇 점이며 그 이유는 무엇인가요?", type: "reflection" as const, isFollowUp: false, answer: "몰라요" };
+    expect((await provider.generateFollowUp(ctx(), turn, 0)).needed).toBe(false);
+    expect((await provider.analyzeAnswer(ctx(), turn)).improve).toContain("모르는 질문");
+  });
+
+  it("opens a non-engineering job with work, not a 'project'", async () => {
+    const q = await provider.generateQuestion(ctx({ progress: { asked: 0, total: 5, followUps: 0 }, usedTypes: [] }, { position: "회계", roleId: "accountant", interviewType: "technical", experience: "mid" }));
+    expect(q.question).not.toContain("프로젝트");
+    expect(q.question).toContain("업무");
+  });
+});

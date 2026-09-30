@@ -27,6 +27,7 @@ import { roleContextFor, type RoleContext } from "../../../shared/roles";
 import { loadRoleProfile, questionPool, rankCandidates, typesFor } from "../../../shared/roleBank";
 import { fillSlots } from "../../../shared/korean";
 import { isDuplicateQuestion } from "../../utils/fingerprint";
+import { hasProfanity, questionCoverage, repeatsEarlier, triageAnswer, type Triage } from "../../../shared/answerTriage";
 import { delay } from "../../utils/id";
 import type { AIProvider } from "./AIProvider";
 import {
@@ -82,7 +83,12 @@ export class MockAIProvider implements AIProvider {
     if (ctx.progress.asked === 0) {
       const openings = OPENING.filter((o) => o.tags?.includes(config.interviewType));
       const item = (openings.length ? openings : OPENING)[0];
-      return { question: fill(item[lang], vars), type: "opening", intent: L(lang, "배경과 경험을 파악합니다.", "Understand background and experience.") };
+      // "프로젝트" is how engineers talk; other jobs have work (or, for new graduates, experiences).
+      const archetype = roleContextFor(config).archetype;
+      const projectWord = archetype === "tech_dev" || archetype === "data_analytic" ? null : config.experience === "entry" ? "경험" : "업무";
+      const text = fill(item[lang], vars);
+      const question = projectWord && lang === "ko" ? text.replace("최근에 작업한 프로젝트", `최근에 맡았던 ${projectWord}`).replace("어려웠던 프로젝트", `어려웠던 ${projectWord}`) : text;
+      return { question, type: "opening", intent: L(lang, "배경과 경험을 파악합니다.", "Understand background and experience.") };
     }
 
     // The job being interviewed for decides the plan (question types in order) and the bank.
@@ -95,7 +101,8 @@ export class MockAIProvider implements AIProvider {
 
     // Company + role interview: company questions for fit/motivation/culture, the role bank for the job.
     if (company && lang === "ko") {
-      const bank = questionsForTrack(await loadCompanyQuestions(company.id), config.companyTrack).filter((q) => !isDuplicateQuestion(q.text, asked));
+      // The interview already opened with a self-introduction — skip the bank's "자기소개와 함께 …" variants.
+      const bank = questionsForTrack(await loadCompanyQuestions(company.id), config.companyTrack).filter((q) => !/자기\s?소개/.test(q.text) && !isDuplicateQuestion(q.text, asked));
       const bucket = TYPE_BUCKET[planned];
       const wantCompany = planned === "company_understanding" || planned === "motivation" || bucket === "fit" || (bucket !== "job" && mainIndex % 2 === 1) || (bucket === "job" && mainIndex % 3 === 0);
       if (wantCompany) {
@@ -208,6 +215,23 @@ export class MockAIProvider implements AIProvider {
 
     if (s.dontKnow) {
       return none(L(lang, "지원자가 잘 모른다고 답해 다른 주제로 넘어갑니다.", "The candidate didn't know; moving to another topic."));
+    }
+    const triage = triageAnswer(turn.answer, lang);
+    if (triage) return none(L(lang, "평가할 수 있는 답변이 아니어서 다음 질문으로 넘어갑니다.", "Not an answer that can be followed up; moving on."));
+    if (repeatsEarlier(turn.answer, ctx.history.map((h) => h.answer))) {
+      return none(L(lang, "앞선 답변을 반복해 다음 질문으로 넘어갑니다.", "Repeated an earlier answer; moving on."));
+    }
+    const dodge = dodgedQuestion(turn, s);
+    if (dodge) {
+      if (depth > 0) return none(L(lang, "다시 물었지만 질문과 다른 답변이어서 넘어갑니다.", "Still off the question; moving on."));
+      const f = ok({
+        needed: true,
+        type: "deep_dive",
+        anchor: "",
+        question: L(lang, `제가 여쭌 건 ${dodge}에 관한 부분이었는데요, 그 부분에 대해 다시 말씀해 주시겠어요?`, `What I asked about was ${dodge} — could you answer that part?`),
+        reason: L(lang, "답변이 질문의 핵심을 다루지 않아 같은 질문으로 다시 확인합니다.", "The answer missed the point of the question; asking again."),
+      });
+      if (f?.needed) return f;
     }
     // Already asked them to elaborate and it's still one line — a real interviewer moves on.
     const concrete = s.topics.length > 0 || s.methods.length > 0 || s.techs.length > 0 || Boolean(s.project || s.roleClaim || s.metric);
@@ -390,6 +414,13 @@ export class MockAIProvider implements AIProvider {
     const seed = hash(turn.answer + turn.question);
     const jitter = (k: number) => ((seed >> k) % 7) - 3;
 
+    const triage = triageAnswer(turn.answer, lang);
+    if (triage && triage !== "clarify") return triagedAnalysis(triage, ctx, turn, seed);
+    // Answers that don't address the question, or repeat an earlier answer, can't score on length alone.
+    const repeated = !s.dontKnow && repeatsEarlier(turn.answer, ctx.history.map((h) => h.answer));
+    const dodge = s.dontKnow || repeated ? null : dodgedQuestion(turn, s);
+    const profane = hasProfanity(turn.answer);
+
     const lengthBase = s.chars < 20 ? 34 : s.chars < 60 ? 52 : s.chars < 150 ? 64 : s.chars < 700 ? 71 : 65;
     // Complete, owned stories (situation → action → result, in first person, with numbers) earn a bonus.
     const completeness = (s.firstPerson ? 3 : 0) + (s.numbers.length ? 3 : 0) + (s.star.situation && s.star.action && s.star.result ? 4 : 0);
@@ -403,14 +434,25 @@ export class MockAIProvider implements AIProvider {
       communication: lengthBase + 6 + completeness - s.fillers * 4 - (s.sentences.some((x) => x.length > 220) ? 8 : 0),
       confidence: lengthBase + completeness + (s.firstPerson ? 10 : 0) - s.hedges * 7,
     };
+    // A fluent answer to a different question is still a miss: cap every category, relevance hardest.
+    if (repeated || dodge) {
+      for (const k of CATEGORY_KEYS) raw[k] = Math.min(raw[k] - 10, 55);
+      raw.relevance = Math.min(raw.relevance, 35);
+    }
+    if (profane) {
+      raw.communication -= 25;
+      raw.confidence -= 10;
+    }
     const scores = {} as AnswerAnalysis["scores"];
     CATEGORY_KEYS.forEach((k, i) => {
       scores[k] = { score: clampScore(raw[k] + jitter(i * 3)), reason: reasonFor(k, s) };
     });
+    if (repeated) scores.relevance.reason = L(lang, "앞선 답변과 같은 내용을 반복했습니다.", "Repeats an earlier answer.");
+    if (dodge) scores.relevance.reason = L(lang, `질문의 핵심('${dodge}')에 대한 답이 없습니다.`, `Doesn't address the question ('${dodge}').`);
 
     const avg = CATEGORY_KEYS.reduce((a, k) => a + scores[k].score, 0) / CATEGORY_KEYS.length;
     const quality: AnswerQuality =
-      s.dontKnow || s.chars < 20 ? "insufficient" : isOffTopic(s) ? "off_topic" : avg >= 78 ? "strong" : avg >= 62 ? "adequate" : s.chars < 60 ? "insufficient" : "vague";
+      s.dontKnow || s.chars < 20 ? "insufficient" : repeated || dodge || isOffTopic(s) ? "off_topic" : avg >= 78 ? "strong" : avg >= 62 ? "adequate" : s.chars < 60 ? "insufficient" : "vague";
 
     const starApplicable = turn.type !== "technical" || /경험|사례|프로젝트|때|experience|time|project/i.test(turn.question);
     const part = (n: number, strongAt: number, notes: [string, string, string]): StarPart => ({
@@ -446,16 +488,24 @@ export class MockAIProvider implements AIProvider {
         star,
         strength: s.dontKnow
           ? L(lang, "모르는 부분을 솔직하게 인정했습니다.", "You were honest about what you don't know.")
-          : avg < 55
-            ? s.firstPerson
-              ? L(lang, "본인의 입장을 분명하게 말했습니다.", "You stated your own position clearly.")
-              : L(lang, "질문에 바로 답하려는 태도가 보였습니다.", "You responded directly.")
-            : strengthFor(best, s),
+          : avg < 45 || repeated || dodge
+            ? L(lang, "이 답변에서는 뚜렷한 강점을 찾기 어려웠습니다.", "No clear strength came through in this answer.")
+            : avg < 55
+              ? s.firstPerson && s.chars >= 40
+                ? L(lang, "본인의 입장을 분명하게 말했습니다.", "You stated your own position clearly.")
+                : L(lang, "질문에 답하려는 시도는 보였습니다.", "You made an attempt at the question.")
+              : strengthFor(best, s),
         improve: s.dontKnow
           ? L(lang, "모르는 질문도 '직접 해 보진 않았지만 저라면 ~부터 확인하겠습니다'처럼 접근 방법을 말하면 좋습니다.", "Even when you don't know, explain how you would approach it.")
-          : s.chars < 25
-            ? L(lang, "답변이 너무 짧습니다. 결론 한 문장에 근거가 되는 경험을 2~3문장 덧붙여 보세요.", "Too short — add two or three sentences of supporting experience.")
-            : improveFor(worst, s),
+          : repeated
+            ? L(lang, "앞선 질문에 했던 답변을 그대로 반복했습니다. 질문마다 그 질문에 맞는 다른 경험이나 근거를 준비해 두세요.", "You repeated an earlier answer. Prepare a different example or reason for each question.")
+            : dodge
+              ? L(lang, `질문은 '${dodge}'에 관한 것이었는데 답변에서 다루지 않았습니다. 첫 문장에서 질문에 바로 답하고 경험을 덧붙이세요.`, `The question was about '${dodge}', which the answer didn't address. Answer it directly first, then add your experience.`)
+              : profane
+                ? L(lang, "면접에서 비속어는 내용과 상관없이 큰 감점 요인입니다. 정중한 표현으로 바꿔 말해 보세요.", "Profanity costs heavily in an interview whatever the content — rephrase politely.")
+                : s.chars < 25
+                  ? L(lang, "답변이 너무 짧습니다. 결론 한 문장에 근거가 되는 경험을 2~3문장 덧붙여 보세요.", "Too short — add two or three sentences of supporting experience.")
+                  : improveFor(worst, s),
         betterAnswer: s.dontKnow
           ? {
               problem: L(lang, "답변을 포기함", "Declined to answer"),
@@ -466,7 +516,11 @@ export class MockAIProvider implements AIProvider {
         roleSignal: roleSignalFor(ctx, turn.answer, s),
         evidence,
         notFound,
-        reaction: s.dontKnow ? dontKnowReaction(ctx.config.persona, lang) : reactionFor(quality, ctx.config.persona, lang, seed),
+        reaction: s.dontKnow
+          ? dontKnowReaction(ctx.config.persona, lang)
+          : repeated
+            ? L(lang, "앞에서 하신 말씀과 같은 내용이네요.", "That's the same as your earlier answer.")
+            : reactionFor(quality, ctx.config.persona, lang, seed),
       },
       turn.answer,
     );
@@ -486,8 +540,11 @@ export class MockAIProvider implements AIProvider {
     const sName = names[strongest];
     const wName = names[weakest];
 
-    const headline =
-      overall >= 80
+    // Mostly non-answers: say so plainly instead of praising what wasn't there.
+    const barely = overall < 45;
+    const headline = barely
+      ? L(lang, "대부분의 질문에 평가할 만한 답변이 나오지 않아 판단 근거가 부족했습니다.", "Most questions didn't get an answer that could be assessed.")
+      : overall >= 80
         ? L(lang, `전반적으로 안정적인 면접이었습니다. 특히 ${sName}${josa(sName, "이/가")} 돋보였습니다.`, `A solid interview overall — ${sName} stood out.`)
         : overall >= 65
           ? L(lang, `기본기는 갖췄지만 ${wName}${josa(wName, "을/를")} 보완하면 답변이 훨씬 강해질 수 있습니다.`, `Good foundations; improving ${wName} would make your answers much stronger.`)
@@ -495,11 +552,16 @@ export class MockAIProvider implements AIProvider {
 
     return {
       headline,
-      topFeedback: TOP_FEEDBACK[weakest][lang],
-      strengths: [
-        L(lang, `${sName} 점수가 ${categoryScores[strongest]}점으로 가장 높았습니다.`, `${sName} was your highest category at ${categoryScores[strongest]}.`),
-        L(lang, `Q${bestIdx}: ${bestTurn.strength}`, `Q${bestIdx}: ${bestTurn.strength}`),
-      ],
+      topFeedback: barely
+        ? L(lang, "모든 질문에 '결론 한 문장 + 근거가 되는 경험 두세 문장'으로 답하는 연습부터 시작해 보세요. 모르는 질문은 '잘 모르겠습니다'라고 정중하게 말해도 괜찮습니다.", "Start by answering every question with one sentence of conclusion plus two or three of supporting experience. It's fine to say politely that you don't know.")
+        : TOP_FEEDBACK[weakest][lang],
+      strengths:
+        bestTurn.score >= 55
+          ? [
+              L(lang, `${sName} 점수가 ${categoryScores[strongest]}점으로 가장 높았습니다.`, `${sName} was your highest category at ${categoryScores[strongest]}.`),
+              L(lang, `Q${bestIdx}: ${bestTurn.strength}`, `Q${bestIdx}: ${bestTurn.strength}`),
+            ]
+          : [L(lang, `가장 점수가 높았던 답변은 Q${bestIdx}(${bestTurn.score}점)였지만, 뚜렷한 강점으로 볼 만한 답변은 아직 없었습니다.`, `Your best answer was Q${bestIdx} (${bestTurn.score}), but no clear strength came through yet.`)],
       improvements: [
         L(lang, `${wName} 점수(${categoryScores[weakest]}점)를 높이는 것이 가장 큰 개선 포인트입니다.`, `${wName} (${categoryScores[weakest]}) is the biggest opportunity.`),
         L(lang, `Q${worstIdx}: ${worstTurn.improve}`, `Q${worstIdx}: ${worstTurn.improve}`),
@@ -579,6 +641,79 @@ function projectVerb(k: string): string {
   if (/(?:서비스|기능|플랫폼|시스템|파이프라인|대시보드|앱)$/.test(k)) return `${objectParticle(k)} 만들면서`;
   if (/(?:프로젝트|캠페인)$/.test(k)) return `${objectParticle(k)} 진행하면서`;
   return "에서";
+}
+
+/** Question types about something specific, where an answer can miss the point (not open questions or follow-ups). */
+const SPECIFIC_TYPES = new Set<QuestionType>(["situational", "role_specific", "technical", "case", "numerical", "analytical", "ethics", "industry", "role_understanding", "pt", "debate"]);
+
+/** The question's key phrase when a substantial answer picks up none of its content words. */
+function dodgedQuestion(turn: CurrentTurn, s: Signals): string | null {
+  if (turn.isFollowUp || !SPECIFIC_TYPES.has(turn.type) || s.chars < 25) return null;
+  const { coverage, terms } = questionCoverage(turn.question, turn.answer);
+  if (coverage > 0 || terms.length < 2) return null;
+  return terms.slice(0, 2).join(", ");
+}
+
+/** A reply that isn't an answer: rude, meaningless, or a refusal. Scored low with feedback about the reply itself. */
+function triagedAnalysis(kind: Exclude<Triage, "clarify">, ctx: InterviewContext, turn: CurrentTurn, seed: number): AnswerAnalysis {
+  const lang = ctx.config.language;
+  const strict = ctx.config.persona === "strict";
+  const base = kind === "hostile" ? 4 : kind === "nonsense" ? 6 : 10;
+  const copy: Record<typeof kind, { reason: Localized; improve: Localized; problem: Localized; suggestion: Localized; example: Localized; reaction: Localized }> = {
+    hostile: {
+      reason: { ko: "면접에 적절하지 않은 표현으로, 답변 내용이 없습니다.", en: "Inappropriate language; no answer content." },
+      improve: { ko: "면접에서는 어떤 질문이든 정중하게 답해야 합니다. 답하기 어렵다면 '잘 모르겠습니다'나 '잠시 생각해도 될까요?'라고 말하는 편이 훨씬 낫습니다.", en: "Answer every question politely. If you can't, saying 'I'm not sure' or asking for a moment is far better." },
+      problem: { ko: "부적절한 표현", en: "Inappropriate language" },
+      suggestion: { ko: "감정을 드러내기보다 정중하게 모른다고 말하거나 생각할 시간을 요청하기", en: "Instead of reacting, say you don't know or ask for a moment" },
+      example: { ko: "“죄송합니다. 잠시 생각을 정리한 뒤 답변드려도 될까요?”", en: "“Sorry — may I take a moment to gather my thoughts?”" },
+      reaction: strict
+        ? { ko: "지금 답변은 면접에서 적절하지 않습니다. 다음 질문으로 넘어가겠습니다.", en: "That's not an appropriate answer in an interview. Next question." }
+        : { ko: "면접 자리인 만큼 표현은 정중하게 부탁드립니다. 다음 질문으로 넘어가겠습니다.", en: "This is an interview, so please keep it polite. Let's move on." },
+    },
+    nonsense: {
+      reason: { ko: "의미 있는 답변 내용이 없습니다.", en: "No meaningful answer content." },
+      improve: { ko: "의미 있는 답변이 입력되지 않았습니다. 결론 한 문장에 근거가 되는 경험 두세 문장을 붙여 답해 보세요.", en: "No real answer was given. Try one sentence of conclusion plus two or three of supporting experience." },
+      problem: { ko: "답변 내용 없음", en: "No answer content" },
+      suggestion: { ko: "짧더라도 질문에 대한 본인의 생각을 한 문장으로 먼저 말하기", en: "Say your view in one sentence, even briefly" },
+      example: { ko: "“제 생각에는 [결론]입니다. 예를 들어 [경험]에서 [행동]을 했고, [결과]가 있었습니다.”", en: "“I think [conclusion]. For example, in [experience] I [action], which led to [result].”" },
+      reaction: { ko: "답변을 알아듣기 어렵네요. 다음 질문으로 넘어가겠습니다.", en: "I couldn't make out an answer there. Let's move on." },
+    },
+    refuse: {
+      reason: { ko: "답변을 거절해 평가할 내용이 없습니다.", en: "Declined to answer; nothing to assess." },
+      improve: { ko: "답하기 어려운 질문도 짧게라도 생각을 말하는 것이 좋습니다. '경험은 없지만 저라면 ~하겠습니다'처럼 접근 방법을 보여 주세요.", en: "Even for hard questions, give a short view — e.g. 'I haven't done it, but I'd start by …'." },
+      problem: { ko: "답변 거절", en: "Declined to answer" },
+      suggestion: { ko: "모르거나 답하기 어려워도 생각의 방향을 짧게 말하기", en: "Give at least the direction of your thinking" },
+      example: { ko: "“직접 겪어 본 적은 없지만, 저라면 먼저 [확인할 것]부터 보겠습니다.”", en: "“I haven't faced that myself, but I'd start by checking [X].”" },
+      reaction: strict ? { ko: "알겠습니다. 다음으로 넘어가죠.", en: "Understood. Moving on." } : { ko: "알겠습니다. 다음 질문으로 넘어가겠습니다.", en: "All right. Let's go to the next question." },
+    },
+  };
+  const c = copy[kind];
+  const scores = {} as AnswerAnalysis["scores"];
+  CATEGORY_KEYS.forEach((k, i) => {
+    scores[k] = { score: clampScore(base + ((seed >> (i * 3)) % 5)), reason: c.reason[lang] };
+  });
+  const missing = (ko: string, en: string): StarPart => ({ status: "missing", note: L(lang, ko, en) });
+  return sanitizeAnalysis(
+    {
+      quality: kind === "refuse" || kind === "nonsense" ? "insufficient" : "off_topic",
+      scores,
+      star: {
+        applicable: false,
+        situation: missing("상황 설명이 없습니다.", "No situation."),
+        task: missing("역할이나 목표가 없습니다.", "No role or goal."),
+        action: missing("행동 설명이 없습니다.", "No actions."),
+        result: missing("결과가 없습니다.", "No result."),
+      },
+      strength: L(lang, "평가할 수 있는 답변 내용이 없었습니다.", "There was no answer content to assess."),
+      improve: c.improve[lang],
+      betterAnswer: { problem: c.problem[lang], suggestion: c.suggestion[lang], example: c.example[lang] },
+      roleSignal: null,
+      evidence: [],
+      notFound: [L(lang, "질문에 대한 답변", "An answer to the question")],
+      reaction: c.reaction[lang],
+    },
+    turn.answer,
+  );
 }
 
 /** Only call an answer off-topic when there's nothing concrete to hold on to. */

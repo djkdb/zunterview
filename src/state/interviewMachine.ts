@@ -51,6 +51,7 @@ export type Action =
   | { type: "ANALYZED"; questionId: string; analysis: AnswerAnalysis; score: number; source: ProviderKind }
   | { type: "TRANSITION"; kind: "FOLLOW_UP" | "NEXT_QUESTION"; text: string }
   | { type: "DROP_CURRENT" }
+  | { type: "CLARIFY"; questionId: string; text: string; now: number }
   | { type: "COMPLETE"; endedEarly: boolean; now: number }
   | { type: "REPORT"; report: FinalReport; source: ProviderKind }
   | { type: "FAIL"; error: InterviewError }
@@ -144,6 +145,13 @@ export function reducer(state: InterviewState, action: Action): InterviewState {
 
     case "TRANSITION":
       return { ...state, phase: action.kind, stage: null, transitionText: action.text };
+
+    case "CLARIFY": {
+      // The candidate asked what the question meant: no answer is recorded, the interviewer explains and asks again.
+      if (!state.interview) return state;
+      const interview = updateQuestion(state.interview, action.questionId, (q) => ({ ...q, reaction: action.text, clarified: true }));
+      return { ...state, interview, phase: "ASKING", transitionText: null, questionStartedAt: action.now };
+    }
 
     case "DROP_CURRENT": {
       const q = currentQuestion(state);

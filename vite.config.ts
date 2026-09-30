@@ -14,9 +14,11 @@ export default defineConfig({
     },
   },
   build: {
-    chunkSizeWarningLimit: 900,
+    // Question banks (roles + companies) are fetched on demand from /data; the app chunk holds only the taxonomy index.
+    chunkSizeWarningLimit: 1000,
   },
   test: {
     include: ["src/**/*.test.ts", "shared/**/*.test.ts", "server/**/*.test.ts"],
+    setupFiles: ["./vitest.setup.ts"],
   },
 });

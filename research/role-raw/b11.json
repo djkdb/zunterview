@@ -1,0 +1,5658 @@
+{
+ "batch": "b11",
+ "sources": [
+  {
+   "id": "s1",
+   "title": "링커리어 커뮤니티 — 항공사 객실승무원 2025 상반기 서류/면접 후기",
+   "url": "https://community.linkareer.com/interview/4945382",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "s2",
+   "title": "링커리어 커뮤니티 — 편의점 사업부 영업관리(OFC) 2024 상반기 신입 면접 후기",
+   "url": "https://community.linkareer.com/interview/4267601",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s3",
+   "title": "링커리어 커뮤니티 — 공항 여객운송직 2024 하반기 최종합격 후기",
+   "url": "https://community.linkareer.com/final_review/3798896",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s4",
+   "title": "링커리어 커뮤니티 — 품질관리 면접 질문 (현직자 멘토 답변)",
+   "url": "https://community.linkareer.com/STEM_mentoring/2528066",
+   "type": "interview_review"
+  },
+  {
+   "id": "s5",
+   "title": "링커리어 커뮤니티 — 현직자가 알려주는 호텔 세일즈 부서",
+   "url": "https://community.linkareer.com/honeytips/292373",
+   "type": "other_public"
+  },
+  {
+   "id": "s6",
+   "title": "커리어넷 직업정보 — 비행기승무원(항공기객실승무원)",
+   "url": "https://www.career.go.kr/cnet/app/base/job/jobView.m?SEQ=418",
+   "type": "job_description"
+  },
+  {
+   "id": "s7",
+   "title": "커리어넷 직업정보 — 행사기획자",
+   "url": "https://www.career.go.kr/cnet/app/base/job/jobView.m?SEQ=951",
+   "type": "job_description"
+  },
+  {
+   "id": "s8",
+   "title": "커리어넷 직업정보 — 항공기정비원",
+   "url": "https://www.career.go.kr/cnet/app/base/job/jobView.m?SEQ=149",
+   "type": "job_description"
+  },
+  {
+   "id": "s9",
+   "title": "직업백과(워크넷 직업정보 제공) — 비주얼 머천다이저(VMD)",
+   "url": "https://job.asamaru.net/%EC%A7%81%EC%97%85/%EB%B9%84%EC%A3%BC%EC%96%BC-%EB%A8%B8%EC%B2%9C%EB%8B%A4%EC%9D%B4%EC%A0%80-vmd/",
+   "type": "other_public"
+  },
+  {
+   "id": "s10",
+   "title": "직업백과(워크넷 직업정보 제공) — 관광통역안내원",
+   "url": "https://job.asamaru.net/%EC%A7%81%EC%97%85/%EA%B4%80%EA%B4%91%ED%86%B5%EC%97%AD%EC%95%88%EB%82%B4%EC%9B%90/",
+   "type": "other_public"
+  },
+  {
+   "id": "s11",
+   "title": "직업백과(워크넷 직업정보 제공) — 여행상품개발자",
+   "url": "https://job.asamaru.net/%EC%A7%81%EC%97%85/%EC%97%AC%ED%96%89%EC%83%81%ED%92%88%EA%B0%9C%EB%B0%9C%EC%9E%90/",
+   "type": "other_public"
+  },
+  {
+   "id": "s12",
+   "title": "직업백과(워크넷 직업정보 제공) — 항공기조종사",
+   "url": "https://job.asamaru.net/%EC%A7%81%EC%97%85/%ED%95%AD%EA%B3%B5%EA%B8%B0%EC%A1%B0%EC%A2%85%EC%82%AC/",
+   "type": "other_public"
+  },
+  {
+   "id": "s13",
+   "title": "링커리어 커뮤니티 — 백화점 영업관리직무 신입 현직자 인터뷰",
+   "url": "https://community.linkareer.com/final_review/3116856",
+   "type": "other_public"
+  },
+  {
+   "id": "s14",
+   "title": "링커리어 커뮤니티 — 항공사 2023 하반기 신입(일반직) 면접 후기",
+   "url": "https://community.linkareer.com/interview/3650485",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s15",
+   "title": "링커리어 커뮤니티 — 대리점 영업관리 면접 (멘토 답변)",
+   "url": "https://community.linkareer.com/mentoring/5646940",
+   "type": "other_public"
+  },
+  {
+   "id": "s16",
+   "title": "링커리어 커뮤니티 — 호텔 프론트 (현직 멘토 답변)",
+   "url": "https://community.linkareer.com/mentoring/1580695",
+   "type": "other_public"
+  }
+ ],
+ "profiles": [
+  {
+   "id": "hotelier",
+   "aliases": [
+    "호텔리어",
+    "프런트",
+    "프론트",
+    "프론트 데스크",
+    "객실팀",
+    "객실부",
+    "Front Office",
+    "Guest Service Agent",
+    "호텔 객실관리",
+    "컨시어지"
+   ],
+   "skills": [
+    "고객 응대",
+    "외국어 커뮤니케이션",
+    "PMS 운용",
+    "컴플레인 처리",
+    "객실 배정",
+    "야간 감사(나이트 오딧)"
+   ],
+   "responsibilities": [
+    "체크인·체크아웃 및 예약 확인",
+    "객실 배정과 업그레이드 관리",
+    "고객 요청·컴플레인 대응",
+    "하우스키핑과 객실 상태 조율",
+    "야간 매출 마감과 인수인계"
+   ],
+   "keywords": [
+    "체크인",
+    "체크아웃",
+    "예약",
+    "오버부킹",
+    "노쇼",
+    "업그레이드",
+    "VIP",
+    "컴플레인",
+    "하우스키핑",
+    "PMS",
+    "점유율",
+    "ADR",
+    "컨시어지",
+    "인수인계",
+    "나이트 오딧"
+   ],
+   "topics": {
+    "role": [
+     "객실 배정",
+     "고객 응대",
+     "컴플레인 처리",
+     "객실 판매 관리",
+     "부서 간 협업"
+    ],
+    "scenario": [
+     "오버부킹으로 객실 부족",
+     "VIP 도착 준비",
+     "객실 청소 상태 불만",
+     "소음 민원",
+     "야간 매출 불일치"
+    ],
+    "result": [
+     "고객 만족도·후기 점수",
+     "재방문율",
+     "객실 점유율과 평균 단가",
+     "컴플레인 처리 시간"
+    ],
+    "en": [
+     "front office",
+     "guest relations",
+     "overbooking",
+     "room assignment",
+     "complaint handling"
+    ]
+   },
+   "sources": [
+    "s16"
+   ]
+  },
+  {
+   "id": "hotel_sales",
+   "aliases": [
+    "호텔 세일즈",
+    "호텔 영업",
+    "호텔 마케팅",
+    "세일즈 매니저",
+    "세일즈 코디네이터",
+    "Hotel Sales",
+    "객실 세일즈",
+    "연회 세일즈",
+    "Revenue"
+   ],
+   "skills": [
+    "B2B 영업",
+    "단가 협상",
+    "패키지 기획",
+    "판매 채널 관리",
+    "매출 데이터 분석",
+    "제안서 작성"
+   ],
+   "responsibilities": [
+    "기업·단체 고객 발굴과 계약",
+    "객실·연회 견적과 단가 협상",
+    "시즌 패키지·프로모션 기획",
+    "객실 판매 데이터 정리와 보고",
+    "운영 부서와 계약 조건 조율"
+   ],
+   "keywords": [
+    "기업 고객",
+    "단체",
+    "객실 블록",
+    "연회",
+    "MICE",
+    "패키지",
+    "프로모션",
+    "OTA",
+    "직접 예약",
+    "점유율",
+    "ADR",
+    "RevPAR",
+    "견적",
+    "계약"
+   ],
+   "topics": {
+    "role": [
+     "기업 고객 영업",
+     "패키지·프로모션 기획",
+     "채널 믹스",
+     "단가 협상",
+     "운영팀 협업"
+    ],
+    "scenario": [
+     "행사 직전 인원 축소",
+     "경쟁 호텔 저가 제안",
+     "비수기 판매 부진",
+     "운영팀이 소화하기 어려운 계약 조건"
+    ],
+    "result": [
+     "객실·연회 매출",
+     "계약 건수와 단가",
+     "프로모션 예약 성과",
+     "채널별 판매 비중"
+    ],
+    "en": [
+     "hotel sales",
+     "corporate accounts",
+     "group block",
+     "package planning",
+     "revenue management"
+    ]
+   },
+   "sources": [
+    "s5"
+   ]
+  },
+  {
+   "id": "travel_planner",
+   "aliases": [
+    "여행상품기획",
+    "여행상품개발자",
+    "여행 MD",
+    "상품기획",
+    "투어 플래너",
+    "Travel Product Planner",
+    "여행사 기획",
+    "패키지 기획"
+   ],
+   "skills": [
+    "일정 기획",
+    "원가 산정",
+    "현지 협력사 관리",
+    "시장·고객 조사",
+    "상품 판매 분석"
+   ],
+   "responsibilities": [
+    "여행 상품 일정·동선 설계",
+    "항공·숙박·현지 협력사 수배와 원가 산정",
+    "현장 답사와 상품 보완",
+    "판매 실적 분석과 상품 개선",
+    "출발 전후 변수 대응"
+   ],
+   "keywords": [
+    "패키지",
+    "일정",
+    "랜드사",
+    "원가",
+    "판매가",
+    "모객",
+    "출발 확정",
+    "좌석 블록",
+    "답사",
+    "타깃 고객",
+    "차별화",
+    "후기",
+    "예약률"
+   ],
+   "topics": {
+    "role": [
+     "상품 기획",
+     "원가·가격 설정",
+     "협력사 선정",
+     "타깃 설정",
+     "상품 개선"
+    ],
+    "scenario": [
+     "출발 직전 호텔 이용 불가",
+     "모객 미달",
+     "광고와 다른 일정 항의",
+     "현지 자연재해"
+    ],
+    "result": [
+     "예약률·모객 인원",
+     "상품 마진",
+     "고객 만족도·재구매",
+     "취소율"
+    ],
+    "en": [
+     "tour package planning",
+     "itinerary design",
+     "costing",
+     "local partner management"
+    ]
+   },
+   "sources": [
+    "s11"
+   ]
+  },
+  {
+   "id": "tour_guide",
+   "aliases": [
+    "관광통역안내사",
+    "관광통역안내원",
+    "가이드",
+    "통역 가이드",
+    "인바운드 가이드",
+    "Tour Guide",
+    "관광 가이드"
+   ],
+   "skills": [
+    "외국어 통역",
+    "역사·문화 해설",
+    "단체 인솔",
+    "일정·시간 관리",
+    "안전 관리",
+    "관광통역안내사 자격"
+   ],
+   "responsibilities": [
+    "외국인 관광객 공항 영접과 환송",
+    "관광지 해설과 통역",
+    "단체 인솔과 일정 관리",
+    "숙박·식사·이동 편의 지원",
+    "현장 돌발 상황 대응"
+   ],
+   "keywords": [
+    "인솔",
+    "해설",
+    "통역",
+    "공항 영접",
+    "일정",
+    "단체",
+    "쇼핑",
+    "안전",
+    "이탈",
+    "문화",
+    "역사",
+    "만족도"
+   ],
+   "topics": {
+    "role": [
+     "문화 해설",
+     "단체 인솔",
+     "관광객 안전",
+     "일정 조정",
+     "고객 만족"
+    ],
+    "scenario": [
+     "일행 이탈",
+     "알레르기 등 건강 이상",
+     "관광객 간 다툼",
+     "우천으로 일정 취소",
+     "쇼핑 일정 불만"
+    ],
+    "result": [
+     "관광객 만족도",
+     "일정 정시 진행",
+     "사고 없는 인솔"
+    ],
+    "en": [
+     "tour guiding",
+     "interpretation",
+     "group escort",
+     "cultural storytelling"
+    ]
+   },
+   "sources": [
+    "s10"
+   ]
+  },
+  {
+   "id": "mice_planner",
+   "aliases": [
+    "MICE 기획",
+    "컨벤션기획사",
+    "행사기획자",
+    "PCO",
+    "이벤트 플래너",
+    "회의기획자",
+    "MICE Planner",
+    "전시기획"
+   ],
+   "skills": [
+    "행사 기획",
+    "예산 편성",
+    "협력업체 관리",
+    "참가자 등록·홍보",
+    "현장 운영",
+    "외국어"
+   ],
+   "responsibilities": [
+    "행사 콘셉트·프로그램 기획",
+    "예산안 작성과 고객사 협의",
+    "장소 선정과 숙박·수송·통역·장비 조율",
+    "홍보와 참가자 모집",
+    "현장 운영과 사후 평가"
+   ],
+   "keywords": [
+    "국제회의",
+    "컨벤션",
+    "전시",
+    "인센티브",
+    "행사장",
+    "예산",
+    "등록",
+    "연회",
+    "통역",
+    "수송",
+    "연사",
+    "현장 운영",
+    "결과 보고"
+   ],
+   "topics": {
+    "role": [
+     "행사 기획",
+     "예산 관리",
+     "협력업체 조율",
+     "참가자 모집",
+     "현장 운영"
+    ],
+    "scenario": [
+     "연사 도착 지연",
+     "장비 고장",
+     "행사 직전 프로그램 변경",
+     "예산 초과"
+    ],
+    "result": [
+     "참가자 수·등록률",
+     "참가자 만족도",
+     "예산 집행률",
+     "고객사 재계약"
+    ],
+    "en": [
+     "MICE",
+     "conference planning",
+     "event operations",
+     "venue sourcing",
+     "budgeting"
+    ]
+   },
+   "sources": [
+    "s7"
+   ]
+  },
+  {
+   "id": "flight_attendant",
+   "aliases": [
+    "객실승무원",
+    "승무원",
+    "스튜어디스",
+    "스튜어드",
+    "캐빈크루",
+    "Cabin Crew",
+    "Flight Attendant",
+    "인턴 승무원"
+   ],
+   "skills": [
+    "기내 안전 업무",
+    "기내 서비스",
+    "승객 응대",
+    "비상 절차",
+    "응급처치",
+    "외국어",
+    "팀워크"
+   ],
+   "responsibilities": [
+    "탑승 전후 객실 안전 점검",
+    "비상 절차와 안전 안내",
+    "기내식·음료 서비스",
+    "승객 요청과 불만 응대",
+    "기내 면세품 판매",
+    "응급 상황 초기 대응"
+   ],
+   "keywords": [
+    "안전",
+    "비상 절차",
+    "난기류",
+    "좌석벨트",
+    "기내식",
+    "기내 방송",
+    "불만 승객",
+    "응급처치",
+    "팀워크",
+    "장거리 비행",
+    "시차",
+    "면세품",
+    "서비스"
+   ],
+   "topics": {
+    "role": [
+     "기내 안전",
+     "기내 서비스",
+     "승객 응대",
+     "팀워크",
+     "서비스 철학"
+    ],
+    "scenario": [
+     "불만 승객 응대",
+     "승객 간 갈등",
+     "만취 승객",
+     "응급 환자",
+     "비상착륙 준비",
+     "규정과 승객 요청 충돌"
+    ],
+    "result": [
+     "승객 만족",
+     "안전 규정 준수",
+     "팀 서비스 품질"
+    ],
+    "en": [
+     "cabin safety",
+     "inflight service",
+     "passenger handling",
+     "emergency procedures",
+     "crew teamwork"
+    ]
+   },
+   "sources": [
+    "s1",
+    "s6"
+   ]
+  },
+  {
+   "id": "ground_staff",
+   "aliases": [
+    "항공 지상직",
+    "지상직",
+    "공항 서비스",
+    "여객운송",
+    "탑승수속",
+    "카운터",
+    "Ground Staff",
+    "Passenger Service Agent",
+    "공항 운송"
+   ],
+   "skills": [
+    "탑승 수속",
+    "수하물 규정",
+    "출입국 서류 확인",
+    "게이트 운영",
+    "승객 응대",
+    "교대 근무"
+   ],
+   "responsibilities": [
+    "발권·탑승 수속과 좌석 배정",
+    "수하물 접수와 규정 안내",
+    "게이트 탑승 관리",
+    "지연·결항 시 승객 안내",
+    "교통약자·비동반 소아 지원"
+   ],
+   "keywords": [
+    "탑승 수속",
+    "카운터",
+    "게이트",
+    "수하물",
+    "초과 요금",
+    "여권",
+    "지연",
+    "결항",
+    "초과 판매",
+    "탑승 마감",
+    "교대 근무",
+    "새벽 근무"
+   ],
+   "topics": {
+    "role": [
+     "탑승 수속",
+     "수하물 처리",
+     "게이트 운영",
+     "지연 안내",
+     "특수 고객 지원"
+    ],
+    "scenario": [
+     "지연 사유 미확정 상태의 항의",
+     "탑승 마감 직전 도착",
+     "초과 판매",
+     "수하물 미도착",
+     "여권 유효기간 부족"
+    ],
+    "result": [
+     "정시 탑승 마감",
+     "수속 대기 시간",
+     "승객 불만 건수"
+    ],
+    "en": [
+     "passenger check-in",
+     "gate operations",
+     "baggage handling",
+     "irregular operations"
+    ]
+   },
+   "sources": [
+    "s3"
+   ]
+  },
+  {
+   "id": "pilot",
+   "aliases": [
+    "조종사",
+    "운항승무원",
+    "기장",
+    "부기장",
+    "파일럿",
+    "Pilot",
+    "First Officer",
+    "Captain",
+    "항공기조종사"
+   ],
+   "skills": [
+    "비행 계획",
+    "기상 판단",
+    "CRM",
+    "체크리스트 운용",
+    "관제 교신",
+    "위기 판단"
+   ],
+   "responsibilities": [
+    "비행 전 브리핑과 안전 점검",
+    "관제 교신과 이착륙 절차 수행",
+    "기상·연료 판단과 회항 결정",
+    "객실과의 협조",
+    "안전 보고"
+   ],
+   "keywords": [
+    "CRM",
+    "체크리스트",
+    "기상",
+    "관제",
+    "회항",
+    "연료",
+    "피로 관리",
+    "안전 보고",
+    "부기장",
+    "기장",
+    "시뮬레이터",
+    "자동화"
+   ],
+   "topics": {
+    "role": [
+     "CRM",
+     "판단·의사결정",
+     "안전 문화",
+     "보고",
+     "피로 관리"
+    ],
+    "scenario": [
+     "기장의 위험한 판단",
+     "착륙 기준 미달 기상",
+     "기내 응급 환자",
+     "경고등 점등"
+    ],
+    "result": [
+     "안전 운항",
+     "정시성",
+     "훈련·평가 결과"
+    ],
+    "en": [
+     "crew resource management",
+     "decision making",
+     "safety culture",
+     "flight planning"
+    ]
+   },
+   "sources": [
+    "s12"
+   ]
+  },
+  {
+   "id": "aircraft_mechanic",
+   "aliases": [
+    "항공정비사",
+    "항공기정비원",
+    "정비사",
+    "라인정비",
+    "운항정비",
+    "기체정비",
+    "Aircraft Mechanic",
+    "AMT",
+    "MRO"
+   ],
+   "skills": [
+    "정비 매뉴얼 해석",
+    "고장 진단",
+    "부품 교체",
+    "정비 기록 관리",
+    "공구 관리",
+    "항공정비사 자격"
+   ],
+   "responsibilities": [
+    "항공기 기체·엔진·계기 점검과 정비",
+    "측정 장비를 이용한 진단",
+    "결함 부품 교체와 작동 점검",
+    "정비 기록 작성",
+    "교대 인수인계"
+   ],
+   "keywords": [
+    "정비 매뉴얼",
+    "작업 지시서",
+    "결함",
+    "점검",
+    "부품 교체",
+    "작동 점검",
+    "공구 관리",
+    "기록",
+    "인수인계",
+    "지연",
+    "안전",
+    "반복 결함"
+   ],
+   "topics": {
+    "role": [
+     "절차 준수",
+     "결함 진단",
+     "정비 기록",
+     "시간 압박 vs 안전",
+     "인수인계"
+    ],
+    "scenario": [
+     "출발 임박 결함 발견",
+     "선배의 절차 생략 지시",
+     "부품 재고 부족",
+     "작업 확인 누락 의심"
+    ],
+    "result": [
+     "정비 품질",
+     "정비 지연률",
+     "반복 결함 감소"
+    ],
+    "en": [
+     "aircraft maintenance",
+     "troubleshooting",
+     "maintenance manual",
+     "safety compliance"
+    ]
+   },
+   "sources": [
+    "s8"
+   ]
+  },
+  {
+   "id": "restaurant_manager",
+   "aliases": [
+    "외식 매장관리",
+    "매장 매니저",
+    "점장",
+    "홀 매니저",
+    "외식 점포관리",
+    "Restaurant Manager",
+    "Store Manager(F&B)"
+   ],
+   "skills": [
+    "인력 스케줄링",
+    "원가 관리",
+    "위생 관리",
+    "고객 응대",
+    "직원 교육",
+    "매출 분석"
+   ],
+   "responsibilities": [
+    "근무표 작성과 인력 운영",
+    "식재료 발주와 원가율 관리",
+    "위생·안전 점검",
+    "고객 불만 응대",
+    "직원 채용·교육"
+   ],
+   "keywords": [
+    "원가율",
+    "인건비",
+    "근무표",
+    "발주",
+    "피크타임",
+    "위생",
+    "회전율",
+    "객단가",
+    "리뷰",
+    "알바",
+    "교육",
+    "매출"
+   ],
+   "topics": {
+    "role": [
+     "매장 운영",
+     "인력 관리",
+     "원가 관리",
+     "위생 관리",
+     "고객 응대"
+    ],
+    "scenario": [
+     "직원 갑작스러운 결근",
+     "직원이 폭언을 들음",
+     "주방·홀 갈등",
+     "가스 냄새 신고",
+     "저녁 매출 하락"
+    ],
+    "result": [
+     "매출·원가율",
+     "인건비율",
+     "고객 평점",
+     "직원 이직률"
+    ],
+    "en": [
+     "restaurant operations",
+     "labor scheduling",
+     "food cost",
+     "food safety"
+    ]
+   }
+  },
+  {
+   "id": "chef",
+   "aliases": [
+    "조리사",
+    "셰프",
+    "요리사",
+    "쿡",
+    "주방",
+    "Chef",
+    "Cook",
+    "조리 담당"
+   ],
+   "skills": [
+    "조리 기술",
+    "식재료 검수",
+    "위생·온도 관리",
+    "레시피 표준화",
+    "메뉴 개발",
+    "원가 계산"
+   ],
+   "responsibilities": [
+    "식재료 검수와 보관",
+    "메뉴 조리와 품질 유지",
+    "레시피 표준화",
+    "메뉴 개발과 원가 산정",
+    "주방 위생·안전 관리"
+   ],
+   "keywords": [
+    "검수",
+    "선입선출",
+    "교차오염",
+    "온도 관리",
+    "레시피",
+    "메뉴 개발",
+    "원가",
+    "피크타임",
+    "주방",
+    "위생"
+   ],
+   "topics": {
+    "role": [
+     "조리 품질",
+     "위생 관리",
+     "메뉴 개발",
+     "원가 관리",
+     "주방 팀워크"
+    ],
+    "scenario": [
+     "식재료 소진",
+     "음식 재조리 요청",
+     "주문 몰림",
+     "주방 안전사고"
+    ],
+    "result": [
+     "음식 품질 일관성",
+     "식재료 폐기량",
+     "메뉴 원가율"
+    ],
+    "en": [
+     "cooking",
+     "kitchen hygiene",
+     "menu development",
+     "food costing"
+    ]
+   }
+  },
+  {
+   "id": "barista",
+   "aliases": [
+    "바리스타",
+    "카페 직원",
+    "커피 전문가",
+    "Barista",
+    "카페 매니저"
+   ],
+   "skills": [
+    "에스프레소 추출",
+    "우유 스티밍",
+    "머신 관리",
+    "원두 관리",
+    "고객 응대",
+    "메뉴 개발"
+   ],
+   "responsibilities": [
+    "음료 제조와 품질 유지",
+    "추출 레시피 조정",
+    "머신·그라인더 관리",
+    "원두 보관과 재고 관리",
+    "고객 응대와 메뉴 추천"
+   ],
+   "keywords": [
+    "에스프레소",
+    "추출",
+    "그라인더",
+    "분쇄도",
+    "스티밍",
+    "원두",
+    "레시피",
+    "머신 관리",
+    "신메뉴",
+    "원가"
+   ],
+   "topics": {
+    "role": [
+     "추출 품질",
+     "음료 일관성",
+     "머신 관리",
+     "고객 응대",
+     "메뉴 개발"
+    ],
+    "scenario": [
+     "아침 주문 폭주",
+     "맛이 다르다는 불만",
+     "마감 직전 대량 주문"
+    ],
+    "result": [
+     "음료 품질 일관성",
+     "대기 시간",
+     "신메뉴 판매량"
+    ],
+    "en": [
+     "espresso extraction",
+     "milk steaming",
+     "coffee quality",
+     "customer service"
+    ]
+   }
+  },
+  {
+   "id": "food_researcher",
+   "aliases": [
+    "식품 연구개발",
+    "식품 R&D",
+    "식품연구원",
+    "제품개발",
+    "식품개발",
+    "Food R&D",
+    "Food Scientist",
+    "식품공학"
+   ],
+   "skills": [
+    "제품 배합 설계",
+    "관능 평가",
+    "보존성 시험",
+    "스케일업",
+    "원가 검토",
+    "표시 사항 검토"
+   ],
+   "responsibilities": [
+    "신제품 콘셉트와 배합 개발",
+    "시제품 제작과 관능 평가",
+    "소비기한·보존성 시험",
+    "생산 이관과 스케일업",
+    "원가 절감 대체 원료 검토"
+   ],
+   "keywords": [
+    "배합",
+    "시제품",
+    "관능 평가",
+    "소비기한",
+    "물성",
+    "스케일업",
+    "원가",
+    "대체 원료",
+    "표시 사항",
+    "트렌드",
+    "저당"
+   ],
+   "topics": {
+    "role": [
+     "제품 개발",
+     "관능 평가",
+     "보존성",
+     "스케일업",
+     "원가 검토"
+    ],
+    "scenario": [
+     "출시 직전 식감 차이",
+     "원가 목표 충돌",
+     "원재료 가격 급등"
+    ],
+    "result": [
+     "출시 제품 수",
+     "판매·재구매율",
+     "원가 절감액"
+    ],
+    "en": [
+     "food product development",
+     "sensory evaluation",
+     "shelf life",
+     "scale-up"
+    ]
+   }
+  },
+  {
+   "id": "food_quality",
+   "aliases": [
+    "식품 품질관리",
+    "식품 QA",
+    "식품 QC",
+    "HACCP 담당",
+    "위생관리",
+    "품질보증",
+    "Food Safety",
+    "Quality Assurance"
+   ],
+   "skills": [
+    "HACCP 운영",
+    "CCP 모니터링",
+    "미생물·이화학 분석",
+    "이물 클레임 조사",
+    "위생 교육",
+    "기록 관리"
+   ],
+   "responsibilities": [
+    "HACCP 계획 운영과 CCP 모니터링",
+    "원료 입고 검사와 제품 검사",
+    "이물·소비자 클레임 조사",
+    "작업장 위생 점검과 교육",
+    "회수 판단과 심사 대응"
+   ],
+   "keywords": [
+    "HACCP",
+    "CCP",
+    "한계기준",
+    "이탈",
+    "개선조치",
+    "금속검출기",
+    "이물",
+    "클레임",
+    "미생물",
+    "입고 검사",
+    "회수",
+    "위생 교육"
+   ],
+   "topics": {
+    "role": [
+     "HACCP 운영",
+     "이물 클레임",
+     "입고 검사",
+     "위생 교육",
+     "기록 관리"
+    ],
+    "scenario": [
+     "CCP 한계기준 이탈",
+     "플라스틱 이물 클레임",
+     "살균 기록 누락",
+     "금속검출기 이상"
+    ],
+    "result": [
+     "클레임 건수",
+     "부적합률",
+     "심사 결과"
+    ],
+    "en": [
+     "HACCP",
+     "food safety",
+     "quality assurance",
+     "foreign matter complaint"
+    ]
+   },
+   "sources": [
+    "s4"
+   ]
+  },
+  {
+   "id": "store_manager",
+   "aliases": [
+    "매장관리",
+    "점장",
+    "매장 매니저",
+    "점포 운영",
+    "Store Manager",
+    "스토어 매니저",
+    "매장 운영관리"
+   ],
+   "skills": [
+    "손익 관리",
+    "재고 관리",
+    "인력 운영",
+    "진열·매장 관리",
+    "고객 응대",
+    "안전 관리"
+   ],
+   "responsibilities": [
+    "점포 매출·손익 관리",
+    "발주와 재고 관리",
+    "직원 배치와 교육",
+    "진열·가격표 점검",
+    "고객 불만과 매장 안전 대응"
+   ],
+   "keywords": [
+    "손익",
+    "재고 실사",
+    "로스",
+    "폐기",
+    "발주",
+    "객단가",
+    "고객 수",
+    "진열",
+    "환불",
+    "인력 배치",
+    "안전"
+   ],
+   "topics": {
+    "role": [
+     "점포 손익",
+     "재고 관리",
+     "인력 관리",
+     "진열 관리",
+     "고객 응대"
+    ],
+    "scenario": [
+     "재고 차이",
+     "환불 분쟁",
+     "명절 입고 지연",
+     "매출 부진 점포",
+     "새 점장 신뢰 문제"
+    ],
+    "result": [
+     "매출·이익",
+     "재고 로스율",
+     "직원 이직률"
+    ],
+    "en": [
+     "store operations",
+     "inventory control",
+     "P&L",
+     "staff management"
+    ]
+   }
+  },
+  {
+   "id": "retail_sm",
+   "aliases": [
+    "유통 영업관리",
+    "SM",
+    "스토어 매니저(유통사)",
+    "OFC",
+    "SC",
+    "영업관리",
+    "점포 영업관리",
+    "Retail Sales Manager",
+    "백화점 영업관리"
+   ],
+   "skills": [
+    "점포 컨설팅",
+    "협력사 협상",
+    "매출 분석",
+    "프로모션 기획",
+    "현장 점검",
+    "관계 관리"
+   ],
+   "responsibilities": [
+    "담당 점포·브랜드 매출 관리",
+    "협력사와 프로모션·팝업 기획",
+    "매장 순회 점검",
+    "점주·협력사 관계 관리",
+    "본사 정책의 현장 전달"
+   ],
+   "keywords": [
+    "점포",
+    "점주",
+    "가맹점",
+    "협력사",
+    "브랜드",
+    "팝업",
+    "프로모션",
+    "매출 분석",
+    "이익률",
+    "입점 조건",
+    "순회 점검",
+    "상권"
+   ],
+   "topics": {
+    "role": [
+     "점포 관리",
+     "협력사 관계",
+     "프로모션 기획",
+     "매출 분석",
+     "본사·현장 조율"
+    ],
+    "scenario": [
+     "경쟁 점포 출점",
+     "점주의 정책 거부",
+     "부진 브랜드 퇴점 통보",
+     "야간 설비 고장"
+    ],
+    "result": [
+     "담당 점포 매출",
+     "행사 이익률",
+     "협력사 만족"
+    ],
+    "en": [
+     "retail sales management",
+     "franchise consulting",
+     "vendor management",
+     "promotion planning"
+    ]
+   },
+   "sources": [
+    "s2",
+    "s13",
+    "s15"
+   ]
+  },
+  {
+   "id": "ecommerce_ops",
+   "aliases": [
+    "이커머스 운영",
+    "온라인몰 운영",
+    "쇼핑몰 운영",
+    "커머스 운영",
+    "E-commerce Operations",
+    "온라인 MD 운영",
+    "마켓플레이스 운영"
+   ],
+   "skills": [
+    "상품 등록·관리",
+    "기획전 운영",
+    "재고·배송 관리",
+    "판매자 관리",
+    "데이터 분석",
+    "고객 문의 대응"
+   ],
+   "responsibilities": [
+    "상품 등록과 상세페이지 점검",
+    "기획전·프로모션 운영",
+    "재고·출고 일정 관리",
+    "판매자·고객 분쟁 조정",
+    "전환율 등 운영 지표 분석"
+   ],
+   "keywords": [
+    "상세페이지",
+    "기획전",
+    "쿠폰",
+    "품절",
+    "재고",
+    "출고",
+    "배송 지연",
+    "전환율",
+    "장바구니",
+    "리뷰",
+    "판매자",
+    "반품"
+   ],
+   "topics": {
+    "role": [
+     "상품 운영",
+     "프로모션 운영",
+     "재고·배송",
+     "판매자 관리",
+     "지표 분석"
+    ],
+    "scenario": [
+     "쿠폰 설정 오류",
+     "행사 첫날 출고 지연",
+     "허위 리뷰",
+     "반품 비용 분쟁"
+    ],
+    "result": [
+     "매출·전환율",
+     "품절률",
+     "배송 지연률",
+     "고객 문의 처리 시간"
+    ],
+    "en": [
+     "e-commerce operations",
+     "promotion management",
+     "conversion rate",
+     "marketplace seller management"
+    ]
+   }
+  },
+  {
+   "id": "vmd",
+   "aliases": [
+    "VMD",
+    "비주얼 머천다이저",
+    "비주얼 머천다이징",
+    "매장 연출",
+    "디스플레이어",
+    "Visual Merchandiser",
+    "VM"
+   ],
+   "skills": [
+    "공간 연출",
+    "진열 기획",
+    "동선 설계",
+    "조명·색채 활용",
+    "예산 관리",
+    "매장 협업"
+   ],
+   "responsibilities": [
+    "시즌·신상품 연출 기획",
+    "쇼윈도와 매장 내부 진열",
+    "고객 동선 설계",
+    "지점별 연출 가이드 운영",
+    "소품·예산 관리"
+   ],
+   "keywords": [
+    "쇼윈도",
+    "진열",
+    "동선",
+    "조명",
+    "색상",
+    "소품",
+    "시즌 테마",
+    "브랜드 콘셉트",
+    "연출 가이드",
+    "매출"
+   ],
+   "topics": {
+    "role": [
+     "진열 기획",
+     "공간 연출",
+     "동선 설계",
+     "브랜드 표현",
+     "매장 협업"
+    ],
+    "scenario": [
+     "직원이 진열을 바꿔 놓음",
+     "소품 미도착",
+     "고소 작업 안전",
+     "방문 대비 구매 저조"
+    ],
+    "result": [
+     "연출 후 매출 변화",
+     "고객 체류",
+     "지점 연출 준수율"
+    ],
+    "en": [
+     "visual merchandising",
+     "window display",
+     "store layout",
+     "customer flow"
+    ]
+   },
+   "sources": [
+    "s9"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "text": "호텔·관광 업계 일이 밖에서 보는 이미지와 가장 다른 점은 무엇이라고 생각하세요?",
+   "scope": "family:hotel_tourism",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광 서비스에서 한 번의 만족이 재방문으로 이어지려면 어떤 요소가 가장 중요하다고 보시나요?",
+   "scope": "family:hotel_tourism",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주말·공휴일·야간 근무가 일상인 이 업계에서 오래 일하려면 어떤 준비가 필요하다고 생각하세요?",
+   "scope": "family:hotel_tourism",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외국인 고객을 응대할 때 언어 능력 말고도 꼭 필요한 역량은 무엇이라고 보시나요?",
+   "scope": "family:hotel_tourism",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 부서가 함께 움직여야 고객 요청을 해결할 수 있었던 경험이 있다면 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 말하지 않은 불편을 먼저 알아차리고 챙겼던 경험을 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "고객",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "문화나 언어가 다른 사람과 오해가 생겼을 때 어떻게 풀어 가셨는지 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "몹시 바쁜 상황에서도 서비스 품질을 지키려고 스스로 정해 둔 원칙이 있었다면 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "가치관",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "무리한 요구를 하는 고객에게 정중하게 거절해야 했던 경험을 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "단체 관광객 도착 직전에 예약해 둔 식당이 갑자기 영업을 못 하게 됐다면 어떻게 하시겠어요?",
+   "scope": "family:hotel_tourism",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온라인에 직원 응대를 비난하는 후기가 올라와 조회 수가 급증하고 있다면 어떻게 대처하시겠어요?",
+   "scope": "family:hotel_tourism",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "태풍으로 항공편이 대거 결항되어 고객 일정이 모두 틀어졌다면 어떤 순서로 대응하시겠어요?",
+   "scope": "family:hotel_tourism",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매뉴얼에 없는 고객 요청을 받았는데 물어볼 상사가 자리에 없다면 어떻게 판단하시겠어요?",
+   "scope": "family:hotel_tourism",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 분실물을 찾아 달라고 하시는데 관련 기록이 전혀 남아 있지 않다면 어떻게 대응하시겠어요?",
+   "scope": "family:hotel_tourism",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아르바이트나 실습에서 고객에게 칭찬을 받았던 순간과 그 이유를 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예상치 못한 문제로 행사나 여행 일정이 바뀌었을 때 본인이 맡았던 역할을 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외국어를 실제 업무나 생활에서 써서 문제를 해결했던 경험을 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외국인 관광객의 여행 방식이 단체에서 개별 여행으로 바뀌면서 업계에 어떤 변화가 필요하다고 보세요?",
+   "scope": "family:hotel_tourism",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온라인 예약 플랫폼 비중이 커지는 상황에서 호텔·여행사가 직접 판매를 늘리려면 무엇이 필요할까요?",
+   "scope": "family:hotel_tourism",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광 수요가 계절이나 외부 변수에 크게 흔들리는 문제를 어떻게 완화할 수 있다고 보시나요?",
+   "scope": "family:hotel_tourism",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객의 개인정보나 여권 정보를 다룰 때 특히 조심해야 할 점은 무엇이라고 생각하세요?",
+   "scope": "family:hotel_tourism",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지인이 호텔이나 여행 상품을 직원 할인가로 예약해 달라고 부탁한다면 어떻게 하시겠어요?",
+   "scope": "family:hotel_tourism",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "서비스 현장에서 감정적으로 가장 힘들었던 순간과 그걸 어떻게 회복하셨는지 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 응대에서 실수한 뒤 본인의 서비스 방식을 바꾸게 된 계기가 있다면 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 서비스가 고객의 재방문이나 추천으로 이어졌던 사례를 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "팀과 함께 매출이나 예약 목표를 달성했던 경험에서 본인의 기여가 무엇이었는지 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "호텔의 무인 체크인 확대가 고객 경험을 높인다는 의견과 떨어뜨린다는 의견 중 어느 쪽인지 근거와 함께 말씀해 주세요.",
+   "scope": "family:hotel_tourism",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역의 숨은 관광지를 외국인 개별 여행객에게 알리는 방안을 5분 발표로 구성해 보세요.",
+   "scope": "family:hotel_tourism",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간 근무 중 매출 마감을 하는데 객실 매출이 맞지 않는다면 어떤 순서로 확인하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "객실이 부족한 날 업그레이드 대상 고객을 정할 때 어떤 기준을 적용하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "하우스키핑의 객실 상태 정보와 프런트 정보가 어긋나 체크인이 늦어진다면 어떻게 조율하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "노쇼와 당일 취소가 잦은 날에는 객실 판매를 어떻게 관리하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "투숙객이 객실에 두고 간 귀중품을 발견했을 때 처리 절차를 설명해 주세요.",
+   "scope": "role:hotelier",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "VIP 고객이 도착하기 전에 프런트에서 미리 준비하고 확인해야 할 것은 무엇인가요?",
+   "scope": "role:hotelier",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외국인 투숙객이 교통편과 주변 맛집을 물어볼 때 잘 안내하려면 평소 무엇을 준비해 두시겠어요?",
+   "scope": "role:hotelier",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "오버부킹으로 예약 고객에게 객실을 드릴 수 없게 됐다면 고객에게 어떻게 안내하고 해결하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "옆방 소음 때문에 한 투숙객이 새벽에 세 번째로 전화를 하셨다면 어떻게 대응하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "체크인한 고객이 객실 청소 상태가 불량하다며 환불을 요구하시면 어떻게 하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "체크아웃이 몰린 아침에 한 고객이 청구 내역을 하나하나 따지며 오래 머물고 있다면 어떻게 하시겠어요?",
+   "scope": "role:hotelier",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주중 객실 점유율은 높은데 평균 객실 단가가 계속 떨어지고 있다면 원인을 어떻게 찾아보시겠어요?",
+   "scope": "role:hotelier",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 달 치 고객 불만 기록에서 반복되는 유형이 보인다면 개선책을 어떻게 만들어 가시겠어요?",
+   "scope": "role:hotelier",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객의 컴플레인을 해결해서 오히려 단골로 만들었던 경험이 있다면 말씀해 주세요.",
+   "scope": "role:hotelier",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교대 근무에서 인수인계가 잘못되어 문제가 생겼던 경험과 이후 바꾼 점을 말씀해 주세요.",
+   "scope": "role:hotelier",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "프런트 데스크가 호텔 안에서 어떤 역할을 맡고 있다고 생각하시는지 말씀해 주세요.",
+   "scope": "role:hotelier",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "호텔의 여러 부서 중에서 프런트·객실 업무를 선택한 이유가 궁금합니다.",
+   "scope": "role:hotelier",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 요청을 들어주다 보면 규정을 넘게 되는데, 그게 결국 호텔 수익을 해치는 것 아닌가요?",
+   "scope": "role:hotelier",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기업 고객과 연간 객실 계약 단가를 협상할 때 무엇을 근거로 제시하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비수기 객실 판매를 늘리기 위한 패키지 상품을 기획한다면 어떤 요소를 넣으시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "객실 블록을 잡아 둔 고객사가 확정 인원 통보를 계속 미룬다면 어떻게 관리하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온라인 여행사, 기업 계약, 직접 예약 채널 사이의 판매 비중을 어떻게 조정하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 기업 고객을 발굴할 때 어떤 방식으로 접근하고 첫 미팅을 준비하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연회나 세미나 문의가 들어왔을 때 견적을 만들기 전에 고객에게 꼭 확인할 것은 무엇인가요?",
+   "scope": "role:hotel_sales",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 프로모션의 성과를 판단할 때 예약 건수 말고 어떤 지표를 함께 보시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "큰 행사를 계약한 고객사가 행사 2주 전에 인원을 절반으로 줄이겠다고 하면 어떻게 대응하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경쟁 호텔이 우리 주요 고객사에 더 낮은 단가를 제시했다는 소식을 들었다면 어떻게 하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "영업에서 약속한 조건을 운영 부서가 맞추기 어렵다고 할 때 어떻게 조율하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "객실 점유율과 평균 단가 중 하나만 올릴 수 있다면 어떤 상황에서 무엇을 택하시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "의사결정",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지난 분기 기업 고객 매출이 크게 줄었다면 어떤 자료부터 살펴보시겠어요?",
+   "scope": "role:hotel_sales",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처음 만난 사람을 설득해 무언가를 판매하거나 협찬을 받아 낸 경험을 말씀해 주세요.",
+   "scope": "role:hotel_sales",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "SNS나 온라인 채널로 무언가를 홍보해서 반응을 얻었던 경험이 있다면 말씀해 주세요.",
+   "scope": "role:hotel_sales",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "호텔 세일즈 담당자의 업무 중 가장 중요한 일은 무엇이라고 알고 계신지 말씀해 주세요.",
+   "scope": "role:hotel_sales",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 서비스보다 호텔 세일즈·마케팅 쪽에 끌린 이유는 무엇인가요?",
+   "scope": "role:hotel_sales",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실적 때문에 운영팀이 소화하기 힘든 조건으로 계약을 따 오면 결국 누가 손해를 보는 걸까요?",
+   "scope": "role:hotel_sales",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 여행 상품의 원가를 구성하는 항목과 판매가를 정하는 방식을 설명해 주세요.",
+   "scope": "role:travel_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현지 협력사를 고를 때 어떤 기준으로 평가하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상품 기획 단계에서 현장 답사를 간다면 무엇을 꼭 확인하고 오시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 지역을 다루는 경쟁 상품과 차별화하려면 일정 구성에서 무엇을 바꾸시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "50~60대 부부를 겨냥한 여행 상품이라면 일정과 동선을 어떻게 짜시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공 좌석과 호텔 객실을 미리 확보하는 조건을 정할 때 어떤 위험을 고려하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "출발 일주일 전 현지 호텔이 공사로 이용이 어렵다고 연락해 왔다면 어떻게 처리하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "모객이 목표의 절반에도 못 미친 상태에서 출발 확정 여부를 정해야 한다면 어떻게 판단하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여행을 다녀온 고객이 광고와 일정이 달랐다며 보상을 요구하시면 어떻게 대응하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현지에 자연재해가 발생해 이미 출발한 고객들의 안전 확인이 필요하다면 무엇부터 하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 지역 상품의 예약률이 지난해보다 크게 떨어졌다면 원인을 어떤 순서로 분석하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 후기에서 불만이 가장 많이 몰린 일정 구간을 찾았다면 어떻게 개선하시겠어요?",
+   "scope": "role:travel_planner",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직접 여행 일정을 짜서 다른 사람들과 다녀왔던 경험에서 가장 신경 쓴 점을 말씀해 주세요.",
+   "scope": "role:travel_planner",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예산이 제한된 상황에서 기획안을 조정해 본 경험을 말씀해 주세요.",
+   "scope": "role:travel_planner",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여행 상품 기획자에게 가장 중요한 역량은 무엇이라고 보시는지 말씀해 주세요.",
+   "scope": "role:travel_planner",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여행을 좋아하는 것과 여행 상품을 만드는 일은 다를 텐데, 이 직무를 택한 이유가 무엇인가요?",
+   "scope": "role:travel_planner",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요즘은 고객이 항공과 숙소를 직접 예약하는데, 패키지 상품이 계속 필요하다고 보시는 근거가 뭔가요?",
+   "scope": "role:travel_planner",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처음 한국을 찾은 외국인 단체에게 궁궐을 안내한다면 설명을 어떤 흐름으로 구성하시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "역사적으로 민감한 주제를 외국인 관광객이 물어 온다면 어떤 태도로 설명하시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광객 중 거동이 불편한 분이 있다면 일정과 동선을 어떻게 조정하시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "쇼핑 일정에 대한 관광객의 불만이 나온다면 어떻게 안내하고 조율하시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공항 영접부터 환송까지 가이드가 챙겨야 하는 일들을 순서대로 말씀해 주세요.",
+   "scope": "role:tour_guide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 장소를 반복해서 안내해도 설명이 지루해지지 않게 하는 본인만의 방법이 있나요?",
+   "scope": "role:tour_guide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광 도중 한 분이 일행에서 이탈해 연락이 닿지 않는다면 어떻게 하시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광객 한 분이 식사 중 갑자기 알레르기 증상을 보이신다면 어떻게 대응하시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광객끼리 좌석이나 일정 문제로 언쟁이 벌어졌다면 어떻게 중재하시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "투어가 끝난 뒤 만족도 평가가 낮게 나왔다면 어떤 부분부터 되돌아보시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비가 와서 야외 일정이 절반 넘게 취소됐다면 대체 일정을 어떻게 짜시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외국인에게 한국 문화나 장소를 소개해서 좋은 반응을 얻었던 경험을 말씀해 주세요.",
+   "scope": "role:tour_guide",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "많은 인원을 이끌고 이동하면서 시간을 관리해야 했던 경험을 말씀해 주세요.",
+   "scope": "role:tour_guide",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광통역안내사가 일반 통역사와 다른 점은 무엇이라고 생각하세요?",
+   "scope": "role:tour_guide",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광통역안내사라는 직업에 관심을 갖게 된 계기를 말씀해 주세요.",
+   "scope": "role:tour_guide",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여행사는 쇼핑센터 방문을 늘리라고 하고 관광객은 싫어한다면, 어느 편에 서시겠어요?",
+   "scope": "role:tour_guide",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "국제회의를 맡게 된다면 기획부터 사후 관리까지 어떤 단계로 준비하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "행사 예산안을 짤 때 가장 먼저 확정해야 할 항목과 그 이유를 말씀해 주세요.",
+   "scope": "role:mice_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "해외 참가자의 숙박, 수송, 통역을 한꺼번에 조율할 때 어떤 방식으로 관리하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "행사장을 고를 때 규모 말고 어떤 조건들을 비교하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "참가 등록률을 높이기 위한 사전 홍보를 어떻게 설계하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "행사 당일 운영 인력의 역할 분담과 동선은 어떻게 짜시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기업 인센티브 여행을 기획한다면 일반 관광 상품과 무엇이 달라야 한다고 보시나요?",
+   "scope": "role:mice_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개막 한 시간 전 기조연설자의 비행기가 지연돼 도착이 어렵다는 연락을 받았다면 어떻게 하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "행사 도중 음향 장비가 멈춰 발표가 중단됐다면 현장에서 어떻게 대처하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객사가 행사 직전에 프로그램 구성을 크게 바꾸자고 요청한다면 어떻게 대응하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참가자 만족도는 높았지만 예산이 20% 초과된 행사라면 어떻게 평가하고 보고하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "500명 규모 컨퍼런스의 연회 인원을 확정할 때 불참 인원을 어떻게 예측해 반영하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교 축제나 행사를 기획·운영하면서 예상 밖의 문제를 해결했던 경험을 말씀해 주세요.",
+   "scope": "role:mice_planner",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 외부 업체와 일정을 맞춰 무언가를 준비했던 경험을 말씀해 주세요.",
+   "scope": "role:mice_planner",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "MICE 기획자에게 순발력과 체력이 특히 중요하다고들 하는데, 그 이유는 무엇이라고 보세요?",
+   "scope": "role:mice_planner",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "관광 분야의 여러 직무 중 MICE 기획을 선택한 이유는 무엇인가요?",
+   "scope": "role:mice_planner",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온라인 회의가 보편화됐는데 굳이 오프라인 행사를 열어야 하는 이유를 고객사에 어떻게 설득하시겠어요?",
+   "scope": "role:mice_planner",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공 업계에서는 모든 직무가 안전을 가장 앞에 두는데, 그 이유를 본인 말로 설명해 주세요.",
+   "scope": "family:aviation",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정시 운항을 지키기 위해 공항과 기내의 각 직무가 어떤 역할을 한다고 보세요?",
+   "scope": "family:aviation",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지연이나 결항처럼 통제할 수 없는 상황이 잦은 업무에서는 어떤 태도가 필요하다고 보세요?",
+   "scope": "family:aviation",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공사 직원에게 요구되는 규정 준수 태도는 일반 서비스업과 어떻게 다르다고 생각하세요?",
+   "scope": "family:aviation",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처음 만난 사람들과 짧은 시간 안에 손발을 맞춰 일을 해냈던 경험을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "귀찮거나 시간이 걸려도 정해진 절차를 끝까지 지켰던 경험을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "윤리",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상급자나 선배의 판단에 문제가 있다고 느꼈을 때 의견을 말했던 경험이 있나요?",
+   "scope": "family:aviation",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예상 못 한 변수로 계획이 무너졌을 때 침착하게 대응했던 경험을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "상황대처",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다양한 국적이나 문화권 사람들과 함께 지내거나 일하면서 배운 점을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "결항이 이어져 공항에 승객들이 몰려 항의하고 있다면 현장 직원으로서 어떻게 움직이시겠어요?",
+   "scope": "family:aviation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동료가 피곤하다며 점검 절차 하나를 건너뛰는 것을 봤다면 어떻게 하시겠어요?",
+   "scope": "family:aviation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아무도 문제 삼지 않는 작은 이상 징후를 혼자 발견했다면 어떻게 판단하고 행동하시겠어요?",
+   "scope": "family:aviation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 실수로 출발이 지연됐다면 이를 어떻게 보고하고 수습하시겠어요?",
+   "scope": "family:aviation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "승객이 안전 규정이 지나치다며 설명을 요구한다면 어떻게 납득시키시겠어요?",
+   "scope": "family:aviation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "체력적으로 한계에 가까운 상황에서도 맡은 일을 끝까지 마쳤던 경험을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전이나 위생과 관련된 규칙을 지키는 일을 맡아 본 경험을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "밤샘이나 이른 새벽 일정을 소화하면서 컨디션을 관리했던 경험을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "최근 몇 년 사이 항공 산업이 어떻게 달라졌는지 비전공자에게 설명하듯 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s14",
+   "confidence": "high"
+  },
+  {
+   "text": "앞으로 항공 수요가 늘어날 것으로 보이는 해외 지역을 하나 꼽고 그 이유를 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s14",
+   "confidence": "high"
+  },
+  {
+   "text": "저비용항공사가 늘어나면서 항공사 간 경쟁 방식이 어떻게 바뀌었다고 보세요?",
+   "scope": "family:aviation",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공 수요가 빠르게 늘거나 줄 때 인력 운영 측면에서 어떤 과제가 생긴다고 보시나요?",
+   "scope": "family:aviation",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "승객의 개인정보나 탑승 정보를 SNS에 올리는 동료를 보게 된다면 어떻게 하시겠어요?",
+   "scope": "family:aviation",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보고하면 본인에게 불이익이 갈 수 있는 작은 실수를 발견했다면 어떻게 하시겠어요?",
+   "scope": "family:aviation",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지금까지 가장 긴장했던 순간을 떠올리면 본인은 압박 속에서 어떤 사람이라고 느끼셨나요?",
+   "scope": "family:aviation",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 성격 중 항공 업무에 맞지 않을 수 있는 부분과 그 보완 방법을 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 대응 덕분에 지연이나 사고를 막았던 경험이 있다면 결과까지 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "팀 단위로 서비스나 업무 품질을 개선해서 수치로 확인했던 사례를 말씀해 주세요.",
+   "scope": "family:aviation",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공기 지연 시 승객 보상을 늘려야 한다는 주장과 항공사 부담이 과하다는 주장 중 어느 쪽에 동의하시나요?",
+   "scope": "family:aviation",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "승무원의 일은 서비스보다 안전 업무가 먼저라고 하는데, 그 의미를 어떻게 이해하고 계신가요?",
+   "scope": "role:flight_attendant",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "선후배 위계가 뚜렷한 승무원 팀에서 막내로서 어떤 자세로 일하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "조직적합성",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 서비스 직무 중에서 굳이 객실승무원이 되고 싶은 이유는 무엇인가요?",
+   "scope": "role:flight_attendant",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장시간 비행에서 승객이 편안하게 지낼 수 있도록 서비스 흐름을 어떻게 조절하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "문화권마다 서비스에 대한 기대가 다를 때 응대 방식을 어떻게 달리하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "기내 면세품을 판매할 때 승객에게 부담을 주지 않으려면 어떤 점에 신경 쓰시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "국제선 승객에게 외국어로 안전 안내를 해야 할 때 가장 신경 쓸 점은 무엇인가요?",
+   "scope": "role:flight_attendant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "기내 안내 방송을 할 때 전달력을 높이기 위해 어떤 점을 신경 쓰시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "high"
+  },
+  {
+   "text": "채식하는 승객을 위해 기내식 메뉴를 새로 제안한다면 어떤 메뉴를 고르시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "high"
+  },
+  {
+   "text": "기내에서 승객이 갑자기 의식을 잃었을 때 승무원이 해야 할 일을 순서대로 말씀해 주세요.",
+   "scope": "role:flight_attendant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비행 중 기내에 벌레가 나타나 승객들이 놀라 소란스러워졌다면 어떻게 대응하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "high"
+  },
+  {
+   "text": "난기류로 좌석벨트 표시등이 켜졌는데 승객이 화장실에 꼭 가야 한다고 하면 어떻게 하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "비상착륙을 준비하라는 기장의 지시가 내려졌다면 객실에서 가장 먼저 무엇을 하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "만취한 승객이 술을 더 달라며 큰 소리를 낸다면 어떻게 대응하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "좌석 등받이 문제로 앞뒤 승객이 언쟁을 벌이고 있다면 어떻게 중재하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이륙 직전인데 승객이 휴대전화 통화를 계속하며 안내를 무시한다면 어떻게 하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원하는 기내식 메뉴가 떨어져 승객이 강하게 불만을 표시하면 어떻게 응대하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아이가 오래 울어 주변 승객들이 불편을 호소하는데 보호자도 지쳐 있다면 어떻게 하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기내에서 연기 냄새가 난다는 승객의 제보를 받았다면 어떻게 대응하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비상구 좌석 승객이 비상시 협조가 어려워 보인다면 이륙 전에 어떻게 하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 서비스를 했는데 어떤 승객은 만족하고 어떤 승객은 불만인 이유를 어떻게 분석해 보시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "고객",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "승객 불만 중 승무원 응대 태도 관련 건이 늘었다는 보고를 받았다면 팀 차원에서 무엇을 점검하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기내식 두 메뉴 중 한쪽이 늘 먼저 떨어진다면 탑재 비율을 어떻게 조정하자고 제안하시겠어요?",
+   "scope": "role:flight_attendant",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "누군가를 세심하게 배려했던 경험을 하나 골라 구체적으로 말씀해 주세요.",
+   "scope": "role:flight_attendant",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "high"
+  },
+  {
+   "text": "항공 서비스를 이용하며 불편했던 점과, 승무원이라면 그걸 어떻게 개선할지 말씀해 주세요.",
+   "scope": "role:flight_attendant",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "high"
+  },
+  {
+   "text": "오해 때문에 억울한 불만을 들었을 때 감정을 누르고 대응했던 경험을 말씀해 주세요.",
+   "scope": "role:flight_attendant",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "서비스 현장에서 동료의 몫까지 챙겨야 했던 경험과 그때의 마음가짐을 말씀해 주세요.",
+   "scope": "role:flight_attendant",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 생각하는 좋은 기내 서비스란 어떤 모습인지 말씀해 주세요.",
+   "scope": "role:flight_attendant",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "승무원은 결국 서비스직인데, 안전 요원 역할을 강조하는 건 면접용 답변 아닌가요?",
+   "scope": "role:flight_attendant",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 늘 옳지는 않다고 하셨는데, 그럼 어디까지 승객 요구를 들어주실 건가요?",
+   "scope": "role:flight_attendant",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공항 현장 업무의 힘든 점은 무엇이라고 보시고, 그걸 어떻게 이겨 내실 건가요?",
+   "scope": "role:ground_staff",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s3",
+   "confidence": "high"
+  },
+  {
+   "text": "안정적인 선택지를 두고 공항 현장직을 택하려는 이유가 궁금합니다.",
+   "scope": "role:ground_staff",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s3",
+   "confidence": "high"
+  },
+  {
+   "text": "객실승무원이 아니라 지상직을 선택한 이유가 있다면 말씀해 주세요.",
+   "scope": "role:ground_staff",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s3",
+   "confidence": "high"
+  },
+  {
+   "text": "탑승 수속 중 여권 유효기간이 부족한 승객을 발견하면 어떻게 안내하시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "휠체어가 필요한 승객이나 혼자 여행하는 어린이를 탑승까지 어떻게 지원하시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "탑승 마감 직전 도착한 승객이 꼭 타야 한다고 사정할 때 판단 기준은 무엇인가요?",
+   "scope": "role:ground_staff",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "게이트에서 탑승 인원과 수속 인원이 맞지 않는다면 무엇부터 확인하시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "좌석 초과 판매로 탑승하지 못하는 승객이 생겼을 때 자원자를 찾고 보상을 안내하는 과정을 설명해 주세요.",
+   "scope": "role:ground_staff",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수하물이 도착하지 않았다고 항의하는 승객을 어떤 절차로 도와드리겠어요?",
+   "scope": "role:ground_staff",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "위탁 수하물 무게가 초과된 승객이 추가 요금을 못 내겠다고 하면 어떻게 응대하시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지연 사유를 아직 전달받지 못했는데 승객이 정확한 출발 시각을 따져 물으면 어떻게 답하시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수속 카운터 줄에서 새치기 문제로 승객끼리 다툼이 났다면 어떻게 하시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "탑승권을 잃어버린 승객이 탑승 마감 직전에 게이트로 뛰어왔다면 어떻게 도와드리겠어요?",
+   "scope": "role:ground_staff",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 시간대에 카운터 대기 시간이 유독 길다는 불만이 이어진다면 원인을 어떻게 찾으시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지연 출발 원인 중 지상 조업 쪽 비중이 높다는 자료를 받았다면 무엇을 더 확인해 보시겠어요?",
+   "scope": "role:ground_staff",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "줄이 길게 늘어선 상황에서 여러 고객을 빠르고 정확하게 응대했던 경험을 말씀해 주세요.",
+   "scope": "role:ground_staff",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시간 압박 속에서 실수 없이 서류나 정보를 확인해야 했던 경험을 말씀해 주세요.",
+   "scope": "role:ground_staff",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새벽 이른 시간에 출근해야 하는 근무가 많은데 정말 오래 감당하실 수 있겠어요?",
+   "scope": "role:ground_staff",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s3",
+   "confidence": "high"
+  },
+  {
+   "text": "비행 전 기상 자료를 보고 출발 여부를 판단할 때 어떤 요소를 가장 중요하게 보시겠어요?",
+   "scope": "role:pilot",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기장과 부기장의 역할 분담에서 부기장이 반드시 해야 할 일은 무엇이라고 생각하세요?",
+   "scope": "role:pilot",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "절차를 외우고 있어도 체크리스트를 매번 읽으며 확인해야 하는 이유는 무엇이라고 보세요?",
+   "scope": "role:pilot",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "CRM이 실제 조종실에서 어떻게 작동해야 하는지 예를 들어 말씀해 주세요.",
+   "scope": "role:pilot",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "피로가 쌓인 상태에서 비행 스케줄이 잡혔다면 본인의 비행 가능 여부를 어떻게 판단하시겠어요?",
+   "scope": "role:pilot",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관제 지시가 잘 들리지 않거나 애매할 때는 어떻게 확인하시겠어요?",
+   "scope": "role:pilot",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비행 전 브리핑에서 객실 사무장과 반드시 공유해야 할 정보는 무엇이라고 보세요?",
+   "scope": "role:pilot",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기장의 판단이 안전에 문제가 있어 보이는데 기장은 그대로 진행하려 한다면 어떻게 하시겠어요?",
+   "scope": "role:pilot",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "접근 중 기상이 급변해 착륙 기준에 못 미칠 것 같다면 어떤 판단을 하시겠어요?",
+   "scope": "role:pilot",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비행 중 승객 한 명이 위급하다는 객실 보고를 받았다면 조종실에서는 무엇을 고려하시겠어요?",
+   "scope": "role:pilot",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이륙 직전 계기에 경고등이 잠깐 들어왔다가 꺼졌다면 어떻게 하시겠어요?",
+   "scope": "role:pilot",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "회항과 목적지 착륙을 두고 연료, 기상, 승객 상황을 어떻게 비교해 판단하시겠어요?",
+   "scope": "role:pilot",
+   "category": "의사결정",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 비행 기록에서 같은 유형의 실수가 반복된다면 원인을 어떻게 분석하시겠어요?",
+   "scope": "role:pilot",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비행 훈련이나 시뮬레이터 평가에서 가장 어려웠던 순간과 극복 과정을 말씀해 주세요.",
+   "scope": "role:pilot",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "짧고 정확한 의사소통이 꼭 필요한 환경에서 일하거나 활동해 본 경험을 말씀해 주세요.",
+   "scope": "role:pilot",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조종사에게 조종 실력만큼 중요한 역량이 있다면 무엇이라고 보세요?",
+   "scope": "role:pilot",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조종사가 되기로 결심한 계기와 그 과정에서 포기하지 않은 이유를 말씀해 주세요.",
+   "scope": "role:pilot",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자동화가 발달해 조종사의 역할이 줄어든다는 말이 있는데, 어떻게 반박하시겠어요?",
+   "scope": "role:pilot",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "측정 장비로 점검한 결과가 기준 경계선에 걸쳐 있다면 어떻게 판단하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "엔진 오일 보충 같은 기본 작업에서도 기록을 남겨야 하는 이유는 무엇이라고 보세요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "부품을 교체한 뒤 작동 점검은 어떤 순서로 진행하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "영문 정비 매뉴얼을 읽다가 해석이 애매한 부분이 있다면 어떻게 확인하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업 지시서에 없는 결함을 작업 중에 추가로 발견했다면 어떻게 처리하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공 정비에서 공구 관리가 특히 중요한 이유와 본인이 지킬 관리 습관을 말씀해 주세요.",
+   "scope": "role:aircraft_mechanic",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교대 시간에 작업을 넘겨받을 때 반드시 확인해야 할 사항은 무엇인가요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "출발 시각이 임박했는데 점검에서 판단이 애매한 결함이 나왔다면 어떻게 하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배 정비사가 매뉴얼과 다른 간편한 방법으로 작업하라고 지시하면 어떻게 하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간 정비 중 필요한 부품 재고가 없다는 걸 알게 됐다면 어떻게 대응하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업을 마친 뒤 본인이 조인 부품 하나를 확인하지 않은 것 같다는 생각이 든다면 어떻게 하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 기종에서 동일한 결함이 반복 보고된다면 원인을 어떤 방향으로 추적하시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "정비 지연이 운항 지연으로 이어지는 경우를 줄이려면 어떤 부분을 들여다보시겠어요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습에서 기계를 분해·조립하다 문제가 생겼을 때 원인을 찾아 해결했던 경험을 말씀해 주세요.",
+   "scope": "role:aircraft_mechanic",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "절차를 따르지 않아 실수가 났거나 날 뻔했던 경험과 그 뒤의 변화를 말씀해 주세요.",
+   "scope": "role:aircraft_mechanic",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공정비사에게 꼼꼼함과 인내심이 특히 요구되는 이유를 실제 작업과 연결해 말씀해 주세요.",
+   "scope": "role:aircraft_mechanic",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "항공정비사를 목표로 삼게 된 계기와 그동안의 준비 과정을 말씀해 주세요.",
+   "scope": "role:aircraft_mechanic",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매뉴얼대로만 일하면 경험이 쌓여도 판단력은 늘지 않는 것 아닌가요?",
+   "scope": "role:aircraft_mechanic",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외식 매장에서 맛, 서비스, 위생 가운데 하나가 무너지면 매장에 어떤 일이 생긴다고 보세요?",
+   "scope": "family:food_service",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외식 현장이 체력적으로 고되다고들 하는데, 본인이 이해하고 있는 현장의 모습을 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주방과 홀이 한 팀으로 움직이려면 무엇이 가장 중요하다고 생각하세요?",
+   "scope": "family:food_service",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외식 매장의 원가 관리가 왜 현장 직원 모두의 일인지 설명해 주세요.",
+   "scope": "family:food_service",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주문이 몰리는 시간에 동료와 역할을 나눠 위기를 넘겼던 경험을 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아무도 보지 않는 상황에서도 위생 기준을 지켰던 구체적인 순간이 있다면 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "윤리",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "단골손님의 취향을 기억해 두었다가 서비스에 활용했던 경험이 있나요?",
+   "scope": "family:food_service",
+   "category": "고객",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경력이 짧은 동료에게 일을 알려 줘야 했을 때 어떻게 가르치셨는지 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "리더십",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장에서 반복되던 불편한 점을 스스로 찾아 고쳤던 경험을 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "손님이 음식에서 머리카락이 나왔다며 사진을 찍고 항의하신다면 어떻게 대응하시겠어요?",
+   "scope": "family:food_service",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "피크 타임에 직원 두 명이 갑자기 결근했다면 매장을 어떻게 운영하시겠어요?",
+   "scope": "family:food_service",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "밤사이 냉장고 온도가 올라가 있던 걸 오픈 때 발견했다면 무엇부터 하시겠어요?",
+   "scope": "family:food_service",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "알레르기가 있다고 미리 말한 손님의 음식에 해당 재료가 들어갔다는 걸 알게 됐다면 어떻게 하시겠어요?",
+   "scope": "family:food_service",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "배달 주문과 매장 주문이 동시에 밀려 대기 시간이 길어진다면 어떻게 조정하시겠어요?",
+   "scope": "family:food_service",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "음식점이나 카페에서 일하며 가장 힘들었던 손님 응대 경험을 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재료나 소모품 낭비를 줄여 본 경험이 있다면 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "위생 점검이나 청소 기준을 정해서 매장에 정착시켜 본 경험이 있나요?",
+   "scope": "family:food_service",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "배달 앱 중심으로 외식 시장이 바뀌면서 매장 운영에 어떤 변화가 필요하다고 보세요?",
+   "scope": "family:food_service",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "인건비와 원재료비 부담이 커지는 상황에서 외식업이 살아남을 방법은 무엇이라고 보시나요?",
+   "scope": "family:food_service",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "키오스크와 서빙 로봇이 늘어나는 흐름을 외식 현장에서 일하는 입장에서 어떻게 보시나요?",
+   "scope": "family:food_service",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유통기한이 오늘까지인 재료를 버리기 아깝다며 쓰자고 하는 동료가 있다면 어떻게 하시겠어요?",
+   "scope": "family:food_service",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "메뉴판의 원산지 표시와 실제 사용 재료가 다르다는 걸 알게 됐다면 어떻게 하시겠어요?",
+   "scope": "family:food_service",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외식 일을 하며 가장 크게 성장했다고 느낀 부분과 아직 부족한 부분을 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "손님이나 동료에게 들은 쓴소리 중 지금까지 기억에 남는 것과 그 이유를 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "음식이 나가는 시간이나 폐기량을 줄여서 수치로 확인했던 경험을 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "손님 리뷰나 평점이 달라질 만큼 매장 운영을 바꿔 본 경험이 있다면 결과와 함께 말씀해 주세요.",
+   "scope": "family:food_service",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매출이 정체된 동네 식당의 점심 매출을 늘릴 방안을 발표해 보세요.",
+   "scope": "family:food_service",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "음식점의 노키즈존 운영은 영업의 자유라는 입장과 차별이라는 입장 중 어디에 서시겠어요?",
+   "scope": "family:food_service",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주간 근무표를 짤 때 매출 예측과 직원 사정을 어떻게 함께 반영하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재료 발주량을 정할 때 어떤 자료를 보고 판단하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장 오픈 전 체크리스트에 반드시 넣어야 할 항목을 말씀해 주세요.",
+   "scope": "role:restaurant_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로 들어온 아르바이트생이 한 달 안에 그만두는 일이 잦다면 교육 방식을 어떻게 바꾸시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관할 기관의 위생 점검을 앞두고 매장에서 무엇을 점검하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "리뷰 플랫폼의 악성 후기에 매장 이름으로 답글을 달 때 어떤 원칙을 지키시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직원이 손님에게 폭언을 듣고 울고 있다면 매니저로서 어떻게 하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주방과 홀 직원이 주문 누락 책임을 두고 크게 다투고 있다면 어떻게 하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "영업 중 가스 냄새가 난다는 직원 보고를 받았다면 어떤 순서로 조치하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "월 매출 3,000만 원 매장의 식재료비가 1,200만 원이라면 원가율을 어떻게 보고 무엇을 점검하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "평일 점심은 붐비는데 저녁 매출만 계속 떨어진다면 원인을 어떻게 찾아 대응하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "인건비 비율은 계속 오르는데 매출은 그대로라면 어떤 부분부터 들여다보시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람의 근무 일정을 조율하거나 사람을 관리해 본 경험을 말씀해 주세요.",
+   "scope": "role:restaurant_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장이나 조직의 규칙을 바꾸자고 제안해서 실제로 적용했던 경험을 말씀해 주세요.",
+   "scope": "role:restaurant_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외식 매장 관리자가 하루 동안 가장 신경 써야 할 일은 무엇이라고 보세요?",
+   "scope": "role:restaurant_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조리나 서비스 대신 매장 관리 쪽으로 커리어를 쌓으려는 이유는 무엇인가요?",
+   "scope": "role:restaurant_manager",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직원 복지를 챙기면 인건비가 오르는데, 본사가 원가율 목표를 맞추라고 하면 무엇을 포기하시겠어요?",
+   "scope": "role:restaurant_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재료가 들어왔을 때 검수 단계에서 무엇을 확인하시겠어요?",
+   "scope": "role:chef",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "칼과 도마를 식재료별로 나눠 쓰는 이유와 현장에서의 관리 방법을 말씀해 주세요.",
+   "scope": "role:chef",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 메뉴를 개발할 때 맛 말고도 원가와 조리 시간을 어떻게 고려하시겠어요?",
+   "scope": "role:chef",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대량 조리를 할 때 음식의 온도 관리를 어떻게 하시는지 말씀해 주세요.",
+   "scope": "role:chef",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "누가 만들어도 같은 맛이 나도록 레시피를 표준화하려면 무엇이 필요할까요?",
+   "scope": "role:chef",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선입선출이 잘 지켜지지 않는 냉장고를 정리한다면 어떤 방식으로 바꾸시겠어요?",
+   "scope": "role:chef",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "영업 도중 주요 식재료가 떨어졌다면 어떻게 대처하시겠어요?",
+   "scope": "role:chef",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "손님이 음식이 너무 짜다며 다시 만들어 달라고 하시면 주방에서는 어떻게 대응하시겠어요?",
+   "scope": "role:chef",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "피크 타임에 주문표가 한꺼번에 쌓여 조리 순서가 꼬이기 시작했다면 어떻게 정리하시겠어요?",
+   "scope": "role:chef",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "칼에 손을 베였는데 주방이 한창 바쁘다면 어떻게 하시겠어요?",
+   "scope": "role:chef",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 접시 원가가 판매가의 40%를 넘는다면 메뉴를 어떻게 조정하시겠어요?",
+   "scope": "role:chef",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 메뉴가 자주 남겨진 채 돌아온다면 원인을 어떻게 찾아보시겠어요?",
+   "scope": "role:chef",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조리 실습이나 현장 근무에서 크게 실수했던 경험과 그 뒤 달라진 점을 말씀해 주세요.",
+   "scope": "role:chef",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "셰프나 선배에게 혼나면서도 끝까지 배웠던 기술이 있다면 말씀해 주세요.",
+   "scope": "role:chef",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주방에서 위계와 규율이 엄격한 이유를 어떻게 이해하고 계신가요?",
+   "scope": "role:chef",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조리사를 평생 직업으로 선택하게 된 이유를 말씀해 주세요.",
+   "scope": "role:chef",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "창의적인 요리를 하고 싶다고 하셨는데, 몇 년간 같은 메뉴만 반복해도 버틸 수 있겠어요?",
+   "scope": "role:chef",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "에스프레소 추출 시간이 평소보다 짧게 나온다면 무엇을 조정하시겠어요?",
+   "scope": "role:barista",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원두가 바뀌었을 때 추출 레시피를 다시 잡는 과정을 설명해 주세요.",
+   "scope": "role:barista",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "우유 스티밍에서 거품 질이 일정하지 않다면 원인을 어떻게 찾으시겠어요?",
+   "scope": "role:barista",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "에스프레소 머신과 그라인더를 매일 어떻게 관리하시는지 말씀해 주세요.",
+   "scope": "role:barista",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원두 보관과 신선도 관리는 어떻게 하시겠어요?",
+   "scope": "role:barista",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "손님이 메뉴 추천을 부탁하시면 어떤 질문을 드려서 음료를 추천하시겠어요?",
+   "scope": "role:barista",
+   "category": "고객",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아침에 주문이 몰려 음료 대기 시간이 15분을 넘어가고 있다면 어떻게 하시겠어요?",
+   "scope": "role:barista",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "손님이 커피 맛이 평소와 다르다며 불만을 말씀하시면 어떻게 응대하시겠어요?",
+   "scope": "role:barista",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "마감 직전에 들어온 손님이 대량 주문을 하신다면 어떻게 대응하시겠어요?",
+   "scope": "role:barista",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신메뉴 판매가 기대보다 저조하다면 어떤 점을 확인하고 개선하시겠어요?",
+   "scope": "role:barista",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "음료 한 잔의 원가를 계산할 때 어떤 항목들을 포함해야 할까요?",
+   "scope": "role:barista",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "음료 품질을 일정하게 유지하려고 스스로 기준을 만들어 지켰던 경험을 말씀해 주세요.",
+   "scope": "role:barista",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "손님의 피드백을 받아 음료나 서비스를 바꿔 본 경험을 말씀해 주세요.",
+   "scope": "role:barista",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "바리스타는 커피만 잘 만드는 사람이 아니라고들 하는데, 어떤 역할까지 해야 한다고 보세요?",
+   "scope": "role:barista",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "바리스타를 직업으로 선택한 이유와 앞으로의 목표를 말씀해 주세요.",
+   "scope": "role:barista",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자동 커피 머신 성능이 계속 좋아지는데, 바리스타의 기술이 앞으로도 필요할까요?",
+   "scope": "role:barista",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품 회사에서 연구개발, 품질, 생산 부서가 어떻게 맞물려 일한다고 보세요?",
+   "scope": "family:food_industry",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품이 다른 제조품보다 품질 관리가 특히 까다로운 이유는 무엇이라고 생각하세요?",
+   "scope": "family:food_industry",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "HACCP 제도가 식품 회사의 일상 업무에 어떻게 녹아 있다고 이해하고 계신가요?",
+   "scope": "family:food_industry",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소비자 입장에서 믿을 수 있는 식품이란 어떤 것이라고 생각하시는지 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "문제점을 스스로 발견하고 해결까지 이끌었던 경험을 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s4",
+   "confidence": "high"
+  },
+  {
+   "text": "실험 결과나 자료를 비전공자에게 이해하기 쉽게 설명했던 경험이 있나요?",
+   "scope": "family:food_industry",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산 현장이나 다른 부서 사람들과 협업하면서 입장 차이를 좁혔던 경험을 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "데이터가 기대와 다르게 나왔을 때도 그대로 기록하고 보고했던 경험이 있나요?",
+   "scope": "family:food_industry",
+   "category": "윤리",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기록이나 문서를 꼼꼼하게 관리해서 문제를 막았던 경험을 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "직무전문성",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "입사 후 우리 제품에서 품질 문제가 생겼다는 연락을 받는다면 어떻게 움직이시겠어요?",
+   "scope": "family:food_industry",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s4",
+   "confidence": "high"
+  },
+  {
+   "text": "출시 일정은 촉박한데 보존성 시험 결과가 아직 다 나오지 않았다면 어떻게 하시겠어요?",
+   "scope": "family:food_industry",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사에서 들어온 원료의 시험성적서 수치가 평소와 조금 다르다면 어떻게 하시겠어요?",
+   "scope": "family:food_industry",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산팀이 품질 기준 때문에 라인이 자주 멈춘다고 불만을 제기하면 어떻게 대응하시겠어요?",
+   "scope": "family:food_industry",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "우리 제품을 먹고 탈이 났다는 글이 SNS에 올라왔다면 무엇부터 확인하시겠어요?",
+   "scope": "family:food_industry",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교나 실습에서 품질이나 공정을 개선해 본 사례가 있다면 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "공개후기",
+   "src": "s4",
+   "confidence": "high"
+  },
+  {
+   "text": "실험이나 분석을 반복하면서 재현성 문제를 해결했던 경험을 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품 공장 견학이나 현장 실습에서 인상 깊었던 점과 배운 점을 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "최근 사회적으로 이슈가 된 식품 안전 사례를 하나 골라 본인의 견해를 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s4",
+   "confidence": "high"
+  },
+  {
+   "text": "저당, 대체 단백질 같은 트렌드가 식품 개발과 품질 관리에 어떤 과제를 던진다고 보세요?",
+   "scope": "family:food_industry",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "K-푸드 수출이 늘면서 식품 회사가 새로 신경 써야 할 부분은 무엇이라고 생각하세요?",
+   "scope": "family:food_industry",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상사가 기준에 살짝 못 미친 제품을 이번만 출하하자고 한다면 어떻게 하시겠어요?",
+   "scope": "family:food_industry",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원가 절감을 위해 원료를 바꾸자는 요청이 오면 표시 사항과 안전성 측면에서 무엇을 따져 보시겠어요?",
+   "scope": "family:food_industry",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 업무에서 본인이 가장 중요하게 여기는 가치는 무엇인지 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s4",
+   "confidence": "high"
+  },
+  {
+   "text": "실험이나 과제에서 실패했던 경험이 지금의 일하는 방식에 어떤 영향을 줬나요?",
+   "scope": "family:food_industry",
+   "category": "실패",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 참여한 개선 활동의 효과를 어떤 수치로 확인하셨는지 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "불량률이나 클레임 건수를 줄이는 데 기여한 경험이 있다면 결과를 말씀해 주세요.",
+   "scope": "family:food_industry",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "1인 가구를 겨냥한 간편식 신제품 콘셉트와 품질 관리 포인트를 발표해 보세요.",
+   "scope": "family:food_industry",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험실 배합을 생산 라인 규모로 옮길 때 생길 수 있는 문제에는 어떤 것들이 있을까요?",
+   "scope": "role:food_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제품의 소비기한을 정하려면 어떤 시험을 어떤 방식으로 설계하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "당류를 줄인 제품을 개발할 때 맛과 물성 변화를 어떻게 보완하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관능 평가를 설계할 때 패널 구성과 평가 방식을 어떻게 정하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품 첨가물을 쓸지 말지 판단할 때 어떤 기준을 적용하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원료 산지가 바뀌었을 때 제품 품질이 유지되는지 어떻게 검증하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개발 단계에서 영양성분과 알레르기 표시를 미리 챙겨야 하는 이유는 무엇일까요?",
+   "scope": "role:food_researcher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "마케팅팀이 원하는 맛과 원가 목표가 동시에 맞지 않는다면 어떻게 조율하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "출시 직전 대량 생산 샘플의 식감이 시제품과 다르게 나왔다면 어떻게 하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시장에서 잘 팔리는 제품과 비슷한 제품을 빨리 만들라는 지시를 받는다면 어떻게 접근하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소비자 조사에서 맛 점수는 높은데 재구매 의향은 낮게 나왔다면 어떻게 해석하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원재료 가격이 급등해 기존 제품 원가를 10% 낮춰야 한다면 어떤 순서로 검토하시겠어요?",
+   "scope": "role:food_researcher",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험 설계부터 결과 분석까지 직접 진행했던 연구 경험을 말씀해 주세요.",
+   "scope": "role:food_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소비자 트렌드를 조사해서 아이디어를 제품 콘셉트로 발전시켜 본 경험이 있나요?",
+   "scope": "role:food_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품 연구원이 실험실 밖에서 해야 하는 일에는 어떤 것들이 있다고 보세요?",
+   "scope": "role:food_researcher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품 연구개발 직무를 택한 이유와 특히 관심 있는 제품군을 말씀해 주세요.",
+   "scope": "role:food_researcher",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구원이 아무리 좋은 제품을 만들어도 팔리지 않으면 실패라는 말에 동의하시나요?",
+   "scope": "role:food_researcher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "CCP 모니터링에서 한계기준 이탈이 확인됐다면 어떤 순서로 조치하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "위해요소 분석을 할 때 생물학적, 화학적, 물리적 위해요소를 어떻게 나눠 검토하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "금속검출기 테스트피스 점검 결과가 이상하게 나왔다면 그 사이 생산된 제품은 어떻게 처리하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업장 위생 점검표를 새로 만든다면 어떤 항목을 넣으시겠어요?",
+   "scope": "role:food_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원료 입고 검사에서 불합격이 나왔을 때 처리 절차를 설명해 주세요.",
+   "scope": "role:food_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제품 회수가 필요한지 판단할 때 어떤 정보를 모아 보시겠어요?",
+   "scope": "role:food_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산직 직원들이 개인위생 수칙을 잘 지키게 하려면 어떻게 교육하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소비자가 제품에서 플라스틱 조각이 나왔다고 클레임을 걸었다면 어떤 순서로 조사하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간 생산 중 살균 온도 기록이 한동안 빠져 있는 것을 발견했다면 어떻게 하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외부 심사를 앞두고 기록 일부가 나중에 채워진 흔적을 발견했다면 어떻게 하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 종류의 이물 클레임이 특정 라인에서 반복된다면 원인을 어떻게 추적하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "월별 클레임 건수가 늘었는데 생산량도 함께 늘었다면 이를 어떻게 해석하고 보고하시겠어요?",
+   "scope": "role:food_quality",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "미생물이나 이화학 분석을 해 본 경험과 그때 주의했던 점을 말씀해 주세요.",
+   "scope": "role:food_quality",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규칙을 지키지 않는 사람에게 불편한 말을 해야 했던 경험을 말씀해 주세요.",
+   "scope": "role:food_quality",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질관리와 품질보증이 어떻게 다르다고 이해하고 계신가요?",
+   "scope": "role:food_quality",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품 품질·위생 직무를 선택한 이유는 무엇인가요?",
+   "scope": "role:food_quality",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질팀이 너무 엄격하면 생산성이 떨어지는데, 어디까지 양보할 수 있다고 보세요?",
+   "scope": "role:food_quality",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유통 영업관리 직무의 장점과 단점을 각각 어떻게 생각하시는지 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "유통 현장에서 일하는 사람에게 꼭 필요한 역량을 두 가지만 꼽는다면 무엇인가요?",
+   "scope": "family:retail",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "유통업에서 본사와 현장 매장의 관점이 부딪히는 지점은 어디라고 보세요?",
+   "scope": "family:retail",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유통업에서 고객 동선을 이해하는 것이 왜 중요하다고 생각하세요?",
+   "scope": "family:retail",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장 직원, 협력사, 본사처럼 입장이 다른 사람들 사이에서 조율했던 경험을 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 반응을 관찰해서 판매 방식을 바꿔 본 경험이 있나요?",
+   "scope": "family:retail",
+   "category": "고객",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "나보다 나이나 경력이 많은 사람을 설득해 일을 진행했던 경험을 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "리더십",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "숫자나 기록을 보고 문제를 먼저 찾아낸 경험을 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "목표 판매량을 끝까지 채우려고 노력했던 경험을 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "성과",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가맹점주가 매출에 도움이 안 된다며 본사 운영 정책을 따르지 않겠다고 하면 어떻게 설득하시겠어요?",
+   "scope": "family:retail",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "담당 점포 근처에 경쟁 점포가 문을 열어 매출이 절반으로 줄었다면 어떻게 대응하시겠어요?",
+   "scope": "family:retail",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "행사 첫날 광고한 상품이 오전에 품절되어 고객 항의가 이어진다면 어떻게 하시겠어요?",
+   "scope": "family:retail",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본사 지침이 현장 사정과 맞지 않아 매장 직원들이 불만을 쏟아낸다면 어떻게 하시겠어요?",
+   "scope": "family:retail",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장에서 고객이 넘어져 다쳤다면 어떤 순서로 대응하시겠어요?",
+   "scope": "family:retail",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직접 매장을 방문하거나 점주·매니저와 이야기해 보면서 알게 된 점이 있다면 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "판매나 매장 아르바이트를 하면서 매출을 올리려고 직접 시도했던 방법을 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재고나 물품을 정리·관리하면서 오류를 줄였던 경험을 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "모바일 쇼핑이 커지는 상황에서 오프라인 매장이 신선식품으로 경쟁력을 가지려면 무엇이 필요할까요?",
+   "scope": "family:retail",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "저출생·고령화 같은 인구 변화가 점포 운영에 어떤 영향을 줄지 데이터 관점에서 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "오프라인 매장이 체험형 공간으로 바뀌는 흐름을 어떻게 보시나요?",
+   "scope": "family:retail",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사가 좋은 매대 위치를 부탁하며 식사 대접을 제안한다면 어떻게 하시겠어요?",
+   "scope": "family:retail",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "우리 쪽 협상력이 세다는 이유로 협력사 납품 단가를 무리하게 깎는 것에 대해 어떻게 생각하세요?",
+   "scope": "family:retail",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 업무가 생각보다 고되다고 느꼈던 순간과 그때 버틴 이유를 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "판매나 영업에서 실패했던 경험을 통해 무엇을 배우셨나요?",
+   "scope": "family:retail",
+   "category": "실패",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 맡은 매장이나 구역의 매출을 개선했던 경험을 수치로 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 불만이나 반품을 줄였던 활동의 결과를 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대형마트 의무휴업 규제는 유지해야 한다는 입장과 완화해야 한다는 입장 중 어느 쪽인지 말씀해 주세요.",
+   "scope": "family:retail",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "20대 고객 방문이 줄어든 오프라인 매장을 되살릴 방안을 발표해 보세요.",
+   "scope": "family:retail",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "점포 손익표를 받으면 가장 먼저 어떤 숫자를 확인하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재고 실사에서 장부와 실물 수량 차이가 크게 난다면 원인을 어떻게 찾으시겠어요?",
+   "scope": "role:store_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시간대별로 계산대 대기 줄이 길어질 때 인력 배치를 어떻게 조정하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신상품이 입고된 뒤 진열과 가격표 부착까지 어떤 순서로 점검하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "폐기 손실이 큰 신선 코너의 발주를 어떻게 관리하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장 안전 점검에서 특히 신경 써야 할 부분은 무엇이라고 보세요?",
+   "scope": "role:store_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 영수증 없이 사용한 상품의 환불을 강하게 요구하신다면 어떻게 하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "계산대에서 금액을 반복적으로 틀리는 직원이 있다면 어떻게 대응하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "명절 대목에 핵심 상품 입고가 지연되고 있다면 무엇부터 하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "우리 점포만 같은 지역 다른 점포보다 매출이 계속 낮다면 어떤 순서로 원인을 찾으시겠어요?",
+   "scope": "role:store_manager",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "객단가는 올랐는데 방문 고객 수가 줄었다면 이 숫자를 어떻게 해석하시겠어요?",
+   "scope": "role:store_manager",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람의 일을 동시에 챙기며 우선순위를 정해 처리했던 경험을 말씀해 주세요.",
+   "scope": "role:store_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "팀원의 동기를 끌어올려 목표를 함께 달성했던 경험을 말씀해 주세요.",
+   "scope": "role:store_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처음 맡은 점포에서 기존 직원들이 새 점장의 방식을 따르지 않는다면 어떻게 신뢰를 얻으시겠어요?",
+   "scope": "role:store_manager",
+   "category": "리더십",
+   "type": "leadership",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요즘 눈여겨보는 소비 트렌드 하나와 그것을 매장 운영에 반영할 방법을 말씀해 주세요.",
+   "scope": "role:store_manager",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "점장은 매출 관리자이면서 사람 관리자라는 말을 어떻게 이해하시나요?",
+   "scope": "role:store_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "점포 운영 직무에 지원한 이유와 현장에서 이루고 싶은 목표를 말씀해 주세요.",
+   "scope": "role:store_manager",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매출은 좋은데 직원 이직률이 높은 점포라면, 그 점장은 잘하고 있는 걸까요?",
+   "scope": "role:store_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유통 영업관리에게 중요한 데이터는 무엇이고, 그 데이터를 어떻게 활용하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "담당 브랜드와 시즌 프로모션을 기획한다면 무엇부터 협의하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "팝업스토어 입점 브랜드를 고를 때 어떤 기준을 적용하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담당 층을 순회 점검할 때 무엇을 중점적으로 보시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 매출 실적을 입점 조건 재협상에 활용하려면 어떤 자료를 준비하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 점포를 담당할 때 점포별 방문 우선순위를 어떻게 정하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매출이 부진한 브랜드에 퇴점 가능성을 알려야 한다면 어떻게 전달하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 판매 직원이 매장 규정을 반복해서 어긴다면 어떻게 대응하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새벽에 점주에게서 매장 설비가 고장 났다는 연락을 받았다면 어떻게 대응하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담당 점포 몇 곳의 매출이 동시에 떨어졌다면 공통 원인과 개별 원인을 어떻게 구분하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "행사 기간 매출은 늘었는데 이익률은 떨어졌다면 그 행사를 어떻게 평가하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경쟁 유통사와 비교해 우리의 약점을 보완할 방안을 낸다면 어디부터 살펴보시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "경쟁",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "상대방의 이익과 우리 쪽 이익을 함께 고려해 협상했던 경험을 말씀해 주세요.",
+   "scope": "role:retail_sm",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장을 발로 뛰며 정보를 모아 문제를 해결했던 경험을 말씀해 주세요.",
+   "scope": "role:retail_sm",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "점주나 직원처럼 다양한 사람을 대할 때 본인만의 원칙이 있다면 말씀해 주세요.",
+   "scope": "role:retail_sm",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "high"
+  },
+  {
+   "text": "유통 영업관리가 일반적인 영업과 어떻게 다르다고 이해하고 계신가요?",
+   "scope": "role:retail_sm",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제조사 영업이 아니라 유통사 영업관리를 선택한 이유는 무엇인가요?",
+   "scope": "role:retail_sm",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "점주나 협력사 편을 들다 보면 본사 목표와 부딪힐 텐데, 결국 누구 편에 서실 건가요?",
+   "scope": "role:retail_sm",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담당 점포 점주들과 신뢰를 쌓기 위해 입사 초기에 무엇을 하시겠어요?",
+   "scope": "role:retail_sm",
+   "category": "리더십",
+   "type": "leadership",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신규 상품을 등록할 때 상세페이지와 상품 정보에서 꼭 점검할 항목은 무엇인가요?",
+   "scope": "role:ecommerce_ops",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기획전을 운영할 때 노출 위치와 할인 구조를 어떻게 정하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품절이 잦은 상품의 재고와 입고 일정을 어떻게 관리하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "배송 지연 문의가 몰릴 때 고객 안내 문구와 처리 기준을 어떻게 정하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "입점 판매자의 상품 정보가 사실과 다르다는 신고가 들어오면 어떻게 처리하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "프로모션 쿠폰이 설정 오류로 과도하게 할인되고 있는 걸 발견했다면 무엇부터 하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대형 할인 행사 첫날 주문이 몰려 물류센터 출고가 밀리고 있다면 어떻게 하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상품 후기에 악의적인 허위 리뷰가 반복해서 달린다면 어떻게 대응하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "판매자와 고객 사이에 반품 비용 부담을 두고 분쟁이 생겼다면 어떻게 중재하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상세페이지 방문자는 늘었는데 전환율이 떨어졌다면 원인을 어떻게 찾아보시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장바구니에 담고 결제하지 않는 비율이 높다면 어떤 데이터를 보고 개선하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 카테고리 매출이 경쟁 쇼핑몰보다 크게 뒤처진다면 어떤 순서로 점검하시겠어요?",
+   "scope": "role:ecommerce_ops",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온라인에서 물건을 팔거나 채널을 운영해 본 경험이 있다면 성과와 어려웠던 점을 말씀해 주세요.",
+   "scope": "role:ecommerce_ops",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "반복되는 수작업을 정리해서 업무 시간을 줄였던 경험을 말씀해 주세요.",
+   "scope": "role:ecommerce_ops",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이커머스 운영 담당자는 MD나 마케터와 어떻게 다른 역할을 한다고 보세요?",
+   "scope": "role:ecommerce_ops",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "오프라인보다 이커머스 운영 쪽에 관심을 갖게 된 이유를 말씀해 주세요.",
+   "scope": "role:ecommerce_ops",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "할인 행사로 매출을 올리는 건 누구나 할 수 있는데, 운영 담당자로서 본인만의 기여는 무엇일까요?",
+   "scope": "role:ecommerce_ops",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신상품이 들어왔을 때 매장 안 어느 위치에 어떻게 진열할지 어떤 기준으로 정하시겠어요?",
+   "scope": "role:vmd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "쇼윈도 연출을 기획할 때 브랜드 콘셉트와 시즌 테마를 어떻게 연결하시겠어요?",
+   "scope": "role:vmd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 매장 깊숙이 들어오게 하려면 동선 설계에서 무엇을 바꾸시겠어요?",
+   "scope": "role:vmd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "색상, 조명, 소품 중 매장 분위기를 가장 크게 좌우하는 것은 무엇이라고 보시나요?",
+   "scope": "role:vmd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 지점에 같은 연출을 적용할 때 매장별 차이를 어떻게 반영하시겠어요?",
+   "scope": "role:vmd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제한된 예산으로 시즌 연출을 바꿔야 한다면 어디에 돈을 쓰시겠어요?",
+   "scope": "role:vmd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요즘 인상 깊게 본 매장 연출 하나를 골라 좋았던 점과 아쉬운 점을 말씀해 주세요.",
+   "scope": "role:vmd",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공들여 만든 진열을 매장 직원들이 판매 편의를 이유로 자꾸 바꿔 놓는다면 어떻게 하시겠어요?",
+   "scope": "role:vmd",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "오픈 전날 밤 설치하려던 소품이 도착하지 않았다면 어떻게 대처하시겠어요?",
+   "scope": "role:vmd",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사다리 작업이 많은 연출 설치 중 안전이 우려된다면 작업을 어떻게 진행하시겠어요?",
+   "scope": "role:vmd",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진열을 바꾼 뒤에도 해당 상품 매출에 변화가 없다면 무엇을 확인해 보시겠어요?",
+   "scope": "role:vmd",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매장 방문객은 많은데 구매로 이어지지 않는다면 VMD 관점에서 어떤 부분을 점검하시겠어요?",
+   "scope": "role:vmd",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공간을 꾸미거나 무언가를 전시해서 사람들의 반응을 얻었던 경험을 말씀해 주세요.",
+   "scope": "role:vmd",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "디자인 의도를 다른 사람에게 설득해서 관철했던 경험을 말씀해 주세요.",
+   "scope": "role:vmd",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "VMD가 단순히 매장을 예쁘게 꾸미는 일과 어떻게 다르다고 생각하세요?",
+   "scope": "role:vmd",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "디자인 분야 중에서도 VMD를 선택한 이유는 무엇인가요?",
+   "scope": "role:vmd",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "VMD의 성과는 매출 숫자로 증명하기 어렵다는 지적에 어떻게 답하시겠어요?",
+   "scope": "role:vmd",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  }
+ ]
+}

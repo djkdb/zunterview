@@ -1,0 +1,6572 @@
+{
+  "batch": "b03",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "공공기관 NCS 기반 직무기술서 — 변호사(법률자문·송무)",
+      "url": "https://raspfiles2.incruit.com/kpf2/data/105/SuccessData/addFile/2.%20%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C_%EB%B3%80%ED%98%B8%EC%82%AC_%EC%B5%9C%EC%A2%85.pdf",
+      "type": "job_description"
+    },
+    {
+      "id": "s2",
+      "title": "한국발명진흥회 NCS 기반 직무설명서 — 법무·지식재산관리·지식재산평가",
+      "url": "https://lawschool.yonsei.ac.kr/gsis/community/boards3_01.do?mode=download&articleNo=159393&attachNo=136557",
+      "type": "ncs"
+    },
+    {
+      "id": "s3",
+      "title": "법조신문 [사내변호사 길라잡이] 계약서 검토 실무",
+      "url": "https://news.koreanbar.or.kr/news/articleView.html?idxno=19953",
+      "type": "other_public"
+    },
+    {
+      "id": "s4",
+      "title": "광고대행사 퍼포먼스 마케터 인턴 면접 후기 (개인 블로그)",
+      "url": "https://keepgoingnagu.blogspot.com/2019/06/blog-post_0.html",
+      "type": "interview_review",
+      "year": 2019
+    },
+    {
+      "id": "s5",
+      "title": "잡코리아 신입공채 면접후기 — 제약영업",
+      "url": "https://www.jobkorea.co.kr/starter/live/View/20094",
+      "type": "interview_review",
+      "year": 2015
+    },
+    {
+      "id": "s6",
+      "title": "더피알 — PR회사 면접 단골 질문은? (PR회사 면접후기 분석)",
+      "url": "https://www.the-pr.co.kr/news/articleView.html?idxno=13824",
+      "type": "interview_review",
+      "year": 2015
+    },
+    {
+      "id": "s7",
+      "title": "브런치 — 경력직 마케터에겐 어떤 질문을 할까? (그로스 마케터 면접 복기)",
+      "url": "https://brunch.co.kr/@hyebom08/19",
+      "type": "interview_review"
+    },
+    {
+      "id": "s8",
+      "title": "링커리어 커뮤니티 — CRM 마케터 인턴 서류/면접 후기",
+      "url": "https://community.linkareer.com/intern_activity/6028178",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "s9",
+      "title": "잡코리아 직무인터뷰 — 홍보",
+      "url": "https://www.jobkorea.co.kr/starter/interview/View/21291",
+      "type": "other_public"
+    },
+    {
+      "id": "s10",
+      "title": "링커리어 커뮤니티 — 2020 상반기 공채 영업관리 직무 면접 후기",
+      "url": "https://community.linkareer.com/intern_activity/800860",
+      "type": "interview_review",
+      "year": 2020
+    },
+    {
+      "id": "s11",
+      "title": "잡코리아 직무인터뷰 — 기술영업",
+      "url": "https://www.jobkorea.co.kr/starter/interview/View/21909",
+      "type": "other_public"
+    },
+    {
+      "id": "s12",
+      "title": "링커리어 멘토링 — 대리점 영업관리 면접 (현직자 답변)",
+      "url": "https://community.linkareer.com/mentoring/5646940",
+      "type": "other_public"
+    },
+    {
+      "id": "s13",
+      "title": "브런치 — 광고대행사 신입 AE 취업하기",
+      "url": "https://brunch.co.kr/@sparrowmill/9",
+      "type": "other_public"
+    },
+    {
+      "id": "s14",
+      "title": "리멤버 커뮤니티 — CRM 마케터 면접질문",
+      "url": "https://community.rememberapp.co.kr/post/46218",
+      "type": "interview_review"
+    },
+    {
+      "id": "s15",
+      "title": "잡코리아 면접후기 — 제약영업 신입 (집단면접)",
+      "url": "https://m.jobkorea.co.kr/Start/Review/View?C_Idx=391&Crr_Year=2015&Half_Year_Type_Code=2&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=2%2C2022%2C1",
+      "type": "interview_review"
+    },
+    {
+      "id": "s16",
+      "title": "브런치 — 마케터 면접 질문 이해하기 (면접관 관점)",
+      "url": "https://brunch.co.kr/@236project/44",
+      "type": "interview_review"
+    },
+    {
+      "id": "s17",
+      "title": "링커리어 커뮤니티 — CRM 마케팅 직무 신입 전환 인터뷰",
+      "url": "https://community.linkareer.com/junior_activity/1238834",
+      "type": "other_public"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "corporate_legal",
+      "aliases": [
+        "기업법무",
+        "사내법무",
+        "법무팀",
+        "법무 담당자",
+        "사내변호사",
+        "법무 매니저",
+        "In-house Counsel",
+        "Corporate Legal"
+      ],
+      "skills": [
+        "계약서 검토·작성",
+        "법률 리서치",
+        "리스크 분석",
+        "협상",
+        "사내 규정 관리",
+        "분쟁 관리"
+      ],
+      "responsibilities": [
+        "각종 계약서 검토와 표준계약서 관리",
+        "사업 부서 법률 자문",
+        "분쟁·소송 대응과 외부 로펌 관리",
+        "이사회·주주총회 등 회사법 업무 지원",
+        "사내 규정 제·개정"
+      ],
+      "keywords": [
+        "계약서",
+        "법률검토",
+        "리스크",
+        "손해배상",
+        "면책",
+        "준거법",
+        "하도급",
+        "NDA",
+        "로펌",
+        "이사회",
+        "주주총회",
+        "분쟁",
+        "contract review"
+      ],
+      "topics": {
+        "role": [
+          "계약 검토",
+          "리스크 판단",
+          "현업 법률 자문",
+          "분쟁 대응",
+          "회사법 업무"
+        ],
+        "scenario": [
+          "당일 서명 요구 계약",
+          "법무 검토 없이 체결된 계약",
+          "해외 거래처의 준거법 요구",
+          "내용증명 수령"
+        ],
+        "result": [
+          "검토 처리 기간",
+          "분쟁 예방",
+          "계약 조건 개선"
+        ],
+        "en": [
+          "contract review",
+          "legal risk assessment",
+          "legal advisory",
+          "dispute management"
+        ]
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "id": "lawyer",
+      "aliases": [
+        "변호사",
+        "송무 변호사",
+        "자문 변호사",
+        "법률자문",
+        "기관 변호사",
+        "Attorney",
+        "Lawyer",
+        "Legal Counsel"
+      ],
+      "skills": [
+        "법령 해석",
+        "소장·답변서 작성",
+        "판례 분석",
+        "협상·조정",
+        "법률 의견서 작성",
+        "의뢰인 커뮤니케이션"
+      ],
+      "responsibilities": [
+        "법률 자문과 의견서 작성",
+        "민사·행정 소송과 행정심판 수행",
+        "규정 제·개정 지원",
+        "분쟁 조정과 협상",
+        "민원 대응 법률 지원"
+      ],
+      "keywords": [
+        "송무",
+        "자문",
+        "소장",
+        "답변서",
+        "준비서면",
+        "판례",
+        "행정심판",
+        "항소",
+        "조정",
+        "의견서",
+        "증거",
+        "litigation"
+      ],
+      "topics": {
+        "role": [
+          "소송 전략",
+          "법률 자문",
+          "사실관계 정리",
+          "분쟁 조정",
+          "의견서 작성"
+        ],
+        "scenario": [
+          "의뢰인의 뒤늦은 불리한 사실 고백",
+          "기일 직전 새 증거 제출",
+          "1심 패소 후 항소 판단",
+          "민원인의 법적 조치 예고"
+        ],
+        "result": [
+          "승소·조정 성립",
+          "분쟁 비용 절감",
+          "자문 적시성"
+        ],
+        "en": [
+          "litigation",
+          "legal opinion",
+          "dispute resolution",
+          "legal research"
+        ]
+      },
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "ip_specialist",
+      "aliases": [
+        "특허 관리",
+        "IP 관리",
+        "지식재산 관리",
+        "특허팀",
+        "IP 담당자",
+        "특허 엔지니어",
+        "IP Specialist",
+        "Patent Manager"
+      ],
+      "skills": [
+        "선행기술 조사",
+        "청구항 분석",
+        "권리범위 해석",
+        "특허 포트폴리오 관리",
+        "라이선스 계약 검토",
+        "침해 분석"
+      ],
+      "responsibilities": [
+        "발명 발굴과 출원 여부 판단",
+        "특허사무소와 출원·중간사건 관리",
+        "보유 특허 유지·포기 결정",
+        "침해 경고와 분쟁 대응",
+        "기술이전·라이선스 계약 지원"
+      ],
+      "keywords": [
+        "특허",
+        "발명신고서",
+        "선행기술",
+        "청구항",
+        "권리범위",
+        "출원",
+        "등록",
+        "연차료",
+        "경고장",
+        "침해",
+        "라이선스",
+        "상표",
+        "영업비밀",
+        "patent"
+      ],
+      "topics": {
+        "role": [
+          "발명 발굴",
+          "특허 권리화",
+          "포트폴리오 관리",
+          "침해 대응",
+          "IP 계약"
+        ],
+        "scenario": [
+          "경쟁사 침해 경고장 수령",
+          "출시 직전 저촉 가능성 발견",
+          "학회 발표 후 출원 요청",
+          "포트폴리오 비용 절감 지시"
+        ],
+        "result": [
+          "등록률",
+          "유지 비용 절감",
+          "분쟁 방어 결과",
+          "기술료 수입"
+        ],
+        "en": [
+          "patent prosecution",
+          "prior art search",
+          "freedom to operate",
+          "IP portfolio management"
+        ]
+      },
+      "sources": [
+        "s2"
+      ]
+    },
+    {
+      "id": "compliance_officer",
+      "aliases": [
+        "컴플라이언스",
+        "준법감시",
+        "준법감시인",
+        "준법지원",
+        "내부통제",
+        "윤리경영",
+        "Compliance Officer",
+        "Compliance Manager"
+      ],
+      "skills": [
+        "규제 해석",
+        "리스크 평가",
+        "내부통제 점검",
+        "내부 조사",
+        "준법 교육 기획",
+        "보고서 작성"
+      ],
+      "responsibilities": [
+        "준법 프로그램 운영과 규정 관리",
+        "신규 사업·상품 준법 검토",
+        "내부통제 점검과 개선",
+        "제보 접수와 내부 조사",
+        "임직원 준법 교육"
+      ],
+      "keywords": [
+        "준법",
+        "내부통제",
+        "규제",
+        "리스크 평가",
+        "반부패",
+        "공정거래",
+        "제보",
+        "내부조사",
+        "윤리강령",
+        "감독기관",
+        "이해충돌",
+        "compliance"
+      ],
+      "topics": {
+        "role": [
+          "준법 리스크 평가",
+          "내부통제",
+          "내부 조사",
+          "준법 교육",
+          "규제 대응"
+        ],
+        "scenario": [
+          "준법 검토 생략 요구",
+          "익명 제보 접수",
+          "감독기관 검사 통보",
+          "반복되는 지적 사항"
+        ],
+        "result": [
+          "지적 사항 감소",
+          "교육 이수율",
+          "제보 처리 기간"
+        ],
+        "en": [
+          "regulatory compliance",
+          "internal control",
+          "internal investigation",
+          "anti-corruption"
+        ]
+      },
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "privacy_officer",
+      "aliases": [
+        "개인정보보호",
+        "개인정보보호 담당자",
+        "프라이버시",
+        "개인정보 관리",
+        "Privacy Officer",
+        "Privacy Manager",
+        "DPO"
+      ],
+      "skills": [
+        "개인정보 법규 해석",
+        "개인정보 영향평가",
+        "동의·처리방침 관리",
+        "수탁사 관리",
+        "유출 사고 대응",
+        "관리체계 인증 대응"
+      ],
+      "responsibilities": [
+        "개인정보 처리 현황 파악과 관리",
+        "수집·이용 동의와 처리방침 관리",
+        "위탁 업체 점검",
+        "개인정보 유출 사고 대응 절차 운영",
+        "임직원 개인정보 교육"
+      ],
+      "keywords": [
+        "개인정보",
+        "동의",
+        "처리방침",
+        "가명정보",
+        "위탁",
+        "접근권한",
+        "접속기록",
+        "유출",
+        "영향평가",
+        "파기",
+        "정보주체",
+        "privacy"
+      ],
+      "topics": {
+        "role": [
+          "최소 수집",
+          "동의 관리",
+          "위탁 관리",
+          "유출 대응",
+          "가명정보 활용"
+        ],
+        "scenario": [
+          "고객 정보 오발송",
+          "동의 범위 밖 마케팅 활용 요청",
+          "정보주체 열람·삭제 요구",
+          "특정 직원의 대량 조회"
+        ],
+        "result": [
+          "점검 지적 개선",
+          "사고 대응 시간",
+          "교육 이수율"
+        ],
+        "en": [
+          "data protection",
+          "privacy impact assessment",
+          "consent management",
+          "breach response"
+        ]
+      }
+    },
+    {
+      "id": "performance_marketer",
+      "aliases": [
+        "퍼포먼스 마케터",
+        "퍼포먼스 마케팅",
+        "디지털 광고 운영",
+        "광고 운영",
+        "매체 운영",
+        "Performance Marketer",
+        "Paid Media",
+        "UA 마케터"
+      ],
+      "skills": [
+        "광고 매체 운영",
+        "예산 배분",
+        "성과 분석",
+        "A/B 테스트",
+        "GA4",
+        "소재 기획"
+      ],
+      "responsibilities": [
+        "검색·SNS·디스플레이 광고 집행",
+        "매체별 예산 배분과 입찰 관리",
+        "광고 소재 테스트",
+        "ROAS·CPA 성과 분석과 리포트",
+        "대행사·매체사 커뮤니케이션"
+      ],
+      "keywords": [
+        "ROAS",
+        "CPA",
+        "CTR",
+        "CVR",
+        "CPC",
+        "전환",
+        "리타깃팅",
+        "어트리뷰션",
+        "입찰",
+        "소재",
+        "GA4",
+        "매체"
+      ],
+      "topics": {
+        "role": [
+          "매체 운영",
+          "예산 최적화",
+          "소재 테스트",
+          "성과 분석",
+          "어트리뷰션"
+        ],
+        "scenario": [
+          "CPA 급등",
+          "예산 삭감",
+          "CTR 상승·전환율 하락",
+          "매체 심사 반려"
+        ],
+        "result": [
+          "ROAS",
+          "CPA",
+          "전환율"
+        ],
+        "en": [
+          "paid media",
+          "ROAS optimization",
+          "attribution",
+          "creative testing"
+        ]
+      },
+      "sources": [
+        "s4"
+      ]
+    },
+    {
+      "id": "growth_marketer",
+      "aliases": [
+        "그로스 마케터",
+        "그로스 마케팅",
+        "그로스 해커",
+        "그로스팀",
+        "Growth Marketer",
+        "Growth Hacker"
+      ],
+      "skills": [
+        "퍼널 분석",
+        "실험 설계",
+        "코호트 분석",
+        "SQL",
+        "GA4",
+        "리텐션 개선"
+      ],
+      "responsibilities": [
+        "유입부터 재방문까지 퍼널 지표 관리",
+        "가설 수립과 A/B 실험",
+        "온보딩·전환 흐름 개선",
+        "리텐션·바이럴 장치 설계",
+        "제품팀과 개선 과제 협업"
+      ],
+      "keywords": [
+        "AARRR",
+        "퍼널",
+        "리텐션",
+        "코호트",
+        "실험",
+        "A/B 테스트",
+        "LTV",
+        "CAC",
+        "온보딩",
+        "활성화",
+        "바이럴",
+        "North Star"
+      ],
+      "topics": {
+        "role": [
+          "퍼널 병목 분석",
+          "실험 설계",
+          "리텐션 개선",
+          "CAC·LTV 관리",
+          "온보딩 개선"
+        ],
+        "scenario": [
+          "가입 증가·잔존 감소",
+          "유의하지 않은 실험 결과",
+          "제품팀 리소스 부족",
+          "가입 전환율 급락"
+        ],
+        "result": [
+          "리텐션율",
+          "전환율",
+          "LTV/CAC"
+        ],
+        "en": [
+          "growth experiments",
+          "funnel analysis",
+          "retention",
+          "cohort analysis"
+        ]
+      },
+      "sources": [
+        "s7"
+      ]
+    },
+    {
+      "id": "crm_marketer",
+      "aliases": [
+        "CRM 마케터",
+        "CRM 마케팅",
+        "고객관계관리",
+        "리텐션 마케터",
+        "라이프사이클 마케팅",
+        "CRM Marketer",
+        "Lifecycle Marketer"
+      ],
+      "skills": [
+        "고객 세분화",
+        "RFM 분석",
+        "메시지 기획",
+        "A/B 테스트",
+        "SQL",
+        "캠페인 자동화"
+      ],
+      "responsibilities": [
+        "고객 세그먼트 설계",
+        "앱 푸시·문자·이메일 캠페인 운영",
+        "첫 구매·재구매 유도",
+        "휴면·이탈 방지 캠페인",
+        "캠페인 성과 분석"
+      ],
+      "keywords": [
+        "세그먼트",
+        "RFM",
+        "리텐션",
+        "재구매",
+        "휴면",
+        "이탈",
+        "푸시",
+        "오픈율",
+        "클릭률",
+        "쿠폰",
+        "수신거부",
+        "LTV"
+      ],
+      "topics": {
+        "role": [
+          "고객 세분화",
+          "재구매 유도",
+          "이탈 방지",
+          "메시지 최적화",
+          "증분 효과 측정"
+        ],
+        "scenario": [
+          "수신 거부 급증",
+          "쿠폰 오발송",
+          "첫 구매 후 이탈",
+          "클릭률 하락"
+        ],
+        "result": [
+          "재구매율",
+          "잔존율",
+          "캠페인 증분 매출"
+        ],
+        "en": [
+          "customer segmentation",
+          "lifecycle marketing",
+          "retention campaigns",
+          "incrementality"
+        ]
+      },
+      "sources": [
+        "s8",
+        "s14",
+        "s17"
+      ]
+    },
+    {
+      "id": "content_marketer",
+      "aliases": [
+        "콘텐츠 마케터",
+        "콘텐츠 마케팅",
+        "소셜 마케터",
+        "SNS 마케터",
+        "브랜디드 콘텐츠",
+        "마케팅 에디터",
+        "Content Marketer"
+      ],
+      "skills": [
+        "콘텐츠 기획",
+        "카피라이팅",
+        "SNS 채널 운영",
+        "검색 최적화",
+        "크리에이터 협업",
+        "성과 분석"
+      ],
+      "responsibilities": [
+        "채널별 콘텐츠 기획·제작",
+        "SNS 계정 운영과 커뮤니티 관리",
+        "크리에이터·인플루언서 협업",
+        "검색 유입용 콘텐츠 작성",
+        "콘텐츠 성과 분석"
+      ],
+      "keywords": [
+        "콘텐츠",
+        "SNS",
+        "숏폼",
+        "카드뉴스",
+        "도달",
+        "참여율",
+        "저장",
+        "공유",
+        "톤앤매너",
+        "SEO",
+        "인플루언서",
+        "바이럴"
+      ],
+      "topics": {
+        "role": [
+          "콘텐츠 기획",
+          "채널 운영",
+          "톤앤매너",
+          "크리에이터 협업",
+          "콘텐츠 성과 측정"
+        ],
+        "scenario": [
+          "댓글 논란 확산",
+          "광고 표기 누락",
+          "도달 정체",
+          "조회수 대비 전환 부진"
+        ],
+        "result": [
+          "참여율",
+          "도달",
+          "유입·전환"
+        ],
+        "en": [
+          "content strategy",
+          "social media",
+          "copywriting",
+          "influencer marketing"
+        ]
+      }
+    },
+    {
+      "id": "brand_marketer",
+      "aliases": [
+        "브랜드 마케터",
+        "브랜드 마케팅",
+        "브랜드 매니저",
+        "BM",
+        "Brand Marketer",
+        "Brand Manager"
+      ],
+      "skills": [
+        "브랜드 포지셔닝",
+        "소비자 인사이트",
+        "캠페인 기획",
+        "브랜드 조사",
+        "예산 관리",
+        "협업 커뮤니케이션"
+      ],
+      "responsibilities": [
+        "브랜드 전략과 포지셔닝 수립",
+        "브랜드 캠페인 기획·운영",
+        "브랜드 가이드 관리",
+        "브랜드 건강도 조사",
+        "제휴·컬래버레이션 기획"
+      ],
+      "keywords": [
+        "포지셔닝",
+        "브랜드 아이덴티티",
+        "인지도",
+        "선호도",
+        "브랜드 자산",
+        "톤앤매너",
+        "리브랜딩",
+        "캠페인",
+        "컬래버레이션",
+        "타깃",
+        "인사이트"
+      ],
+      "topics": {
+        "role": [
+          "포지셔닝",
+          "브랜드 일관성",
+          "브랜드 캠페인",
+          "브랜드 건강도",
+          "장기 브랜드 투자"
+        ],
+        "scenario": [
+          "대폭 할인 요구",
+          "올드한 브랜드 이미지",
+          "가이드 위반 판촉물",
+          "경쟁사 유사 캠페인"
+        ],
+        "result": [
+          "인지도",
+          "선호도",
+          "브랜드 검색량"
+        ],
+        "en": [
+          "brand positioning",
+          "brand equity",
+          "campaign planning",
+          "consumer insight"
+        ]
+      },
+      "sources": [
+        "s16"
+      ]
+    },
+    {
+      "id": "pr_specialist",
+      "aliases": [
+        "홍보",
+        "PR",
+        "홍보 담당자",
+        "언론홍보",
+        "기업홍보",
+        "커뮤니케이션팀",
+        "PR Specialist",
+        "Public Relations"
+      ],
+      "skills": [
+        "보도자료 작성",
+        "언론 관계",
+        "위기 커뮤니케이션",
+        "미디어 모니터링",
+        "사내 커뮤니케이션",
+        "메시지 개발"
+      ],
+      "responsibilities": [
+        "보도자료 기획·작성·배포",
+        "기자 관계 관리와 미팅",
+        "자사·경쟁사 언론 모니터링",
+        "위기 상황 커뮤니케이션",
+        "사내 커뮤니케이션"
+      ],
+      "keywords": [
+        "보도자료",
+        "기자",
+        "언론",
+        "모니터링",
+        "위기관리",
+        "입장문",
+        "기사화",
+        "정정보도",
+        "메시지",
+        "인터뷰",
+        "사내보",
+        "PR"
+      ],
+      "topics": {
+        "role": [
+          "언론 관계",
+          "보도자료",
+          "위기 커뮤니케이션",
+          "모니터링",
+          "사내 커뮤니케이션"
+        ],
+        "scenario": [
+          "부정 의혹 기사 문의",
+          "보도자료 미기사화",
+          "대표 인터뷰 준비",
+          "기사 오류"
+        ],
+        "result": [
+          "기사 게재량과 논조",
+          "핵심 메시지 반영",
+          "위기 대응 속도"
+        ],
+        "en": [
+          "media relations",
+          "press release",
+          "crisis communication",
+          "media monitoring"
+        ]
+      },
+      "sources": [
+        "s6",
+        "s9"
+      ]
+    },
+    {
+      "id": "product_marketer",
+      "aliases": [
+        "프로덕트 마케터",
+        "프로덕트 마케팅",
+        "제품 마케팅",
+        "PMM",
+        "Product Marketer",
+        "Product Marketing Manager"
+      ],
+      "skills": [
+        "GTM 전략",
+        "가치 제안 설계",
+        "경쟁 분석",
+        "세일즈 인에이블먼트",
+        "가격 전략",
+        "고객 인사이트"
+      ],
+      "responsibilities": [
+        "신제품 출시 전략 수립",
+        "제품 메시지와 포지셔닝 정의",
+        "영업용 자료 제작",
+        "경쟁 제품 분석",
+        "출시 후 고객 피드백 수집"
+      ],
+      "keywords": [
+        "GTM",
+        "가치 제안",
+        "포지셔닝",
+        "출시",
+        "메시지",
+        "경쟁 분석",
+        "가격",
+        "세일즈 자료",
+        "페르소나",
+        "기능 채택률"
+      ],
+      "topics": {
+        "role": [
+          "출시 전략",
+          "메시지 설계",
+          "경쟁 포지셔닝",
+          "영업 지원",
+          "가격 결정"
+        ],
+        "scenario": [
+          "핵심 기능 누락 출시",
+          "판매 목표 미달",
+          "영업팀의 차별점 설명 어려움",
+          "기술 강조와 고객 가치의 충돌"
+        ],
+        "result": [
+          "출시 후 판매",
+          "기능 채택률",
+          "영업 수주율"
+        ],
+        "en": [
+          "go-to-market",
+          "positioning",
+          "sales enablement",
+          "product launch"
+        ]
+      }
+    },
+    {
+      "id": "market_researcher",
+      "aliases": [
+        "시장조사",
+        "마케팅 리서치",
+        "리서처",
+        "조사 연구원",
+        "소비자 조사",
+        "Market Researcher",
+        "Research Analyst"
+      ],
+      "skills": [
+        "조사 설계",
+        "설문 작성",
+        "표본 설계",
+        "FGI 진행",
+        "통계 분석",
+        "보고서 작성"
+      ],
+      "responsibilities": [
+        "조사 목적 정의와 조사 설계",
+        "설문지·인터뷰 가이드 작성",
+        "조사 진행과 품질 관리",
+        "데이터 분석과 인사이트 도출",
+        "결과 보고"
+      ],
+      "keywords": [
+        "설문",
+        "표본",
+        "FGI",
+        "심층 인터뷰",
+        "정량",
+        "정성",
+        "통계",
+        "교차분석",
+        "응답률",
+        "시장규모",
+        "인사이트",
+        "SPSS"
+      ],
+      "topics": {
+        "role": [
+          "조사 설계",
+          "설문 문항 작성",
+          "표본 설계",
+          "정성 조사",
+          "인사이트 보고"
+        ],
+        "scenario": [
+          "기대와 반대인 결과",
+          "표본 부족",
+          "목적이 불명확한 조사 의뢰",
+          "만족도와 재구매의 불일치"
+        ],
+        "result": [
+          "의사결정 반영도",
+          "조사 품질",
+          "납기 준수"
+        ],
+        "en": [
+          "survey design",
+          "sampling",
+          "qualitative research",
+          "market sizing"
+        ]
+      }
+    },
+    {
+      "id": "ad_planner",
+      "aliases": [
+        "광고기획",
+        "광고기획자",
+        "AP",
+        "어카운트 플래너",
+        "캠페인 기획",
+        "Account Planner",
+        "Advertising Planner"
+      ],
+      "skills": [
+        "소비자 인사이트",
+        "광고 전략",
+        "크리에이티브 브리프",
+        "매체 전략",
+        "기획서 작성",
+        "프레젠테이션"
+      ],
+      "responsibilities": [
+        "광고주 과제 분석",
+        "시장·소비자 조사",
+        "캠페인 전략과 콘셉트 수립",
+        "크리에이티브 브리프 작성",
+        "경쟁 PT 준비"
+      ],
+      "keywords": [
+        "오리엔테이션",
+        "인사이트",
+        "콘셉트",
+        "브리프",
+        "IMC",
+        "매체 믹스",
+        "도달률",
+        "빈도",
+        "경쟁 PT",
+        "캠페인",
+        "타깃"
+      ],
+      "topics": {
+        "role": [
+          "소비자 인사이트",
+          "캠페인 전략",
+          "크리에이티브 브리프",
+          "매체 믹스",
+          "경쟁 PT"
+        ],
+        "scenario": [
+          "광고주 타깃과 실제 구매층 불일치",
+          "제작 예산 삭감",
+          "팀 내 방향 분열",
+          "PT 직전 과제 변경"
+        ],
+        "result": [
+          "광고 회상률",
+          "브랜드 지표",
+          "수주"
+        ],
+        "en": [
+          "account planning",
+          "creative brief",
+          "integrated campaign",
+          "media mix"
+        ]
+      }
+    },
+    {
+      "id": "account_executive",
+      "aliases": [
+        "AE",
+        "광고 AE",
+        "어카운트 매니저",
+        "광고대행사 AE",
+        "Account Executive",
+        "Account Manager"
+      ],
+      "skills": [
+        "광고주 관리",
+        "일정·예산 관리",
+        "내부 조율",
+        "제안서 작성",
+        "협상",
+        "결과 보고"
+      ],
+      "responsibilities": [
+        "광고주 커뮤니케이션 창구",
+        "캠페인 일정·예산 관리",
+        "제작·매체팀 협업 조율",
+        "견적과 계약 관리",
+        "캠페인 결과 보고"
+      ],
+      "keywords": [
+        "광고주",
+        "제안서",
+        "견적",
+        "일정",
+        "제작",
+        "매체",
+        "피드백",
+        "수정",
+        "리포트",
+        "관계 관리",
+        "수수료"
+      ],
+      "topics": {
+        "role": [
+          "광고주 관계",
+          "프로젝트 관리",
+          "내부 조율",
+          "견적·수익 관리",
+          "결과 보고"
+        ],
+        "scenario": [
+          "광고주 담당자 교체",
+          "계약 해지 언급",
+          "야간 긴급 수정 요청",
+          "광고비 축소"
+        ],
+        "result": [
+          "광고주 유지",
+          "수익성",
+          "일정 준수"
+        ],
+        "en": [
+          "client service",
+          "account management",
+          "project coordination",
+          "campaign reporting"
+        ]
+      },
+      "sources": [
+        "s13"
+      ]
+    },
+    {
+      "id": "domestic_sales",
+      "aliases": [
+        "국내영업",
+        "영업사원",
+        "지역 영업",
+        "유통 영업",
+        "채널 영업",
+        "루트 영업",
+        "Domestic Sales",
+        "Sales Representative"
+      ],
+      "skills": [
+        "거래처 관리",
+        "매출 분석",
+        "협상",
+        "판촉 기획",
+        "채권 관리",
+        "상권 분석"
+      ],
+      "responsibilities": [
+        "담당 지역 거래처 방문과 관리",
+        "신규 입점과 거래처 발굴",
+        "판매 목표 관리",
+        "판촉·진열 협상",
+        "대금 회수"
+      ],
+      "keywords": [
+        "거래처",
+        "대리점",
+        "입점",
+        "진열",
+        "판촉",
+        "매출",
+        "목표",
+        "채권",
+        "수금",
+        "상권",
+        "재고",
+        "발주"
+      ],
+      "topics": {
+        "role": [
+          "거래처 관리",
+          "입점 협상",
+          "실적 관리",
+          "채권 관리",
+          "상권 분석"
+        ],
+        "scenario": [
+          "거래처 주문 축소 통보",
+          "거래처 간 가격 경쟁",
+          "판촉 물량 부족",
+          "지역 매출 감소"
+        ],
+        "result": [
+          "매출 달성률",
+          "신규 거래처 수",
+          "채권 회수율"
+        ],
+        "en": [
+          "territory management",
+          "account management",
+          "trade promotion",
+          "collections"
+        ]
+      }
+    },
+    {
+      "id": "b2b_sales",
+      "aliases": [
+        "B2B 영업",
+        "법인영업",
+        "기업영업",
+        "산업재 영업",
+        "B2B Sales",
+        "Corporate Sales"
+      ],
+      "skills": [
+        "니즈 파악",
+        "제안서 작성",
+        "가격 협상",
+        "파이프라인 관리",
+        "입찰 대응",
+        "계약 관리"
+      ],
+      "responsibilities": [
+        "기업 고객 발굴과 관계 관리",
+        "고객 요구 분석과 제안",
+        "견적·입찰 대응",
+        "단가·계약 조건 협상",
+        "수주 후 납기·이슈 조율"
+      ],
+      "keywords": [
+        "법인",
+        "제안서",
+        "견적",
+        "입찰",
+        "단가",
+        "계약",
+        "파이프라인",
+        "수주",
+        "의사결정자",
+        "구매팀",
+        "리드타임",
+        "negotiation"
+      ],
+      "topics": {
+        "role": [
+          "의사결정 구조 파악",
+          "제안 영업",
+          "단가 협상",
+          "파이프라인 관리",
+          "장기 계약"
+        ],
+        "scenario": [
+          "일방적 단가 인하 요구",
+          "최종 단계 보류",
+          "납기 조정",
+          "낮은 수주율"
+        ],
+        "result": [
+          "수주율",
+          "수주액",
+          "고객 유지율"
+        ],
+        "en": [
+          "B2B sales",
+          "proposal",
+          "pipeline management",
+          "price negotiation"
+        ]
+      }
+    },
+    {
+      "id": "technical_sales",
+      "aliases": [
+        "기술영업",
+        "세일즈 엔지니어",
+        "기술영업 엔지니어",
+        "FAE",
+        "Technical Sales",
+        "Sales Engineer"
+      ],
+      "skills": [
+        "제품 기술 이해",
+        "사양 협의",
+        "기술 설명",
+        "샘플·평가 관리",
+        "기술 이슈 조율",
+        "경쟁 제품 비교"
+      ],
+      "responsibilities": [
+        "고객 기술 요구 파악과 사양 협의",
+        "제품 기술 설명과 제안",
+        "샘플 제공과 평가 대응",
+        "품질·기술 이슈 본사 연계",
+        "신규 거래처 발굴과 매출 관리"
+      ],
+      "keywords": [
+        "사양",
+        "스펙",
+        "샘플",
+        "평가",
+        "기술 자료",
+        "데이터시트",
+        "품질 이슈",
+        "엔지니어",
+        "제안",
+        "수주",
+        "인증",
+        "투자 회수"
+      ],
+      "topics": {
+        "role": [
+          "기술 요구 분석",
+          "사양 협의",
+          "샘플 평가 관리",
+          "품질 이슈 대응",
+          "기술 설명"
+        ],
+        "scenario": [
+          "구현하기 어려운 사양 요구",
+          "제품 결함으로 인한 라인 정지",
+          "개발 일정과 고객 요구 충돌"
+        ],
+        "result": [
+          "수주 전환율",
+          "신규 채택 건수",
+          "고객 이슈 해결 시간"
+        ],
+        "en": [
+          "technical sales",
+          "specification",
+          "sample evaluation",
+          "customer technical support"
+        ]
+      },
+      "sources": [
+        "s11"
+      ]
+    },
+    {
+      "id": "solution_sales",
+      "aliases": [
+        "솔루션 영업",
+        "IT 솔루션 영업",
+        "SaaS 영업",
+        "엔터프라이즈 영업",
+        "Solution Sales",
+        "Enterprise Sales"
+      ],
+      "skills": [
+        "문제 정의",
+        "컨설팅형 제안",
+        "데모 진행",
+        "PoC 관리",
+        "도입 효과 제시",
+        "파트너 협업"
+      ],
+      "responsibilities": [
+        "고객 업무 문제 분석",
+        "솔루션 제안과 데모",
+        "PoC 기획과 관리",
+        "계약 협상과 갱신 관리",
+        "파트너사 공동 영업"
+      ],
+      "keywords": [
+        "솔루션",
+        "도입",
+        "PoC",
+        "데모",
+        "ROI",
+        "구독",
+        "갱신",
+        "의사결정자",
+        "현업",
+        "파트너",
+        "영업 사이클",
+        "전환"
+      ],
+      "topics": {
+        "role": [
+          "니즈 구체화",
+          "PoC",
+          "도입 효과 제시",
+          "이해관계자 합의",
+          "갱신 관리"
+        ],
+        "scenario": [
+          "도입 후 효과 불만",
+          "대규모 맞춤 요구",
+          "경쟁 솔루션 전환 제안",
+          "긴 영업 사이클"
+        ],
+        "result": [
+          "계약 금액",
+          "갱신율",
+          "영업 사이클 기간"
+        ],
+        "en": [
+          "consultative selling",
+          "proof of concept",
+          "ROI",
+          "renewal"
+        ]
+      }
+    },
+    {
+      "id": "auto_sales",
+      "aliases": [
+        "자동차 영업",
+        "카마스터",
+        "자동차 딜러",
+        "자동차 판매",
+        "세일즈 컨설턴트",
+        "Car Sales",
+        "Automotive Sales Consultant"
+      ],
+      "skills": [
+        "고객 상담",
+        "시승 안내",
+        "금융 상품 안내",
+        "고객 관리",
+        "소개 영업",
+        "차량 지식"
+      ],
+      "responsibilities": [
+        "전시장 방문 고객 상담",
+        "시승과 차량 설명",
+        "할부·리스 등 구매 조건 안내",
+        "계약과 출고 관리",
+        "출고 후 고객 관리와 소개 영업"
+      ],
+      "keywords": [
+        "상담",
+        "시승",
+        "견적",
+        "할부",
+        "리스",
+        "출고",
+        "계약",
+        "재구매",
+        "소개",
+        "전기차",
+        "트림",
+        "옵션"
+      ],
+      "topics": {
+        "role": [
+          "니즈 파악 상담",
+          "시승",
+          "구매 조건 안내",
+          "출고 관리",
+          "고객 유지"
+        ],
+        "scenario": [
+          "타 지점 할인 조건 요구",
+          "출고 지연",
+          "출고 차량 흠집 항의"
+        ],
+        "result": [
+          "월 판매 대수",
+          "계약 전환율",
+          "재구매·소개 비율"
+        ],
+        "en": [
+          "automotive sales",
+          "test drive",
+          "auto financing",
+          "customer retention"
+        ]
+      }
+    },
+    {
+      "id": "pharma_sales",
+      "aliases": [
+        "제약영업",
+        "MR",
+        "의약정보담당자",
+        "병원 영업",
+        "Medical Representative",
+        "Pharmaceutical Sales"
+      ],
+      "skills": [
+        "제품 디테일링",
+        "의약 지식",
+        "거래처 관리",
+        "학술 활동 지원",
+        "시장 분석",
+        "공정경쟁규약 준수"
+      ],
+      "responsibilities": [
+        "병·의원 방문과 의약 정보 전달",
+        "처방 확대를 위한 거래처 관리",
+        "학술 행사·제품 설명회 지원",
+        "담당 지역 시장 분석",
+        "도매·약국 유통 관리"
+      ],
+      "keywords": [
+        "디테일링",
+        "처방",
+        "의사",
+        "병원",
+        "약국",
+        "도매",
+        "랜딩",
+        "약제심의위원회",
+        "학술",
+        "리베이트",
+        "공정경쟁규약",
+        "점유율"
+      ],
+      "topics": {
+        "role": [
+          "디테일링",
+          "처방 확대",
+          "거래처 관계",
+          "학술 마케팅",
+          "윤리 영업"
+        ],
+        "scenario": [
+          "리베이트 요구",
+          "면담 거절",
+          "부작용 사례 전달"
+        ],
+        "result": [
+          "처방 실적",
+          "신규 랜딩",
+          "방문 커버리지"
+        ],
+        "en": [
+          "detailing",
+          "prescription growth",
+          "hospital sales",
+          "compliant promotion"
+        ]
+      },
+      "sources": [
+        "s5",
+        "s15"
+      ]
+    },
+    {
+      "id": "sales_manager",
+      "aliases": [
+        "영업관리",
+        "영업지원",
+        "영업기획",
+        "세일즈 오퍼레이션",
+        "영업관리자",
+        "Sales Operations",
+        "Sales Admin"
+      ],
+      "skills": [
+        "실적 분석",
+        "목표 설정",
+        "판매 예측",
+        "채권·여신 관리",
+        "인센티브 설계",
+        "ERP 활용"
+      ],
+      "responsibilities": [
+        "영업 실적 집계와 분석 보고",
+        "판매 목표 수립과 배분",
+        "수주·출하·매출·수금 관리",
+        "대리점·거래처 정책 운영",
+        "영업 인센티브 제도 운영"
+      ],
+      "keywords": [
+        "실적",
+        "목표",
+        "판매계획",
+        "예측",
+        "여신",
+        "채권",
+        "미수금",
+        "인센티브",
+        "대리점",
+        "ERP",
+        "마감",
+        "손익"
+      ],
+      "topics": {
+        "role": [
+          "실적 관리",
+          "목표 배분",
+          "판매 예측",
+          "여신·채권 관리",
+          "영업 정책"
+        ],
+        "scenario": [
+          "마감 수치 불일치",
+          "공급 부족 물량 배분",
+          "보고 양식 미사용",
+          "미수금 급증"
+        ],
+        "result": [
+          "목표 달성률",
+          "채권 회수율",
+          "예측 정확도"
+        ],
+        "en": [
+          "sales operations",
+          "sales forecasting",
+          "credit management",
+          "incentive design"
+        ]
+      },
+      "sources": [
+        "s10",
+        "s12"
+      ]
+    },
+    {
+      "id": "key_account",
+      "aliases": [
+        "키어카운트 관리",
+        "KAM",
+        "핵심 거래처 관리",
+        "대형 거래처 영업",
+        "Key Account Manager",
+        "Key Account Management"
+      ],
+      "skills": [
+        "어카운트 플랜",
+        "전략적 협상",
+        "고객사 데이터 분석",
+        "관계 관리",
+        "공동 프로모션 기획",
+        "수익성 관리"
+      ],
+      "responsibilities": [
+        "핵심 고객사 연간 계획 수립",
+        "연간 거래 조건 협상",
+        "고객사 내 다층 관계 관리",
+        "공동 기획·프로모션 운영",
+        "고객사별 수익성 관리"
+      ],
+      "keywords": [
+        "핵심 고객",
+        "어카운트 플랜",
+        "연간 계약",
+        "거래 조건",
+        "판촉비",
+        "공동 프로모션",
+        "수익성",
+        "의사결정자",
+        "매출 비중",
+        "관계 관리"
+      ],
+      "topics": {
+        "role": [
+          "어카운트 플랜",
+          "전략적 협상",
+          "관계 관리",
+          "고객사 수익성",
+          "성장 기회 발굴"
+        ],
+        "scenario": [
+          "담당 임원 교체",
+          "과도한 판촉비 요구",
+          "자사 실수로 인한 손실",
+          "3개월 연속 매출 감소"
+        ],
+        "result": [
+          "고객사 매출 성장률",
+          "이익률",
+          "계약 갱신"
+        ],
+        "en": [
+          "key account management",
+          "account planning",
+          "strategic negotiation",
+          "joint business planning"
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "text": "법무팀이 회사 안에서 '브레이크'가 아니라 사업의 파트너로 인정받으려면 무엇이 필요하다고 보세요?",
+      "scope": "family:legal",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법무 업무에서 정확성과 신속성이 부딪힐 때 어느 쪽에 무게를 두시는지 이유와 함께 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "외부 로펌에 맡길 일과 법무팀이 직접 처리할 일을 어떤 기준으로 나누시겠어요?",
+      "scope": "family:legal",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "법률 검토 의견을 받는 현업 담당자가 가장 원하는 것은 무엇이라고 생각하세요?",
+      "scope": "family:legal",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전문 용어 없이 법적 쟁점을 비전공자에게 설명해서 이해시켰던 경험을 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "상대방 논리를 끝까지 따져 보다가 본인의 결론을 바꿨던 경험이 있으신가요?",
+      "scope": "family:legal",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마감이 겹친 여러 검토 요청을 한꺼번에 처리해야 했을 때 우선순위를 어떻게 정하셨나요?",
+      "scope": "family:legal",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 부서와 의견이 엇갈렸을 때 원칙은 지키면서 관계를 해치지 않았던 경험을 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사소해 보이는 문구 하나를 놓치지 않아 문제를 막았던 경험이 있다면 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "강점",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업팀이 오늘 서명해야 한다며 계약서 검토를 몇 시간 안에 끝내 달라고 하면 어떻게 하시겠어요?",
+      "scope": "family:legal",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경영진이 이미 결정한 사업에 법적 리스크가 크다고 판단되면 어떻게 보고하시겠어요?",
+      "scope": "family:legal",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "거래처로부터 내용증명을 받았다는 연락이 오면 무엇부터 확인하시겠어요?",
+      "scope": "family:legal",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업이 법무 검토 없이 계약을 이미 체결해 버린 사실을 뒤늦게 알게 되면 어떻게 대응하시겠어요?",
+      "scope": "family:legal",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "참고할 판례나 선례가 전혀 없는 새로운 사업 모델에 대해 의견을 달라고 하면 어떻게 접근하시겠어요?",
+      "scope": "family:legal",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법률 리서치를 하면서 결론을 내기까지 가장 오래 고민했던 사안을 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "계약서나 약관, 규정 문서를 직접 작성하거나 고쳐 본 경험을 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "모의재판이나 법률 클리닉, 인턴 등에서 실제 사건을 다뤄 본 경험이 있다면 소개해 주세요.",
+      "scope": "family:legal",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ]
+    },
+    {
+      "text": "최근 기업 법무에 영향을 크게 준 법·제도 변화 하나를 골라 실무에 어떤 영향이 있는지 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리걸테크나 AI 도구가 법무 업무 방식을 어떻게 바꿀 거라고 보시나요?",
+      "scope": "family:legal",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "ESG나 공급망 실사 요구가 커지면서 법무팀 역할이 어떻게 달라진다고 보세요?",
+      "scope": "family:legal",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "상사가 회사에 불리한 자료를 소송 제출 자료에서 빼자고 하면 어떻게 하시겠어요?",
+      "scope": "family:legal",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회사의 이익과 법적 의무가 충돌하는 상황에서 사내 법무 담당자는 어떤 기준으로 판단해야 할까요?",
+      "scope": "family:legal",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법률 검토에서 판단을 잘못했거나 놓친 부분이 있었다면, 그 뒤로 바뀐 업무 습관을 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법률 지식을 꾸준히 업데이트하기 위해 실제로 하고 있는 방법이 있다면 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법무 업무의 성과는 눈에 잘 보이지 않는데, 본인의 기여를 어떻게 보여 주시겠어요?",
+      "scope": "family:legal",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인의 검토나 조언 덕분에 회사가 손실이나 분쟁을 피했던 사례를 결과까지 말씀해 주세요.",
+      "scope": "family:legal",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "현업 직원 대상 '계약 체결 전 체크리스트' 교육을 5분 발표로 구성해 보시겠어요?",
+      "scope": "family:legal",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법무팀이 모든 계약을 사전 검토해야 한다는 주장과 표준계약서는 현업이 자율 처리해야 한다는 주장 중 어느 쪽에 서시겠어요?",
+      "scope": "family:legal",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사내 규정을 새로 만들거나 개정할 때 어떤 절차와 기준으로 초안을 잡으시겠어요?",
+      "scope": "family:legal",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "공급계약서를 처음 받으면 어떤 순서로 검토하시는지 말씀해 주세요.",
+      "scope": "role:corporate_legal",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "손해배상 한도나 면책 조항을 두고 상대방과 줄다리기할 때 어디까지 양보할 수 있다고 판단하세요?",
+      "scope": "role:corporate_legal",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "하도급 거래 성격이 있는 계약을 검토할 때 특히 확인해야 할 부분은 무엇인가요?",
+      "scope": "role:corporate_legal",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s3"
+    },
+    {
+      "text": "계약 상대방과 서명하는 사람에게 실제 권한이 있는지 어떻게 확인하시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s3"
+    },
+    {
+      "text": "비밀유지계약서를 검토할 때 우리가 정보를 주는 쪽인지 받는 쪽인지에 따라 무엇이 달라지나요?",
+      "scope": "role:corporate_legal",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이사회나 주주총회 안건을 준비할 때 법무팀이 챙겨야 할 것들을 말씀해 주세요.",
+      "scope": "role:corporate_legal",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "junior",
+        "mid"
+      ]
+    },
+    {
+      "text": "인수합병 실사에서 법무 실사 범위를 정할 때 무엇을 우선 보시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "해외 거래처가 자국 법을 준거법으로 하자고 고집하면 어떻게 협상하시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사업부가 계약서 없이 구두 합의만으로 먼저 일을 시작하겠다고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협력사가 대금 지급 지연을 이유로 계약 해지를 통보해 왔다면 어떤 순서로 대응하시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 유형의 계약 분쟁이 1년에 여러 번 반복된다면 원인을 어떻게 분석하고 개선하시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법무팀 인원은 그대로인데 계약 검토 요청이 두 배로 늘었다면 운영 방식을 어떻게 바꾸시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "계약 조건을 협상해서 회사에 유리하게 바꿨던 경험을 구체적으로 말씀해 주세요.",
+      "scope": "role:corporate_legal",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사내 표준계약서나 업무 매뉴얼을 만들거나 정비해 본 경험이 있으신가요?",
+      "scope": "role:corporate_legal",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사내 법무 담당자와 로펌 변호사의 역할은 어떤 점에서 가장 다르다고 보세요?",
+      "scope": "role:corporate_legal",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소송이나 외부 자문보다 기업 내부 법무를 선택한 이유가 무엇인가요?",
+      "scope": "role:corporate_legal",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법무팀이 계약마다 수정 요청을 많이 해서 영업이 늦어진다는 불만이 나오면 뭐라고 답하시겠어요?",
+      "scope": "role:corporate_legal",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소장이나 답변서를 쓸 때 사실관계를 정리하는 본인만의 순서가 있다면 말씀해 주세요.",
+      "scope": "role:lawyer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "행정심판과 행정소송 중 어느 쪽으로 다툴지 판단할 때 무엇을 고려하시나요?",
+      "scope": "role:lawyer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 법령을 부서마다 다르게 해석해 적용하고 있다면 통일된 해석을 어떻게 끌어내시겠어요?",
+      "scope": "role:lawyer",
+      "category": "문제해결",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "의뢰인에게 승소 가능성을 설명할 때 어떤 방식으로 전달하시나요?",
+      "scope": "role:lawyer",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "증거가 부족한 사건에서 사실관계를 보강하기 위해 어떤 방법을 쓰시겠어요?",
+      "scope": "role:lawyer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분쟁을 소송까지 끌고 가지 않고 합의나 조정으로 끝내는 게 낫다고 판단하는 기준은 무엇인가요?",
+      "scope": "role:lawyer",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "의뢰인이 불리한 사실을 뒤늦게 털어놓았다면 소송 전략을 어떻게 다시 세우시겠어요?",
+      "scope": "role:lawyer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "변론기일 직전에 상대방이 예상치 못한 증거를 제출했다면 어떻게 대응하시겠어요?",
+      "scope": "role:lawyer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "민원인이 법적 조치를 하겠다며 강하게 항의해 오면 기관 소속 변호사로서 어떻게 응대하시겠어요?",
+      "scope": "role:lawyer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "1심에서 패소한 사건의 항소 여부를 결정할 때 어떤 요소를 따져 보시겠어요?",
+      "scope": "role:lawyer",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "예상 소송 비용과 인용 가능 금액을 비교해 소송 진행 여부를 판단한다면 어떻게 계산해 보시겠어요?",
+      "scope": "role:lawyer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수습 기간에 맡았던 사건 중 가장 기억에 남는 것과 본인이 한 역할을 말씀해 주세요.",
+      "scope": "role:lawyer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "상대방 대리인과 협상하거나 조정 절차에 참여해 결과를 끌어낸 경험을 말씀해 주세요.",
+      "scope": "role:lawyer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "변호사에게 법률 지식 외에 가장 필요한 역량은 무엇이라고 생각하시나요?",
+      "scope": "role:lawyer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "송무와 자문 중 어느 쪽에 더 끌리는지 이유와 함께 말씀해 주세요.",
+      "scope": "role:lawyer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "의뢰인이 원하는 결론과 본인의 법적 판단이 다른데 의뢰인이 계속 밀어붙이면 어떻게 하시겠어요?",
+      "scope": "role:lawyer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "예전에 상대방 회사를 자문한 적이 있는 사건을 맡게 되면 어떻게 처리하시겠어요?",
+      "scope": "role:lawyer",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구원이 낸 발명신고서를 받으면 특허 출원 여부를 어떤 기준으로 판단하시나요?",
+      "scope": "role:ip_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "선행기술 조사를 할 때 검색식을 어떻게 세우고 결과를 어떻게 걸러 내시나요?",
+      "scope": "role:ip_specialist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "등록 특허의 청구항을 보고 권리범위가 넓은지 좁은지 판단하는 방법을 설명해 주세요.",
+      "scope": "role:ip_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "보유 특허의 연차료를 계속 낼지 포기할지 결정할 때 어떤 요소를 보시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "기술이전이나 라이선스 계약에서 로열티 조건을 검토할 때 무엇을 중점적으로 보시나요?",
+      "scope": "role:ip_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "특허로 공개해 보호할 기술과 영업비밀로 남길 기술을 어떻게 구분하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "새 브랜드명을 쓰기 전에 상표 관점에서 어떤 검토를 하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "경쟁사로부터 특허 침해 경고장을 받았다면 첫 일주일 동안 무엇을 하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "신제품 출시 직전에 제3자 특허와 저촉될 수 있다는 검토 결과가 나오면 어떻게 대응하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구원이 학회 발표를 먼저 하고 나서 특허 출원을 요청해 왔다면 어떻게 하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁사 제품이 우리 특허를 침해하는지 판단하려면 어떤 순서로 분석하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "특허 포트폴리오를 정리해 관리 비용을 줄이라는 지시를 받으면 어떤 기준으로 분류하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "특허 가치를 평가해 달라는 요청을 받으면 기술성, 권리성, 사업성 중 무엇부터 보시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "기술 문서나 도면을 분석해서 핵심 아이디어를 정리해 본 경험을 말씀해 주세요.",
+      "scope": "role:ip_specialist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "연구 부서와 협업해 발명을 발굴하거나 권리화했던 경험을 구체적으로 말씀해 주세요.",
+      "scope": "role:ip_specialist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기업 IP 담당자가 연구소, 사업부, 외부 특허사무소 사이에서 하는 역할을 어떻게 이해하고 계세요?",
+      "scope": "role:ip_specialist",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전공 기술을 연구 현장 대신 특허·IP 분야에서 쓰고 싶은 이유는 무엇인가요?",
+      "scope": "role:ip_specialist",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "비용을 들여 출원한 특허가 실제 사업에 쓰이지 않는다면 IP 부서의 존재 이유를 어떻게 설명하시겠어요?",
+      "scope": "role:ip_specialist",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컴플라이언스 업무가 사후 적발보다 사전 예방에 무게를 둬야 하는 이유를 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "준법 프로그램이 서류로만 있는지 실제로 작동하는지는 무엇을 보면 알 수 있을까요?",
+      "scope": "family:compliance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컴플라이언스와 내부감사는 역할이 어떻게 다르다고 이해하고 계세요?",
+      "scope": "family:compliance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직원들이 준법 교육을 형식적으로 받는다고 느끼는 이유는 무엇이라고 보세요?",
+      "scope": "family:compliance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "규칙을 지키자고 말했다가 주변의 반발을 샀던 경험과 그때 어떻게 대처하셨는지 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 부서의 협조를 받아야 하는 점검 업무를 이끌어 본 경험을 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기록이나 숫자에서 이상한 패턴을 발견하고 끝까지 원인을 추적했던 경험을 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "윗사람에게 불편한 사실을 보고해야 했던 경험과 그때 어떻게 전달하셨는지 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정해진 절차가 비효율적이라고 느꼈을 때 규정을 지키면서 개선을 제안해 본 경험이 있으신가요?",
+      "scope": "family:compliance",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매출 목표가 급한 영업 본부장이 준법 검토를 생략해 달라고 요구하면 어떻게 하시겠어요?",
+      "scope": "family:compliance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "익명 제보로 특정 팀장의 부정 행위가 의심된다는 내용이 들어오면 어떤 순서로 처리하시겠어요?",
+      "scope": "family:compliance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "감독기관의 검사 일정이 갑자기 통보되었다면 무엇부터 준비하시겠어요?",
+      "scope": "family:compliance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해외 지사에서 현지 관행이라며 공무원에게 편의를 제공했다는 보고가 올라오면 어떻게 대응하시겠어요?",
+      "scope": "family:compliance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "새로 시행되는 규제가 기존 업무 방식과 정면으로 부딪친다면 현업과 어떻게 전환 계획을 세우시겠어요?",
+      "scope": "family:compliance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "교육이나 캠페인을 기획해 사람들의 행동을 실제로 바꿔 본 경험을 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "점검표나 체크리스트를 만들어 반복 업무의 실수를 줄였던 경험을 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "법령이나 규제 문서를 읽고 우리 조직에 적용할 점을 정리해 본 경험이 있으신가요?",
+      "scope": "family:compliance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "요즘 준법감시나 내부통제 분야에서 기업들이 가장 신경 쓰는 이슈는 무엇이라고 보세요?",
+      "scope": "family:compliance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공정거래나 반부패 규제가 강화되는 흐름이 기업의 영업 방식을 어떻게 바꿔 놓았다고 보세요?",
+      "scope": "family:compliance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "규제 변화를 빠르게 파악하기 위해 주로 어떤 채널을 활용하시나요?",
+      "scope": "family:compliance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가까운 동료의 규정 위반을 발견했는데 조용히 넘어가 달라고 부탁한다면 어떻게 하시겠어요?",
+      "scope": "family:compliance",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회사 평판을 지키는 일과 사실을 외부에 알려야 하는 일이 충돌하면 어떻게 판단하시겠어요?",
+      "scope": "family:compliance",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원칙만 앞세우다가 현업과의 관계가 틀어졌던 경험이 있다면 무엇을 배웠는지 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "규정을 해석할 때 본인은 너무 보수적인 편인가요, 너무 느슨한 편인가요?",
+      "scope": "family:compliance",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "준법 활동의 효과를 경영진에게 숫자로 보여 줘야 한다면 어떤 지표를 쓰시겠어요?",
+      "scope": "family:compliance",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 개선한 절차나 교육으로 위반 건수나 리스크가 줄었던 결과가 있다면 말씀해 주세요.",
+      "scope": "family:compliance",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "내부 신고자에게 금전 포상을 주는 제도에 대해 찬성과 반대 중 한쪽 입장을 정해 주장해 보세요.",
+      "scope": "family:compliance",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회사 컴플라이언스 체계를 1년 안에 한 단계 끌어올리는 로드맵을 발표해 보세요.",
+      "scope": "family:compliance",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "이해충돌 가능성이 있는 업무 배정을 사전에 걸러 내는 절차를 어떻게 설계하시겠어요?",
+      "scope": "family:compliance",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "준법 리스크 평가를 할 때 발생 가능성과 영향도를 어떻게 매겨 우선순위를 정하시나요?",
+      "scope": "role:compliance_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "내부통제 점검 계획을 1년 단위로 세운다면 어떤 순서로 짜시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "junior",
+        "mid"
+      ]
+    },
+    {
+      "text": "신상품이나 신규 사업 출시 전 준법 검토에서 반드시 확인하는 항목은 무엇인가요?",
+      "scope": "role:compliance_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "내부 조사 결과 보고서를 쓸 때 사실과 의견을 구분하기 위해 어떤 점을 지키시나요?",
+      "scope": "role:compliance_officer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고나 판촉 문구에 과장·허위 표시 소지가 있는지 볼 때 어떤 기준으로 판단하시나요?",
+      "scope": "role:compliance_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새 거래 상대방이나 대리인을 쓸 때 반부패 관점의 실사는 어디까지 하시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "준법 교육 이수율이 특정 부서만 유독 낮다면 어떻게 끌어올리시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "내부 조사 도중 조사 대상자가 인사 불이익이라며 강하게 반발하면 어떻게 하시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협력사가 우리 회사 윤리 규범을 지키지 않는다는 제보가 들어오면 어떻게 처리하시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 내부통제 지적 사항이 몇 년째 반복된다면 근본 원인을 어떻게 찾으시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경비 사용 데이터에서 부정 가능성이 높은 건을 골라낸다면 어떤 패턴부터 보시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "규정 위반 여부를 판단하기 위해 자료를 모으고 관련자를 면담해 본 경험을 말씀해 주세요.",
+      "scope": "role:compliance_officer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새로운 제도를 도입하면서 구성원을 설득해야 했던 경험을 말씀해 주세요.",
+      "scope": "role:compliance_officer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "준법감시 조직의 독립성이 현실에서 흔들리는 순간은 언제라고 보세요?",
+      "scope": "role:compliance_officer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컴플라이언스 직무에 관심을 갖게 된 계기를 말씀해 주세요.",
+      "scope": "role:compliance_officer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컴플라이언스는 비용만 쓰고 매출에는 도움이 안 된다는 임원의 말에 어떻게 반박하시겠어요?",
+      "scope": "role:compliance_officer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새 서비스에서 개인정보를 수집할 때 수집 항목이 최소한인지 어떻게 검토하시나요?",
+      "scope": "role:privacy_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보 처리방침을 개정해야 하는 상황과, 개정할 때 확인하는 사항을 말씀해 주세요.",
+      "scope": "role:privacy_officer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보 처리를 외부 업체에 위탁할 때 계약과 관리 단계에서 무엇을 점검하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보 영향평가가 필요한 사업인지 판단하고 진행한다면 어떤 흐름으로 하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가명정보를 분석에 쓰겠다는 요청이 오면 어떤 절차와 조건을 확인하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보 접근 권한을 부여하고 회수하는 기준을 어떻게 운영하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "필수 동의와 마케팅 수신 동의를 한 화면에서 한꺼번에 받으려는 기획안을 보면 어떤 의견을 주시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 정보가 담긴 파일이 외부로 잘못 발송됐다는 보고를 받으면 처음 몇 시간 동안 무엇을 하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정보주체가 자기 정보를 모두 열람하고 삭제해 달라고 요구하면 어떻게 처리하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마케팅팀이 기존 회원 정보를 당초 동의 범위를 벗어난 캠페인에 쓰고 싶어 한다면 어떻게 조율하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부서마다 흩어져 있는 개인정보 보유 현황을 처음부터 파악해야 한다면 어떤 순서로 조사하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "접속기록 점검에서 한 직원의 대량 조회가 발견되면 정상 업무인지 어떻게 판단하시겠어요?",
+      "scope": "role:privacy_officer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보보호 점검이나 관리체계 인증 준비에 참여했던 경험을 말씀해 주세요.",
+      "scope": "role:privacy_officer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획이나 개발 부서와 함께 서비스의 개인정보 처리 흐름을 정리해 본 경험을 말씀해 주세요.",
+      "scope": "role:privacy_officer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보보호 담당자는 법 해석과 기술적 보호조치 사이에서 어떤 역할을 해야 한다고 보세요?",
+      "scope": "role:privacy_officer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보보호 분야를 커리어로 선택하게 된 이유를 말씀해 주세요.",
+      "scope": "role:privacy_officer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보호조치를 모두 지키면 서비스 출시가 석 달 늦어진다면, 어디까지 타협할 수 있다고 보세요?",
+      "scope": "role:privacy_officer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디지털 마케팅 업무에서 숫자 감각이 실제로 필요한 순간은 언제라고 보세요?",
+      "scope": "family:digital_marketing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "퍼포먼스, 그로스, CRM, 콘텐츠 마케팅은 각각 무엇을 책임지는 일이라고 이해하고 계세요?",
+      "scope": "family:digital_marketing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디지털 마케팅의 '좋은 성과'를 정의할 때 매출, 전환, 유지 중 무엇을 기준으로 삼아야 할까요?",
+      "scope": "family:digital_marketing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "데이터를 잘 보는 마케터와 숫자에 끌려다니는 마케터의 차이는 무엇이라고 생각하세요?",
+      "scope": "family:digital_marketing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가설을 세워 작게 실험해 보고 결과에 따라 방향을 바꿨던 경험을 말씀해 주세요.",
+      "scope": "family:digital_marketing",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자이너나 개발자 등 다른 직군과 일정·우선순위를 맞춰 캠페인을 내보냈던 경험을 말씀해 주세요.",
+      "scope": "family:digital_marketing",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기대와 전혀 다른 데이터가 나왔을 때 그 결과를 팀에 어떻게 공유하셨나요?",
+      "scope": "family:digital_marketing",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "상사와 마케팅 방향에 대한 의견이 달랐을 때 어떻게 풀어 나갔는지 말씀해 주세요.",
+      "scope": "family:digital_marketing",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새로운 마케팅 툴이나 광고 플랫폼을 짧은 시간 안에 익혀 실무에 적용했던 경험이 있으신가요?",
+      "scope": "family:digital_marketing",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "월 예산이 갑자기 절반으로 줄었다면 어떤 채널부터 줄이고 어떤 채널을 지키시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 오픈 당일 랜딩페이지 링크가 잘못 걸려 있다는 걸 발견하면 어떻게 하시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경영진이 이번 달 안에 신규 가입자를 두 배로 늘려 달라고 하면 어떻게 대응하시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "10대를 타깃으로 한 캠페인을 맡게 된다면 채널과 메시지를 어떻게 잡으시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "광고 매체 리포트의 전환 수치가 사내 GA4 대시보드와 크게 다르다면 무엇부터 확인하시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 캠페인이나 SNS 채널을 운영하면서 수치를 개선해 본 경험을 말씀해 주세요.",
+      "scope": "family:digital_marketing",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "이전 직장에서 가장 의미 있었던 마케팅 성과를 하나 골라 목표와 실행 과정을 말씀해 주세요.",
+      "scope": "family:digital_marketing",
+      "category": "성과",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "GA4나 SQL 같은 도구로 직접 데이터를 뽑아 인사이트를 찾아본 경험이 있으신가요?",
+      "scope": "family:digital_marketing",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "쿠키나 광고 식별자 활용이 어려워지는 흐름이 디지털 마케팅을 어떻게 바꾸고 있다고 보세요?",
+      "scope": "family:digital_marketing",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생성형 AI가 마케팅 실무에서 대신할 수 있는 일과 대신하기 어려운 일은 무엇이라고 보세요?",
+      "scope": "family:digital_marketing",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 효율이 점점 떨어진다는 이야기가 많은데, 이 분야의 전망을 어떻게 보시나요?",
+      "scope": "family:digital_marketing",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전환율을 높이려고 소비자를 오해하게 만드는 문구를 쓰자는 제안이 나오면 어떻게 하시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "성과를 좋아 보이게 하려고 보고 기준을 바꾸자는 요청을 받으면 어떻게 대응하시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "결과가 좋지 않았던 캠페인에서 가장 크게 배운 점은 무엇이었나요?",
+      "scope": "family:digital_marketing",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 사람과 협업할 때 본인이 가장 자주 부딪히는 약점은 무엇인가요?",
+      "scope": "family:digital_marketing",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 기여한 성과를 다른 채널이나 외부 요인의 효과와 어떻게 구분해서 설명하시겠어요?",
+      "scope": "family:digital_marketing",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 결과를 보고할 때 어떤 지표를 핵심으로 두고, 왜 그 지표인가요?",
+      "scope": "family:digital_marketing",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 앱 서비스의 첫 3개월 디지털 마케팅 계획을 5분 PT로 발표해 보세요.",
+      "scope": "family:digital_marketing",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "초기 스타트업은 브랜드 인지도 캠페인과 전환 중심 광고 중 어디에 먼저 돈을 써야 할까요?",
+      "scope": "family:digital_marketing",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 계정 구조를 캠페인, 광고그룹, 소재 단위로 어떻게 나눠 설계하시나요?",
+      "scope": "role:performance_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "ROAS 목표를 정할 때 상품의 마진 구조를 어떻게 반영하시겠어요?",
+      "scope": "role:performance_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소재 피로도가 쌓였다는 신호를 무엇으로 판단하고, 교체 주기는 어떻게 잡으시나요?",
+      "scope": "role:performance_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "검색광고 키워드 입찰가를 조정할 때 어떤 지표를 근거로 삼으시나요?",
+      "scope": "role:performance_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리타깃팅 광고 성과가 실제보다 부풀려 보일 수 있다면 어떻게 검증하시겠어요?",
+      "scope": "role:performance_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "라스트 클릭 기준으로 볼 때와 다른 기여 모델로 볼 때 채널 평가가 어떻게 달라질 수 있나요?",
+      "scope": "role:performance_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "선호하는 광고 매체와 소재 형식이 있다면 이유와 함께 말씀해 주세요.",
+      "scope": "role:performance_marketer",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "특정 매체의 CPA가 일주일 사이에 두 배로 뛰었다면 어떻게 대응하시겠어요?",
+      "scope": "role:performance_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 소재가 매체 심사에서 계속 반려된다면 어떻게 처리하시겠어요?",
+      "scope": "role:performance_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대행사가 보낸 성과 리포트가 지나치게 좋게만 나와 있다면 무엇을 확인하시겠어요?",
+      "scope": "role:performance_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "CTR은 올랐는데 전환율은 떨어졌다면 어디부터 원인을 찾아보시겠어요?",
+      "scope": "role:performance_marketer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "월 광고비 3천만 원에 CPA가 2만 원인데 예산을 50% 늘리면 CPA가 어떻게 될지 어떻게 예측하시겠어요?",
+      "scope": "role:performance_marketer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 광고를 집행하며 예산을 배분하고 조정했던 경험을 구체적으로 말씀해 주세요.",
+      "scope": "role:performance_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "A/B 테스트로 광고 소재를 개선했던 경험이 있다면 결과까지 말씀해 주세요.",
+      "scope": "role:performance_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "퍼포먼스 마케팅이 무엇이라고 생각하는지 본인의 말로 설명해 주세요.",
+      "scope": "role:performance_marketer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "브랜드 마케팅보다 퍼포먼스 마케팅에 더 끌리는 이유가 있다면 말씀해 주세요.",
+      "scope": "role:performance_marketer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고비를 줄였는데 매출이 거의 줄지 않았다면, 그동안 광고비가 낭비였다는 뜻 아닌가요?",
+      "scope": "role:performance_marketer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "AARRR 퍼널 중 가장 큰 병목을 찾는다면 어떤 데이터를 먼저 보시겠어요?",
+      "scope": "role:growth_marketer",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리텐션을 코호트별로 볼 때 무엇을 보고 개선 여지를 판단하시나요?",
+      "scope": "role:growth_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 결과가 통계적으로 유의하지 않게 나오면 어떻게 해석하고 다음 실험을 설계하시나요?",
+      "scope": "role:growth_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "추천인 보상 같은 바이럴 장치를 설계할 때 어뷰징을 막기 위해 무엇을 고려하시겠어요?",
+      "scope": "role:growth_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 아이디어가 여러 개일 때 우선순위를 어떤 기준으로 정하시나요?",
+      "scope": "role:growth_marketer",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가입 과정의 이탈 구간을 줄이기 위해 온보딩 단계에서 시도해 볼 만한 것은 무엇인가요?",
+      "scope": "role:growth_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 가입은 늘었는데 한 달 뒤 남아 있는 사용자가 오히려 줄었다면 어떻게 하시겠어요?",
+      "scope": "role:growth_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품팀이 개발 일정상 그로스 실험을 넣기 어렵다고 하면 어떻게 협의하시겠어요?",
+      "scope": "role:growth_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "입사 첫 달에 우리 서비스에서 가장 먼저 풀어야 할 문제를 찾아 달라고 하면 어떻게 접근하시겠어요?",
+      "scope": "role:growth_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "앱 설치 대비 가입 전환율이 지난달보다 10%p 떨어졌다면 어떤 순서로 원인을 좁혀 가시겠어요?",
+      "scope": "role:growth_marketer",
+      "category": "데이터",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 획득 비용과 고객 생애가치를 비교해서 채널 투자 여부를 판단하는 과정을 설명해 주세요.",
+      "scope": "role:growth_marketer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "앱 마케팅이나 퍼포먼스 매체를 직접 운영해 본 경험을 말씀해 주세요.",
+      "scope": "role:growth_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "문제를 정의하고 가설, 실험, 결과 해석까지 스스로 이끌었던 경험을 말씀해 주세요.",
+      "scope": "role:growth_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "그로스 마케팅이 일반적인 퍼포먼스 마케팅과 가장 다른 점은 무엇이라고 보세요?",
+      "scope": "role:growth_marketer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획 업무와 데이터 분석 업무 중 어느 쪽이 더 잘 맞는지, 그로스 마케터를 택한 이유와 연결해 말씀해 주세요.",
+      "scope": "role:growth_marketer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "단기 지표를 올리는 실험만 반복하다 보면 제품 본질을 놓친다는 비판에 어떻게 답하시겠어요?",
+      "scope": "role:growth_marketer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객을 세그먼트로 나눌 때 어떤 기준을 먼저 쓰시나요?",
+      "scope": "role:crm_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "RFM 분석 결과를 실제 캠페인으로 연결한다면 어떻게 하시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "앱 푸시, 문자, 이메일 같은 채널별로 메시지를 다르게 설계하는 기준을 말씀해 주세요.",
+      "scope": "role:crm_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "A/B 테스트를 진행할 때 본인이 지키는 원칙과 진행 과정을 말씀해 주세요.",
+      "scope": "role:crm_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "분석에 쓸 고객 데이터가 믿을 만한지 판단하는 기준은 무엇인가요?",
+      "scope": "role:crm_marketer",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "휴면 고객을 다시 활성화하는 캠페인을 설계한다면 대상과 혜택을 어떻게 정하시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "메시지 발송 빈도를 높였더니 수신 거부가 급증했다면 어떻게 대응하시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "잘못된 쿠폰 금액이 전체 고객에게 발송된 사실을 발견하면 어떻게 하시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "첫 구매 고객이 두 번째 구매로 잘 이어지지 않는다면 어떤 장치를 설계하시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s17"
+    },
+    {
+      "text": "쿠폰 캠페인으로 매출이 늘었는데, 원래 살 사람에게 할인만 준 건 아닌지 어떻게 검증하시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이메일 오픈율은 비슷한데 클릭률만 떨어졌다면 무엇을 의심해 보시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기억에 남는 CRM 마케팅 사례가 있다면 무엇이 좋았는지 말씀해 주세요.",
+      "scope": "role:crm_marketer",
+      "category": "사례",
+      "type": "analytical",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 데이터를 분석해 타깃 메시지를 보내고 반응을 측정해 본 경험을 말씀해 주세요.",
+      "scope": "role:crm_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 이탈을 막기 위해 무언가를 시도해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:crm_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "CRM 마케팅은 신규 고객 유치 마케팅과 성과를 보는 방식이 어떻게 다르다고 보세요?",
+      "scope": "role:crm_marketer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "CRM 마케터로서 본인이 가진 강점을 실제 사례와 함께 말씀해 주세요.",
+      "scope": "role:crm_marketer",
+      "category": "강점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "입사하면 꼭 해 보고 싶은 CRM 캠페인이 있다면 말씀해 주세요.",
+      "scope": "role:crm_marketer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "할인 쿠폰 없이는 반응하지 않는 고객만 늘었다는 비판을 받는다면 어떻게 대응하시겠어요?",
+      "scope": "role:crm_marketer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 주제를 고르는 기준과 소재를 찾는 방법을 말씀해 주세요.",
+      "scope": "role:content_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 메시지를 숏폼 영상, 카드뉴스, 블로그 글로 만든다면 포맷마다 무엇을 바꾸시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "검색 유입을 늘리기 위해 글을 쓸 때 어떤 점을 신경 쓰시나요?",
+      "scope": "role:content_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 성과를 조회수 말고 어떤 지표로 판단하시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 톤앤매너를 지키면서도 반응이 좋은 콘텐츠를 만들려면 어떤 균형이 필요할까요?",
+      "scope": "role:content_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "크리에이터와 협업할 때 섭외 기준과 제작 가이드라인은 어떻게 정하시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "올린 콘텐츠에 비난 댓글이 몰리며 논란이 커지기 시작하면 어떻게 대응하시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협업한 크리에이터가 광고 표기 없이 콘텐츠를 올렸다는 걸 알게 되면 어떻게 하시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "몇 달째 계정 팔로워와 도달이 정체되어 있다면 무엇부터 바꿔 보시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조회수는 높은데 상품 페이지 유입은 거의 없는 콘텐츠가 있다면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 제작 예산이 한정되어 있을 때 영상과 이미지 콘텐츠의 비중을 어떻게 정하시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "의사결정",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "최근 반응이 좋았던 브랜드 콘텐츠 하나를 골라 성공 요인을 본인 관점에서 뜯어봐 주세요.",
+      "scope": "role:content_marketer",
+      "category": "사례",
+      "type": "analytical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 기획하고 만든 콘텐츠 중 반응이 가장 좋았던 것과 그 이유를 말씀해 주세요.",
+      "scope": "role:content_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마감에 쫓기면서도 콘텐츠 품질을 지켜야 했던 경험을 말씀해 주세요.",
+      "scope": "role:content_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 마케터는 개인 크리에이터와 무엇이 다르다고 생각하세요?",
+      "scope": "role:content_marketer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 마케팅 직무 중 콘텐츠 마케팅을 선택한 이유는 무엇인가요?",
+      "scope": "role:content_marketer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요즘은 누구나 콘텐츠를 만드는데, 굳이 콘텐츠 마케터가 필요한 이유를 설득해 보시겠어요?",
+      "scope": "role:content_marketer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드가 '잘 관리되고 있다'는 것은 무엇으로 판단할 수 있다고 보세요?",
+      "scope": "family:brand",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마케팅과 PR은 목표와 방식에서 어떻게 다르다고 이해하고 계세요?",
+      "scope": "family:brand",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드·PR 업무에서 글쓰기 능력이 왜 중요한지 본인 생각을 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "src": "s9"
+    },
+    {
+      "text": "브랜드 담당자가 제품, 영업, 디자인 부서 사이에서 조율자 역할을 해야 하는 이유는 무엇일까요?",
+      "scope": "family:brand",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 아이디어 중 하나를 골라 실행했던 경험에서, 왜 그 아이디어를 택했는지 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s16",
+      "confidence": "medium"
+    },
+    {
+      "text": "참여했던 프로젝트에서 타깃을 누구로 정했고, 왜 그렇게 정했는지 설명해 주세요.",
+      "scope": "family:brand",
+      "category": "전략",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s16",
+      "confidence": "medium"
+    },
+    {
+      "text": "주변 사람들이 말하는 본인의 모습이 브랜드·PR 일에 어떻게 도움이 될 것 같으세요?",
+      "scope": "family:brand",
+      "category": "강점",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "외부 대행사나 파트너와 일하면서 기대한 결과물을 얻어 내기 위해 조율했던 경험을 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "감이 아니라 근거로 상대를 설득해 의견을 바꾼 경험이 있으신가요?",
+      "scope": "family:brand",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품 결함 기사가 오전에 온라인에 퍼지기 시작했다면 오늘 하루 무엇을 하시겠어요?",
+      "scope": "family:brand",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 브랜드가 우리와 거의 같은 콘셉트의 캠페인을 먼저 내놓았다면 어떻게 대응하시겠어요?",
+      "scope": "family:brand",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "모델로 기용한 유명인이 부정적인 이슈에 휘말리면 어떻게 판단하고 움직이시겠어요?",
+      "scope": "family:brand",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "임원이 개인 취향을 이유로 확정된 캠페인 시안을 바꾸라고 하면 어떻게 하시겠어요?",
+      "scope": "family:brand",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 론칭 일주일 전 핵심 메시지를 법적 문제로 쓸 수 없다는 통보를 받으면 어떻게 하시겠어요?",
+      "scope": "family:brand",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소비자 반응을 직접 조사하거나 인터뷰해서 기획에 반영했던 경험을 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품이나 서비스의 판매 가격을 정해 본 경험이 있다면 어떻게 결정했는지 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s16",
+      "confidence": "medium"
+    },
+    {
+      "text": "행사나 캠페인을 처음부터 끝까지 직접 운영해 본 경험을 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "오늘 아침 주요 뉴스 중 관심 가는 산업 이슈 하나를 골라 의견을 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "소셜미디어가 브랜드 커뮤니케이션 방식을 어떻게 바꿨다고 보세요?",
+      "scope": "family:brand",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "가치 소비나 ESG에 대한 관심이 커지면서 브랜드가 조심해야 할 점은 무엇이라고 보세요?",
+      "scope": "family:brand",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사회적 이슈에 발맞춘 마케팅이 진정성 논란을 부를 수 있다면, 브랜드는 어디까지 참여해야 할까요?",
+      "scope": "family:brand",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 브랜드를 깎아내리는 비교 광고를 하자는 의견이 나오면 어떤 기준으로 판단하시겠어요?",
+      "scope": "family:brand",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자신 있게 낸 아이디어가 채택되지 않았던 경험과 그 이후 달라진 점을 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "트렌드를 읽는 감각을 기르기 위해 평소에 하고 있는 습관을 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 캠페인의 효과를 매출 외의 지표로 보여 줘야 한다면 무엇을 쓰시겠어요?",
+      "scope": "family:brand",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 참여한 프로젝트의 결과를 수치로 정리해 설명해 주세요.",
+      "scope": "family:brand",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인지도가 낮은 지역 특산 브랜드를 20대에게 알리는 캠페인을 5분 PT로 제안해 보세요.",
+      "scope": "family:brand",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "효과를 정확히 측정하기 어려운 브랜드 광고 예산은 줄여야 한다는 주장에 찬반 입장을 정해 말씀해 주세요.",
+      "scope": "family:brand",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 포지셔닝을 새로 잡는다면 어떤 순서로 작업하시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 부서의 결과물이 브랜드 아이덴티티에서 벗어나지 않도록 어떻게 관리하시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 인지도와 선호도를 측정하는 조사를 설계한다면 무엇을 물어보시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리브랜딩을 할지 기존 브랜드를 유지할지 판단하는 기준은 무엇인가요?",
+      "scope": "role:brand_marketer",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컬래버레이션 파트너 브랜드를 고를 때 어떤 점을 가장 중요하게 보시나요?",
+      "scope": "role:brand_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 스토리를 만들 때 제품의 기능적 장점과 감성적 가치를 어떻게 연결하시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업 부서가 분기 매출을 위해 대폭 할인 행사를 요구하는데 브랜드 가치가 걱정된다면 어떻게 하시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 이미지가 '올드하다'는 소비자 조사 결과가 나왔다면 무엇부터 손대시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지점에서 브랜드 가이드와 맞지 않는 판촉물을 자체 제작해 쓰고 있다면 어떻게 대응하시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 인지도는 높은데 구매 전환이 낮다면 원인을 어떻게 진단하시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 뒤 브랜드 검색량이 늘었다면, 그것만으로 캠페인이 성공했다고 볼 수 있을까요?",
+      "scope": "role:brand_marketer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "하나의 콘셉트를 정하고 그에 맞춰 여러 활동을 일관되게 기획해 본 경험을 말씀해 주세요.",
+      "scope": "role:brand_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소비자 인식을 바꾸기 위해 무언가를 기획하고 실행해 본 경험이 있으신가요?",
+      "scope": "role:brand_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 마케터의 일 중 겉으로 잘 드러나지 않는 일은 무엇이라고 보세요?",
+      "scope": "role:brand_marketer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가장 좋아하는 브랜드를 하나 들고, 그런 브랜드를 만들고 싶은 이유를 말씀해 주세요.",
+      "scope": "role:brand_marketer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "단기 매출이 급한 상황에서도 브랜드 투자를 계속해야 한다고 경영진을 어떻게 설득하시겠어요?",
+      "scope": "role:brand_marketer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보도자료를 쓸 때 기자가 기사로 쓰고 싶게 만드는 뉴스 포인트를 어떻게 찾으시나요?",
+      "scope": "role:pr_specialist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기자와 신뢰 관계를 쌓기 위해 평소에 어떤 노력을 하시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매일 아침 언론 모니터링을 할 때 무엇을 중심으로 보고 어떻게 보고하시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "src": "s9"
+    },
+    {
+      "text": "기사에 사실과 다른 내용이 실렸을 때 정정이나 반론을 요청하는 절차를 말씀해 주세요.",
+      "scope": "role:pr_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s9"
+    },
+    {
+      "text": "위기 상황에서 회사 입장문을 쓸 때 반드시 들어가야 할 요소는 무엇이라고 보세요?",
+      "scope": "role:pr_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "알리고 싶은 소식을 어떤 매체에 낼지 고를 때 어떤 기준으로 선택하시나요?",
+      "scope": "role:pr_specialist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "임직원 대상 사내 커뮤니케이션은 외부 홍보와 어떻게 다르게 접근해야 할까요?",
+      "scope": "role:pr_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기자가 마감 두 시간 전 회사에 불리한 의혹 기사에 대한 입장을 물어 오면 어떻게 하시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s9",
+      "confidence": "low"
+    },
+    {
+      "text": "공들인 보도자료가 거의 기사화되지 않았다면 무엇을 점검하시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대표이사 인터뷰에서 민감한 질문이 나올 것으로 예상된다면 어떻게 준비시키시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "같은 날 부정 기사 1건과 긍정 기사 5건이 나왔다면 전체 여론을 어떻게 판단하시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신제품 홍보에서 온라인 커뮤니티 반응과 기사 논조가 엇갈린다면 어떻게 해석하시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "글을 써서 사람들의 반응이나 행동을 이끌어 냈던 경험을 말씀해 주세요.",
+      "scope": "role:pr_specialist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제안서 한 건을 완성하는 데 보통 얼마나 걸리는지, 그 과정을 설명해 주세요.",
+      "scope": "role:pr_specialist",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "홍보 담당자에게 가장 필요한 역량 세 가지를 꼽는다면 무엇인가요?",
+      "scope": "role:pr_specialist",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "홍보 직무에서 일하고 싶다고 생각하게 된 계기를 말씀해 주세요.",
+      "scope": "role:pr_specialist",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요즘은 기업이 직접 채널을 운영하는데, 언론 홍보가 여전히 필요하다고 보시나요?",
+      "scope": "role:pr_specialist",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방금 말씀하신 답변을 영어로 짧게 다시 설명해 주시겠어요?",
+      "scope": "role:pr_specialist",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "신제품 출시 전 GTM 전략을 세울 때 가장 먼저 정리하는 것은 무엇인가요?",
+      "scope": "role:product_marketer",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품의 핵심 가치 제안을 한 문장으로 정리하는 과정을 설명해 주세요.",
+      "scope": "role:product_marketer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 제품과 비교한 포지셔닝 맵을 그린다면 어떤 축을 쓰시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "경쟁",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업팀이 바로 쓸 수 있는 세일즈 자료를 만들 때 어떤 내용을 담으시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가격을 정할 때 원가, 경쟁 가격, 고객 지불 의향 중 무엇을 중심에 두시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시 이후 고객 피드백을 제품 개선으로 연결하려면 어떤 과정을 거쳐야 할까요?",
+      "scope": "role:product_marketer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시일이 확정됐는데 핵심 기능 하나가 빠진 채 나와야 한다면 메시지를 어떻게 조정하시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업팀이 경쟁 제품 대비 우리 제품의 강점을 설명하기 어렵다고 호소하면 어떻게 도우시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발팀이 내세우고 싶은 기능과 고객이 실제로 원하는 가치가 다르다면 어떻게 조율하시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신제품 출시 3개월 뒤 판매가 목표의 절반이라면 어떤 순서로 원인을 찾으시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기존 고객 중 새 기능을 쓰는 비율이 낮다면 어떤 데이터를 보고 원인을 판단하시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품이나 서비스의 장점을 고객의 언어로 바꿔 전달해 본 경험을 말씀해 주세요.",
+      "scope": "role:product_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시장이나 경쟁사를 조사해서 기획 방향을 정했던 경험을 말씀해 주세요.",
+      "scope": "role:product_marketer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "프로덕트 마케터는 PM이나 브랜드 마케터와 무엇이 다르다고 보세요?",
+      "scope": "role:product_marketer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "평소 제품 자체에 얼마나 관심이 많은 편인지, 그 관심이 이 직무 지원과 어떻게 이어지는지 말씀해 주세요.",
+      "scope": "role:product_marketer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품이 좋으면 마케팅은 필요 없다는 개발 리더의 말에 어떻게 대응하시겠어요?",
+      "scope": "role:product_marketer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설문 문항을 만들 때 응답을 한쪽으로 유도하지 않으려면 무엇을 조심해야 하나요?",
+      "scope": "role:market_researcher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정량조사와 정성조사 중 어떤 방법을 쓸지 어떤 기준으로 정하시나요?",
+      "scope": "role:market_researcher",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "표본을 설계할 때 표본 크기와 구성은 어떻게 정하시나요?",
+      "scope": "role:market_researcher",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "포커스 그룹 인터뷰를 진행할 때 모더레이터로서 가장 신경 쓰는 점은 무엇인가요?",
+      "scope": "role:market_researcher",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조사 결과 보고서를 의뢰 부서가 바로 의사결정에 쓸 수 있게 하려면 어떻게 구성하시겠어요?",
+      "scope": "role:market_researcher",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "불성실 응답을 걸러 내기 위해 어떤 방법을 쓰시나요?",
+      "scope": "role:market_researcher",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조사 결과가 의뢰한 임원의 기대와 정반대로 나왔다면 어떻게 보고하시겠어요?",
+      "scope": "role:market_researcher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조사 기간은 일주일인데 목표 표본 수가 모이지 않는다면 어떻게 하시겠어요?",
+      "scope": "role:market_researcher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "현업이 목적도 정하지 않은 채 '고객 만족도를 알아봐 달라'고 요청하면 어떻게 하시겠어요?",
+      "scope": "role:market_researcher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "국내 반려동물 사료 시장 규모를 추정한다면 어떤 순서로 계산하시겠어요?",
+      "scope": "role:market_researcher",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "만족도 점수는 올랐는데 재구매율은 떨어졌다면 이 결과를 어떻게 해석하시겠어요?",
+      "scope": "role:market_researcher",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설문을 직접 설계하고 결과를 분석해 본 경험을 말씀해 주세요.",
+      "scope": "role:market_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "통계 분석 도구를 활용해 의미 있는 결론을 끌어냈던 경험이 있다면 말씀해 주세요.",
+      "scope": "role:market_researcher",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리서치 결과가 '뻔한 이야기'로 끝나지 않으려면 연구자가 무엇을 더해야 한다고 보세요?",
+      "scope": "role:market_researcher",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "데이터를 다루는 여러 직무 중 시장조사를 선택한 이유는 무엇인가요?",
+      "scope": "role:market_researcher",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온라인 데이터가 넘쳐나는 지금도 비용이 드는 설문조사가 꼭 필요할까요?",
+      "scope": "role:market_researcher",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고회사에서 기획, 제작, 매체 담당이 각각 어떤 역할을 하는지 이해하신 대로 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주가 대행사에 기대하는 것은 결국 무엇이라고 보세요?",
+      "scope": "family:advertising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "좋은 광고와 잘 팔리는 광고는 같은 것이라고 보시나요?",
+      "scope": "family:advertising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 일에서 기획력과 실행력 중 신입에게 먼저 요구되는 것은 무엇이라고 보세요?",
+      "scope": "family:advertising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "src": "s13"
+    },
+    {
+      "text": "아이디어 회의에서 내 의견을 고집하지 않고 더 나은 안을 받아들였던 경험을 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "빠듯한 마감을 지켜야 했던 프로젝트에서 본인이 맡은 역할을 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "처음 만난 사람과 빠르게 신뢰를 쌓아 일을 진행했던 경험이 있으신가요?",
+      "scope": "family:advertising",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "남들이 생각하지 못한 아이디어로 문제를 풀었던 경험을 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "피드백을 받고 결과물을 여러 번 고쳐 가며 완성도를 높였던 경험을 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 PT 사흘 전 광고주가 과제 방향을 바꿨다면 어떻게 하시겠어요?",
+      "scope": "family:advertising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제작팀은 아이디어를 고집하고 광고주는 다른 방향을 원한다면 어떻게 중재하시겠어요?",
+      "scope": "family:advertising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온에어 직전 광고 소재에서 표기 오류를 발견했다면 어떻게 대응하시겠어요?",
+      "scope": "family:advertising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고가 나간 뒤 소비자 사이에서 불쾌하다는 반응이 퍼지면 어떻게 하시겠어요?",
+      "scope": "family:advertising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주가 계약 범위를 넘어서는 추가 작업을 계속 요청한다면 어떻게 하시겠어요?",
+      "scope": "family:advertising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공모전이나 수업 프로젝트에서 광고 기획안을 만들어 발표해 본 경험을 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ]
+    },
+    {
+      "text": "외부 협력업체와 단가나 일정을 협의해 본 경험이 있으신가요?",
+      "scope": "family:advertising",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s13"
+    },
+    {
+      "text": "영어로 된 자료를 분석하거나 영문 제안서를 써 본 경험이 있다면 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s13"
+    },
+    {
+      "text": "최근 가장 인상 깊었던 광고를 하나 꼽고 그 이유를 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "사례",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 예산이 디지털로 옮겨 가면서 광고회사의 역할은 어떻게 바뀌고 있다고 보세요?",
+      "scope": "family:advertising",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "숏폼 중심의 미디어 환경에서 광고 크리에이티브는 무엇이 달라져야 할까요?",
+      "scope": "family:advertising",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 PT에서 이전 광고주의 내부 자료를 참고하면 유리해지는 상황이라면 어떻게 하시겠어요?",
+      "scope": "family:advertising",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이미 경쟁 브랜드를 맡고 있는 상황에서 새 광고주 제안이 들어오면 어떻게 판단해야 할까요?",
+      "scope": "family:advertising",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 일을 하기에 본인 성향에서 가장 걱정되는 부분은 무엇이고 어떻게 보완하고 있나요?",
+      "scope": "family:advertising",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 업계의 빠른 속도와 불규칙한 업무 시간을 어떻게 받아들이고 있는지 솔직하게 말씀해 주세요.",
+      "scope": "family:advertising",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인이 성공했다는 것을 광고주에게 증명하려면 어떤 결과를 제시하시겠어요?",
+      "scope": "family:advertising",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 결과 보고서에서 잘된 점보다 부족했던 점은 어떻게 다루시겠어요?",
+      "scope": "family:advertising",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "구독형 서비스의 40대 신규 가입을 늘리는 광고 캠페인을 5분 PT로 제안해 보세요.",
+      "scope": "family:advertising",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주 오리엔테이션 자료를 받으면 기획서를 쓰기 전에 무엇을 먼저 정리하시나요?",
+      "scope": "role:ad_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소비자 인사이트를 찾을 때 어떤 자료와 방법을 활용하시나요?",
+      "scope": "role:ad_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "크리에이티브 브리프를 쓸 때 꼭 들어가야 한다고 생각하는 항목은 무엇인가요?",
+      "scope": "role:ad_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "하나의 캠페인 콘셉트로 TV, 디지털, 옥외 광고를 연결하려면 어떻게 설계하시겠어요?",
+      "scope": "role:ad_planner",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매체 믹스를 정할 때 도달률과 빈도 중 무엇을 우선할지 어떻게 판단하시나요?",
+      "scope": "role:ad_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 PT에서 광고주의 마음을 움직이는 기획서의 흐름은 어떻게 짜시겠어요?",
+      "scope": "role:ad_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주가 정한 타깃과 데이터가 보여 주는 실제 구매층이 다르다면 어떻게 설득하시겠어요?",
+      "scope": "role:ad_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제작 예산이 절반으로 줄었는데 캠페인 목표는 그대로라면 계획을 어떻게 바꾸시겠어요?",
+      "scope": "role:ad_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획 방향을 두고 팀 의견이 둘로 갈린 채 마감이 다가온다면 어떻게 정리하시겠어요?",
+      "scope": "role:ad_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 회상률은 높았는데 어느 브랜드 광고인지 정확히 기억하는 사람은 적었다면 무엇이 문제였을까요?",
+      "scope": "role:ad_planner",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 예산으로 대형 TV 광고 한 편과 디지털 광고 여러 편 중 무엇을 택할지 어떻게 결정하시겠어요?",
+      "scope": "role:ad_planner",
+      "category": "의사결정",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자료 조사부터 전략 도출까지 기획서를 처음부터 완성해 본 경험을 말씀해 주세요.",
+      "scope": "role:ad_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인의 기획 아이디어가 실제로 채택되거나 실행된 경험을 말씀해 주세요.",
+      "scope": "role:ad_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고기획자가 크리에이티브 팀에 줄 수 있는 가장 큰 도움은 무엇이라고 보세요?",
+      "scope": "role:ad_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고기획이라는 일에 처음 매력을 느낀 순간을 말씀해 주세요.",
+      "scope": "role:ad_planner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "데이터 분석이 발달한 지금도 광고기획자의 직관이 필요하다고 보시나요?",
+      "scope": "role:ad_planner",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주와의 정기 미팅 전에 AE가 준비해야 할 것들을 말씀해 주세요.",
+      "scope": "role:account_executive",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주의 요청을 내부 제작팀에 전달할 때 오해를 줄이기 위해 어떤 방식을 쓰시겠어요?",
+      "scope": "role:account_executive",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 전체 일정표를 짤 때 어느 단계에 여유를 두시겠어요?",
+      "scope": "role:account_executive",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "견적이나 대행 수수료를 광고주에게 제시할 때 어떤 근거를 준비하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 광고주의 사업 상황을 이해하기 위해 평소 어떤 정보를 챙겨 보시겠어요?",
+      "scope": "role:account_executive",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 광고주를 동시에 맡을 때 업무 우선순위를 어떻게 관리하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주 담당자가 자주 바뀌어 방향이 계속 흔들린다면 어떻게 대응하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주가 결과물에 크게 실망해 계약 해지를 언급한다면 어떻게 하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주가 밤늦게 다음 날 아침까지 수정안을 달라고 요청하면 어떻게 하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연간 광고비를 줄이겠다는 광고주를 붙잡기 위해 어떤 분석 자료를 준비하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "고객",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 결과 수치가 목표에 못 미쳤을 때 보고서를 어떻게 구성하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "상대방의 까다로운 요구를 들어주면서도 지킬 선은 지켰던 경험을 말씀해 주세요.",
+      "scope": "role:account_executive",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 사람의 일정을 조율해 하나의 결과물을 완성해 본 경험을 말씀해 주세요.",
+      "scope": "role:account_executive",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "AE를 광고주와 제작팀 사이의 연결고리라고 하는데, 본인은 AE의 역할을 어떻게 정의하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 일 중에서도 기획이나 제작이 아닌 AE를 원하는 이유는 무엇인가요?",
+      "scope": "role:account_executive",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주 말을 그대로 전달만 하는 AE라면 필요 없지 않냐는 말을 들으면 어떻게 답하시겠어요?",
+      "scope": "role:account_executive",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사람을 상대하는 영업에서 가장 중요한 자질 두 가지를 꼽는다면 무엇인가요?",
+      "scope": "family:sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업은 물건을 파는 일이 아니라는 말이 있는데, 본인은 영업을 어떻게 정의하시겠어요?",
+      "scope": "family:sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 고객 발굴과 기존 고객 관리 중 어느 쪽이 더 어렵다고 보시나요?",
+      "scope": "family:sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업 업무에서 내부 보고나 문서 작업이 왜 중요한지 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "한 번 거절당한 상대를 다시 설득해 결국 원하는 결과를 얻었던 경험을 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "목표를 세우고 끈질기게 매달려서 달성했던 경험을 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "성공",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s11"
+    },
+    {
+      "text": "예상하지 못한 난관에 부딪혔을 때 어떻게 풀어 냈는지 경험을 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s11",
+      "confidence": "low"
+    },
+    {
+      "text": "처음 보는 사람에게 먼저 다가가 관계를 만들었던 경험을 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "팀 목표를 위해 본인 몫 이상의 일을 했던 경험을 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "월말인데 실적이 목표의 70%에 머물러 있다면 남은 기간 어떻게 하시겠어요?",
+      "scope": "family:sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "오랜 거래처가 경쟁사로 옮기겠다고 통보해 오면 어떻게 대응하시겠어요?",
+      "scope": "family:sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이 경쟁사 견적서를 보여 주며 더 낮은 가격을 요구하면 어떻게 하시겠어요?",
+      "scope": "family:sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "납품한 제품에 문제가 생겨 고객이 크게 화가 나 있다면 첫 통화에서 무엇을 하시겠어요?",
+      "scope": "family:sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "선배가 알려 준 영업 방식이 본인과 맞지 않는다고 느끼면 어떻게 하시겠어요?",
+      "scope": "family:sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "아르바이트나 대외활동에서 무언가를 팔거나 사람을 모아 본 경험을 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "levels": [
+        "entry"
+      ],
+      "src": "s15",
+      "confidence": "low"
+    },
+    {
+      "text": "상대방의 숨은 요구를 파악해서 제안 내용을 바꿨던 경험이 있으신가요?",
+      "scope": "family:sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실적이나 수치로 평가받는 환경에서 일해 본 경험을 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "비대면 영업과 디지털 도구가 늘어나면서 영업 방식이 어떻게 달라지고 있다고 보세요?",
+      "scope": "family:sales",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지원하는 산업의 최근 시장 흐름 중 영업에 가장 큰 영향을 줄 변화는 무엇이라고 보세요?",
+      "scope": "family:sales",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가격 경쟁이 심한 시장에서 영업이 가격 말고 차별화할 수 있는 것은 무엇이라고 보세요?",
+      "scope": "family:sales",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁사가 과도한 판촉 조건으로 거래처를 가져갈 때 같은 방식으로 맞서자는 의견이 나오면 어떻게 하시겠어요?",
+      "scope": "family:sales",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실적 마감을 위해 다음 달 주문을 이번 달로 당겨 잡자는 제안을 받으면 어떻게 하시겠어요?",
+      "scope": "family:sales",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업 목표를 달성하지 못했던 경험이 있다면 원인을 어떻게 분석했는지 말씀해 주세요.",
+      "scope": "family:sales",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업을 하면서 가장 버티기 힘들 것 같은 순간은 언제이고, 어떻게 이겨 내시겠어요?",
+      "scope": "family:sales",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인의 영업 성과를 매출 외에 어떤 지표로 보여 줄 수 있을까요?",
+      "scope": "family:sales",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 만든 성과가 일회성이 아니라 이어졌다는 것을 어떻게 증명하시겠어요?",
+      "scope": "family:sales",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업사원 평가를 매출 실적 중심으로 할지, 활동 과정 지표까지 넣을지 한쪽 입장을 정해 주장해 보세요.",
+      "scope": "family:sales",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 지역 신규 거래처를 3개월 안에 10곳 늘리는 영업 계획을 5분 PT로 발표해 보세요.",
+      "scope": "family:sales",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 지역 거래처를 돌 때 방문 주기와 동선을 어떻게 짜시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "거래처별 매출 데이터를 보고 집중 관리할 곳을 어떻게 고르시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대리점이나 판매점의 재고와 주문량을 관리할 때 무엇을 주의해야 하나요?",
+      "scope": "role:domestic_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매장 진열 위치나 판촉 행사를 협상할 때 어떤 조건을 제시하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대금 회수가 늦어지는 거래처는 어떻게 관리하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신제품을 거래처에 입점시키기 위해 어떤 자료를 준비해 설득하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "거래처 사장님이 본사 정책에 불만을 품고 주문을 줄이겠다고 하면 어떻게 하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 상권의 두 거래처가 서로 가격을 내리며 다투고 있다면 어떻게 조정하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "판촉 행사 당일 물량이 부족해 거래처에 약속한 수량을 맞출 수 없다면 어떻게 하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 지역 매출이 전년 대비 15% 줄었다면 어떤 순서로 원인을 찾으시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "거래처 수는 늘었는데 거래처당 매출이 떨어지고 있다면 어떻게 해석하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매장이나 현장을 직접 관찰해서 개선점을 찾아냈던 경험을 말씀해 주세요.",
+      "scope": "role:domestic_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "나이나 입장이 크게 다른 사람과 신뢰를 쌓았던 경험을 말씀해 주세요.",
+      "scope": "role:domestic_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "국내영업 담당자가 본사와 거래처 사이에서 겪는 가장 큰 어려움은 무엇이라고 보세요?",
+      "scope": "role:domestic_sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해외영업이나 마케팅이 아니라 국내영업을 지원한 이유는 무엇인가요?",
+      "scope": "role:domestic_sales",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "거래처와 친하게 지내는 것만으로 실적이 나오던 시대는 지났다는데, 본인은 무엇으로 차별화하시겠어요?",
+      "scope": "role:domestic_sales",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "구매 결정에 여러 사람이 관여하는 기업 고객에게 영업할 때 누구를 먼저 공략하시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제안서를 쓸 때 고객사의 문제와 우리 제품의 해결책을 어떻게 연결하시나요?",
+      "scope": "role:b2b_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "입찰에 참여할지 결정하기 전에 무엇을 따져 보시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업 파이프라인을 단계별로 관리한다면 각 단계에서 무엇을 확인하시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장기 공급계약에 들어갈 단가 조정 조항을 협상할 때 무엇을 중요하게 보시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사 구매팀과 실제 사용 부서의 요구가 다를 때 어떻게 접근하시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사 구매 담당자가 일방적으로 연간 단가를 10% 내려 달라고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "몇 달 공들인 건이 최종 단계에서 고객사 내부 사정으로 보류되면 어떻게 하시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "우리 회사 생산 일정 때문에 고객 납기를 맞추기 어렵다면 고객과 내부를 어떻게 조율하시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업 기회는 많은데 수주율이 낮다면 어느 단계에서 문제를 찾으시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가격을 5% 낮춰 물량을 20% 늘리자는 제안이 들어오면 수익성을 어떻게 따져 보시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "복잡한 조건을 조율해 합의를 이끌어 낸 협상 경험을 말씀해 주세요.",
+      "scope": "role:b2b_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조직이나 단체를 상대로 제안해서 승인을 받아 낸 경험을 말씀해 주세요.",
+      "scope": "role:b2b_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "B2B 영업이 소비자 대상 영업과 가장 다른 점은 무엇이라고 보세요?",
+      "scope": "role:b2b_sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기업 고객을 상대하는 영업이 본인에게 맞는다고 생각하는 이유를 경험과 연결해 말씀해 주세요.",
+      "scope": "role:b2b_sales",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수주를 위해 이익이 거의 남지 않는 조건을 받아들여야 한다면 어디까지 수용하시겠어요?",
+      "scope": "role:b2b_sales",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객의 기술 요구사항을 들었을 때 사양을 확정하기 전에 무엇을 확인하시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "구매 담당자처럼 기술을 잘 모르는 사람에게 제품의 기술적 장점을 어떻게 설명하시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 현장에서 생긴 기술 문제를 본사 엔지니어에게 넘길 때 무엇을 정리해 가시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 제품과의 사양 비교 자료를 공정하면서도 설득력 있게 만들려면 어떻게 해야 할까요?",
+      "scope": "role:technical_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "샘플 제공과 고객 평가 단계가 수주로 이어지게 하려면 무엇을 관리해야 할까요?",
+      "scope": "role:technical_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전공 지식이 기술영업 현장에서 실제로 어떻게 쓰일 거라고 보세요?",
+      "scope": "role:technical_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "고객이 우리 제품으로는 구현하기 어려운 사양을 요구하면 어떻게 하시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "우리 제품의 결함 때문에 고객 생산 라인이 멈췄다는 연락을 받으면 어떻게 대응하시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구소는 개발에 석 달이 필요하다는데 고객은 한 달 안에 샘플을 원한다면 어떻게 하시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품 성능은 경쟁사보다 좋은데 계속 수주에서 밀린다면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이 장비 도입 효과를 숫자로 보여 달라고 하면 투자 회수 기간을 어떻게 계산해 제시하시겠어요?",
+      "scope": "role:technical_sales",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전공 지식을 활용해 누군가의 문제를 해결해 준 경험을 말씀해 주세요.",
+      "scope": "role:technical_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자격증 준비나 제품 공부처럼 기술을 이해하려고 스스로 파고들었던 경험을 말씀해 주세요.",
+      "scope": "role:technical_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s11"
+    },
+    {
+      "text": "기술영업이 일반 영업이나 엔지니어와 다른 점은 무엇이라고 생각하세요?",
+      "scope": "role:technical_sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구개발이 아닌 기술영업을 선택한 이유를 말씀해 주세요.",
+      "scope": "role:technical_sales",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기술 지식은 엔지니어가 더 많은데, 기술영업 담당자가 고객 앞에서 신뢰를 얻을 수 있을까요?",
+      "scope": "role:technical_sales",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이 구체적인 요구 없이 '업무를 효율화하고 싶다'고만 할 때 니즈를 어떻게 구체화하시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PoC를 진행할 때 성공 기준을 고객과 어떻게 합의하시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "구독형 솔루션의 갱신율을 높이기 위해 영업 담당자가 할 수 있는 일은 무엇인가요?",
+      "scope": "role:solution_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "솔루션 데모를 준비할 때 고객사 상황에 맞춰 무엇을 바꾸시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사 IT 부서와 현업 부서의 이해관계가 다를 때 어떻게 합의를 이끌어 내시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "파트너사와 함께 영업할 때 역할을 어떻게 나누시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "도입 직후 고객이 기대한 효과가 나오지 않는다며 불만을 제기하면 어떻게 하시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이 자기 업무에 맞춘 대규모 맞춤 개발을 요구한다면 어떻게 대응하시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 솔루션을 이미 쓰고 있는 고객에게 전환을 제안해야 한다면 어떻게 접근하시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "솔루션 도입으로 고객의 업무 시간이 얼마나 줄어드는지 어떻게 추정해 보여 주시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업 사이클이 너무 길어 분기 목표를 맞추기 어렵다면 무엇을 바꿔 보시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "상대의 문제를 먼저 듣고 해결책을 제안해서 받아들여졌던 경험을 말씀해 주세요.",
+      "scope": "role:solution_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새로운 서비스나 도구를 조직에 도입하도록 설득해 본 경험이 있으신가요?",
+      "scope": "role:solution_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "솔루션 영업에서는 '제품'보다 '문제 정의'가 더 중요하다는 말을 어떻게 이해하세요?",
+      "scope": "role:solution_sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "솔루션 영업은 산업과 기술을 계속 공부해야 하는데, 그 점이 본인에게 어떤 의미인가요?",
+      "scope": "role:solution_sales",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "업계에 도입 실패 사례가 알려져 고객이 우리 솔루션을 의심한다면 어떻게 신뢰를 되찾으시겠어요?",
+      "scope": "role:solution_sales",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전시장에 들어온 고객이 무엇을 원하는지 처음 5분 안에 어떻게 파악하시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시승을 진행할 때 고객의 구매 결정을 돕기 위해 무엇을 신경 쓰시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "할부, 리스, 렌트 중 고객 상황에 맞는 구매 방식을 어떻게 안내하시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "차량 출고 이후에도 고객과 관계를 이어 가기 위해 어떤 관리를 하시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기존 고객의 소개로 신규 고객이 이어지는 구조를 어떻게 만드시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기차를 고민하는 고객에게 충전과 유지비 문제를 어떻게 설명하시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이 다른 지점에서 더 큰 할인을 약속받았다며 조건을 맞춰 달라고 하면 어떻게 하시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "계약한 차량의 출고가 몇 달 늦어진다는 통보를 받으면 고객에게 어떻게 알리시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출고 직후 차량에 흠집이 있다며 고객이 교환을 요구하면 어떻게 대응하시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "한 달 동안 상담은 많았는데 계약이 거의 없었다면 어디에서 문제를 찾으시겠어요?",
+      "scope": "role:auto_sales",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "첫해 월 판매 목표를 몇 대로 잡을지, 그 근거를 계산해서 설명해 주세요.",
+      "scope": "role:auto_sales",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "entry",
+        "junior"
+      ]
+    },
+    {
+      "text": "고객을 응대하며 신뢰를 얻어 재방문이나 추천으로 이어졌던 경험을 말씀해 주세요.",
+      "scope": "role:auto_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "스스로 고객을 찾아 나서서 성과를 냈던 경험이 있다면 말씀해 주세요.",
+      "scope": "role:auto_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자동차처럼 값이 비싸고 구매 주기가 긴 상품을 파는 영업에서 가장 중요한 것은 무엇이라고 보세요?",
+      "scope": "role:auto_sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자동차라는 상품을 판매하는 일에 도전하려는 이유는 무엇인가요?",
+      "scope": "role:auto_sales",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온라인으로 차를 사는 고객이 늘어나면 영업사원이 필요 없어지지 않을까요?",
+      "scope": "role:auto_sales",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "짧은 면담 시간 안에 의사에게 제품을 디테일링한다면 무엇을 전달하시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "처방이 늘지 않는 병원을 분석할 때 어떤 정보를 먼저 모으시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 제품과의 차별점을 임상 근거로 설명하려면 어떤 준비가 필요할까요?",
+      "scope": "role:pharma_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "병원, 약국, 도매상 사이에서 MR이 챙겨야 하는 흐름을 어떻게 이해하고 계세요?",
+      "scope": "role:pharma_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "종합병원 약제심의위원회에 신규 품목을 올리기 위해 MR이 할 수 있는 일은 무엇일까요?",
+      "scope": "role:pharma_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품 설명회나 학술 행사를 준비할 때 지켜야 할 기준은 무엇이라고 보세요?",
+      "scope": "role:pharma_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "의사와 신뢰 관계를 어떻게 쌓아 가실 계획인지 말씀해 주세요.",
+      "scope": "role:pharma_sales",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "의사가 제품 처방을 조건으로 리베이트를 요구한다면 어떻게 하시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "윤리",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "방문할 때마다 바쁘다며 만나 주지 않는 의사가 있다면 어떻게 접근하시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 제품의 부작용 사례를 의사에게서 전해 들었다면 어떻게 하시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 지역에서 우리 제품 처방 점유율이 경쟁품에 밀린다면 어떤 순서로 원인을 찾으시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "거래처 100곳을 한정된 시간에 관리해야 한다면 방문 빈도를 어떤 기준으로 나누시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전문 지식이 필요한 내용을 공부해서 다른 사람에게 설명했던 경험을 말씀해 주세요.",
+      "scope": "role:pharma_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "까다로운 사람과 오랜 시간에 걸쳐 신뢰를 쌓아 간 경험을 말씀해 주세요.",
+      "scope": "role:pharma_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "MR은 어떤 일을 하는 직무라고 생각하세요?",
+      "scope": "role:pharma_sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "제약영업에 지원하기 위해 그동안 어떤 준비를 해 오셨는지 말씀해 주세요.",
+      "scope": "role:pharma_sales",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "MR로서 남들보다 확실히 강하다고 말할 수 있는 역량은 무엇인가요?",
+      "scope": "role:pharma_sales",
+      "category": "강점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "최근 관심 있게 본 제약 업계 소식이 있다면 영업 현장에 미칠 영향과 함께 말씀해 주세요.",
+      "scope": "role:pharma_sales",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "제약영업은 결국 접대 영업 아니냐는 시선에 어떻게 답하시겠어요?",
+      "scope": "role:pharma_sales",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업과 영업관리는 무엇이 다르다고 이해하고 계세요?",
+      "scope": "family:sales_ops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업관리 담당자가 본사와 대리점 사이에서 조율한다는 것은 구체적으로 어떤 의미일까요?",
+      "scope": "family:sales_ops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s12"
+    },
+    {
+      "text": "실적 관리, 판매 계획, 수금 관리 중 영업관리에서 가장 소홀해지기 쉬운 것은 무엇이라고 보세요?",
+      "scope": "family:sales_ops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s12"
+    },
+    {
+      "text": "영업 조직이 목표를 달성하도록 돕는 일이 직접 파는 일보다 어려운 점은 무엇이라고 보세요?",
+      "scope": "family:sales_ops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이해관계가 부딪히는 사람들 사이에서 의견 대립을 풀어 낸 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10",
+      "confidence": "medium"
+    },
+    {
+      "text": "리더십을 발휘해 팀 성과를 끌어올렸던 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10",
+      "confidence": "medium"
+    },
+    {
+      "text": "학교나 인턴 시절 만난 사람과 지금까지 관계를 어떻게 이어 오고 있는지 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "src": "s10",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 사람에게 싫은 소리를 해야 하는 역할을 맡았을 때 관계는 어떻게 유지하셨나요?",
+      "scope": "family:sales_ops",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정해진 규칙을 모두가 지키도록 관리하는 역할을 맡아 본 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대리점이 판매 부진을 이유로 본사에 반품을 대량으로 요청하면 어떻게 하시겠어요?",
+      "scope": "family:sales_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업사원이 실적을 부풀려 보고한 정황을 발견하면 어떻게 하시겠어요?",
+      "scope": "family:sales_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분기 말에 한 거래처의 미수금이 크게 늘어난 것을 발견했다면 어떻게 조치하시겠어요?",
+      "scope": "family:sales_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본사의 새 판매 정책에 대리점들이 집단으로 반발한다면 어떻게 설득하시겠어요?",
+      "scope": "family:sales_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업팀장들이 서로 좋은 거래처를 자기 팀에 배정해 달라고 다툰다면 어떻게 정리하시겠어요?",
+      "scope": "family:sales_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "엑셀 같은 도구로 많은 자료를 정리해 의미 있는 결론을 뽑아 본 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "계획을 세우고 진척을 관리해 목표를 맞췄던 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 사람의 업무 흐름을 개선해서 일이 쉬워지게 만들었던 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "유통 채널이 온라인으로 빠르게 옮겨 가면서 대리점 중심 영업관리는 어떻게 바뀌어야 할까요?",
+      "scope": "family:sales_ops",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업 데이터 분석과 자동화 도구가 늘어나면 영업관리 업무 중 무엇이 가장 달라질까요?",
+      "scope": "family:sales_ops",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원자재 가격이나 환율 같은 외부 변수가 영업 계획에 어떤 영향을 준다고 보세요?",
+      "scope": "family:sales_ops",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "작은 부정을 관행이라며 모두 넘어가는 분위기에서 본인은 어떻게 행동하셨는지 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s10",
+      "confidence": "medium"
+    },
+    {
+      "text": "대리점에 판매 목표를 떠넘기는 밀어내기 요구가 내려오면 어떻게 하시겠어요?",
+      "scope": "family:sales_ops",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "계획대로 되지 않은 일에서 본인의 판단 착오가 무엇이었는지 돌아본 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업관리 담당자로서 본인 성향 중 보완이 필요한 부분은 무엇이라고 보세요?",
+      "scope": "family:sales_ops",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업관리 업무의 성과는 어떤 지표로 평가받아야 한다고 보세요?",
+      "scope": "family:sales_ops",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 관리하던 일의 결과가 숫자로 나아졌던 경험을 말씀해 주세요.",
+      "scope": "family:sales_ops",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지원하는 업계의 현재 상황을 진단하고 새 성장동력을 실행 방안과 함께 발표해 보세요.",
+      "scope": "family:sales_ops",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s10",
+      "confidence": "medium"
+    },
+    {
+      "text": "대리점 체제를 유지할지 본사 직영 판매를 늘릴지 한쪽 입장을 정해 주장해 보세요.",
+      "scope": "family:sales_ops",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "월간 영업 실적 보고서를 만든다면 어떤 항목을 어떤 순서로 구성하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연간 판매 목표를 지역이나 팀별로 나눌 때 어떤 기준을 쓰시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "거래처 여신 한도를 정하거나 조정할 때 무엇을 근거로 삼으시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "판매 장려금이나 인센티브 제도를 설계할 때 주의할 점은 무엇인가요?",
+      "scope": "role:sales_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수주, 출하, 매출, 수금으로 이어지는 흐름에서 영업관리가 챙겨야 할 부분은 무엇인가요?",
+      "scope": "role:sales_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s12"
+    },
+    {
+      "text": "판매 예측이 계속 빗나간다면 예측 방식을 어떻게 개선하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "월말 마감을 앞두고 ERP 매출 데이터와 영업팀 보고 수치가 맞지 않으면 어떻게 하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생산이 판매 계획을 못 따라가 주요 거래처 납품이 밀린다면 물량을 어떻게 배분하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업사원들이 새 보고 양식이 번거롭다며 잘 쓰지 않는다면 어떻게 하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매출은 늘었는데 영업이익은 줄었다면 영업 측면에서 무엇을 먼저 점검하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "할인율을 3%p 올렸을 때 이익을 유지하려면 판매량이 얼마나 늘어야 하는지 어떻게 계산하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 부서와 협업해 일정이나 물량을 조율했던 경험을 말씀해 주세요.",
+      "scope": "role:sales_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매출이나 재고 같은 수치를 꾸준히 추적하다가 문제를 먼저 발견했던 경험을 말씀해 주세요.",
+      "scope": "role:sales_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업관리 담당자에게 숫자 감각과 사람 관리 중 무엇이 더 중요하다고 보세요?",
+      "scope": "role:sales_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 판매하는 영업보다 영업관리에 더 끌리는 이유는 무엇인가요?",
+      "scope": "role:sales_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영업관리는 결국 숫자 취합하는 사무직 아니냐는 말에 어떻게 답하시겠어요?",
+      "scope": "role:sales_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "핵심 고객사를 위한 연간 어카운트 플랜을 세운다면 어떤 내용을 담으시겠어요?",
+      "scope": "role:key_account",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대형 유통사와 연간 거래 조건을 협상할 때 무엇을 내주고 무엇을 받아 내시겠어요?",
+      "scope": "role:key_account",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "핵심 고객사 안의 의사결정권자와 실무자를 동시에 관리하는 방법을 말씀해 주세요.",
+      "scope": "role:key_account",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사 판매 데이터를 보고 추가 판매 기회를 찾는다면 어떤 부분을 보시겠어요?",
+      "scope": "role:key_account",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공동 프로모션을 제안할 때 고객사를 어떻게 설득하시겠어요?",
+      "scope": "role:key_account",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 한 곳의 매출 비중이 지나치게 높을 때 생기는 리스크를 어떻게 관리하시겠어요?",
+      "scope": "role:key_account",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "핵심 고객사 담당 임원이 바뀌면서 기존 거래 조건을 전면 재검토하겠다고 하면 어떻게 하시겠어요?",
+      "scope": "role:key_account",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사가 과도한 판촉비 분담을 요구한다면 어떻게 대응하시겠어요?",
+      "scope": "role:key_account",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "우리 회사 실수로 핵심 고객사에 큰 손실이 생겼다면 관계를 어떻게 회복하시겠어요?",
+      "scope": "role:key_account",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "핵심 고객사 매출이 3개월 연속 줄고 있다면 어떤 순서로 원인을 파악하시겠어요?",
+      "scope": "role:key_account",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사별 수익성을 비교해 보니 매출 1위 고객사의 이익률이 가장 낮다면 어떻게 판단하시겠어요?",
+      "scope": "role:key_account",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "한 사람이나 한 조직과 오랜 기간 관계를 유지하며 성과를 냈던 경험을 말씀해 주세요.",
+      "scope": "role:key_account",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 부서의 지원을 끌어와 한 고객의 문제를 해결했던 경험을 말씀해 주세요.",
+      "scope": "role:key_account",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "키어카운트 관리가 일반 거래처 관리와 달라야 하는 이유는 무엇이라고 보세요?",
+      "scope": "role:key_account",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소수 핵심 고객을 깊고 오래 관리하는 일이 본인 성향과 어떻게 맞는다고 보세요?",
+      "scope": "role:key_account",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매출 비중 때문에 거절하기 어려운 핵심 고객사가 무리한 조건을 계속 요구한다면, 거래 중단까지 검토하시겠어요?",
+      "scope": "role:key_account",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    }
+  ]
+}

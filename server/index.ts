@@ -6,6 +6,7 @@
  *   POST /api/ai/follow-up    → follow-up decision
  *   POST /api/ai/analyze      → structured answer analysis
  *   POST /api/ai/report       → final report narrative
+ *   POST /api/ai/role-profile → practice profile for a job title outside the taxonomy
  *
  * In production it also serves the built frontend from /dist.
  * Candidate answers are never logged or stored here.
@@ -23,6 +24,8 @@ try {
 }
 
 const {
+  InferredRoleSchema,
+  RoleProfileRequestSchema,
   AnalyzeRequestSchema,
   AnswerAnalysisSchema,
   FinalReportSchema,
@@ -37,6 +40,9 @@ const { questionPrompt } = await import("./prompts/questionPrompt");
 const { followUpPrompt } = await import("./prompts/followupPrompt");
 const { analysisPrompt } = await import("./prompts/analysisPrompt");
 const { reportPrompt } = await import("./prompts/reportPrompt");
+const { rolePrompt } = await import("./prompts/rolePrompt");
+const { getDomain, guessDomain } = await import("../shared/roles");
+const { setDataLoader } = await import("../shared/dataLoader");
 const { TtsRequestSchema } = await import("../shared/schemas");
 const { TtsError, isFishConfigured, synthesize } = await import("./tts");
 type PromptParts = import("./claude").PromptParts;
@@ -45,14 +51,21 @@ const PORT = Number(process.env.PORT ?? 8787);
 const IS_PROD = process.env.NODE_ENV === "production";
 const RATE_LIMIT = Number(process.env.RATE_LIMIT_PER_MINUTE ?? 40);
 const MAX_BODY_BYTES = 64 * 1024;
-const DIST_DIR = resolve(fileURLToPath(new URL(".", import.meta.url)), "..", "dist");
+const ROOT = resolve(fileURLToPath(new URL(".", import.meta.url)), "..");
+const DIST_DIR = join(ROOT, "dist");
+
+// Question banks are read from disk here (the browser fetches the same files from /data).
+setDataLoader(async (path) => {
+  const safe = normalize(path).replace(/^(\.\.[/\\])+/, "");
+  return JSON.parse(await readFile(join(ROOT, "public", "data", safe), "utf8"));
+});
 
 /* ─────────────────────────── AI routes table ─────────────────────────── */
 
 interface AIRoute<Req extends z.ZodType, Out extends z.ZodType> {
   request: Req;
   output: Out;
-  prompt: (body: z.infer<Req>) => PromptParts;
+  prompt: (body: z.infer<Req>) => PromptParts | Promise<PromptParts>;
 }
 const route = <Req extends z.ZodType, Out extends z.ZodType>(r: AIRoute<Req, Out>) => r;
 
@@ -76,6 +89,11 @@ const AI_ROUTES = {
     request: ReportRequestSchema,
     output: FinalReportSchema,
     prompt: (b) => reportPrompt(b),
+  }),
+  "/api/ai/role-profile": route({
+    request: RoleProfileRequestSchema,
+    output: InferredRoleSchema,
+    prompt: (b) => rolePrompt(b.position, b.language),
   }),
 } as const;
 
@@ -209,8 +227,14 @@ const server = createServer(async (req, res) => {
 
     try {
       // Each route's prompt builder matches its own request schema.
-      const prompt = (aiRoute.prompt as (b: unknown) => PromptParts)(parsed.data);
+      const prompt = await (aiRoute.prompt as (b: unknown) => PromptParts | Promise<PromptParts>)(parsed.data);
       const result = await callStructured(aiRoute.output, prompt);
+      if (url.pathname === "/api/ai/role-profile") {
+        // The domain must be one of ours; never trust the model's id blindly.
+        const r = result.data as import("../shared/schemas").InferredRole;
+        const body = parsed.data as { position: string };
+        if (!getDomain(r.domain)) r.domain = guessDomain(body.position)?.id ?? "strategy";
+      }
       console.log(`[ai] ${url.pathname} 200 ${Date.now() - started}ms in=${result.usage.inputTokens} out=${result.usage.outputTokens}`);
       return send(res, 200, result);
     } catch (err) {

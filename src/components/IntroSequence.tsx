@@ -83,7 +83,7 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
     ...(company ? ([["지원 기업", `${company.name}${config.companyTrack && config.companyTrack !== "공통" ? ` · ${config.companyTrack}` : ""}`]] as [string, string][]) : []),
     ["지원 분야", config.position],
     ["면접 유형", `${INTERVIEW_TYPE_KO[config.interviewType]} · ${DIFFICULTY_KO[config.difficulty]}`],
-    ["문항 수", `${config.questionLimit}문항${ko ? "" : " (영어 면접)"}`],
+    ["문항 수", `메인 ${config.questionLimit}문항 + 꼬리질문${ko ? "" : " (영어 면접)"}`],
     ["면접 장소", "본관 3층 제2면접실"],
     ["면접 위원", "3인 (다대일 면접)"],
   ];

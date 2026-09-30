@@ -15,7 +15,7 @@ export function buildReportHtml(i: Interview): string {
   const { strongest, weakest } = strongestAndWeakest(scores);
   const r = i.report;
   const list = (xs: string[]) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
-  const panel = buildPanel(i.config.position);
+  const panel = buildPanel(i.config);
   const bars = CATEGORY_KEYS.map(
     (k) => `<div class="bar"><span>${CATEGORY_KO[k]}</span><div class="track"><div style="width:${scores[k]}%"></div></div><b>${scores[k]} · ${grade(scores[k])}</b></div>`,
   ).join("");
@@ -27,7 +27,8 @@ export function buildReportHtml(i: Interview): string {
   <p class="question">${esc(q.text)}</p>
   <p class="label">내 답변</p><p class="answer">${esc(q.answer ?? "")}</p>
   <p><b>잘한 점</b> — ${esc(f.strength)}</p>
-  <p><b>보완할 점</b> — ${esc(f.improve)}</p>
+  <p><b>보완할 점</b> — ${esc(f.improve)}</p>${f.roleSignal ? `
+  <p><b>직무 관점 · ${esc(f.roleSignal.label)}</b> — ${esc(f.roleSignal.note)}</p>` : ""}
   <p><b>예시 (참고용)</b> — <i>${esc(f.betterAnswer.example)}</i></p>
 </section>`;
     })

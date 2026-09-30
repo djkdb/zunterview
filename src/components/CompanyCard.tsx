@@ -1,7 +1,7 @@
 import { talentKeyword, type Company } from "../../shared/companies";
 
 export function CompanyCard({ c, onClick, active, compact }: { c: Company; onClick: () => void; active?: boolean; compact?: boolean }) {
-  const reported = c.questions.filter((q) => q.basis === "후기").length;
+  const reported = c.reportedCount;
   return (
     <button
       type="button"
@@ -26,7 +26,7 @@ export function CompanyCard({ c, onClick, active, compact }: { c: Company; onCli
         </span>
       )}
       <span className="mt-auto pt-3 text-[11px] text-faint">
-        예상 질문 {c.questions.length}개{reported ? ` · 기출 기반 ${reported}` : ""}
+        연습 질문 {c.questionCount}개{reported ? ` · 공개후기 기반 ${reported}` : ""}
       </span>
     </button>
   );

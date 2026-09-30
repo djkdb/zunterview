@@ -1,5 +1,9 @@
 import type { z } from "zod";
 import {
+  CustomRoleSchema,
+  InferredRoleSchema,
+  type CustomRole,
+  type Language,
   AnswerAnalysisSchema,
   FinalReportSchema,
   FollowUpDecisionSchema,
@@ -101,5 +105,19 @@ export class RealAIProvider implements AIProvider {
 
   async generateFinalReport(req: ReportRequest) {
     return sanitizeReport(await this.post("/api/ai/report", req, FinalReportSchema));
+  }
+
+  async inferRole(position: string, language: Language): Promise<CustomRole | null> {
+    const r = await this.post("/api/ai/role-profile", { position, language }, InferredRoleSchema);
+    const clip = (xs: string[], n: number) => xs.map((x) => x.trim().slice(0, 40)).filter(Boolean).slice(0, n);
+    const parsed = CustomRoleSchema.safeParse({
+      title: position.slice(0, 60),
+      domain: r.domain,
+      family: r.family.trim().slice(0, 40) || "기타",
+      archetype: r.archetype,
+      skills: clip(r.skills, 8),
+      topics: clip(r.topics, 10),
+    });
+    return parsed.success ? parsed.data : null;
   }
 }

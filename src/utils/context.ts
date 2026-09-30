@@ -10,8 +10,8 @@ const HISTORY_WINDOW = 4;
 const ANSWER_CHARS_IN_HISTORY = 1500;
 
 export function toAIConfig(i: Interview): AIConfig {
-  const { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack } = i.config;
-  return { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack };
+  const { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack, roleId, customRole } = i.config;
+  return { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack, roleId, customRole };
 }
 
 const clip = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1)}…` : s);
@@ -20,7 +20,11 @@ export function buildContext(i: Interview): InterviewContext {
   const answered = i.questions.filter((q) => q.answer);
   return {
     config: toAIConfig(i),
-    progress: { asked: i.questions.length, total: i.config.questionLimit },
+    progress: {
+      asked: i.questions.filter((q) => !q.isFollowUp).length,
+      total: i.config.questionLimit,
+      followUps: i.questions.filter((q) => q.isFollowUp).length,
+    },
     history: answered.slice(-Math.min(HISTORY_WINDOW, LIMITS.historyTurns)).map((q) => ({
       question: clip(q.text, LIMITS.question),
       type: q.type,

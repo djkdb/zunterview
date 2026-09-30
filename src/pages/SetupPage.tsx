@@ -4,6 +4,15 @@ import { DIFFICULTIES, EXPERIENCE_LEVELS, INTERVIEW_TYPES, LIMITS, PERSONAS } fr
 import { ModeBadge, TopBar } from "../components/TopBar";
 import { CompanyPicker } from "../components/CompanyPicker";
 import { COMPANIES, companyTracks, getCompany, guessTrack, type CompanyCategory } from "../../shared/companies";
+import { RolePicker } from "../components/RolePicker";
+import { planComposition, planInterview, BUCKET_LABEL } from "../../shared/blueprints";
+import { roleContextFor, searchRoles } from "../../shared/roles";
+
+/** The taxonomy role for an exact title/alias ("프론트엔드 개발자", "전기직"), if there is one. */
+function exactRoleId(position: string): string | undefined {
+  const m = searchRoles(position, 1)[0];
+  return m && m.score >= 100 ? m.role.id : undefined;
+}
 
 /** "전기" at a public enterprise → "전기직"; "개발" at a company → "개발자". */
 function positionForTrack(category: CompanyCategory, track: string): string {
@@ -16,7 +25,7 @@ import { ArrowIcon } from "../components/ui/icons";
 import { Segmented } from "../components/ui/Segmented";
 import { Toggle } from "../components/ui/Toggle";
 import { DIFFICULTY_KO, EXPERIENCE_KO, INTERVIEW_TYPE_HINT_KO, INTERVIEW_TYPE_KO, PERSONA_KO } from "../config/labelsKo";
-import { ANSWER_TIME_OPTIONS, DEFAULT_CONFIG, POSITION_PRESETS, QUESTION_LENGTHS } from "../config/options";
+import { ANSWER_TIME_OPTIONS, DEFAULT_CONFIG, QUESTION_LENGTHS } from "../config/options";
 import type { ProviderStatus } from "../services/ai/providerFactory";
 import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
 import { isNeuralTts, isVoiceOutputAvailable } from "../services/speech/tts";
@@ -34,12 +43,18 @@ function withCompanyDefaults(p: InterviewConfig, id: string | undefined, track: 
   const next = { ...p, companyId: id, companyTrack: track };
   const co = getCompany(id);
   if (!co) return next;
-  if (track && track !== "공통") return { ...next, position: positionForTrack(co.category, track) };
-  const fromPreset = (POSITION_PRESETS as readonly string[]).includes(p.position);
-  if (fromPreset && (co.category === "공기업" || co.category === "공공기관") && guessTrack(co, p.position) === "공통") {
-    // Tech presets rarely fit a public institution; start from the administrative track.
+  if (track && track !== "공통") {
+    const position = positionForTrack(co.category, track);
+    return { ...next, position, roleId: exactRoleId(position) };
+  }
+  const tech = ["tech_dev", "data_analytic"].includes(roleContextFor(p).archetype);
+  if (tech && (co.category === "공기업" || co.category === "공공기관") && guessTrack(co, p.position) === "공통") {
+    // IT jobs rarely fit a public institution's common track; start from the administrative track.
     const t = companyTracks(co).find((x) => /사무|행정/.test(x));
-    if (t) return { ...next, companyTrack: t, position: positionForTrack(co.category, t) };
+    if (t) {
+      const position = positionForTrack(co.category, t);
+      return { ...next, companyTrack: t, position, roleId: exactRoleId(position) };
+    }
   }
   return next;
 }
@@ -53,6 +68,9 @@ function initialConfig(preset?: { companyId: string; track?: string } | null): I
     merged.companyTrack = undefined;
   }
   if (!isVoiceOutputAvailable()) merged.voiceEnabled = false;
+  // Configs saved before the role taxonomy existed only have a job title.
+  if (!merged.roleId) merged.roleId = exactRoleId(merged.position);
+  merged.customRole = undefined;
   return merged;
 }
 
@@ -77,26 +95,27 @@ interface SetupProps {
 
 export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
   const [c, setC] = useState<InterviewConfig>(() => initialConfig(preset));
-  const isPreset = (POSITION_PRESETS as readonly string[]).includes(c.position);
-  const [custom, setCustom] = useState(isPreset ? "" : c.position);
-  const [useCustom, setUseCustom] = useState(!isPreset);
   const set = <K extends keyof InterviewConfig>(k: K, v: InterviewConfig[K]) => setC((p) => ({ ...p, [k]: v }));
 
-  const position = (useCustom ? custom : c.position).trim();
+  const position = c.position.trim();
   const valid = position.length > 0 && position.length <= LIMITS.position;
   const ttsOk = isVoiceOutputAvailable();
 
   const company = getCompany(c.companyId);
+  const role = roleContextFor(c);
+  const composition = planComposition(planInterview({ archetype: role.archetype, interviewType: c.interviewType, experience: c.experience, questionLimit: c.questionLimit, company: Boolean(company) }));
   const summaryRows: [string, string][] = [
-    ["지원 기업", company ? `${company.name}${c.companyTrack && c.companyTrack !== "공통" ? ` · ${c.companyTrack}` : ""}` : "일반 면접"],
+    ["지원 기업", company ? `${company.name}${c.companyTrack && c.companyTrack !== "공통" ? ` · ${c.companyTrack}` : ""}` : "선택 안 함 (직무 면접)"],
     ["지원 직무", position || "—"],
+    ["직무 분야", role.domain ? `${role.domain.name}${role.family ? ` › ${role.family.name}` : ""}${role.role ? "" : " (추정)"}` : "—"],
     ["경력", EXPERIENCE_KO[c.experience]],
     ["면접", `${INTERVIEW_TYPE_KO[c.interviewType]} · ${DIFFICULTY_KO[c.difficulty]}`],
-    ["분량", `${c.questionLimit}문항 · 약 ${c.questionLimit * 2}분`],
+    ["분량", `메인 ${c.questionLimit}문항 · 약 ${Math.round(c.questionLimit * 2.5)}분`],
+    ["질문 구성", composition.map((x) => `${BUCKET_LABEL[x.bucket].ko} ${x.pct}%`).join(" · ")],
     ["면접관", `${PERSONA_KO[c.persona]} · 음성 ${c.voiceEnabled && ttsOk ? "켜짐" : "꺼짐"}`],
     ["답변 시간", c.answerTimeLimit ? `문항당 ${c.answerTimeLimit / 60}분` : "제한 없음"],
   ];
-  const summaryLine = `${company ? `${company.shortName ?? company.name} · ` : ""}${INTERVIEW_TYPE_KO[c.interviewType]} · ${DIFFICULTY_KO[c.difficulty]} · ${c.questionLimit}문항 · 약 ${c.questionLimit * 2}분`;
+  const summaryLine = `${company ? `${company.shortName ?? company.name} · ` : ""}${INTERVIEW_TYPE_KO[c.interviewType]} · ${DIFFICULTY_KO[c.difficulty]} · ${c.questionLimit}문항 · 약 ${Math.round(c.questionLimit * 2.5)}분`;
 
   const start = () => {
     if (!valid) return;
@@ -113,7 +132,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="pt-8 pb-6">
           <p className="text-sm font-semibold text-accent">면접 접수</p>
           <h1 className="mt-1.5 text-2xl font-extrabold text-navy sm:text-3xl">어떤 면접을 준비하시나요?</h1>
-          <p className="mt-2 text-[15px] text-muted">입력한 정보와 내 답변을 바탕으로 면접관이 다음 질문을 정합니다.</p>
+          <p className="mt-2 text-[15px] text-muted">직무를 고르면 그 직무의 실무·상황·경험 질문으로 면접이 구성되고, 내 답변에 따라 꼬리질문이 이어집니다.</p>
         </motion.div>
 
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-6">
@@ -125,70 +144,31 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
             start();
           }}
         >
+          <Section no={1} title="지원 직무">
+            <fieldset>
+              <legend className="sr-only">지원 직무</legend>
+              <RolePicker
+                position={c.position}
+                roleId={c.roleId}
+                composition={composition}
+                onChange={(pos, roleId) => setC((p) => ({ ...p, position: pos, roleId, customRole: undefined }))}
+              />
+            </fieldset>
+          </Section>
+
           {COMPANIES.length > 0 && (
-            <Section no={1} title="지원 기업 (선택)">
+            <Section no={2} title="지원 기업 (선택)">
               <CompanyPicker
                 companyId={c.companyId}
                 track={c.companyTrack}
                 onChange={(id, track) => {
-                  const next = withCompanyDefaults(c, id, track);
-                  setC(next);
-                  if (next.position !== c.position) {
-                    setUseCustom(!(POSITION_PRESETS as readonly string[]).includes(next.position));
-                    setCustom(next.position);
-                  }
+                  setC(withCompanyDefaults(c, id, track));
                 }}
               />
             </Section>
           )}
 
-          <Section no={2} title="지원 정보">
-            <fieldset>
-              <legend className="label mb-2.5">지원 직무</legend>
-              <div className="flex flex-wrap gap-2">
-                {POSITION_PRESETS.map((p) => {
-                  const active = !useCustom && c.position === p;
-                  return (
-                    <button
-                      key={p}
-                      type="button"
-                      aria-pressed={active}
-                      onClick={() => {
-                        setUseCustom(false);
-                        set("position", p);
-                      }}
-                      className={`min-h-10 rounded-lg border px-3.5 text-sm transition-colors ${
-                        active ? "border-accent bg-accent-soft font-semibold text-accent" : "border-line-strong bg-surface text-muted hover:border-accent/40 hover:text-ink"
-                      }`}
-                    >
-                      {p}
-                    </button>
-                  );
-                })}
-                <button
-                  type="button"
-                  aria-pressed={useCustom}
-                  onClick={() => setUseCustom(true)}
-                  className={`min-h-10 rounded-lg border px-3.5 text-sm transition-colors ${
-                    useCustom ? "border-accent bg-accent-soft font-semibold text-accent" : "border-dashed border-line-strong text-muted hover:text-ink"
-                  }`}
-                >
-                  + 직접 입력
-                </button>
-              </div>
-              {useCustom && (
-                <input
-                  autoFocus
-                  value={custom}
-                  onChange={(e) => setCustom(e.target.value)}
-                  maxLength={LIMITS.position}
-                  placeholder="예: 데이터 분석가, iOS 개발자, 인사 담당자"
-                  aria-label="지원 직무 직접 입력"
-                  className="mt-3 h-12 w-full rounded-lg border border-line-strong bg-surface px-4 text-[16px] text-ink placeholder:text-faint focus:border-accent focus:ring-2 focus:ring-accent/15 focus:outline-none"
-                />
-              )}
-            </fieldset>
-
+          <Section no={3} title="지원 정보">
             <Segmented label="경력 구분" value={c.experience} onChange={(v) => set("experience", v)} columns={4} options={EXPERIENCE_LEVELS.map((v) => ({ value: v, label: EXPERIENCE_KO[v] }))} />
 
             <div>
@@ -205,14 +185,14 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                 value={c.jobDescription}
                 onChange={(e) => set("jobDescription", e.target.value.slice(0, LIMITS.jobDescription))}
                 rows={4}
-                placeholder="지원하는 공고의 자격요건·우대사항을 붙여넣으면 해당 내용으로 질문합니다. (예: React, TypeScript, 성능 최적화 경험 우대)"
+                placeholder="지원하는 공고의 자격요건·우대사항을 붙여넣으면 그 요건을 실제 경험으로 검증하는 질문이 나옵니다. (예: GA4·SQL 활용 능력, B2B 영업 경험 우대, 결산 실무 경험)"
                 className="w-full resize-y rounded-lg border border-line-strong bg-surface px-4 py-3 text-[15px] leading-relaxed text-ink placeholder:text-faint focus:border-accent focus:ring-2 focus:ring-accent/15 focus:outline-none"
               />
               <p className="mt-1.5 text-[12px] text-faint">이름·연락처 등 개인정보는 넣지 마세요. 질문을 맞추는 데에만 사용됩니다.</p>
             </div>
           </Section>
 
-          <Section no={3} title="면접 구성">
+          <Section no={4} title="면접 구성">
             <Segmented
               label="면접 유형"
               value={c.interviewType}
@@ -222,11 +202,11 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
             />
             <div className="grid gap-6 sm:grid-cols-2">
               <Segmented label="난이도" value={c.difficulty} onChange={(v) => set("difficulty", v)} options={DIFFICULTIES.map((v) => ({ value: v, label: DIFFICULTY_KO[v], hint: DIFFICULTY_HINT[v] }))} />
-              <Segmented label="문항 수 (꼬리질문 포함)" value={c.questionLimit} onChange={(v) => set("questionLimit", v)} options={QUESTION_LENGTHS.map((v) => ({ value: v, label: `${v}문항`, hint: `약 ${v * 2}분` }))} />
+              <Segmented label="메인 질문 수 (꼬리질문은 답변에 따라 추가)" value={c.questionLimit} onChange={(v) => set("questionLimit", v)} options={QUESTION_LENGTHS.map((v) => ({ value: v, label: `${v}문항`, hint: `약 ${Math.round(v * 2.5)}분` }))} />
             </div>
           </Section>
 
-          <Section no={4} title="면접 환경">
+          <Section no={5} title="면접 환경">
             <Segmented label="면접관 스타일" value={c.persona} onChange={(v) => set("persona", v)} columns={4} options={PERSONAS.map((v) => ({ value: v, label: PERSONA_KO[v] }))} />
             <div className="grid gap-6 sm:grid-cols-2">
               <Segmented label="면접 언어" value={c.language} onChange={(v) => set("language", v)} options={[{ value: "ko", label: "한국어" }, { value: "en", label: "영어 면접" }]} />

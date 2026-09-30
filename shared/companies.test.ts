@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { COMPANIES, COMPANY_DATA_COUNT, companyTracks, getCompany, guessTrack, questionsForTrack } from "./companies";
+import { COMPANIES, COMPANY_DATA_COUNT, companyTracks, guessTrack, loadCompanyQuestions, questionsForTrack } from "./companies";
 import { MockAIProvider } from "../src/services/ai/MockAIProvider";
 import type { InterviewContext } from "./schemas";
 
@@ -8,13 +8,17 @@ describe("company dataset", () => {
     expect(COMPANIES.length).toBe(COMPANY_DATA_COUNT);
   });
 
-  it("has usable, sourced profiles", () => {
+  it("has usable, sourced profiles with an on-demand question bank", async () => {
+    expect(COMPANIES.length).toBeGreaterThanOrEqual(50);
+    expect(new Set(COMPANIES.map((x) => x.id)).size).toBe(COMPANIES.length);
     for (const c of COMPANIES) {
-      expect(c.questions.length).toBeGreaterThanOrEqual(5);
+      const qs = await loadCompanyQuestions(c.id);
+      expect(qs.length).toBe(c.questionCount);
+      expect(qs.length).toBeGreaterThanOrEqual(5);
+      expect(qs.filter((q) => q.basis === "후기").length).toBe(c.reportedCount);
       expect(c.sources.length).toBeGreaterThanOrEqual(1);
-      expect(new Set(COMPANIES.map((x) => x.id)).size).toBe(COMPANIES.length);
       expect(companyTracks(c)[0]).toBe("공통");
-      expect(questionsForTrack(c, "공통").length).toBe(c.questions.length);
+      expect(questionsForTrack(qs, "공통").length).toBe(qs.length);
     }
   });
 
@@ -34,6 +38,7 @@ describe("company interview mode (mock)", () => {
     const asked = ["먼저 1분 동안 간단하게 자기소개 부탁드립니다."];
     const types: InterviewContext["usedTypes"] = ["opening"];
     let fromBank = 0;
+    const bank = await loadCompanyQuestions(c.id);
     for (let i = 1; i < 6; i++) {
       const q = await ai.generateQuestion({
         config: { position: "사무", experience: "entry", interviewType: "mixed", difficulty: "normal", questionLimit: 8, jobDescription: "", persona: "professional", language: "ko", companyId: c.id },
@@ -43,10 +48,11 @@ describe("company interview mode (mock)", () => {
         usedTypes: [...types],
       });
       expect(asked).not.toContain(q.question);
-      if (getCompany(c.id)!.questions.some((x) => x.text === q.question)) fromBank++;
+      if (bank.some((x) => x.text === q.question)) fromBank++;
       asked.push(q.question);
       types.push(q.type);
     }
-    expect(fromBank).toBeGreaterThanOrEqual(3);
+    // Company questions for motivation/fit, role questions for the job itself.
+    expect(fromBank).toBeGreaterThanOrEqual(2);
   });
 });

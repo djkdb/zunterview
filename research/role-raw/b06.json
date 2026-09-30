@@ -1,0 +1,6656 @@
+{
+  "batch": "b06",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NCS 기반 채용 직무 설명자료 — 정보보안(정보보호 진단·분석, 보안사고분석대응)",
+      "url": "https://www.busanjob.net/upload/wn_pb/1647843437(2).pdf",
+      "type": "ncs",
+      "year": 2022
+    },
+    {
+      "id": "s2",
+      "title": "NCS 기반 직무설명서 — 시스템 관리, 정보보안 (공공기관 채용)",
+      "url": "https://www.nosa.or.kr/board/fileMngr?cmd=down&boardId=nosa06&bltnNo=11529566071455&fileSeq=2&subId=sub06",
+      "type": "ncs"
+    },
+    {
+      "id": "s3",
+      "title": "보안 면접후기 1 — 보안관제 직무 면접 복기 (velog)",
+      "url": "https://velog.io/@ww3ysq/TIL-%EB%A9%B4%EC%A0%91%ED%9B%84%EA%B8%B0",
+      "type": "interview_review"
+    },
+    {
+      "id": "s4",
+      "title": "보안 면접후기 2 — 정보보안 엔지니어 면접 복기 (velog)",
+      "url": "https://velog.io/@ww3ysq/%EB%B3%B4%EC%95%88-%EB%A9%B4%EC%A0%91%ED%9B%84%EA%B8%B0-2",
+      "type": "interview_review"
+    },
+    {
+      "id": "s5",
+      "title": "엔지니어 면접후기 0회차 — 기술지원 엔지니어 면접 복기 (velog)",
+      "url": "https://velog.io/@ww3ysq/%EB%A9%B4%EC%A0%91%ED%9B%84%EA%B8%B0-0%ED%9A%8C%EC%B0%A8-%EA%B8%B0%EC%88%A0%EC%A7%80%EC%9B%90",
+      "type": "interview_review"
+    },
+    {
+      "id": "s6",
+      "title": "게임잡 커뮤니티 — 기획 면접 후기 (여러 게임사 기획 면접 질문)",
+      "url": "https://www.gamejob.co.kr/Community/Talk/Detail?talk_Stat=13&idx=19892",
+      "type": "interview_review"
+    },
+    {
+      "id": "s7",
+      "title": "게임잡 커뮤니티 — 신입 게임 콘텐츠 프로그래머(클라이언트) 취업·면접 후기",
+      "url": "https://www.gamejob.co.kr/Community/Talk/Detail?talk_Stat=13&idx=34244",
+      "type": "interview_review"
+    },
+    {
+      "id": "s8",
+      "title": "2024년 하반기 게임 서버 취준 후기 (velog)",
+      "url": "https://velog.io/@kbw0226/2024%EB%85%84-%ED%95%98%EB%B0%98%EA%B8%B0-%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%EC%B7%A8%EC%A4%80-%ED%9B%84%EA%B8%B0",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "s9",
+      "title": "게임 기획 / 개발 PM 면접 경험에 대한 정리 (heartcomplex 블로그)",
+      "url": "https://www.heartcomplex.net/%EA%B2%8C%EC%9E%84-%EA%B8%B0%ED%9A%8D-%EA%B0%9C%EB%B0%9C-pm-%EB%A9%B4%EC%A0%91-%EA%B2%BD%ED%97%98%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A0%95%EB%A6%AC/",
+      "type": "interview_review"
+    },
+    {
+      "id": "s10",
+      "title": "잡코리아 직무인터뷰 — 게임업계 현직자를 만나다: 게임 기획자 편",
+      "url": "https://www.jobkorea.co.kr/company/1882711/interview/view/?ItvNo=21925&ListNo=21925",
+      "type": "other_public"
+    },
+    {
+      "id": "s11",
+      "title": "디자이너 이직 면접에서 자주 듣는 질문 12개 (브런치)",
+      "url": "https://brunch.co.kr/@eunjungjo/1",
+      "type": "interview_review"
+    },
+    {
+      "id": "s12",
+      "title": "디자이너 인터뷰 — 여러 회사 인터뷰하면서 받았던 질문들 (슈퍼루키)",
+      "url": "https://www.superookie.com/contents/59f2097d8b129f071c038ef9",
+      "type": "interview_review"
+    },
+    {
+      "id": "s13",
+      "title": "취준생의 UX/UI 디자인 직무 면접 후기와 복기 (Make me think 블로그)",
+      "url": "https://dawnbebright.wordpress.com/2021/04/07/%EC%B7%A8%EC%A4%80%EC%83%9D%EC%9D%98-ux-ui%EB%94%94%EC%9E%90%EC%9D%B8-%EC%A7%81%EB%AC%B4-%EB%A9%B4%EC%A0%91-%ED%9B%84%EA%B8%B0%EC%99%80-%EB%B3%B5%EA%B8%B0%EB%8C%80%EA%B8%B0%EC%97%85-%EC%97%90/",
+      "type": "interview_review",
+      "year": 2021
+    },
+    {
+      "id": "s14",
+      "title": "방송사 취재기자 최종 합격 후기 (브런치)",
+      "url": "https://brunch.co.kr/@chicpark/11",
+      "type": "interview_review"
+    },
+    {
+      "id": "s15",
+      "title": "현직 기자가 말하는 언론사 합격의 모든 것 (미디어리터러시)",
+      "url": "https://dadoc.or.kr/377",
+      "type": "interview_review"
+    },
+    {
+      "id": "s16",
+      "title": "사람인 직무인터뷰 — 카피라이팅 직무 현직자 인터뷰",
+      "url": "https://m.saramin.co.kr/career-information/job-interview-view?doc_idx=6171",
+      "type": "interview_review"
+    },
+    {
+      "id": "s17",
+      "title": "NCS 기반 채용 직무설명자료 — 홍보 및 대외협력 (공공기관)",
+      "url": "https://raspfiles2.incruit.com/nile/data/102/SuccessData/addFile/%EC%A7%81%EB%AC%B4%EC%84%A4%EB%AA%85%EC%9E%90%EB%A3%8C_%ED%99%8D%EB%B3%B4%20%EB%B0%8F%20%EB%8C%80%EC%99%B8%ED%98%91%EB%A0%A5_%EB%AC%B4%EA%B8%B0%EA%B3%84%EC%95%BD%EC%A7%81(%EC%9D%BC%EB%B0%98%EC%A7%81).pdf",
+      "type": "ncs"
+    },
+    {
+      "id": "s18",
+      "title": "잡코리아 취업 Q&A — 패션 디자인실 면접 질문은 어떤게 있나요?",
+      "url": "https://www.jobkorea.co.kr/User/Qstn/AnswerWrite?qstnNo=19630",
+      "type": "other_public"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "devops",
+      "aliases": [
+        "데브옵스",
+        "DevOps",
+        "데브옵스 엔지니어",
+        "DevOps Engineer",
+        "플랫폼 엔지니어",
+        "배포 엔지니어",
+        "CI/CD 엔지니어"
+      ],
+      "skills": [
+        "CI/CD 파이프라인 구축",
+        "컨테이너·쿠버네티스 운영",
+        "IaC(Terraform 등)",
+        "배포 전략 설계",
+        "모니터링·로깅 구성",
+        "스크립트 자동화"
+      ],
+      "responsibilities": [
+        "빌드·테스트·배포 파이프라인 설계와 운영",
+        "컨테이너 기반 실행 환경 구축",
+        "인프라 코드화와 환경 표준화",
+        "배포 장애 대응과 롤백",
+        "개발팀 생산성 도구 지원"
+      ],
+      "keywords": [
+        "CI/CD",
+        "파이프라인",
+        "배포",
+        "롤백",
+        "컨테이너",
+        "쿠버네티스",
+        "Docker",
+        "Terraform",
+        "IaC",
+        "GitOps",
+        "카나리",
+        "블루그린",
+        "자동화",
+        "빌드"
+      ],
+      "topics": {
+        "role": [
+          "배포 자동화",
+          "배포 전략",
+          "인프라 코드화",
+          "컨테이너 운영",
+          "개발 생산성"
+        ],
+        "scenario": [
+          "배포 직후 에러율 급증",
+          "팀마다 다른 배포 방식 표준화",
+          "불안정한 테스트로 막히는 파이프라인"
+        ],
+        "result": [
+          "배포 빈도",
+          "배포 소요 시간",
+          "변경 실패율",
+          "복구 시간"
+        ],
+        "en": [
+          "CI/CD pipeline",
+          "deployment strategy",
+          "infrastructure as code",
+          "container orchestration"
+        ]
+      }
+    },
+    {
+      "id": "sre",
+      "aliases": [
+        "SRE",
+        "사이트 신뢰성 엔지니어",
+        "Site Reliability Engineer",
+        "신뢰성 엔지니어",
+        "서비스 운영 엔지니어",
+        "프로덕션 엔지니어"
+      ],
+      "skills": [
+        "SLI·SLO 설계",
+        "관측성(메트릭·로그·트레이스)",
+        "장애 대응 지휘",
+        "용량 계획",
+        "포스트모템",
+        "운영 자동화"
+      ],
+      "responsibilities": [
+        "서비스 가용성·지연 목표 설정과 관리",
+        "알림 체계와 온콜 운영",
+        "장애 대응과 재발 방지",
+        "트래픽 증가 대비 용량 계획",
+        "반복 운영 업무 자동화"
+      ],
+      "keywords": [
+        "SLO",
+        "SLI",
+        "에러 버짓",
+        "가용성",
+        "온콜",
+        "장애 대응",
+        "포스트모템",
+        "관측성",
+        "p99",
+        "용량 계획",
+        "토일",
+        "알림",
+        "서킷 브레이커"
+      ],
+      "topics": {
+        "role": [
+          "서비스 수준 목표",
+          "장애 대응",
+          "관측성",
+          "용량 계획",
+          "토일 감축"
+        ],
+        "scenario": [
+          "원인 불명 장애 장기화",
+          "같은 원인 장애의 반복",
+          "잦은 온콜 호출로 인한 번아웃"
+        ],
+        "result": [
+          "가용성",
+          "평균 복구 시간",
+          "알림 수",
+          "에러 버짓 소진율"
+        ],
+        "en": [
+          "service level objective",
+          "incident management",
+          "observability",
+          "capacity planning"
+        ]
+      }
+    },
+    {
+      "id": "cloud_engineer",
+      "aliases": [
+        "클라우드 엔지니어",
+        "Cloud Engineer",
+        "클라우드 아키텍트",
+        "AWS 엔지니어",
+        "클라우드 인프라 엔지니어",
+        "MSP 엔지니어",
+        "클라우드 운영"
+      ],
+      "skills": [
+        "AWS·Azure·GCP 설계",
+        "네트워크(VPC) 설계",
+        "IAM 권한 설계",
+        "비용 최적화",
+        "고가용성 아키텍처",
+        "클라우드 이전"
+      ],
+      "responsibilities": [
+        "클라우드 인프라 설계·구축",
+        "권한·보안 설정 관리",
+        "비용 모니터링과 최적화",
+        "온프레미스 시스템의 클라우드 이전",
+        "고객사 요구에 맞는 아키텍처 제안"
+      ],
+      "keywords": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "VPC",
+        "서브넷",
+        "IAM",
+        "오토스케일링",
+        "가용 영역",
+        "멀티 리전",
+        "마이그레이션",
+        "비용 최적화",
+        "관리형 서비스",
+        "MSP"
+      ],
+      "topics": {
+        "role": [
+          "클라우드 아키텍처",
+          "권한 관리",
+          "비용 최적화",
+          "클라우드 이전",
+          "고가용성"
+        ],
+        "scenario": [
+          "예상의 두 배로 나온 청구서",
+          "공개 저장소에 노출된 액세스 키",
+          "비용 절감과 가용성을 동시에 원하는 고객"
+        ],
+        "result": [
+          "월 클라우드 비용",
+          "가용성",
+          "이전 일정 준수",
+          "보안 설정 준수율"
+        ],
+        "en": [
+          "cloud architecture",
+          "IAM",
+          "cost optimization",
+          "cloud migration"
+        ]
+      }
+    },
+    {
+      "id": "system_engineer",
+      "aliases": [
+        "시스템 엔지니어",
+        "System Engineer",
+        "시스템 관리자",
+        "서버 엔지니어",
+        "리눅스 엔지니어",
+        "전산 담당",
+        "SE"
+      ],
+      "skills": [
+        "리눅스·윈도우 서버 운영",
+        "서버·스토리지 구성",
+        "이중화·백업 설계",
+        "보안 패치 관리",
+        "장애 복구",
+        "정보화 사업 관리"
+      ],
+      "responsibilities": [
+        "서버·스토리지 등 전산 자원 운영",
+        "시스템 장애 대응과 긴급 복구",
+        "백업·이중화 정책 수립",
+        "OS 패치와 보안 점검",
+        "정보화 사업 기획·관리 지원"
+      ],
+      "keywords": [
+        "서버",
+        "리눅스",
+        "스토리지",
+        "이중화",
+        "백업",
+        "패치",
+        "가상화",
+        "장애 복구",
+        "자원 사용률",
+        "증설",
+        "유지보수",
+        "정보화 사업"
+      ],
+      "topics": {
+        "role": [
+          "서버 운영",
+          "장애 복구",
+          "백업·이중화",
+          "보안 패치",
+          "자원 증설 계획"
+        ],
+        "scenario": [
+          "업무 시간 중 그룹웨어 중단",
+          "유지보수 종료 노후 서버",
+          "협력업체 작업 실수로 인한 장애"
+        ],
+        "result": [
+          "시스템 가용률",
+          "장애 복구 시간",
+          "자원 사용률",
+          "패치 적용률"
+        ],
+        "en": [
+          "server administration",
+          "high availability",
+          "backup and recovery",
+          "patch management"
+        ]
+      },
+      "sources": [
+        "s2"
+      ]
+    },
+    {
+      "id": "network_engineer",
+      "aliases": [
+        "네트워크 엔지니어",
+        "Network Engineer",
+        "네트워크 관리자",
+        "망 관리",
+        "NE",
+        "네트워크 운영"
+      ],
+      "skills": [
+        "라우팅·스위칭",
+        "방화벽·VPN 운영",
+        "VLAN 설계",
+        "패킷 분석",
+        "네트워크 이중화",
+        "장비 설정(CLI)"
+      ],
+      "responsibilities": [
+        "사내·데이터센터 네트워크 설계와 구축",
+        "네트워크 장비 운영과 장애 대응",
+        "방화벽 정책·VPN 관리",
+        "회선 용량 관리",
+        "망 분리 등 보안 요구 반영"
+      ],
+      "keywords": [
+        "라우팅",
+        "스위칭",
+        "VLAN",
+        "STP",
+        "방화벽",
+        "VPN",
+        "NAT",
+        "대역폭",
+        "패킷 캡처",
+        "이중화",
+        "OSI 7계층",
+        "회선"
+      ],
+      "topics": {
+        "role": [
+          "네트워크 설계",
+          "장애 대응",
+          "방화벽 정책",
+          "회선 용량",
+          "망 분리"
+        ],
+        "scenario": [
+          "야간 장비 교체 후 일부 구간 통신 불가",
+          "특정 시간대 회선 포화",
+          "업무 효율을 떨어뜨리는 망 분리 요구"
+        ],
+        "result": [
+          "네트워크 가용률",
+          "장애 복구 시간",
+          "회선 사용률",
+          "정책 정리율"
+        ],
+        "en": [
+          "routing and switching",
+          "firewall policy",
+          "network redundancy",
+          "packet analysis"
+        ]
+      }
+    },
+    {
+      "id": "dba",
+      "aliases": [
+        "DBA",
+        "데이터베이스 관리자",
+        "Database Administrator",
+        "DB 엔지니어",
+        "데이터베이스 엔지니어",
+        "DB 운영"
+      ],
+      "skills": [
+        "SQL 튜닝",
+        "인덱스 설계",
+        "백업·복구",
+        "복제·고가용성 구성",
+        "DB 모니터링",
+        "권한·감사 관리"
+      ],
+      "responsibilities": [
+        "데이터베이스 설치·운영과 성능 관리",
+        "느린 쿼리 분석과 튜닝",
+        "백업 정책 수립과 복구 훈련",
+        "이중화·복제 구성",
+        "접근 권한과 개인정보 보호 관리"
+      ],
+      "keywords": [
+        "실행 계획",
+        "인덱스",
+        "튜닝",
+        "백업",
+        "복구",
+        "복제",
+        "락",
+        "트랜잭션",
+        "격리 수준",
+        "Oracle",
+        "MySQL",
+        "PostgreSQL",
+        "용량 계획"
+      ],
+      "topics": {
+        "role": [
+          "성능 튜닝",
+          "백업·복구",
+          "고가용성",
+          "데이터 보안",
+          "용량 관리"
+        ],
+        "scenario": [
+          "실수로 삭제된 운영 데이터",
+          "새벽 락 대기 급증",
+          "운영 DB 직접 접근 요청"
+        ],
+        "result": [
+          "쿼리 응답 시간",
+          "복구 목표 시간",
+          "DB 가용률",
+          "스토리지 증가율"
+        ],
+        "en": [
+          "query tuning",
+          "backup and recovery",
+          "replication",
+          "database security"
+        ]
+      }
+    },
+    {
+      "id": "security_engineer",
+      "aliases": [
+        "보안 엔지니어",
+        "정보보안 엔지니어",
+        "Security Engineer",
+        "보안 담당자",
+        "정보보호 담당",
+        "보안 솔루션 엔지니어",
+        "모의해킹"
+      ],
+      "skills": [
+        "보안 솔루션 구축·운영",
+        "취약점 진단",
+        "모의해킹",
+        "접근 통제 설계",
+        "암호화·키 관리",
+        "보안 정책 수립"
+      ],
+      "responsibilities": [
+        "방화벽·IPS·WAF 등 보안 솔루션 운영",
+        "시스템·애플리케이션 취약점 진단과 조치",
+        "보안 정책과 접근 통제 설계",
+        "개발 과정의 보안 검토",
+        "보안 요구사항 설명과 기술 지원"
+      ],
+      "keywords": [
+        "취약점",
+        "모의해킹",
+        "방화벽",
+        "IPS",
+        "WAF",
+        "접근 통제",
+        "암호화",
+        "제로 트러스트",
+        "시큐어 코딩",
+        "보안 정책",
+        "ISMS",
+        "위험평가"
+      ],
+      "topics": {
+        "role": [
+          "취약점 진단",
+          "보안 아키텍처",
+          "접근 통제",
+          "보안 정책",
+          "개발 보안"
+        ],
+        "scenario": [
+          "출시 직전 치명적 취약점 발견",
+          "오탐 과다로 인한 알림 해제 요구",
+          "임원의 보안 예외 요청"
+        ],
+        "result": [
+          "취약점 조치율",
+          "조치 소요 기간",
+          "보안 점검 결과",
+          "사고 건수"
+        ],
+        "en": [
+          "vulnerability assessment",
+          "penetration testing",
+          "access control",
+          "security architecture"
+        ]
+      },
+      "sources": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "id": "security_analyst",
+      "aliases": [
+        "보안관제",
+        "보안관제 요원",
+        "침해대응",
+        "SOC 분석가",
+        "Security Analyst",
+        "CERT",
+        "관제 엔지니어"
+      ],
+      "skills": [
+        "보안 이벤트 분석",
+        "로그 분석",
+        "SIEM 운영",
+        "침해사고 분석",
+        "악성코드 기초 분석",
+        "사고 보고서 작성"
+      ],
+      "responsibilities": [
+        "보안 장비 이벤트 실시간 모니터링",
+        "정탐·오탐 판별과 초동 대응",
+        "침해사고 분석과 타임라인 재구성",
+        "고객사·유관부서 보고",
+        "탐지 룰 튜닝"
+      ],
+      "keywords": [
+        "보안관제",
+        "SIEM",
+        "ESM",
+        "IDS",
+        "IPS",
+        "EDR",
+        "로그 분석",
+        "정탐",
+        "오탐",
+        "침해사고",
+        "악성코드",
+        "IOC",
+        "교대 근무"
+      ],
+      "topics": {
+        "role": [
+          "이벤트 분석",
+          "침해 대응",
+          "로그 분석",
+          "탐지 룰 튜닝",
+          "사고 보고"
+        ],
+        "scenario": [
+          "야간 대량 탐지 이벤트",
+          "고객사의 오탐 주장",
+          "내부 PC의 주기적 외부 통신"
+        ],
+        "result": [
+          "탐지 정확도",
+          "초동 대응 시간",
+          "오탐률",
+          "보고 품질"
+        ],
+        "en": [
+          "security monitoring",
+          "incident response",
+          "log analysis",
+          "threat detection"
+        ]
+      },
+      "sources": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "id": "game_client",
+      "aliases": [
+        "게임 클라이언트 개발자",
+        "클라이언트 프로그래머",
+        "Game Client Programmer",
+        "유니티 개발자",
+        "언리얼 개발자",
+        "게임 프로그래머",
+        "콘텐츠 프로그래머"
+      ],
+      "skills": [
+        "Unity·Unreal 엔진",
+        "C#·C++",
+        "렌더링·그래픽스 기초",
+        "성능 최적화",
+        "UI 구현",
+        "멀티스레드"
+      ],
+      "responsibilities": [
+        "게임 플레이·UI 기능 구현",
+        "프레임·메모리·로딩 최적화",
+        "기획·아트 리소스 연동",
+        "엔진 기능 확장과 툴 개발",
+        "기기별 호환성 대응"
+      ],
+      "keywords": [
+        "Unity",
+        "Unreal",
+        "C#",
+        "C++",
+        "렌더링",
+        "드로우콜",
+        "프레임",
+        "오브젝트 풀",
+        "GC",
+        "프로파일러",
+        "셰이더",
+        "물리",
+        "해상도"
+      ],
+      "topics": {
+        "role": [
+          "게임플레이 구현",
+          "성능 최적화",
+          "렌더링",
+          "엔진 활용",
+          "기기 대응"
+        ],
+        "scenario": [
+          "특정 기기 크래시 급증",
+          "무거운 아트 리소스",
+          "엔진 업그레이드 후 기능 깨짐"
+        ],
+        "result": [
+          "프레임 레이트",
+          "로딩 시간",
+          "크래시율",
+          "앱 용량"
+        ],
+        "en": [
+          "game engine",
+          "rendering pipeline",
+          "performance optimization",
+          "gameplay programming"
+        ]
+      },
+      "sources": [
+        "s7"
+      ]
+    },
+    {
+      "id": "game_server",
+      "aliases": [
+        "게임 서버 개발자",
+        "게임 서버 프로그래머",
+        "Game Server Programmer",
+        "온라인 게임 서버",
+        "라이브 서버 개발",
+        "백엔드(게임)"
+      ],
+      "skills": [
+        "네트워크 프로그래밍",
+        "비동기 I/O",
+        "동시성 처리",
+        "게임 DB 설계",
+        "트랜잭션 설계",
+        "부하 테스트"
+      ],
+      "responsibilities": [
+        "실시간·턴제 게임 서버 개발",
+        "세션·매칭·인게임 로직 처리",
+        "재화·아이템 데이터 정합성 관리",
+        "접속 폭주 대응과 확장",
+        "운영 툴·보상 기능 개발"
+      ],
+      "keywords": [
+        "서버",
+        "소켓",
+        "IOCP",
+        "비동기",
+        "동시성",
+        "세션",
+        "매칭",
+        "트랜잭션",
+        "재화",
+        "복사 버그",
+        "지연 보상",
+        "부하 테스트",
+        "샤딩"
+      ],
+      "topics": {
+        "role": [
+          "네트워크 처리",
+          "데이터 정합성",
+          "동시 접속 확장",
+          "치트 방지",
+          "운영 지원"
+        ],
+        "scenario": [
+          "이벤트 오픈 직후 접속 폭주",
+          "점검 후 재화 소실 문의",
+          "긴급 보상 기능 요청"
+        ],
+        "result": [
+          "동시 접속자 수",
+          "응답 지연",
+          "서버 안정성",
+          "데이터 오류 건수"
+        ],
+        "en": [
+          "network programming",
+          "concurrency",
+          "data consistency",
+          "scalability"
+        ]
+      },
+      "sources": [
+        "s8"
+      ]
+    },
+    {
+      "id": "game_designer",
+      "aliases": [
+        "게임기획자",
+        "게임 기획",
+        "Game Designer",
+        "시스템 기획",
+        "콘텐츠 기획(게임)",
+        "레벨 디자이너",
+        "밸런스 기획",
+        "전투 기획"
+      ],
+      "skills": [
+        "시스템·콘텐츠 기획",
+        "밸런스 설계",
+        "재화·경제 설계",
+        "레벨 디자인",
+        "기획서 작성",
+        "데이터 테이블 관리"
+      ],
+      "responsibilities": [
+        "게임 시스템과 콘텐츠 설계",
+        "전투·성장 밸런스 조정",
+        "재화 획득·소모 구조 설계",
+        "기획서 작성과 개발팀 커뮤니케이션",
+        "플레이테스트와 지표 기반 개선"
+      ],
+      "keywords": [
+        "밸런스",
+        "재화",
+        "경제",
+        "레벨 디자인",
+        "시스템 기획",
+        "콘텐츠 기획",
+        "기획서",
+        "데이터 테이블",
+        "플레이테스트",
+        "리텐션",
+        "확률",
+        "튜토리얼"
+      ],
+      "topics": {
+        "role": [
+          "밸런스",
+          "재화 설계",
+          "레벨 디자인",
+          "시스템 기획",
+          "지표 기반 개선"
+        ],
+        "scenario": [
+          "특정 직업 과도하게 강함",
+          "플레이테스트에서 지루하다는 평가",
+          "재화 인플레이션"
+        ],
+        "result": [
+          "리텐션",
+          "콘텐츠 이용률",
+          "재화 유통량",
+          "플레이테스트 만족도"
+        ],
+        "en": [
+          "game balance",
+          "economy design",
+          "level design",
+          "systems design"
+        ]
+      },
+      "sources": [
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "id": "game_ops",
+      "aliases": [
+        "게임 운영",
+        "게임 사업PM",
+        "사업PM",
+        "Live Ops",
+        "게임 운영 PM",
+        "라이브 서비스 PM",
+        "게임 사업",
+        "퍼블리싱 PM"
+      ],
+      "skills": [
+        "라이브 서비스 운영",
+        "지표 분석",
+        "상품·이벤트 기획",
+        "업데이트 일정 관리",
+        "커뮤니티 대응",
+        "글로벌 서비스 운영"
+      ],
+      "responsibilities": [
+        "업데이트·이벤트 일정 수립과 운영",
+        "매출·리텐션 지표 분석과 개선",
+        "상품·패키지 기획",
+        "공지·보상 등 유저 커뮤니케이션",
+        "개발사·마케팅 등 협업 조율"
+      ],
+      "keywords": [
+        "라이브 서비스",
+        "DAU",
+        "리텐션",
+        "ARPPU",
+        "매출",
+        "이벤트",
+        "패키지",
+        "공지",
+        "보상",
+        "점검",
+        "콜라보",
+        "커뮤니티",
+        "사업계획"
+      ],
+      "topics": {
+        "role": [
+          "라이브 운영",
+          "지표 관리",
+          "상품 기획",
+          "유저 커뮤니케이션",
+          "사업 계획"
+        ],
+        "scenario": [
+          "점검 연장",
+          "여론 악화",
+          "업데이트 일정 지연"
+        ],
+        "result": [
+          "매출",
+          "리텐션",
+          "이벤트 참여율",
+          "유저 만족도"
+        ],
+        "en": [
+          "live operations",
+          "KPI analysis",
+          "monetization",
+          "community management"
+        ]
+      },
+      "sources": [
+        "s9"
+      ]
+    },
+    {
+      "id": "ux_designer",
+      "aliases": [
+        "UX 디자이너",
+        "UX Designer",
+        "사용자 경험 디자이너",
+        "UX 리서처",
+        "서비스 디자이너",
+        "UX 기획"
+      ],
+      "skills": [
+        "사용자 리서치",
+        "사용성 테스트",
+        "정보 구조 설계",
+        "와이어프레임",
+        "여정 지도",
+        "프로토타이핑"
+      ],
+      "responsibilities": [
+        "사용자 인터뷰·조사 설계와 수행",
+        "사용 흐름과 정보 구조 설계",
+        "와이어프레임과 프로토타입 제작",
+        "사용성 테스트와 개선안 도출",
+        "리서치 결과 공유와 설득"
+      ],
+      "keywords": [
+        "사용자 리서치",
+        "사용성 테스트",
+        "페르소나",
+        "여정 지도",
+        "정보 구조",
+        "와이어프레임",
+        "프로토타입",
+        "인터뷰",
+        "카드 소팅",
+        "전환율",
+        "인사이트"
+      ],
+      "topics": {
+        "role": [
+          "사용자 리서치",
+          "정보 구조",
+          "사용성 검증",
+          "문제 정의",
+          "인사이트 공유"
+        ],
+        "scenario": [
+          "리서치 시간·예산 부족",
+          "경영진과 리서치 결과 충돌",
+          "상반된 사용자 요구"
+        ],
+        "result": [
+          "과업 성공률",
+          "전환율",
+          "사용성 점수",
+          "이탈률"
+        ],
+        "en": [
+          "user research",
+          "usability testing",
+          "information architecture",
+          "journey mapping"
+        ]
+      },
+      "sources": [
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "id": "ui_designer",
+      "aliases": [
+        "UI 디자이너",
+        "UI Designer",
+        "GUI 디자이너",
+        "인터페이스 디자이너",
+        "앱 디자이너",
+        "웹 디자이너",
+        "비주얼 디자이너(디지털)"
+      ],
+      "skills": [
+        "화면 디자인",
+        "디자인 시스템",
+        "컴포넌트 설계",
+        "타이포그래피·컬러",
+        "인터랙션·모션",
+        "개발 핸드오프"
+      ],
+      "responsibilities": [
+        "서비스 화면 시각 디자인",
+        "컴포넌트·디자인 시스템 구축과 관리",
+        "반응형 레이아웃 설계",
+        "인터랙션 정의",
+        "개발팀 핸드오프와 구현 검수"
+      ],
+      "keywords": [
+        "UI",
+        "디자인 시스템",
+        "컴포넌트",
+        "타이포그래피",
+        "컬러",
+        "그리드",
+        "아이콘",
+        "인터랙션",
+        "모션",
+        "Figma",
+        "핸드오프",
+        "접근성",
+        "다크 모드"
+      ],
+      "topics": {
+        "role": [
+          "화면 디자인",
+          "디자인 시스템",
+          "시각 위계",
+          "인터랙션",
+          "구현 품질"
+        ],
+        "scenario": [
+          "시안과 다른 구현 결과",
+          "배너 추가 요구",
+          "디자인 시스템 예외 화면"
+        ],
+        "result": [
+          "클릭률",
+          "구현 일치도",
+          "컴포넌트 재사용률",
+          "접근성 기준 충족"
+        ],
+        "en": [
+          "visual design",
+          "design system",
+          "interaction design",
+          "design handoff"
+        ]
+      },
+      "sources": [
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "id": "product_designer",
+      "aliases": [
+        "프로덕트 디자이너",
+        "Product Designer",
+        "PD(디자인)",
+        "서비스 디자이너",
+        "UX/UI 디자이너",
+        "제품 디자이너(디지털)"
+      ],
+      "skills": [
+        "문제 정의",
+        "UX·UI 전반",
+        "프로토타이핑",
+        "지표 기반 디자인",
+        "기획 협업",
+        "디자인 시스템"
+      ],
+      "responsibilities": [
+        "사용자 문제 정의와 해결안 설계",
+        "UX 흐름부터 UI까지 전 과정 디자인",
+        "출시 후 지표 확인과 개선",
+        "PM·개발팀과의 우선순위 조율",
+        "디자인 일관성 관리"
+      ],
+      "keywords": [
+        "문제 정의",
+        "가설",
+        "프로토타입",
+        "지표",
+        "전환율",
+        "MVP",
+        "로드맵",
+        "디자인 부채",
+        "A/B 테스트",
+        "사용자 여정",
+        "협업"
+      ],
+      "topics": {
+        "role": [
+          "문제 정의",
+          "가설 검증",
+          "지표 기반 개선",
+          "범위 결정",
+          "제품 일관성"
+        ],
+        "scenario": [
+          "출시 후 기대 이하 지표",
+          "PM이 정한 해결책에 대한 이견",
+          "동시 진행 프로젝트"
+        ],
+        "result": [
+          "전환율",
+          "기능 사용률",
+          "리텐션",
+          "과업 완료 시간"
+        ],
+        "en": [
+          "product thinking",
+          "problem framing",
+          "prototyping",
+          "metrics-driven design"
+        ]
+      },
+      "sources": [
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "graphic_designer",
+      "aliases": [
+        "그래픽 디자이너",
+        "BX 디자이너",
+        "브랜드 디자이너",
+        "Graphic Designer",
+        "Brand Designer",
+        "편집 디자이너",
+        "시각 디자이너",
+        "패키지 디자이너"
+      ],
+      "skills": [
+        "브랜드 아이덴티티",
+        "타이포그래피",
+        "편집·인쇄 디자인",
+        "패키지 디자인",
+        "브랜드 가이드라인",
+        "Adobe 툴"
+      ],
+      "responsibilities": [
+        "브랜드 아이덴티티 개발",
+        "인쇄물·패키지·홍보물 디자인",
+        "브랜드 가이드 제작과 관리",
+        "인쇄 감리와 제작 관리",
+        "마케팅 채널별 시각물 제작"
+      ],
+      "keywords": [
+        "BI",
+        "CI",
+        "로고",
+        "브랜드 가이드",
+        "타이포그래피",
+        "서체",
+        "패키지",
+        "인쇄",
+        "감리",
+        "CMYK",
+        "리브랜딩",
+        "그리드",
+        "레이아웃"
+      ],
+      "topics": {
+        "role": [
+          "브랜드 아이덴티티",
+          "인쇄·제작",
+          "패키지",
+          "브랜드 일관성",
+          "리브랜딩"
+        ],
+        "scenario": [
+          "인쇄 색상 불일치",
+          "가이드에 맞지 않는 홍보물 요청",
+          "시안 전면 반려"
+        ],
+        "result": [
+          "브랜드 인지도",
+          "가이드 준수율",
+          "제작 일정 준수",
+          "판매 반응"
+        ],
+        "en": [
+          "brand identity",
+          "typography",
+          "print production",
+          "packaging design"
+        ]
+      },
+      "sources": [
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "industrial_designer",
+      "aliases": [
+        "제품 디자이너",
+        "산업 디자이너",
+        "Industrial Designer",
+        "ID 디자이너",
+        "프로덕트 디자이너(하드웨어)",
+        "CMF 디자이너"
+      ],
+      "skills": [
+        "스케치·렌더링",
+        "3D 모델링",
+        "목업 제작",
+        "CMF 기획",
+        "인체공학",
+        "양산 공정 이해"
+      ],
+      "responsibilities": [
+        "제품 콘셉트와 형태 디자인",
+        "3D 모델링과 목업 검증",
+        "색상·소재·마감(CMF) 결정",
+        "설계·생산 부서와의 양산 협업",
+        "경쟁 제품·사용 환경 조사"
+      ],
+      "keywords": [
+        "스케치",
+        "렌더링",
+        "3D 모델링",
+        "목업",
+        "CMF",
+        "인체공학",
+        "사출",
+        "금형",
+        "양산",
+        "원가",
+        "사용성",
+        "소재"
+      ],
+      "topics": {
+        "role": [
+          "제품 형태",
+          "CMF",
+          "목업 검증",
+          "양산 협업",
+          "원가 고려"
+        ],
+        "scenario": [
+          "부품 때문에 두께 증가 요구",
+          "목업 평가의 그립감 불만",
+          "양산 직전 소재 변경"
+        ],
+        "result": [
+          "양산 반영률",
+          "원가 목표 달성",
+          "사용성 평가",
+          "디자인 수상·판매"
+        ],
+        "en": [
+          "industrial design",
+          "CMF",
+          "prototyping",
+          "design for manufacturing"
+        ]
+      },
+      "sources": [
+        "s11"
+      ]
+    },
+    {
+      "id": "interior_designer",
+      "aliases": [
+        "인테리어 디자이너",
+        "실내건축 디자이너",
+        "Interior Designer",
+        "공간 디자이너",
+        "공간 디자인",
+        "인테리어 설계",
+        "VMD(공간)"
+      ],
+      "skills": [
+        "공간 기획",
+        "도면 작성(CAD)",
+        "3D 투시도",
+        "마감재·조명 계획",
+        "현장 관리",
+        "견적·예산 관리"
+      ],
+      "responsibilities": [
+        "클라이언트 요구 파악과 공간 콘셉트 수립",
+        "실측과 평면·입면 도면 작성",
+        "마감재·가구·조명 계획",
+        "시공 현장 협의와 품질 관리",
+        "예산·일정 조율"
+      ],
+      "keywords": [
+        "실측",
+        "도면",
+        "CAD",
+        "3D 투시도",
+        "마감재",
+        "조명",
+        "동선",
+        "시공",
+        "현장",
+        "견적",
+        "공사비",
+        "상업 공간",
+        "주거 공간"
+      ],
+      "topics": {
+        "role": [
+          "공간 기획",
+          "도면·설계",
+          "마감재 선정",
+          "현장 관리",
+          "예산 관리"
+        ],
+        "scenario": [
+          "현장 여건으로 도면 시공 불가",
+          "공사 중 잦은 디자인 변경",
+          "공기 단축을 앞세우는 시공 업체"
+        ],
+        "result": [
+          "예산 준수",
+          "공기 준수",
+          "하자 건수",
+          "클라이언트 만족도"
+        ],
+        "en": [
+          "space planning",
+          "construction drawings",
+          "material selection",
+          "site management"
+        ]
+      },
+      "sources": [
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "fashion_designer",
+      "aliases": [
+        "패션 디자이너",
+        "의류 디자이너",
+        "Fashion Designer",
+        "브랜드 디자이너(패션)",
+        "디자인실",
+        "잡화 디자이너",
+        "니트 디자이너"
+      ],
+      "skills": [
+        "트렌드 리서치",
+        "도식화·작업지시서",
+        "원단·부자재 선정",
+        "샘플 피팅",
+        "원가 관리",
+        "디자인 프로그램"
+      ],
+      "responsibilities": [
+        "시즌 콘셉트와 아이템 기획",
+        "도식화·작업지시서 작성",
+        "원단·부자재 소싱",
+        "샘플 제작과 피팅 수정",
+        "MD·생산팀과의 원가·일정 조율"
+      ],
+      "keywords": [
+        "시즌",
+        "트렌드",
+        "컬렉션",
+        "도식화",
+        "작업지시서",
+        "원단",
+        "부자재",
+        "샘플",
+        "피팅",
+        "원가",
+        "복종",
+        "MD",
+        "생산"
+      ],
+      "topics": {
+        "role": [
+          "시즌 기획",
+          "원단·소재",
+          "샘플·피팅",
+          "원가 조정",
+          "판매 분석"
+        ],
+        "scenario": [
+          "샘플 원가 초과",
+          "재생산만 원하는 MD",
+          "생산 일정 지연"
+        ],
+        "result": [
+          "판매율",
+          "원가율",
+          "리오더",
+          "출고 일정 준수"
+        ],
+        "en": [
+          "trend research",
+          "tech pack",
+          "fabric sourcing",
+          "sample fitting"
+        ]
+      },
+      "sources": [
+        "s18"
+      ]
+    },
+    {
+      "id": "content_planner",
+      "aliases": [
+        "콘텐츠 기획자",
+        "콘텐츠 기획",
+        "Content Planner",
+        "콘텐츠 에디터",
+        "콘텐츠 마케터",
+        "채널 운영",
+        "브랜디드 콘텐츠 기획"
+      ],
+      "skills": [
+        "콘텐츠 기획안 작성",
+        "채널 운영",
+        "콘텐츠 캘린더 관리",
+        "성과 분석",
+        "외부 제작사 협업",
+        "저작권 확인"
+      ],
+      "responsibilities": [
+        "타깃·채널별 콘텐츠 기획",
+        "콘텐츠 캘린더 수립과 발행 관리",
+        "외부 제작사·크리에이터 협업",
+        "성과 지표 분석과 개선",
+        "댓글·반응 관리"
+      ],
+      "keywords": [
+        "콘텐츠",
+        "기획안",
+        "채널",
+        "톤앤매너",
+        "캘린더",
+        "도달",
+        "참여",
+        "조회수",
+        "구독자",
+        "시리즈",
+        "크리에이터",
+        "저작권"
+      ],
+      "topics": {
+        "role": [
+          "콘텐츠 기획",
+          "채널 운영",
+          "성과 분석",
+          "협업 관리",
+          "브랜드 톤"
+        ],
+        "scenario": [
+          "사회적 이슈와 겹친 예정 콘텐츠",
+          "댓글 항의 확산",
+          "예산 삭감"
+        ],
+        "result": [
+          "조회수",
+          "참여율",
+          "구독자 증가",
+          "전환"
+        ],
+        "en": [
+          "content strategy",
+          "channel management",
+          "editorial calendar",
+          "content performance"
+        ]
+      },
+      "sources": [
+        "s17"
+      ]
+    },
+    {
+      "id": "editor",
+      "aliases": [
+        "출판 편집자",
+        "편집자",
+        "Editor",
+        "도서 편집자",
+        "기획 편집자",
+        "책 편집",
+        "출판 기획"
+      ],
+      "skills": [
+        "원고 검토·선정",
+        "교정·교열",
+        "저자 커뮤니케이션",
+        "도서 기획",
+        "제작 일정 관리",
+        "출판 시장 분석"
+      ],
+      "responsibilities": [
+        "투고·기획 원고 검토와 출간 판단",
+        "저자 발굴·섭외와 원고 관리",
+        "교정·교열과 원고 구성",
+        "제목·표지·카피 방향 결정",
+        "제작·마케팅 부서와 출간 일정 조율"
+      ],
+      "keywords": [
+        "원고",
+        "투고",
+        "교정",
+        "교열",
+        "저자",
+        "기획",
+        "제목",
+        "표지",
+        "초판",
+        "정가",
+        "번역서",
+        "출간 일정",
+        "판권"
+      ],
+      "topics": {
+        "role": [
+          "원고 선정",
+          "저자 커뮤니케이션",
+          "교정·교열",
+          "도서 기획",
+          "출간 관리"
+        ],
+        "scenario": [
+          "저자의 마감 지연",
+          "수정 제안 거부",
+          "내용과 거리가 있는 홍보 문구 요구"
+        ],
+        "result": [
+          "판매 부수",
+          "중쇄 여부",
+          "출간 일정 준수",
+          "서평·반응"
+        ],
+        "en": [
+          "manuscript acquisition",
+          "copyediting",
+          "author relations",
+          "book production"
+        ]
+      }
+    },
+    {
+      "id": "copywriter",
+      "aliases": [
+        "카피라이터",
+        "Copywriter",
+        "광고 카피라이터",
+        "CW",
+        "크리에이티브",
+        "브랜드 카피라이터"
+      ],
+      "skills": [
+        "카피 작성",
+        "콘셉트 도출",
+        "브리프 분석",
+        "아이디어 발상",
+        "매체별 표현",
+        "PT"
+      ],
+      "responsibilities": [
+        "광고 브리프 분석과 메시지 도출",
+        "헤드라인·보디카피·슬로건 작성",
+        "아트디렉터와 아이디어 발전",
+        "경쟁 PT 준비",
+        "매체·채널별 카피 변형"
+      ],
+      "keywords": [
+        "카피",
+        "헤드라인",
+        "슬로건",
+        "브리프",
+        "콘셉트",
+        "캠페인",
+        "아트디렉터",
+        "PT",
+        "매체",
+        "톤앤매너",
+        "크리에이티브",
+        "광고 심의"
+      ],
+      "topics": {
+        "role": [
+          "메시지 도출",
+          "카피 작성",
+          "캠페인 콘셉트",
+          "클라이언트 설득",
+          "표현 윤리"
+        ],
+        "scenario": [
+          "클라이언트와 카피 선호 불일치",
+          "PT 직전 콘셉트 변경",
+          "카피로 인한 비판 여론"
+        ],
+        "result": [
+          "광고 인지도",
+          "캠페인 반응",
+          "PT 수주",
+          "브랜드 호감도"
+        ],
+        "en": [
+          "copywriting",
+          "creative concept",
+          "campaign messaging",
+          "brand voice"
+        ]
+      },
+      "sources": [
+        "s16"
+      ]
+    },
+    {
+      "id": "journalist",
+      "aliases": [
+        "기자",
+        "취재기자",
+        "Journalist",
+        "Reporter",
+        "방송기자",
+        "신문기자",
+        "온라인 기자",
+        "에디터(언론)"
+      ],
+      "skills": [
+        "취재",
+        "기사 작성",
+        "팩트체크",
+        "기획 기사",
+        "인터뷰",
+        "데이터 검증"
+      ],
+      "responsibilities": [
+        "사건·현장 취재와 기사 작성",
+        "제보 검증과 팩트체크",
+        "기획 기사 발제",
+        "취재원 관리",
+        "보도 윤리 준수"
+      ],
+      "keywords": [
+        "취재",
+        "기사",
+        "팩트체크",
+        "제보",
+        "취재원",
+        "리드",
+        "단독",
+        "보도자료",
+        "기획 기사",
+        "보도 윤리",
+        "오보",
+        "데스크"
+      ],
+      "topics": {
+        "role": [
+          "취재 윤리",
+          "팩트체크",
+          "기사 가치 판단",
+          "기획 발제",
+          "기사 작성"
+        ],
+        "scenario": [
+          "마감 직전 발언 번복",
+          "검증 부족한 타사 단독",
+          "취재 대상의 압박"
+        ],
+        "result": [
+          "기사 반향",
+          "정정 건수",
+          "단독·기획 성과",
+          "독자 반응"
+        ],
+        "en": [
+          "news reporting",
+          "fact-checking",
+          "news judgment",
+          "journalism ethics"
+        ]
+      },
+      "sources": [
+        "s14",
+        "s15"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "text": "인프라 엔지니어가 하는 일 중 겉으로 잘 드러나지 않지만 가장 중요하다고 보는 일은 무엇인가요?",
+      "scope": "family:infra",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발팀과 인프라팀의 책임 경계는 어디쯤이어야 한다고 보시는지 말씀해 주세요.",
+      "scope": "family:infra",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "안정성과 배포 속도가 부딪칠 때 인프라 담당자는 어떤 기준으로 균형을 잡아야 할까요?",
+      "scope": "family:infra",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전산 시스템을 운영하는 사람에게 내부 사용자를 고객처럼 대하는 태도가 왜 필요할까요?",
+      "scope": "family:infra",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "반복되던 수작업을 스스로 자동화해서 팀의 부담을 줄였던 경험이 있으신가요?",
+      "scope": "family:infra",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 담당이 아닌 시스템의 문제였지만 끝까지 책임지고 해결했던 경험이 있으신가요?",
+      "scope": "family:infra",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원인을 끝까지 파고들어 같은 문제가 다시 생기지 않게 막았던 사례를 말씀해 주세요.",
+      "scope": "family:infra",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발자의 요청을 그대로 들어주기 어려웠을 때 어떻게 설득하거나 조율하셨나요?",
+      "scope": "family:infra",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 작업 때문에 운영 환경에 문제가 생겼던 적이 있다면 어떻게 수습하셨나요?",
+      "scope": "family:infra",
+      "category": "실패",
+      "type": "behavioral",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원인을 모르는 장애가 30분째 이어지는데 윗선에서 계속 상황을 묻는다면 어떻게 하시겠어요?",
+      "scope": "family:infra",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "금요일 오후 늦게 급한 운영 반영 요청이 들어오면 어떻게 판단하시겠어요?",
+      "scope": "family:infra",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인수받은 시스템에 문서가 거의 없다면 무엇부터 파악하시겠습니까?",
+      "scope": "family:infra",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전산 장애가 발생했을 때 긴급 복구는 어떤 순서로 진행하시겠어요?",
+      "scope": "family:infra",
+      "category": "실무",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "모니터링 알림이 너무 많아 팀원들이 알림을 무시하기 시작했다면 어떻게 바꾸시겠어요?",
+      "scope": "family:infra",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 구축하거나 운영했던 시스템의 구성도를 그리면서 설명해 주실 수 있을까요?",
+      "scope": "family:infra",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "운영 중인 시스템을 서비스 중단 없이 교체하거나 이전해 본 경험을 말씀해 주세요.",
+      "scope": "family:infra",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장애 회고를 작성하거나 참여해 본 경험이 있다면 그 뒤로 무엇이 바뀌었나요?",
+      "scope": "family:infra",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라우드 전환 흐름이 인프라 엔지니어의 역할을 어떻게 바꾸고 있다고 보세요?",
+      "scope": "family:infra",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "AI 도구가 운영 자동화에 들어오면서 인프라 업무에서 달라질 점은 무엇이라고 보시나요?",
+      "scope": "family:infra",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "최근 크게 알려진 대형 서비스 장애 하나를 골라 원인과 교훈을 본인 시각으로 정리해 주세요.",
+      "scope": "family:infra",
+      "category": "사례",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "운영 권한으로 고객 데이터를 볼 수 있는 상황에서 스스로 지키는 원칙이 있으신가요?",
+      "scope": "family:infra",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장애 원인이 우리 팀 변경 작업으로 보이지만 확실하지 않을 때 보고는 어떻게 하시겠어요?",
+      "scope": "family:infra",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인프라 분야에서 아직 부족하다고 느끼는 영역과 그걸 채우는 방법을 말씀해 주세요.",
+      "scope": "family:infra",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인프라, 개발, 보안 가운데 지금 가장 자신 있는 분야와 그 이유를 말씀해 주세요.",
+      "scope": "family:infra",
+      "category": "강점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인의 운영 개선으로 가용성이나 비용이 실제로 좋아진 사례를 숫자로 말씀해 주세요.",
+      "scope": "family:infra",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개선 작업의 효과가 기대보다 작았던 적이 있다면 원인을 어떻게 분석하셨나요?",
+      "scope": "family:infra",
+      "category": "실패",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "운영 전담 조직을 따로 두는 것과 개발팀이 운영까지 책임지는 것 중 어느 쪽이 나은지 토론해 보겠습니다.",
+      "scope": "family:infra",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 서비스의 초기 인프라 구성안을 비용, 가용성, 운영 부담 기준으로 5분간 발표해 주세요.",
+      "scope": "family:infra",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "CI/CD 파이프라인을 설계할 때 어떤 단계를 두고 각 단계에서 무엇을 검증하시나요?",
+      "scope": "role:devops",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "블루그린 배포와 카나리 배포는 각각 어떤 상황에서 선택하시겠어요?",
+      "scope": "role:devops",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컨테이너 이미지 크기와 빌드 시간을 줄이려고 써 본 방법을 말씀해 주세요.",
+      "scope": "role:devops",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "IaC로 관리하던 인프라가 실제 리소스와 어긋나 있다면 어떻게 정리하시겠어요?",
+      "scope": "role:devops",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "쿠버네티스에서 파드가 계속 재시작된다면 무엇부터 확인하시겠어요?",
+      "scope": "role:devops",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "파이프라인에서 비밀번호나 토큰 같은 민감 정보를 어떻게 관리하시나요?",
+      "scope": "role:devops",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인 프로젝트나 팀 프로젝트에서 Git 브랜치 전략을 어떻게 가져가셨는지 말씀해 주세요.",
+      "scope": "role:devops",
+      "category": "도구",
+      "type": "technical",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "배포 직후 에러율이 갑자기 올라갔다면 롤백 여부를 어떻게 판단하시겠어요?",
+      "scope": "role:devops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "팀마다 배포 방식이 제각각이라 표준화를 맡게 됐다면 어떻게 시작하시겠어요?",
+      "scope": "role:devops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "가끔씩만 실패하는 불안정한 테스트 때문에 배포가 자주 막힌다면 어떻게 하시겠어요?",
+      "scope": "role:devops",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "배포 한 번에 40분이 걸린다면 어디서 시간을 줄일 수 있을지 어떤 순서로 분석하시겠어요?",
+      "scope": "role:devops",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "배포 빈도와 변경 실패율 같은 지표로 팀의 배포 역량을 어떻게 진단하시겠어요?",
+      "scope": "role:devops",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 구축한 배포 파이프라인 중 가장 공들인 것을 처음부터 설명해 주세요.",
+      "scope": "role:devops",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수동 배포를 자동화로 바꾸면서 가장 저항이 컸던 부분은 무엇이었나요?",
+      "scope": "role:devops",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "DevOps를 도구나 직함이 아니라 문화라고 말하는 이유를 어떻게 이해하고 계세요?",
+      "scope": "role:devops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발이나 운영 한쪽이 아니라 DevOps를 택하신 이유가 궁금합니다.",
+      "scope": "role:devops",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자동화를 늘릴수록 오히려 장애 원인을 파악하기 어려워진다는 지적에 어떻게 답하시겠어요?",
+      "scope": "role:devops",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "SLI와 SLO를 처음 정한다면 어떤 사용자 경험을 기준으로 잡으시겠어요?",
+      "scope": "role:sre",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "에러 버짓을 이미 다 쓴 상태에서 신규 기능 배포 요청이 오면 어떻게 다루시겠어요?",
+      "scope": "role:sre",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "좋은 알림과 나쁜 알림을 구분하는 본인만의 기준을 말씀해 주세요.",
+      "scope": "role:sre",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "응답 지연을 평균이 아니라 p95, p99 같은 백분위로 봐야 하는 이유를 설명해 주세요.",
+      "scope": "role:sre",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연쇄 장애를 막으려면 타임아웃과 재시도 정책을 어떻게 설정해야 할까요?",
+      "scope": "role:sre",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 서비스를 거치는 요청 하나가 느려졌을 때 원인을 추적하려면 어떤 관측 수단이 필요할까요?",
+      "scope": "role:sre",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장애 대응 중 여러 사람이 각자 조치를 하면서 혼선이 생긴다면 어떻게 정리하시겠어요?",
+      "scope": "role:sre",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 원인의 장애가 세 번째 반복됐는데 개발팀은 기능 개발이 먼저라고 한다면 어떻게 하시겠어요?",
+      "scope": "role:sre",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온콜 담당자가 번아웃을 호소할 만큼 호출이 잦다면 무엇부터 바꾸시겠어요?",
+      "scope": "role:sre",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "월 가용성 목표가 99.9%라면 한 달 허용 다운타임은 대략 얼마이고 운영에 어떤 의미인가요?",
+      "scope": "role:sre",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "트래픽이 매달 20%씩 늘고 있다면 반년 뒤를 대비한 용량 계획을 어떻게 세우시겠어요?",
+      "scope": "role:sre",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 지휘하거나 참여한 장애 대응 중 가장 기억에 남는 건을 처음부터 끝까지 말씀해 주세요.",
+      "scope": "role:sre",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반복 운영 업무 중 무엇은 자동화하고 무엇은 남겨 두셨는지, 그 기준을 경험으로 말씀해 주세요.",
+      "scope": "role:sre",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "SRE와 전통적인 운영팀은 무엇이 다르다고 생각하시나요?",
+      "scope": "role:sre",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "비난 없는 회고 문화를 실제로 정착시키려 할 때 어려운 점은 무엇이라고 보세요?",
+      "scope": "role:sre",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기능을 만드는 일보다 서비스를 안정적으로 지키는 일에 끌리신 계기가 있나요?",
+      "scope": "role:sre",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가용성 100%를 목표로 하면 안 된다는 주장을 경영진에게 어떻게 납득시키시겠어요?",
+      "scope": "role:sre",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "서비스 하나를 클라우드에 올릴 때 VPC와 서브넷을 어떻게 나누시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "오토스케일링 기준을 CPU 사용률 하나로만 잡으면 어떤 문제가 생길 수 있을까요?",
+      "scope": "role:cloud_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라우드 권한을 최소 권한 원칙으로 설계할 때 실제로 어떻게 접근하시나요?",
+      "scope": "role:cloud_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "멀티 AZ 구성과 멀티 리전 구성 중 무엇을 택할지 어떤 기준으로 정하시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "관리형 서비스를 쓸지 직접 구축할지 어떤 기준으로 판단하시나요?",
+      "scope": "role:cloud_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온프레미스 시스템을 클라우드로 옮길 때 어떤 이전 전략들을 비교해 보시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "월말 클라우드 청구서가 예상보다 두 배 나왔다면 무엇부터 확인하시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "액세스 키가 공개 저장소에 올라간 걸 발견했다면 어떤 순서로 대응하시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사가 비용은 줄이면서 가용성은 높여 달라고 한다면 어떻게 제안하시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용량이 적은 새벽 시간대 비용을 줄이려면 어떤 방법들을 비교해 보시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "약정 할인을 도입할지 판단하려면 어떤 사용량 데이터를 보시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라우드 환경을 처음부터 설계해 본 경험이 있다면 구성과 선택 이유를 말씀해 주세요.",
+      "scope": "role:cloud_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라우드 리소스 설정 실수로 문제가 생겼던 경험과 그 뒤 바꾼 점을 말씀해 주세요.",
+      "scope": "role:cloud_engineer",
+      "category": "실패",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자격증 공부 말고 실제로 손으로 클라우드 환경을 구성해 본 실습이 있다면 말씀해 주세요.",
+      "scope": "role:cloud_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라우드 엔지니어에게 기술 못지않게 비용 감각이 중요하다는 말에 동의하시나요?",
+      "scope": "role:cloud_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 인프라 분야 중 클라우드를 진로로 고르신 이유를 말씀해 주세요.",
+      "scope": "role:cloud_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라우드가 결국 더 비싸니 온프레미스로 돌아가자는 의견이 나오면 어떻게 답하시겠어요?",
+      "scope": "role:cloud_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리눅스 서버의 CPU 사용률은 낮은데 응답이 느리다면 어떤 지표를 차례로 보시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디스크 사용량이 갑자기 100%에 가까워졌다면 원인을 어떻게 찾고 정리하시나요?",
+      "scope": "role:system_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서버 이중화를 설계할 때 액티브-액티브와 액티브-스탠바이를 어떻게 고르시나요?",
+      "scope": "role:system_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "운영 서버에 OS 보안 패치를 적용할 때 절차를 어떻게 가져가시나요?",
+      "scope": "role:system_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "백업 정책을 세울 때 보관 주기와 복구 시험을 어떻게 설계하시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서버, 스토리지, 네트워크 가운데 가장 잘 이해하는 부분을 구조와 함께 설명해 주세요.",
+      "scope": "role:system_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "사내 정보화 사업을 진행할 때 일정과 예산 위험을 어떻게 관리하시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "사내 그룹웨어가 업무 시간 중에 멈췄다면 복구와 공지를 어떻게 병행하시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "유지보수 계약이 끝난 노후 서버를 당분간 계속 써야 한다면 위험을 어떻게 관리하시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협력업체 엔지니어가 작업 중 설정을 잘못 바꿔 장애가 났다면 어떻게 대응하시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서버 자원 사용 추이를 보고 내년 증설 예산을 산정한다면 근거를 어떻게 만드시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "매주 같은 요일 새벽마다 서버가 느려진다면 원인을 어떻게 좁혀 가시겠어요?",
+      "scope": "role:system_engineer",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서버를 직접 설치하고 설정해서 서비스를 올려 본 경험을 말씀해 주세요.",
+      "scope": "role:system_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "장애를 복구하면서 기존 운영 절차를 스스로 고쳐 본 경험이 있으신가요?",
+      "scope": "role:system_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시스템 엔지니어가 기관의 정보화 기획이나 사업 관리에서 맡는 역할은 어디까지라고 보시나요?",
+      "scope": "role:system_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "눈에 잘 띄지 않는 시스템 운영 업무에 지원하신 이유가 궁금합니다.",
+      "scope": "role:system_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가상화와 클라우드가 늘면서 시스템 엔지니어 역할이 줄어든다는 말을 어떻게 보세요?",
+      "scope": "role:system_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용자가 특정 웹사이트에 접속이 안 된다고 하면 계층별로 어떤 순서로 점검하시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "스위치 이중화 구성에서 루프가 생기지 않도록 어떤 장치를 두시나요?",
+      "scope": "role:network_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정적 라우팅과 동적 라우팅은 각각 어떤 환경에 맞다고 보세요?",
+      "scope": "role:network_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "VLAN으로 망을 나눌 때 어떤 기준으로 설계하시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방화벽 정책이 수천 개로 늘어났다면 정리와 최적화를 어떻게 하시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본사와 지사를 VPN으로 연결할 때 고려할 점을 말씀해 주세요.",
+      "scope": "role:network_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "네트워크 변경 작업 전에 영향 범위를 어떻게 확인하고 승인을 받으시나요?",
+      "scope": "role:network_engineer",
+      "category": "실무",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "야간에 장비를 교체했는데 아침에 일부 구간만 통신이 안 된다면 어떻게 하시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "특정 시간대마다 회선 사용률이 가득 찬다는 보고가 들어오면 어떻게 대응하시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안팀이 요청한 망 분리가 업무 효율을 크게 떨어뜨린다면 어떻게 조율하시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "패킷 캡처에서 재전송이 많이 보인다면 어떤 원인들을 의심해 보시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새 사옥의 층별 인원을 보고 스위치 포트와 회선 용량을 어떻게 산정하시겠어요?",
+      "scope": "role:network_engineer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실습 장비나 시뮬레이터로 직접 네트워크를 구성해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:network_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "원인을 찾는 데 오래 걸렸던 네트워크 장애와 결국 밝혀진 원인을 말씀해 주세요.",
+      "scope": "role:network_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "네트워크 엔지니어에게 장비 설정 능력 말고 중요한 역량은 무엇이라고 보세요?",
+      "scope": "role:network_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "네트워크 분야에 흥미를 갖게 된 계기가 무엇인가요?",
+      "scope": "role:network_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "네트워크 자동화가 확산되면 장비 설정 위주의 엔지니어는 경쟁력이 떨어지지 않을까요?",
+      "scope": "role:network_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실행 계획을 보고 느린 쿼리를 튜닝했던 방식을 구체적으로 말씀해 주세요.",
+      "scope": "role:dba",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인덱스를 많이 만들수록 생기는 부작용은 무엇이라고 보세요?",
+      "scope": "role:dba",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "복제 지연이 커졌을 때 원인과 대응을 어떻게 보시겠어요?",
+      "scope": "role:dba",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "트랜잭션 격리 수준을 조정해야 하는 상황을 예로 들어 설명해 주세요.",
+      "scope": "role:dba",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "백업을 이용해 특정 시점으로 복구하는 절차를 설명해 주세요.",
+      "scope": "role:dba",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대용량 테이블에 컬럼을 추가해야 할 때 서비스 영향을 어떻게 줄이시겠어요?",
+      "scope": "role:dba",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보가 담긴 테이블의 접근 권한과 감사 로그는 어떻게 관리하시겠어요?",
+      "scope": "role:dba",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발자가 실수로 운영 테이블 데이터를 지웠다고 연락해 오면 무엇부터 하시겠어요?",
+      "scope": "role:dba",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새벽에 DB 락 대기가 급증하면서 서비스가 멈췄다면 어떻게 대응하시겠어요?",
+      "scope": "role:dba",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "운영 DB에 직접 쿼리할 권한을 달라는 요청이 계속 들어온다면 어떻게 대응하시겠어요?",
+      "scope": "role:dba",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "데이터 증가 추이를 보고 1년 뒤 저장 공간과 성능 한계를 어떻게 예측하시겠어요?",
+      "scope": "role:dba",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "특정 시간대에만 DB 응답이 느려진다면 어떤 데이터를 모아 원인을 분석하시겠어요?",
+      "scope": "role:dba",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "DB 버전 업그레이드나 이관 작업을 해 본 경험과 가장 신경 쓴 부분을 말씀해 주세요.",
+      "scope": "role:dba",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "SQL을 공부하며 직접 테이블 구조를 설계해 본 데이터베이스가 있다면 소개해 주세요.",
+      "scope": "role:dba",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "DBA로서 성능, 안정성, 보안 가운데 무엇을 가장 먼저 지켜야 한다고 보세요?",
+      "scope": "role:dba",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "데이터베이스 관리라는 전문 분야를 진로로 정한 이유를 말씀해 주세요.",
+      "scope": "role:dba",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "관리형 DB 서비스가 보편화되면 DBA가 필요 없다는 주장에 어떻게 답하시겠어요?",
+      "scope": "role:dba",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "관리적, 물리적, 기술적 보안 가운데 조직에서 가장 소홀해지기 쉬운 영역은 어디라고 보세요?",
+      "scope": "family:security",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "보안 담당자가 현업에서 일을 막는 부서로만 보이지 않으려면 어떻게 해야 할까요?",
+      "scope": "family:security",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안 업무에서 가장 중요하다고 생각하는 것이 무엇인지 이유와 함께 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "가치관",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "보안 사고는 결국 사람에게서 시작된다는 말을 어떻게 생각하세요?",
+      "scope": "family:security",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로그나 데이터에서 다른 사람이 놓친 이상 징후를 찾아냈던 경험이 있으신가요?",
+      "scope": "family:security",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안 정책을 따르지 않으려는 동료나 부서를 설득해 본 경험을 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새로운 공격 기법이나 취약점을 스스로 찾아 공부하고 실습해 본 경험을 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "보안 이슈를 비전문가에게 쉽게 풀어 설명해야 했던 경험이 있다면 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "확인되지 않은 위협 정보만으로 판단을 내려야 했던 경험이 있다면 어떻게 결정하셨나요?",
+      "scope": "family:security",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "침해사고가 확인됐을 때 피해 확산을 막기 위해 가장 먼저 무엇을 하시겠어요?",
+      "scope": "family:security",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "사고 조사에 필요한 증거 보존과 빠른 서비스 복구가 부딪치면 어떻게 판단하시겠어요?",
+      "scope": "family:security",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "임원이 급하다며 보안 정책 예외를 바로 승인해 달라고 하면 어떻게 대응하시겠어요?",
+      "scope": "family:security",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새벽에 랜섬웨어 감염 의심 보고가 들어오면 누구에게 어떤 순서로 알리시겠어요?",
+      "scope": "family:security",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대규모 취약점이 공개돼 전사 점검이 필요한데 자산 목록이 불완전하다면 어떻게 하시겠어요?",
+      "scope": "family:security",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "취약점 진단이나 모의해킹을 직접 수행해 본 경험을 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "CTF나 보안 교육 과정에서 팀으로 문제를 풀었던 경험을 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안 솔루션을 도입하거나 정책을 새로 만든 경험이 있다면 과정을 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요즘 가장 경계해야 할 공격 유형 하나를 골라 그 이유를 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라우드와 원격 근무가 늘면서 경계 중심 보안의 한계가 어떻게 드러났다고 보세요?",
+      "scope": "family:security",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "AI가 공격하는 쪽과 방어하는 쪽 모두에 쓰이는 상황을 어떻게 보고 계신가요?",
+      "scope": "family:security",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "업무 중 알게 된 취약점 정보를 다루면서 반드시 지켜야 할 원칙은 무엇이라고 보세요?",
+      "scope": "family:security",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사고 원인이 동료의 실수로 드러났는데 조용히 넘어가자는 제안을 받으면 어떻게 하시겠어요?",
+      "scope": "family:security",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안을 공부하면서 가장 약한 기술 영역은 어디이고 어떻게 보완하고 계신가요?",
+      "scope": "family:security",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안 업무 특성상 긴장이 계속될 때 본인만의 스트레스 관리 방법이 있으신가요?",
+      "scope": "family:security",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 한 보안 활동의 효과를 숫자나 지표로 보여 줄 수 있다면 말씀해 주세요.",
+      "scope": "family:security",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사고가 일어나지 않은 것을 성과로 인정받으려면 어떻게 설명하시겠어요?",
+      "scope": "family:security",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "업무 편의를 위해 보안 통제를 일부 완화해야 한다는 주장으로 찬반 토론을 해 보겠습니다.",
+      "scope": "family:security",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "중소 규모 조직의 첫 1년 보안 로드맵을 짜서 발표해 주세요.",
+      "scope": "family:security",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "웹 서비스의 SQL 인젝션을 막기 위해 개발 단계에서 무엇을 요구하시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "TCP 3-way handshake가 연결의 신뢰성을 어떻게 확보하는지 설명해 주세요.",
+      "scope": "role:security_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "방화벽, IPS, WAF가 각각 어느 구간에서 무엇을 막는지 설명해 주세요.",
+      "scope": "role:security_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서버 취약점 점검 결과가 나오면 조치 우선순위를 어떻게 정하시나요?",
+      "scope": "role:security_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "제로 트러스트 원칙을 사내 접근 통제에 적용한다면 무엇부터 바꾸시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인정보 암호화 대상과 키 관리 방식을 설계할 때 무엇을 고려하시나요?",
+      "scope": "role:security_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발 파이프라인에 보안 점검을 넣을 때 개발 속도를 떨어뜨리지 않는 방법은 무엇일까요?",
+      "scope": "role:security_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시 직전 서비스에서 치명적인 취약점을 찾았는데 일정이 촉박하다면 어떻게 하시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이나 여러 사람 앞에서 보안 솔루션을 설명해야 한다면 어떻게 준비하시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "오탐이 너무 많다며 운영팀이 보안 장비 알림을 꺼 달라고 요구하면 어떻게 대응하시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "모의해킹 결과 보고서를 받은 뒤 보호 대책을 세우려면 어떻게 분석하시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "보안 솔루션 두 개 중 하나를 골라야 한다면 어떤 기준으로 비교하시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "의사결정",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안 장비나 솔루션을 직접 구축하거나 운영해 본 경험을 말씀해 주세요.",
+      "scope": "role:security_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 만든 코드나 시스템의 보안 약점을 스스로 찾아 고친 경험이 있으신가요?",
+      "scope": "role:security_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안 엔지니어로 입사하면 주로 어떤 업무를 맡게 될 거라고 예상하세요?",
+      "scope": "role:security_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "개발자로 성장하는 길 대신 보안 엔지니어를 선택하신 이유가 궁금합니다.",
+      "scope": "role:security_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "투자해도 사고는 결국 난다는 경영진에게 보안 예산이 왜 필요한지 설득해 보시겠어요?",
+      "scope": "role:security_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "웹 서버 접근 로그에서 공격 시도를 알아볼 수 있는 대표적인 흔적을 말씀해 주세요.",
+      "scope": "role:security_analyst",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "탐지 이벤트가 정탐인지 오탐인지 판단할 때 어떤 순서로 확인하시나요?",
+      "scope": "role:security_analyst",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "SIEM 상관분석 룰을 새로 만든다면 어떤 시나리오부터 넣으시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "악성코드 감염이 의심되는 PC에서는 어떤 정보를 먼저 수집하시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "내부 PC가 외부 특정 IP와 주기적으로 통신한다면 무엇을 의심하고 어떻게 확인하시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안 로그를 분석할 때 장비 간 시간 동기화가 왜 중요한지 설명해 주세요.",
+      "scope": "role:security_analyst",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "야간 근무 중 탐지 이벤트가 한꺼번에 쏟아지면 무엇부터 보시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사 담당자가 오탐 아니냐며 조치를 거부한다면 어떻게 설득하시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "교대 근무 환경에서 컨디션과 집중력을 어떻게 유지하실 계획인가요?",
+      "scope": "role:security_analyst",
+      "category": "조직적합성",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "한 계정에서 짧은 시간에 로그인 실패가 수백 건 발생했다면 어떻게 분석하고 보고하시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "침해사고 타임라인을 재구성할 때 어떤 로그들을 어떻게 엮어 보시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "직접 다뤄 본 보안 장비나 분석 도구가 있다면 어떤 용도로 쓰셨는지 말씀해 주세요.",
+      "scope": "role:security_analyst",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "로그 분석이나 침해사고 분석 실습에서 결론에 이르기까지의 과정을 말씀해 주세요.",
+      "scope": "role:security_analyst",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "침해사고 보고서를 쓸 때 경영진용과 기술팀용은 어떻게 다르게 작성하시겠어요?",
+      "scope": "role:security_analyst",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보안관제 요원의 하루는 어떻게 흘러간다고 알고 계신가요?",
+      "scope": "role:security_analyst",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "보안 분야 중에서도 관제와 침해대응 업무를 지원하신 이유가 궁금합니다.",
+      "scope": "role:security_analyst",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "관제는 반복 업무라 성장하기 어렵다는 말이 있는데 어떻게 생각하세요?",
+      "scope": "role:security_analyst",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임을 만드는 개발이 다른 소프트웨어 개발과 어떤 점에서 다르다고 느끼셨나요?",
+      "scope": "family:game",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임 프로그래머에게도 재미에 대한 감각이 필요하다고 보시나요?",
+      "scope": "family:game",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "라이브 서비스 중인 게임을 개발할 때 가장 어려운 점은 무엇이라고 보세요?",
+      "scope": "family:game",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획, 아트, 프로그래밍이 함께 일할 때 프로그래머가 맡아야 할 역할은 무엇이라고 보세요?",
+      "scope": "family:game",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "팀 프로젝트에서 기획 의도와 구현 가능성이 부딪쳤을 때 어떻게 조율하셨나요?",
+      "scope": "family:game",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마감 직전에 치명적인 버그를 발견하고 해결했던 경험을 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "처음 보는 엔진 기능이나 기술을 짧은 기간에 익혀 적용했던 경험이 있으신가요?",
+      "scope": "family:game",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 사람이 짠 코드를 이어받아 고치면서 어려웠던 점과 해결 방법을 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "성능 문제를 먼저 발견해 팀에 알리고 개선을 이끌었던 경험이 있으신가요?",
+      "scope": "family:game",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "업데이트 당일 특정 기기에서만 크래시가 난다는 제보가 몰리면 어떻게 대응하시겠어요?",
+      "scope": "family:game",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획자가 일정 막바지에 큰 사양 변경을 요청한다면 어떻게 하시겠어요?",
+      "scope": "family:game",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "코드 리뷰에서 선배의 구현 방식에 문제가 보인다면 어떻게 말씀하시겠어요?",
+      "scope": "family:game",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "핵이나 치트 사용자가 급증했다는 보고가 들어오면 프로그래머로서 무엇을 하시겠어요?",
+      "scope": "family:game",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "내부 테스트에서 게임이 재미없다는 평가가 나오면 개발자로서 어떻게 기여하시겠어요?",
+      "scope": "family:game",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임 시스템 하나를 처음부터 끝까지 직접 개발해 본 경험을 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "프로젝트 일정이 밀려 기능을 덜어 내야 했던 경험이 있다면 어떤 기준으로 정하셨나요?",
+      "scope": "family:game",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임 잼이나 공모전처럼 짧은 기간에 결과물을 냈던 경험이 있다면 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "최근 게임 시장에서 눈여겨보는 흐름 하나와 그것이 개발 방식에 주는 영향을 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PC, 모바일, 콘솔 동시 출시가 늘어나는 흐름을 개발자 입장에서 어떻게 보세요?",
+      "scope": "family:game",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생성형 AI가 게임 개발 과정에 들어오면 프로그래머 업무는 어떻게 달라질까요?",
+      "scope": "family:game",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "확률형 아이템 로직을 구현하다 표기 확률과 실제가 다를 수 있다는 걸 알게 되면 어떻게 하시겠어요?",
+      "scope": "family:game",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "프로젝트에 외부 에셋이나 오픈소스를 쓸 때 라이선스를 어떻게 확인하시나요?",
+      "scope": "family:game",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "앞으로 어떤 게임 개발자로 성장하고 싶은지 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발하면서 가장 크게 실패했던 경험과 거기서 얻은 교훈을 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 구현한 기능이 성능이나 플레이 지표를 실제로 얼마나 개선했는지 말씀해 주세요.",
+      "scope": "family:game",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공개한 결과물에 대한 플레이어 반응은 어땠고 무엇을 반영하셨나요?",
+      "scope": "family:game",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 프로젝트에 자체 엔진과 상용 엔진 중 어느 쪽이 맞는지 토론해 보겠습니다.",
+      "scope": "family:game",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "즐겨 하는 게임 하나의 기술적 개선 과제를 골라 해결 방안을 5분간 발표해 주세요.",
+      "scope": "family:game",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "렌더링 파이프라인이 어떤 단계로 흘러가는지 아는 만큼 설명해 주세요.",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "드로우콜이 많아 프레임이 떨어질 때 줄이는 방법을 말씀해 주세요.",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "오브젝트 풀링을 쓰는 이유와 쓸 때 주의할 점을 설명해 주세요.",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가비지 컬렉션 때문에 순간적으로 프레임이 튄다면 어떻게 대응하시겠어요?",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임에서 멀티스레드를 쓸 때 주의해야 할 점을 경험과 함께 말씀해 주세요.",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "매 프레임 갱신과 고정 주기 물리 갱신을 구분해서 써야 하는 이유는 무엇인가요?",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "다양한 해상도와 화면 비율에 UI를 대응시킨 방법을 말씀해 주세요.",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "저사양 기기에서만 로딩이 유독 길다는 제보가 오면 어떻게 원인을 찾으시겠어요?",
+      "scope": "role:game_client",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아트팀 리소스가 너무 무거워 성능 목표를 넘긴다면 어떻게 협의하시겠어요?",
+      "scope": "role:game_client",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "엔진 버전을 올린 뒤 기존 기능 일부가 깨졌다면 어떻게 진행하시겠어요?",
+      "scope": "role:game_client",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "프로파일러 결과에서 CPU와 GPU 중 어디가 병목인지 어떻게 판단하시나요?",
+      "scope": "role:game_client",
+      "category": "기술",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "앱 용량을 30% 줄여야 한다면 어떤 순서로 줄일 대상을 분석하시겠어요?",
+      "scope": "role:game_client",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "엔진 기능을 직접 수정하거나 확장해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:game_client",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "직접 구현했던 기능 중 지금 다시 만든다면 구조를 바꾸고 싶은 것이 있나요?",
+      "scope": "role:game_client",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라이언트 프로그래머가 플레이어 경험에 가장 직접 영향을 주는 부분은 어디라고 보세요?",
+      "scope": "role:game_client",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 개발 분야 중 게임 클라이언트를 선택하신 이유가 궁금합니다.",
+      "scope": "role:game_client",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "엔진이 대부분 해 주는데 클라이언트 프로그래머에게 운영체제나 자료구조 기본기가 왜 필요할까요?",
+      "scope": "role:game_client",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "동시 접속자가 몰리는 게임 서버에서 세션과 상태를 어떻게 관리하시겠어요?",
+      "scope": "role:game_server",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "IOCP 같은 비동기 I/O 기반으로 서버를 만들며 가장 까다로웠던 점을 말씀해 주세요.",
+      "scope": "role:game_server",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "아이템 복사 버그를 막으려면 거래 처리를 어떻게 설계하시겠어요?",
+      "scope": "role:game_server",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실시간 대전에서 네트워크 지연을 보정하는 방법으로 어떤 것들을 알고 계신가요?",
+      "scope": "role:game_server",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라이언트를 믿지 않고 서버가 판정하는 구조가 왜 필요한지 설명해 주세요.",
+      "scope": "role:game_server",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자주 바뀌는 게임 데이터와 거의 안 바뀌는 데이터를 어떻게 나눠 저장하시겠어요?",
+      "scope": "role:game_server",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 이벤트 오픈 직후 접속이 폭주해 로그인 대기가 길어지면 어떻게 대응하시겠어요?",
+      "scope": "role:game_server",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "점검 후 일부 유저의 재화가 사라졌다는 문의가 들어오면 무엇부터 확인하시겠어요?",
+      "scope": "role:game_server",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "운영팀이 긴급 보상 지급 기능을 오늘 안에 만들어 달라고 하면 어떻게 하시겠어요?",
+      "scope": "role:game_server",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서버 한 대당 수용 인원을 추정해서 출시 시점 필요한 서버 대수를 산정해 보시겠어요?",
+      "scope": "role:game_server",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "부하 테스트 결과를 보고 병목 지점을 어떻게 찾아내시겠어요?",
+      "scope": "role:game_server",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "프로젝트에서 그 기술 스택을 고른 이유를 다른 선택지와 비교해 말씀해 주세요.",
+      "scope": "role:game_server",
+      "category": "기술",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 사람이 동시에 접속하는 게임 서버를 직접 만들어 본 경험이 있으신가요?",
+      "scope": "role:game_server",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "실시간 게임 서버에서 특히 까다로운 요구사항은 무엇이라고 보세요?",
+      "scope": "role:game_server",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "눈에 보이는 화면 대신 서버 쪽을 택하신 이유가 궁금합니다.",
+      "scope": "role:game_server",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발하면서 지켜 온 본인만의 원칙이 오히려 문제를 만든 적은 없었나요?",
+      "scope": "role:game_server",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "게임 기획이나 사업 직군에서 일하는 사람에게 가장 필요한 역량은 무엇이라고 보세요?",
+      "scope": "family:game_business",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "라이브 게임에서 개발팀과 사업팀의 목표가 어긋날 때 어떤 역할을 해야 한다고 보세요?",
+      "scope": "family:game_business",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임의 재미와 수익성이 충돌한다면 무엇을 어떻게 지켜야 한다고 보세요?",
+      "scope": "family:game_business",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "플레이어 커뮤니티의 목소리를 어디까지 반영해야 한다고 보세요?",
+      "scope": "family:game_business",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "데이터를 근거로 팀의 결정을 바꿨던 경험이 있다면 말씀해 주세요.",
+      "scope": "family:game_business",
+      "category": "데이터",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "프로그래머나 아티스트와 의견이 달랐을 때 어떻게 합의에 이르셨나요?",
+      "scope": "family:game_business",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이용자 불만이 크게 번졌던 상황에서 본인이 맡았던 역할을 말씀해 주세요.",
+      "scope": "family:game_business",
+      "category": "고객",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "촉박한 일정 속에서 우선순위를 정해 결과물을 냈던 경험을 말씀해 주세요.",
+      "scope": "family:game_business",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 부서가 얽힌 일을 앞장서 정리하고 이끌었던 경험이 있으신가요?",
+      "scope": "family:game_business",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "업데이트 직후 커뮤니티 여론이 급격히 나빠졌다면 첫 24시간 동안 무엇을 하시겠어요?",
+      "scope": "family:game_business",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁작이 같은 주에 대형 업데이트를 발표했다면 어떻게 대응하시겠어요?",
+      "scope": "family:game_business",
+      "category": "경쟁",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "과금 이용자와 무과금 이용자의 요구가 정반대라면 어떻게 조율하시겠어요?",
+      "scope": "family:game_business",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 게임의 핵심 지표가 한 주 만에 뚜렷한 이유 없이 떨어졌다면 무엇부터 보시겠어요?",
+      "scope": "family:game_business",
+      "category": "데이터",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "윗선은 매출 목표를 올리라는데 이용자 이탈이 우려된다면 어떻게 하시겠어요?",
+      "scope": "family:game_business",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임을 깊게 플레이하고 분석 문서를 써 본 경험이 있다면 어떤 관점으로 쓰셨나요?",
+      "scope": "family:game_business",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "라이브 서비스나 게임 커뮤니티 운영에 참여해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "family:game_business",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임 밖에서라도 사람들의 참여를 이끌어 낸 기획을 해 본 경험이 있으신가요?",
+      "scope": "family:game_business",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "최근 국내 게임 시장에서 가장 큰 변화는 무엇이라고 보시나요?",
+      "scope": "family:game_business",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "모바일, PC, 콘솔 가운데 앞으로 성장 여지가 큰 플랫폼은 어디라고 보시나요?",
+      "scope": "family:game_business",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "확률형 아이템 중심 수익 모델에 대한 비판을 업계가 어떻게 풀어 가야 한다고 보세요?",
+      "scope": "family:game_business",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이용자에게 불리한 변경을 공지 없이 조용히 반영하자는 의견이 나오면 어떻게 하시겠어요?",
+      "scope": "family:game_business",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이벤트 오류로 일부 이용자가 과도한 이득을 봤다면 회수와 보상 사이에서 어떤 원칙을 세우시겠어요?",
+      "scope": "family:game_business",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "평생 한 번은 꼭 만들어 보고 싶은 게임이 있다면 무엇이고 왜 그런가요?",
+      "scope": "family:game_business",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s9",
+      "confidence": "medium"
+    },
+    {
+      "text": "맡게 될 업무 가운데 이미 해 본 일과 아직 해 보지 않은 일을 솔직하게 나눠 말씀해 주세요.",
+      "scope": "family:game_business",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s9",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 참여한 업데이트나 이벤트의 성과를 어떤 지표로 판단하셨나요?",
+      "scope": "family:game_business",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기대만큼 성과가 나오지 않은 기획이나 이벤트를 어떻게 분석하고 다음에 반영하셨나요?",
+      "scope": "family:game_business",
+      "category": "실패",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시 1년 차 모바일 RPG의 신규 이용자 7일 이탈률을 낮추는 방안을 5분간 발표해 주세요.",
+      "scope": "family:game_business",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시즌 패스 중심 수익 모델과 확률형 아이템 중심 모델 중 장기적으로 어느 쪽이 나은지 토론해 보겠습니다.",
+      "scope": "family:game_business",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 기획과 시스템 기획의 차이를 어떻게 구분하고 계신가요?",
+      "scope": "role:game_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "전투 밸런스를 잡을 때 어떤 수치부터 정하고 어떻게 검증하시나요?",
+      "scope": "role:game_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "게임 재화의 획득처와 소모처를 설계할 때 무엇을 가장 먼저 정하시나요?",
+      "scope": "role:game_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획서를 쓸 때 프로그래머와 아티스트가 바로 작업할 수 있도록 무엇을 챙기시나요?",
+      "scope": "role:game_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "레벨 디자인에서 난이도 곡선을 어떻게 설계하시겠어요?",
+      "scope": "role:game_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "튜토리얼에서 정보를 얼마나, 어떤 순서로 보여 줘야 한다고 보세요?",
+      "scope": "role:game_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "특정 직업만 너무 강하다는 불만이 쏟아지면 하향과 다른 직업 상향 중 어떻게 결정하시겠어요?",
+      "scope": "role:game_designer",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "내부 플레이테스트에서 본인이 기획한 콘텐츠가 지루하다는 평을 들으면 어떻게 하시겠어요?",
+      "scope": "role:game_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지원한 곳의 주력 장르가 평소 즐기는 장르와 다르다면 어떻게 감을 익히시겠어요?",
+      "scope": "role:game_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "골드 인플레이션으로 거래소 가격이 계속 오른다면 원인과 해법을 어떻게 찾으시겠어요?",
+      "scope": "role:game_designer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "강화 성공 확률과 기대 비용을 어떻게 계산해서 설계에 반영하시나요?",
+      "scope": "role:game_designer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요즘 즐기는 게임에서 기억에 남는 콘텐츠를 하나 골라 기획자 관점에서 분석해 주세요.",
+      "scope": "role:game_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "포트폴리오에서 직접 기획한 콘텐츠 하나를 골라 설계 의도부터 설명해 주세요.",
+      "scope": "role:game_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임기획자를 재미를 책임지는 사람이라고 한다면 그 책임은 어디까지라고 보세요?",
+      "scope": "role:game_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s10"
+    },
+    {
+      "text": "인생 게임을 하나 꼽는다면 무엇이고, 그 게임이 기획자를 꿈꾸게 한 이유는 무엇인가요?",
+      "scope": "role:game_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "앞으로 콘텐츠 기획 외에 어떤 기획 영역까지 넓혀 보고 싶으신가요?",
+      "scope": "role:game_designer",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획자는 코딩도 그림도 직접 하지 않는데 팀에 꼭 필요한 이유를 설득해 보시겠어요?",
+      "scope": "role:game_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "라이브 게임의 월간 업데이트와 이벤트 일정을 어떻게 짜고 관리하시겠어요?",
+      "scope": "role:game_ops",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "DAU, 리텐션, ARPPU 가운데 게임 상태를 판단할 때 무엇을 먼저 보시나요?",
+      "scope": "role:game_ops",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "유료 패키지를 기획할 때 가격과 구성의 기준을 어떻게 정하시나요?",
+      "scope": "role:game_ops",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "점검 공지나 보상 공지를 쓸 때 가장 신경 쓰는 점은 무엇인가요?",
+      "scope": "role:game_ops",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해외 서비스를 할 때 지역별로 운영을 달리해야 하는 부분은 무엇이라고 보세요?",
+      "scope": "role:game_ops",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "외부 IP와 콜라보레이션을 추진한다면 무엇을 따져 보시겠어요?",
+      "scope": "role:game_ops",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시 전 게임의 사업 계획을 세운다면 어떤 항목부터 정하시겠어요?",
+      "scope": "role:game_ops",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "서버 점검이 예정보다 3시간 길어지면 이용자 공지와 보상을 어떻게 하시겠어요?",
+      "scope": "role:game_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해외 서비스 지역에서만 결제 오류가 보고된다면 사업PM으로서 무엇부터 하시겠어요?",
+      "scope": "role:game_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발팀이 이번 업데이트 일정을 맞추기 어렵다고 알려 오면 어떻게 조율하시겠어요?",
+      "scope": "role:game_ops",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 패키지 매출이 예상의 절반이라면 어떤 순서로 원인을 찾으시겠어요?",
+      "scope": "role:game_ops",
+      "category": "데이터",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이벤트 기간 매출은 올랐지만 이후 이탈이 늘었다면 이 이벤트를 성공으로 보시겠어요?",
+      "scope": "role:game_ops",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이용자 문의나 VOC를 모아 분석해서 개선으로 연결해 본 경험이 있으신가요?",
+      "scope": "role:game_ops",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이벤트나 프로모션을 직접 기획하고 운영해 본 경험이 있다면 결과까지 말씀해 주세요.",
+      "scope": "role:game_ops",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임 사업PM이 하는 일을 한 문장으로 정의한다면 어떻게 말씀하시겠어요?",
+      "scope": "role:game_ops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "게임을 만드는 쪽보다 서비스하고 키우는 쪽에 관심을 두신 이유가 궁금합니다.",
+      "scope": "role:game_ops",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사업PM은 결국 매출만 보는 자리라는 개발팀의 시선에 어떻게 답하시겠어요?",
+      "scope": "role:game_ops",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "좋은 디자인과 예쁜 디자인은 어떻게 다르다고 생각하세요?",
+      "scope": "family:digital_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자이너도 사업 지표를 이해해야 한다는 말에 대해 어떻게 생각하세요?",
+      "scope": "family:digital_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인 결정을 내릴 때 데이터와 직관은 각각 어느 정도 비중이어야 한다고 보세요?",
+      "scope": "family:digital_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획자, 개발자와 협업할 때 디자이너가 가장 먼저 챙겨야 할 것은 무엇이라고 보세요?",
+      "scope": "family:digital_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 직군이 함께한 프로젝트에서 디자이너로서 방향을 주도적으로 잡았던 경험을 말씀해 주세요.",
+      "scope": "family:digital_design",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이해관계자가 본인의 디자인안에 반대했을 때 어떻게 설득하셨나요?",
+      "scope": "family:digital_design",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용자 피드백을 듣고 디자인 방향을 크게 바꿨던 경험이 있으신가요?",
+      "scope": "family:digital_design",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "일정 때문에 디자인 완성도를 일부 양보해야 했던 경험과 그때의 판단 기준을 말씀해 주세요.",
+      "scope": "family:digital_design",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 디자이너와 피드백을 주고받다가 의견이 크게 엇갈렸던 경험이 있으신가요?",
+      "scope": "family:digital_design",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대표가 경쟁 서비스 화면을 보여 주며 똑같이 만들어 달라고 한다면 어떻게 하시겠어요?",
+      "scope": "family:digital_design",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시 직전에 사용성 문제를 발견했는데 일정을 바꾸기 어렵다면 어떻게 하시겠어요?",
+      "scope": "family:digital_design",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서비스가 새로운 사용자층을 끌어들이려 한다면 디자이너로서 무엇부터 해 보시겠어요?",
+      "scope": "family:digital_design",
+      "category": "전략",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s13",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획 문서 없이 알아서 예쁘게 해 달라는 요청만 받았다면 어떻게 진행하시겠어요?",
+      "scope": "family:digital_design",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "A/B 테스트 결과가 본인이 선호하지 않는 안을 가리킨다면 어떻게 하시겠어요?",
+      "scope": "family:digital_design",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "포트폴리오에서 가장 자신 있는 프로젝트 한두 개를 골라 설명해 주시겠어요?",
+      "scope": "family:digital_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "프로젝트를 주로 어떤 프로세스로 진행했고 그 안에서 어떤 역할을 맡으셨나요?",
+      "scope": "family:digital_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "디자인 시스템이나 공통 가이드를 만들거나 정리해 본 경험이 있으신가요?",
+      "scope": "family:digital_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "최근 인상 깊게 본 서비스의 디자인 변화 하나를 골라 이유와 함께 말씀해 주세요.",
+      "scope": "family:digital_design",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "AI 도구가 디자인 작업에 들어오면서 디자이너의 역할은 어떻게 달라질까요?",
+      "scope": "family:digital_design",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디지털 서비스에서 접근성이 점점 중요해지는 흐름을 어떻게 보고 계신가요?",
+      "scope": "family:digital_design",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용자를 속여 결제나 가입을 유도하는 화면을 만들어 달라는 요청을 받으면 어떻게 하시겠어요?",
+      "scope": "family:digital_design",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용자 인터뷰 녹화나 행동 데이터를 디자인 검증에 쓸 때 개인정보를 어떻게 다뤄야 할까요?",
+      "scope": "family:digital_design",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자이너로서 스스로 약하다고 느끼는 부분과 어떻게 보완하고 있는지 말씀해 주세요.",
+      "scope": "family:digital_design",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "어떤 디자이너가 되고 싶은지, 지금 그 방향으로 무엇을 하고 계신지 말씀해 주세요.",
+      "scope": "family:digital_design",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s11",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인의 디자인이 실제로 사용자 행동이나 지표를 바꾼 사례를 말씀해 주세요.",
+      "scope": "family:digital_design",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "결과 지표를 확인할 수 없었던 프로젝트라면 성공 여부를 어떻게 판단하셨나요?",
+      "scope": "family:digital_design",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자주 쓰는 앱 하나를 골라 불편한 점과 개선안을 5분간 발표해 주세요.",
+      "scope": "family:digital_design",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "일관된 디자인 시스템과 화면별 최적화 중 무엇을 우선해야 하는지 토론해 보겠습니다.",
+      "scope": "family:digital_design",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용자 인터뷰 질문지를 만들 때 유도 질문을 피하려고 어떤 점을 신경 쓰시나요?",
+      "scope": "role:ux_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "페르소나와 사용자 여정 지도를 실제 의사결정에 어떻게 활용하셨나요?",
+      "scope": "role:ux_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용성 테스트 참가자는 몇 명을, 어떤 기준으로 모집하시겠어요?",
+      "scope": "role:ux_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정성 리서치와 정량 데이터가 서로 다른 이야기를 한다면 어떻게 해석하시나요?",
+      "scope": "role:ux_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정보 구조를 설계할 때 카드 소팅 같은 방법은 언제 쓰시나요?",
+      "scope": "role:ux_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "와이어프레임 단계에서는 무엇을 결정하고 무엇을 뒤로 미루시나요?",
+      "scope": "role:ux_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리서치에 쓸 시간과 예산이 거의 없는 프로젝트라면 사용자 이해를 어떻게 확보하시겠어요?",
+      "scope": "role:ux_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경영진이 리서치 결과와 다른 방향을 고집한다면 어떻게 하시겠어요?",
+      "scope": "role:ux_designer",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용자 인터뷰에서 들은 요구가 서로 정반대라면 어떻게 정리하시겠어요?",
+      "scope": "role:ux_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회원가입 완료율이 40%에 그친다면 어떤 순서로 원인을 찾으시겠어요?",
+      "scope": "role:ux_designer",
+      "category": "데이터",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "앱 리뷰에 불만이 쏟아지는 기능을 어떻게 분석해서 개선 과제로 바꾸시겠어요?",
+      "scope": "role:ux_designer",
+      "category": "고객",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "리서치 방법을 잘못 골라 기대한 답을 얻지 못했던 경험이 있다면 말씀해 주세요.",
+      "scope": "role:ux_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "학교나 개인 프로젝트에서 직접 사용자 조사를 해 본 과정을 말씀해 주세요.",
+      "scope": "role:ux_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용성 테스트 결과를 팀에 공유할 때 설득력을 높이려고 어떻게 정리하시나요?",
+      "scope": "role:ux_designer",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "UX 디자이너와 UI 디자이너의 역할은 어디서 갈린다고 보세요?",
+      "scope": "role:ux_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "화면을 그리는 일보다 사용자 문제를 푸는 일에 끌린 계기가 있으신가요?",
+      "scope": "role:ux_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용자는 자기가 원하는 걸 모른다는 말도 있는데, 그래도 리서치가 필요한 이유는 무엇인가요?",
+      "scope": "role:ux_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컴포넌트를 설계할 때 상태별 변화를 어디까지 정의해 두시나요?",
+      "scope": "role:ui_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "색상과 타이포그래피 체계를 새로 만든다면 무엇부터 정하시겠어요?",
+      "scope": "role:ui_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발팀에 디자인을 넘길 때 오해가 없도록 무엇을 함께 전달하시나요?",
+      "scope": "role:ui_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "텍스트 대비나 터치 영역처럼 접근성을 챙길 때 어떤 기준을 쓰시나요?",
+      "scope": "role:ui_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다크 모드를 추가해야 한다면 기존 색상 체계를 어떻게 확장하시겠어요?",
+      "scope": "role:ui_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "모바일과 데스크톱 화면을 함께 설계할 때 레이아웃 원칙을 어떻게 잡으시나요?",
+      "scope": "role:ui_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인 툴에서 파일과 레이어를 정리하는 본인만의 규칙이 있다면 말씀해 주세요.",
+      "scope": "role:ui_designer",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "구현된 화면이 시안과 미묘하게 다르게 나왔다면 어떻게 대응하시겠어요?",
+      "scope": "role:ui_designer",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마케팅팀이 화면 곳곳에 배너를 넣어 달라고 요구하면 어떻게 조율하시겠어요?",
+      "scope": "role:ui_designer",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인 시스템 규칙과 맞지 않는 예외 화면이 필요하다면 어떻게 판단하시겠어요?",
+      "scope": "role:ui_designer",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "버튼 색 하나를 바꿨더니 클릭률이 떨어졌다면 어떻게 해석하시겠어요?",
+      "scope": "role:ui_designer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "화면 하나에 기능이 너무 많다는 평가를 받는다면 어떤 기준으로 덜어 내시겠어요?",
+      "scope": "role:ui_designer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "포트폴리오 속 화면 하나를 골라 이렇게 디자인한 이유를 요소별로 설명해 주세요.",
+      "scope": "role:ui_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s13",
+      "confidence": "medium"
+    },
+    {
+      "text": "모션이나 인터랙션을 더해 사용성을 높였던 경험이 있으신가요?",
+      "scope": "role:ui_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "UI 디자이너가 시각적 완성도 말고도 책임져야 하는 것은 무엇이라고 보세요?",
+      "scope": "role:ui_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "UI 디자인에 관심을 두게 된 계기가 된 서비스나 작업이 있으신가요?",
+      "scope": "role:ui_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요즘 서비스 화면이 다 비슷해 보이는데, UI 디자이너의 차별화는 어디서 나온다고 보세요?",
+      "scope": "role:ui_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "문제 정의 단계에서 기획자와 무엇을 합의하고 넘어가시나요?",
+      "scope": "role:product_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요구 기능이 많을 때 첫 출시 범위를 어떻게 정하시겠어요?",
+      "scope": "role:product_designer",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인한 기능의 성공 지표는 출시 전에 어떻게 정하시나요?",
+      "scope": "role:product_designer",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "빠르게 프로토타입을 만들어 검증할 때 어느 수준의 완성도로 만드시나요?",
+      "scope": "role:product_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 팀이 같은 제품을 만질 때 디자인 일관성을 어떻게 지키시겠어요?",
+      "scope": "role:product_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기술적 제약 때문에 이상적인 안을 포기해야 할 때 대안을 어떻게 찾으시나요?",
+      "scope": "role:product_designer",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "쌓여 있는 디자인 부채를 언제 갚을지 로드맵 논의에서 어떻게 설득하시겠어요?",
+      "scope": "role:product_designer",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시 일주일 전 핵심 이해관계자가 전체 흐름을 바꾸자고 하면 어떻게 하시겠어요?",
+      "scope": "role:product_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PM이 정한 해결책이 문제와 맞지 않아 보인다면 어떻게 이야기를 꺼내시겠어요?",
+      "scope": "role:product_designer",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "한 분기에 큰 프로젝트 두 개를 동시에 맡게 된다면 어떻게 운영하시겠어요?",
+      "scope": "role:product_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장바구니 이탈률이 높은 쇼핑 앱이라면 어떤 가설을 세우고 어떻게 검증하시겠어요?",
+      "scope": "role:product_designer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 기능 사용률이 5%에 머문다면 없앨지 개선할지 어떻게 판단하시겠어요?",
+      "scope": "role:product_designer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "문제 발견부터 출시 후 개선까지 직접 이끈 프로젝트를 말씀해 주세요.",
+      "scope": "role:product_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인 외에 기획이나 데이터 분석까지 맡아 본 경험이 있으신가요?",
+      "scope": "role:product_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "프로덕트 디자이너는 화면 단위가 아니라 무엇을 단위로 일한다고 보세요?",
+      "scope": "role:product_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품 성과까지 책임지는 프로덕트 디자이너를 지향하시는 이유가 궁금합니다.",
+      "scope": "role:product_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자이너가 지표에 집중하면 결국 사용자보다 숫자를 위한 디자인이 되지 않을까요?",
+      "scope": "role:product_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자이너의 개성과 클라이언트나 브랜드의 요구 사이에서 균형을 어떻게 잡아야 할까요?",
+      "scope": "family:visual_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인이 순수 예술과 다른 점은 무엇이라고 생각하세요?",
+      "scope": "family:visual_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실무 디자이너에게 감각만큼 중요한 역량은 무엇이라고 보세요?",
+      "scope": "family:visual_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인이 실제로 제작되거나 생산되는 과정을 디자이너가 알아야 하는 이유는 무엇일까요?",
+      "scope": "family:visual_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 시안 중 하나를 고르면서 판단 근거를 설명해야 했던 경험을 말씀해 주세요.",
+      "scope": "family:visual_design",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라이언트의 모호한 요청을 구체적인 디자인 방향으로 정리해 냈던 경험이 있으신가요?",
+      "scope": "family:visual_design",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협력업체나 제작처와 문제가 생겼을 때 어떻게 해결하셨나요?",
+      "scope": "family:visual_design",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수정 요청이 계속 반복될 때 결과물을 끝까지 끌고 갔던 경험을 말씀해 주세요.",
+      "scope": "family:visual_design",
+      "category": "상황대처",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "팀 작업에서 다른 디자이너의 스타일에 맞춰 가야 했던 경험을 말씀해 주세요.",
+      "scope": "family:visual_design",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마감 하루 전 클라이언트가 방향 자체를 바꾸자고 하면 어떻게 하시겠어요?",
+      "scope": "family:visual_design",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "예산이 절반으로 줄었는데 결과물의 인상은 유지해야 한다면 어떻게 접근하시겠어요?",
+      "scope": "family:visual_design",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "상사의 피드백이 본인 판단과 다를 때 어떻게 하시겠어요?",
+      "scope": "family:visual_design",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협업 부서가 디자인 의도를 오해한 채 작업을 진행하고 있다면 어떻게 하시겠어요?",
+      "scope": "family:visual_design",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "처음 맡는 분야의 프로젝트가 급하게 들어오면 무엇부터 조사하시겠어요?",
+      "scope": "family:visual_design",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "포트폴리오를 처음부터 끝까지 흐름대로 설명해 주시겠어요?",
+      "scope": "family:visual_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s11",
+      "confidence": "medium"
+    },
+    {
+      "text": "가장 자랑스러운 작업 하나와 그 작업에서 아쉬운 점을 함께 말씀해 주세요.",
+      "scope": "family:visual_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "실제로 제작되거나 판매, 시공까지 이어진 작업이 있다면 과정을 말씀해 주세요.",
+      "scope": "family:visual_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "좋아하는 브랜드 하나를 골라 디자인 관점에서 왜 좋은지 말씀해 주세요.",
+      "scope": "family:visual_design",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s11",
+      "confidence": "medium"
+    },
+    {
+      "text": "지속가능성과 친환경 소재에 대한 요구가 디자인 분야를 어떻게 바꾸고 있다고 보세요?",
+      "scope": "family:visual_design",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생성형 이미지 도구로 만든 시안을 실무에 쓸 때 어떤 점을 조심해야 한다고 보세요?",
+      "scope": "family:visual_design",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "특정 작가의 작업과 지나치게 비슷하게 만들어 달라는 요청을 받으면 어떻게 하시겠어요?",
+      "scope": "family:visual_design",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원가를 줄이려고 품질이나 안전이 떨어지는 재료를 쓰자는 요구를 받으면 어떻게 하시겠어요?",
+      "scope": "family:visual_design",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 작업 스타일의 한계라고 느끼는 부분이 있다면 무엇인가요?",
+      "scope": "family:visual_design",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "감각을 유지하고 영감을 얻기 위해 꾸준히 하는 일이 있으신가요?",
+      "scope": "family:visual_design",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인의 디자인이 매출이나 브랜드 인지도 같은 결과로 이어진 사례를 말씀해 주세요.",
+      "scope": "family:visual_design",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기대에 못 미쳤던 작업을 돌아보면 무엇이 원인이었다고 보세요?",
+      "scope": "family:visual_design",
+      "category": "실패",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "관심 있는 브랜드 하나를 골라 디자인 리뉴얼 방향을 5분간 발표해 주세요.",
+      "scope": "family:visual_design",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "트렌드를 따르는 디자인과 오래 가는 디자인 중 무엇을 우선해야 하는지 토론해 보겠습니다.",
+      "scope": "family:visual_design",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 아이덴티티를 만들 때 로고보다 먼저 정해야 할 것은 무엇이라고 보세요?",
+      "scope": "role:graphic_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 가이드라인에 어떤 항목을 넣어야 실제로 지켜진다고 보세요?",
+      "scope": "role:graphic_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인쇄 파일을 넘기기 전에 색상, 해상도, 재단선은 어떻게 확인하시나요?",
+      "scope": "role:graphic_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서체를 고를 때 가독성과 브랜드 성격을 어떻게 함께 고려하시나요?",
+      "scope": "role:graphic_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온라인 채널과 인쇄물에서 같은 브랜드를 표현할 때 무엇을 조정하시나요?",
+      "scope": "role:graphic_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "패키지 디자인에서 매대에서의 눈에 띔과 정보 전달 사이 균형을 어떻게 잡으시나요?",
+      "scope": "role:graphic_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "작업에 쓰는 이미지나 서체의 라이선스는 어떻게 확인하시나요?",
+      "scope": "role:graphic_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인쇄 감리 현장에서 색이 시안과 다르게 나오면 어떻게 하시겠어요?",
+      "scope": "role:graphic_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마케팅팀이 브랜드 가이드에 맞지 않는 홍보물을 급히 요청하면 어떻게 하시겠어요?",
+      "scope": "role:graphic_designer",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로고 시안 세 개가 모두 반려됐다면 다음 시안은 어떻게 접근하시겠어요?",
+      "scope": "role:graphic_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "오래된 브랜드가 젊은 층에게 낡아 보인다는 진단을 받았다면 리뉴얼 범위를 어떻게 정하시겠어요?",
+      "scope": "role:graphic_designer",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 브랜드들의 시각 언어를 분석해 차별점을 찾는 과정을 말씀해 주세요.",
+      "scope": "role:graphic_designer",
+      "category": "경쟁",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘셉트부터 적용물까지 브랜드 작업 전 과정을 맡아 본 경험을 말씀해 주세요.",
+      "scope": "role:graphic_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 디자이너가 만든 브랜드 가이드를 이어받아 확장해 본 경험이 있으신가요?",
+      "scope": "role:graphic_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "BX 디자이너가 일반 그래픽 디자이너와 다르게 고민하는 지점은 무엇이라고 보세요?",
+      "scope": "role:graphic_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 디자인 분야 중 브랜드와 그래픽 분야를 선택하신 이유가 궁금합니다.",
+      "scope": "role:graphic_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로고 하나에 큰 비용을 쓸 필요가 있냐는 경영진 질문에 어떻게 답하시겠어요?",
+      "scope": "role:graphic_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품 형태를 정할 때 사용성, 생산성, 원가 중 무엇을 먼저 고려하시나요?",
+      "scope": "role:industrial_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "스케치에서 3D 모델링, 목업으로 넘어가며 각 단계에서 무엇을 검증하시나요?",
+      "scope": "role:industrial_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "CMF를 정할 때 어떤 기준으로 색상, 소재, 마감을 고르시나요?",
+      "scope": "role:industrial_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "금형과 사출 공정을 고려하지 않은 디자인이 어떤 문제를 일으키는지 예를 들어 주세요.",
+      "scope": "role:industrial_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인체공학 검토를 할 때 어떤 데이터나 방법을 활용하시나요?",
+      "scope": "role:industrial_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사용 환경을 직접 관찰해서 디자인 아이디어를 얻었던 방법을 말씀해 주세요.",
+      "scope": "role:industrial_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분해와 재활용이 쉬운 구조를 제품에 반영한다면 어떻게 접근하시겠어요?",
+      "scope": "role:industrial_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계팀이 내부 부품 때문에 제품 두께를 늘려야 한다고 하면 어떻게 협의하시겠어요?",
+      "scope": "role:industrial_designer",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "목업 사용자 평가에서 손에 쥐기 불편하다는 의견이 많다면 어떻게 하시겠어요?",
+      "scope": "role:industrial_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양산 직전 원가 문제로 소재를 바꿔야 한다면 디자인 의도를 어떻게 지키시겠어요?",
+      "scope": "role:industrial_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 제품들을 분석해 새 제품의 디자인 포지션을 잡는 과정을 설명해 주세요.",
+      "scope": "role:industrial_designer",
+      "category": "경쟁",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "판매가가 정해진 제품이라면 디자인 요소별 원가 부담을 어떻게 따져 보시겠어요?",
+      "scope": "role:industrial_designer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "목업이나 시제품을 직접 만들어 보면서 새로 알게 된 점을 말씀해 주세요.",
+      "scope": "role:industrial_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계나 생산 쪽 피드백 때문에 디자인을 크게 고쳐야 했던 경험이 있으신가요?",
+      "scope": "role:industrial_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품 디자이너의 역할은 외관을 만드는 것에서 어디까지 확장된다고 보세요?",
+      "scope": "role:industrial_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "화면이 아니라 손에 잡히는 제품을 디자인하고 싶은 이유가 궁금합니다.",
+      "scope": "role:industrial_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기능이 같으면 디자인은 부차적이라는 사업부 의견에 어떻게 반박하시겠어요?",
+      "scope": "role:industrial_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "현장 실측 후 도면을 그릴 때 가장 놓치기 쉬운 부분은 무엇이라고 보세요?",
+      "scope": "role:interior_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공간 콘셉트를 정할 때 클라이언트 미팅에서 꼭 확인하는 것은 무엇인가요?",
+      "scope": "role:interior_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "동선 계획을 할 때 주거 공간과 상업 공간은 어떻게 다르게 접근하시나요?",
+      "scope": "role:interior_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마감재를 고를 때 디자인 말고 어떤 조건을 함께 보시나요?",
+      "scope": "role:interior_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조명 계획이 공간의 인상을 어떻게 바꾸는지 작업 사례로 설명해 주세요.",
+      "scope": "role:interior_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소방이나 피난 같은 법적 기준이 디자인에 영향을 줬던 경험이 있다면 말씀해 주세요.",
+      "scope": "role:interior_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 지점에 같은 매장 디자인을 적용해야 한다면 무엇을 표준화하시겠어요?",
+      "scope": "role:interior_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "시공 중 현장 여건 때문에 도면대로 할 수 없다는 연락을 받으면 어떻게 하시겠어요?",
+      "scope": "role:interior_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라이언트가 공사 중에 계속 디자인을 바꾸려 한다면 일정과 비용을 어떻게 조율하시겠어요?",
+      "scope": "role:interior_designer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시공 업체가 품질보다 공기 단축을 앞세우는 것 같다면 어떻게 대응하시겠어요?",
+      "scope": "role:interior_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "한정된 예산에서 공사비를 어디에 집중하고 어디서 줄일지 어떻게 판단하시겠어요?",
+      "scope": "role:interior_designer",
+      "category": "의사결정",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "20평대 카페의 좌석 수와 동선을 대략 어떻게 산정해 보시겠어요?",
+      "scope": "role:interior_designer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "현장에서 예상하지 못한 문제를 해결했던 경험을 말씀해 주세요.",
+      "scope": "role:interior_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "3D 투시도나 모델링으로 클라이언트를 설득했던 경험을 말씀해 주세요.",
+      "scope": "role:interior_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인테리어 디자이너가 현장 관리까지 이해해야 하는 이유는 무엇이라고 보세요?",
+      "scope": "role:interior_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공간 디자인에 관심을 갖게 해 준 공간이 있다면 소개해 주세요.",
+      "scope": "role:interior_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "결국 클라이언트 취향대로 할 거라면 디자이너가 왜 필요하냐는 말에 어떻게 답하시겠어요?",
+      "scope": "role:interior_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시즌 콘셉트를 정할 때 트렌드 리서치를 어떻게 진행하시나요?",
+      "scope": "role:fashion_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s18"
+    },
+    {
+      "text": "작업지시서를 쓸 때 공장에서 오해하지 않도록 무엇을 꼼꼼히 적으시나요?",
+      "scope": "role:fashion_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원단을 고를 때 촉감이나 색감 말고 어떤 조건을 확인하시나요?",
+      "scope": "role:fashion_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "샘플 피팅에서 수정 사항을 판단할 때 무엇을 기준으로 보시나요?",
+      "scope": "role:fashion_designer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드의 기존 스타일과 새 트렌드를 한 시즌 안에서 어떻게 섞으시겠어요?",
+      "scope": "role:fashion_designer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디자인 프로그램이나 도식화 작업 중 자신 있는 부분을 실무 수준으로 설명해 주세요.",
+      "scope": "role:fashion_designer",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "src": "s18"
+    },
+    {
+      "text": "샘플 원가가 목표보다 20% 높게 나왔다면 디자인을 어떻게 조정하시겠어요?",
+      "scope": "role:fashion_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "MD가 잘 팔린 스타일의 재생산만 원하고 새로운 시도를 막는다면 어떻게 하시겠어요?",
+      "scope": "role:fashion_designer",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생산 일정이 밀려 출고일을 맞추기 어렵다는 연락이 오면 무엇부터 하시겠어요?",
+      "scope": "role:fashion_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지난 시즌 판매 데이터를 보고 다음 시즌 아이템 구성을 어떻게 정하시겠어요?",
+      "scope": "role:fashion_designer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 가격대 경쟁 브랜드 상품과 비교해 차별점을 어떻게 찾으시겠어요?",
+      "scope": "role:fashion_designer",
+      "category": "경쟁",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "포트폴리오 속 컬렉션 하나를 골라 콘셉트부터 완성까지 과정을 말씀해 주세요.",
+      "scope": "role:fashion_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시장이나 매장 조사를 직접 나가 본 경험과 거기서 얻은 인사이트를 말씀해 주세요.",
+      "scope": "role:fashion_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요즘 눈여겨보는 패션 트렌드 하나를 상품으로 풀어낸다면 어떻게 하시겠어요?",
+      "scope": "role:fashion_designer",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s18"
+    },
+    {
+      "text": "브랜드 디자인실의 디자이너는 작품을 만드는 디자이너와 무엇이 다르다고 보세요?",
+      "scope": "role:fashion_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s18"
+    },
+    {
+      "text": "여러 복종 가운데 지원하신 복종에 특히 관심을 두게 된 이유가 궁금합니다.",
+      "scope": "role:fashion_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "판매 성과가 낮았던 디자인도 좋은 디자인이었다고 말할 수 있을까요?",
+      "scope": "role:fashion_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "좋은 콘텐츠의 조건을 하나만 꼽는다면 무엇이라고 보세요?",
+      "scope": "family:content",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠를 만드는 사람에게 글솜씨보다 중요한 역량은 무엇이라고 보세요?",
+      "scope": "family:content",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조회수 같은 숫자와 콘텐츠의 질은 어떤 관계라고 생각하세요?",
+      "scope": "family:content",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "독자나 시청자를 설정할 때 어떤 방법으로 구체화하시나요?",
+      "scope": "family:content",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마감이 겹쳤을 때 어떤 기준으로 우선순위를 정해 끝까지 해내셨나요?",
+      "scope": "family:content",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 쓴 글이나 기획안에 강한 비판을 받았을 때 어떻게 받아들이고 고치셨나요?",
+      "scope": "family:content",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협업자와 방향이 달라 작업이 지연됐을 때 어떻게 풀어 가셨나요?",
+      "scope": "family:content",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아무도 주목하지 않던 소재를 찾아 콘텐츠로 만들어 본 경험이 있으신가요?",
+      "scope": "family:content",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "짧은 시간 안에 낯선 분야를 공부해서 결과물을 내야 했던 경험을 말씀해 주세요.",
+      "scope": "family:content",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "발행 직후 콘텐츠에서 사실 오류를 발견했다면 어떻게 처리하시겠어요?",
+      "scope": "family:content",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 날 예정된 콘텐츠 두 개 중 하나만 내보낼 수 있다면 어떤 기준으로 고르시겠어요?",
+      "scope": "family:content",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "윗선이 내용과 맞지 않는 자극적인 제목을 요구한다면 어떻게 하시겠어요?",
+      "scope": "family:content",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "외부 필자나 인터뷰 대상이 마감 직전에 연락이 끊겼다면 어떻게 대처하시겠어요?",
+      "scope": "family:content",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "쓰려는 이미지나 인용문의 저작권이 불분명하다면 어떻게 확인하고 처리하시겠어요?",
+      "scope": "family:content",
+      "category": "실무",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s17",
+      "confidence": "high"
+    },
+    {
+      "text": "기획부터 발행까지 혼자 책임지고 완성해 본 콘텐츠를 소개해 주세요.",
+      "scope": "family:content",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 이야기를 여러 채널이나 형식에 맞게 다르게 풀어 본 경험이 있으신가요?",
+      "scope": "family:content",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아이디어가 막혔을 때 실제로 어떻게 돌파했는지 경험을 말씀해 주세요.",
+      "scope": "family:content",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "짧은 영상 중심으로 소비 방식이 바뀌면서 글 콘텐츠의 역할은 어떻게 달라졌다고 보세요?",
+      "scope": "family:content",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생성형 AI로 만든 글과 사람이 쓴 글은 앞으로 어떻게 평가받게 될까요?",
+      "scope": "family:content",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "플랫폼 알고리즘에 맞추는 것과 고유한 목소리를 지키는 것 사이에서 어떻게 판단하세요?",
+      "scope": "family:content",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고비를 받은 콘텐츠를 일반 콘텐츠처럼 보이게 해 달라는 요청을 받으면 어떻게 하시겠어요?",
+      "scope": "family:content",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 매체나 작가의 표현을 참고하는 것과 표절의 경계를 어떻게 판단하시나요?",
+      "scope": "family:content",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 일을 하면서 스스로 가장 보완하고 싶은 역량은 무엇인가요?",
+      "scope": "family:content",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이 분야에서 오래 일하기 위해 본인이 지키고 싶은 원칙이 있다면 말씀해 주세요.",
+      "scope": "family:content",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 만든 콘텐츠의 성과를 어떤 기준으로 평가했는지 사례와 함께 말씀해 주세요.",
+      "scope": "family:content",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반응이 좋았던 콘텐츠와 그렇지 않았던 콘텐츠의 차이를 분석해 본 적이 있으신가요?",
+      "scope": "family:content",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "20대 독자를 겨냥한 새 콘텐츠 시리즈 기획안을 5분간 발표해 주세요.",
+      "scope": "family:content",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "독자가 원하는 것과 독자에게 필요한 것 중 무엇이 우선인지 토론해 보겠습니다.",
+      "scope": "family:content",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 캘린더를 짤 때 발행 주기와 주제 비중을 어떻게 정하시나요?",
+      "scope": "role:content_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 채널의 톤앤매너 가이드를 만든다면 어떤 항목을 넣으시겠어요?",
+      "scope": "role:content_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 기획안에 반드시 들어가야 하는 요소는 무엇이라고 보세요?",
+      "scope": "role:content_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "외부 제작사나 크리에이터와 협업할 때 품질을 어떻게 관리하시나요?",
+      "scope": "role:content_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s17",
+      "confidence": "high"
+    },
+    {
+      "text": "콘텐츠 성과를 볼 때 도달, 참여, 전환 가운데 무엇을 중심에 두시겠어요?",
+      "scope": "role:content_planner",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온라인과 오프라인 채널의 특성을 고려해 콘텐츠를 배분한다면 어떻게 하시겠어요?",
+      "scope": "role:content_planner",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s17",
+      "confidence": "high"
+    },
+    {
+      "text": "기획 단계에서 타깃 독자의 반응을 미리 검증하는 방법이 있으신가요?",
+      "scope": "role:content_planner",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "예정된 콘텐츠가 사회적 이슈와 겹쳐 오해를 살 수 있다면 어떻게 하시겠어요?",
+      "scope": "role:content_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "댓글에서 콘텐츠 내용에 대한 항의가 번지고 있다면 어떻게 대응하시겠어요?",
+      "scope": "role:content_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제작 예산이 크게 깎였는데 발행 횟수는 그대로 지켜야 한다면 어떻게 운영하시겠어요?",
+      "scope": "role:content_planner",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "구독자는 늘지만 콘텐츠별 조회수가 계속 떨어진다면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:content_planner",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 채널 세 곳을 분석해 차별화 포인트를 찾는다면 어떤 기준으로 보시겠어요?",
+      "scope": "role:content_planner",
+      "category": "경쟁",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시리즈나 캠페인 형태의 콘텐츠를 기획하고 운영해 본 경험을 말씀해 주세요.",
+      "scope": "role:content_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개인 블로그나 SNS 채널을 직접 키워 본 경험이 있다면 무엇이 효과가 있었나요?",
+      "scope": "role:content_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠 기획자는 마케터나 에디터와 무엇이 다르다고 보세요?",
+      "scope": "role:content_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "콘텐츠를 직접 만드는 일보다 기획하는 일에 끌린 이유가 궁금합니다.",
+      "scope": "role:content_planner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "요즘은 누구나 콘텐츠를 만드는데 전문 콘텐츠 기획자가 왜 필요할까요?",
+      "scope": "role:content_planner",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "투고 원고를 검토할 때 출간 여부를 판단하는 기준은 무엇인가요?",
+      "scope": "role:editor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기획 도서를 만든다면 저자는 어떻게 찾고 섭외하시겠어요?",
+      "scope": "role:editor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "교정·교열을 볼 때 문장을 고치는 것과 저자의 문체를 지키는 것 사이 균형을 어떻게 잡으시나요?",
+      "scope": "role:editor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "책 제목과 표지 방향을 정할 때 편집자로서 어떤 근거를 내세우시겠어요?",
+      "scope": "role:editor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원고 입고부터 인쇄까지 편집 일정을 어떻게 관리하시나요?",
+      "scope": "role:editor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "번역서를 편집할 때 번역 원고에서 특히 확인하는 부분은 무엇인가요?",
+      "scope": "role:editor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "최근 인상 깊게 읽은 책을 편집의 관점에서 평가해 주시겠어요?",
+      "scope": "role:editor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "저자가 마감을 계속 넘기면서 연락도 뜸해진다면 어떻게 하시겠어요?",
+      "scope": "role:editor",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "저자가 편집자의 수정 제안을 대부분 거부한다면 어떻게 설득하시겠어요?",
+      "scope": "role:editor",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마케팅팀이 책 내용과 거리가 있는 홍보 문구를 원한다면 어떻게 조율하시겠어요?",
+      "scope": "role:editor",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "비슷한 주제의 책이 이미 많다면 새 기획의 차별점을 어떻게 찾으시겠어요?",
+      "scope": "role:editor",
+      "category": "시장",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "초판 부수와 정가를 정할 때 어떤 요소들을 따져 보시겠어요?",
+      "scope": "role:editor",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 기획하거나 편집에 참여한 출판물이 있다면 본인 역할을 중심으로 말씀해 주세요.",
+      "scope": "role:editor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 사람의 글을 다듬어 준 경험과 그때 상대의 반응을 말씀해 주세요.",
+      "scope": "role:editor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "출판 편집자는 원고를 고치는 일을 넘어 어떤 역할까지 해야 한다고 보세요?",
+      "scope": "role:editor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "책 읽는 사람이 줄었다는 이야기가 많은데도 출판 편집을 하려는 이유가 궁금합니다.",
+      "scope": "role:editor",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "편집자 판단으로 낸 책이 팔리지 않았다면 그 판단은 틀린 걸까요?",
+      "scope": "role:editor",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고 브리프를 받으면 카피를 쓰기 전에 무엇부터 정리하시나요?",
+      "scope": "role:copywriter",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "헤드라인과 보디카피의 역할을 어떻게 나눠서 쓰시나요?",
+      "scope": "role:copywriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 제품이라도 매체에 따라 카피를 어떻게 다르게 쓰시나요?",
+      "scope": "role:copywriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜드 슬로건을 만들 때 오래 쓰일 말인지 어떻게 판단하시나요?",
+      "scope": "role:copywriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "과장 광고 논란을 피하려면 카피에서 어떤 표현을 조심해야 한다고 보세요?",
+      "scope": "role:copywriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아트디렉터와 아이디어를 발전시킬 때 카피라이터의 역할은 무엇이라고 보세요?",
+      "scope": "role:copywriter",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라이언트가 좋아하는 카피와 본인이 확신하는 카피가 다르다면 어떻게 하시겠어요?",
+      "scope": "role:copywriter",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 PT를 이틀 앞두고 콘셉트가 뒤집혔다면 어떻게 대처하시겠어요?",
+      "scope": "role:copywriter",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 쓴 카피 한 줄 때문에 SNS에서 비판 여론이 생겼다면 어떻게 대응하시겠어요?",
+      "scope": "role:copywriter",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캠페인 카피의 효과를 판단하려면 어떤 지표나 반응을 보시겠어요?",
+      "scope": "role:copywriter",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "판매가 정체된 오래된 제품에 새 메시지를 준다면 어떤 순서로 접근하시겠어요?",
+      "scope": "role:copywriter",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 쓴 카피 중 가장 자신 있는 것을 소개하고 어떤 고민 끝에 나왔는지 말씀해 주세요.",
+      "scope": "role:copywriter",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "좋은 카피를 모으거나 옮겨 적는 등 평소 어떤 훈련을 해 오셨나요?",
+      "scope": "role:copywriter",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "src": "s16"
+    },
+    {
+      "text": "카피라이터를 단순히 글 쓰는 사람이라고 볼 수 없는 이유는 무엇일까요?",
+      "scope": "role:copywriter",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "src": "s16"
+    },
+    {
+      "text": "카피라이터를 꿈꾸게 만든 광고나 문장이 있다면 소개해 주세요.",
+      "scope": "role:copywriter",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지금 이 자리의 면접관을 무언가에 비유해서 한마디로 표현해 보시겠어요?",
+      "scope": "role:copywriter",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s16",
+      "confidence": "medium"
+    },
+    {
+      "text": "카피 한 줄이 매출을 바꾼다는 걸 어떻게 증명할 수 있을까요?",
+      "scope": "role:copywriter",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제보를 받았을 때 기사로 쓸지 판단하려면 무엇부터 확인하시나요?",
+      "scope": "role:journalist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "익명 취재원의 말을 기사에 쓸 때 지켜야 할 기준은 무엇이라고 보세요?",
+      "scope": "role:journalist",
+      "category": "윤리",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보도자료를 받아 기사를 쓸 때 그대로 옮기지 않으려면 무엇을 더 취재하시겠어요?",
+      "scope": "role:journalist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기사의 첫 문장을 쓸 때 가장 신경 쓰는 점은 무엇인가요?",
+      "scope": "role:journalist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "숫자나 통계가 들어간 기사는 어떻게 검증하시나요?",
+      "scope": "role:journalist",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "뉴스에서 가장 중요한 것이 무엇이라고 생각하시는지 이유와 함께 말씀해 주세요.",
+      "scope": "role:journalist",
+      "category": "가치관",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "평소 즐겨 보는 뉴스 하나를 골라 잘한 점과 아쉬운 점을 평가해 주세요.",
+      "scope": "role:journalist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "마감 30분 전에 핵심 취재원이 발언을 번복한다면 어떻게 하시겠어요?",
+      "scope": "role:journalist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 매체가 먼저 단독을 냈는데 사실 확인이 덜 된 것 같다면 어떻게 하시겠어요?",
+      "scope": "role:journalist",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "취재 대상이 기사를 내지 말아 달라며 압박하거나 회유한다면 어떻게 대응하시겠어요?",
+      "scope": "role:journalist",
+      "category": "윤리",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 날 여러 사건이 겹친다면 어떤 기준으로 보도 순서를 정하시겠어요?",
+      "scope": "role:journalist",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "오늘 기획 기사를 하나 발제한다면 어떤 문제의식에서 출발하시겠어요?",
+      "scope": "role:journalist",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "직접 발로 뛰어 취재해 본 경험이 있다면 그 과정을 말씀해 주세요.",
+      "scope": "role:journalist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "취재하면서 알게 된 사실이 처음 생각과 달라 결론을 바꿨던 경험이 있으신가요?",
+      "scope": "role:journalist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기자에게 가장 필요한 자질은 무엇이라고 보시나요?",
+      "scope": "role:journalist",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "수많은 직업 가운데 왜 기자여야 하는지 본인의 이유를 말씀해 주세요.",
+      "scope": "role:journalist",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "사회적으로 찬반이 갈리는 현안 하나를 골라 본인 입장을 1분 안에 말씀해 주세요.",
+      "scope": "role:journalist",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "기자에게 중립이 중요하다면서 사설이나 논평은 왜 필요할까요?",
+      "scope": "role:journalist",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    }
+  ]
+}

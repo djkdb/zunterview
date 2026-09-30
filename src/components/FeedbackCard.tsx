@@ -79,6 +79,13 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
                 </div>
               </div>
 
+              {f.roleSignal && (
+                <div className="rounded-lg border border-accent/20 bg-accent-soft/60 p-3.5">
+                  <p className="label mb-1 text-accent">직무 관점 · {f.roleSignal.label}</p>
+                  <p className="text-[14px] text-ink">{f.roleSignal.note}</p>
+                </div>
+              )}
+
               <div>
                 <p className="label mb-2">항목별 점수</p>
                 <ul className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2">

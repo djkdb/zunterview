@@ -1,0 +1,6378 @@
+{
+  "batch": "b04",
+  "sources": [
+    {
+      "id": "b04s1",
+      "title": "링커리어 커뮤니티 — [매일유업] 2023 상반기 인턴 해외영업 1차면접 합격 후기",
+      "url": "https://community.linkareer.com/intern_activity/3078641",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "b04s2",
+      "title": "잡코리아 — GS글로벌 실제 면접 질문(해외영업·제품영업, PT·임원면접 포함)",
+      "url": "https://www.jobkorea.co.kr/starter/review/view?c_idx=231&ctgr_code=5",
+      "type": "interview_review"
+    },
+    {
+      "id": "b04s3",
+      "title": "링커리어 커뮤니티 — [나이키] 기획 MD/온라인 MD 면접 후기",
+      "url": "https://community.linkareer.com/intern_activity/793401",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "b04s4",
+      "title": "잡코리아 — 롯데쇼핑 MD(영업관리) 면접 후기",
+      "url": "https://m.jobkorea.co.kr/Start/review/View?C_Idx=31&Crr_Year=2022&Half_Year_Type_Code=1&Ctgr_Code=3&FavorCo_Stat=0&G_ID=0&Page=1&CrrYearHalfTypeData=2,2015,1",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "b04s5",
+      "title": "잡코리아 직업사전 — 상품기획자 업무·역량",
+      "url": "https://www.jobkorea.co.kr/goodjob/tip/view?News_No=19285&schCtgr=0&Page=1",
+      "type": "other_public"
+    },
+    {
+      "id": "b04s6",
+      "title": "한국장애인개발원 NCS기반 채용 직무기술서(우선구매: 구매계획·입찰/수의계약·판로촉진)",
+      "url": "https://www.koddi.or.kr/system/download.jsp?type=hp_board&subType=ATT3&fileName=20220126165644003.pdf&filename=%EB%B6%99%EC%9E%843.+NCS+%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C.pdf&filePath=/hp_board/ATT3/20220126165644003.pdf",
+      "type": "job_description",
+      "year": 2022
+    },
+    {
+      "id": "b04s7",
+      "title": "링커리어 커뮤니티 — 구매직 면접 질문(현직 멘토 답변)",
+      "url": "https://community.linkareer.com/mentor_intern/2585851",
+      "type": "other_public"
+    },
+    {
+      "id": "b04s8",
+      "title": "링커리어 커뮤니티 — SCM 현직자 인터뷰",
+      "url": "https://community.linkareer.com/honeytips/1838863",
+      "type": "other_public"
+    },
+    {
+      "id": "b04s9",
+      "title": "링커리어 커뮤니티 — SCM 직무역량 및 경험(현직 멘토 답변)",
+      "url": "https://community.linkareer.com/mentoring/5717570",
+      "type": "other_public"
+    },
+    {
+      "id": "b04s10",
+      "title": "브런치 — 스타트업 고객상담 업무 면접 후기",
+      "url": "https://brunch.co.kr/@eunneul/6",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "b04s11",
+      "title": "한경 잡앤조이 — 고객서비스(CS) 직무에 맞는 역량은?",
+      "url": "https://magazine.hankyung.com/job-joy/article/202003251031b",
+      "type": "other_public",
+      "year": 2020
+    },
+    {
+      "id": "b04s12",
+      "title": "링커리어 커뮤니티 — [카카오엔터프라이즈] 서비스기획 인턴 면접 후기",
+      "url": "https://community.linkareer.com/intern_activity/634166",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "b04s13",
+      "title": "링커리어 커뮤니티 — 서비스 기획 면접 질문 리스트(현직 멘토 답변)",
+      "url": "https://community.linkareer.com/mentoring/3315460",
+      "type": "other_public"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "overseas_sales",
+      "aliases": [
+        "해외영업",
+        "해외 영업",
+        "해외영업팀",
+        "수출영업",
+        "글로벌 영업",
+        "Overseas Sales",
+        "Export Sales",
+        "International Sales"
+      ],
+      "skills": [
+        "바이어 발굴·관리",
+        "영문 비즈니스 커뮤니케이션",
+        "가격·조건 협상",
+        "인코텀즈·결제조건 이해",
+        "시장·경쟁 분석",
+        "신용·채권 관리"
+      ],
+      "responsibilities": [
+        "신규 바이어 발굴과 기존 거래처 관리",
+        "견적·오퍼 작성과 가격 협상",
+        "수주부터 선적·대금 회수까지 진행 관리",
+        "해외 전시회·출장 영업",
+        "클레임 대응과 판매 계획 수립"
+      ],
+      "keywords": [
+        "바이어",
+        "오퍼",
+        "견적",
+        "인코텀즈",
+        "FOB",
+        "CIF",
+        "L/C",
+        "T/T",
+        "선적",
+        "환율",
+        "클레임",
+        "전시회",
+        "에이전트",
+        "수주",
+        "채권"
+      ],
+      "topics": {
+        "role": [
+          "바이어 발굴",
+          "가격·조건 협상",
+          "결제조건 리스크",
+          "환율 대응",
+          "클레임 처리",
+          "시장별 판매 전략"
+        ],
+        "scenario": [
+          "바이어의 단가 인하 요구",
+          "생산 지연으로 인한 선적 차질",
+          "대금 지급 지연",
+          "품질 클레임 제기",
+          "환율 급변"
+        ],
+        "result": [
+          "수주·매출 목표 달성률",
+          "신규 바이어 수",
+          "채권 회수율",
+          "거래 유지율"
+        ],
+        "en": [
+          "buyer development",
+          "export negotiation",
+          "Incoterms",
+          "payment terms",
+          "claim handling"
+        ]
+      },
+      "sources": [
+        "b04s1",
+        "b04s2"
+      ]
+    },
+    {
+      "id": "trade_admin",
+      "aliases": [
+        "무역사무",
+        "무역사무원",
+        "국제무역사무원",
+        "수출입 사무",
+        "무역 실무",
+        "수출입 담당",
+        "Trade Administrator",
+        "Import/Export Coordinator"
+      ],
+      "skills": [
+        "선적 서류 작성·검토",
+        "신용장 조건 해석",
+        "수출입 통관 절차",
+        "포워더·관세사 협업",
+        "HS 코드·원산지 관리",
+        "꼼꼼한 문서 관리"
+      ],
+      "responsibilities": [
+        "인보이스·패킹리스트 등 선적 서류 작성",
+        "신용장 조건 확인과 네고 서류 준비",
+        "포워더 부킹과 선적 일정 관리",
+        "수출입 통관·원산지 증명 업무",
+        "대금 결제·외환 관련 사무"
+      ],
+      "keywords": [
+        "인보이스",
+        "패킹리스트",
+        "B/L",
+        "신용장",
+        "통관",
+        "HS 코드",
+        "원산지 증명서",
+        "FTA",
+        "포워더",
+        "부킹",
+        "적하보험",
+        "네고",
+        "하자",
+        "관세"
+      ],
+      "topics": {
+        "role": [
+          "선적 서류 관리",
+          "신용장 실무",
+          "통관·관세",
+          "원산지·FTA",
+          "운송 수배"
+        ],
+        "scenario": [
+          "신용장 하자 통보",
+          "선박 스케줄 변경",
+          "마감 직전 수량 변경 요청",
+          "통관 보류"
+        ],
+        "result": [
+          "서류 오류율",
+          "선적 일정 준수율",
+          "통관 리드타임",
+          "처리 건수"
+        ],
+        "en": [
+          "shipping documents",
+          "letter of credit",
+          "customs clearance",
+          "certificate of origin",
+          "freight booking"
+        ]
+      },
+      "sources": [
+        "b04s1"
+      ]
+    },
+    {
+      "id": "global_business",
+      "aliases": [
+        "글로벌 사업개발",
+        "해외 사업개발",
+        "해외사업",
+        "글로벌 BD",
+        "해외 진출",
+        "Global Business Development",
+        "International BD",
+        "Overseas Business Development"
+      ],
+      "skills": [
+        "해외 시장 조사·진입 전략",
+        "현지 파트너 발굴·협상",
+        "사업성 검토·손익 분석",
+        "계약·규제 리스크 검토",
+        "다국적 이해관계자 조율"
+      ],
+      "responsibilities": [
+        "진출 국가·사업 기회 발굴과 타당성 검토",
+        "현지 파트너·유통사 발굴과 제휴 협상",
+        "진출 방식(법인·합작·유통 계약) 설계",
+        "해외 사업 손익과 성과 관리",
+        "경영진 보고와 사업 계획 수립"
+      ],
+      "keywords": [
+        "시장 진입",
+        "현지 파트너",
+        "합작법인",
+        "MOU",
+        "사업 타당성",
+        "손익분기점",
+        "규제",
+        "인허가",
+        "컨트리 리스크",
+        "제휴",
+        "투자"
+      ],
+      "topics": {
+        "role": [
+          "진출 시장 선정",
+          "진출 방식 설계",
+          "파트너 협상",
+          "사업성 분석",
+          "컨트리 리스크 관리"
+        ],
+        "scenario": [
+          "파트너의 목표 물량 미달",
+          "진출국 정치 불안",
+          "투자자와 파트너 선택 이견",
+          "MOU 이후 계약 지연"
+        ],
+        "result": [
+          "신규 진출 시장 수",
+          "해외 매출 비중",
+          "파트너 계약 체결 건수",
+          "사업 손익"
+        ],
+        "en": [
+          "market entry",
+          "partnership",
+          "joint venture",
+          "feasibility study",
+          "country risk"
+        ]
+      },
+      "sources": [
+        "b04s2"
+      ]
+    },
+    {
+      "id": "md",
+      "aliases": [
+        "상품기획 MD",
+        "상품기획",
+        "MD",
+        "머천다이저",
+        "상품개발 MD",
+        "PB 상품기획",
+        "Merchandiser",
+        "Product Planner"
+      ],
+      "skills": [
+        "시장·트렌드 분석",
+        "상품 구성(MD 믹스) 설계",
+        "원가·마진 관리",
+        "협력사 발굴·협상",
+        "판매 데이터 분석",
+        "재고 관리"
+      ],
+      "responsibilities": [
+        "시장·고객 분석을 통한 신상품 기획",
+        "협력사 발굴과 원가·조건 협상",
+        "가격·마진 설계와 출시 일정 관리",
+        "판매 추이 분석과 재고 소진 계획",
+        "판매 부진 상품 개선·단종 판단"
+      ],
+      "keywords": [
+        "상품 기획",
+        "타깃",
+        "가격대",
+        "원가",
+        "마진",
+        "구색",
+        "협력사",
+        "샘플",
+        "출시",
+        "재고",
+        "판매율",
+        "PB",
+        "트렌드",
+        "시즌"
+      ],
+      "topics": {
+        "role": [
+          "상품 선정 근거",
+          "가격·마진 설계",
+          "상품 구성",
+          "판매 부진 대응",
+          "재고 소진"
+        ],
+        "scenario": [
+          "출시 초기 판매 부진",
+          "경쟁사 유사 상품 저가 출시",
+          "샘플 품질 미달",
+          "예상 밖 품절"
+        ],
+        "result": [
+          "매출·이익률",
+          "판매율",
+          "재고회전율",
+          "신상품 성공률"
+        ],
+        "en": [
+          "merchandising",
+          "product planning",
+          "margin management",
+          "assortment",
+          "sell-through"
+        ]
+      },
+      "sources": [
+        "b04s3",
+        "b04s5"
+      ]
+    },
+    {
+      "id": "online_md",
+      "aliases": [
+        "온라인 MD",
+        "이커머스 MD",
+        "e커머스 MD",
+        "쇼핑몰 MD",
+        "플랫폼 MD",
+        "카테고리 MD",
+        "E-commerce Merchandiser",
+        "Online Merchandiser"
+      ],
+      "skills": [
+        "카테고리 매출 관리",
+        "기획전·프로모션 운영",
+        "입점 브랜드 유치·관리",
+        "상세페이지·노출 최적화",
+        "전환율 등 지표 분석",
+        "쿠폰·가격 운영"
+      ],
+      "responsibilities": [
+        "담당 카테고리 매출·이익 관리",
+        "입점 브랜드 발굴과 조건 협상",
+        "기획전·타임딜·쿠폰 행사 기획",
+        "상품 노출·상세페이지 개선",
+        "판매 지표 분석과 재고 협의"
+      ],
+      "keywords": [
+        "카테고리",
+        "기획전",
+        "타임딜",
+        "쿠폰",
+        "전환율",
+        "객단가",
+        "입점",
+        "상세페이지",
+        "노출",
+        "리뷰",
+        "GMV",
+        "프로모션",
+        "딜"
+      ],
+      "topics": {
+        "role": [
+          "카테고리 매출 관리",
+          "프로모션 설계",
+          "브랜드 유치",
+          "전환율 개선",
+          "가격 운영"
+        ],
+        "scenario": [
+          "행사 중 조기 품절",
+          "가격 오노출 주문 폭주",
+          "경쟁 채널 최저가 문의",
+          "전환율 하락"
+        ],
+        "result": [
+          "카테고리 매출·GMV",
+          "구매 전환율",
+          "행사 ROI",
+          "입점 브랜드 수"
+        ],
+        "en": [
+          "category management",
+          "promotion planning",
+          "conversion rate",
+          "vendor onboarding"
+        ]
+      },
+      "sources": [
+        "b04s3"
+      ]
+    },
+    {
+      "id": "buyer",
+      "aliases": [
+        "바이어",
+        "구매 바이어",
+        "유통 바이어",
+        "매입 담당",
+        "리테일 바이어",
+        "백화점 바이어",
+        "Buyer",
+        "Retail Buyer"
+      ],
+      "skills": [
+        "매입 협상",
+        "거래처 관리",
+        "수량·재고 계획",
+        "상품 선별 안목",
+        "손익 계산",
+        "해외 소싱"
+      ],
+      "responsibilities": [
+        "상품 선별과 매입 결정",
+        "매입 단가·조건 협상",
+        "매입 수량 계획과 재고 관리",
+        "거래처 발굴·평가",
+        "매장·채널별 판매 분석"
+      ],
+      "keywords": [
+        "매입",
+        "직매입",
+        "특정매입",
+        "단가",
+        "거래처",
+        "결품",
+        "재고",
+        "마진",
+        "소싱",
+        "납기",
+        "판매율",
+        "행사"
+      ],
+      "topics": {
+        "role": [
+          "매입 결정",
+          "조건 협상",
+          "거래처 관리",
+          "매입 수량 계획",
+          "재고 리스크"
+        ],
+        "scenario": [
+          "거래처 납기 지연·결품",
+          "행사 물량 부족",
+          "시즌 재고 과다",
+          "경쟁 거래처 제안"
+        ],
+        "result": [
+          "매입 원가율",
+          "재고 회전율",
+          "결품률",
+          "매출 총이익"
+        ],
+        "en": [
+          "buying",
+          "vendor negotiation",
+          "open-to-buy",
+          "sourcing"
+        ]
+      },
+      "sources": [
+        "b04s4"
+      ]
+    },
+    {
+      "id": "fashion_md",
+      "aliases": [
+        "패션 MD",
+        "의류 MD",
+        "패션 상품기획",
+        "브랜드 MD",
+        "리테일 MD",
+        "Fashion Merchandiser",
+        "Apparel Merchandiser"
+      ],
+      "skills": [
+        "시즌 상품 기획",
+        "트렌드 분석",
+        "사이즈·컬러 물량 배분",
+        "생산 일정 관리",
+        "판매율·리오더 관리",
+        "이월 재고 운영"
+      ],
+      "responsibilities": [
+        "시즌 콘셉트와 상품 구성 기획",
+        "스타일별 물량·가격 결정",
+        "디자인·생산팀과 원단·납기 조율",
+        "판매율 분석과 리오더·할인 판단",
+        "시즌 종료 재고 처리"
+      ],
+      "keywords": [
+        "시즌",
+        "스타일",
+        "SKU",
+        "사이즈",
+        "컬러",
+        "판매율",
+        "리오더",
+        "정상가",
+        "이월",
+        "원단",
+        "생산처",
+        "아울렛",
+        "트렌드"
+      ],
+      "topics": {
+        "role": [
+          "시즌 기획",
+          "물량 배분",
+          "정상가 판매율",
+          "리오더 판단",
+          "이월 재고"
+        ],
+        "scenario": [
+          "메인 스타일 판매 부진",
+          "원단 문제로 입고 지연",
+          "이상 기온",
+          "원가 상승 소재 요청"
+        ],
+        "result": [
+          "정상가 판매율",
+          "시즌 판매율",
+          "재고 소진율",
+          "매출 이익률"
+        ],
+        "en": [
+          "seasonal planning",
+          "sell-through",
+          "reorder",
+          "size curve"
+        ]
+      },
+      "sources": [
+        "b04s3"
+      ]
+    },
+    {
+      "id": "purchaser",
+      "aliases": [
+        "구매",
+        "구매 담당자",
+        "구매팀",
+        "구매관리",
+        "자재구매",
+        "바잉",
+        "Purchasing",
+        "Procurement Specialist"
+      ],
+      "skills": [
+        "견적 비교·원가 분석",
+        "단가 협상",
+        "협력사 평가",
+        "발주·납기 관리",
+        "ERP(SAP MM 등) 활용",
+        "계약 관리"
+      ],
+      "responsibilities": [
+        "자재·부품 구매 요청 접수와 발주",
+        "견적 비교와 단가 협상",
+        "협력사 발굴·정기 평가",
+        "납기·품질 이슈 대응",
+        "구매 실적·원가 절감 관리"
+      ],
+      "keywords": [
+        "단가",
+        "견적",
+        "발주",
+        "협력사",
+        "납기",
+        "원가",
+        "계약",
+        "리드타임",
+        "재고",
+        "ERP",
+        "불량",
+        "구매요청"
+      ],
+      "topics": {
+        "role": [
+          "단가 협상",
+          "협력사 평가",
+          "원가 절감",
+          "납기 관리",
+          "구매 리스크"
+        ],
+        "scenario": [
+          "핵심 부품 공급 중단",
+          "현업의 긴급 발주 요청",
+          "협력사 단가 인상 통보",
+          "입고 불량"
+        ],
+        "result": [
+          "원가 절감률",
+          "납기 준수율",
+          "협력사 품질 지표"
+        ],
+        "en": [
+          "price negotiation",
+          "supplier evaluation",
+          "cost reduction",
+          "delivery management"
+        ]
+      },
+      "sources": [
+        "b04s7"
+      ]
+    },
+    {
+      "id": "strategic_sourcing",
+      "aliases": [
+        "전략구매",
+        "소싱",
+        "전략소싱",
+        "글로벌 소싱",
+        "카테고리 매니저(구매)",
+        "Strategic Sourcing",
+        "Sourcing Manager",
+        "Category Buyer"
+      ],
+      "skills": [
+        "품목별 구매 전략",
+        "공급 시장 분석",
+        "총소유비용(TCO) 분석",
+        "장기 계약 설계",
+        "공급망 리스크 관리",
+        "개발 구매"
+      ],
+      "responsibilities": [
+        "품목 분류와 품목별 소싱 전략 수립",
+        "신규·대체 공급처 발굴과 검증",
+        "장기 계약·가격 조정 구조 설계",
+        "원자재 시황 모니터링",
+        "공급 리스크 분산과 원가 절감 과제 추진"
+      ],
+      "keywords": [
+        "소싱 전략",
+        "TCO",
+        "공급처 다변화",
+        "원자재 시황",
+        "장기 계약",
+        "가격 연동",
+        "대체 공급처",
+        "개발 구매",
+        "리스크",
+        "해외 소싱"
+      ],
+      "topics": {
+        "role": [
+          "품목별 전략",
+          "공급처 발굴",
+          "TCO 분석",
+          "공급 리스크 분산",
+          "원가 절감 과제"
+        ],
+        "scenario": [
+          "특정국 수출 규제",
+          "대체 공급처 인증 지연",
+          "전사 원가 절감 목표 하달",
+          "원자재 가격 급등"
+        ],
+        "result": [
+          "원가 절감액",
+          "공급처 다변화율",
+          "계약 커버리지",
+          "공급 리스크 지표"
+        ],
+        "en": [
+          "strategic sourcing",
+          "total cost of ownership",
+          "supplier diversification",
+          "category strategy"
+        ]
+      }
+    },
+    {
+      "id": "public_procurement",
+      "aliases": [
+        "조달·계약",
+        "조달",
+        "계약 담당",
+        "공공 조달",
+        "계약 관리",
+        "입찰 담당",
+        "Procurement & Contracts",
+        "Contract Administrator"
+      ],
+      "skills": [
+        "구매 계획 수립",
+        "입찰·수의계약 절차",
+        "규격서·과업지시서 검토",
+        "계약 이행 관리",
+        "조달 시스템 활용",
+        "규정 해석과 공정성"
+      ],
+      "responsibilities": [
+        "물품·용역·공사 구매 계획 수립",
+        "입찰 공고와 계약 방식 결정",
+        "업체 심사·평가와 계약 체결",
+        "계약 이행·검수와 사후 관리",
+        "조달·계약 자료 관리"
+      ],
+      "keywords": [
+        "입찰",
+        "수의계약",
+        "규격서",
+        "예정가격",
+        "적격심사",
+        "계약 이행",
+        "검수",
+        "이의 제기",
+        "조달 시스템",
+        "공정성",
+        "투명성"
+      ],
+      "topics": {
+        "role": [
+          "계약 방식 결정",
+          "입찰 공정성",
+          "계약 이행 관리",
+          "규정 해석",
+          "예정가격 산정"
+        ],
+        "scenario": [
+          "탈락 업체 이의 제기",
+          "납품 기한 미준수",
+          "연말 예산 소진 압박",
+          "애매한 규정 해석"
+        ],
+        "result": [
+          "계약 처리 기간",
+          "이의 제기·분쟁 건수",
+          "예산 절감액",
+          "감사 지적 건수"
+        ],
+        "en": [
+          "public procurement",
+          "bidding",
+          "contract management",
+          "compliance"
+        ]
+      },
+      "sources": [
+        "b04s6"
+      ]
+    },
+    {
+      "id": "scm_planner",
+      "aliases": [
+        "SCM",
+        "SCM 기획",
+        "공급망 관리",
+        "수급 관리",
+        "S&OP 담당",
+        "Supply Chain Manager",
+        "Supply Chain Planner"
+      ],
+      "skills": [
+        "수요·공급 계획 연계",
+        "재고 정책 설계",
+        "S&OP 운영",
+        "데이터 분석(엑셀·ERP)",
+        "부서 간 조율",
+        "공급 리스크 대응"
+      ],
+      "responsibilities": [
+        "판매·생산·구매 계획 연계와 S&OP 운영",
+        "안전재고·재고 수준 관리",
+        "공급 부족 시 물량 배분",
+        "공급망 리스크 모니터링",
+        "재고·결품 KPI 관리"
+      ],
+      "keywords": [
+        "S&OP",
+        "안전재고",
+        "리드타임",
+        "재고 회전율",
+        "결품",
+        "채찍 효과",
+        "공급 계획",
+        "생산 계획",
+        "재고 일수",
+        "ERP",
+        "배분"
+      ],
+      "topics": {
+        "role": [
+          "수급 계획",
+          "재고 수준",
+          "리드타임 관리",
+          "물량 배분",
+          "공급 리스크"
+        ],
+        "scenario": [
+          "핵심 부품 공급 중단",
+          "월말 계획 외 출고 요청",
+          "해외 공장 생산 차질",
+          "재고 금액 증가"
+        ],
+        "result": [
+          "재고 일수",
+          "결품률",
+          "계획 준수율",
+          "재고 회전율"
+        ],
+        "en": [
+          "supply chain planning",
+          "S&OP",
+          "safety stock",
+          "inventory turnover"
+        ]
+      },
+      "sources": [
+        "b04s8",
+        "b04s9"
+      ]
+    },
+    {
+      "id": "logistics_manager",
+      "aliases": [
+        "물류관리",
+        "물류 담당",
+        "물류기획",
+        "운송 관리",
+        "배송 관리",
+        "국제물류",
+        "Logistics Manager",
+        "Logistics Coordinator"
+      ],
+      "skills": [
+        "운송사 선정·관리",
+        "물류비 분석",
+        "수배송 계획",
+        "3PL 계약 관리",
+        "물류 KPI 설계",
+        "국제운송 이해"
+      ],
+      "responsibilities": [
+        "운송·배송 계획과 운송사 관리",
+        "물류비 분석과 절감",
+        "3PL·포워더 계약과 서비스 수준 관리",
+        "파손·지연 클레임 처리",
+        "물류 거점·네트워크 검토"
+      ],
+      "keywords": [
+        "운송사",
+        "운임",
+        "물류비",
+        "3PL",
+        "포워더",
+        "FCL",
+        "LCL",
+        "배송 리드타임",
+        "파손",
+        "거점",
+        "KPI",
+        "수배송"
+      ],
+      "topics": {
+        "role": [
+          "물류비 관리",
+          "운송사 관리",
+          "배송 품질",
+          "물류 네트워크",
+          "국제 운송"
+        ],
+        "scenario": [
+          "배송 차량 사고",
+          "운임 인상 요구",
+          "반복 파손 클레임",
+          "거점 추가 검토"
+        ],
+        "result": [
+          "매출 대비 물류비",
+          "정시 배송률",
+          "파손율",
+          "운송 단가"
+        ],
+        "en": [
+          "transportation management",
+          "logistics cost",
+          "3PL",
+          "delivery performance"
+        ]
+      },
+      "sources": [
+        "b04s8"
+      ]
+    },
+    {
+      "id": "demand_planner",
+      "aliases": [
+        "수요예측",
+        "수급계획",
+        "수요 계획",
+        "디맨드 플래너",
+        "판매 계획",
+        "Demand Planner",
+        "Demand Forecasting Analyst"
+      ],
+      "skills": [
+        "시계열 예측",
+        "예측 정확도 관리",
+        "프로모션·이벤트 반영",
+        "엑셀·통계 도구 활용",
+        "영업과의 협의",
+        "수급 조정"
+      ],
+      "responsibilities": [
+        "품목별 수요 예측과 판매 계획 수립",
+        "예측 오차 분석과 모델 개선",
+        "프로모션·신제품 수요 반영",
+        "영업·생산과 수급 회의",
+        "과잉·부족 재고 조정"
+      ],
+      "keywords": [
+        "수요 예측",
+        "예측 오차",
+        "MAPE",
+        "예측 정확도",
+        "시계열",
+        "계절성",
+        "프로모션",
+        "신제품",
+        "결품",
+        "수급 회의",
+        "판매 계획"
+      ],
+      "topics": {
+        "role": [
+          "예측 모델",
+          "예측 오차 관리",
+          "신제품 예측",
+          "프로모션 반영",
+          "수급 조정"
+        ],
+        "scenario": [
+          "예측 대폭 이탈",
+          "외부 요인에 의한 수요 급증",
+          "시즌 초반 판매 저조",
+          "영업 계획 과대"
+        ],
+        "result": [
+          "예측 정확도",
+          "결품률",
+          "재고 과잉률",
+          "계획 대비 판매"
+        ],
+        "en": [
+          "demand forecasting",
+          "forecast accuracy",
+          "seasonality",
+          "demand sensing"
+        ]
+      },
+      "sources": [
+        "b04s9"
+      ]
+    },
+    {
+      "id": "warehouse_ops",
+      "aliases": [
+        "물류센터 운영",
+        "센터 운영",
+        "창고 관리",
+        "풀필먼트 운영",
+        "WMS 운영",
+        "현장 관리자",
+        "Warehouse Operations",
+        "Fulfillment Operations"
+      ],
+      "skills": [
+        "입출고 프로세스 관리",
+        "재고 정확도 관리",
+        "현장 인력 운영",
+        "생산성 개선",
+        "안전 관리",
+        "WMS 활용"
+      ],
+      "responsibilities": [
+        "입고·보관·피킹·출고 운영",
+        "로케이션·재고 실사 관리",
+        "일별 인력·작업량 계획",
+        "오출고·파손 관리",
+        "현장 안전 점검과 교육"
+      ],
+      "keywords": [
+        "입고",
+        "출고",
+        "피킹",
+        "패킹",
+        "로케이션",
+        "재고 실사",
+        "WMS",
+        "오출고",
+        "생산성",
+        "UPH",
+        "안전",
+        "지게차",
+        "풀필먼트"
+      ],
+      "topics": {
+        "role": [
+          "입출고 운영",
+          "재고 정확도",
+          "인력 운영",
+          "생산성 개선",
+          "현장 안전"
+        ],
+        "scenario": [
+          "주문 폭증일 출고 마감",
+          "현장 인력 결근",
+          "안전사고 발생",
+          "오출고 증가"
+        ],
+        "result": [
+          "출고 정확도",
+          "시간당 처리량",
+          "재고 정확도",
+          "안전사고 건수"
+        ],
+        "en": [
+          "warehouse management",
+          "fulfillment",
+          "picking productivity",
+          "inventory accuracy"
+        ]
+      },
+      "sources": [
+        "b04s8",
+        "b04s9"
+      ]
+    },
+    {
+      "id": "cs_agent",
+      "aliases": [
+        "CS 상담",
+        "고객상담",
+        "상담사",
+        "고객센터",
+        "콜센터 상담",
+        "채팅 상담",
+        "Customer Service Representative",
+        "CS Agent"
+      ],
+      "skills": [
+        "경청과 공감",
+        "문의 파악·안내",
+        "불만 고객 응대",
+        "상담 이력 기록",
+        "상품·정책 숙지",
+        "감정 관리"
+      ],
+      "responsibilities": [
+        "전화·채팅·게시판 고객 문의 응대",
+        "불만·클레임 접수와 1차 해결",
+        "상담 이력 기록과 유관 부서 이관",
+        "반복 문의 공유",
+        "고객 만족도 관리"
+      ],
+      "keywords": [
+        "상담",
+        "문의",
+        "불만",
+        "클레임",
+        "응대",
+        "이관",
+        "상담 이력",
+        "통화 시간",
+        "응답률",
+        "만족도",
+        "환불",
+        "악성 민원"
+      ],
+      "topics": {
+        "role": [
+          "문의 응대",
+          "불만 고객 응대",
+          "이관 판단",
+          "상담 기록",
+          "감정 관리"
+        ],
+        "scenario": [
+          "본인 안내 실수",
+          "반복 항의 고객",
+          "장시간 대기 후 항의",
+          "정책상 불가 요청"
+        ],
+        "result": [
+          "고객 만족도",
+          "1차 해결률",
+          "평균 처리 시간",
+          "재문의율"
+        ],
+        "en": [
+          "customer service",
+          "complaint handling",
+          "first contact resolution",
+          "empathy"
+        ]
+      },
+      "sources": [
+        "b04s10",
+        "b04s11"
+      ]
+    },
+    {
+      "id": "cs_manager",
+      "aliases": [
+        "CS 기획",
+        "CS 운영",
+        "고객경험 기획",
+        "CX 매니저",
+        "VOC 담당",
+        "상담센터 운영",
+        "Customer Experience Manager",
+        "CS Operations Manager"
+      ],
+      "skills": [
+        "VOC 분석",
+        "상담 품질(QA) 관리",
+        "매뉴얼·FAQ 설계",
+        "상담 인력 운영",
+        "CS 지표 관리",
+        "유관 부서 협업"
+      ],
+      "responsibilities": [
+        "VOC 수집·분석과 개선 과제 도출",
+        "상담 매뉴얼·정책 수립",
+        "상담 품질 평가와 교육",
+        "인입량 예측과 인력 운영",
+        "외주 센터·상담 채널 관리"
+      ],
+      "keywords": [
+        "VOC",
+        "QA",
+        "매뉴얼",
+        "FAQ",
+        "응대율",
+        "인입량",
+        "재문의율",
+        "CSAT",
+        "NPS",
+        "악성 민원",
+        "상담사 보호",
+        "외주 센터"
+      ],
+      "topics": {
+        "role": [
+          "VOC 개선",
+          "상담 품질 관리",
+          "운영 인력 계획",
+          "악성 민원 정책",
+          "CS 지표"
+        ],
+        "scenario": [
+          "신규 서비스 출시 후 문의 폭증",
+          "판매자 과실 불만 급증",
+          "상담사 이직 증가",
+          "만족도 하락"
+        ],
+        "result": [
+          "CSAT·NPS",
+          "응대율",
+          "재문의율",
+          "VOC 개선 반영 건수"
+        ],
+        "en": [
+          "voice of customer",
+          "quality assurance",
+          "workforce management",
+          "CX metrics"
+        ]
+      },
+      "sources": [
+        "b04s10",
+        "b04s11"
+      ]
+    },
+    {
+      "id": "tech_support",
+      "aliases": [
+        "기술지원",
+        "기술 지원 엔지니어",
+        "테크니컬 서포트",
+        "고객 기술지원",
+        "헬프데스크",
+        "Technical Support Engineer",
+        "Tech Support"
+      ],
+      "skills": [
+        "문제 재현·원인 분석",
+        "로그·환경 점검",
+        "이슈 티켓 관리",
+        "비전문가 대상 설명",
+        "장애 대응",
+        "제품 기술 이해"
+      ],
+      "responsibilities": [
+        "고객 기술 문의·장애 접수와 진단",
+        "원격 지원과 해결 가이드 제공",
+        "개발팀 이슈 전달과 추적",
+        "장애 등급 관리와 공지",
+        "기술 문서·FAQ 작성"
+      ],
+      "keywords": [
+        "장애",
+        "재현",
+        "로그",
+        "티켓",
+        "원격 지원",
+        "에스컬레이션",
+        "SLA",
+        "버그",
+        "업데이트",
+        "환경 설정",
+        "API",
+        "릴리스"
+      ],
+      "topics": {
+        "role": [
+          "문제 진단",
+          "장애 대응",
+          "이슈 전달",
+          "고객 커뮤니케이션",
+          "지식 관리"
+        ],
+        "scenario": [
+          "새벽 시스템 장애",
+          "업데이트 후 동시 오류",
+          "기본 점검 거부 고객",
+          "제품 결함 확인"
+        ],
+        "result": [
+          "평균 해결 시간",
+          "SLA 준수율",
+          "재오픈율",
+          "고객 만족도"
+        ],
+        "en": [
+          "technical support",
+          "troubleshooting",
+          "incident management",
+          "escalation"
+        ]
+      }
+    },
+    {
+      "id": "service_planner",
+      "aliases": [
+        "서비스기획",
+        "서비스 기획자",
+        "웹기획",
+        "앱 기획",
+        "화면 기획",
+        "UX 기획",
+        "Service Planner",
+        "Product Planner"
+      ],
+      "skills": [
+        "문제 정의",
+        "요구사항 정리",
+        "화면 설계(와이어프레임)",
+        "정책 설계",
+        "데이터 기반 개선",
+        "개발·디자인 협업"
+      ],
+      "responsibilities": [
+        "사용자 문제 정의와 개선 과제 도출",
+        "화면 설계서·정책 문서 작성",
+        "개발·디자인·QA와 일정 협업",
+        "출시 후 지표 분석과 개선",
+        "운영 정책 관리"
+      ],
+      "keywords": [
+        "기획서",
+        "화면 설계서",
+        "와이어프레임",
+        "스토리보드",
+        "정책",
+        "예외 케이스",
+        "요구사항",
+        "QA",
+        "퍼널",
+        "이탈",
+        "리텐션",
+        "사용성"
+      ],
+      "topics": {
+        "role": [
+          "문제 정의",
+          "화면·정책 설계",
+          "요구사항 관리",
+          "지표 기반 개선",
+          "협업"
+        ],
+        "scenario": [
+          "QA 단계 기획 누락",
+          "디자인과의 구조 이견",
+          "법무 이슈로 기능 제한",
+          "결제 단계 이탈"
+        ],
+        "result": [
+          "전환율",
+          "리텐션",
+          "출시 일정 준수",
+          "기능 사용률"
+        ],
+        "en": [
+          "service planning",
+          "wireframe",
+          "user flow",
+          "requirements"
+        ]
+      },
+      "sources": [
+        "b04s12",
+        "b04s13"
+      ]
+    },
+    {
+      "id": "product_manager",
+      "aliases": [
+        "PM",
+        "프로덕트 매니저",
+        "제품 관리자",
+        "Product Manager",
+        "그로스 PM"
+      ],
+      "skills": [
+        "우선순위 결정",
+        "지표 설계",
+        "가설 검증·실험",
+        "사용자 리서치",
+        "로드맵 관리",
+        "이해관계자 조율"
+      ],
+      "responsibilities": [
+        "제품 목표와 핵심 지표 설정",
+        "기능 우선순위 결정과 로드맵 관리",
+        "사용자 리서치와 실험 설계",
+        "개발·디자인·사업 조직 조율",
+        "출시 성과 분석과 다음 과제 결정"
+      ],
+      "keywords": [
+        "우선순위",
+        "로드맵",
+        "핵심 지표",
+        "North Star",
+        "A/B 테스트",
+        "가설",
+        "MVP",
+        "사용자 인터뷰",
+        "리텐션",
+        "전환율",
+        "이해관계자"
+      ],
+      "topics": {
+        "role": [
+          "우선순위",
+          "지표",
+          "실험",
+          "사용자 이해",
+          "이해관계자 관리"
+        ],
+        "scenario": [
+          "핵심 지표 급락",
+          "부서 간 요구 충돌",
+          "경쟁사 선출시",
+          "애매한 실험 결과"
+        ],
+        "result": [
+          "핵심 지표 개선",
+          "실험 성공률",
+          "기능 채택률",
+          "매출 기여"
+        ],
+        "en": [
+          "product management",
+          "prioritization",
+          "experimentation",
+          "product metrics"
+        ]
+      }
+    },
+    {
+      "id": "product_owner",
+      "aliases": [
+        "PO",
+        "프로덕트 오너",
+        "Product Owner",
+        "애자일 PO",
+        "스크럼 PO"
+      ],
+      "skills": [
+        "백로그 관리",
+        "사용자 스토리 작성",
+        "스프린트 운영 참여",
+        "가치 기반 우선순위",
+        "팀 커뮤니케이션",
+        "기술 부채 판단"
+      ],
+      "responsibilities": [
+        "제품 백로그 정의와 우선순위 관리",
+        "사용자 스토리·인수 조건 작성",
+        "스프린트 계획·리뷰 참여",
+        "이해관계자 요구 수렴과 조율",
+        "릴리스 결과 확인과 백로그 조정"
+      ],
+      "keywords": [
+        "백로그",
+        "사용자 스토리",
+        "인수 조건",
+        "스프린트",
+        "스크럼",
+        "애자일",
+        "기술 부채",
+        "릴리스",
+        "벨로시티",
+        "OKR"
+      ],
+      "topics": {
+        "role": [
+          "백로그 관리",
+          "스토리 정의",
+          "스프린트 운영",
+          "기술 부채",
+          "팀 정렬"
+        ],
+        "scenario": [
+          "스프린트 중 긴급 요구",
+          "추정 작업량 초과",
+          "팀 간 소유권 충돌",
+          "분기 목표 미달"
+        ],
+        "result": [
+          "스프린트 목표 달성률",
+          "릴리스 주기",
+          "분기 목표 달성률",
+          "결함 수"
+        ],
+        "en": [
+          "product backlog",
+          "user story",
+          "agile",
+          "sprint planning"
+        ]
+      }
+    },
+    {
+      "id": "project_manager_it",
+      "aliases": [
+        "IT 프로젝트 매니저",
+        "IT PM",
+        "프로젝트 관리자",
+        "SI PM",
+        "PMO",
+        "IT Project Manager",
+        "Project Manager"
+      ],
+      "skills": [
+        "범위·일정·비용 관리",
+        "WBS 작성",
+        "리스크·이슈 관리",
+        "요구사항 변경 관리",
+        "외주·고객 커뮤니케이션",
+        "품질·테스트 관리"
+      ],
+      "responsibilities": [
+        "프로젝트 계획·WBS 수립",
+        "일정·예산·인력 관리",
+        "리스크·이슈 추적과 보고",
+        "고객 요구사항·변경 관리",
+        "테스트·오픈 준비와 종료 관리"
+      ],
+      "keywords": [
+        "WBS",
+        "범위",
+        "일정",
+        "예산",
+        "리스크",
+        "이슈",
+        "변경 관리",
+        "공정률",
+        "통합 테스트",
+        "오픈",
+        "PMO",
+        "산출물",
+        "외주"
+      ],
+      "topics": {
+        "role": [
+          "범위 관리",
+          "일정·예산 관리",
+          "리스크 관리",
+          "변경 관리",
+          "이해관계자 보고"
+        ],
+        "scenario": [
+          "오픈 직전 핵심 인력 이탈",
+          "계약 외 기능 요구",
+          "테스트 결함 급증",
+          "예산 초과"
+        ],
+        "result": [
+          "일정 준수율",
+          "예산 집행률",
+          "결함 밀도",
+          "고객 만족"
+        ],
+        "en": [
+          "project management",
+          "scope management",
+          "risk management",
+          "change control"
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "text": "해외영업인이 갖춰야 할 덕목을 하나 꼽는다면 무엇이고, 왜 그렇게 생각하세요?",
+      "scope": "family:trade",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "무역 비즈니스는 어디에서 수익이 생기는 구조라고 이해하고 계신가요?",
+      "scope": "family:trade",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "서류를 정확하게 처리하는 일과 사람을 상대하며 관계를 쌓는 일 중 어느 쪽이 본인에게 더 맞나요?",
+      "scope": "family:trade",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "수출 한 건이 계약부터 대금 회수까지 어떤 흐름으로 진행되는지 설명해 주세요.",
+      "scope": "family:trade",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "문화나 언어가 다른 사람과 일하다 오해가 생겼을 때 어떻게 풀었는지 말씀해 주세요.",
+      "scope": "family:trade",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "처음 접하는 제품이나 분야를 빨리 익혀 다른 사람에게 설명해야 했던 경험이 있나요?",
+      "scope": "family:trade",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 부서 사이에서 일정을 맞추느라 조율했던 경험을 말씀해 주세요.",
+      "scope": "family:trade",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "작은 서류 실수가 큰 문제로 번지기 전에 미리 잡아낸 경험이 있나요?",
+      "scope": "family:trade",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "낯선 환경에 혼자 들어가 관계를 처음부터 만들어 간 경험을 말씀해 주세요.",
+      "scope": "family:trade",
+      "category": "경험",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "실적을 맞추려다 생산이나 물류 부서와 입장이 부딪히면 어떻게 조율하시겠어요?",
+      "scope": "family:trade",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "선적 직전에 바이어가 제품 사양을 바꿔 달라고 요청해 오면 어떻게 대응하시겠어요?",
+      "scope": "family:trade",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "바이어가 도착한 물품의 품질을 문제 삼아 클레임을 제기하면 무엇부터 확인하시겠어요?",
+      "scope": "family:trade",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "환율이 크게 움직여 이미 계약한 건의 이익이 거의 사라지게 됐다면 어떻게 하시겠어요?",
+      "scope": "family:trade",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래처가 약속한 납기나 대금 지급을 지키지 않으면 어떤 절차로 처리하시겠어요?",
+      "scope": "family:trade",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "해외에서 지내거나 인턴을 했던 나라를 고른 이유와 그곳에서 얻은 것을 말씀해 주세요.",
+      "scope": "family:trade",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "외국어로 중요한 내용을 전달하거나 협상해 본 경험을 말씀해 주세요.",
+      "scope": "family:trade",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "무역 실무를 익히려고 스스로 공부하거나 준비해 온 과정을 말씀해 주세요.",
+      "scope": "family:trade",
+      "category": "성장",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "최근 읽은 해외 경제 기사 하나를 소개하고 그에 대한 본인 생각을 말씀해 주세요.",
+      "scope": "family:trade",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "무역·상사 비즈니스가 앞으로 어떤 방향으로 바뀌어야 살아남는다고 보세요?",
+      "scope": "family:trade",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "보호무역 흐름이나 공급망 재편이 국내 수출 기업에 어떤 영향을 준다고 보세요?",
+      "scope": "family:trade",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "바이어가 관세를 줄이려고 인보이스 금액을 낮춰 적어 달라고 하면 어떻게 하시겠어요?",
+      "scope": "family:trade",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 거래처 담당자가 거래를 이어 가는 대가로 개인적인 사례를 요구하면 어떻게 대응하시겠어요?",
+      "scope": "family:trade",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외영업은 시차 때문에 업무 시간이 불규칙할 때가 많은데, 일과 개인 생활의 균형을 어떻게 보세요?",
+      "scope": "family:trade",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s1",
+      "confidence": "high"
+    },
+    {
+      "text": "협상이나 거래에서 뜻대로 되지 않았던 경험에서 무엇을 배우셨나요?",
+      "scope": "family:trade",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 관련 경험에서 본인이 만든 성과를 숫자로 설명해 주실 수 있나요?",
+      "scope": "family:trade",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 맡았던 거래나 프로젝트가 잘됐다고 판단한 기준은 무엇이었나요?",
+      "scope": "family:trade",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 산지의 기상 악화로 원자재 수급에 차질이 생긴 상황을 가정해 대응 전략을 발표해 주세요.",
+      "scope": "family:trade",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "외국어를 전공했는데 공인 점수가 없다면 실무 외국어 실력을 어떻게 증명하시겠어요?",
+      "scope": "family:trade",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "회사를 고를 때 가장 중요하게 보는 기준을 외국어로 말씀해 주시겠어요?",
+      "scope": "family:trade",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "처음 거래하는 바이어에게 FOB와 CIF 중 어떤 조건을 제안할지 판단 근거와 함께 말씀해 주세요.",
+      "scope": "role:overseas_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신규 바이어와 거래할 때 신용장과 T/T 송금 중 어떤 결제 방식을 택하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 전시회에서 만난 잠재 바이어를 실제 주문까지 이어 가려면 어떻게 관리하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신규 바이어의 신용도를 거래 전에 어떻게 확인하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현지 에이전트를 통한 판매와 직접 판매 중 어떤 기준으로 선택하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오래 거래한 바이어가 경쟁사 견적을 보여 주며 10% 인하를 요구하면 어떻게 대응하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산 지연으로 선적이 2주 밀리게 됐다면 바이어에게 어떻게 알리시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객사 주문이 절반으로 취소돼 이미 잡아 둔 운송 계약을 조정해야 한다면 어떻게 협상하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "꾸준히 주문하던 바이어가 갑자기 연락이 끊기고 발주도 멈췄다면 무엇부터 확인하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "담당 국가 매출이 1년 사이 30% 줄었다면 원인을 어떤 순서로 찾아보시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원가가 올라 수출 단가를 올려야 할 때 인상 폭과 시점을 어떻게 정하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이전 인턴이나 실무에서 맡았던 업무를 해외영업과 연결해 구체적으로 설명해 주세요.",
+      "scope": "role:overseas_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s1",
+      "confidence": "high"
+    },
+    {
+      "text": "협상에서 원하는 조건을 얻어 낸 경험이 있다면 어떤 전략을 썼는지 말씀해 주세요.",
+      "scope": "role:overseas_sales",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외영업과 국내영업은 일하는 방식에서 무엇이 가장 다르다고 보세요?",
+      "scope": "role:overseas_sales",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 무역 분야 중에서 이 분야의 해외영업에 지원하게 된 이유가 궁금합니다.",
+      "scope": "role:overseas_sales",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "외국어만 잘해서는 해외영업을 잘할 수 없다는 말에 어떻게 답하시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외영업 직무에서 다른 지원자와 비교해 본인만 발휘할 수 있는 강점은 무엇인가요?",
+      "scope": "role:overseas_sales",
+      "category": "강점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s1",
+      "confidence": "high"
+    },
+    {
+      "text": "방금 말씀하신 강점을 영어나 다른 외국어로 다시 한번 설명해 주시겠어요?",
+      "scope": "role:overseas_sales",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s1",
+      "confidence": "high"
+    },
+    {
+      "text": "인보이스, 패킹리스트, B/L을 준비할 때 서로 가장 먼저 맞춰 보는 항목은 무엇인가요?",
+      "scope": "role:trade_admin",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신용장을 처음 받았을 때 어떤 항목들을 꼼꼼히 확인하시겠어요?",
+      "scope": "role:trade_admin",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "수입 통관에서 HS 코드를 잘못 적용하면 어떤 문제가 생길 수 있을까요?",
+      "scope": "role:trade_admin",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원산지 증명서가 FTA 혜택과 관련해 왜 중요한지 실무 관점에서 설명해 주세요.",
+      "scope": "role:trade_admin",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "포워더에게 선적 부킹을 요청할 때 꼭 전달해야 할 정보에는 어떤 것들이 있나요?",
+      "scope": "role:trade_admin",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인코텀즈 조건에 따라 적하보험을 누가 들어야 하는지 어떻게 판단하시나요?",
+      "scope": "role:trade_admin",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "선적 서류가 신용장 조건과 달라 은행에서 하자 통보를 받으면 어떻게 처리하시겠어요?",
+      "scope": "role:trade_admin",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "선박 스케줄이 갑자기 바뀌어 약속한 선적일을 못 맞추게 되면 누구에게 무엇부터 알리시겠어요?",
+      "scope": "role:trade_admin",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업 담당자가 서류 마감 직전에 수량을 바꿔 달라고 요청하면 어떻게 하시겠어요?",
+      "scope": "role:trade_admin",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 화물을 해상과 항공으로 보낼 때 비용과 납기 차이를 어떻게 비교해 결정하시겠어요?",
+      "scope": "role:trade_admin",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "처리해야 할 선적 건수가 한 달 새 두 배로 늘었다면 실수를 줄이려고 업무를 어떻게 바꾸시겠어요?",
+      "scope": "role:trade_admin",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "반복되는 서류 작업에서 실수를 줄이려고 본인만의 방법을 만든 경험이 있나요?",
+      "scope": "role:trade_admin",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 사람의 요청을 한꺼번에 받아 마감 안에 처리했던 경험을 말씀해 주세요.",
+      "scope": "role:trade_admin",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "무역사무는 단순한 서류 작업이라는 시선도 있는데, 실제로는 어떤 역할을 한다고 보세요?",
+      "scope": "role:trade_admin",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "무역 영업이 아니라 무역사무를 선택하신 이유가 무엇인가요?",
+      "scope": "role:trade_admin",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "서류 하나만 틀려도 통관이 늦어져 손실이 큰데, 본인이 실수하지 않을 거라고 어떻게 믿을 수 있을까요?",
+      "scope": "role:trade_admin",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "무역 관련 자격증을 공부하면서 실무에 가장 도움이 될 것 같았던 내용은 무엇인가요?",
+      "scope": "role:trade_admin",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새로운 해외 시장에 진출할지 판단할 때 가장 먼저 보는 지표는 무엇인가요?",
+      "scope": "role:global_business",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현지 파트너 후보가 여럿이라면 어떤 기준으로 평가해 고르시겠어요?",
+      "scope": "role:global_business",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현지 법인 설립, 합작, 유통 파트너 계약 중 진출 방식을 어떤 기준으로 정하시겠어요?",
+      "scope": "role:global_business",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 파트너와 MOU를 맺고도 실제 계약으로 이어지지 않는 일을 줄이려면 어떻게 하시겠어요?",
+      "scope": "role:global_business",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "진출하려는 국가의 규제나 인허가 리스크를 미리 어떻게 파악하시겠어요?",
+      "scope": "role:global_business",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "투자자가 원하는 파트너 대신 우리가 원하는 파트너와 계약하려 할 때 투자자를 어떻게 설득하시겠어요?",
+      "scope": "role:global_business",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "현지 파트너가 계약한 목표 물량을 두 분기 연속 채우지 못하면 어떻게 하시겠어요?",
+      "scope": "role:global_business",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "진출을 준비하던 국가에 갑자기 정치적 불안이 생기면 프로젝트를 어떻게 판단하시겠어요?",
+      "scope": "role:global_business",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "동남아의 한 국가에 새로 진출한다고 가정하면 진출 전략을 어떤 순서로 세우시겠어요?",
+      "scope": "role:global_business",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "해외 신사업의 손익분기점을 추정할 때 어떤 항목들을 가정하시겠어요?",
+      "scope": "role:global_business",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공급 과잉으로 성장이 멈춘 산업에서 새로운 사업 기회를 찾는다면 어떻게 접근하시겠어요?",
+      "scope": "role:global_business",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "정보가 부족한 상황에서 조사와 분석으로 새로운 방향을 제안했던 경험이 있나요?",
+      "scope": "role:global_business",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이해관계가 서로 다른 사람들을 하나의 목표로 묶어 일을 진행한 경험을 말씀해 주세요.",
+      "scope": "role:global_business",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "글로벌 사업개발과 해외영업은 일하는 방식이 어떻게 다르다고 생각하세요?",
+      "scope": "role:global_business",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 사업 분야나 품목 중 가장 맡아 보고 싶은 분야와 그 이유를 말씀해 주세요.",
+      "scope": "role:global_business",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "제안하신 진출 전략이 3년 뒤 실패로 끝난다면 가장 큰 원인은 무엇일 것 같으세요?",
+      "scope": "role:global_business",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "요즘 유망하다고 보는 해외 사업 분야 하나를 골라 그렇게 판단한 근거를 말씀해 주세요.",
+      "scope": "role:global_business",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "아프리카의 한 국가를 골라 어떤 사업을 어떻게 시작할지 구체적으로 발표해 주세요.",
+      "scope": "role:global_business",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s2",
+      "confidence": "high"
+    },
+    {
+      "text": "기획 MD와 온라인 MD 중 본인에게 더 잘 맞는 쪽은 어디이고, 왜 그렇게 보세요?",
+      "scope": "family:merchandising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "MD를 흔히 '작은 사장'이라고 부르는데, 그 말이 어떤 의미라고 생각하세요?",
+      "scope": "family:merchandising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "잘 팔리는 상품과 좋은 상품은 어떻게 다르다고 보세요?",
+      "scope": "family:merchandising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "MD가 매출 말고도 반드시 함께 챙겨야 하는 숫자는 무엇이라고 생각하세요?",
+      "scope": "family:merchandising",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래처와 조건을 두고 줄다리기를 하다가 합의점을 찾았던 경험을 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "디자인, 마케팅, 물류처럼 여러 부서 의견을 모아 하나의 결론을 낸 경험이 있나요?",
+      "scope": "family:merchandising",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감이 아니라 데이터를 근거로 의견을 관철했던 경험을 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "데이터",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "트렌드를 남보다 먼저 알아차리려고 평소 꾸준히 하는 일이 있나요?",
+      "scope": "family:merchandising",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "예상과 전혀 다른 결과가 나왔을 때 빠르게 방향을 바꿨던 경험을 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시즌 준비와 행사 운영이 한꺼번에 몰려 일이 많을 때 우선순위를 어떻게 정하시겠어요?",
+      "scope": "family:merchandising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "공들여 준비한 신상품 판매가 출시 2주 만에 목표의 절반에 머문다면 어떻게 하시겠어요?",
+      "scope": "family:merchandising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "잘 팔리던 상품의 협력사가 갑자기 공급가를 올리겠다고 하면 어떻게 대응하시겠어요?",
+      "scope": "family:merchandising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매 중인 상품에서 품질 문제가 발견돼 고객 불만이 쌓이기 시작하면 무엇부터 하시겠어요?",
+      "scope": "family:merchandising",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업이나 매장이 원하는 상품 구성과 본인 판단이 다르면 어떻게 조율하시겠어요?",
+      "scope": "family:merchandising",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "직접 물건을 기획하거나 팔아 본 경험이 있다면 그 과정과 결과를 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "소비자 조사나 인터뷰로 새로운 인사이트를 얻었던 경험을 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "한정된 예산으로 최대한의 효과를 내야 했던 경험을 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "최근 유통 채널의 변화 중 MD 업무에 가장 큰 영향을 준다고 보는 것은 무엇인가요?",
+      "scope": "family:merchandising",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "요즘 소비자가 상품을 고르는 기준이 예전과 어떻게 달라졌다고 느끼세요?",
+      "scope": "family:merchandising",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "가격 경쟁이 치열해지는 상황에서 MD가 차별화할 수 있는 방법은 무엇이라고 보세요?",
+      "scope": "family:merchandising",
+      "category": "경쟁",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사가 입점이나 발주를 대가로 선물이나 접대를 제안하면 어떻게 하시겠어요?",
+      "scope": "family:merchandising",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매를 늘리려고 상품 효능이나 원산지를 과장해 표현하자는 의견이 나오면 어떻게 하시겠어요?",
+      "scope": "family:merchandising",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 고른 상품이나 기획이 실패했던 경험에서 무엇을 배우셨나요?",
+      "scope": "family:merchandising",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입사 후 1개월, 3개월, 6개월 뒤에 각각 어떤 MD가 되어 있을지 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "b04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "본인이 기획하거나 운영한 일의 성과를 어떤 지표로 증명할 수 있나요?",
+      "scope": "family:merchandising",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출은 늘었는데 이익이 줄었다면 그 결과를 성공이라고 볼 수 있을까요?",
+      "scope": "family:merchandising",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오프라인 매장을 줄이는 것과 체험형 매장으로 바꾸는 것 중 어느 쪽이 맞는지 토론해 보세요.",
+      "scope": "family:merchandising",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "평소 자주 가는 매장 하나를 골라 MD 관점에서 장단점을 말씀해 주세요.",
+      "scope": "family:merchandising",
+      "category": "고객",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s4",
+      "confidence": "high"
+    },
+    {
+      "text": "신상품을 기획할 때 타깃 고객과 가격대를 어떤 근거로 정하시나요?",
+      "scope": "role:md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상품 구성을 짤 때 주력 상품과 구색 상품의 비중은 어떻게 판단하시겠어요?",
+      "scope": "role:md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원가, 판매가, 마진 목표가 서로 맞지 않을 때 무엇부터 조정하시겠어요?",
+      "scope": "role:md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새 협력사를 발굴할 때 어떤 기준으로 평가하시겠어요?",
+      "scope": "role:md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "출시일에서 거꾸로 일정을 짤 때 꼭 챙겨야 하는 단계들을 말씀해 주세요.",
+      "scope": "role:md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "안 팔리는 재고를 정리할 때 할인, 기획전, 반품 협의 중 무엇을 먼저 검토하시겠어요?",
+      "scope": "role:md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "출시 직전 샘플 품질이 기대에 못 미치면 일정을 지키시겠어요, 미루시겠어요?",
+      "scope": "role:md",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경쟁사가 비슷한 상품을 더 낮은 가격에 먼저 내놓았다면 어떻게 대응하시겠어요?",
+      "scope": "role:md",
+      "category": "경쟁",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "초기 반응이 예상보다 훨씬 좋아 곧 품절이 우려된다면 어떻게 하시겠어요?",
+      "scope": "role:md",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "A는 매출이 크지만 마진이 낮고, B는 매출은 작지만 마진이 높다면 어디에 집중하시겠어요?",
+      "scope": "role:md",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새로 기획한 상품의 첫해 판매량을 어떤 방식으로 추정해 보시겠어요?",
+      "scope": "role:md",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시장 조사를 하다 발견한 기회를 실제 아이디어로 연결했던 경험을 말씀해 주세요.",
+      "scope": "role:md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매 부진의 원인을 데이터로 찾아 개선해 본 경험이 있나요?",
+      "scope": "role:md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "MD 직무에 필요한 역량을 딱 하나만 꼽는다면 무엇이라고 보세요?",
+      "scope": "role:md",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "여러 기획 직무 중에서 상품기획 MD를 목표로 하게 된 계기가 궁금합니다.",
+      "scope": "role:md",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획한 상품이 잘 팔렸다면 기획 덕분인지 시장이 좋았던 덕분인지 어떻게 구분하시겠어요?",
+      "scope": "role:md",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상세페이지를 개선할 때 어떤 지표를 보고 우선순위를 정하시겠어요?",
+      "scope": "role:online_md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획전이나 타임딜을 준비할 때 협력사와 반드시 합의해야 하는 조건은 무엇인가요?",
+      "scope": "role:online_md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "쿠폰이나 할인 행사를 설계할 때 마진이 무너지지 않도록 어떻게 관리하시겠어요?",
+      "scope": "role:online_md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "검색 결과나 카테고리 상단 노출을 위해 MD가 할 수 있는 일은 무엇이 있을까요?",
+      "scope": "role:online_md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새 브랜드를 입점시키려 할 때 어떤 점을 내세워 설득하시겠어요?",
+      "scope": "role:online_md",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상품 리뷰를 MD 업무에 어떻게 활용하시겠어요?",
+      "scope": "role:online_md",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대형 행사 당일 재고가 예상보다 빨리 소진되면 어떻게 대응하시겠어요?",
+      "scope": "role:online_md",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사 입력 오류로 가격이 잘못 노출돼 주문이 몰렸다면 어떻게 하시겠어요?",
+      "scope": "role:online_md",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다른 채널이 같은 상품을 더 싸게 판다는 고객 문의가 이어지면 어떻게 하시겠어요?",
+      "scope": "role:online_md",
+      "category": "경쟁",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "방문자는 늘었는데 구매 전환율이 떨어졌다면 원인을 어떤 순서로 찾으시겠어요?",
+      "scope": "role:online_md",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "담당 카테고리 월 매출을 20% 올려야 한다면 어떤 방법부터 검토하시겠어요?",
+      "scope": "role:online_md",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "온라인에서 무언가를 팔거나 채널을 운영해 반응을 끌어낸 경험이 있나요?",
+      "scope": "role:online_md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매일 숫자를 들여다보며 작은 개선을 반복했던 경험을 말씀해 주세요.",
+      "scope": "role:online_md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "온라인 MD가 오프라인 MD와 가장 다르게 신경 써야 할 부분은 무엇일까요?",
+      "scope": "role:online_md",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "전공과 다른 온라인 MD 직무를 선택하게 된 계기가 궁금합니다.",
+      "scope": "role:online_md",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "할인 행사로 매출을 올리는 건 누구나 할 수 있는데, 본인만의 방법은 무엇인가요?",
+      "scope": "role:online_md",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새로운 상품을 매입할지 결정할 때 가장 중요하게 보는 기준은 무엇인가요?",
+      "scope": "role:buyer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매입 단가를 협상할 때 가격 외에 함께 조율할 조건에는 어떤 것들이 있나요?",
+      "scope": "role:buyer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "직매입과 특정매입은 각각 어떤 상황에 더 맞는다고 보세요?",
+      "scope": "role:buyer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매입 수량을 정할 때 판매 예측과 재고 부담을 어떻게 저울질하시겠어요?",
+      "scope": "role:buyer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외에서 소싱한 상품을 들여올 때 국내 상품보다 더 챙겨야 할 점은 무엇인가요?",
+      "scope": "role:buyer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래처별 성과를 평가할 때 어떤 항목을 보시겠어요?",
+      "scope": "role:buyer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "주력 거래처가 납기를 계속 어겨 매장에 결품이 생기면 어떻게 하시겠어요?",
+      "scope": "role:buyer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "행사 직전에 협력사가 약속한 물량의 절반만 댈 수 있다고 하면 어떻게 하시겠어요?",
+      "scope": "role:buyer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매입한 상품이 한 시즌이 지나도록 절반 넘게 남아 있다면 어떻게 처리하시겠어요?",
+      "scope": "role:buyer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 상품을 두 거래처가 서로 다른 조건으로 제안하면 무엇을 비교해 결정하시겠어요?",
+      "scope": "role:buyer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매입 원가를 5% 낮추면 이익이 얼마나 달라지는지 어떻게 계산해 보시겠어요?",
+      "scope": "role:buyer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매 현장에서 잘 팔리는 상품들의 공통점을 직접 찾아본 경험이 있나요?",
+      "scope": "role:buyer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 선택지를 비교해 가장 나은 조건을 찾아냈던 경험이 있나요?",
+      "scope": "role:buyer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "바이어와 상품기획 MD는 역할이 어떻게 다르다고 이해하고 계세요?",
+      "scope": "role:buyer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "바이어라는 직무에 관심을 갖게 된 계기가 무엇인가요?",
+      "scope": "role:buyer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래처에 계속 양보만 요구하면 장기적으로 관계가 망가지지 않을까요?",
+      "scope": "role:buyer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다음 시즌 상품을 기획할 때 트렌드 정보와 지난 시즌 판매 데이터를 어떻게 함께 쓰시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "스타일별로 사이즈와 컬러 수량을 나눌 때 무엇을 근거로 하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "정상가 판매율을 높이기 위해 시즌 중에 할 수 있는 일은 무엇이 있을까요?",
+      "scope": "role:fashion_md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리오더를 할지 말지 판단할 때 어떤 신호를 보시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시즌이 끝나고 남은 재고를 어떤 경로로 소진할지 어떻게 정하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산처와 원단·부자재 일정을 맞출 때 가장 자주 생기는 문제는 무엇이라고 보세요?",
+      "scope": "role:fashion_md",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시즌 중반에 경쟁 브랜드가 큰 폭의 할인을 시작하면 어떻게 대응하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "경쟁",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산처에서 원단 문제로 입고가 3주 늦어진다고 연락이 오면 어떻게 하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "디자이너가 원하는 소재가 원가를 크게 올린다면 어떻게 조율하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매율은 높았는데 이익률이 낮은 시즌이었다면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "예년보다 따뜻한 겨울로 아우터 판매가 부진하다면 어떤 전략을 쓰시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "패션 트렌드를 분석해 실제로 무언가를 제안하거나 만들어 본 경험이 있나요?",
+      "scope": "role:fashion_md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매장이나 판매 현장에서 고객 반응을 직접 확인해 본 경험을 말씀해 주세요.",
+      "scope": "role:fashion_md",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "패션 MD가 다른 상품군 MD보다 어려운 점은 무엇이라고 보세요?",
+      "scope": "role:fashion_md",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "좋아하는 것과 그것을 일로 하는 건 다른데, 그래도 패션 MD를 하려는 이유는 무엇인가요?",
+      "scope": "role:fashion_md",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인 취향이 강하면 오히려 판단을 흐릴 수 있는데, 이를 어떻게 경계하시겠어요?",
+      "scope": "role:fashion_md",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "관심 있는 브랜드 하나를 골라 경쟁 브랜드와 비교했을 때 그 브랜드만의 가치를 말씀해 주세요.",
+      "scope": "role:fashion_md",
+      "category": "경쟁",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s3",
+      "confidence": "high"
+    },
+    {
+      "text": "구매 직무는 회사 이익에 어떤 방식으로 기여한다고 보세요?",
+      "scope": "family:purchasing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구매 담당자에게 협상력과 분석력 중 무엇이 더 중요하다고 생각하세요?",
+      "scope": "family:purchasing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업 부서와 협력사 사이에서 구매 담당자는 어떤 역할을 해야 한다고 보세요?",
+      "scope": "family:purchasing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "가격, 품질, 납기가 서로 부딪칠 때 무엇을 가장 먼저 지키시겠어요?",
+      "scope": "family:purchasing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력업체와 신뢰를 쌓기 위해 소통할 때 가장 신경 써야 할 부분은 무엇이라고 보세요?",
+      "scope": "family:purchasing",
+      "category": "커뮤니케이션",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "상대 요구를 다 들어주기 어려울 때 원칙을 지키면서도 관계를 유지했던 경험이 있나요?",
+      "scope": "family:purchasing",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자료를 비교 분석해서 더 나은 선택을 이끌어 낸 경험을 말씀해 주세요.",
+      "scope": "family:purchasing",
+      "category": "데이터",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 부서의 요청이 한꺼번에 몰렸을 때 일정과 순서를 조율했던 경험이 있나요?",
+      "scope": "family:purchasing",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "정해진 절차를 지키느라 불편이나 원망을 감수해야 했던 경험을 말씀해 주세요.",
+      "scope": "family:purchasing",
+      "category": "가치관",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "처음 접하는 분야를 빠르게 공부해 일에 써먹었던 경험이 있나요?",
+      "scope": "family:purchasing",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업이 절차를 건너뛰고 오늘 안에 발주해 달라고 급하게 요청하면 어떻게 하시겠어요?",
+      "scope": "family:purchasing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입고된 자재에서 불량이 나와 생산 라인이 멈출 위기라면 무엇부터 하시겠어요?",
+      "scope": "family:purchasing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오래 거래한 협력사의 품질 평가 점수가 계속 떨어지고 있다면 어떻게 하시겠어요?",
+      "scope": "family:purchasing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사가 원자재 가격 상승을 이유로 단가 인상을 요구해 오면 어떻게 대응하시겠어요?",
+      "scope": "family:purchasing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사 담당자와 감정적으로 부딪혀 관계가 틀어졌다면 어떻게 회복하시겠어요?",
+      "scope": "family:purchasing",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "가격이나 조건을 협상해서 더 좋은 결과를 얻어 낸 경험을 말씀해 주세요.",
+      "scope": "family:purchasing",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "비용을 줄이려고 아이디어를 내서 직접 실행해 본 경험이 있나요?",
+      "scope": "family:purchasing",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공급하는 쪽과 쓰는 쪽의 입장이 달라 중간에서 조율했던 경험을 말씀해 주세요.",
+      "scope": "family:purchasing",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원자재 가격 변동이 커지는 흐름이 구매 업무에 어떤 변화를 요구한다고 보세요?",
+      "scope": "family:purchasing",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사의 환경·인권 관리까지 구매가 챙겨야 하는 이유는 무엇이라고 보세요?",
+      "scope": "family:purchasing",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구매 업무에 자동화 도구가 들어오면 구매 담당자의 역할은 어떻게 달라질까요?",
+      "scope": "family:purchasing",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사가 명절마다 선물을 보내오는데 다들 관행이라며 받는다면 어떻게 하시겠어요?",
+      "scope": "family:purchasing",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상사가 특정 업체에 유리하게 평가해 달라고 넌지시 말한다면 어떻게 대응하시겠어요?",
+      "scope": "family:purchasing",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협상할 때 본인이 자주 보이는 약점은 무엇이라고 생각하세요?",
+      "scope": "family:purchasing",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구매 직무를 준비하면서 처음 생각과 가장 크게 달라진 부분은 무엇인가요?",
+      "scope": "family:purchasing",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원가 절감 성과를 말할 때 단가 인하 외에 어떤 효과까지 포함해야 한다고 보세요?",
+      "scope": "family:purchasing",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 개선한 일이 실제로 효과가 있었다는 걸 무엇으로 확인하셨나요?",
+      "scope": "family:purchasing",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사를 소수로 집중하는 것과 여러 곳에 분산하는 것 중 어느 쪽이 나은지 토론해 보세요.",
+      "scope": "family:purchasing",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "견적을 비교할 때 제시 단가 말고 반드시 확인하는 항목은 무엇인가요?",
+      "scope": "role:purchaser",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "단가 협상에 들어가기 전에 어떤 자료를 준비하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "발주 수량과 발주 시점을 정할 때 무엇을 기준으로 삼으시겠어요?",
+      "scope": "role:purchaser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사를 정기 평가한다면 어떤 항목을 어느 정도 비중으로 보시겠어요?",
+      "scope": "role:purchaser",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구매 요청을 받았는데 사양이 모호하게 적혀 있다면 어떻게 처리하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "ERP에서 발주부터 입고, 대금 지급까지 데이터가 어떻게 이어지는지 설명해 주세요.",
+      "scope": "role:purchaser",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "한 곳에서만 받던 핵심 부품의 협력사가 화재로 가동을 멈췄다면 어떻게 하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업이 특정 업체 제품만 써야 한다고 고집하면 어떻게 설득하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "납기가 급한 건인데 최저가 업체의 납기가 가장 늦다면 어떻게 결정하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구매 금액이 큰 품목과 구매 건수가 많은 품목 중 어디서 절감 기회를 먼저 찾으시겠어요?",
+      "scope": "role:purchaser",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사 견적이 적정한지 원가 구조를 나눠 검증한다면 어떻게 하시겠어요?",
+      "scope": "role:purchaser",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "정해진 예산 안에서 필요한 물품을 알뜰하게 마련해 본 경험이 있나요?",
+      "scope": "role:purchaser",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "일정이 틀어질 뻔한 상황을 미리 챙겨서 막았던 경험을 말씀해 주세요.",
+      "scope": "role:purchaser",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구매 업무를 하면서 가장 어려운 순간은 언제일 거라고 예상하세요?",
+      "scope": "role:purchaser",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업이나 기획이 아니라 구매 직무를 택한 이유가 궁금합니다.",
+      "scope": "role:purchaser",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "협력사를 압박해 단가를 낮추면 결국 품질 문제로 돌아오지 않을까요?",
+      "scope": "role:purchaser",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "품목마다 구매 전략을 다르게 가져가려면 품목을 어떤 기준으로 나누시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새 공급처를 찾을 때 후보를 어디서 발굴하고 어떻게 검증하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "총소유비용 관점으로 공급처를 비교하면 단가 비교와 무엇이 달라지나요?",
+      "scope": "role:strategic_sourcing",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "장기 공급 계약을 맺을 때 가격 조정 조항은 어떻게 설계하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 소싱을 검토할 때 국내 조달보다 더 따져야 할 비용과 위험은 무엇인가요?",
+      "scope": "role:strategic_sourcing",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신제품 개발 초기부터 구매가 참여하면 어떤 가치를 낼 수 있을까요?",
+      "scope": "role:strategic_sourcing",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 원자재 공급이 한 나라에 몰려 있는데 그 나라가 수출 규제를 예고했다면 어떻게 하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대체 공급처를 찾았지만 품질 인증에 6개월이 걸린다면 그동안 어떻게 대응하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경영진이 전 품목 10% 원가 절감 목표를 내려보냈다면 어떻게 접근하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "전략",
+      "type": "situational",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원자재 가격이 오를 것 같을 때 미리 사 두는 것과 나눠 사는 것 중 어떻게 판단하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공급처를 한 곳으로 모으면 단가가 8% 내려가지만 공급 위험이 커진다면 어떻게 결정하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "의사결정",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시장이나 가격 정보를 찾아 분석해 의사결정에 활용했던 경험을 말씀해 주세요.",
+      "scope": "role:strategic_sourcing",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "당장의 손해를 감수하고 장기적인 이득을 택했던 경험이 있나요?",
+      "scope": "role:strategic_sourcing",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "일반 구매와 전략구매는 일하는 방식이 어떻게 다르다고 보세요?",
+      "scope": "role:strategic_sourcing",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "전략구매·소싱 분야에서 커리어를 쌓고 싶은 이유는 무엇인가요?",
+      "scope": "role:strategic_sourcing",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "제안하신 소싱 전략의 절감 효과가 거의 없었다면 경영진에게 어떻게 설명하시겠어요?",
+      "scope": "role:strategic_sourcing",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물품 구매 계획을 세울 때 가장 먼저 확인해야 할 사항은 무엇이라고 보세요?",
+      "scope": "role:public_procurement",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "입찰과 수의계약 중 어떤 방식으로 진행할지 판단하는 기준을 말씀해 주세요.",
+      "scope": "role:public_procurement",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "입찰 규격서를 쓸 때 특정 업체에 유리해 보이지 않게 하려면 어떻게 작성하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "적격심사나 협상에 의한 계약은 최저가 낙찰과 어떤 점이 다르다고 이해하고 계세요?",
+      "scope": "role:public_procurement",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계약한 업체가 기준을 계속 지키고 있는지 사후 점검은 어떻게 하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "계약 행정을 처리할 때 객관적인 근거 자료를 남기는 게 왜 중요한지 말씀해 주세요.",
+      "scope": "role:public_procurement",
+      "category": "윤리",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "조달 규정을 해석하기 애매한 사안이 생기면 어떤 절차로 판단하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "심사 기준을 적용하다가 탈락한 업체가 강하게 이의를 제기하면 어떻게 대응하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "계약 업체가 납품 기한을 못 지키겠다고 연락해 오면 어떻게 처리하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사업 부서가 연말 예산을 써야 한다며 계약을 급히 진행해 달라고 하면 어떻게 하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판로 확대를 위해 구매 실적과 매출 데이터를 분석한다면 어떤 자료부터 보시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "b04s6",
+      "confidence": "high"
+    },
+    {
+      "text": "예정가격을 정할 때 어떤 자료를 근거로 적정 가격을 산정하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규정이나 기준을 하나하나 따져 가며 일을 처리했던 경험을 말씀해 주세요.",
+      "scope": "role:public_procurement",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입장이 다른 사람들 사이에서 공정하게 판단해야 했던 경험이 있나요?",
+      "scope": "role:public_procurement",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공공 조달·계약 업무가 민간 기업의 구매와 가장 다른 점은 무엇이라고 보세요?",
+      "scope": "role:public_procurement",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공공 영역에서 조달·계약 업무를 하고 싶은 이유는 무엇인가요?",
+      "scope": "role:public_procurement",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규정만 따지다 보면 사업이 늦어진다는 사업 부서의 비판에는 어떻게 답하시겠어요?",
+      "scope": "role:public_procurement",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공급망이 잘 돌아간다는 건 어떤 상태를 말한다고 생각하세요?",
+      "scope": "family:scm",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고는 적을수록 좋다는 말에 어디까지 동의하세요?",
+      "scope": "family:scm",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류·SCM 담당자에게 숫자 감각과 조율 능력 중 무엇이 더 필요하다고 보세요?",
+      "scope": "family:scm",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업, 생산, 구매, 물류 사이에서 SCM이 맡는 역할을 설명해 주세요.",
+      "scope": "family:scm",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계획대로 되지 않는 상황에서 빠르게 대안을 만들어 실행했던 경험을 말씀해 주세요.",
+      "scope": "family:scm",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "반복되는 비효율을 발견해 일하는 방식을 바꿔 본 경험이 있나요?",
+      "scope": "family:scm",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "데이터를 정리하고 분석해서 다른 사람을 설득했던 경험을 말씀해 주세요.",
+      "scope": "family:scm",
+      "category": "데이터",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입장이 다른 부서나 사람들 사이에서 합의를 끌어낸 경험을 말씀해 주세요.",
+      "scope": "family:scm",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "급한 일이 한꺼번에 겹쳤을 때 무엇을 먼저 할지 어떻게 정했는지 말씀해 주세요.",
+      "scope": "family:scm",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업은 품절이 무서우니 재고를 늘리자 하고 재무는 줄이자고 하면 어떻게 조율하시겠어요?",
+      "scope": "family:scm",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "항만 파업으로 수입 물량 입고가 2주 늦어진다면 무엇부터 하시겠어요?",
+      "scope": "family:scm",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "성수기 직전에 주문 물량이 예측보다 크게 늘면 어떻게 대응하시겠어요?",
+      "scope": "family:scm",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시스템상 재고와 실물 재고가 맞지 않는다는 보고를 받으면 어떻게 확인하시겠어요?",
+      "scope": "family:scm",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "핵심 고객사가 납기를 일주일 앞당겨 달라고 하면 어떻게 판단하시겠어요?",
+      "scope": "family:scm",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "엑셀 같은 도구로 데이터를 다뤄 의미 있는 결과를 만들어 본 경험을 말씀해 주세요.",
+      "scope": "family:scm",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류나 재고, 공급망과 관련된 일을 직접 해 보거나 가까이서 본 경험이 있나요?",
+      "scope": "family:scm",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 사람이 함께 쓰는 자원이나 일정을 관리해 본 경험을 말씀해 주세요.",
+      "scope": "family:scm",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "최근 몇 년간 공급망 불안을 겪으면서 기업들의 재고 전략은 어떻게 바뀌었다고 보세요?",
+      "scope": "family:scm",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이커머스가 커지면서 물류와 SCM 업무 방식이 어떻게 바뀌고 있다고 보세요?",
+      "scope": "family:scm",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류 현장 자동화가 늘어나면 SCM 인력에게 요구되는 역량은 어떻게 달라질까요?",
+      "scope": "family:scm",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "운송사 선정에 담당자와 개인적으로 친한 업체가 참여한다면 어떻게 하시겠어요?",
+      "scope": "family:scm",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "실적 지표를 맞추려고 재고나 출고 데이터를 조정하자는 제안을 받으면 어떻게 하시겠어요?",
+      "scope": "family:scm",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계획이나 예측이 크게 빗나갔던 경험에서 무엇을 배우셨나요?",
+      "scope": "family:scm",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류·SCM 업무를 하기에 본인이 아직 부족하다고 느끼는 부분은 무엇인가요?",
+      "scope": "family:scm",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 개선한 일이 비용이나 시간을 얼마나 줄였는지 구체적으로 말씀해 주실 수 있나요?",
+      "scope": "family:scm",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고를 줄였는데 결품이 늘었다면 그 개선은 성공일까요, 실패일까요?",
+      "scope": "family:scm",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류를 직접 운영하는 것과 3PL에 맡기는 것 중 어느 쪽이 나은지 토론해 보세요.",
+      "scope": "family:scm",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매·생산·구매 계획을 맞추는 S&OP 회의에서 SCM 담당자는 무엇을 준비해야 할까요?",
+      "scope": "role:scm_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "안전재고 수준을 정할 때 어떤 요소들을 고려하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리드타임이 긴 품목과 짧은 품목은 재고 운영을 어떻게 다르게 가져가시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공급망에서 채찍 효과가 생기는 원인을 실무 관점에서 설명해 주세요.",
+      "scope": "role:scm_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산 능력이 수요를 못 따라갈 때 어떤 기준으로 물량을 배분하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고 회전율과 결품률을 함께 관리해야 할 때 어떻게 균형을 잡으시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "핵심 부품 공급이 끊겨 한 달 생산 계획을 다시 짜야 한다면 어떤 순서로 하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업이 월말 실적 때문에 계획에 없던 대량 출고를 요청하면 어떻게 하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 공장 생산 차질로 국내 판매 물량이 모자라면 누구와 무엇을 먼저 협의하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출은 그대로인데 재고 금액만 계속 늘고 있다면 어디서 원인을 찾으시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고 일수를 30일에서 20일로 줄이라는 목표가 주어지면 어떻게 접근하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 조건을 동시에 고려해 계획을 세우고 조정해 본 경험을 말씀해 주세요.",
+      "scope": "role:scm_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "예상하지 못한 변수 때문에 일정을 처음부터 다시 짜야 했던 경험이 있나요?",
+      "scope": "role:scm_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "SCM 직무를 한 문장으로 설명한다면 어떻게 말씀하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류나 구매가 아니라 SCM 기획 직무에 끌린 이유는 무엇인가요?",
+      "scope": "role:scm_planner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "결품이 나도 SCM 탓, 재고가 쌓여도 SCM 탓이라는 말을 들으면 어떻게 대응하시겠어요?",
+      "scope": "role:scm_planner",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "운송사를 고를 때 운임 말고 어떤 기준을 함께 보시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류비를 줄여야 할 때 가장 먼저 들여다볼 항목은 무엇인가요?",
+      "scope": "role:logistics_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "배송 속도와 물류비가 충돌할 때 어떤 기준으로 조정하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해상 수출 화물을 보낼 때 FCL과 LCL 중 어떤 기준으로 선택하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류 성과 지표를 새로 설계한다면 어떤 지표들을 넣으시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "3PL 업체와 계약할 때 서비스 수준을 어떻게 명시하고 관리하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "배송 차량 사고로 오늘 출고분이 제때 도착하지 못하게 됐다면 어떻게 하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "운송사가 유가 상승을 이유로 운임을 올려 달라고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 배송 구간에서 파손 클레임이 반복된다면 원인을 어떻게 찾으시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "전국 배송을 위해 거점 창고를 하나 더 둘지 검토한다면 어떤 데이터를 보시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출 대비 물류비 비중이 작년보다 2%p 늘었다면 원인을 어떻게 쪼개 보시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "동선이나 작업 순서를 바꿔 일을 더 효율적으로 만든 경험을 말씀해 주세요.",
+      "scope": "role:logistics_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "외부 업체와 함께 일하면서 문제를 풀어 갔던 경험이 있나요?",
+      "scope": "role:logistics_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류관리 직무의 성과는 결국 무엇으로 평가받는다고 보세요?",
+      "scope": "role:logistics_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류 분야에 관심을 갖게 된 계기를 말씀해 주세요.",
+      "scope": "role:logistics_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류는 돈만 쓰는 비용 부서라는 시각에 어떻게 반론하시겠어요?",
+      "scope": "role:logistics_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "수요를 예측할 때 과거 판매 데이터 말고 반영해야 할 정보에는 무엇이 있나요?",
+      "scope": "role:demand_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매 이력이 전혀 없는 신제품의 수요는 어떻게 예측하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "예측이 얼마나 잘 맞았는지를 어떤 지표로 측정하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "프로모션 효과를 예측에 반영할 때 주의해야 할 점은 무엇인가요?",
+      "scope": "role:demand_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업이 내는 판매 계획이 늘 부풀려져 있다면 예측에 어떻게 반영하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "품목이 수천 개일 때 모든 품목을 같은 방식으로 예측해도 괜찮을까요?",
+      "scope": "role:demand_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이번 달 예측이 실제 판매와 40% 넘게 어긋났다면 무엇부터 살펴보시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경쟁 제품의 리콜로 우리 제품 수요가 갑자기 늘기 시작하면 수급 계획을 어떻게 바꾸시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계절 상품의 시즌 초반 판매가 예상보다 낮을 때 추가 생산을 어떻게 판단하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매 데이터에 결품 기간이 섞여 있다면 예측에 쓰기 전에 어떻게 처리하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "월평균 1,000개가 팔리지만 변동이 큰 품목이라면 발주량을 어떻게 잡아 보시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "데이터로 결과를 미리 예측해 보고 실제와 비교해 본 경험이 있나요?",
+      "scope": "role:demand_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "숫자로 된 분석 결과를 비전문가에게 알기 쉽게 설명했던 경험을 말씀해 주세요.",
+      "scope": "role:demand_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "수요예측 담당자에게 통계 지식 말고 꼭 필요한 역량은 무엇이라고 보세요?",
+      "scope": "role:demand_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "수요예측·수급계획 업무에서 어떤 매력을 느끼셨나요?",
+      "scope": "role:demand_planner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "어차피 틀리는 예측에 왜 공을 들여야 하느냐고 묻는다면 어떻게 답하시겠어요?",
+      "scope": "role:demand_planner",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입고부터 출고까지의 센터 작업 중 오류가 가장 많이 생기는 곳은 어디라고 보세요?",
+      "scope": "role:warehouse_ops",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "로케이션을 배치할 때 어떤 기준으로 상품 위치를 정하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고 실사를 전수 조사로 할지 순환 실사로 할지 어떻게 정하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "피킹 생산성을 높이기 위해 현장에서 바로 시도해 볼 수 있는 방법은 무엇이 있을까요?",
+      "scope": "role:warehouse_ops",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오출고를 줄이기 위해 검수 단계에서 무엇을 바꾸시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "지게차와 컨베이어가 돌아가는 현장에서 안전을 위해 매일 챙길 것은 무엇인가요?",
+      "scope": "role:warehouse_ops",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대형 행사로 평소의 세 배 주문이 들어온 날 출고 마감을 어떻게 지키시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현장 작업자 여러 명이 갑자기 결근해 일손이 모자라면 어떻게 운영하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "작업 중 안전사고가 났다는 보고를 받으면 무엇부터 하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시간당 처리량이 목표보다 20% 낮다면 원인을 어떻게 찾아보시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "성수기에 필요한 단기 인력 규모를 어떻게 산정하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 사람을 이끌며 정해진 시간 안에 많은 양의 일을 끝냈던 경험이 있나요?",
+      "scope": "role:warehouse_ops",
+      "category": "리더십",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현장에서 직접 몸으로 일하며 개선할 점을 발견했던 경험을 말씀해 주세요.",
+      "scope": "role:warehouse_ops",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "물류센터 운영 관리자는 현장 작업자들과 어떤 관계를 만들어야 한다고 보세요?",
+      "scope": "role:warehouse_ops",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사무실보다 현장 비중이 큰 물류센터 운영 직무에 지원한 이유가 궁금합니다.",
+      "scope": "role:warehouse_ops",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경력 많은 현장 작업자들이 새 작업 방식을 거부한다면 어떻게 하시겠어요?",
+      "scope": "role:warehouse_ops",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "친절하게 응대하는 것만으로는 풀리지 않는 고객 문제에는 어떤 것들이 있다고 보세요?",
+      "scope": "family:customer_support",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객지원 조직이 회사의 매출이나 브랜드에 기여하는 방식은 무엇이라고 보세요?",
+      "scope": "family:customer_support",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 요구를 들어주는 것과 회사 정책을 지키는 것 사이에서 기준을 어디에 두시겠어요?",
+      "scope": "family:customer_support",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "좋은 상담이란 어떤 상담이라고 생각하세요?",
+      "scope": "family:customer_support",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "화가 난 사람을 진정시키고 문제까지 해결했던 경험을 말씀해 주세요.",
+      "scope": "family:customer_support",
+      "category": "고객",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 설명을 여러 번 반복해야 했던 상황에서 인내심을 지켰던 경험이 있나요?",
+      "scope": "family:customer_support",
+      "category": "가치관",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다른 사람의 불편을 먼저 알아차리고 도와줬던 경험을 말씀해 주세요.",
+      "scope": "family:customer_support",
+      "category": "고객",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "스트레스가 큰 상황에서 감정을 다스렸던 본인만의 방법을 말씀해 주세요.",
+      "scope": "family:customer_support",
+      "category": "가치관",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이용자들의 불편 사항을 모아 개선을 제안해 본 경험이 있나요?",
+      "scope": "family:customer_support",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규정상 환불이 안 되는 건인데 고객이 SNS에 올리겠다며 강하게 요구하면 어떻게 하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "모르는 내용을 문의받았는데 고객이 지금 당장 답을 달라고 하면 어떻게 하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이 폭언을 계속하면서 상담을 이어 가려 하면 어떻게 대응하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 장애 문의가 한꺼번에 몰려 대기 고객이 급격히 늘면 어떻게 대응하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "동료가 잘못 안내한 내용 때문에 고객이 다시 항의해 오면 어떻게 하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "팀워크",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "지원한 분야의 서비스를 직접 이용해 보면서 고객으로서 불편했던 점이 있었나요?",
+      "scope": "family:customer_support",
+      "category": "고객",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "아르바이트나 대면 업무에서 기억에 남는 고객 응대 경험을 말씀해 주세요.",
+      "scope": "family:customer_support",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "반복되는 문의를 줄이려고 안내 방식을 바꿔 본 경험이 있나요?",
+      "scope": "family:customer_support",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "챗봇이나 AI 상담이 늘어나면 상담 인력의 역할은 어떻게 달라질까요?",
+      "scope": "family:customer_support",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객들이 전화보다 채팅이나 메신저 상담을 더 찾는 흐름을 어떻게 보세요?",
+      "scope": "family:customer_support",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 경험이 곧 브랜드 경쟁력이 된다는 말을 들으면 어떤 사례가 떠오르세요?",
+      "scope": "family:customer_support",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상담하게 될 제품이나 산업에 대해 평소 어떤 관심을 가져 오셨나요?",
+      "scope": "family:customer_support",
+      "category": "산업",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "상담 중 알게 된 고객 개인정보를 지인이 알려 달라고 부탁하면 어떻게 하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "평가 점수를 올리려고 불만 상담을 기록에서 빼자는 동료가 있다면 어떻게 하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 응대에서 실수했던 경험과 그 뒤로 바꾼 습관을 말씀해 주세요.",
+      "scope": "family:customer_support",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감정 소모가 큰 일을 오래 하려면 스스로 무엇을 지켜야 한다고 보세요?",
+      "scope": "family:customer_support",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 응대나 운영을 잘했다는 걸 어떤 지표로 보여 줄 수 있을까요?",
+      "scope": "family:customer_support",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 만족도는 올랐는데 처리 시간이 길어졌다면 그 결과를 어떻게 평가하시겠어요?",
+      "scope": "family:customer_support",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "악성 민원 고객과의 상담을 상담사가 먼저 끝낼 수 있게 해야 하는지 토론해 보세요.",
+      "scope": "family:customer_support",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입사 후 한 달 안에 그만둔다면 어떤 이유 때문일 것 같으세요?",
+      "scope": "family:customer_support",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "전화 상담을 시작해서 마무리할 때까지 꼭 지키는 흐름이 있다면 말씀해 주세요.",
+      "scope": "role:cs_agent",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 말을 끝까지 듣고 핵심 문의를 파악하려면 어떤 질문을 던지시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다음 상담사가 바로 이해할 수 있게 상담 이력을 남기려면 무엇을 적으시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이 원하는 답을 줄 수 없을 때 거절을 어떻게 표현하시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다른 부서나 상위 담당자에게 넘겨야 하는 상담인지는 어떻게 판단하시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "채팅 상담과 전화 상담은 응대 방식이 어떻게 달라야 한다고 보세요?",
+      "scope": "role:cs_agent",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인의 안내 실수로 고객이 손해를 입었다는 걸 알게 되면 어떻게 하시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "b04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "같은 고객이 하루에도 여러 번 전화해 똑같은 불만을 반복하면 어떻게 응대하시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오래 기다린 탓에 첫마디부터 화를 내는 고객에게는 어떻게 말문을 여시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인 평균 통화 시간이 팀 평균보다 길다면 원인을 어떻게 찾아 개선하시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 유형의 문의가 최근 늘고 있다고 느껴지면 이를 어떻게 확인하고 보고하시겠어요?",
+      "scope": "role:cs_agent",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규칙과 상대의 요구 사이에서 난처했던 상황을 어떻게 풀었는지 말씀해 주세요.",
+      "scope": "role:cs_agent",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "짧은 시간 안에 많은 사람을 응대해야 했던 경험을 말씀해 주세요.",
+      "scope": "role:cs_agent",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "CS 상담에는 공감 능력과 문제 해결 능력 중 무엇이 더 중요하다고 보세요?",
+      "scope": "role:cs_agent",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다양한 경험을 하셨는데 그중에서도 CS 상담 업무에 지원한 이유는 무엇인가요?",
+      "scope": "role:cs_agent",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "하루 종일 불만만 듣는 일이 생각보다 힘들 텐데, 버틸 수 있다고 보는 근거는 무엇인가요?",
+      "scope": "role:cs_agent",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "VOC를 분류해 개선 과제로 연결할 때 어떤 기준으로 우선순위를 정하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상담 품질을 평가하는 QA 기준을 만든다면 어떤 항목을 넣으시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상담 매뉴얼이나 FAQ를 개편한다면 무엇부터 손보시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상담 인력 규모를 정할 때 문의 인입량과 목표 응대율을 어떻게 활용하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "악성 민원 대응 기준과 상담사 보호 장치를 어떻게 설계하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "외주 상담센터를 운영할 때 응대 품질을 어떻게 관리하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입점 판매자의 실수로 고객 불만이 쏟아지면 CS 운영 담당자로서 어떻게 대응하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "신규 서비스 출시 직후 문의가 평소의 다섯 배로 늘었다면 어떻게 운영하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상담사 퇴사가 이어져 응대 품질이 떨어지고 있다면 어떻게 하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "리더십",
+      "type": "situational",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 만족도 점수가 두 달 연속 떨어졌다면 원인을 어떤 순서로 분석하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재문의가 많은 문의 유형을 찾아 줄이려면 어떤 데이터를 보시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "반복되는 불만을 근본 원인까지 추적해 개선했던 경험을 말씀해 주세요.",
+      "scope": "role:cs_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다른 부서에 고객 목소리를 전달해 실제 변화를 이끌어 낸 경험이 있나요?",
+      "scope": "role:cs_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "CS 기획·운영 담당자는 현장 상담사와 어떤 다른 관점으로 일해야 한다고 보세요?",
+      "scope": "role:cs_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "CS 분야에서 그리고 있는 커리어 목표를 말씀해 주세요.",
+      "scope": "role:cs_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s10",
+      "confidence": "high"
+    },
+    {
+      "text": "CS는 비용만 쓰는 조직이라는 경영진의 말에 어떻게 답하시겠어요?",
+      "scope": "role:cs_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이 '안 돼요'라고만 할 때 문제를 재현하려면 어떤 정보부터 물어보시겠어요?",
+      "scope": "role:tech_support",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원격으로 장애를 진단할 때 가장 먼저 확인하는 항목들은 무엇인가요?",
+      "scope": "role:tech_support",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 환경 문제인지 제품 결함인지 어떻게 구분하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "개발팀에 이슈를 넘길 때 티켓에 반드시 담아야 할 내용은 무엇인가요?",
+      "scope": "role:tech_support",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객사 담당자가 비전문가일 때 기술적인 원인을 어떻게 설명하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "로그를 볼 수 있다면 어떤 순서로 원인을 좁혀 가시겠어요?",
+      "scope": "role:tech_support",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객사 시스템이 새벽에 멈췄는데 원인을 모르겠다면 어떻게 대응하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이 이미 다 해 봤다며 기본 점검을 거부하면 어떻게 하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "업데이트 배포 후 같은 오류 문의가 여러 고객사에서 동시에 들어오면 무엇부터 하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 기능 관련 문의가 매달 늘고 있다면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기술지원 티켓의 평균 해결 시간을 줄이려면 어떤 부분부터 개선하시겠어요?",
+      "scope": "role:tech_support",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원인을 알 수 없는 문제를 끈질기게 파고들어 해결한 경험을 말씀해 주세요.",
+      "scope": "role:tech_support",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기술적인 내용을 잘 모르는 사람에게 쉽게 설명해 준 경험이 있나요?",
+      "scope": "role:tech_support",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기술지원 엔지니어와 개발자는 문제를 대하는 관점이 어떻게 다르다고 보세요?",
+      "scope": "role:tech_support",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "개발이 아니라 기술지원 직무를 선택하신 이유는 무엇인가요?",
+      "scope": "role:tech_support",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기술지원은 개발로 가기 전에 잠깐 거쳐 가는 자리라는 시각을 어떻게 생각하세요?",
+      "scope": "role:tech_support",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획자에게 가장 중요한 역량은 무엇이라고 보세요?",
+      "scope": "family:product",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "좋은 기획서와 그렇지 않은 기획서를 가르는 차이는 무엇이라고 생각하세요?",
+      "scope": "family:product",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "서비스기획, PM, PO의 역할 차이를 어떻게 이해하고 계세요?",
+      "scope": "family:product",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사용자가 원하는 것과 사업적으로 필요한 것이 다를 때 기획자는 어느 편에 서야 할까요?",
+      "scope": "family:product",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "개발자와 협업하다 부딪혔던 순간을 어떻게 풀어 갔는지 말씀해 주세요.",
+      "scope": "family:product",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "본인 기획안이 반대에 부딪혔을 때 설득하거나 방향을 바꿨던 경험을 말씀해 주세요.",
+      "scope": "family:product",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "정보가 충분하지 않은 상태에서 결정을 내려야 했던 경험이 있나요?",
+      "scope": "family:product",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사용자 의견을 직접 듣고 기획 방향을 바꿨던 경험을 말씀해 주세요.",
+      "scope": "family:product",
+      "category": "고객",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "일정이 촉박한 프로젝트에서 범위를 줄이거나 조정해 본 경험이 있나요?",
+      "scope": "family:product",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "출시 하루 전에 치명적인 버그가 발견되면 출시 여부를 어떻게 판단하시겠어요?",
+      "scope": "family:product",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경영진이 근거 없이 경쟁 서비스 기능을 그대로 따라 만들자고 하면 어떻게 하시겠어요?",
+      "scope": "family:product",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업팀이 큰 고객사 한 곳을 위한 맞춤 기능을 당장 넣어 달라고 하면 어떻게 하시겠어요?",
+      "scope": "family:product",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "개발 일정이 밀려 계획한 기능을 다 넣을 수 없다면 무엇부터 빼시겠어요?",
+      "scope": "family:product",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새로 출시한 기능에 사용자 반응이 거의 없다면 어떻게 하시겠어요?",
+      "scope": "family:product",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "문제를 정의하고 해결책을 기획해서 실제로 만들어 본 경험을 말씀해 주세요.",
+      "scope": "family:product",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "데이터를 보고 가설을 세운 뒤 검증해 본 경험을 말씀해 주세요.",
+      "scope": "family:product",
+      "category": "데이터",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인턴이나 프로젝트를 하면서 기획 업무의 어떤 점이 가장 힘들었나요?",
+      "scope": "family:product",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "공개후기",
+      "src": "b04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "최근 인상 깊게 쓴 앱이나 서비스는 무엇이고, 왜 잘 만들었다고 보세요?",
+      "scope": "family:product",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생성형 AI가 기획자의 일하는 방식을 어떻게 바꾸고 있다고 보세요?",
+      "scope": "family:product",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구독형 비즈니스 모델이 늘어나는 흐름을 기획자 관점에서 어떻게 보세요?",
+      "scope": "family:product",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "평소 쓰는 서비스와 비슷한 경쟁 서비스를 비교해 각각의 장단점을 말씀해 주세요.",
+      "scope": "family:product",
+      "category": "경쟁",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "전환율을 높이려고 해지 절차를 일부러 복잡하게 만들자는 제안이 나오면 어떻게 하시겠어요?",
+      "scope": "family:product",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사용자 데이터를 더 모으면 기능은 좋아지지만 동의 절차가 복잡해진다면 어떻게 판단하시겠어요?",
+      "scope": "family:product",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획한 기능이 실패로 끝났던 경험이 있다면 무엇을 배우셨나요?",
+      "scope": "family:product",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획자로서 본인이 아직 부족하다고 느끼는 점은 무엇인가요?",
+      "scope": "family:product",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 기획한 결과물이 성공했는지 어떤 지표로 판단하셨나요?",
+      "scope": "family:product",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "지표는 좋아졌는데 사용자 불만이 늘었다면 그 결과를 어떻게 평가하시겠어요?",
+      "scope": "family:product",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자주 쓰는 서비스 하나를 골라 개선안을 기획해 발표해 주세요.",
+      "scope": "family:product",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "빠르게 출시하고 고치는 방식과 완성도를 높여 출시하는 방식 중 어느 쪽이 나은지 토론해 보세요.",
+      "scope": "family:product",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "화면 설계서를 쓸 때 개발자와 디자이너가 헷갈리지 않도록 무엇을 꼭 명시하시나요?",
+      "scope": "role:service_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "정책 문서를 쓸 때 예외 케이스를 어떻게 빠짐없이 찾아내시겠어요?",
+      "scope": "role:service_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회원가입 흐름을 새로 기획한다면 어떤 순서로 설계하시겠어요?",
+      "scope": "role:service_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획할 때 데이터를 활용하면서 가장 중요하게 보는 것은 무엇인가요?",
+      "scope": "role:service_planner",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "사용자 요구사항을 기능 명세로 바꿀 때 어떤 과정을 거치시나요?",
+      "scope": "role:service_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "운영 중인 서비스의 정책을 바꿀 때 기존 사용자에게 미칠 영향을 어떻게 검토하시겠어요?",
+      "scope": "role:service_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "QA 단계에서 기획 누락이 발견되면 어떻게 하시겠어요?",
+      "scope": "role:service_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "디자이너가 사용성을 이유로 기획한 화면 구조를 바꾸자고 하면 어떻게 판단하시겠어요?",
+      "scope": "role:service_planner",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "법무팀이 약관 문제로 기능 일부를 막아야 한다고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:service_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "장바구니에 담고도 결제 단계에서 이탈하는 사용자가 많다면 원인을 어떻게 찾으시겠어요?",
+      "scope": "role:service_planner",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "가입자는 늘었는데 한 달 뒤 재방문율이 낮다면 어떤 가설부터 세우시겠어요?",
+      "scope": "role:service_planner",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획서의 빈틈을 줄이려고 꼼꼼하게 챙겼던 경험을 말씀해 주세요.",
+      "scope": "role:service_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "b04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "와이어프레임이나 프로토타입을 직접 만들어 본 경험을 말씀해 주세요.",
+      "scope": "role:service_planner",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "서비스 기획자는 어떤 일을 하는 사람이라고 생각하세요?",
+      "scope": "role:service_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "b04s12",
+      "confidence": "high"
+    },
+    {
+      "text": "여러 직무 중 서비스기획자가 되고 싶다고 처음 생각하게 된 순간이 있었나요?",
+      "scope": "role:service_planner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획자는 직접 만드는 결과물이 없는데 팀에 어떤 가치를 준다고 증명할 수 있나요?",
+      "scope": "role:service_planner",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기능 요청이 잔뜩 쌓였을 때 우선순위를 정하는 본인만의 기준을 말씀해 주세요.",
+      "scope": "role:product_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "제품의 핵심 지표 하나를 정해야 한다면 어떻게 고르시겠어요?",
+      "scope": "role:product_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새 기능을 만들기 전에 가설을 검증할 수 있는 방법에는 어떤 것들이 있을까요?",
+      "scope": "role:product_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "A/B 테스트 결과가 애매하게 나왔다면 어떻게 판단하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "데이터",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "제품 로드맵을 이해관계자에게 공유할 때 무엇을 강조하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사용자 인터뷰에서 유도 질문을 피하려면 어떻게 진행하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "핵심 지표가 하루 만에 15% 떨어졌다는 알림을 받으면 무엇부터 확인하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업과 마케팅이 서로 다른 기능을 먼저 만들어 달라고 요구하면 어떻게 정리하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경쟁 서비스가 우리가 준비하던 기능을 먼저 출시했다면 어떻게 하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "경쟁",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "월간 활성 사용자는 늘었는데 매출은 그대로라면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "새 기능이 매출에 얼마나 기여할지 출시 전에 어떻게 추정해 보시겠어요?",
+      "scope": "role:product_manager",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 이해관계자의 요구를 조율해 하나의 결정을 이끌어 낸 경험을 말씀해 주세요.",
+      "scope": "role:product_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "출시 후 결과를 보고 기능을 과감히 접거나 바꿨던 경험이 있나요?",
+      "scope": "role:product_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "PM은 권한 없이 팀을 움직여야 한다고들 하는데, 그 말을 어떻게 이해하세요?",
+      "scope": "role:product_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 직무 중에서 PM을 커리어 목표로 삼은 이유는 무엇인가요?",
+      "scope": "role:product_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 정한 우선순위 때문에 매출 기회를 놓쳤다는 지적을 받으면 어떻게 답하시겠어요?",
+      "scope": "role:product_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "백로그를 관리할 때 어떤 기준으로 항목 순서를 정하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사용자 스토리를 쓸 때 인수 조건은 어떻게 정의하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "스프린트 계획 회의 전에 PO가 반드시 준비해 둬야 하는 것은 무엇인가요?",
+      "scope": "role:product_owner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "스프린트 리뷰에서 결과물이 기대와 다르면 어떻게 피드백하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기술 부채 해결과 신규 기능 개발의 비중을 어떻게 정하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "제품 비전에 개발팀이 공감하게 만들려면 어떻게 전달하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "리더십",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "스프린트 도중 경영진이 긴급 요구사항을 넣으라고 하면 어떻게 하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "개발팀이 추정한 작업량이 예상보다 세 배 크다면 어떻게 하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "두 팀이 같은 기능의 담당을 두고 부딪히면 어떻게 정리하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "백로그 항목들의 가치를 비교하려면 어떤 데이터를 모으시겠어요?",
+      "scope": "role:product_owner",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "분기 목표 달성률이 50%에 그쳤다면 원인을 어떻게 돌아보시겠어요?",
+      "scope": "role:product_owner",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "요구사항이 계속 바뀌는 상황에서 팀의 방향을 잡아 줬던 경험이 있나요?",
+      "scope": "role:product_owner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "우선순위 때문에 누군가의 요청을 거절해야 했던 경험을 말씀해 주세요.",
+      "scope": "role:product_owner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "PO가 제품의 결과에 책임진다는 건 구체적으로 어떤 의미일까요?",
+      "scope": "role:product_owner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "PO로 일하고 싶은 이유를 본인 경험과 연결해 말씀해 주세요.",
+      "scope": "role:product_owner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "애자일로 일한다면서 일정 약속은 못 한다는 건 핑계 아니냐는 질문에 어떻게 답하시겠어요?",
+      "scope": "role:product_owner",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "프로젝트 착수 단계에서 범위를 분명히 하려면 어떤 산출물을 만드시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "WBS를 작성할 때 작업을 어느 수준까지 쪼개시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "프로젝트 리스크를 어떤 방식으로 찾아내고 추적하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "진척률을 보고할 때 실제 상태를 왜곡 없이 보여 주려면 어떻게 하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객의 요구사항 변경을 공식적으로 관리하는 절차는 어떻게 만드시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "외주 개발사를 관리할 때 품질과 일정을 어떻게 점검하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오픈 한 달 전에 핵심 인력이 빠지게 되면 어떻게 대응하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객사가 계약 범위에 없는 기능을 추가 비용 없이 요구하면 어떻게 하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통합 테스트에서 결함이 예상보다 많이 나와 일정이 위태로워지면 어떻게 하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공정률은 70%인데 예산은 90%를 썼다면 이를 어떻게 해석하고 대응하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 프로젝트가 같은 인력을 동시에 필요로 한다면 어떻게 배분하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "일정과 역할을 나눠 팀 프로젝트를 끝까지 이끌었던 경험을 말씀해 주세요.",
+      "scope": "role:project_manager_it",
+      "category": "리더십",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계획이 틀어진 프로젝트를 다시 궤도에 올려놓았던 경험이 있나요?",
+      "scope": "role:project_manager_it",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "IT 프로젝트 매니저와 프로덕트 매니저는 무엇이 가장 다르다고 보세요?",
+      "scope": "role:project_manager_it",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "IT 프로젝트 관리 직무에 관심을 갖게 된 이유는 무엇인가요?",
+      "scope": "role:project_manager_it",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "프로젝트가 지연되자 고객이 PM 교체를 요구한다면 어떻게 대응하시겠어요?",
+      "scope": "role:project_manager_it",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    }
+  ]
+}

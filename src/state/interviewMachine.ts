@@ -57,6 +57,7 @@ export type Action =
   | { type: "RECOVER" }
   | { type: "VIEW_RESULT"; interview: Interview }
   | { type: "RESTORE"; interview: Interview; elapsedSec: number; now: number }
+  | { type: "PATCH_CONFIG"; patch: Partial<Interview["config"]> }
   | { type: "RESET" };
 
 export const initialState: InterviewState = {
@@ -197,6 +198,9 @@ export function reducer(state: InterviewState, action: Action): InterviewState {
         questionStartedAt: action.now,
       };
     }
+
+    case "PATCH_CONFIG":
+      return state.interview ? { ...state, interview: { ...state.interview, config: { ...state.interview.config, ...action.patch } } } : state;
 
     case "RESET":
       return initialState;

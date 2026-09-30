@@ -39,7 +39,7 @@ export const OPENING: BankItem[] = [
   { ko: "우리 회사에 지원하신 동기를 말씀해 주세요.", en: "Why do you want to join our company?", tags: ["hr", "mixed"] },
 ];
 
-export const GENERAL: Record<Exclude<QuestionType, "opening" | "technical">, BankItem[]> = {
+export const GENERAL: Record<"motivation" | "deep_dive" | "challenge" | "reflection" | "result", BankItem[]> = {
   motivation: [
     { ko: "{position} 직무에 지원하신 이유를 말씀해주세요.", en: "What made you apply for this {position} role?" },
     { ko: "우리 회사에 지원하신 동기를 말씀해 주세요.", en: "Why do you want to join our company?" },

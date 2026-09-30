@@ -6,13 +6,13 @@ import { GROUNDING_RULES, describeConfig, interviewerIdentity, languageRule } fr
  * Writes the narrative of the final report. Numeric scores are computed
  * deterministically in the app and passed in — the model only explains them.
  */
-export function reportPrompt(req: ReportRequest) {
+export async function reportPrompt(req: ReportRequest) {
   const system = `${interviewerIdentity(req.config)}
 
 Your task: write the final practice-feedback summary for this mock interview.
 - The scores are already computed; do not invent new numbers or contradict them.
 - strengths / improvements: 2-4 items each, each one sentence, grounded in specific answers (you may refer to question numbers).
-- nextSteps: 2-3 concrete practice actions.
+- nextSteps: 2-3 concrete practice actions specific to this job (what to prepare for its interviews), not generic advice.
 - topFeedback: the single most impactful improvement.
 - closingRemark: the interviewer's short, natural closing line.
 - Never describe this as a hiring decision or a real assessment of ability.
@@ -37,7 +37,7 @@ Improvement noted: ${t.improve}`,
     .join("\n\n");
 
   const user = `## Interview setup
-${describeConfig(req.config)}
+${await describeConfig(req.config)}
 
 ## Computed scores
 Overall: ${req.computed.overall}

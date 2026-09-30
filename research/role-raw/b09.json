@@ -1,0 +1,6706 @@
+{
+ "batch": "b09",
+ "sources": [
+  {
+   "id": "s1",
+   "title": "링커리어 커뮤니티 — 품질관리 면접 질문 (현직자 멘토링 답변)",
+   "url": "https://community.linkareer.com/STEM_mentoring/2528066",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "s2",
+   "title": "코멘토 — 대기업 생산직 설비보전 직무 면접 (받은 질문 공유)",
+   "url": "https://comento.kr/job-questions/%EA%B8%B0%EC%95%84/%EC%9E%90%EB%8F%99%ED%99%94%EC%84%A4%EB%B9%84/%EB%8C%80%EA%B8%B0%EC%97%85_%EC%83%9D%EC%82%B0%EC%A7%81_%EC%84%A4%EB%B9%84%EB%B3%B4%EC%A0%84_%EC%A7%81%EB%AC%B4_%EB%A9%B4%EC%A0%91-504196",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "s3",
+   "title": "기업 공식 블로그 — [궁금한 직무 이야기] 설비보전 담당자 직무 인터뷰",
+   "url": "https://blog.hansol.com/1115",
+   "type": "official_recruitment",
+   "year": 2026
+  },
+  {
+   "id": "s4",
+   "title": "링커리어 커뮤니티 — 생산관리직은 실제로 무슨 일 하나요? (현직자 답변)",
+   "url": "https://community.linkareer.com/STEM_mentoring/4959031",
+   "type": "other_public",
+   "year": 2025
+  },
+  {
+   "id": "s5",
+   "title": "코멘토 — 생산관리 면접질문드립니다 (멘토 답변: 예상 주제)",
+   "url": "https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EC%83%9D%EC%82%B0%EA%B4%80%EB%A6%AC/%EC%83%9D%EC%82%B0%EA%B4%80%EB%A6%AC_%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4-594789",
+   "type": "other_public",
+   "year": 2025
+  },
+  {
+   "id": "s6",
+   "title": "코멘토 — 공정기술직무 직무면접 질문드립니다 (멘토 답변: 예상 주제)",
+   "url": "https://comento.kr/job-questions/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90/%EA%B3%B5%EC%A0%95%EA%B8%B0%EC%88%A0/%EA%B3%B5%EC%A0%95%EA%B8%B0%EC%88%A0%EC%A7%81%EB%AC%B4_%EC%A7%81%EB%AC%B4%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4-610918",
+   "type": "other_public",
+   "year": 2025
+  },
+  {
+   "id": "s7",
+   "title": "잡코리아 직무인터뷰 — 제품의 품질을 분석하고 검사하는 품질 관리자",
+   "url": "https://www.jobkorea.co.kr/starter/interview/View/21046",
+   "type": "other_public",
+   "year": 2018
+  },
+  {
+   "id": "s8",
+   "title": "조선대학교 교직과정 — 교직 적성·인성 심층면접 예시문항",
+   "url": "https://css.chosun.ac.kr/bbs/css/90/142270/download.do",
+   "type": "official_recruitment",
+   "year": 2024
+  },
+  {
+   "id": "s9",
+   "title": "경기도교육청 공고 — 2026학년도 중등학교교사·특수(중등)교사 등 임용후보자 선정경쟁시험 시행계획 (제2차 수업실연·교직적성 심층면접)",
+   "url": "https://geoedu.snu.ac.kr/wp-content/uploads/sites/61/2025/10/%E2%98%85%EB%B6%99%EC%9E%8412026%ED%95%99%EB%85%84%EB%8F%84-%EA%B2%BD%EA%B8%B0%EB%8F%84-%EC%A4%91%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%90%EC%82%AC-%EB%B3%B4%EA%B1%B4%C2%B7%EC%82%AC%EC%84%9C%C2%B7%EC%A0%84%EB%AC%B8%EC%83%81%EB%8B%B4%C2%B7%EC%98%81%EC%96%91%C2%B7%ED%8A%B9%EC%88%98%EC%A4%91%EB%93%B1%EA%B5%90%EC%82%AC-%EC%9E%84%EC%9A%A9%ED%9B%84%EB%B3%B4%EC%9E%90-%EC%84%A0%EC%A0%95%EA%B2%BD%EC%9F%81%EC%8B%9C%ED%97%98-%EC%8B%9C%ED%96%89-%EA%B3%84%ED%9A%8D-%EA%B3%B5%EA%B3%A0.pdf",
+   "type": "official_recruitment",
+   "year": 2025
+  },
+  {
+   "id": "s10",
+   "title": "식품의약품안전처 — 의약품 등 시험방법 밸리데이션 가이드라인 해설서 [민원인 안내서]",
+   "url": "https://www.mfds.go.kr/brd/m_1060/down.do?brd_id=data0011&seq=12697&data_tp=A&file_seq=1",
+   "type": "other_public",
+   "year": 2015
+  },
+  {
+   "id": "s11",
+   "title": "헬로디디 — [윤현진의 R&D HRD] 출연연 교육효과성 측정 (KIRD 연구위원 칼럼)",
+   "url": "https://www.hellodd.com/news/articleView.html?idxno=50204",
+   "type": "other_public",
+   "year": 2014
+  }
+ ],
+ "profiles": [
+  {
+   "id": "production_manager",
+   "aliases": [
+    "생산관리",
+    "생산관리자",
+    "생산계획",
+    "생산관리 담당자",
+    "생산관리팀",
+    "PM(생산)",
+    "Production Planning",
+    "Production Control",
+    "생산운영"
+   ],
+   "skills": [
+    "생산계획 수립",
+    "자재소요계획(MRP)",
+    "재고 관리",
+    "병목 분석",
+    "ERP·MES 활용",
+    "납기 관리",
+    "현장 조율",
+    "원가 의식"
+   ],
+   "responsibilities": [
+    "수주·수요에 맞춘 일·주간 생산계획 수립",
+    "자재 소요 파악과 구매 요청",
+    "생산 실적·가동률 모니터링",
+    "납기 지연·결품 이슈 조율",
+    "생산 인력·설비 배치 계획",
+    "계획 대비 실적 차이 분석과 보고"
+   ],
+   "keywords": [
+    "생산계획",
+    "납기",
+    "재고",
+    "MRP",
+    "ERP",
+    "MES",
+    "가동률",
+    "병목",
+    "택트타임",
+    "리드타임",
+    "QCD",
+    "4M",
+    "결품",
+    "안전재고",
+    "긴급 오더",
+    "S&OP",
+    "생산실적",
+    "수요 변동"
+   ],
+   "topics": {
+    "role": [
+     "생산계획 수립",
+     "계획 대비 실적 관리",
+     "납기 관리",
+     "재고 관리",
+     "병목 공정 관리",
+     "자재 수급",
+     "현장·영업 조율"
+    ],
+    "scenario": [
+     "원자재 입고 지연",
+     "긴급 오더 끼워 넣기",
+     "품질 판정 보류 로트와 납기 충돌",
+     "반복되는 라인 정지",
+     "재고 과다 누적"
+    ],
+    "result": [
+     "납기 준수율",
+     "계획 달성률",
+     "재고 회전율",
+     "가동률"
+    ],
+    "en": [
+     "production planning",
+     "delivery management",
+     "inventory control",
+     "bottleneck analysis",
+     "MRP"
+    ]
+   },
+   "sources": [
+    "s4",
+    "s5"
+   ]
+  },
+  {
+   "id": "production_engineer",
+   "aliases": [
+    "생산기술",
+    "생산기술 엔지니어",
+    "생기",
+    "생산기술팀",
+    "제조기술",
+    "Manufacturing Engineer",
+    "Production Engineering",
+    "자동화 엔지니어"
+   ],
+   "skills": [
+    "설비 사양 검토",
+    "라인 설계·레이아웃",
+    "자동화 설비 도입",
+    "치공구·지그 설계",
+    "양산 이관 검증",
+    "투자 효과 분석",
+    "CAD 도면 해석",
+    "협력업체 관리"
+   ],
+   "responsibilities": [
+    "신규 라인·설비 구축과 셋업",
+    "신제품 양산 준비와 시생산 검증",
+    "자동화·생산성 향상 과제 수행",
+    "설비 투자 검토와 사양서 작성",
+    "셋업 시간·사이클타임 개선",
+    "설비 제작 협력사와 일정·품질 조율"
+   ],
+   "keywords": [
+    "생산기술",
+    "신규 라인",
+    "양산",
+    "시생산",
+    "자동화",
+    "설비 사양",
+    "사이클타임",
+    "지그",
+    "치공구",
+    "레이아웃",
+    "투자비",
+    "셋업",
+    "SMED",
+    "라인 증설",
+    "양산 이관",
+    "CAD"
+   ],
+   "topics": {
+    "role": [
+     "신규 라인 구축",
+     "양산 준비",
+     "자동화 투자",
+     "설비 사양 관리",
+     "생산성 향상",
+     "셋업 시간 단축"
+    ],
+    "scenario": [
+     "설비 반입 지연",
+     "초기 가동 사이클타임 미달",
+     "해외 공장 라인 이전",
+     "현장의 신규 설비 거부"
+    ],
+    "result": [
+     "사이클타임",
+     "투자 회수 기간",
+     "양산 수율 안정화 기간",
+     "생산성 향상률"
+    ],
+    "en": [
+     "line setup",
+     "automation",
+     "mass production readiness",
+     "equipment specification",
+     "cycle time"
+    ]
+   },
+   "sources": [
+    "s6"
+   ]
+  },
+  {
+   "id": "maintenance_engineer",
+   "aliases": [
+    "설비보전",
+    "설비보전 엔지니어",
+    "설비 엔지니어",
+    "보전",
+    "공무",
+    "메인트",
+    "설비관리",
+    "Maintenance",
+    "Equipment Engineer",
+    "설비 유지보수"
+   ],
+   "skills": [
+    "고장 진단",
+    "예방보전(PM) 계획",
+    "유공압 이해",
+    "전기·제어(PLC) 기초",
+    "진동·소음 점검",
+    "정비 이력 관리",
+    "안전작업(LOTO)",
+    "현장 소통"
+   ],
+   "responsibilities": [
+    "설비 고장 대응과 복구",
+    "예방보전·정기보전 계획 수립과 실행",
+    "정비 이력과 예비 부품 관리",
+    "설비 트러블 원인 분석과 대책 보고",
+    "설비 개선과 신규 설비 도입 지원",
+    "오퍼레이터·생산팀과 설비 상태 공유"
+   ],
+   "keywords": [
+    "설비보전",
+    "예방보전",
+    "사후보전",
+    "고장",
+    "MTBF",
+    "MTTR",
+    "OEE",
+    "설비종합효율",
+    "유압",
+    "공압",
+    "모터",
+    "베어링",
+    "PLC",
+    "시퀀스",
+    "진동",
+    "예비 부품",
+    "LOTO",
+    "TPM",
+    "정비 이력"
+   ],
+   "topics": {
+    "role": [
+     "고장 진단과 복구",
+     "예방보전",
+     "예비 부품 관리",
+     "설비 개선",
+     "설비 트러블 대책 보고",
+     "보전 안전"
+    ],
+    "scenario": [
+     "동시 다발 고장 호출",
+     "부품 재고 부족으로 장기 정지",
+     "생산팀의 예방정비 연기 요청",
+     "수리 후 같은 고장 재발"
+    ],
+    "result": [
+     "MTBF",
+     "MTTR",
+     "설비종합효율",
+     "돌발 정지 건수"
+    ],
+    "en": [
+     "preventive maintenance",
+     "breakdown repair",
+     "root cause of failure",
+     "MTBF/MTTR",
+     "OEE"
+    ]
+   },
+   "sources": [
+    "s2",
+    "s3"
+   ]
+  },
+  {
+   "id": "shop_floor_supervisor",
+   "aliases": [
+    "제조 현장관리",
+    "현장관리자",
+    "생산 감독자",
+    "조장",
+    "반장",
+    "직장",
+    "라인 리더",
+    "Shop Floor Supervisor",
+    "Production Supervisor",
+    "현장 감독"
+   ],
+   "skills": [
+    "작업 배치",
+    "작업표준 관리",
+    "현장 안전관리",
+    "인수인계 관리",
+    "작업자 교육(OJT)",
+    "5S 운영",
+    "갈등 조정",
+    "근태 관리"
+   ],
+   "responsibilities": [
+    "교대·라인별 인원 배치와 작업 지시",
+    "작업표준 준수와 현장 안전 점검",
+    "신규·다기능 작업자 교육",
+    "조회·교대 인수인계 운영",
+    "현장 불량·지연 1차 대응",
+    "작업자 면담과 고충 처리"
+   ],
+   "keywords": [
+    "현장관리",
+    "작업 배치",
+    "작업표준서",
+    "조회",
+    "인수인계",
+    "교대",
+    "5S",
+    "OJT",
+    "다기능공",
+    "보호구",
+    "잔업",
+    "근태",
+    "안전 점검",
+    "아차사고",
+    "라인 리더"
+   ],
+   "topics": {
+    "role": [
+     "인원 배치",
+     "작업표준 관리",
+     "현장 안전",
+     "작업자 육성",
+     "교대 인수인계",
+     "현장 소통"
+    ],
+    "scenario": [
+     "결원 발생 시 목표 수량 유지",
+     "작업자 간 다툼",
+     "보호구 미착용",
+     "고참 작업자의 지시 거부"
+    ],
+    "result": [
+     "무재해 일수",
+     "잔업 시간",
+     "라인 생산성",
+     "신규자 숙련 기간"
+    ],
+    "en": [
+     "shop floor supervision",
+     "workforce allocation",
+     "standard work",
+     "safety management",
+     "OJT"
+    ]
+   }
+  },
+  {
+   "id": "quality_control",
+   "aliases": [
+    "품질관리",
+    "QC",
+    "품질검사",
+    "검사원",
+    "품질관리 엔지니어",
+    "Quality Control",
+    "QC 엔지니어",
+    "공정품질"
+   ],
+   "skills": [
+    "수입·공정·출하 검사",
+    "SPC·관리도 해석",
+    "공정능력 분석",
+    "측정시스템 분석(Gage R&R)",
+    "4M·5Why 원인 분석",
+    "샘플링 검사",
+    "한도견본 관리",
+    "부적합품 처리"
+   ],
+   "responsibilities": [
+    "원자재·공정·완제품 검사와 판정",
+    "SPC 데이터 모니터링과 이상 대응",
+    "불량 원인 분석과 개선 요청",
+    "검사 기준서·한도견본 관리",
+    "측정기 관리와 검사원 판정 표준화",
+    "부적합품 격리와 처리"
+   ],
+   "keywords": [
+    "품질관리",
+    "QC",
+    "검사",
+    "불량률",
+    "SPC",
+    "관리도",
+    "Cpk",
+    "공정능력",
+    "4M",
+    "5Why",
+    "샘플링",
+    "로트",
+    "한도견본",
+    "측정 편차",
+    "Gage R&R",
+    "부적합",
+    "PPM",
+    "출하검사"
+   ],
+   "topics": {
+    "role": [
+     "검사와 판정",
+     "SPC 운영",
+     "불량 원인 분석",
+     "측정 신뢰성",
+     "부적합품 관리"
+    ],
+    "scenario": [
+     "야간조 규격 이탈 다량 발생",
+     "검사원 간 판정 차이",
+     "합격 로트에서 고객 불량",
+     "기준 완화 요구"
+    ],
+    "result": [
+     "불량률",
+     "PPM",
+     "공정능력지수",
+     "검사 누락 건수"
+    ],
+    "en": [
+     "inspection",
+     "statistical process control",
+     "process capability",
+     "root cause analysis",
+     "measurement system analysis"
+    ]
+   },
+   "sources": [
+    "s1",
+    "s7"
+   ]
+  },
+  {
+   "id": "quality_assurance",
+   "aliases": [
+    "품질보증",
+    "QA",
+    "품질보증 엔지니어",
+    "품질경영",
+    "고객품질",
+    "Quality Assurance",
+    "QA 엔지니어",
+    "품질시스템"
+   ],
+   "skills": [
+    "고객 클레임 대응",
+    "8D·재발 방지 대책",
+    "품질경영시스템(ISO 9001) 운영",
+    "내부 품질 심사",
+    "변경점 관리",
+    "신제품 품질 계획(APQP)",
+    "원인 분석 보고",
+    "고객 커뮤니케이션"
+   ],
+   "responsibilities": [
+    "고객 클레임 접수·분석·회신",
+    "재발 방지 대책 수립과 유효성 확인",
+    "품질경영시스템 문서·심사 운영",
+    "설계·공정 변경 품질 검증",
+    "고객 감사 대응",
+    "필드 품질 데이터 관리"
+   ],
+   "keywords": [
+    "품질보증",
+    "QA",
+    "클레임",
+    "8D",
+    "재발 방지",
+    "시정조치",
+    "ISO 9001",
+    "IATF 16949",
+    "내부 심사",
+    "고객 감사",
+    "APQP",
+    "변경점",
+    "필드 불량",
+    "원인 분석",
+    "보증 비용"
+   ],
+   "topics": {
+    "role": [
+     "고객 클레임 대응",
+     "재발 방지",
+     "품질경영시스템",
+     "변경점 관리",
+     "신제품 품질 계획",
+     "고객 감사"
+    ],
+    "scenario": [
+     "짧은 원인 분석 기한",
+     "감사 전 기록 누락",
+     "귀책 불분명 클레임",
+     "재발 클레임"
+    ],
+    "result": [
+     "클레임 건수",
+     "보증 비용",
+     "재발률",
+     "심사 부적합 건수"
+    ],
+    "en": [
+     "customer complaint handling",
+     "corrective action",
+     "quality management system",
+     "8D report",
+     "change management"
+    ]
+   },
+   "sources": [
+    "s1"
+   ]
+  },
+  {
+   "id": "supplier_quality",
+   "aliases": [
+    "협력사 품질",
+    "SQ",
+    "SQE",
+    "협력사 품질관리",
+    "구매품질",
+    "외주품질",
+    "Supplier Quality",
+    "Supplier Quality Engineer",
+    "부품 품질"
+   ],
+   "skills": [
+    "협력사 공정 감사",
+    "초도품 승인(PPAP)",
+    "협력사 평가 지표 설계",
+    "변경점 관리",
+    "수입 불량 대응",
+    "협력사 개선 지도",
+    "도면·규격 해석",
+    "협상과 관계 관리"
+   ],
+   "responsibilities": [
+    "신규 협력사 품질 평가와 등록",
+    "협력사 공정 감사와 개선 요구",
+    "초도품·변경품 승인",
+    "수입 불량 원인 분석과 대책 관리",
+    "협력사 품질 평가와 등급 관리",
+    "협력사 품질 역량 향상 지원"
+   ],
+   "keywords": [
+    "협력사",
+    "SQ",
+    "공정 감사",
+    "PPAP",
+    "초도품",
+    "변경점",
+    "4M 변경",
+    "수입검사",
+    "협력사 평가",
+    "도면",
+    "규격",
+    "부품 불량",
+    "대체 업체",
+    "품질 지도",
+    "단가"
+   ],
+   "topics": {
+    "role": [
+     "협력사 평가",
+     "공정 감사",
+     "초도품 승인",
+     "변경점 관리",
+     "협력사 개선 지원"
+    ],
+    "scenario": [
+     "무단 원자재 변경",
+     "단독 공급 부품 불량",
+     "도면 해석 이견",
+     "단가 인상 요구"
+    ],
+    "result": [
+     "수입 불량률",
+     "협력사 품질 등급",
+     "라인 투입 불량"
+    ],
+    "en": [
+     "supplier audit",
+     "PPAP",
+     "supplier development",
+     "incoming quality",
+     "change notification"
+    ]
+   }
+  },
+  {
+   "id": "reliability_engineer",
+   "aliases": [
+    "신뢰성",
+    "신뢰성 엔지니어",
+    "신뢰성 시험",
+    "신뢰성 평가",
+    "Reliability Engineer",
+    "Reliability",
+    "수명 평가",
+    "RE"
+   ],
+   "skills": [
+    "신뢰성 시험 설계",
+    "가속수명시험",
+    "FMEA",
+    "고장 분석",
+    "와이블 등 수명 분포 분석",
+    "환경 시험(고온고습·열충격)",
+    "필드 데이터 분석",
+    "시험 결과 보고"
+   ],
+   "responsibilities": [
+    "제품·부품 신뢰성 시험 계획과 수행",
+    "고장 분석과 설계 개선 피드백",
+    "FMEA 작성과 위험 관리",
+    "필드 고장 데이터 분석과 수명 예측",
+    "신뢰성 목표와 시험 규격 수립",
+    "개발 일정 내 신뢰성 검증 조율"
+   ],
+   "keywords": [
+    "신뢰성",
+    "수명",
+    "가속수명시험",
+    "MTBF",
+    "고장률",
+    "욕조 곡선",
+    "FMEA",
+    "와이블",
+    "고온고습",
+    "열충격",
+    "고장 분석",
+    "필드 고장",
+    "보증 기간",
+    "샘플 수",
+    "신뢰도"
+   ],
+   "topics": {
+    "role": [
+     "신뢰성 시험 설계",
+     "가속수명시험",
+     "고장 분석",
+     "FMEA",
+     "수명 예측"
+    ],
+    "scenario": [
+     "출시 일정으로 시험 기간 단축",
+     "간헐적 고장",
+     "보증 직후 필드 고장 집중",
+     "시험 조건에 대한 설계팀 반박"
+    ],
+    "result": [
+     "고장률",
+     "MTBF",
+     "필드 불량률",
+     "시험 통과율"
+    ],
+    "en": [
+     "reliability testing",
+     "accelerated life test",
+     "failure analysis",
+     "FMEA",
+     "life data analysis"
+    ]
+   }
+  },
+  {
+   "id": "process_engineer",
+   "aliases": [
+    "공정기술",
+    "공정 엔지니어",
+    "공정기술 엔지니어",
+    "공정개발",
+    "Process Engineer",
+    "공정관리",
+    "PE"
+   ],
+   "skills": [
+    "공정 조건 최적화",
+    "수율 분석",
+    "실험계획(DOE)",
+    "공정 FMEA",
+    "스케일업",
+    "공정 변경 관리",
+    "SPC 활용",
+    "현장 커뮤니케이션"
+   ],
+   "responsibilities": [
+    "공정 조건 설정과 운영 범위 관리",
+    "수율 향상과 불량 개선",
+    "신제품·신규 원자재 공정 셋업",
+    "공정 이상 대응과 원인 분석",
+    "공정 변경 검증과 고객 승인 관리",
+    "공정 표준 문서화와 현장 전달"
+   ],
+   "keywords": [
+    "공정기술",
+    "공정 조건",
+    "레시피",
+    "수율",
+    "산포",
+    "파라미터",
+    "DOE",
+    "공정 FMEA",
+    "스케일업",
+    "공정 변경",
+    "운영 범위",
+    "공정 이상",
+    "불량",
+    "재현성",
+    "양산"
+   ],
+   "topics": {
+    "role": [
+     "공정 조건 최적화",
+     "수율 향상",
+     "공정 이상 대응",
+     "공정 변경 관리",
+     "스케일업"
+    ],
+    "scenario": [
+     "수율 급락",
+     "특정 설비 산포 증가",
+     "고객 공정 변경 승인 지연",
+     "신규 원자재 적용"
+    ],
+    "result": [
+     "수율",
+     "공정 산포",
+     "불량률",
+     "원가 절감액"
+    ],
+    "en": [
+     "process optimization",
+     "yield improvement",
+     "design of experiments",
+     "process change control",
+     "scale-up"
+    ]
+   },
+   "sources": [
+    "s6"
+   ]
+  },
+  {
+   "id": "process_innovation",
+   "aliases": [
+    "공정혁신",
+    "6시그마",
+    "식스시그마",
+    "혁신 담당",
+    "경영혁신",
+    "린 생산",
+    "Continuous Improvement",
+    "Six Sigma",
+    "BB",
+    "GB",
+    "개선 활동"
+   ],
+   "skills": [
+    "DMAIC 과제 수행",
+    "통계적 분석(가설검정·회귀)",
+    "실험계획법",
+    "린 낭비 분석",
+    "과제 선정과 효과 산정",
+    "변화 관리",
+    "퍼실리테이션",
+    "성과 검증"
+   ],
+   "responsibilities": [
+    "개선 과제 발굴과 선정",
+    "DMAIC 기반 과제 수행과 코칭",
+    "개선 효과 산정과 검증",
+    "현장 개선 활동 퍼실리테이션",
+    "혁신 교육과 벨트 육성",
+    "개선 결과 표준화와 인계"
+   ],
+   "keywords": [
+    "6시그마",
+    "DMAIC",
+    "린",
+    "낭비",
+    "가설검정",
+    "실험계획법",
+    "산포",
+    "개선 과제",
+    "효과 산정",
+    "원가 절감",
+    "표준화",
+    "카이젠",
+    "VSM",
+    "벨트",
+    "관리 단계"
+   ],
+   "topics": {
+    "role": [
+     "과제 선정",
+     "DMAIC 수행",
+     "통계적 검증",
+     "낭비 제거",
+     "효과 유지",
+     "변화 관리"
+    ],
+    "scenario": [
+     "현장 비협조",
+     "단기 원가 절감 압박",
+     "과제 목표 미달",
+     "개선 효과에 대한 냉소"
+    ],
+    "result": [
+     "절감 효과(금액)",
+     "시그마 수준",
+     "리드타임 단축",
+     "과제 완료율"
+    ],
+    "en": [
+     "six sigma",
+     "DMAIC",
+     "lean",
+     "continuous improvement",
+     "hypothesis testing"
+    ]
+   }
+  },
+  {
+   "id": "industrial_engineer",
+   "aliases": [
+    "IE",
+    "산업공학",
+    "IE 엔지니어",
+    "생산성 분석",
+    "표준시간",
+    "Industrial Engineer",
+    "Industrial Engineering",
+    "IE 담당"
+   ],
+   "skills": [
+    "작업 측정과 표준시간 설정",
+    "동작·공정 분석",
+    "라인 밸런싱",
+    "레이아웃·물류 동선 설계",
+    "인력 산정",
+    "시뮬레이션",
+    "인간공학",
+    "최적화 모델링"
+   ],
+   "responsibilities": [
+    "표준시간과 인력 산정 기준 수립",
+    "공정·동작 분석으로 낭비 제거",
+    "라인 밸런싱과 효율 관리",
+    "공장·창고 레이아웃 설계",
+    "생산성 지표 관리와 개선 제안",
+    "시뮬레이션으로 개선안 검증"
+   ],
+   "keywords": [
+    "IE",
+    "표준시간",
+    "작업 측정",
+    "동작분석",
+    "라인 밸런싱",
+    "사이클타임",
+    "여유율",
+    "레이아웃",
+    "물류 동선",
+    "인력 산정",
+    "시뮬레이션",
+    "인간공학",
+    "생산성",
+    "피킹",
+    "최적화"
+   ],
+   "topics": {
+    "role": [
+     "표준시간 설정",
+     "라인 밸런싱",
+     "레이아웃 설계",
+     "인력 산정",
+     "생산성 분석"
+    ],
+    "scenario": [
+     "작업 측정 거부",
+     "표준시간 변경과 노조 반대",
+     "새 레이아웃 적용 후 생산성 저하",
+     "모형과 현장 판단 불일치"
+    ],
+    "result": [
+     "라인 효율",
+     "인당 생산성",
+     "물류 이동 거리",
+     "피킹 시간"
+    ],
+    "en": [
+     "work measurement",
+     "line balancing",
+     "facility layout",
+     "simulation",
+     "ergonomics"
+    ]
+   }
+  },
+  {
+   "id": "research_scientist",
+   "aliases": [
+    "연구원",
+    "연구직",
+    "기초연구",
+    "응용연구",
+    "선임연구원",
+    "Research Scientist",
+    "Researcher",
+    "R&D 연구원",
+    "과학자"
+   ],
+   "skills": [
+    "가설 설정",
+    "실험 설계",
+    "변수 통제",
+    "선행연구 조사",
+    "데이터 해석",
+    "재현성 확보",
+    "논문·보고서 작성",
+    "연구 과제 기획"
+   ],
+   "responsibilities": [
+    "연구 주제 기획과 가설 수립",
+    "실험 설계·수행과 결과 해석",
+    "선행연구 조사와 연구 동향 분석",
+    "연구 노트·보고서·논문 작성",
+    "과제 예산·일정 관리",
+    "공동 연구자·과제 책임자와 협업"
+   ],
+   "keywords": [
+    "연구",
+    "가설",
+    "실험 설계",
+    "대조군",
+    "재현성",
+    "실험 노트",
+    "선행연구",
+    "논문",
+    "학회",
+    "연구 과제",
+    "제안서",
+    "연구윤리",
+    "표본",
+    "통계적 유의성",
+    "연구실"
+   ],
+   "topics": {
+    "role": [
+     "가설 수립",
+     "실험 설계",
+     "재현성",
+     "결과 해석",
+     "연구 기획",
+     "연구 성과 정리"
+    ],
+    "scenario": [
+     "가설과 다른 실험 결과",
+     "재현 실패 보고",
+     "예산 삭감",
+     "경쟁 팀의 선행 발표"
+    ],
+    "result": [
+     "논문·특허",
+     "재현된 결과",
+     "과제 목표 달성도"
+    ],
+    "en": [
+     "hypothesis",
+     "experimental design",
+     "reproducibility",
+     "research proposal",
+     "scientific writing"
+    ]
+   }
+  },
+  {
+   "id": "lab_analyst",
+   "aliases": [
+    "분석 연구원",
+    "분석연구원",
+    "분석직",
+    "시험 분석",
+    "기기분석",
+    "Lab Analyst",
+    "Analytical Scientist",
+    "분석 담당",
+    "QC 분석"
+   ],
+   "skills": [
+    "기기분석(HPLC·GC 등)",
+    "시험법 밸리데이션",
+    "시험법 개발",
+    "시스템적합성 판단",
+    "표준품·시약 관리",
+    "분석 데이터 무결성",
+    "이탈 결과(OOS) 조사",
+    "분석 보고서 작성"
+   ],
+   "responsibilities": [
+    "의뢰 시료 분석과 결과 보고",
+    "시험법 개발과 밸리데이션",
+    "분석 장비 운영·점검",
+    "표준품·시약 관리",
+    "이탈 결과 조사",
+    "분석 기록과 데이터 무결성 관리"
+   ],
+   "keywords": [
+    "분석",
+    "HPLC",
+    "GC",
+    "밸리데이션",
+    "특이성",
+    "직선성",
+    "정확성",
+    "정밀성",
+    "검출한계",
+    "정량한계",
+    "완건성",
+    "시스템적합성",
+    "검량선",
+    "회수율",
+    "표준품",
+    "OOS",
+    "데이터 무결성",
+    "시료"
+   ],
+   "topics": {
+    "role": [
+     "기기분석",
+     "시험법 밸리데이션",
+     "시험법 개발",
+     "이탈 결과 조사",
+     "데이터 무결성"
+    ],
+    "scenario": [
+     "분석자 간 결과 차이",
+     "분석 의뢰 폭주",
+     "장비 고장으로 외부 의뢰",
+     "원하는 결과를 위한 재분석 요청"
+    ],
+    "result": [
+     "분석 정확도",
+     "재시험률",
+     "분석 소요 시간"
+    ],
+    "en": [
+     "analytical method validation",
+     "chromatography",
+     "system suitability",
+     "out-of-specification investigation",
+     "data integrity"
+    ]
+   },
+   "sources": [
+    "s10"
+   ]
+  },
+  {
+   "id": "statistician",
+   "aliases": [
+    "통계 분석 연구원",
+    "통계연구원",
+    "통계 분석가",
+    "통계학 연구원",
+    "Statistician",
+    "Biostatistician",
+    "통계 담당",
+    "통계 컨설팅"
+   ],
+   "skills": [
+    "연구 설계 자문",
+    "표본 크기 산정",
+    "가설검정·회귀분석",
+    "결측치 처리",
+    "다중비교 보정",
+    "인과추론 기초",
+    "통계 패키지 활용",
+    "결과 해석·전달"
+   ],
+   "responsibilities": [
+    "연구자의 분석 요청 자문과 설계 검토",
+    "통계 분석 수행과 결과 해석",
+    "표본 크기·실험 설계 산정",
+    "분석 보고서·논문 통계 부분 작성",
+    "분석 절차 문서화와 재현성 관리",
+    "비전공자 대상 결과 설명"
+   ],
+   "keywords": [
+    "통계",
+    "표본 크기",
+    "가설검정",
+    "p값",
+    "신뢰구간",
+    "회귀분석",
+    "결측치",
+    "다중비교",
+    "인과",
+    "상관",
+    "설문",
+    "응답률",
+    "대조군",
+    "효과 크기",
+    "재현성"
+   ],
+   "topics": {
+    "role": [
+     "연구 설계 자문",
+     "표본 설계",
+     "통계적 추론",
+     "결측·편향 처리",
+     "결과 해석과 전달"
+    ],
+    "scenario": [
+     "유의한 결과를 위한 방법 변경 요구",
+     "설계가 맞지 않는 기존 데이터",
+     "발표 직전 오류 발견",
+     "기대와 반대인 결과"
+    ],
+    "result": [
+     "분석 재현성",
+     "연구 설계 개선",
+     "의사결정 반영"
+    ],
+    "en": [
+     "statistical consulting",
+     "sample size",
+     "hypothesis testing",
+     "missing data",
+     "causal inference"
+    ]
+   }
+  },
+  {
+   "id": "elementary_teacher",
+   "aliases": [
+    "초등교사",
+    "초등학교 교사",
+    "초등 교사",
+    "초등 담임",
+    "교대",
+    "Elementary Teacher",
+    "Primary School Teacher",
+    "초등 임용"
+   ],
+   "skills": [
+    "교과 통합 수업 설계",
+    "학급 경영",
+    "생활지도",
+    "기초학력 지도",
+    "학부모 상담",
+    "놀이·체험 중심 수업",
+    "관찰 기반 평가",
+    "안전 지도"
+   ],
+   "responsibilities": [
+    "담임 학급 운영과 학급 규칙 수립",
+    "여러 교과 수업 설계와 평가",
+    "학생 생활지도와 교우 관계 지도",
+    "기초학력 부진 학생 지원",
+    "학부모 상담과 소통",
+    "학교 행사·업무 분장 수행"
+   ],
+   "keywords": [
+    "초등",
+    "담임",
+    "학급 경영",
+    "학급 규칙",
+    "생활지도",
+    "기초학력",
+    "학부모 상담",
+    "인성교육",
+    "놀이",
+    "체험",
+    "저학년",
+    "고학년",
+    "단원평가",
+    "안전사고",
+    "교우 관계"
+   ],
+   "topics": {
+    "role": [
+     "학급 경영",
+     "수업 설계",
+     "생활지도",
+     "기초학력 지원",
+     "학부모 소통",
+     "인성교육"
+    ],
+    "scenario": [
+     "쉬는 시간 부상",
+     "학생 간 다툼과 양측 학부모 갈등",
+     "과제·준비물 미이행",
+     "학급 분위기 산만"
+    ],
+    "result": [
+     "학급 분위기",
+     "기초학력 향상",
+     "학부모 신뢰"
+    ],
+    "en": [
+     "classroom management",
+     "lesson planning",
+     "student guidance",
+     "parent communication"
+    ]
+   },
+   "sources": [
+    "s8"
+   ]
+  },
+  {
+   "id": "secondary_teacher",
+   "aliases": [
+    "중등교사",
+    "중학교 교사",
+    "고등학교 교사",
+    "교과 교사",
+    "중등 임용",
+    "Secondary Teacher",
+    "High School Teacher",
+    "Middle School Teacher",
+    "담임교사"
+   ],
+   "skills": [
+    "교과 전문성",
+    "수업 설계와 수업 실연",
+    "과정중심 평가",
+    "진로·진학 지도",
+    "생활지도·상담",
+    "학급 담임 운영",
+    "평가 문항 출제",
+    "학생 참여형 수업"
+   ],
+   "responsibilities": [
+    "담당 교과 수업 설계와 운영",
+    "평가 계획·문항 출제·채점",
+    "담임 학급 운영과 생활지도",
+    "진로·진학 상담",
+    "학부모 소통",
+    "교내 업무 분장 수행"
+   ],
+   "keywords": [
+    "중등",
+    "교과",
+    "수업 설계",
+    "수업 실연",
+    "수행평가",
+    "과정중심 평가",
+    "지필평가",
+    "문항 오류",
+    "진로",
+    "진학",
+    "담임",
+    "생활지도",
+    "학업 성취",
+    "교직관",
+    "자기주도 학습"
+   ],
+   "topics": {
+    "role": [
+     "교과 수업 설계",
+     "평가",
+     "생활지도",
+     "진로 지도",
+     "학급 운영",
+     "교직관"
+    ],
+    "scenario": [
+     "수업 불참 학생",
+     "시험 문항 이의 제기",
+     "교사 무단 촬영",
+     "위기 학생 발견"
+    ],
+    "result": [
+     "학업 성취도",
+     "수업 참여도",
+     "학생 신뢰"
+    ],
+    "en": [
+     "subject teaching",
+     "assessment design",
+     "student counseling",
+     "lesson demonstration"
+    ]
+   },
+   "sources": [
+    "s8",
+    "s9"
+   ]
+  },
+  {
+   "id": "special_ed_teacher",
+   "aliases": [
+    "특수교사",
+    "특수교육 교사",
+    "특수학급 교사",
+    "특수학교 교사",
+    "Special Education Teacher",
+    "특수 임용",
+    "통합교육 교사"
+   ],
+   "skills": [
+    "개별화교육계획(IEP) 수립",
+    "통합교육 협력",
+    "도전행동 기능 평가",
+    "보완대체의사소통(AAC)",
+    "전환교육",
+    "보호자 상담",
+    "교육과정 수정",
+    "관찰·기록"
+   ],
+   "responsibilities": [
+    "개별화교육지원팀 운영과 IEP 수립",
+    "특수학급·특수학교 수업 운영",
+    "통합학급 교사와 협력 지원",
+    "도전행동 지원과 생활지도",
+    "전환교육·진로 지원",
+    "보호자 상담과 관련 서비스 연계"
+   ],
+   "keywords": [
+    "특수교육",
+    "개별화교육계획",
+    "IEP",
+    "통합교육",
+    "통합학급",
+    "특수학급",
+    "도전행동",
+    "행동지원",
+    "보완대체의사소통",
+    "전환교육",
+    "보호자",
+    "특수교육 보조 인력",
+    "장애 인식",
+    "교육과정 수정"
+   ],
+   "topics": {
+    "role": [
+     "개별화교육",
+     "통합교육",
+     "행동지원",
+     "의사소통 지원",
+     "전환교육",
+     "보호자 협력"
+    ],
+    "scenario": [
+     "통합학급 내 놀림",
+     "수업 중 자해 행동",
+     "보호자의 배치 요구",
+     "보조 인력 부족"
+    ],
+    "result": [
+     "IEP 목표 달성",
+     "통합학급 참여",
+     "도전행동 감소"
+    ],
+    "en": [
+     "IEP",
+     "inclusive education",
+     "positive behavior support",
+     "AAC",
+     "transition planning"
+    ]
+   },
+   "sources": [
+    "s9"
+   ]
+  },
+  {
+   "id": "early_childhood_teacher",
+   "aliases": [
+    "유치원 교사",
+    "보육교사",
+    "유아교사",
+    "어린이집 교사",
+    "유치원·보육교사",
+    "Early Childhood Teacher",
+    "Kindergarten Teacher",
+    "유아 임용"
+   ],
+   "skills": [
+    "놀이 중심 교육과정 운영",
+    "유아 관찰·기록",
+    "안전·건강 관리",
+    "기본생활습관 지도",
+    "적응 지원",
+    "학부모 소통",
+    "교실 환경 구성",
+    "상호작용"
+   ],
+   "responsibilities": [
+    "놀이 중심 일과 운영",
+    "유아 관찰과 발달 기록",
+    "안전사고 예방과 응급 대응",
+    "급식·투약·건강 관리",
+    "등·하원 인계와 학부모 소통",
+    "놀이 환경과 자료 구성"
+   ],
+   "keywords": [
+    "유아",
+    "영유아",
+    "놀이 중심",
+    "누리과정",
+    "보육",
+    "관찰 기록",
+    "안전사고",
+    "바깥놀이",
+    "등원",
+    "하원",
+    "적응",
+    "기본생활습관",
+    "투약",
+    "알림장",
+    "놀이 영역",
+    "CCTV"
+   ],
+   "topics": {
+    "role": [
+     "놀이 지원",
+     "관찰과 기록",
+     "안전 관리",
+     "생활습관 지도",
+     "적응 지원",
+     "학부모 소통"
+    ],
+    "scenario": [
+     "바깥놀이 중 부상",
+     "무는 행동과 학부모 항의",
+     "미등록 보호자 하원",
+     "상처에 대한 CCTV 열람 요구"
+    ],
+    "result": [
+     "안전사고 건수",
+     "적응 기간",
+     "학부모 신뢰"
+    ],
+    "en": [
+     "play-based learning",
+     "child observation",
+     "child safety",
+     "parent communication"
+    ]
+   }
+  },
+  {
+   "id": "academy_instructor",
+   "aliases": [
+    "학원 강사",
+    "학원강사",
+    "입시 강사",
+    "보습학원 강사",
+    "과외",
+    "Academy Instructor",
+    "Private Tutor",
+    "강사"
+   ],
+   "skills": [
+    "시범 강의(시강)",
+    "학습 진단",
+    "내신·입시 대비 지도",
+    "학부모 상담",
+    "학생 관리(출결·과제)",
+    "교재 활용",
+    "재원 관리",
+    "동기 부여"
+   ],
+   "responsibilities": [
+    "담당 반 수업 진행",
+    "테스트·과제로 학습 진단과 관리",
+    "학부모 상담과 학습 보고",
+    "내신·입시 대비 자료 준비",
+    "출결·보강 관리",
+    "재원생 유지와 신규 상담 지원"
+   ],
+   "keywords": [
+    "학원",
+    "강사",
+    "시강",
+    "내신",
+    "입시",
+    "학부모 상담",
+    "퇴원",
+    "재원생",
+    "월간 테스트",
+    "숙제",
+    "보강",
+    "진도",
+    "성적 향상",
+    "원장",
+    "등록 상담"
+   ],
+   "topics": {
+    "role": [
+     "수업 전달력",
+     "학습 진단",
+     "학생 관리",
+     "학부모 상담",
+     "재원 관리"
+    ],
+    "scenario": [
+     "성적 정체로 퇴원 예고",
+     "재원생 급감",
+     "타 강사와 비교",
+     "홍보·상담 업무 요구"
+    ],
+    "result": [
+     "성적 향상",
+     "재원율",
+     "퇴원율"
+    ],
+    "en": [
+     "private academy teaching",
+     "demo lesson",
+     "parent consultation",
+     "student retention"
+    ]
+   }
+  },
+  {
+   "id": "edu_planner",
+   "aliases": [
+    "교육기획",
+    "교육콘텐츠",
+    "교육 기획자",
+    "HRD",
+    "HRD 담당자",
+    "교육 운영",
+    "교수설계",
+    "Instructional Designer",
+    "Education Program Planner",
+    "이러닝 기획"
+   ],
+   "skills": [
+    "교육 요구 분석",
+    "교육과정 설계",
+    "교육 목표 설정",
+    "교육 효과 측정(커크패트릭 4단계)",
+    "이러닝 콘텐츠 기획",
+    "강사·업체 관리",
+    "예산 관리",
+    "내용 전문가 협업"
+   ],
+   "responsibilities": [
+    "교육 요구 조사와 과정 기획",
+    "교육과정·콘텐츠 설계와 개발",
+    "강사·교육 업체 선정과 운영",
+    "교육 효과 평가와 개선",
+    "교육 예산 편성과 집행",
+    "현업 부서와 교육 일정 조율"
+   ],
+   "keywords": [
+    "교육기획",
+    "요구 분석",
+    "교육과정",
+    "교수설계",
+    "ADDIE",
+    "교육 목표",
+    "만족도",
+    "현업 적용",
+    "커크패트릭",
+    "이러닝",
+    "콘텐츠",
+    "수료율",
+    "교육 예산",
+    "강사 섭외",
+    "HRD"
+   ],
+   "topics": {
+    "role": [
+     "요구 분석",
+     "과정 설계",
+     "콘텐츠 기획",
+     "효과 측정",
+     "운영 관리"
+    ],
+    "scenario": [
+     "강사 불참",
+     "현업의 낮은 참여",
+     "교육 성과 수치화 요구",
+     "교육 후 퇴사율 증가"
+    ],
+    "result": [
+     "수료율",
+     "만족도",
+     "현업 적용도",
+     "교육 투자 대비 효과"
+    ],
+    "en": [
+     "needs analysis",
+     "instructional design",
+     "training evaluation",
+     "e-learning",
+     "Kirkpatrick model"
+    ]
+   },
+   "sources": [
+    "s11"
+   ]
+  },
+  {
+   "id": "corporate_trainer",
+   "aliases": [
+    "기업교육 강사",
+    "사내강사",
+    "기업 강사",
+    "퍼실리테이터",
+    "HRD 강사",
+    "Corporate Trainer",
+    "Facilitator",
+    "직무교육 강사"
+   ],
+   "skills": [
+    "성인 학습 원리",
+    "퍼실리테이션",
+    "워크숍 설계",
+    "사례 기반 교육",
+    "참여 유도",
+    "교육 후속 관리",
+    "청중 분석",
+    "강의 피드백 활용"
+   ],
+   "responsibilities": [
+    "직무·리더십 등 기업 교육 진행",
+    "교육 대상 사전 분석과 맞춤 설계",
+    "워크숍·실습 운영",
+    "교육 담당자와 요구 조율",
+    "교육 평가 결과 분석과 개선",
+    "현업 적용 후속 활동 지원"
+   ],
+   "keywords": [
+    "기업교육",
+    "사내교육",
+    "성인 학습자",
+    "퍼실리테이션",
+    "워크숍",
+    "리더십 교육",
+    "직무교육",
+    "참여",
+    "사례",
+    "만족도",
+    "교육 담당자",
+    "현업 적용",
+    "강의안",
+    "아이스브레이킹"
+   ],
+   "topics": {
+    "role": [
+     "성인 학습",
+     "참여형 교육",
+     "맞춤 설계",
+     "교육 후속 관리",
+     "강의 평가 개선"
+    ],
+    "scenario": [
+     "의무 교육의 낮은 참여",
+     "공개 반박",
+     "교육 시간 단축",
+     "담당자와 참여자 요구 불일치"
+    ],
+    "result": [
+     "만족도",
+     "현업 적용도",
+     "재의뢰율"
+    ],
+    "en": [
+     "corporate training",
+     "facilitation",
+     "adult learning",
+     "workshop design"
+    ]
+   },
+   "sources": [
+    "s11"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "text": "생산 부서에서 일한다는 것이 사무직과 가장 다른 점은 무엇이라고 생각하세요?",
+   "scope": "family:production",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제조 현장에서 품질, 원가, 납기 중 가장 먼저 흔들리기 쉬운 것은 무엇이라고 보시나요?",
+   "scope": "family:production",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교대 근무나 긴급 호출 같은 생산 직무의 근무 환경을 어떻게 받아들이고 계신가요?",
+   "scope": "family:production",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산 조직이 품질, 설비, 구매 부서와 부딪히는 지점은 주로 어디라고 생각하세요?",
+   "scope": "family:production",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 상황에 따라 하루 업무가 수시로 바뀌는 환경에서 본인은 어떻게 일을 관리하시겠어요?",
+   "scope": "family:production",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 작업자분들과 신뢰를 쌓기 위해 직접 해 본 노력이 있다면 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 부서와 책임 소재를 두고 의견이 갈렸을 때 어떻게 풀어 가셨는지 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정해진 작업 기준을 지키지 않는 동료를 봤을 때 어떻게 행동하셨나요?",
+   "scope": "family:production",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예상치 못한 문제로 계획이 틀어졌을 때 우선순위를 다시 세운 경험을 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "데이터나 현장 관찰 결과로 다른 사람의 생각을 바꾼 적이 있다면 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간 근무 중 라인이 멈췄는데 담당 엔지니어와 연락이 닿지 않는다면 어떻게 하시겠어요?",
+   "scope": "family:production",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 규정을 지키면 오늘 목표 수량을 맞추기 어려운 상황이라면 어떻게 판단하시겠어요?",
+   "scope": "family:production",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객사가 다음 달 주문량을 갑자기 두 배로 늘려 달라고 하면 무엇부터 검토하시겠어요?",
+   "scope": "family:production",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신규 작업자가 한꺼번에 투입된 뒤 불량이 늘기 시작하면 어떻게 대응하시겠어요?",
+   "scope": "family:production",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배가 오랫동안 해 온 작업 방식이 비효율적으로 보인다면 어떻게 말씀을 꺼내시겠어요?",
+   "scope": "family:production",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 실습이나 인턴에서 제조 공정을 직접 보며 가장 인상 깊었던 점은 무엇이었나요?",
+   "scope": "family:production",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작은 개선이라도 직접 제안해서 실행까지 해 본 경험을 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람이 함께 쓰는 설비나 공간의 규칙을 만들거나 정비해 본 경험이 있으신가요?",
+   "scope": "family:production",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "스마트팩토리 도입이 현장 인력의 역할을 어떻게 바꿀 거라고 보시나요?",
+   "scope": "family:production",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제조업의 숙련 인력 부족 문제를 현장에서는 어떻게 대비해야 한다고 보시나요?",
+   "scope": "family:production",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "탄소중립과 에너지 비용 부담이 공장 운영 방식에 어떤 변화를 가져온다고 생각하세요?",
+   "scope": "family:production",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "출하 직전에 작은 규격 이탈을 발견했는데 윗선에서 그냥 내보내자고 하면 어떻게 하시겠어요?",
+   "scope": "family:production",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아차사고를 보고하면 팀의 무재해 기록이 깨지는 상황이라면 어떻게 하시겠어요?",
+   "scope": "family:production",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장에서 일하기 위해 본인이 가장 보완해야 할 역량은 무엇이라고 생각하세요?",
+   "scope": "family:production",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 판단 실수로 일정이나 작업에 차질이 생겼던 경험과 그 뒤 달라진 점을 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "실패",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 참여한 개선의 효과를 어떤 숫자로 확인하셨는지 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개선 효과가 일시적이었는지 지속됐는지 어떻게 확인하셨나요?",
+   "scope": "family:production",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자동화 설비 투자와 작업자 숙련도 향상 중 무엇을 먼저 해야 하는지 입장을 정해 말씀해 주세요.",
+   "scope": "family:production",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가동률이 계속 떨어지는 공장의 개선 계획을 10분 발표로 구성한다면 어떤 흐름으로 하시겠어요?",
+   "scope": "family:production",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산관리는 계획만 세우는 사람이 아니라는 말이 있는데, 어떤 의미로 이해하세요?",
+   "scope": "role:production_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산기술이나 품질이 아니라 생산관리를 지원하신 이유가 궁금합니다.",
+   "scope": "role:production_manager",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산계획과 실제 생산량에 차이가 생기면 어떤 원인부터 확인하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주간 생산계획을 세울 때 반드시 확인해야 하는 정보는 어떤 것들이 있을까요?",
+   "scope": "role:production_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전재고를 얼마나 둘지 정할 때 어떤 기준을 고려하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "ERP상의 재고와 실제 창고 재고가 맞지 않으면 어떤 순서로 정리하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다품종 소량생산 라인에서 작업 순서를 정할 때 무엇을 가장 우선하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병목 공정이 어디인지 파악하려면 현장에서 무엇을 보시겠어요?",
+   "scope": "role:production_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 원인으로 라인이 반복해서 멈춘다면 생산관리 입장에서 어떻게 접근하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "문제해결",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "납기는 내일인데 품질 판정이 보류된 로트가 있다면 어떻게 판단하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "핵심 원자재 입고가 사흘 늦어진다는 연락을 받으면 무엇부터 하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "영업팀이 긴급 오더를 이번 주 계획에 끼워 넣어 달라고 하면 기존 계획을 어떻게 조정하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "최근 석 달간 납기 준수율이 계속 떨어졌다면 어떤 순서로 원인을 찾으시겠어요?",
+   "scope": "role:production_manager",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비 가동률은 높은데 완제품 재고만 쌓여 간다면 무엇이 문제인지 어떻게 분석하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "하루 480분 가동에 택트타임이 60초라면 이론 생산량과 실제 생산량의 차이는 어디서 생길까요?",
+   "scope": "role:production_manager",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람의 일정이나 자원을 조율해 계획을 세워 본 경험을 말씀해 주세요.",
+   "scope": "role:production_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "계획대로 진행되지 않은 일을 중간에 다시 짜서 마무리한 경험이 있으신가요?",
+   "scope": "role:production_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장에서는 생산관리가 책상에서 숫자만 본다고들 하는데, 그 말에 어떻게 답하시겠어요?",
+   "scope": "role:production_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산기술이 공정기술이나 설비보전과 구분되는 역할은 무엇이라고 보시나요?",
+   "scope": "role:production_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산기술 직무에 관심을 갖게 된 계기를 말씀해 주세요.",
+   "scope": "role:production_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신규 라인을 구축할 때 설비 사양을 정하기 전에 무엇을 먼저 확인하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신제품을 양산으로 넘기기 전에 시생산 단계에서 꼭 검증해야 할 항목은 무엇일까요?",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업자마다 조립 품질 편차가 크다면 지그나 치공구로 어떻게 줄여 보시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산 품목이 바뀔 때마다 셋업 시간이 길다면 어떤 방법으로 줄여 보시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비 제작 업체에 사양서를 줄 때 오해가 생기지 않도록 무엇을 명확히 하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "실무",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 설비의 초기 가동에서 사이클타임이 목표에 못 미치면 어디부터 보시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장의 개선 요청이 한꺼번에 몰리면 어떤 기준으로 우선순위를 정하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비 반입이 늦어져 양산 시작일을 맞추기 어렵다면 어떻게 대응하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로 들인 설비를 작업자들이 불편하다며 쓰지 않으려 하면 어떻게 하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "해외 공장으로 라인을 옮기는데 현지 인력의 숙련도가 낮다면 무엇을 준비하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자동화 설비의 투자 회수 기간을 따질 때 어떤 비용과 효과를 넣으시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "라인을 증설했는데 생산량이 설비 대수만큼 늘지 않았다면 원인을 어떻게 찾으시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계부터 제작까지 직접 무언가를 만들어 본 프로젝트 경험을 말씀해 주세요.",
+   "scope": "role:production_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기계, 전기, 제어 등 다른 분야 사람들과 협업해 결과물을 낸 경험이 있으신가요?",
+   "scope": "role:production_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자동화에 큰 돈을 들였는데 생산성이 기대만큼 오르지 않았다면 그 결과를 어떻게 설명하시겠어요?",
+   "scope": "role:production_engineer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비보전이 고장 난 설비를 고치는 일 이상이라면, 어떤 일까지 포함된다고 보시나요?",
+   "scope": "role:maintenance_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비보전 담당자에게 오퍼레이터나 생산팀과의 소통이 왜 중요하다고 생각하세요?",
+   "scope": "role:maintenance_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "기계나 전기를 다루는 일 중에서 설비보전에 특히 끌린 계기가 있으신가요?",
+   "scope": "role:maintenance_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유압 장치와 공압 장치는 현장에서 각각 어떤 상황에 쓰이는지 설명해 주시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "medium"
+  },
+  {
+   "text": "모터가 과열되며 정지를 반복한다면 어떤 순서로 점검하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예방보전 주기를 정할 때 어떤 데이터를 근거로 삼으시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비에서 평소와 다른 진동이나 소음이 난다면 무엇부터 확인하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비 이상이 제어 로직 문제인지 기계적 문제인지 어떻게 구분해 접근하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전기 설비를 점검하기 전에 반드시 지켜야 할 안전 절차를 말씀해 주세요.",
+   "scope": "role:maintenance_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전날 발생한 설비 트러블의 대책 보고서를 쓴다면 어떤 내용을 담으시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "두 라인에서 동시에 고장 호출이 오면 어떤 기준으로 먼저 가시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교체 부품 재고가 없어 설비를 며칠 세워야 한다면 어떻게 대응하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산팀이 목표 수량 때문에 예방정비 시간을 미뤄 달라고 하면 어떻게 하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "MTBF는 점점 짧아지고 MTTR은 길어지고 있다면 무엇을 의심해 보시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비종합효율이 낮게 나올 때 시간, 성능, 품질 중 어디서 손실이 큰지 어떻게 나눠 보시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기계나 전기 장치를 직접 분해하거나 수리해 본 경험을 말씀해 주세요.",
+   "scope": "role:maintenance_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원인을 찾기 어려운 고장을 끈질기게 추적해 해결한 경험이 있으신가요?",
+   "scope": "role:maintenance_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처음 보는 설비를 맡게 되면 어떤 방식으로 빠르게 익히시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s2",
+   "confidence": "medium"
+  },
+  {
+   "text": "수리한 지 일주일 만에 같은 고장이 또 났다면, 처음 수리가 잘못된 것 아니냐는 지적에 어떻게 답하시겠어요?",
+   "scope": "role:maintenance_engineer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장관리자는 작업자와 관리 조직 사이에서 어떤 역할을 해야 한다고 보시나요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사무 업무보다 제조 현장에서 사람을 이끄는 일을 하고 싶은 이유가 궁금합니다.",
+   "scope": "role:shop_floor_supervisor",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업 시작 전 조회에서 꼭 전달해야 할 내용은 무엇이라고 생각하세요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다기능 작업자를 키우기 위해 교차 훈련 계획을 어떻게 세우시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업표준서 내용이 현장의 실제 작업 방식과 다르다면 어떻게 정리하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교대 간 인수인계에서 빠지기 쉬운 정보를 막으려면 어떤 장치를 두시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "5S 활동이 한 번 하고 끝나지 않게 하려면 어떻게 운영하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신규 작업자가 혼자 작업해도 된다고 판단하는 기준은 무엇으로 삼으시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "결원이 두 명 생긴 날 목표 수량은 그대로라면 어떻게 대응하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업자 두 분이 작업 분배 문제로 현장에서 언성을 높이면 어떻게 하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업자가 보호구가 불편하다며 계속 착용하지 않으면 어떻게 하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 조에서만 불량과 지각이 함께 늘었다면 무엇부터 살펴보시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "잔업이 계속 늘어나는 라인이 있다면 원인을 어떻게 찾아보시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "나이나 경력이 많은 분들과 함께 일하며 리더 역할을 맡았던 경험을 말씀해 주세요.",
+   "scope": "role:shop_floor_supervisor",
+   "category": "리더십",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "구성원이 규칙을 지키도록 이끌기 위해 직접 노력했던 경험이 있으신가요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "성실하지만 작업 속도가 느린 작업자와 면담한다면 어떤 이야기부터 꺼내시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "리더십",
+   "type": "leadership",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인보다 경력이 훨씬 긴 반장님이 여러 사람 앞에서 지시를 거부하신다면 어떻게 하시겠어요?",
+   "scope": "role:shop_floor_supervisor",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 업무에서 가장 중요하다고 생각하는 것이 무엇인지 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 부서가 생산 부서와 긴장 관계에 놓이기 쉬운 이유는 무엇이라고 보세요?",
+   "scope": "family:quality",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질은 검사로 만들어지지 않는다는 말을 어떻게 이해하고 계신가요?",
+   "scope": "family:quality",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 담당자가 현장에서 신뢰를 얻으려면 무엇이 필요하다고 보세요?",
+   "scope": "family:quality",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원칙을 지키느라 주변의 불만을 샀지만 끝까지 설득했던 경험을 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "꼼꼼하게 확인해서 큰 실수를 막았던 경험이 있으신가요?",
+   "scope": "family:quality",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "반복되는 일을 체계화해서 다른 사람도 쉽게 따라 하게 만든 경험을 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 부서에 불편한 사실을 전달해야 했던 경험과 그때 어떻게 말했는지 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의견이 엇갈리는 상황에서 사실 확인으로 결론을 이끈 경험을 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "의사결정",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "입사 후 품질 문제가 터진다면 품질 담당자로서 가장 먼저 무엇을 하시겠어요?",
+   "scope": "family:quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산 일정은 급한데 검사 결과가 합격 기준 경계선에 걸쳐 있다면 어떻게 판단하시겠어요?",
+   "scope": "family:quality",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객사 담당자가 화가 난 채로 불량품 사진을 보내 왔다면 첫 통화에서 무엇을 하시겠어요?",
+   "scope": "family:quality",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이미 출하된 제품에서도 같은 불량이 있을 가능성을 발견하면 어떻게 하시겠어요?",
+   "scope": "family:quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장의 측정 방법이 표준과 다르게 굳어져 있는 걸 발견하면 어떻게 하시겠어요?",
+   "scope": "family:quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "스스로 문제점을 발견하고 해결까지 이어 간 경험을 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교 프로젝트나 실습에서 품질을 높이기 위해 무언가를 개선해 본 경험이 있으신가요?",
+   "scope": "family:quality",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "medium"
+  },
+  {
+   "text": "데이터를 모아 원인을 좁혀 간 경험을 구체적으로 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "데이터",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "최근 사회적으로 이슈가 된 품질 문제 하나를 골라 어떻게 보셨는지 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "s1",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객사가 협력사에 요구하는 품질 수준이 점점 높아지는 흐름을 어떻게 보시나요?",
+   "scope": "family:quality",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자동 검사나 비전 검사가 늘어나면 품질 담당자의 역할은 어떻게 바뀔까요?",
+   "scope": "family:quality",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배가 검사 기록을 나중에 몰아서 채워 넣는 걸 알게 되면 어떻게 하시겠어요?",
+   "scope": "family:quality",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객에게 알리면 거래가 끊길 수도 있는 품질 문제를 발견했다면 어떻게 하시겠어요?",
+   "scope": "family:quality",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 업무에서 본인이 가장 경계해야 할 성향은 무엇이라고 생각하세요?",
+   "scope": "family:quality",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원인을 잘못 짚었거나 결론을 서둘렀던 경험에서 무엇을 배우셨나요?",
+   "scope": "family:quality",
+   "category": "실패",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 개선 활동의 성과를 불량률 말고 어떤 지표로 보여 줄 수 있을까요?",
+   "scope": "family:quality",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 참여한 개선이 실제로 재발을 막았다는 걸 어떻게 증명하시겠어요?",
+   "scope": "family:quality",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전수검사 확대와 공정 관리 강화 중 불량을 줄이는 데 무엇이 더 효과적인지 입장을 말씀해 주세요.",
+   "scope": "family:quality",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 클레임이 석 달 연속 늘어난 상황을 가정하고 품질 개선 로드맵을 발표해 보시겠어요?",
+   "scope": "family:quality",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "QC 담당자가 하루 동안 주로 하는 일을 어떻게 알고 계신지 말씀해 주세요.",
+   "scope": "role:quality_control",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 직무 중에서도 QC를 지원한 이유가 무엇인가요?",
+   "scope": "role:quality_control",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "불량이 갑자기 늘었을 때 4M 관점에서 어떤 순서로 원인을 좁혀 가시겠어요?",
+   "scope": "role:quality_control",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관리도의 점들이 관리한계 안에 있지만 한쪽으로 연속해서 몰린다면 어떻게 해석하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정능력지수가 낮게 나왔을 때 산포 문제인지 치우침 문제인지 어떻게 구분하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "샘플링 검사로 합격시킨 로트에서 불량이 나왔다면 무엇을 되짚어 보시겠어요?",
+   "scope": "role:quality_control",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 제품을 잴 때마다 값이 다르게 나온다면 측정 시스템의 어떤 부분을 점검하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수입검사, 공정검사, 출하검사 중 한 단계만 강화할 수 있다면 어디를 택하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "SPC 데이터를 매일 보면서도 이상 신호를 놓치지 않으려면 어떻게 관리하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "데이터",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간조에서 규격을 벗어난 제품이 다량 나왔다는 보고를 아침에 받으면 무엇부터 하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산팀이 한도견본 기준이 너무 엄격하다며 완화를 요구하면 어떻게 하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검사원마다 외관 불량 판정이 다르게 나온다면 기준을 어떻게 맞추시겠어요?",
+   "scope": "role:quality_control",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 불량이 한 달에 세 번 재발했다면 5Why 분석을 어떻게 진행하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "불량률은 그대로인데 고객 클레임만 늘었다면 어떤 가능성을 먼저 보시겠어요?",
+   "scope": "role:quality_control",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험이나 실습에서 측정값의 오차를 줄이려고 노력했던 경험을 말씀해 주세요.",
+   "scope": "role:quality_control",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검사 결과를 두고 다른 사람과 판정이 엇갈렸던 경험이 있다면 어떻게 정리하셨나요?",
+   "scope": "role:quality_control",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 합격 판정한 로트에서 고객 불량이 나왔다면, 검사를 제대로 했냐는 질문에 어떻게 답하시겠어요?",
+   "scope": "role:quality_control",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "QA와 QC의 차이를 실제 업무 장면을 예로 들어 설명해 주시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질보증 직무에서 본인이 가장 해 보고 싶은 일은 무엇인가요?",
+   "scope": "role:quality_assurance",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 클레임을 접수한 뒤 8D 보고서를 쓴다면 어떤 흐름으로 정리하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재발 방지 대책이 서류로만 남지 않게 하려면 무엇을 확인해야 할까요?",
+   "scope": "role:quality_assurance",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "ISO 9001 같은 품질경영시스템이 형식적인 문서 관리로 흐르지 않게 하려면 어떻게 하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계나 공정에 변경이 생겼을 때 품질보증 관점에서 무엇을 검증해야 할까요?",
+   "scope": "role:quality_assurance",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내부 품질 심사에서 부적합을 발견하면 해당 부서의 시정조치를 어떻게 이끌어 내시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신제품 개발 과정에서 품질보증 담당자가 개입해야 하는 시점은 언제라고 보세요?",
+   "scope": "role:quality_assurance",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 요구한 원인 분석 기한이 너무 짧아 근거가 부족하다면 어떻게 대응하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 감사 전날 중요한 품질 기록이 누락된 걸 발견하면 어떻게 하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객사가 우리 귀책이 아닌 불량까지 책임지라고 요구한다면 어떻게 대응하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 모델의 필드 고장이 특정 지역에서만 몰려 나온다면 원인을 어떻게 추적하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "클레임 건수는 줄었는데 클레임 비용은 늘고 있다면 어떤 데이터를 더 보시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규칙이나 절차를 만들고 사람들이 따르도록 정착시켜 본 경험을 말씀해 주세요.",
+   "scope": "role:quality_assurance",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외부 사람에게 우리 쪽 입장을 사실 근거로 설명해 납득시킨 경험이 있으신가요?",
+   "scope": "role:quality_assurance",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기술 용어에 익숙하지 않은 고객 담당자에게 원인 분석 결과를 어떻게 전달하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재발 방지 대책을 세웠는데 같은 클레임이 또 들어왔다면, 고객에게 무엇이 달라졌다고 말씀하시겠어요?",
+   "scope": "role:quality_assurance",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 품질 담당자는 구매 담당자와 어떤 점에서 역할이 다르다고 보시나요?",
+   "scope": "role:supplier_quality",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사내 품질이 아니라 협력사 품질 업무를 해 보고 싶은 이유가 궁금합니다.",
+   "scope": "role:supplier_quality",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신규 협력사를 등록하기 전에 품질 측면에서 무엇을 평가하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 공정 감사를 나가면 현장에서 가장 먼저 살펴볼 곳은 어디인가요?",
+   "scope": "role:supplier_quality",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 초도품을 승인할 때 어떤 자료와 샘플을 확인하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사의 변경점 관리가 제대로 되고 있는지 어떻게 확인하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수입 불량이 잦은 부품이라면 검사를 강화할지 협력사 공정을 바꾸게 할지 어떻게 판단하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "의사결정",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 품질 평가 지표를 새로 만든다면 어떤 항목을 넣으시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사가 알리지 않고 원자재를 바꾼 사실이 드러나면 어떻게 대응하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대체 업체가 없는 핵심 부품 협력사에서 불량이 났다면 어떻게 하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사가 우리 측 도면 해석이 잘못됐다고 반박한다면 어떻게 정리하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 출하 불량률은 낮은데 라인 투입 후 불량이 자주 나온다면 무엇을 의심하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규모가 작은 협력사의 품질 수준을 6개월 안에 끌어올려야 한다면 어떤 순서로 지원하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외부 사람과 협업하며 일정과 품질을 함께 챙겨야 했던 경험을 말씀해 주세요.",
+   "scope": "role:supplier_quality",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상대에게 개선을 요구하면서도 관계를 해치지 않으려 애쓴 경험이 있으신가요?",
+   "scope": "role:supplier_quality",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사로부터 명절 선물이나 식사 대접 제안을 받으면 어떻게 하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력사 대표가 그 정도 품질을 원하면 단가를 올려 달라고 한다면 뭐라고 답하시겠어요?",
+   "scope": "role:supplier_quality",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질관리와 신뢰성 엔지니어링은 바라보는 시간축이 어떻게 다르다고 생각하세요?",
+   "scope": "role:reliability_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신뢰성 분야에 관심을 갖게 된 계기가 있다면 말씀해 주세요.",
+   "scope": "role:reliability_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가속수명시험을 설계할 때 스트레스 조건은 어떤 기준으로 정하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "FMEA에서 위험 우선순위를 매길 때 주의해야 할 점은 무엇일까요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "욕조 곡선에서 초기 고장 구간을 줄이려면 어떤 활동이 필요할까요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신뢰성 시험에서 고장이 하나도 나오지 않았다면 그 결과를 어떻게 해석하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고온고습이나 열충격 시험에서 불합격이 나오면 고장 분석을 어떤 순서로 하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시험 샘플 수를 줄여 달라는 요청을 받으면 신뢰도 목표와 어떻게 절충하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "출시 일정 때문에 신뢰성 시험 기간을 절반으로 줄이자고 하면 어떻게 대응하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시험 도중 원인을 알 수 없는 간헐적 고장이 한 건 나왔다면 어떻게 하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보증 기간이 끝난 직후에 필드 고장이 몰린다는 보고를 받으면 무엇부터 하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "필드 고장 데이터를 받아 수명 분포를 추정한다면 무엇을 먼저 정리하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "MTBF가 1만 시간인 부품이라면 1만 시간까지는 고장이 거의 없다고 봐도 될까요?",
+   "scope": "role:reliability_engineer",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조건을 바꿔 가며 반복 시험을 설계하고 수행해 본 경험을 말씀해 주세요.",
+   "scope": "role:reliability_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "파손되거나 고장 난 물건의 원인을 직접 분석해 본 경험이 있으신가요?",
+   "scope": "role:reliability_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신뢰성 시험 결과를 경영진에게 한 장으로 보고한다면 무엇을 강조하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시험 조건이 실제 사용 환경과 다르다는 설계팀의 반박에 어떤 근거로 답하시겠어요?",
+   "scope": "role:reliability_engineer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 엔지니어에게 현장을 자주 찾는 습관이 왜 중요하다고 보시나요?",
+   "scope": "family:process",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 개선 업무가 생산, 품질 부서의 일과 겹치는 지점은 어디라고 생각하세요?",
+   "scope": "family:process",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 관련 직무에서 가장 어려운 부분은 무엇이라고 예상하시나요?",
+   "scope": "family:process",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수율, 사이클타임, 원가 중 공정 담당자가 가장 먼저 챙겨야 할 것은 무엇일까요?",
+   "scope": "family:process",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가설을 세우고 데이터로 확인해 가며 문제를 풀어 본 경험을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 제안에 반대가 많았지만 결국 시도해 볼 수 있게 설득한 경험이 있으신가요?",
+   "scope": "family:process",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 목표를 두고 팀원과 접근 방법이 달라 부딪혔던 경험과 해결 과정을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "잘못된 시도를 빠르게 인정하고 방향을 바꿨던 경험이 있으신가요?",
+   "scope": "family:process",
+   "category": "실패",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복잡한 기술 내용을 현장 작업자가 이해하기 쉽게 설명해 본 경험을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조건을 바꾼 뒤 수율은 올랐는데 다른 유형의 불량이 새로 생겼다면 어떻게 하시겠어요?",
+   "scope": "family:process",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "양산 라인에서 조건 변경 테스트를 해야 하는데 생산팀이 반대하면 어떻게 하시겠어요?",
+   "scope": "family:process",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 납기가 걸린 상황에서 공정 조건을 급히 바꿔야 한다면 어떤 위험을 먼저 따져 보시겠어요?",
+   "scope": "family:process",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원자재 공급처가 바뀌어 공정 조건을 다시 잡아야 한다면 어디서부터 시작하시겠어요?",
+   "scope": "family:process",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배 엔지니어가 경험상 맞다며 근거 없이 조건 변경을 지시하면 어떻게 하시겠어요?",
+   "scope": "family:process",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전공 수업이나 프로젝트에서 공정이나 흐름을 개선해 수치가 좋아진 경험을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 데이터를 직접 수집해 분석해 본 경험을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "데이터",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "마감이 촉박한 상황에서도 품질을 지키며 과제를 끝냈던 경험을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 데이터 분석과 자동화가 확대되면 공정 엔지니어에게 어떤 역량이 더 필요해질까요?",
+   "scope": "family:process",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "국내 제조업이 원가 경쟁에서 버티려면 공정 측면에서 무엇이 중요하다고 보시나요?",
+   "scope": "family:process",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "친환경 규제가 강해지면서 공정 설계에 어떤 변화가 생긴다고 보시나요?",
+   "scope": "family:process",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수율 보고 수치를 좋게 보이도록 조정하자는 제안을 받으면 어떻게 하시겠어요?",
+   "scope": "family:process",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 변경이 고객 승인 대상인지 애매할 때 어떻게 판단하시겠어요?",
+   "scope": "family:process",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 직무를 하며 가장 키우고 싶은 역량은 무엇인가요?",
+   "scope": "family:process",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "데이터보다 감에 의존해 판단했다가 틀렸던 경험이 있다면 무엇을 배우셨나요?",
+   "scope": "family:process",
+   "category": "실패",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개선 결과를 보고할 때 효과를 과장하지 않으려면 어떤 기준으로 비교하시겠어요?",
+   "scope": "family:process",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개선 효과를 금액으로 환산해 본 적이 있다면 어떻게 계산하셨나요?",
+   "scope": "family:process",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 조건을 표준으로 고정하는 것과 엔지니어 재량으로 조정하는 것 중 어느 쪽이 나은지 입장을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수율이 목표보다 5%p 낮은 라인의 개선 계획을 발표한다고 가정하고 구성을 말씀해 주세요.",
+   "scope": "family:process",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정기술 엔지니어의 성과는 주로 무엇으로 평가된다고 생각하세요?",
+   "scope": "role:process_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정기술 직무를 택한 이유를 전공과 연결해서 말씀해 주세요.",
+   "scope": "role:process_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "불량이 발생했을 때 공정 조건 쪽 원인을 어떤 순서로 찾으시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 조건의 운영 범위를 정할 때 어떤 실험과 근거가 필요할까요?",
+   "scope": "role:process_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 레시피를 바꾸기 전에 반드시 검증해야 할 항목은 무엇인가요?",
+   "scope": "role:process_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 파라미터끼리 상호작용이 의심될 때 어떻게 확인하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험실에서 잡은 조건이 양산 스케일에서 재현되지 않는 이유는 무엇일까요?",
+   "scope": "role:process_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 FMEA를 작성할 때 현장 작업자의 의견을 어떻게 반영하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 설비에서만 공정 산포가 커졌다면 어떻게 대응하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 공정 변경을 승인해 주지 않는데 기존 조건으로는 수율이 계속 낮다면 어떻게 하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간에 공정 이상 알람이 연속으로 뜬다는 연락을 받으면 무엇을 지시하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수율이 한 달 사이 3% 떨어졌다면 어떤 데이터를 어떤 순서로 보시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 공정 변수 중 수율에 가장 큰 영향을 주는 인자를 어떻게 찾아내시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조건을 최적화하는 실험에서 예상과 다른 결과가 나왔던 경험을 말씀해 주세요.",
+   "scope": "role:process_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장비나 공정을 직접 다뤄 보며 문제를 해결한 실습 경험이 있으신가요?",
+   "scope": "role:process_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 변경 내용을 생산 현장에 전달할 때 실수를 줄이려면 어떻게 하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 바꾼 공정 조건 때문에 불량이 났다는 의심을 받는다면 어떻게 대응하시겠어요?",
+   "scope": "role:process_engineer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "6시그마 같은 혁신 활동이 현장에서 형식적으로 흐르는 이유는 무엇이라고 보시나요?",
+   "scope": "role:process_innovation",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개선 활동을 전문으로 하는 혁신 직무에 끌리는 이유가 무엇인가요?",
+   "scope": "role:process_innovation",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "DMAIC의 측정 단계에서 가장 흔히 저지르는 실수는 무엇이라고 생각하세요?",
+   "scope": "role:process_innovation",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 개선 과제 후보 중 무엇을 먼저 할지 어떤 기준으로 정하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가설검정 결과가 유의하지 않게 나왔다면 그 개선 아이디어를 버려야 할까요?",
+   "scope": "role:process_innovation",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험계획법으로 요인을 줄여 나갈 때 현장의 제약을 어떻게 반영하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과제를 마무리하고 현장 담당자에게 넘길 때 무엇을 인계하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "린의 낭비 관점으로 한 공정을 들여다본다면 어떤 낭비부터 찾으시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 부서가 혁신 과제에 협조하지 않고 자료도 잘 주지 않으면 어떻게 하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경영진이 석 달 안에 원가 10% 절감 성과를 내라고 하면 어떻게 접근하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과제 중간에 목표 달성이 어렵다는 게 분명해지면 어떻게 보고하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객 불만 데이터를 받아 개선 과제로 만든다면 어떤 순서로 정리하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개선 전후 평균은 같은데 산포만 줄었다면 이 개선을 어떻게 평가하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "통계 분석으로 결론을 내리고 그 결론을 실제 의사결정에 반영해 본 경험을 말씀해 주세요.",
+   "scope": "role:process_innovation",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 부서 사람을 모아 하나의 과제를 이끌어 본 경험이 있으신가요?",
+   "scope": "role:process_innovation",
+   "category": "리더십",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "벨트 자격보다 실제 과제 경험이 더 중요하다는 말을 어떻게 생각하세요?",
+   "scope": "role:process_innovation",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "혁신팀 성과는 결국 숫자 부풀리기라는 현장의 냉소에 어떻게 답하시겠어요?",
+   "scope": "role:process_innovation",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "IE 담당자가 현장에서 환영받지 못하는 경우가 있다면 그 이유는 무엇일까요?",
+   "scope": "role:industrial_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "산업공학을 공부하며 현장에 가장 써 보고 싶었던 개념은 무엇인가요?",
+   "scope": "role:industrial_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "표준시간을 설정할 때 작업자별 숙련도 차이는 어떻게 반영하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동작분석으로 작업 낭비를 찾는다면 어떤 동작을 먼저 보시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공장 레이아웃을 새로 짤 때 물류 동선을 어떻게 검토하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시뮬레이션 결과가 현장 실제와 다르게 나온다면 무엇을 점검하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "인력 산정 기준을 만들 때 여유율은 어떻게 정하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "인간공학 관점에서 작업대를 개선한다면 무엇을 살펴보시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업 시간을 측정하려는데 작업자들이 감시받는 것 같다며 거부하면 어떻게 하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "표준시간 변경이 성과급에 영향을 줘 노조가 반대한다면 어떻게 접근하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 레이아웃을 적용한 첫 주에 오히려 생산성이 떨어졌다면 어떻게 하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여섯 개 공정의 사이클타임이 제각각일 때 라인 효율을 어떻게 계산하고 개선하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "물류창고의 피킹 시간이 길어졌다면 어떤 순서로 원인을 찾으시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "최적화 모형이 내놓은 답과 현장 관리자의 경험적 판단이 다르면 어떻게 결론을 내리시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "의사결정",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "일의 흐름을 관찰하고 시간을 재서 개선점을 찾아 본 경험을 말씀해 주세요.",
+   "scope": "role:industrial_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석 결과를 현업 담당자에게 설명해 작업 방식을 실제로 바꾸게 한 경험이 있으신가요?",
+   "scope": "role:industrial_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석상 인원을 줄여야 한다는 결과가 나왔는데 반발이 크다면 결과를 어떻게 설명하시겠어요?",
+   "scope": "role:industrial_engineer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구원이라는 직업에 가장 필요한 자질은 무엇이라고 생각하세요?",
+   "scope": "family:science",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대학 연구실의 연구와 기업이나 기관 연구소의 연구는 어떻게 다르다고 보시나요?",
+   "scope": "family:science",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구가 오랫동안 성과 없이 이어질 때 연구원에게 필요한 태도는 무엇이라고 보세요?",
+   "scope": "family:science",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 결과를 보고서나 논문으로 정리하는 일이 왜 실험만큼 중요하다고 보시나요?",
+   "scope": "family:science",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공동 연구에서 기여도나 역할 분담 때문에 갈등이 있었던 경험을 말씀해 주세요.",
+   "scope": "family:science",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "낯선 분야를 짧은 시간 안에 공부해서 연구에 적용한 경험이 있으신가요?",
+   "scope": "family:science",
+   "category": "성장",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지도교수나 선배와 연구 방향에 대한 생각이 달랐을 때 어떻게 의견을 전하셨나요?",
+   "scope": "family:science",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 전공 사람에게 본인의 연구를 설명해 이해시킨 경험을 말씀해 주세요.",
+   "scope": "family:science",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험 일정이 어긋났을 때 우선순위를 조정해 마감을 지킨 경험이 있으신가요?",
+   "scope": "family:science",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보고서 제출 직전에 앞선 결과와 모순되는 데이터를 발견하면 어떻게 하시겠어요?",
+   "scope": "family:science",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공용 장비를 쓰려는 사람이 몰려 실험 일정이 밀린다면 어떻게 조율하시겠어요?",
+   "scope": "family:science",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과제 책임자가 기대하는 결과가 데이터로 뒷받침되지 않는다면 어떻게 보고하시겠어요?",
+   "scope": "family:science",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험실에서 시약이 쏟아지는 등 안전사고가 났다면 가장 먼저 무엇을 하시겠어요?",
+   "scope": "family:science",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과제 중간에 연구 방향을 크게 바꿔야 한다는 판단이 들면 어떻게 하시겠어요?",
+   "scope": "family:science",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학위 과정이나 실험 수업에서 가장 공들인 연구 하나를 소개해 주세요.",
+   "scope": "family:science",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "논문이나 학회 발표를 준비하며 받은 날카로운 지적과 그에 대한 대응을 말씀해 주세요.",
+   "scope": "family:science",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 장비나 실험 방법을 스스로 셋업해 본 경험이 있으신가요?",
+   "scope": "family:science",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 전공 분야에서 최근 가장 주목하는 연구 흐름은 무엇인가요?",
+   "scope": "family:science",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기초연구 성과가 산업으로 이어지기 어려운 이유는 무엇이라고 보시나요?",
+   "scope": "family:science",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 현장에 AI와 실험 자동화가 늘어나는 흐름을 어떻게 보시나요?",
+   "scope": "family:science",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동료가 실험 데이터를 유리한 것만 골라 쓰는 걸 알게 됐다면 어떻게 하시겠어요?",
+   "scope": "family:science",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구에 기여하지 않은 사람을 저자로 넣자는 요청을 받으면 어떻게 하시겠어요?",
+   "scope": "family:science",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구자로서 본인이 보완하고 있는 약점을 말씀해 주세요.",
+   "scope": "family:science",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구를 하면서 스스로 한계를 느꼈던 순간과 그 뒤의 변화를 말씀해 주세요.",
+   "scope": "family:science",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 연구의 성과를 논문 수 말고 어떤 기준으로 설명할 수 있을까요?",
+   "scope": "family:science",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 얻은 결과가 우연이 아니라는 것을 어떤 근거로 보여 주실 수 있나요?",
+   "scope": "family:science",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비전공자 심사위원 앞에서 본인 연구를 5분 안에 발표한다고 생각하고 핵심을 말씀해 주세요.",
+   "scope": "family:science",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구소가 단기 성과 과제와 장기 탐색 과제 중 어디에 더 투자해야 할지 입장을 말씀해 주세요.",
+   "scope": "family:science",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구원에게 연구 기획 능력이 실험 능력만큼 중요한 이유는 무엇일까요?",
+   "scope": "role:research_scientist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구원이라는 진로를 선택하게 된 결정적인 계기를 말씀해 주세요.",
+   "scope": "role:research_scientist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 연구 주제를 받으면 가설을 어떤 방식으로 세우시나요?",
+   "scope": "role:research_scientist",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 연구를 예로 들어 대조군과 변수 통제를 어떻게 설계했는지 설명해 주세요.",
+   "scope": "role:research_scientist",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 연구실에서 본인 결과가 재현되지 않는다고 하면 무엇부터 확인하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선행 연구를 조사할 때 믿을 만한 결과인지 어떻게 판단하시나요?",
+   "scope": "role:research_scientist",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "나중에 누가 봐도 재현할 수 있도록 실험 노트에 무엇을 기록해야 할까요?",
+   "scope": "role:research_scientist",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예상과 반대되는 결과가 나오면 실험 오류인지 새로운 발견인지 어떻게 구분하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "석 달간 진행한 실험이 가설과 전혀 다른 결과로 끝났다면 다음에 무엇을 하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과제 예산이 절반으로 줄었다면 실험 계획을 어떻게 다시 짜시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경쟁 연구팀이 비슷한 결과를 먼저 발표했다면 어떻게 대응하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "효과가 있다는 결과가 나왔지만 표본 수가 적다면 어떤 추가 검증을 하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 제안서의 기대 성과를 과장하지 않으면서 설득력을 높이려면 어떻게 쓰시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실패한 실험을 분석해 다음 실험을 개선했던 구체적인 사례를 말씀해 주세요.",
+   "scope": "role:research_scientist",
+   "category": "실패",
+   "type": "experience",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대표 연구에서 본인이 직접 기여한 부분은 정확히 어디까지인가요?",
+   "scope": "role:research_scientist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 일정이 늦어질 때 과제 책임자에게 언제, 어떻게 알리시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "그 연구가 실제로 어디에 쓰일 수 있느냐는 질문에 뚜렷한 답이 없다면 어떻게 설득하시겠어요?",
+   "scope": "role:research_scientist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석 연구원은 다른 연구원이나 부서에 어떤 가치를 제공한다고 보시나요?",
+   "scope": "role:lab_analyst",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 직무 중에서도 분석 업무를 하고 싶은 이유가 무엇인가요?",
+   "scope": "role:lab_analyst",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시험법 밸리데이션에서 특이성과 정밀성을 왜 따로 확인해야 하는지 설명해 주세요.",
+   "scope": "role:lab_analyst",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s10",
+   "confidence": "medium"
+  },
+  {
+   "text": "HPLC 분석에서 피크 모양이 갑자기 나빠졌다면 어떤 순서로 원인을 찾으시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시스템적합성 시험 결과가 기준에 못 미치면 분석을 어떻게 진행하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s10",
+   "confidence": "medium"
+  },
+  {
+   "text": "검출한계와 정량한계를 설정할 때 어떤 점에 주의하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s10",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석 조건이 조금 바뀌어도 결과가 흔들리지 않는지 확인하려면 어떻게 시험하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s10",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석 결과가 기준을 벗어났을 때 재시험 전에 먼저 해야 할 조사는 무엇일까요?",
+   "scope": "role:lab_analyst",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "표준품이나 시약의 보관 상태가 결과에 영향을 줬는지 어떻게 확인하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 시료를 두 사람이 분석했는데 결과가 크게 다르다면 어떻게 하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "급한 분석 의뢰가 동시에 여러 건 들어오면 무엇을 보고 처리 순서를 정하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장비 고장으로 외부 기관에 분석을 맡겨야 한다면 무엇을 확인하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검량선의 결정계수는 높은데 저농도 시료의 회수율이 낮다면 무엇을 의심하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "적합한 시험법이 없는 새로운 분석 의뢰가 들어오면 어떤 순서로 시험법을 개발하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석 기기를 직접 다루다 문제가 생겨 해결했던 경험을 말씀해 주세요.",
+   "scope": "role:lab_analyst",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석 결과 보고서를 쓰면서 가장 신경 썼던 부분은 무엇이었나요?",
+   "scope": "role:lab_analyst",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "데이터 무결성을 지키기 위해 분석 연구원이 평소 지켜야 할 습관은 무엇일까요?",
+   "scope": "role:lab_analyst",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의뢰 부서가 원하는 결과가 아니라며 재분석을 거듭 요청하면 어떻게 대응하시겠어요?",
+   "scope": "role:lab_analyst",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "통계 분석 연구원이 연구팀에서 맡아야 할 역할이 계산 이상이라면 어떤 것일까요?",
+   "scope": "role:statistician",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "통계를 연구 직무로 삼고 싶은 이유를 말씀해 주세요.",
+   "scope": "role:statistician",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구자가 분석을 요청하면 분석 방법을 정하기 전에 무엇부터 물어보시겠어요?",
+   "scope": "role:statistician",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "표본 크기를 정하려면 어떤 정보가 필요한지 설명해 주세요.",
+   "scope": "role:statistician",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "p값이 0.05보다 작다는 것만으로 결론을 내리면 어떤 문제가 생길 수 있을까요?",
+   "scope": "role:statistician",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "결측치가 많은 설문 데이터를 분석할 때 어떤 처리 방법을 고민하시겠어요?",
+   "scope": "role:statistician",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관찰 자료에서 나온 상관관계를 인과관계로 잘못 해석하지 않으려면 어떻게 하시겠어요?",
+   "scope": "role:statistician",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 집단을 한꺼번에 비교할 때 다중비교 문제를 어떻게 다루시겠어요?",
+   "scope": "role:statistician",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 연구자가 본인 분석을 그대로 재현할 수 있게 하려면 무엇을 남겨 두시겠어요?",
+   "scope": "role:statistician",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 책임자가 유의한 결과가 나올 때까지 분석 방법을 바꿔 보자고 하면 어떻게 하시겠어요?",
+   "scope": "role:statistician",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이미 수집된 데이터가 분석 목적에 맞지 않게 설계돼 있다면 어떻게 하시겠어요?",
+   "scope": "role:statistician",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발표 직전에 본인 분석에서 오류를 발견하면 어떻게 하시겠어요?",
+   "scope": "role:statistician",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대조군 없이 처치 후 평균이 올랐다는 결과를 받았다면 어떻게 해석하시겠어요?",
+   "scope": "role:statistician",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설문 응답률이 30%에 그쳤다면 그 결과를 전체 대상에 일반화해도 될까요?",
+   "scope": "role:statistician",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실제 데이터를 받아 처음부터 끝까지 분석해 본 경험을 말씀해 주세요.",
+   "scope": "role:statistician",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "통계를 모르는 사람에게 분석 결과를 설명해 의사결정에 쓰이게 한 경험이 있으신가요?",
+   "scope": "role:statistician",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석 결과가 연구팀 기대와 반대라서 방법이 틀린 것 아니냐고 한다면 어떻게 답하시겠어요?",
+   "scope": "role:statistician",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교사에게 필요한 전문성 가운데 가장 중요하다고 생각하는 것을 본인 경험과 연결해 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "교사는 많지만 스승은 드물다는 말이 나오는 이유를 어떻게 보시나요?",
+   "scope": "family:school",
+   "category": "가치관",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "수업 외에 행정 업무도 많은 교사의 현실을 어떻게 받아들이고 계신가요?",
+   "scope": "family:school",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생 인권과 교사의 교육활동 보호가 함께 지켜져야 한다는 말을 어떻게 이해하세요?",
+   "scope": "family:school",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생이나 후배를 가르치며 상대 눈높이에 맞춰 설명 방식을 바꿔 본 경험을 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "함께 일하는 사람과 교육 방식이 달라 조율해야 했던 경험을 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 봉사나 실습에서 마음을 열지 않는 학생에게 다가가려 했던 경험이 있으신가요?",
+   "scope": "family:school",
+   "category": "경험",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규칙을 정하고 누구에게나 공정하게 적용해야 했던 경험을 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "가치관",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "힘든 상황에서도 끝까지 책임을 다했던 경험을 교직과 연결해 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "성공",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "맡은 학급에서 집단 따돌림이 일어난 것을 알게 되면 어떻게 조치하시겠어요?",
+   "scope": "family:school",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "학급에 다문화 가정 학생이 있다면 어떤 지원을 준비하시겠어요?",
+   "scope": "family:school",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "학부모가 밤늦게 개인 휴대전화로 계속 연락해 온다면 어떻게 대응하시겠어요?",
+   "scope": "family:school",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수업 중 한 학생이 교사에게 모욕적인 말을 한다면 그 자리에서 어떻게 하시겠어요?",
+   "scope": "family:school",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생이 가정에서 학대를 받는 것으로 의심되는 정황을 발견하면 어떻게 하시겠어요?",
+   "scope": "family:school",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 실습에서 가장 기억에 남는 수업과 그 이유를 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "좋은 교사가 되기 위해 대학 생활 동안 쌓아 온 경험을 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "학생의 변화나 성장을 가까이서 지켜본 경험이 있다면 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사교육이 커지는 환경에서 학교는 어떤 역할에 집중해야 한다고 보시나요?",
+   "scope": "family:school",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "학령인구 감소가 학교 현장에 어떤 변화를 가져올 거라고 보시나요?",
+   "scope": "family:school",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "디지털 기기를 활용한 수업이 늘어나는 흐름을 교사로서 어떻게 보시나요?",
+   "scope": "family:school",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학부모가 감사 표시라며 선물을 건넨다면 어떻게 대응하시겠어요?",
+   "scope": "family:school",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학부모가 평가 결과를 두고 점수를 올려 달라고 압박한다면 어떻게 하시겠어요?",
+   "scope": "family:school",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교사가 된 뒤 스스로 성장하기 위해 어떤 방식으로 자기계발을 이어 가실 건가요?",
+   "scope": "family:school",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "교직을 준비하며 스스로 부족하다고 느낀 점은 무엇이었나요?",
+   "scope": "family:school",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 수업이 효과가 있었는지 무엇으로 판단하시겠어요?",
+   "scope": "family:school",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학급 운영이 잘되고 있다는 것을 어떤 모습으로 확인하시겠어요?",
+   "scope": "family:school",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교폭력을 줄이기 위해 교사와 학교가 해야 할 일을 발표하듯 정리해 주세요.",
+   "scope": "family:school",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "수행평가 비중을 늘리는 것이 학생에게 이로운지 입장을 정해 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교사로서 본인의 적성이 잘 드러났다고 느낀 순간을 말씀해 주세요.",
+   "scope": "family:school",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s9",
+   "confidence": "high"
+  },
+  {
+   "text": "여러 교과를 가르치는 초등교사에게는 어떤 전문성이 필요하다고 보시나요?",
+   "scope": "role:elementary_teacher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "중등이 아닌 초등 교육을 선택한 이유가 궁금합니다.",
+   "scope": "role:elementary_teacher",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "저학년 학생들과 첫 주에 학급 규칙을 정한다면 어떻게 진행하시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 교실 안에서 학습 속도 차이가 큰 학생들을 어떻게 함께 가르치시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기초학력이 부족한 학생을 일찍 발견하고 돕기 위해 어떤 방법을 쓰시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "인성교육이 교실 일상 속에서 자연스럽게 이뤄지게 하려면 교사가 어떤 역할을 해야 할까요?",
+   "scope": "role:elementary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "놀이나 체험 중심 수업이 산만해지지 않게 운영하려면 무엇을 준비하시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "1인 1역처럼 학급 역할을 나누는 제도를 운영할 때 주의할 점은 무엇일까요?",
+   "scope": "role:elementary_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "창의성을 키우는 수업을 하려면 교사의 학습 지도가 어떻게 달라져야 할까요?",
+   "scope": "role:elementary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "쉬는 시간에 학생이 다쳐서 울며 들어오면 어떤 순서로 대응하시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 학생이 매일 준비물을 챙겨 오지 않고 숙제도 하지 않는다면 어떻게 접근하시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생 간 다툼에서 양쪽 학부모가 모두 상대 아이 잘못이라고 주장하면 어떻게 하시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학기 초보다 학급 분위기가 점점 산만해졌다면 원인을 어떻게 찾아보시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "단원평가에서 반 평균은 괜찮은데 특정 문항 정답률만 낮다면 그 결과를 어떻게 활용하시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교생 실습에서 초등학생들과 지내며 가장 당황했던 순간을 말씀해 주세요.",
+   "scope": "role:elementary_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아이들을 대상으로 활동을 기획하고 이끌어 본 경험을 말씀해 주세요.",
+   "scope": "role:elementary_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학부모 상담에서 아이의 문제 행동을 처음 알려야 한다면 어떻게 말을 꺼내시겠어요?",
+   "scope": "role:elementary_teacher",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요즘 초등교사는 수업보다 민원 대응이 더 힘들다는데, 그래도 해낼 수 있다고 보는 근거는 무엇인가요?",
+   "scope": "role:elementary_teacher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "중등교사에게는 교과 지도와 생활지도 중 어느 쪽이 더 어렵다고 보시나요?",
+   "scope": "role:secondary_teacher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 교직관을 가장 잘 드러내는 한 문장은 무엇인가요?",
+   "scope": "role:secondary_teacher",
+   "category": "가치관",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "s9",
+   "confidence": "high"
+  },
+  {
+   "text": "담당 교과를 가르치고 싶은 이유를 본인 경험과 연결해 말씀해 주세요.",
+   "scope": "role:secondary_teacher",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 차시 수업을 설계할 때 학습 목표와 활동을 어떻게 연결하시는지 예를 들어 말씀해 주세요.",
+   "scope": "role:secondary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s9",
+   "confidence": "high"
+  },
+  {
+   "text": "수업 시간에 엎드려 자는 학생이 여러 명이라면 수업 방식을 어떻게 바꾸시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인 교과 수업 안에서 인성교육을 녹여 낸다면 어떤 방식으로 하시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "과정중심 평가를 설계할 때 채점의 공정성을 어떻게 확보하시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진로 고민이 많은 학생에게 교과 교사로서 어떤 도움을 줄 수 있을까요?",
+   "scope": "role:secondary_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생의 자기주도 학습 습관을 기르려면 교사가 무엇을 지원해야 할까요?",
+   "scope": "role:secondary_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s8",
+   "confidence": "high"
+  },
+  {
+   "text": "시험 문항에 오류가 있다는 이의 제기가 들어오면 어떻게 처리하시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수업 중 학생이 교사를 몰래 촬영하고 있다는 걸 알게 되면 어떻게 하시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담임 학급 학생이 극단적인 생각을 털어놓는다면 어떻게 대응하시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 수업을 했는데 반마다 성취도 차이가 크게 난다면 원인을 어떻게 분석하시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담임 학급의 지각과 결석이 한 달 사이 급증했다면 어떤 순서로 살펴보시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 실습에서 수업 실연 후 받은 피드백 중 가장 도움이 됐던 것을 말씀해 주세요.",
+   "scope": "role:secondary_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년과 갈등을 겪고 그 관계를 회복해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:secondary_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생들이 수업이 지루하다고 공개적으로 말한다면 교사로서 어떻게 받아들이고 대응하시겠어요?",
+   "scope": "role:secondary_teacher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특수교사의 역할이 일반 교사와 가장 다른 점은 무엇이라고 보시나요?",
+   "scope": "role:special_ed_teacher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특수교육을 평생의 일로 삼고 싶은 이유가 무엇인가요?",
+   "scope": "role:special_ed_teacher",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개별화교육계획을 세울 때 학생의 현재 수준을 어떻게 파악하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개별화교육지원팀 회의에서 보호자와 의견이 다를 때 어떻게 조율하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "통합학급 담임교사와 협력할 때 특수교사가 먼저 챙겨야 할 것은 무엇일까요?",
+   "scope": "role:special_ed_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "도전행동의 원인과 기능을 파악하려면 어떤 방식으로 관찰하고 기록하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "말로 의사표현이 어려운 학생의 선호와 요구를 어떻게 알아내시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "졸업을 앞둔 학생의 전환교육을 어떻게 준비하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생마다 목표가 다른 특수학급에서 한 차시 수업을 어떻게 설계하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "s9",
+   "confidence": "high"
+  },
+  {
+   "text": "통합학급에서 장애 학생이 또래에게 놀림을 받고 있다는 걸 알게 되면 어떻게 하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생이 수업 중 갑자기 자기 머리를 때리는 행동을 보인다면 어떻게 대응하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 통합학급 대신 특수학급 수업 시간을 늘려 달라고 요구하면 어떻게 하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생의 목표 행동이 한 달째 변화가 없다면 지원 방식을 어떻게 점검하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원 인력은 한 명뿐인데 도움이 필요한 학생이 여럿이라면 어떻게 배치하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장애가 있거나 도움이 필요한 사람을 지원했던 경험에서 배운 점을 말씀해 주세요.",
+   "scope": "role:special_ed_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "말이나 글이 아닌 방식으로 누군가와 소통해 본 경험이 있으신가요?",
+   "scope": "role:special_ed_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장애를 어떻게 바라보는지 본인의 관점을 말씀해 주세요.",
+   "scope": "role:special_ed_teacher",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장애 학생에게 배려가 지나쳐 다른 학생에게 불공평하다는 학부모 항의에 어떻게 답하시겠어요?",
+   "scope": "role:special_ed_teacher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유아 교사에게 보육과 교육은 어떻게 연결된다고 생각하세요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "영유아를 가르치는 교사를 선택한 이유를 말씀해 주세요.",
+   "scope": "role:early_childhood_teacher",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "놀이 중심 교육과정에서 교사는 아이들 놀이에 어디까지 개입해야 한다고 보시나요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "활동이 바뀌는 전이 시간에 안전사고를 막으려면 어떻게 운영하시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유아의 발달 상황을 관찰하고 기록할 때 어떤 점에 신경 쓰시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "적응 기간에 등원할 때마다 심하게 우는 아이를 어떻게 도우시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "편식이 심한 아이의 식습관 지도는 어떻게 하시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "투약 의뢰나 알레르기 정보 같은 건강 관련 사항은 어떻게 관리하시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "바깥놀이 중 아이가 넘어져 머리를 부딪혔다면 어떤 순서로 대응하시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "친구를 자주 무는 아이가 있어 다른 학부모 항의가 이어진다면 어떻게 하시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "하원 시간에 미리 알리지 않은 사람이 아이를 데리러 오면 어떻게 하시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 아이가 최근 갑자기 말수가 줄고 놀이에 끼지 않는다면 무엇부터 살펴보시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교실의 한 놀이 영역에만 아이들이 몰려 다툼이 잦다면 환경을 어떻게 바꾸시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습에서 유아와 상호작용하며 가장 어려웠던 순간을 말씀해 주세요.",
+   "scope": "role:early_childhood_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아이들을 위한 놀이 자료나 교구를 직접 만들어 본 경험이 있으신가요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "알림장이나 전화로 학부모에게 아이의 하루를 전할 때 무엇을 중요하게 생각하세요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아이 몸에 작은 상처가 생겼다며 학부모가 CCTV 열람과 사과를 요구하면 어떻게 대응하시겠어요?",
+   "scope": "role:early_childhood_teacher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 서비스 업계에서 좋은 교육은 결국 무엇으로 평가된다고 보시나요?",
+   "scope": "family:edu_business",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학습자가 비용을 내고 교육을 산다는 점이 학교 교육과 어떤 차이를 만든다고 보세요?",
+   "scope": "family:edu_business",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 서비스 직무에서 가르치는 능력과 기획하는 능력 중 무엇이 더 중요하다고 보시나요?",
+   "scope": "family:edu_business",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 서비스 일을 하며 가장 힘든 순간은 언제일 거라고 예상하세요?",
+   "scope": "family:edu_business",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학습자 반응이 예상과 달라 현장에서 진행 방식을 바꿔 본 경험을 말씀해 주세요.",
+   "scope": "family:edu_business",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학습자의 불만이나 부정적인 피드백을 받고 개선으로 연결한 경험을 말씀해 주세요.",
+   "scope": "family:edu_business",
+   "category": "성장",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 이해관계자의 요구를 조율해 하나의 교육 프로그램을 완성한 경험이 있으신가요?",
+   "scope": "family:edu_business",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정해진 일정 안에 교재나 교육 자료를 완성하기 위해 애썼던 경험을 말씀해 주세요.",
+   "scope": "family:edu_business",
+   "category": "경험",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동기가 낮은 학습자를 끝까지 참여시키기 위해 노력한 경험이 있으신가요?",
+   "scope": "family:edu_business",
+   "category": "고객",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 당일 준비한 기자재가 작동하지 않는다면 어떻게 진행하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수강생 한 명이 수업 진행을 계속 방해한다면 어떻게 대응하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 만족도 설문에서 혹평이 쏟아졌다면 무엇부터 확인하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객이 교육 시작 직전에 내용 변경을 급하게 요구하면 어떻게 하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온라인 수업에서 학습자들이 화면을 끄고 반응이 없다면 어떻게 하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "누군가를 가르치거나 교육 프로그램을 운영해 본 경험을 소개해 주세요.",
+   "scope": "family:edu_business",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 자료나 콘텐츠를 직접 기획하고 만들어 본 경험이 있으신가요?",
+   "scope": "family:edu_business",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 결과를 측정해 다음 교육에 반영해 본 경험을 말씀해 주세요.",
+   "scope": "family:edu_business",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "성인 대상 평생교육과 직무교육 시장이 커지는 흐름을 어떻게 보시나요?",
+   "scope": "family:edu_business",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온라인 강의와 AI 튜터가 늘어나면 대면 교육의 가치는 어디에 남을까요?",
+   "scope": "family:edu_business",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "짧은 영상 강의가 늘어나는 교육 콘텐츠 시장의 흐름을 어떻게 보시나요?",
+   "scope": "family:edu_business",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수강생 모집을 위해 성과를 부풀린 광고를 하자고 하면 어떻게 하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 강사나 기관의 교재를 출처 없이 가져다 쓰자는 제안을 받으면 어떻게 하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육하는 사람으로서 본인이 가장 보완하고 싶은 점은 무엇인가요?",
+   "scope": "family:edu_business",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가르치는 일을 하며 본인 생각이 크게 바뀌었던 계기가 있으신가요?",
+   "scope": "family:edu_business",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 만족도는 높은데 실제 행동 변화가 없다면 이 결과를 어떻게 해석하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재등록률이나 수료율 같은 지표가 낮을 때 무엇을 먼저 개선하시겠어요?",
+   "scope": "family:edu_business",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대면 교육과 온라인 교육 중 어느 쪽이 학습 효과가 높은지 입장을 정해 말씀해 주세요.",
+   "scope": "family:edu_business",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새 교육 프로그램 하나를 기획해 5분 동안 발표한다고 가정하고 구성을 말씀해 주세요.",
+   "scope": "family:edu_business",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학원 강사가 학교 교사와 가장 다르게 져야 하는 책임은 무엇이라고 보시나요?",
+   "scope": "role:academy_instructor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학원 강사를 직업으로 선택한 이유가 궁금합니다.",
+   "scope": "role:academy_instructor",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시범 강의를 10분만 한다면 어떤 단원을 골라 어떻게 구성하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "성적이 정체된 학생의 약점을 진단할 때 어떤 자료를 보시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "숙제를 해 오지 않는 학생을 관리하는 본인만의 방법이 있나요?",
+   "scope": "role:academy_instructor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학부모 상담 전화를 할 때 반드시 전해야 하는 내용은 무엇이라고 생각하세요?",
+   "scope": "role:academy_instructor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내신 대비 기간에 학교마다 시험 범위가 다른 학생들을 어떻게 지도하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "결석한 학생의 진도 공백을 어떻게 메워 주시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학부모가 성적이 오르지 않았다며 그만두겠다고 하면 어떻게 상담하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수업 중 학생이 다른 학원 선생님 설명이 더 낫다고 말하면 어떻게 반응하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원장님이 수업보다 등록 상담과 홍보에 더 힘써 달라고 하면 어떻게 하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "맡은 반 재원생이 석 달 사이 절반으로 줄었다면 원인을 어떻게 찾아보시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "월간 테스트 평균은 올랐는데 상위권 학생 점수만 떨어졌다면 어떻게 해석하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과외나 멘토링으로 학생 성적을 올려 본 경험이 있다면 구체적으로 말씀해 주세요.",
+   "scope": "role:academy_instructor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가르치던 학생과 관계가 틀어졌다가 회복한 경험이 있으신가요?",
+   "scope": "role:academy_instructor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "그만두면서 담당 학생들에게 옮겨 갈 곳을 알려 달라는 부탁을 받으면 어떻게 하시겠어요?",
+   "scope": "role:academy_instructor",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "결국 성적을 못 올리면 좋은 강사가 아니라는 말을 어떻게 생각하시나요?",
+   "scope": "role:academy_instructor",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육기획자가 좋은 강사를 섭외하는 것 이상으로 해야 하는 일은 무엇일까요?",
+   "scope": "role:edu_planner",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가르치는 사람보다 교육을 설계하는 사람이 되고 싶은 이유가 무엇인가요?",
+   "scope": "role:edu_planner",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 요구 분석을 할 때 현업 설문 외에 어떤 방법을 함께 쓰시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 목표를 측정 가능한 형태로 쓰려면 어떻게 표현하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 효과 평가를 만족도 조사에서 멈추지 않고 현업 적용까지 확인하려면 어떻게 하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "src": "s11",
+   "confidence": "medium"
+  },
+  {
+   "text": "이러닝 콘텐츠를 기획할 때 학습자가 끝까지 수강하게 하려면 무엇을 설계하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한정된 교육 예산을 여러 과정에 나눌 때 어떤 기준을 쓰시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외부 교육 업체를 선정할 때 무엇을 비교하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 개시 일주일 전에 주강사가 갑자기 못 오게 됐다면 어떻게 하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현업 부서가 교육 참여를 업무 방해로 여겨 참석률이 낮다면 어떻게 하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경영진이 교육 성과를 숫자로 보여 달라고 요구하면 어떻게 대응하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신입사원 교육 후 1년 내 퇴사율이 오히려 늘었다면 교육 측면에서 무엇을 점검하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과정별 수료율과 만족도 데이터를 비교해 개편 대상을 고른다면 어떻게 판단하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "행사나 교육 프로그램을 처음부터 끝까지 기획하고 운영해 본 경험을 말씀해 주세요.",
+   "scope": "role:edu_planner",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "콘텐츠를 만든 뒤 사용자 반응을 보고 고쳐 본 경험이 있으신가요?",
+   "scope": "role:edu_planner",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내용 전문가와 교육 콘텐츠를 만들다 의견이 부딪히면 어떻게 조율하시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육은 비용일 뿐이라는 현업 임원을 설득해야 한다면 무엇을 근거로 대시겠어요?",
+   "scope": "role:edu_planner",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "성인 학습자를 가르칠 때 학생을 가르칠 때와 가장 달라져야 할 점은 무엇일까요?",
+   "scope": "role:corporate_trainer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기업교육 강사로 일하고 싶은 이유가 무엇인가요?",
+   "scope": "role:corporate_trainer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여자들이 억지로 끌려온 교육이라면 도입 10분을 어떻게 여시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "강의식 교육을 워크숍이나 실습 중심으로 바꾸려면 무엇을 준비하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직급이 섞인 교육에서 하급자가 발언을 꺼린다면 어떻게 참여를 끌어내시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "강의 내용을 참여자의 실제 업무 사례와 연결하려면 사전에 무엇을 조사하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육이 끝난 뒤에도 배운 내용이 잊히지 않게 하려면 강사로서 어떤 장치를 두시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "하루 종일 이어지는 교육에서 오후 시간의 집중력을 어떻게 유지하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여자 한 명이 강의 내용이 현실과 맞지 않다며 공개적으로 반박하면 어떻게 하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "준비한 것보다 교육 시간이 절반으로 줄었다면 무엇을 남기시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육 담당자가 요청한 내용과 참여자들이 원하는 내용이 다르다면 어떻게 하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 과정을 여러 번 했는데 특정 회차만 평가가 낮았다면 원인을 어떻게 찾으시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "리더십 교육을 요청받았는데 실제 문제는 제도에 있어 보인다면 어떻게 제안하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람 앞에서 발표하거나 강의해 본 경험 중 가장 기억에 남는 것을 말씀해 주세요.",
+   "scope": "role:corporate_trainer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "나이나 경력이 본인보다 많은 사람들을 대상으로 교육해 본 경험이 있으신가요?",
+   "scope": "role:corporate_trainer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "만족도 점수를 올리려고 재미에만 치중하는 강의를 어떻게 보시나요?",
+   "scope": "role:corporate_trainer",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "그 경력으로 우리 직원들을 가르칠 수 있겠냐는 질문을 받는다면 어떻게 답하시겠어요?",
+   "scope": "role:corporate_trainer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  }
+ ]
+}

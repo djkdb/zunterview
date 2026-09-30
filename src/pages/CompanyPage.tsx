@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { COMPANY_Q_CATEGORIES, companyTracks, getCompany } from "../../shared/companies";
+import { COMPANY_Q_CATEGORIES, companyTracks, getCompany, loadCompanyQuestions, type CompanyQuestion } from "../../shared/companies";
 import { TopBar } from "../components/TopBar";
 import { Button } from "../components/ui/Button";
 import { ArrowIcon } from "../components/ui/icons";
@@ -16,11 +16,19 @@ interface Props {
 export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
   const c = getCompany(id);
   const [track, setTrack] = useState("공통");
+  const [questions, setQuestions] = useState<CompanyQuestion[] | null>(null);
+  useEffect(() => {
+    let alive = true;
+    loadCompanyQuestions(id).then((qs) => alive && setQuestions(qs));
+    return () => {
+      alive = false;
+    };
+  }, [id]);
   const grouped = useMemo(() => {
-    if (!c) return [];
-    const qs = c.questions.filter((q) => track === "공통" || q.track === "공통" || q.track === track);
+    if (!c || !questions) return [];
+    const qs = questions.filter((q) => track === "공통" || q.track === "공통" || q.track === track);
     return COMPANY_Q_CATEGORIES.map((cat) => ({ cat, items: qs.filter((q) => q.category === cat) })).filter((g) => g.items.length);
-  }, [c, track]);
+  }, [c, questions, track]);
 
   if (!c) {
     return (
@@ -90,7 +98,7 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
 
         <section className="mt-8" aria-label="예상 질문">
           <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
-            <h2 className="text-lg font-bold text-ink">예상 질문 {c.questions.length}개</h2>
+            <h2 className="text-lg font-bold text-ink">연습 질문 {c.questionCount}개</h2>
             {tracks.length > 1 && (
               <div className="flex flex-wrap gap-1.5" role="tablist" aria-label="직무 트랙">
                 {tracks.map((t) => (
@@ -109,10 +117,11 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
             )}
           </div>
           <p className="mb-4 text-[12px] text-faint">
-            <span className="mr-1 rounded bg-[#dde6f3] px-1 font-semibold text-ink">기출 기반</span>공개 면접 후기에 보고된 질문을 재구성 ·
+            <span className="mr-1 rounded bg-[#dde6f3] px-1 font-semibold text-ink">공개후기 기반</span>공개 면접 후기에 보고된 질문을 연습용으로 재구성 ·
             <span className="mx-1 rounded bg-surface-3 px-1 font-semibold text-muted">인재상 기반</span>공식 자료에서 도출한 예상 질문
           </p>
-          <div className="space-y-5">
+          <div className="space-y-5" aria-busy={!questions}>
+            {!questions && <p className="py-6 text-center text-sm text-faint">질문을 불러오는 중…</p>}
             {grouped.map((g) => (
               <div key={g.cat}>
                 <h3 className="mb-2 text-[13px] font-bold text-muted">{g.cat}</h3>
@@ -122,7 +131,7 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
                       <span className="flex-1">{q.text}</span>
                       {q.track !== "공통" && <span className="shrink-0 rounded border border-line px-1.5 text-[11px] text-muted">{q.track}</span>}
                       <span className={`shrink-0 rounded px-1.5 text-[11px] font-semibold ${q.basis === "후기" ? "bg-[#dde6f3] text-ink" : "bg-surface-3 text-muted"}`}>
-                        {q.basis === "후기" ? "기출 기반" : "인재상 기반"}
+                        {q.basis === "후기" ? "공개후기 기반" : "공식자료 기반"}
                       </span>
                     </li>
                   ))}

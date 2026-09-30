@@ -12,5 +12,5 @@
     "verbatimModuleSyntax": true,
     "types": ["node"]
   },
-  "include": ["server", "shared", "vite.config.ts", "eslint.config.js"]
+  "include": ["server", "shared", "scripts", "vite.config.ts", "vitest.setup.ts", "eslint.config.js"]
 }

@@ -15,7 +15,7 @@ export const TOPICS: Topic[] = [
   { id: "performance", label: { ko: "성능 문제", en: "the performance issue" }, pattern: /성능|느려|느린|속도|지연|렌더링|로딩|병목|latency|performance|slow|bottleneck|load time/i },
   { id: "incident", label: { ko: "장애 상황", en: "that incident" }, pattern: /장애|버그|오류|에러|크래시|다운|incident|outage|bug|error|crash|downtime/i },
   { id: "conflict", label: { ko: "의견 차이", en: "the disagreement" }, pattern: /갈등|의견 ?차이|충돌|반대|설득|conflict|disagree|pushback|persuad/i },
-  { id: "deadline", label: { ko: "촉박한 일정", en: "the tight deadline" }, pattern: /마감|일정|데드라인|기한|deadline|timeline|schedule|time pressure/i },
+  { id: "deadline", label: { ko: "촉박한 일정", en: "the tight deadline" }, pattern: /(?<!(?:월|분기|연|결산|회계)\s?)마감|일정|데드라인|기한|deadline|timeline|schedule|time pressure/i },
   { id: "architecture", label: { ko: "구조 설계", en: "the architecture decision" }, pattern: /아키텍처|설계|구조|마이그레이션|리팩(?:터|토)링|architecture|design|migration|refactor/i },
   { id: "data", label: { ko: "데이터 분석", en: "the data analysis" }, pattern: /데이터|지표|분석|대시보드|전환율|리텐션|metric|data|analytics|conversion|retention/i },
   { id: "user", label: { ko: "사용자 문제", en: "the user problem" }, pattern: /사용자\s?(?:문제|불편|불만|인터뷰|리서치|피드백)|고객\s?(?:불만|문의|피드백)|VOC|사용성|유저\s?리서치|user research|usability|customer complaint/i },
@@ -23,6 +23,42 @@ export const TOPICS: Topic[] = [
   { id: "leadership", label: { ko: "리딩 경험", en: "leading the team" }, pattern: /리드|리더|이끌|멘토|주도|lead|mentor|drove|owned/i },
   { id: "failure", label: { ko: "실패 경험", en: "that failure" }, pattern: /실패|실수|잘못|놓친|fail|mistake|missed/i },
   { id: "learning", label: { ko: "학습 과정", en: "the learning process" }, pattern: /새로(?:운)?\s?(?:기술|언어|도구)?(?:을|를)?\s?(?:배우|익히|익혔|학습)|독학|학습\s?방법|공부\s?방법|learn(?:ed|ing)? (?:a |the )?new|picked up/i },
+];
+
+/**
+ * Job-specific things candidates mention — each with the follow-up a practitioner
+ * in that field would ask next. Triggered only by the candidate's own words.
+ */
+export interface RoleTopic {
+  id: string;
+  pattern: RegExp;
+  ask: Record<Language, string>;
+}
+
+export const ROLE_TOPICS: RoleTopic[] = [
+  { id: "closing", pattern: /결산|월\s?마감|분기\s?마감/, ask: { ko: "결산 과정에서 숫자가 맞지 않았을 때는 어떤 순서로 확인하셨나요?", en: "When the numbers didn't tie out at closing, how did you track it down?" } },
+  { id: "account", pattern: /재무제표|계정\s?(?:과목|처리)|분개|전표/, ask: { ko: "그 회계 처리는 어떤 기준에 근거해 판단하셨나요?", en: "Which standard did you base that accounting treatment on?" } },
+  { id: "patient", pattern: /환자/, ask: { ko: "그때 환자 안전을 위해 가장 먼저 확인하신 것은 무엇이었나요?", en: "What did you check first for the patient's safety?" } },
+  { id: "guardian", pattern: /보호자/, ask: { ko: "보호자에게는 상황을 어떻게 설명하셨나요?", en: "How did you explain the situation to the family?" } },
+  { id: "campaign", pattern: /캠페인/, ask: { ko: "그 캠페인의 목표 KPI는 무엇이었고, 결과는 어땠나요?", en: "What was the campaign's target KPI, and how did it turn out?" } },
+  { id: "sales", pattern: /매출|판매량|영업\s?실적/, ask: { ko: "그 매출 변화가 본인의 활동 때문이라는 것은 어떻게 확인하셨나요?", en: "How did you confirm the sales change came from your work?" } },
+  { id: "client", pattern: /고객사|거래처|바이어|클라이언트/, ask: { ko: "그 고객이 가장 중요하게 생각한 것은 무엇이었나요?", en: "What mattered most to that client?" } },
+  { id: "production", pattern: /생산\s?(?:량|계획|목표)|가동률|생산성/, ask: { ko: "계획 대비 차이가 생긴 원인은 어떻게 찾으셨나요?", en: "How did you find why output differed from the plan?" } },
+  { id: "defect", pattern: /불량|품질\s?(?:문제|이슈)|클레임/, ask: { ko: "불량의 근본 원인은 어떻게 확인하셨고, 재발은 어떻게 막으셨나요?", en: "How did you confirm the root cause of the defect, and prevent it recurring?" } },
+  { id: "process", pattern: /공정\s?(?:조건|변수|개선|관리)|수율/, ask: { ko: "공정 조건을 바꿀 때 어떤 데이터를 근거로 판단하셨나요?", en: "What data did you rely on when changing the process conditions?" } },
+  { id: "law", pattern: /법규|법령|규제|조항|판례/, ask: { ko: "그 판단이 법령에 맞는지는 어떻게 확인하셨나요?", en: "How did you confirm that judgment was legally sound?" } },
+  { id: "contract", pattern: /계약/, ask: { ko: "계약 조건을 조율하면서 가장 양보하기 어려웠던 부분은 무엇이었나요?", en: "In negotiating the contract, what was hardest to give ground on?" } },
+  { id: "student", pattern: /학생|수업|학습자|아이들/, ask: { ko: "그 학생에게 어떤 변화가 있었는지는 어떻게 확인하셨나요?", en: "How did you see whether that student changed?" } },
+  { id: "civil", pattern: /민원/, ask: { ko: "민원인이 끝까지 납득하지 않았다면 어떻게 하셨을까요?", en: "If the citizen still hadn't accepted it, what would you have done?" } },
+  { id: "experiment", pattern: /실험/, ask: { ko: "실험 결과가 재현되지 않았다면 어떻게 검증하셨을까요?", en: "If the result hadn't reproduced, how would you have verified it?" } },
+  { id: "budget", pattern: /예산/, ask: { ko: "예산은 어떤 기준으로 배분하셨나요?", en: "How did you decide how to split the budget?" } },
+  { id: "safety", pattern: /안전\s?(?:사고|점검|관리|수칙)|위험성\s?평가|아차\s?사고/, ask: { ko: "현장에서 그 안전 조치를 지키게 하려고 어떻게 설득하셨나요?", en: "How did you get people on site to follow that safety measure?" } },
+  { id: "hiring", pattern: /채용|지원자|면접관/, ask: { ko: "지원자를 평가할 때 공정성은 어떻게 지키셨나요?", en: "How did you keep the evaluation of candidates fair?" } },
+  { id: "inventory", pattern: /재고/, ask: { ko: "적정 재고 수준은 어떤 기준으로 정하셨나요?", en: "How did you decide the right inventory level?" } },
+  { id: "delivery", pattern: /납기/, ask: { ko: "납기를 맞추기 위해 무엇을 조정하셨나요?", en: "What did you adjust to hit the delivery date?" } },
+  { id: "supplier", pattern: /협력사|협력\s?업체|공급사|벤더/, ask: { ko: "그 협력사와 의견이 달랐을 때는 어떻게 조율하셨나요?", en: "When that supplier disagreed with you, how did you work it out?" } },
+  { id: "client_care", pattern: /대상자|이용자|내담자/, ask: { ko: "그분의 욕구나 상황은 어떻게 파악하셨나요?", en: "How did you work out that person's needs?" } },
+  { id: "guest", pattern: /승객|투숙객|손님/, ask: { ko: "그 손님의 감정은 어떻게 먼저 다루셨나요?", en: "How did you deal with that guest's feelings first?" } },
 ];
 
 /** Concrete methods/tools — the best anchors for a sharp follow-up. */
@@ -178,26 +214,4 @@ export function quoteAround(text: string, needle: string, max = 48): string {
   return text.slice(start, end).trim().replace(/[,.]$/, "");
 }
 
-/** Does the word, as read aloud in Korean, end in a final consonant (받침)? */
-export function hasBatchim(word: string): boolean {
-  const w = word.trim().replace(/[^\p{L}\p{N}]+$/u, "");
-  const last = w.slice(-1);
-  const code = last.charCodeAt(0);
-  if (code >= 0xac00 && code <= 0xd7a3) return (code - 0xac00) % 28 !== 0;
-  if (/\d/.test(last)) return "0136780".includes(last); // 영·일·삼·육·칠·팔·(십)
-  // Acronyms are read letter by letter: L(엘) M(엠) N(엔) R(알) end in a consonant.
-  if (/^[A-Z0-9]{2,}$/.test(w)) return "LMNR".includes(last);
-  // English words: -m/-n/-l/-ng keep a final consonant ("Kotlin", "Python"); others add 으 ("React"→리액트).
-  return /[mnl]$/i.test(w) || /ng$/i.test(w);
-}
-
-/** Pick the particle form that fits the word: josa("캐시", "을/를") → "를". */
-export function josa(word: string, pair: "을/를" | "이/가" | "은/는" | "와/과"): string {
-  const [withB, without] = pair.split("/");
-  return hasBatchim(word) ? withB : without;
-}
-
-/** Korean object particle 을/를 that reads naturally after the word. */
-export function objectParticle(word: string): string {
-  return hasBatchim(word) ? "을" : "를";
-}
+export { hasBatchim, josa, objectParticle } from "../../../../shared/korean";

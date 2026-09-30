@@ -49,6 +49,7 @@ export function sanitizeAnalysis(a: AnswerAnalysis, answer: string): AnswerAnaly
       suggestion: tidy(a.betterAnswer.suggestion, 300),
       example: tidy(a.betterAnswer.example, 400),
     },
+    roleSignal: a.roleSignal && a.roleSignal.label.trim() && a.roleSignal.note.trim() ? { label: tidy(a.roleSignal.label, 40), note: tidy(a.roleSignal.note, 240) } : null,
     evidence: tidyList(a.evidence, 3, 160).filter((q) => isGroundedQuote(q, answer)),
     notFound: tidyList(a.notFound, 3),
   };

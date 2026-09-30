@@ -10,16 +10,16 @@ export const EXPERIENCE_KO: Record<ExperienceLevel, string> = {
 
 export const INTERVIEW_TYPE_KO: Record<InterviewType, string> = {
   hr: "인성 면접",
-  technical: "기술 면접",
-  project: "프로젝트 면접",
+  technical: "직무 면접",
+  project: "경험·프로젝트",
   behavioral: "경험 면접",
   mixed: "종합 면접",
 };
 
 export const INTERVIEW_TYPE_HINT_KO: Record<InterviewType, string> = {
   hr: "지원동기 · 조직적합성",
-  technical: "기술 판단 · 깊이",
-  project: "수행 프로젝트 검증",
+  technical: "직무 전문성 · 실무",
+  project: "수행 경험 검증",
   behavioral: "과거 경험 · STAR",
   mixed: "실제 1차 면접처럼",
 };
@@ -34,17 +34,32 @@ export const PERSONA_KO: Record<Persona, string> = {
   professional: "정중한",
   friendly: "친근한",
   strict: "깐깐한",
-  technical: "기술 중심",
+  technical: "실무 전문가",
 };
 
 export const QUESTION_TYPE_KO: Record<QuestionType, string> = {
   opening: "도입",
-  motivation: "지원동기·기업이해",
+  motivation: "지원동기",
+  role_understanding: "직무 이해",
+  company_understanding: "기업 이해",
+  behavioral: "인성·역량",
+  experience: "경험",
   deep_dive: "심층",
+  situational: "상황 대처",
+  role_specific: "직무 실무",
   technical: "기술",
-  challenge: "상황 가정",
+  case: "케이스",
+  numerical: "수치 판단",
+  analytical: "분석",
+  industry: "산업 이해",
+  leadership: "리더십",
+  communication: "소통",
+  ethics: "윤리",
+  challenge: "압박·반론",
   reflection: "인성·성찰",
   result: "성과 검증",
+  pt: "PT",
+  debate: "토론",
 };
 
 export const CATEGORY_KO: Record<CategoryKey, string> = {

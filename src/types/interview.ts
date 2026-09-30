@@ -18,6 +18,8 @@ export interface InterviewConfig extends AIConfig {
 
 export type ProviderKind = "ai" | "mock";
 
+export type QuestionOrigin = "후기" | "공식자료" | "공개후기" | "공고기반" | "직무기반";
+
 export interface InterviewQuestion {
   id: string;
   text: string;
@@ -40,8 +42,12 @@ export interface InterviewQuestion {
   /** IDs of follow-up questions asked on this question. */
   followUps: string[];
   source: ProviderKind;
-  /** Matches a researched company question: reported by candidates, or derived from official values. */
-  origin?: "후기" | "공식자료";
+  /**
+   * Where the question comes from, when it matches our dataset: a company question
+   * ("후기" reported by candidates / "공식자료" official material) or a role-bank question
+   * (공개후기 / 공식자료 / 공고기반 / 직무기반). Never shown as a "past exam question".
+   */
+  origin?: QuestionOrigin;
 }
 
 export type CategoryScores = Record<CategoryKey, number>;

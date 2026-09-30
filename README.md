@@ -3,16 +3,25 @@
 > AI가 질문만 하는 것이 아니라, 내 답변을 듣고 다시 파고든다.
 > *Your interviewer adapts to your answers.*
 
-브라우저에서 **실제 한국 기업 면접장**처럼 꾸민 모의면접실에서, AI 면접관 3인(인사팀 책임 · 면접위원장 · 실무 면접관)과 다대일 면접을 진행하는 웹앱입니다.
+브라우저에서 **실제 한국 기업 면접장**처럼 꾸민 모의면접실에서, AI 면접관 3인(인사팀 책임 · 면접위원장 · 실무 면접관)과 다대일 면접을 진행하는 웹앱입니다. 개발자뿐 아니라 **회계·마케팅·영업·생산관리·간호·교사·공무원·연구원 등 전 직무**의 면접을 연습할 수 있습니다.
+
+| 데이터 | 규모 |
+|---|---|
+| 직무 분류 | **51개 도메인 · 72개 직군 · 256개 직무** (Domain → Job family → Role) |
+| 직무 질문 | **6,761개** (공통 383 + 도메인·직군·직무별 6,378) — 출처 137개 |
+| 기업·기관 | **54곳 · 질문 1,547개** (공개후기 기반 1,295) |
 
 ```
 질문 → 답변 → AI 분석 → 꼬리질문(Follow-up) → 다시 답변 → 다음 질문 → … → 종합 리포트
 ```
 
 - **면접장 연출**: 대기실(모의면접 수험표) → 호명("지원번호 ○○번 지원자님, 입실해 주세요") → 문이 열리며 입실 → 면접위원장의 인사로 시작. 면접실에는 긴 책상, 명패, 생수병, 벽시계(실제 시간), 회사 스크린이 있고, 질문 유형에 따라 면접관이 번갈아 질문합니다(기술 질문은 실무 면접관, 성찰·인성은 인사 면접관). 질문 중인 면접관은 입이 움직이고, 답변 검토 중에는 모두 평가표에 필기합니다.
-- **기업별 모의면접 (30곳, 예상 질문 698개)**: 대기업(삼성전자·SK하이닉스·현대자동차·LG전자·포스코·삼성SDS), IT·플랫폼(네이버·카카오·쿠팡·토스·우아한형제들·LG CNS), 금융·통신·식품(신한·KB국민·하나·NH농협은행·KT·CJ제일제당), 공기업(한전·수자원공사·가스공사·도로공사·코레일·인천공항공사), 공공기관(건보공단·국민연금·LH·심평원·산업은행·근로복지공단). 기업마다 인재상, 면접 전형, 준비 팁, 직무 트랙별 예상 질문과 출처를 제공하고, 선택한 기업의 질문으로 면접관이 질문합니다. 질문에는 "기출 기반"(공개 면접 후기에 보고된 질문을 재구성) / "인재상 기반"(공식 자료에서 도출) 표시가 붙습니다.
-- **꼬리질문**: 답변에서 실제로 말한 표현(예: “성능 문제”)을 집어 다시 묻습니다. 화면에 *“답변에서 이어서 ‘성능 문제’”* 와 *이 질문을 한 이유* 가 함께 표시됩니다.
-- **답변 분석**: Relevance · Logic · Specificity · Structure · Communication · Confidence 6개 항목 + STAR + 근거 인용 + 개선 예시
+- **전 직무 면접**: 직무를 검색(한글·영어·약어 — "FE", "HRD", "BM", "데이터 애널")하거나 분야 → 직무로 고르면, 그 직무의 프로필(핵심 역량·업무·주제)과 **면접 설계도(blueprint)**에 맞춰 질문이 구성됩니다. 회계는 결산·재무제표·내부통제, 마케팅은 캠페인·KPI·퍼널, 간호는 환자안전·상황대응, 생산관리는 계획·납기·품질을 묻고, 회계·간호 같은 직무에는 개발자 기술 질문이 나오지 않습니다. 목록에 없는 직무("방송 기술감독")도 가장 가까운 분야를 추정해 질문하고(AI 모드에서는 AI가 연습용 직무 프로필을 추론), "사무직"처럼 넓은 입력에는 "어떤 업무에 가까운가요?"로 되묻습니다.
+- **기업별 모의면접 (54곳, 질문 1,547개)**: 대기업·IT·금융·공기업·공공기관·병원(서울대병원·서울아산병원) 등. 기업마다 인재상, 면접 전형, 준비 팁, 직무 트랙별 연습 질문과 출처를 제공합니다. 기업을 고르면 **기업 질문(지원동기·인재상·조직적합성) + 직무 질문 + JD**를 조합해 면접합니다. 기업 선택은 선택 사항입니다.
+- **질문 출처 표시**: "공개후기 기반"(공개 면접 후기를 연습용으로 재구성) · "공식자료 기반"(인재상·직무기술서·NCS) · "공고기반" · "직무기반"(직무 특성으로 만든 연습 질문). 어떤 질문도 "기출"로 표시하지 않습니다.
+- **꼬리질문**: 답변에서 실제로 말한 표현(예: “성능 문제”, “월 마감”, “환자”)을 집어 다시 묻고, 직무마다 파고드는 방향이 다릅니다 — 개발: 기술 선택→이유→트레이드오프→장애→결과 / 마케팅: 목표→타깃→채널→KPI→결과 / 회계: 업무→기준→오류→처리→결과 / 영업: 고객→니즈→제안→설득→결과 / 생산: 문제→원인→조치→재발방지→성과. 압박 난이도에서는 “그 결과가 정말 본인의 기여라고 어떻게 증명할 수 있나요?”처럼 직무에 맞게 날카로워집니다.
+- **문항 수**: 5/10/15문항은 **메인 질문 수**입니다. 꼬리질문은 답변에 따라 추가되지만 난이도별 상한(메인 질문의 40~70%)이 있어 면접이 무한히 길어지지 않습니다.
+- **답변 분석**: Relevance · Logic · Specificity · Structure · Communication · Confidence 6개 공통 항목 + **직무 관점 피드백**(회계: 정확성·기준 준수, 영업: 고객 지향성, 간호: 환자 안전·소통, 연구: 연구 방법론 …) + STAR + 근거 인용 + 개선 예시
 - **모의면접 평가표**: 인적사항 표, 종합 점수·등급(S~D), 항목별 평가표 + 레이더 차트, 면접위원 종합 의견, 문항별 평가(STAR ○△×), "모의면접 · 연습용" 도장, 평가표 다운로드(HTML), 결과 카드 공유(PNG)
 - **음성**: 질문 음성 출력(speechSynthesis), 답변 음성 입력(Web Speech API) — 미지원 브라우저는 자동으로 텍스트 모드
 - **MOCK MODE**: API 키 없이도 전체 흐름이 동작합니다 (답변을 실제로 읽고 꼬리질문을 만드는 규칙 기반 면접관)
@@ -74,12 +83,44 @@ npm run build        # typecheck + vite build
 npm start            # :8787 에서 dist/ + /api 를 함께 서빙
 ```
 
-## 기업별 데이터
+## 질문 데이터 — 구축 방식과 한계
 
-- 원자료: `research/raw/*.json` — 공개 면접 후기(잡코리아, 링커리어, 자소설닷컴, 위포트 등)와 각 기업·기관 공식 채용/인재상 페이지를 조사해 질문을 **직접 재작성**한 것 (원문 복사 없음). 기업마다 출처 URL 포함.
-- 검수 규칙: `research/curation.json` — 모의면접 컨설팅/유료 자료에서만 확인된 질문은 제외하거나 "인재상 기반"으로 재분류, 유료 자료 사이트는 출처에서 제외.
-- 생성: `node scripts/build-company-data.mjs` → `shared/data/companies.ts` (로드 시 zod 검증).
-- 한계: 일부 기업은 최근 후기가 적어 2015~2022년 질문이 섞여 있고, 공식 페이지가 열리지 않은 경우 인재상을 뉴스·2차 자료로 보완했습니다. 실제 면접과 다를 수 있으며 해당 기업·기관과 무관합니다.
+### 직무 데이터 (Role mode)
+
+```
+research/role-raw/taxonomy.json      도메인 → 직군 → 직무 골격 (id 고정)
+research/role-raw/b01…b12.json       직무 프로필 + 직군·직무별 질문 (배치별 원자료, 출처 포함)
+research/role-raw/common.json        모든 직무 공통 질문 ({role} 치환, 영어 병기)
+research/role-curation.json          수동 검수 (별칭, 출처 강등, 제외 질문)
+        │  scripts/build-role-data.ts — 스키마·문체·출처 검증 → 직무 적합도 → 의미 중복 제거
+        ▼
+shared/data/roles.ts                 직무 색인(번들 포함, 검색·매칭용)
+public/data/roles/profiles.json      직무 프로필      ┐
+public/data/roles/common.json        공통 질문        ├ 필요할 때만 로드 (도메인별 분할)
+public/data/roles/<domain>.json      도메인별 질문     ┘
+```
+
+- **출처 구분 (`basis`)**: `공개후기`(실제로 열어 본 공개 면접 후기를 재작성) 250 · `공식자료`(NCS 직무기술서, 기관·기업 직무소개, 협회 자료) 412 · `공고기반`(공개 채용공고) 11 · `직무기반`(직무 특성으로 작성한 연습 질문) 5,761 · `일반면접` 327. 질문마다 `category`, `type`, `difficulty`, `levels`(경력), `confidence`, 출처가 있으면 `sourceTitle/sourceUrl/year`를 저장합니다.
+- **원칙**: 원문을 복사하지 않고 연습용 문장으로 재작성, 유료 자료·로그인 필요 페이지·면접 컨설팅 업체의 "예상 질문" 목록은 사용하지 않음, 실제로 열어 보지 않은 페이지는 인용하지 않음, 차별적 질문(가족·결혼·외모·종교 등)과 특정 회사명이 든 질문은 제외. 1인칭 지원자 후기가 아닌 현직자 조언·멘토 답변은 `공개후기`에서 `직무기반`으로 강등했습니다(`role-curation.json`의 `demoteReviewSources`).
+- **품질 검증**: 자연스러운 존댓말·시험 문체 금지·길이, 역할 적합도 점수(0–1; 0.5 미만 제외 — 회계 질문에 React, 간호 질문에 CI/CD 같은 이질 용어 차단), 한 직무가 받을 수 있는 질문 집합 안에서 **의미 중복 제거**(문자 bigram + 동의어 정규화 + 질문 프레임: "팀원과 갈등이 생겼던 경험" ≈ "동료와 의견 충돌이 있었던 사례").
+- **한계**: 대부분(85%)은 직무 특성으로 만든 연습 질문이며 실제 기출이 아닙니다. 공개후기·공식자료 비중은 직무마다 다르고(간호·금융·반도체·공기업은 비교적 많고, 물류·공정·사회복지·상담·스포츠는 출처가 적음), 조사 도중 웹 검색 한도에 걸려 일부 직무는 출처가 없습니다. 직무 프로필은 일반적인 업무 설명이며 특정 기관의 실제 직무와 다를 수 있습니다.
+
+### 기업 데이터 (Company mode)
+
+- 원자료 `research/raw/*.json` → 검수 `research/curation.json` → `node scripts/build-company-data.mjs` → 기업 프로필 `shared/data/companies.ts` + 질문 `public/data/companies/<id>.json`(필요할 때 로드).
+- 공개 면접 후기(잡코리아, 링커리어, 자소설닷컴, 위포트 등)와 각 기업·기관의 공식 채용·인재상 페이지를 조사해 질문을 직접 재작성했습니다. 기업마다 출처 URL을 포함합니다.
+- 한계: 일부 기업은 최근 후기가 적어 과거 질문이 섞여 있고, 전형은 연도·부문별로 다를 수 있습니다. 해당 기업·기관과 무관한 연습용 자료입니다.
+
+### 기업 데이터와 직무 데이터의 차이
+
+| | 기업 모드 | 직무 모드 | 조합 (기업 + 직무 + JD) |
+|---|---|---|---|
+| 질문 | 기업별 공개후기·공식자료 | 직무별 실무·상황·경험 질문 | 기업 질문(지원동기·인재상·적합성) + 직무 질문(실무) + JD 요건 검증 |
+| 선택 | 선택 사항 | 필수 (검색·분야 선택·직접 입력) | 둘 다 고르면 자동 조합 |
+
+### 검색·프롬프트 크기 관리
+
+질문이 수천 개여도 AI에게 전부 보내지 않습니다. 직무 → 유형 → 카테고리 → 난이도·경력 → 이미 한 질문 제외 순으로 좁혀 **후보 20개 안팎**만 프롬프트에 넣고, 면접 설계도가 추천하는 다음 질문 유형을 함께 전달합니다(`shared/roleBank.ts`, `server/prompts/common.ts`).
 
 ## 스크립트
 
@@ -88,13 +129,18 @@ npm start            # :8787 에서 dist/ + /api 를 함께 서빙
 | `npm run dev` | API 서버(tsx watch) + Vite |
 | `npm run lint` | ESLint (react-hooks 포함) |
 | `npm run typecheck` | 클라이언트 + 서버 `tsc --noEmit` |
-| `npm test` | Vitest (상태 머신, Mock 면접관, 환각 방지 가드) |
+| `npm test` | Vitest — 상태 머신, Mock 면접관, 직무 매칭, 직무별 질문 적합도, 기업+직무 조합, 프롬프트 |
+| `npm run build:data` | 직무 데이터 + 기업 데이터 재생성 |
+| `npm run validate:roles` | 직무 분류·프로필·별칭 검증 |
+| `npm run validate:questions` | 질문 스키마·출처·의미 중복·직무 적합도 검증 (`-- --verbose`로 직무별 PASS/FAIL) |
+| `npm run validate:data` | 생성 파일 최신 여부 + 전체 데이터 검증 |
 | `npm run build` | typecheck → 프로덕션 빌드 |
+| `npm run qa` | lint → typecheck → test → validate:data → build (CI와 동일) |
 
 ## 디버그 모드
 
 `/?debug=true` — 우측 하단 패널:
-MODE, AI PROVIDER, INTERVIEW STATE, QUESTION INDEX, CURRENT QUESTION, CURRENT SCORE, TOKEN STATUS
+MODE, AI PROVIDER, INTERVIEW STATE, QUESTION INDEX, CURRENT QUESTION, CURRENT SCORE, TOTAL ROLES, TOTAL QUESTIONS, COMPANIES, CURRENT ROLE, ROLE QUESTIONS, ROLE TYPES, ROLE CATEGORIES, TOKEN STATUS
 + Next Question · Trigger Follow-up · Mock Excellent/Poor Answer · Complete Interview · Reset · Clear Local Data · Test Voice · Test Error
 
 ---
@@ -104,12 +150,18 @@ MODE, AI PROVIDER, INTERVIEW STATE, QUESTION INDEX, CURRENT QUESTION, CURRENT SC
 ```
 shared/                 브라우저·서버 공통 계약
   schemas.ts            zod 스키마 (요청 검증 + AI 구조화 출력 포맷 + 클라이언트 재검증)
+  roles.ts              직무 taxonomy · 검색(퍼지·별칭) · RoleResolver(roleContextFor)
+  blueprints.ts         직무 유형별 면접 설계도(질문 비중·순서·꼬리질문 방향·압박 질문·직무 관점 신호)
+  roleBank.ts           질문 저장소 로딩(도메인별 분할) · 후보 검색(retrieval)
+  similarity.ts         어휘 + 의미 중복 판정 · relevance.ts 직무 적합도
+  companies.ts          기업 프로필 · 기업 질문 로딩
   sanitize.ts           점수 clamp, 근거 인용 검증(답변에 없는 인용 제거), 길이 제한
   labels.ts
 server/                 API 레이어 (비밀키 보관)
-  index.ts              node:http — /api/health, /api/ai/{question,follow-up,analyze,report}, 정적 서빙
+  index.ts              node:http — /api/health, /api/ai/{question,follow-up,analyze,report,role-profile}, 정적 서빙
   claude.ts             Anthropic SDK · beta.messages.parse + JSON schema 구조화 출력
-  prompts/              questionPrompt · followupPrompt · analysisPrompt · reportPrompt · common
+  prompts/              questionPrompt · followupPrompt · analysisPrompt · reportPrompt · rolePrompt · common
+scripts/                build-role-data.ts · validate-data.ts · build-company-data.mjs
 src/
   services/ai/          AIProvider 인터페이스 · RealAIProvider · MockAIProvider · providerFactory
   services/speech/      speechRecognition · speechSynthesis
@@ -175,7 +227,9 @@ Chromium(Playwright)으로 실제 앱을 구동해 확인한 시나리오:
 | 12 | API 실패: 디버그 Test Error → 일시정지 패널 → Retry 복구 / 깨진 JSON 응답 → Continue in Mock Mode | ✅ |
 | 13 | Mock Mode 전체 흐름 | ✅ |
 | 14 | 모바일 375 / 390 / 430px — 가로 스크롤 없음 | ✅ |
-| 15 | lint · typecheck · unit test(25) · build | ✅ |
+| 15 | lint · typecheck · unit test(66) · data validation · build (`npm run qa`) | ✅ |
+| 16 | 직무 선택: 검색(회계) · 분야→직무(의료·보건) · 넓은 입력(사무직 → 되묻기) · 직접 입력(방송 기술감독 → 분야 추정) · 모바일 | ✅ |
+| 17 | 간호사 면접: 실무 면접관 "간호부", 직무 질문 + 출처 배지, 답변 속 "환자" → 환자 안전 꼬리질문 | ✅ |
 
 AI MODE는 로컬 가짜 Messages API로 서버 요청 형태(모델, 구조화 출력, fallback 헤더)와 브라우저 흐름(꼬리질문 표시, 환각 인용 제거)을 검증했습니다. 실제 Claude 응답 품질은 `ANTHROPIC_API_KEY` 를 넣고 확인이 필요합니다.
 

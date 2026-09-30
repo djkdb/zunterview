@@ -1,27 +1,17 @@
 /**
  * Question fingerprinting to stop the interviewer from repeating itself.
- * Character bigrams work for both Korean (no reliable word boundaries) and English.
+ * Lexical (character bigrams — works for Korean and English) plus semantic
+ * matching, so a reworded version of an earlier question also counts as a repeat.
  */
-const STRIP = /[\s"'“”‘’`.,!?…·:;()[\]{}\-_/]+/g;
+import { isNearDuplicate, lexicalSimilarity } from "../../shared/similarity";
 
-export function bigrams(text: string): Set<string> {
-  const s = text.toLowerCase().replace(STRIP, "");
-  const out = new Set<string>();
-  for (let i = 0; i < s.length - 1; i++) out.add(s.slice(i, i + 2));
-  return out;
-}
+export { bigrams } from "../../shared/similarity";
 
-export function similarity(a: string, b: string): number {
-  const A = bigrams(a);
-  const B = bigrams(b);
-  if (!A.size || !B.size) return 0;
-  let inter = 0;
-  for (const x of A) if (B.has(x)) inter++;
-  return inter / (A.size + B.size - inter);
-}
+/** Character-bigram Jaccard similarity (0–1). */
+export const similarity = lexicalSimilarity;
 
 export const DUPLICATE_THRESHOLD = 0.6;
 
 export function isDuplicateQuestion(candidate: string, asked: string[]): boolean {
-  return asked.some((q) => similarity(candidate, q) >= DUPLICATE_THRESHOLD);
+  return asked.some((q) => isNearDuplicate(candidate, q));
 }

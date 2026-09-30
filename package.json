@@ -16,7 +16,12 @@
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit",
     "lint": "eslint .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build:data": "tsx scripts/build-role-data.ts && node scripts/build-company-data.mjs",
+    "validate:roles": "tsx scripts/validate-data.ts --roles",
+    "validate:questions": "tsx scripts/validate-data.ts --questions",
+    "validate:data": "tsx scripts/build-role-data.ts --check && tsx scripts/validate-data.ts",
+    "qa": "npm run lint && npm run typecheck && npm run test && npm run validate:data && npm run build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

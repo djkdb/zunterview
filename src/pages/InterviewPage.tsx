@@ -44,7 +44,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   const { state, actions, voiceOn, fallbackActive } = ctl;
   const interview = state.interview!;
   const copy = COPY[interview.config.language];
-  const panel = useMemo(() => buildPanel(interview.config.position), [interview.config.position]);
+  const panel = useMemo(() => buildPanel(interview.config), [interview.config]);
   const applicantNo = applicantNumber(interview.id);
   const company = getCompany(interview.config.companyId);
   const q = currentQuestion(state);
@@ -61,7 +61,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
   const inputEnabled = (state.phase === "LISTENING" || state.phase === "ASKING") && !!q && !q.answer;
   const lastAnswered = [...interview.questions].reverse().find((x) => x.answer);
   const showLastAnswer = (state.phase === "ANALYZING" || state.phase === "FOLLOW_UP" || state.phase === "NEXT_QUESTION") && lastAnswered?.answer;
-  const answeredCount = interview.questions.filter((x) => x.feedback).length;
+  const answeredCount = interview.questions.filter((x) => x.feedback && !x.isFollowUp).length;
   const canEnd = ["ASKING", "LISTENING", "ERROR"].includes(state.phase);
 
   // Who is talking: the asker of the current question, or — while reacting — the asker of the last answered one.
@@ -87,7 +87,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
     setDraft("");
   };
 
-  const questionIndex = Math.max(1, interview.questions.length);
+  const questionIndex = Math.max(1, interview.questions.filter((x) => !x.isFollowUp).length);
   const busyText =
     state.phase === "ANALYZING"
       ? "면접관들이 답변을 검토하고 있습니다"
@@ -229,7 +229,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
         }
       >
         {answeredCount > 0
-          ? `${interview.config.questionLimit}문항 중 ${answeredCount}문항에 답변하셨습니다. 지금 종료하면 답변한 문항만으로 평가표가 작성됩니다.`
+          ? `메인 질문 ${interview.config.questionLimit}개 중 ${answeredCount}개에 답변하셨습니다. 지금 종료하면 답변한 문항만으로 평가표가 작성됩니다.`
           : "아직 답변한 문항이 없어 평가표가 작성되지 않습니다. 그래도 종료하시겠습니까?"}
       </Dialog>
     </div>

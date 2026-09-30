@@ -1,0 +1,2476 @@
+{
+ "groups": [
+  {
+   "id": "it",
+   "name": "기술·IT"
+  },
+  {
+   "id": "biz",
+   "name": "경영·사무"
+  },
+  {
+   "id": "fin",
+   "name": "금융·회계"
+  },
+  {
+   "id": "mkt",
+   "name": "마케팅·영업·유통"
+  },
+  {
+   "id": "mfg",
+   "name": "제조·생산·품질"
+  },
+  {
+   "id": "rnd",
+   "name": "연구개발·엔지니어링"
+  },
+  {
+   "id": "med",
+   "name": "의료·보건"
+  },
+  {
+   "id": "edu",
+   "name": "교육·복지·상담"
+  },
+  {
+   "id": "pub",
+   "name": "공공·공기업"
+  },
+  {
+   "id": "svc",
+   "name": "서비스·관광·항공"
+  },
+  {
+   "id": "media",
+   "name": "디자인·미디어·문화"
+  },
+  {
+   "id": "etc",
+   "name": "기타 전문직"
+  }
+ ],
+ "domains": [
+  {
+   "id": "strategy",
+   "name": "경영·전략",
+   "nameEn": "Strategy & Management",
+   "group": "biz"
+  },
+  {
+   "id": "hr",
+   "name": "인사·노무",
+   "nameEn": "HR & Labor Relations",
+   "group": "biz"
+  },
+  {
+   "id": "admin",
+   "name": "총무·사무",
+   "nameEn": "General Affairs & Office",
+   "group": "biz"
+  },
+  {
+   "id": "accounting",
+   "name": "회계·재무·세무",
+   "nameEn": "Accounting, Finance & Tax",
+   "group": "fin"
+  },
+  {
+   "id": "finance",
+   "name": "금융·은행·보험",
+   "nameEn": "Banking, Securities & Insurance",
+   "group": "fin"
+  },
+  {
+   "id": "legal",
+   "name": "법무·컴플라이언스",
+   "nameEn": "Legal & Compliance",
+   "group": "biz"
+  },
+  {
+   "id": "marketing",
+   "name": "마케팅·광고·브랜드",
+   "nameEn": "Marketing, Advertising & Brand",
+   "group": "mkt"
+  },
+  {
+   "id": "sales",
+   "name": "영업·영업관리",
+   "nameEn": "Sales",
+   "group": "mkt"
+  },
+  {
+   "id": "trade",
+   "name": "해외영업·무역",
+   "nameEn": "Overseas Sales & Trade",
+   "group": "mkt"
+  },
+  {
+   "id": "md",
+   "name": "MD·상품",
+   "nameEn": "Merchandising",
+   "group": "mkt"
+  },
+  {
+   "id": "purchasing",
+   "name": "구매",
+   "nameEn": "Purchasing",
+   "group": "mfg"
+  },
+  {
+   "id": "logistics",
+   "name": "물류·SCM",
+   "nameEn": "Logistics & SCM",
+   "group": "mfg"
+  },
+  {
+   "id": "cs",
+   "name": "고객지원·CS",
+   "nameEn": "Customer Support",
+   "group": "svc"
+  },
+  {
+   "id": "product",
+   "name": "서비스기획·PM·PO",
+   "nameEn": "Product Management",
+   "group": "it"
+  },
+  {
+   "id": "software",
+   "name": "소프트웨어 개발",
+   "nameEn": "Software Engineering",
+   "group": "it"
+  },
+  {
+   "id": "data_ai",
+   "name": "데이터·AI",
+   "nameEn": "Data & AI",
+   "group": "it"
+  },
+  {
+   "id": "infra",
+   "name": "보안·인프라·클라우드",
+   "nameEn": "Security, Infrastructure & Cloud",
+   "group": "it"
+  },
+  {
+   "id": "game",
+   "name": "게임",
+   "nameEn": "Games",
+   "group": "it"
+  },
+  {
+   "id": "design",
+   "name": "디자인",
+   "nameEn": "Design",
+   "group": "media"
+  },
+  {
+   "id": "content",
+   "name": "콘텐츠·미디어",
+   "nameEn": "Content & Media",
+   "group": "media"
+  },
+  {
+   "id": "broadcast",
+   "name": "영상·방송",
+   "nameEn": "Video & Broadcasting",
+   "group": "media"
+  },
+  {
+   "id": "rnd",
+   "name": "연구개발",
+   "nameEn": "Research & Development",
+   "group": "rnd"
+  },
+  {
+   "id": "electronics",
+   "name": "반도체·전자",
+   "nameEn": "Semiconductors & Electronics",
+   "group": "rnd"
+  },
+  {
+   "id": "mechanical",
+   "name": "기계·자동차",
+   "nameEn": "Mechanical & Automotive",
+   "group": "rnd"
+  },
+  {
+   "id": "chemical",
+   "name": "화학·소재",
+   "nameEn": "Chemicals & Materials",
+   "group": "rnd"
+  },
+  {
+   "id": "bio",
+   "name": "바이오·제약",
+   "nameEn": "Bio & Pharma",
+   "group": "rnd"
+  },
+  {
+   "id": "environment",
+   "name": "환경",
+   "nameEn": "Environment",
+   "group": "rnd"
+  },
+  {
+   "id": "energy",
+   "name": "에너지",
+   "nameEn": "Energy",
+   "group": "rnd"
+  },
+  {
+   "id": "architecture",
+   "name": "건축",
+   "nameEn": "Architecture",
+   "group": "rnd"
+  },
+  {
+   "id": "civil",
+   "name": "토목",
+   "nameEn": "Civil Engineering",
+   "group": "rnd"
+  },
+  {
+   "id": "safety",
+   "name": "안전",
+   "nameEn": "Safety",
+   "group": "mfg"
+  },
+  {
+   "id": "production",
+   "name": "생산·제조",
+   "nameEn": "Production & Manufacturing",
+   "group": "mfg"
+  },
+  {
+   "id": "quality",
+   "name": "품질",
+   "nameEn": "Quality",
+   "group": "mfg"
+  },
+  {
+   "id": "process",
+   "name": "공정",
+   "nameEn": "Process Engineering",
+   "group": "mfg"
+  },
+  {
+   "id": "science",
+   "name": "연구원·과학",
+   "nameEn": "Science & Research",
+   "group": "rnd"
+  },
+  {
+   "id": "education",
+   "name": "교육",
+   "nameEn": "Education",
+   "group": "edu"
+  },
+  {
+   "id": "medical",
+   "name": "의료·간호",
+   "nameEn": "Medicine & Nursing",
+   "group": "med"
+  },
+  {
+   "id": "health_tech",
+   "name": "보건·의료기술",
+   "nameEn": "Allied Health",
+   "group": "med"
+  },
+  {
+   "id": "welfare",
+   "name": "사회복지",
+   "nameEn": "Social Welfare",
+   "group": "edu"
+  },
+  {
+   "id": "counseling",
+   "name": "상담",
+   "nameEn": "Counseling",
+   "group": "edu"
+  },
+  {
+   "id": "hospitality",
+   "name": "호텔·관광",
+   "nameEn": "Hotels & Tourism",
+   "group": "svc"
+  },
+  {
+   "id": "aviation",
+   "name": "항공",
+   "nameEn": "Aviation",
+   "group": "svc"
+  },
+  {
+   "id": "food",
+   "name": "외식·식음료",
+   "nameEn": "Food & Beverage",
+   "group": "svc"
+  },
+  {
+   "id": "retail",
+   "name": "유통·리테일",
+   "nameEn": "Retail & Distribution",
+   "group": "mkt"
+  },
+  {
+   "id": "public_admin",
+   "name": "공공행정",
+   "nameEn": "Public Administration",
+   "group": "pub"
+  },
+  {
+   "id": "public_enterprise",
+   "name": "공기업",
+   "nameEn": "Public Enterprises",
+   "group": "pub"
+  },
+  {
+   "id": "nonprofit",
+   "name": "비영리·공공기관",
+   "nameEn": "Nonprofits & Public Institutions",
+   "group": "pub"
+  },
+  {
+   "id": "research_institute",
+   "name": "연구기관",
+   "nameEn": "Research Institutes",
+   "group": "pub"
+  },
+  {
+   "id": "culture_arts",
+   "name": "문화·예술",
+   "nameEn": "Culture & Arts",
+   "group": "media"
+  },
+  {
+   "id": "sports",
+   "name": "스포츠",
+   "nameEn": "Sports",
+   "group": "svc"
+  },
+  {
+   "id": "professional",
+   "name": "기타 전문직",
+   "nameEn": "Other Professions",
+   "group": "etc"
+  }
+ ],
+ "families": [
+  {
+   "id": "strategy_planning",
+   "domain": "strategy",
+   "name": "전략·기획",
+   "nameEn": "Strategy & Planning",
+   "dept": "전략기획팀",
+   "archetype": "strategy_business"
+  },
+  {
+   "id": "investment_ir",
+   "domain": "strategy",
+   "name": "투자·IR",
+   "nameEn": "Investment & IR",
+   "dept": "재무전략팀",
+   "archetype": "strategy_business"
+  },
+  {
+   "id": "hr_people",
+   "domain": "hr",
+   "name": "인사·HR",
+   "nameEn": "Human Resources",
+   "dept": "인사팀",
+   "archetype": "hr_people"
+  },
+  {
+   "id": "labor",
+   "domain": "hr",
+   "name": "노무",
+   "nameEn": "Labor Relations",
+   "dept": "인사팀",
+   "archetype": "hr_people"
+  },
+  {
+   "id": "general_affairs",
+   "domain": "admin",
+   "name": "총무·사무",
+   "nameEn": "General Affairs & Office",
+   "dept": "경영지원팀",
+   "archetype": "admin_support"
+  },
+  {
+   "id": "accounting",
+   "domain": "accounting",
+   "name": "회계",
+   "nameEn": "Accounting",
+   "dept": "재무회계팀",
+   "archetype": "finance_accounting"
+  },
+  {
+   "id": "corporate_finance",
+   "domain": "accounting",
+   "name": "재무",
+   "nameEn": "Corporate Finance",
+   "dept": "재무팀",
+   "archetype": "finance_accounting"
+  },
+  {
+   "id": "tax",
+   "domain": "accounting",
+   "name": "세무·감사",
+   "nameEn": "Tax & Audit",
+   "dept": "세무팀",
+   "archetype": "finance_accounting"
+  },
+  {
+   "id": "banking",
+   "domain": "finance",
+   "name": "은행",
+   "nameEn": "Banking",
+   "dept": "영업점",
+   "archetype": "finance_markets"
+  },
+  {
+   "id": "securities_am",
+   "domain": "finance",
+   "name": "증권·자산운용",
+   "nameEn": "Securities & Asset Management",
+   "dept": "투자사업부",
+   "archetype": "finance_markets"
+  },
+  {
+   "id": "insurance",
+   "domain": "finance",
+   "name": "보험",
+   "nameEn": "Insurance",
+   "dept": "보험사업부",
+   "archetype": "finance_markets"
+  },
+  {
+   "id": "legal",
+   "domain": "legal",
+   "name": "법무",
+   "nameEn": "Legal",
+   "dept": "법무팀",
+   "archetype": "legal_compliance"
+  },
+  {
+   "id": "compliance",
+   "domain": "legal",
+   "name": "컴플라이언스",
+   "nameEn": "Compliance",
+   "dept": "준법감시팀",
+   "archetype": "legal_compliance"
+  },
+  {
+   "id": "digital_marketing",
+   "domain": "marketing",
+   "name": "디지털 마케팅",
+   "nameEn": "Digital Marketing",
+   "dept": "마케팅팀",
+   "archetype": "marketing_growth"
+  },
+  {
+   "id": "brand",
+   "domain": "marketing",
+   "name": "브랜드·PR",
+   "nameEn": "Brand & PR",
+   "dept": "브랜드팀",
+   "archetype": "marketing_growth"
+  },
+  {
+   "id": "advertising",
+   "domain": "marketing",
+   "name": "광고",
+   "nameEn": "Advertising",
+   "dept": "광고기획팀",
+   "archetype": "marketing_growth"
+  },
+  {
+   "id": "sales",
+   "domain": "sales",
+   "name": "영업",
+   "nameEn": "Sales",
+   "dept": "영업팀",
+   "archetype": "sales_customer"
+  },
+  {
+   "id": "sales_ops",
+   "domain": "sales",
+   "name": "영업관리",
+   "nameEn": "Sales Management",
+   "dept": "영업관리팀",
+   "archetype": "sales_customer"
+  },
+  {
+   "id": "trade",
+   "domain": "trade",
+   "name": "해외영업·무역",
+   "nameEn": "Overseas Sales & Trade",
+   "dept": "해외영업팀",
+   "archetype": "sales_customer"
+  },
+  {
+   "id": "merchandising",
+   "domain": "md",
+   "name": "MD·상품기획",
+   "nameEn": "Merchandising",
+   "dept": "상품기획팀",
+   "archetype": "commerce_md"
+  },
+  {
+   "id": "purchasing",
+   "domain": "purchasing",
+   "name": "구매·조달",
+   "nameEn": "Purchasing & Procurement",
+   "dept": "구매팀",
+   "archetype": "supply_ops"
+  },
+  {
+   "id": "scm",
+   "domain": "logistics",
+   "name": "물류·SCM",
+   "nameEn": "Logistics & Supply Chain",
+   "dept": "SCM팀",
+   "archetype": "supply_ops"
+  },
+  {
+   "id": "customer_support",
+   "domain": "cs",
+   "name": "고객지원",
+   "nameEn": "Customer Support",
+   "dept": "고객경험팀",
+   "archetype": "service_hospitality"
+  },
+  {
+   "id": "product",
+   "domain": "product",
+   "name": "서비스기획·PM",
+   "nameEn": "Product",
+   "dept": "프로덕트팀",
+   "archetype": "product_planning"
+  },
+  {
+   "id": "software",
+   "domain": "software",
+   "name": "소프트웨어 개발",
+   "nameEn": "Software Development",
+   "dept": "개발팀",
+   "archetype": "tech_dev"
+  },
+  {
+   "id": "data",
+   "domain": "data_ai",
+   "name": "데이터",
+   "nameEn": "Data",
+   "dept": "데이터팀",
+   "archetype": "data_analytic"
+  },
+  {
+   "id": "ai",
+   "domain": "data_ai",
+   "name": "AI·머신러닝",
+   "nameEn": "AI & Machine Learning",
+   "dept": "AI연구소",
+   "archetype": "tech_dev"
+  },
+  {
+   "id": "infra",
+   "domain": "infra",
+   "name": "인프라·클라우드",
+   "nameEn": "Infrastructure & Cloud",
+   "dept": "인프라팀",
+   "archetype": "tech_dev"
+  },
+  {
+   "id": "security",
+   "domain": "infra",
+   "name": "정보보안",
+   "nameEn": "Information Security",
+   "dept": "정보보안팀",
+   "archetype": "tech_dev"
+  },
+  {
+   "id": "game",
+   "domain": "game",
+   "name": "게임",
+   "nameEn": "Game Development",
+   "dept": "게임개발팀",
+   "archetype": "tech_dev"
+  },
+  {
+   "id": "game_business",
+   "domain": "game",
+   "name": "게임 기획·사업",
+   "nameEn": "Game Design & Business",
+   "dept": "게임사업팀",
+   "archetype": "product_planning"
+  },
+  {
+   "id": "digital_design",
+   "domain": "design",
+   "name": "UX·UI·프로덕트 디자인",
+   "nameEn": "Digital Product Design",
+   "dept": "디자인팀",
+   "archetype": "design_creative"
+  },
+  {
+   "id": "visual_design",
+   "domain": "design",
+   "name": "시각·산업 디자인",
+   "nameEn": "Visual & Industrial Design",
+   "dept": "디자인팀",
+   "archetype": "design_creative"
+  },
+  {
+   "id": "content",
+   "domain": "content",
+   "name": "콘텐츠",
+   "nameEn": "Content",
+   "dept": "콘텐츠팀",
+   "archetype": "media_content"
+  },
+  {
+   "id": "broadcast",
+   "domain": "broadcast",
+   "name": "영상·방송",
+   "nameEn": "Video & Broadcasting",
+   "dept": "제작팀",
+   "archetype": "media_content"
+  },
+  {
+   "id": "rnd",
+   "domain": "rnd",
+   "name": "연구개발",
+   "nameEn": "R&D",
+   "dept": "R&D센터",
+   "archetype": "engineering_design"
+  },
+  {
+   "id": "semiconductor",
+   "domain": "electronics",
+   "name": "반도체",
+   "nameEn": "Semiconductors",
+   "dept": "반도체사업부",
+   "archetype": "manufacturing_quality"
+  },
+  {
+   "id": "electronics",
+   "domain": "electronics",
+   "name": "전기·전자",
+   "nameEn": "Electrical & Electronics",
+   "dept": "전자개발팀",
+   "archetype": "engineering_design"
+  },
+  {
+   "id": "mechanical",
+   "domain": "mechanical",
+   "name": "기계·자동차",
+   "nameEn": "Mechanical & Automotive",
+   "dept": "기계설계팀",
+   "archetype": "engineering_design"
+  },
+  {
+   "id": "chemical",
+   "domain": "chemical",
+   "name": "화학·소재",
+   "nameEn": "Chemicals & Materials",
+   "dept": "소재연구소",
+   "archetype": "research_science"
+  },
+  {
+   "id": "bio_pharma",
+   "domain": "bio",
+   "name": "바이오·제약",
+   "nameEn": "Bio & Pharma",
+   "dept": "연구소",
+   "archetype": "research_science"
+  },
+  {
+   "id": "environment",
+   "domain": "environment",
+   "name": "환경",
+   "nameEn": "Environment",
+   "dept": "환경안전팀",
+   "archetype": "safety_environment"
+  },
+  {
+   "id": "energy",
+   "domain": "energy",
+   "name": "에너지",
+   "nameEn": "Energy",
+   "dept": "발전사업팀",
+   "archetype": "manufacturing_quality"
+  },
+  {
+   "id": "architecture",
+   "domain": "architecture",
+   "name": "건축",
+   "nameEn": "Architecture",
+   "dept": "건축사업팀",
+   "archetype": "field_construction"
+  },
+  {
+   "id": "civil",
+   "domain": "civil",
+   "name": "토목",
+   "nameEn": "Civil Engineering",
+   "dept": "토목사업팀",
+   "archetype": "field_construction"
+  },
+  {
+   "id": "landscape",
+   "domain": "civil",
+   "name": "조경",
+   "nameEn": "Landscape",
+   "dept": "조경팀",
+   "archetype": "field_construction"
+  },
+  {
+   "id": "safety",
+   "domain": "safety",
+   "name": "안전·보건",
+   "nameEn": "Safety & Health",
+   "dept": "안전보건팀",
+   "archetype": "safety_environment"
+  },
+  {
+   "id": "production",
+   "domain": "production",
+   "name": "생산·제조",
+   "nameEn": "Production",
+   "dept": "생산팀",
+   "archetype": "manufacturing_quality"
+  },
+  {
+   "id": "quality",
+   "domain": "quality",
+   "name": "품질",
+   "nameEn": "Quality",
+   "dept": "품질팀",
+   "archetype": "manufacturing_quality"
+  },
+  {
+   "id": "process",
+   "domain": "process",
+   "name": "공정",
+   "nameEn": "Process",
+   "dept": "공정기술팀",
+   "archetype": "manufacturing_quality"
+  },
+  {
+   "id": "science",
+   "domain": "science",
+   "name": "기초·응용과학",
+   "nameEn": "Science",
+   "dept": "연구소",
+   "archetype": "research_science"
+  },
+  {
+   "id": "school",
+   "domain": "education",
+   "name": "학교 교육",
+   "nameEn": "School Teaching",
+   "dept": "교무부",
+   "archetype": "education"
+  },
+  {
+   "id": "edu_business",
+   "domain": "education",
+   "name": "교육 서비스",
+   "nameEn": "Education Services",
+   "dept": "교육사업팀",
+   "archetype": "education"
+  },
+  {
+   "id": "nursing",
+   "domain": "medical",
+   "name": "간호",
+   "nameEn": "Nursing",
+   "dept": "간호부",
+   "archetype": "clinical_care"
+  },
+  {
+   "id": "medical_staff",
+   "domain": "medical",
+   "name": "의료",
+   "nameEn": "Medical",
+   "dept": "진료부",
+   "archetype": "clinical_care"
+  },
+  {
+   "id": "allied_health",
+   "domain": "health_tech",
+   "name": "보건의료기술",
+   "nameEn": "Allied Health",
+   "dept": "의료기술부",
+   "archetype": "clinical_care"
+  },
+  {
+   "id": "public_health",
+   "domain": "health_tech",
+   "name": "보건",
+   "nameEn": "Public Health",
+   "dept": "보건사업팀",
+   "archetype": "clinical_care"
+  },
+  {
+   "id": "welfare",
+   "domain": "welfare",
+   "name": "사회복지",
+   "nameEn": "Social Welfare",
+   "dept": "사회복지팀",
+   "archetype": "social_care"
+  },
+  {
+   "id": "counseling",
+   "domain": "counseling",
+   "name": "상담",
+   "nameEn": "Counseling",
+   "dept": "상담센터",
+   "archetype": "social_care"
+  },
+  {
+   "id": "hotel_tourism",
+   "domain": "hospitality",
+   "name": "호텔·관광",
+   "nameEn": "Hotels & Tourism",
+   "dept": "객실팀",
+   "archetype": "service_hospitality"
+  },
+  {
+   "id": "aviation",
+   "domain": "aviation",
+   "name": "항공",
+   "nameEn": "Aviation",
+   "dept": "운항·객실본부",
+   "archetype": "service_hospitality"
+  },
+  {
+   "id": "food_service",
+   "domain": "food",
+   "name": "외식",
+   "nameEn": "Food Service",
+   "dept": "외식사업팀",
+   "archetype": "service_hospitality"
+  },
+  {
+   "id": "food_industry",
+   "domain": "food",
+   "name": "식품",
+   "nameEn": "Food Industry",
+   "dept": "식품연구소",
+   "archetype": "research_science"
+  },
+  {
+   "id": "retail",
+   "domain": "retail",
+   "name": "유통·리테일",
+   "nameEn": "Retail",
+   "dept": "영업관리팀",
+   "archetype": "sales_customer"
+  },
+  {
+   "id": "civil_service",
+   "domain": "public_admin",
+   "name": "공무원",
+   "nameEn": "Civil Service",
+   "dept": "행정지원과",
+   "archetype": "public_service"
+  },
+  {
+   "id": "public_enterprise",
+   "domain": "public_enterprise",
+   "name": "공기업",
+   "nameEn": "Public Enterprises",
+   "dept": "인재개발원",
+   "archetype": "public_service"
+  },
+  {
+   "id": "nonprofit",
+   "domain": "nonprofit",
+   "name": "비영리·공공기관",
+   "nameEn": "Nonprofits & Public Institutions",
+   "dept": "사업운영팀",
+   "archetype": "public_service"
+  },
+  {
+   "id": "research_institute",
+   "domain": "research_institute",
+   "name": "연구기관",
+   "nameEn": "Research Institutes",
+   "dept": "연구기획실",
+   "archetype": "research_science"
+  },
+  {
+   "id": "culture_arts",
+   "domain": "culture_arts",
+   "name": "문화·예술",
+   "nameEn": "Culture & Arts",
+   "dept": "기획팀",
+   "archetype": "media_content"
+  },
+  {
+   "id": "sports",
+   "domain": "sports",
+   "name": "스포츠",
+   "nameEn": "Sports",
+   "dept": "스포츠사업팀",
+   "archetype": "service_hospitality"
+  },
+  {
+   "id": "licensed",
+   "domain": "professional",
+   "name": "전문자격",
+   "nameEn": "Licensed Professions",
+   "dept": "전문위원",
+   "archetype": "legal_compliance"
+  },
+  {
+   "id": "language_realestate",
+   "domain": "professional",
+   "name": "통번역·부동산",
+   "nameEn": "Translation & Real Estate",
+   "dept": "전문위원",
+   "archetype": "media_content"
+  }
+ ],
+ "roles": [
+  {
+   "id": "strategy_planner",
+   "family": "strategy_planning",
+   "ko": "전략기획",
+   "en": "Strategy Planner"
+  },
+  {
+   "id": "business_planner",
+   "family": "strategy_planning",
+   "ko": "사업기획",
+   "en": "Business Planner"
+  },
+  {
+   "id": "corporate_planner",
+   "family": "strategy_planning",
+   "ko": "경영기획",
+   "en": "Corporate Planning"
+  },
+  {
+   "id": "business_management",
+   "family": "strategy_planning",
+   "ko": "경영관리·경영지원",
+   "en": "Business Management"
+  },
+  {
+   "id": "new_business",
+   "family": "strategy_planning",
+   "ko": "신사업기획",
+   "en": "New Business Development"
+  },
+  {
+   "id": "management_consultant",
+   "family": "strategy_planning",
+   "ko": "경영컨설턴트",
+   "en": "Management Consultant"
+  },
+  {
+   "id": "ir_manager",
+   "family": "investment_ir",
+   "ko": "IR",
+   "en": "Investor Relations"
+  },
+  {
+   "id": "corporate_investment",
+   "family": "investment_ir",
+   "ko": "기업투자·M&A",
+   "en": "Corporate Investment / M&A"
+  },
+  {
+   "id": "recruiter",
+   "family": "hr_people",
+   "ko": "채용 담당",
+   "en": "Recruiter / Talent Acquisition"
+  },
+  {
+   "id": "hr_planner",
+   "family": "hr_people",
+   "ko": "인사기획",
+   "en": "HR Planning"
+  },
+  {
+   "id": "hrd",
+   "family": "hr_people",
+   "ko": "HRD·교육",
+   "en": "HR Development"
+  },
+  {
+   "id": "hrbp",
+   "family": "hr_people",
+   "ko": "HRBP",
+   "en": "HR Business Partner"
+  },
+  {
+   "id": "compensation",
+   "family": "hr_people",
+   "ko": "보상·평가(C&B)",
+   "en": "Compensation & Benefits"
+  },
+  {
+   "id": "org_culture",
+   "family": "hr_people",
+   "ko": "조직문화",
+   "en": "Organizational Culture"
+  },
+  {
+   "id": "labor_relations",
+   "family": "labor",
+   "ko": "노무 담당",
+   "en": "Labor Relations Specialist"
+  },
+  {
+   "id": "general_affairs",
+   "family": "general_affairs",
+   "ko": "총무",
+   "en": "General Affairs"
+  },
+  {
+   "id": "office_admin",
+   "family": "general_affairs",
+   "ko": "사무·행정지원",
+   "en": "Office Administrator"
+  },
+  {
+   "id": "secretary",
+   "family": "general_affairs",
+   "ko": "비서",
+   "en": "Executive Assistant"
+  },
+  {
+   "id": "facility_asset",
+   "family": "general_affairs",
+   "ko": "자산·시설관리",
+   "en": "Facility & Asset Management"
+  },
+  {
+   "id": "accountant",
+   "family": "accounting",
+   "ko": "회계(재무회계)",
+   "en": "Accountant"
+  },
+  {
+   "id": "cost_accountant",
+   "family": "accounting",
+   "ko": "관리회계·원가",
+   "en": "Management / Cost Accountant"
+  },
+  {
+   "id": "internal_control",
+   "family": "accounting",
+   "ko": "내부회계·내부통제",
+   "en": "Internal Control"
+  },
+  {
+   "id": "finance_manager",
+   "family": "corporate_finance",
+   "ko": "재무",
+   "en": "Corporate Finance"
+  },
+  {
+   "id": "treasury",
+   "family": "corporate_finance",
+   "ko": "자금",
+   "en": "Treasury"
+  },
+  {
+   "id": "fpa",
+   "family": "corporate_finance",
+   "ko": "FP&A",
+   "en": "FP&A Analyst"
+  },
+  {
+   "id": "tax_specialist",
+   "family": "tax",
+   "ko": "세무",
+   "en": "Tax Specialist"
+  },
+  {
+   "id": "auditor",
+   "family": "tax",
+   "ko": "회계감사·공인회계사",
+   "en": "Auditor / CPA"
+  },
+  {
+   "id": "internal_auditor",
+   "family": "tax",
+   "ko": "내부감사",
+   "en": "Internal Auditor"
+  },
+  {
+   "id": "bank_teller",
+   "family": "banking",
+   "ko": "은행원(리테일)",
+   "en": "Retail Banker"
+  },
+  {
+   "id": "private_banker",
+   "family": "banking",
+   "ko": "PB",
+   "en": "Private Banker"
+  },
+  {
+   "id": "relationship_manager",
+   "family": "banking",
+   "ko": "기업금융 RM",
+   "en": "Corporate Relationship Manager"
+  },
+  {
+   "id": "credit_analyst",
+   "family": "banking",
+   "ko": "여신심사",
+   "en": "Credit Analyst"
+  },
+  {
+   "id": "securities",
+   "family": "securities_am",
+   "ko": "증권(리서치·세일즈)",
+   "en": "Securities Research & Sales"
+  },
+  {
+   "id": "investment_banker",
+   "family": "securities_am",
+   "ko": "IB(투자은행)",
+   "en": "Investment Banker"
+  },
+  {
+   "id": "asset_manager",
+   "family": "securities_am",
+   "ko": "자산운용",
+   "en": "Asset Manager"
+  },
+  {
+   "id": "risk_manager",
+   "family": "securities_am",
+   "ko": "리스크관리",
+   "en": "Risk Manager"
+  },
+  {
+   "id": "underwriter",
+   "family": "insurance",
+   "ko": "보험심사(언더라이팅)",
+   "en": "Underwriter"
+  },
+  {
+   "id": "actuary",
+   "family": "insurance",
+   "ko": "보험계리",
+   "en": "Actuary"
+  },
+  {
+   "id": "claims_adjuster",
+   "family": "insurance",
+   "ko": "보상·손해사정",
+   "en": "Claims Adjuster"
+  },
+  {
+   "id": "corporate_legal",
+   "family": "legal",
+   "ko": "기업법무",
+   "en": "In-house Legal Counsel"
+  },
+  {
+   "id": "lawyer",
+   "family": "legal",
+   "ko": "변호사",
+   "en": "Lawyer"
+  },
+  {
+   "id": "ip_specialist",
+   "family": "legal",
+   "ko": "특허·IP 관리",
+   "en": "IP Specialist"
+  },
+  {
+   "id": "compliance_officer",
+   "family": "compliance",
+   "ko": "컴플라이언스(준법감시)",
+   "en": "Compliance Officer"
+  },
+  {
+   "id": "privacy_officer",
+   "family": "compliance",
+   "ko": "개인정보보호",
+   "en": "Privacy Officer"
+  },
+  {
+   "id": "performance_marketer",
+   "family": "digital_marketing",
+   "ko": "퍼포먼스 마케팅",
+   "en": "Performance Marketer"
+  },
+  {
+   "id": "growth_marketer",
+   "family": "digital_marketing",
+   "ko": "그로스 마케팅",
+   "en": "Growth Marketer"
+  },
+  {
+   "id": "crm_marketer",
+   "family": "digital_marketing",
+   "ko": "CRM 마케팅",
+   "en": "CRM Marketer"
+  },
+  {
+   "id": "content_marketer",
+   "family": "digital_marketing",
+   "ko": "콘텐츠 마케팅",
+   "en": "Content Marketer"
+  },
+  {
+   "id": "brand_marketer",
+   "family": "brand",
+   "ko": "브랜드 마케팅",
+   "en": "Brand Marketer"
+  },
+  {
+   "id": "pr_specialist",
+   "family": "brand",
+   "ko": "홍보·PR",
+   "en": "PR Specialist"
+  },
+  {
+   "id": "product_marketer",
+   "family": "brand",
+   "ko": "프로덕트 마케팅",
+   "en": "Product Marketer"
+  },
+  {
+   "id": "market_researcher",
+   "family": "brand",
+   "ko": "시장조사·리서치",
+   "en": "Market Researcher"
+  },
+  {
+   "id": "ad_planner",
+   "family": "advertising",
+   "ko": "광고기획",
+   "en": "Advertising Planner"
+  },
+  {
+   "id": "account_executive",
+   "family": "advertising",
+   "ko": "AE",
+   "en": "Account Executive"
+  },
+  {
+   "id": "domestic_sales",
+   "family": "sales",
+   "ko": "국내영업",
+   "en": "Domestic Sales"
+  },
+  {
+   "id": "b2b_sales",
+   "family": "sales",
+   "ko": "B2B 영업",
+   "en": "B2B Sales"
+  },
+  {
+   "id": "technical_sales",
+   "family": "sales",
+   "ko": "기술영업",
+   "en": "Technical Sales"
+  },
+  {
+   "id": "solution_sales",
+   "family": "sales",
+   "ko": "솔루션 영업",
+   "en": "Solution Sales"
+  },
+  {
+   "id": "auto_sales",
+   "family": "sales",
+   "ko": "자동차 영업",
+   "en": "Automotive Sales"
+  },
+  {
+   "id": "pharma_sales",
+   "family": "sales",
+   "ko": "제약영업(MR)",
+   "en": "Pharmaceutical Sales Rep"
+  },
+  {
+   "id": "sales_manager",
+   "family": "sales_ops",
+   "ko": "영업관리",
+   "en": "Sales Operations Manager"
+  },
+  {
+   "id": "key_account",
+   "family": "sales_ops",
+   "ko": "키어카운트 관리",
+   "en": "Key Account Manager"
+  },
+  {
+   "id": "overseas_sales",
+   "family": "trade",
+   "ko": "해외영업",
+   "en": "Overseas Sales"
+  },
+  {
+   "id": "trade_admin",
+   "family": "trade",
+   "ko": "무역사무",
+   "en": "Trade Administrator"
+  },
+  {
+   "id": "global_business",
+   "family": "trade",
+   "ko": "글로벌 사업개발",
+   "en": "Global Business Development"
+  },
+  {
+   "id": "md",
+   "family": "merchandising",
+   "ko": "상품기획 MD",
+   "en": "Merchandiser"
+  },
+  {
+   "id": "online_md",
+   "family": "merchandising",
+   "ko": "온라인 MD",
+   "en": "E-commerce Merchandiser"
+  },
+  {
+   "id": "buyer",
+   "family": "merchandising",
+   "ko": "바이어",
+   "en": "Buyer"
+  },
+  {
+   "id": "fashion_md",
+   "family": "merchandising",
+   "ko": "패션 MD",
+   "en": "Fashion Merchandiser"
+  },
+  {
+   "id": "purchaser",
+   "family": "purchasing",
+   "ko": "구매",
+   "en": "Purchasing Specialist"
+  },
+  {
+   "id": "strategic_sourcing",
+   "family": "purchasing",
+   "ko": "전략구매·소싱",
+   "en": "Strategic Sourcing"
+  },
+  {
+   "id": "public_procurement",
+   "family": "purchasing",
+   "ko": "조달·계약",
+   "en": "Procurement & Contracts"
+  },
+  {
+   "id": "scm_planner",
+   "family": "scm",
+   "ko": "SCM",
+   "en": "Supply Chain Manager"
+  },
+  {
+   "id": "logistics_manager",
+   "family": "scm",
+   "ko": "물류관리",
+   "en": "Logistics Manager"
+  },
+  {
+   "id": "demand_planner",
+   "family": "scm",
+   "ko": "수요예측·수급계획",
+   "en": "Demand Planner"
+  },
+  {
+   "id": "warehouse_ops",
+   "family": "scm",
+   "ko": "물류센터 운영",
+   "en": "Warehouse Operations"
+  },
+  {
+   "id": "cs_agent",
+   "family": "customer_support",
+   "ko": "CS 상담",
+   "en": "Customer Service Representative"
+  },
+  {
+   "id": "cs_manager",
+   "family": "customer_support",
+   "ko": "CS 기획·운영",
+   "en": "Customer Experience Manager"
+  },
+  {
+   "id": "tech_support",
+   "family": "customer_support",
+   "ko": "기술지원",
+   "en": "Technical Support Engineer"
+  },
+  {
+   "id": "service_planner",
+   "family": "product",
+   "ko": "서비스기획",
+   "en": "Service Planner"
+  },
+  {
+   "id": "product_manager",
+   "family": "product",
+   "ko": "PM(프로덕트 매니저)",
+   "en": "Product Manager"
+  },
+  {
+   "id": "product_owner",
+   "family": "product",
+   "ko": "PO(프로덕트 오너)",
+   "en": "Product Owner"
+  },
+  {
+   "id": "project_manager_it",
+   "family": "product",
+   "ko": "IT 프로젝트 매니저",
+   "en": "IT Project Manager"
+  },
+  {
+   "id": "frontend",
+   "family": "software",
+   "ko": "프론트엔드 개발자",
+   "en": "Frontend Developer"
+  },
+  {
+   "id": "backend",
+   "family": "software",
+   "ko": "백엔드 개발자",
+   "en": "Backend Developer"
+  },
+  {
+   "id": "fullstack",
+   "family": "software",
+   "ko": "풀스택 개발자",
+   "en": "Full-stack Developer"
+  },
+  {
+   "id": "ios",
+   "family": "software",
+   "ko": "iOS 개발자",
+   "en": "iOS Developer"
+  },
+  {
+   "id": "android",
+   "family": "software",
+   "ko": "Android 개발자",
+   "en": "Android Developer"
+  },
+  {
+   "id": "embedded_sw",
+   "family": "software",
+   "ko": "임베디드 개발자",
+   "en": "Embedded Software Engineer"
+  },
+  {
+   "id": "qa_engineer",
+   "family": "software",
+   "ko": "QA 엔지니어",
+   "en": "QA Engineer"
+  },
+  {
+   "id": "sw_architect",
+   "family": "software",
+   "ko": "솔루션 아키텍트",
+   "en": "Solutions Architect"
+  },
+  {
+   "id": "data_analyst",
+   "family": "data",
+   "ko": "데이터 분석가",
+   "en": "Data Analyst"
+  },
+  {
+   "id": "bi_analyst",
+   "family": "data",
+   "ko": "BI 분석가",
+   "en": "BI Analyst"
+  },
+  {
+   "id": "data_scientist",
+   "family": "data",
+   "ko": "데이터 사이언티스트",
+   "en": "Data Scientist"
+  },
+  {
+   "id": "data_engineer",
+   "family": "ai",
+   "ko": "데이터 엔지니어",
+   "en": "Data Engineer"
+  },
+  {
+   "id": "ml_engineer",
+   "family": "ai",
+   "ko": "ML 엔지니어",
+   "en": "Machine Learning Engineer"
+  },
+  {
+   "id": "ai_engineer",
+   "family": "ai",
+   "ko": "AI 엔지니어",
+   "en": "AI Engineer"
+  },
+  {
+   "id": "ai_researcher",
+   "family": "ai",
+   "ko": "AI 연구원",
+   "en": "AI Research Scientist"
+  },
+  {
+   "id": "ai_pm",
+   "family": "ai",
+   "ko": "AI PM",
+   "en": "AI Product Manager"
+  },
+  {
+   "id": "devops",
+   "family": "infra",
+   "ko": "DevOps 엔지니어",
+   "en": "DevOps Engineer"
+  },
+  {
+   "id": "sre",
+   "family": "infra",
+   "ko": "SRE",
+   "en": "Site Reliability Engineer"
+  },
+  {
+   "id": "cloud_engineer",
+   "family": "infra",
+   "ko": "클라우드 엔지니어",
+   "en": "Cloud Engineer"
+  },
+  {
+   "id": "system_engineer",
+   "family": "infra",
+   "ko": "시스템 엔지니어",
+   "en": "Systems Engineer"
+  },
+  {
+   "id": "network_engineer",
+   "family": "infra",
+   "ko": "네트워크 엔지니어",
+   "en": "Network Engineer"
+  },
+  {
+   "id": "dba",
+   "family": "infra",
+   "ko": "DBA",
+   "en": "Database Administrator"
+  },
+  {
+   "id": "security_engineer",
+   "family": "security",
+   "ko": "보안 엔지니어",
+   "en": "Security Engineer"
+  },
+  {
+   "id": "security_analyst",
+   "family": "security",
+   "ko": "보안관제·침해대응",
+   "en": "Security Operations Analyst"
+  },
+  {
+   "id": "game_client",
+   "family": "game",
+   "ko": "게임 클라이언트 개발자",
+   "en": "Game Client Programmer"
+  },
+  {
+   "id": "game_server",
+   "family": "game",
+   "ko": "게임 서버 개발자",
+   "en": "Game Server Programmer"
+  },
+  {
+   "id": "game_designer",
+   "family": "game_business",
+   "ko": "게임기획",
+   "en": "Game Designer"
+  },
+  {
+   "id": "game_ops",
+   "family": "game_business",
+   "ko": "게임 운영·사업PM",
+   "en": "Game Operations / Live PM"
+  },
+  {
+   "id": "ux_designer",
+   "family": "digital_design",
+   "ko": "UX 디자이너",
+   "en": "UX Designer"
+  },
+  {
+   "id": "ui_designer",
+   "family": "digital_design",
+   "ko": "UI 디자이너",
+   "en": "UI Designer"
+  },
+  {
+   "id": "product_designer",
+   "family": "digital_design",
+   "ko": "프로덕트 디자이너",
+   "en": "Product Designer"
+  },
+  {
+   "id": "graphic_designer",
+   "family": "visual_design",
+   "ko": "그래픽·BX 디자이너",
+   "en": "Graphic / Brand Designer"
+  },
+  {
+   "id": "industrial_designer",
+   "family": "visual_design",
+   "ko": "제품(산업) 디자이너",
+   "en": "Industrial Designer"
+  },
+  {
+   "id": "interior_designer",
+   "family": "visual_design",
+   "ko": "인테리어 디자이너",
+   "en": "Interior Designer"
+  },
+  {
+   "id": "fashion_designer",
+   "family": "visual_design",
+   "ko": "패션 디자이너",
+   "en": "Fashion Designer"
+  },
+  {
+   "id": "content_planner",
+   "family": "content",
+   "ko": "콘텐츠 기획",
+   "en": "Content Planner"
+  },
+  {
+   "id": "editor",
+   "family": "content",
+   "ko": "출판 편집자",
+   "en": "Editor"
+  },
+  {
+   "id": "copywriter",
+   "family": "content",
+   "ko": "카피라이터",
+   "en": "Copywriter"
+  },
+  {
+   "id": "journalist",
+   "family": "content",
+   "ko": "기자",
+   "en": "Journalist / Reporter"
+  },
+  {
+   "id": "broadcast_pd",
+   "family": "broadcast",
+   "ko": "방송 PD",
+   "en": "Broadcast Producer"
+  },
+  {
+   "id": "video_producer",
+   "family": "broadcast",
+   "ko": "영상 PD·영상 제작",
+   "en": "Video Producer"
+  },
+  {
+   "id": "video_editor",
+   "family": "broadcast",
+   "ko": "영상 편집자",
+   "en": "Video Editor"
+  },
+  {
+   "id": "broadcast_writer",
+   "family": "broadcast",
+   "ko": "방송작가",
+   "en": "Broadcast Writer"
+  },
+  {
+   "id": "announcer",
+   "family": "broadcast",
+   "ko": "아나운서",
+   "en": "Announcer"
+  },
+  {
+   "id": "rnd_planner",
+   "family": "rnd",
+   "ko": "연구기획·관리",
+   "en": "R&D Planner"
+  },
+  {
+   "id": "product_developer",
+   "family": "rnd",
+   "ko": "제품개발 엔지니어",
+   "en": "Product Development Engineer"
+  },
+  {
+   "id": "control_engineer",
+   "family": "rnd",
+   "ko": "제어 엔지니어",
+   "en": "Control Engineer"
+  },
+  {
+   "id": "semi_process",
+   "family": "semiconductor",
+   "ko": "반도체 공정 엔지니어",
+   "en": "Semiconductor Process Engineer"
+  },
+  {
+   "id": "semi_equipment",
+   "family": "semiconductor",
+   "ko": "반도체 설비 엔지니어",
+   "en": "Semiconductor Equipment Engineer"
+  },
+  {
+   "id": "semi_design",
+   "family": "semiconductor",
+   "ko": "반도체 회로설계",
+   "en": "Semiconductor Circuit Designer"
+  },
+  {
+   "id": "semi_yield",
+   "family": "semiconductor",
+   "ko": "수율·불량분석 엔지니어",
+   "en": "Yield / Failure Analysis Engineer"
+  },
+  {
+   "id": "hw_engineer",
+   "family": "electronics",
+   "ko": "하드웨어(전자회로) 개발",
+   "en": "Hardware Engineer"
+  },
+  {
+   "id": "electrical_engineer",
+   "family": "electronics",
+   "ko": "전기설계",
+   "en": "Electrical Design Engineer"
+  },
+  {
+   "id": "display_engineer",
+   "family": "electronics",
+   "ko": "디스플레이 엔지니어",
+   "en": "Display Engineer"
+  },
+  {
+   "id": "mechanical_designer",
+   "family": "mechanical",
+   "ko": "기계설계",
+   "en": "Mechanical Design Engineer"
+  },
+  {
+   "id": "automotive_engineer",
+   "family": "mechanical",
+   "ko": "자동차 연구개발",
+   "en": "Automotive R&D Engineer"
+  },
+  {
+   "id": "cae_engineer",
+   "family": "mechanical",
+   "ko": "해석(CAE) 엔지니어",
+   "en": "CAE Engineer"
+  },
+  {
+   "id": "robotics_engineer",
+   "family": "mechanical",
+   "ko": "로봇·메카트로닉스",
+   "en": "Robotics Engineer"
+  },
+  {
+   "id": "chemical_process",
+   "family": "chemical",
+   "ko": "화공 공정엔지니어",
+   "en": "Chemical Process Engineer"
+  },
+  {
+   "id": "materials_researcher",
+   "family": "chemical",
+   "ko": "소재 연구원",
+   "en": "Materials Researcher"
+  },
+  {
+   "id": "chemical_researcher",
+   "family": "chemical",
+   "ko": "화학 연구원(합성·분석)",
+   "en": "Chemical Researcher"
+  },
+  {
+   "id": "battery_engineer",
+   "family": "chemical",
+   "ko": "2차전지 엔지니어",
+   "en": "Battery Engineer"
+  },
+  {
+   "id": "bio_researcher",
+   "family": "bio_pharma",
+   "ko": "바이오 연구원",
+   "en": "Bio Researcher"
+  },
+  {
+   "id": "pharma_researcher",
+   "family": "bio_pharma",
+   "ko": "제약 연구원(신약개발)",
+   "en": "Pharmaceutical Researcher"
+  },
+  {
+   "id": "pharma_qa",
+   "family": "bio_pharma",
+   "ko": "제약 QA·QC(GMP)",
+   "en": "Pharma QA/QC"
+  },
+  {
+   "id": "cra",
+   "family": "bio_pharma",
+   "ko": "임상연구(CRA)",
+   "en": "Clinical Research Associate"
+  },
+  {
+   "id": "regulatory_affairs",
+   "family": "bio_pharma",
+   "ko": "인허가(RA)",
+   "en": "Regulatory Affairs"
+  },
+  {
+   "id": "env_engineer",
+   "family": "environment",
+   "ko": "환경 엔지니어",
+   "en": "Environmental Engineer"
+  },
+  {
+   "id": "env_consultant",
+   "family": "environment",
+   "ko": "환경영향평가·컨설팅",
+   "en": "Environmental Consultant"
+  },
+  {
+   "id": "esg_manager",
+   "family": "environment",
+   "ko": "ESG 담당",
+   "en": "ESG Manager"
+  },
+  {
+   "id": "power_plant_ops",
+   "family": "energy",
+   "ko": "발전설비 운영",
+   "en": "Power Plant Operations Engineer"
+  },
+  {
+   "id": "renewable_energy",
+   "family": "energy",
+   "ko": "신재생에너지",
+   "en": "Renewable Energy Engineer"
+  },
+  {
+   "id": "power_grid",
+   "family": "energy",
+   "ko": "전력계통",
+   "en": "Power Systems Engineer"
+  },
+  {
+   "id": "architect",
+   "family": "architecture",
+   "ko": "건축설계",
+   "en": "Architectural Designer"
+  },
+  {
+   "id": "building_construction",
+   "family": "architecture",
+   "ko": "건축시공·현장관리",
+   "en": "Construction Site Manager"
+  },
+  {
+   "id": "building_services",
+   "family": "architecture",
+   "ko": "건축설비(MEP)",
+   "en": "MEP Engineer"
+  },
+  {
+   "id": "cost_estimator",
+   "family": "architecture",
+   "ko": "적산·공무",
+   "en": "Cost Estimator / Project Controls"
+  },
+  {
+   "id": "civil_designer",
+   "family": "civil",
+   "ko": "토목설계",
+   "en": "Civil Design Engineer"
+  },
+  {
+   "id": "civil_construction",
+   "family": "civil",
+   "ko": "토목시공",
+   "en": "Civil Construction Engineer"
+  },
+  {
+   "id": "structural_engineer",
+   "family": "civil",
+   "ko": "구조 엔지니어",
+   "en": "Structural Engineer"
+  },
+  {
+   "id": "landscape_architect",
+   "family": "landscape",
+   "ko": "조경설계·시공",
+   "en": "Landscape Architect"
+  },
+  {
+   "id": "safety_manager",
+   "family": "safety",
+   "ko": "안전관리자",
+   "en": "Safety Manager"
+  },
+  {
+   "id": "health_manager",
+   "family": "safety",
+   "ko": "보건관리자",
+   "en": "Occupational Health Manager"
+  },
+  {
+   "id": "construction_safety",
+   "family": "safety",
+   "ko": "건설 안전관리",
+   "en": "Construction Safety Manager"
+  },
+  {
+   "id": "fire_safety",
+   "family": "safety",
+   "ko": "소방안전관리",
+   "en": "Fire Safety Manager"
+  },
+  {
+   "id": "production_manager",
+   "family": "production",
+   "ko": "생산관리",
+   "en": "Production Manager"
+  },
+  {
+   "id": "production_engineer",
+   "family": "production",
+   "ko": "생산기술",
+   "en": "Production Engineer"
+  },
+  {
+   "id": "maintenance_engineer",
+   "family": "production",
+   "ko": "설비보전",
+   "en": "Maintenance Engineer"
+  },
+  {
+   "id": "shop_floor_supervisor",
+   "family": "production",
+   "ko": "제조 현장관리",
+   "en": "Shop Floor Supervisor"
+  },
+  {
+   "id": "quality_control",
+   "family": "quality",
+   "ko": "품질관리(QC)",
+   "en": "Quality Control"
+  },
+  {
+   "id": "quality_assurance",
+   "family": "quality",
+   "ko": "품질보증(QA)",
+   "en": "Quality Assurance"
+  },
+  {
+   "id": "supplier_quality",
+   "family": "quality",
+   "ko": "협력사 품질(SQ)",
+   "en": "Supplier Quality Engineer"
+  },
+  {
+   "id": "reliability_engineer",
+   "family": "quality",
+   "ko": "신뢰성 엔지니어",
+   "en": "Reliability Engineer"
+  },
+  {
+   "id": "process_engineer",
+   "family": "process",
+   "ko": "공정기술",
+   "en": "Process Engineer"
+  },
+  {
+   "id": "process_innovation",
+   "family": "process",
+   "ko": "공정혁신·6시그마",
+   "en": "Process Improvement / Six Sigma"
+  },
+  {
+   "id": "industrial_engineer",
+   "family": "process",
+   "ko": "IE(산업공학)",
+   "en": "Industrial Engineer"
+  },
+  {
+   "id": "research_scientist",
+   "family": "science",
+   "ko": "연구원(기초·응용과학)",
+   "en": "Research Scientist"
+  },
+  {
+   "id": "lab_analyst",
+   "family": "science",
+   "ko": "분석 연구원",
+   "en": "Laboratory Analyst"
+  },
+  {
+   "id": "statistician",
+   "family": "science",
+   "ko": "통계 분석 연구원",
+   "en": "Statistician"
+  },
+  {
+   "id": "elementary_teacher",
+   "family": "school",
+   "ko": "초등교사",
+   "en": "Elementary School Teacher"
+  },
+  {
+   "id": "secondary_teacher",
+   "family": "school",
+   "ko": "중등교사",
+   "en": "Secondary School Teacher"
+  },
+  {
+   "id": "special_ed_teacher",
+   "family": "school",
+   "ko": "특수교사",
+   "en": "Special Education Teacher"
+  },
+  {
+   "id": "early_childhood_teacher",
+   "family": "school",
+   "ko": "유치원·보육교사",
+   "en": "Early Childhood Teacher"
+  },
+  {
+   "id": "academy_instructor",
+   "family": "edu_business",
+   "ko": "학원 강사",
+   "en": "Academy Instructor"
+  },
+  {
+   "id": "edu_planner",
+   "family": "edu_business",
+   "ko": "교육기획·교육콘텐츠",
+   "en": "Education Program Planner"
+  },
+  {
+   "id": "corporate_trainer",
+   "family": "edu_business",
+   "ko": "기업교육 강사",
+   "en": "Corporate Trainer"
+  },
+  {
+   "id": "nurse",
+   "family": "nursing",
+   "ko": "간호사",
+   "en": "Registered Nurse"
+  },
+  {
+   "id": "nurse_aide",
+   "family": "nursing",
+   "ko": "간호조무사",
+   "en": "Nursing Assistant"
+  },
+  {
+   "id": "physician",
+   "family": "medical_staff",
+   "ko": "의사(전공의)",
+   "en": "Physician / Resident"
+  },
+  {
+   "id": "pharmacist",
+   "family": "medical_staff",
+   "ko": "약사",
+   "en": "Pharmacist"
+  },
+  {
+   "id": "hospital_admin",
+   "family": "medical_staff",
+   "ko": "병원행정·원무",
+   "en": "Hospital Administrator"
+  },
+  {
+   "id": "medical_coordinator",
+   "family": "medical_staff",
+   "ko": "병원 코디네이터",
+   "en": "Medical Coordinator"
+  },
+  {
+   "id": "physical_therapist",
+   "family": "allied_health",
+   "ko": "물리치료사",
+   "en": "Physical Therapist"
+  },
+  {
+   "id": "occupational_therapist",
+   "family": "allied_health",
+   "ko": "작업치료사",
+   "en": "Occupational Therapist"
+  },
+  {
+   "id": "clinical_lab_scientist",
+   "family": "allied_health",
+   "ko": "임상병리사",
+   "en": "Clinical Laboratory Scientist"
+  },
+  {
+   "id": "radiologic_technologist",
+   "family": "allied_health",
+   "ko": "방사선사",
+   "en": "Radiologic Technologist"
+  },
+  {
+   "id": "dental_hygienist",
+   "family": "allied_health",
+   "ko": "치과위생사",
+   "en": "Dental Hygienist"
+  },
+  {
+   "id": "dietitian",
+   "family": "allied_health",
+   "ko": "영양사",
+   "en": "Dietitian"
+  },
+  {
+   "id": "public_health_officer",
+   "family": "public_health",
+   "ko": "보건직(보건소)",
+   "en": "Public Health Officer"
+  },
+  {
+   "id": "social_worker",
+   "family": "welfare",
+   "ko": "사회복지사",
+   "en": "Social Worker"
+  },
+  {
+   "id": "care_manager",
+   "family": "welfare",
+   "ko": "요양·돌봄 관리",
+   "en": "Care Manager"
+  },
+  {
+   "id": "youth_worker",
+   "family": "welfare",
+   "ko": "청소년지도사",
+   "en": "Youth Worker"
+  },
+  {
+   "id": "medical_social_worker",
+   "family": "welfare",
+   "ko": "의료사회복지사",
+   "en": "Medical Social Worker"
+  },
+  {
+   "id": "counselor",
+   "family": "counseling",
+   "ko": "심리상담사",
+   "en": "Counselor / Psychotherapist"
+  },
+  {
+   "id": "career_counselor",
+   "family": "counseling",
+   "ko": "진로·취업상담사",
+   "en": "Career Counselor"
+  },
+  {
+   "id": "school_counselor",
+   "family": "counseling",
+   "ko": "전문상담교사",
+   "en": "School Counselor"
+  },
+  {
+   "id": "hotelier",
+   "family": "hotel_tourism",
+   "ko": "호텔리어(프런트·객실)",
+   "en": "Hotel Front Office"
+  },
+  {
+   "id": "hotel_sales",
+   "family": "hotel_tourism",
+   "ko": "호텔 세일즈·마케팅",
+   "en": "Hotel Sales"
+  },
+  {
+   "id": "travel_planner",
+   "family": "hotel_tourism",
+   "ko": "여행상품기획",
+   "en": "Travel Product Planner"
+  },
+  {
+   "id": "tour_guide",
+   "family": "hotel_tourism",
+   "ko": "관광통역안내사",
+   "en": "Tour Guide"
+  },
+  {
+   "id": "mice_planner",
+   "family": "hotel_tourism",
+   "ko": "MICE 기획",
+   "en": "MICE Planner"
+  },
+  {
+   "id": "flight_attendant",
+   "family": "aviation",
+   "ko": "객실승무원",
+   "en": "Flight Attendant"
+  },
+  {
+   "id": "ground_staff",
+   "family": "aviation",
+   "ko": "항공 지상직",
+   "en": "Airline Ground Staff"
+  },
+  {
+   "id": "pilot",
+   "family": "aviation",
+   "ko": "조종사",
+   "en": "Pilot"
+  },
+  {
+   "id": "aircraft_mechanic",
+   "family": "aviation",
+   "ko": "항공정비사",
+   "en": "Aircraft Maintenance Technician"
+  },
+  {
+   "id": "restaurant_manager",
+   "family": "food_service",
+   "ko": "외식 매장관리",
+   "en": "Restaurant Manager"
+  },
+  {
+   "id": "chef",
+   "family": "food_service",
+   "ko": "조리사·셰프",
+   "en": "Chef / Cook"
+  },
+  {
+   "id": "barista",
+   "family": "food_service",
+   "ko": "바리스타",
+   "en": "Barista"
+  },
+  {
+   "id": "food_researcher",
+   "family": "food_industry",
+   "ko": "식품 연구개발",
+   "en": "Food R&D Researcher"
+  },
+  {
+   "id": "food_quality",
+   "family": "food_industry",
+   "ko": "식품 품질·위생(HACCP)",
+   "en": "Food Quality & Safety"
+  },
+  {
+   "id": "store_manager",
+   "family": "retail",
+   "ko": "매장관리·점장",
+   "en": "Store Manager"
+  },
+  {
+   "id": "retail_sm",
+   "family": "retail",
+   "ko": "유통 영업관리(SM)",
+   "en": "Retail Sales Manager"
+  },
+  {
+   "id": "ecommerce_ops",
+   "family": "retail",
+   "ko": "이커머스 운영",
+   "en": "E-commerce Operations"
+  },
+  {
+   "id": "vmd",
+   "family": "retail",
+   "ko": "VMD",
+   "en": "Visual Merchandiser"
+  },
+  {
+   "id": "admin_civil_servant",
+   "family": "civil_service",
+   "ko": "일반행정 공무원",
+   "en": "Administrative Civil Servant"
+  },
+  {
+   "id": "tech_civil_servant",
+   "family": "civil_service",
+   "ko": "기술직 공무원",
+   "en": "Technical Civil Servant"
+  },
+  {
+   "id": "tax_official",
+   "family": "civil_service",
+   "ko": "세무직 공무원",
+   "en": "Tax Official"
+  },
+  {
+   "id": "police_officer",
+   "family": "civil_service",
+   "ko": "경찰",
+   "en": "Police Officer"
+  },
+  {
+   "id": "firefighter",
+   "family": "civil_service",
+   "ko": "소방관",
+   "en": "Firefighter"
+  },
+  {
+   "id": "military_officer",
+   "family": "civil_service",
+   "ko": "군 간부",
+   "en": "Military Officer"
+  },
+  {
+   "id": "pe_admin",
+   "family": "public_enterprise",
+   "ko": "공기업 사무·행정",
+   "en": "Public Enterprise Administration"
+  },
+  {
+   "id": "pe_electrical",
+   "family": "public_enterprise",
+   "ko": "공기업 전기직",
+   "en": "Public Enterprise Electrical Engineer"
+  },
+  {
+   "id": "pe_mechanical",
+   "family": "public_enterprise",
+   "ko": "공기업 기계직",
+   "en": "Public Enterprise Mechanical Engineer"
+  },
+  {
+   "id": "pe_civil",
+   "family": "public_enterprise",
+   "ko": "공기업 토목직",
+   "en": "Public Enterprise Civil Engineer"
+  },
+  {
+   "id": "pe_it",
+   "family": "public_enterprise",
+   "ko": "공기업 전산직",
+   "en": "Public Enterprise IT"
+  },
+  {
+   "id": "ngo_program",
+   "family": "nonprofit",
+   "ko": "비영리 사업·프로그램 매니저",
+   "en": "NGO Program Manager"
+  },
+  {
+   "id": "fundraiser",
+   "family": "nonprofit",
+   "ko": "모금·후원 담당",
+   "en": "Fundraiser"
+  },
+  {
+   "id": "public_institution_staff",
+   "family": "nonprofit",
+   "ko": "공공기관 행정직",
+   "en": "Public Institution Staff"
+  },
+  {
+   "id": "policy_researcher",
+   "family": "research_institute",
+   "ko": "정책 연구원",
+   "en": "Policy Researcher"
+  },
+  {
+   "id": "gov_researcher",
+   "family": "research_institute",
+   "ko": "출연연 연구원",
+   "en": "Government-funded Institute Researcher"
+  },
+  {
+   "id": "research_admin",
+   "family": "research_institute",
+   "ko": "연구행정",
+   "en": "Research Administrator"
+  },
+  {
+   "id": "curator",
+   "family": "culture_arts",
+   "ko": "큐레이터·학예사",
+   "en": "Curator"
+  },
+  {
+   "id": "performance_planner",
+   "family": "culture_arts",
+   "ko": "공연·전시기획",
+   "en": "Performing Arts Producer"
+  },
+  {
+   "id": "arts_educator",
+   "family": "culture_arts",
+   "ko": "문화예술교육사",
+   "en": "Arts Educator"
+  },
+  {
+   "id": "sports_marketer",
+   "family": "sports",
+   "ko": "스포츠 마케팅",
+   "en": "Sports Marketer"
+  },
+  {
+   "id": "fitness_trainer",
+   "family": "sports",
+   "ko": "운동처방·트레이너",
+   "en": "Fitness Trainer"
+  },
+  {
+   "id": "sports_admin",
+   "family": "sports",
+   "ko": "스포츠 행정·구단 운영",
+   "en": "Sports Administrator"
+  },
+  {
+   "id": "labor_attorney",
+   "family": "licensed",
+   "ko": "공인노무사",
+   "en": "Certified Labor Attorney"
+  },
+  {
+   "id": "customs_broker",
+   "family": "licensed",
+   "ko": "관세사",
+   "en": "Customs Broker"
+  },
+  {
+   "id": "patent_attorney",
+   "family": "licensed",
+   "ko": "변리사",
+   "en": "Patent Attorney"
+  },
+  {
+   "id": "appraiser",
+   "family": "licensed",
+   "ko": "감정평가사",
+   "en": "Certified Appraiser"
+  },
+  {
+   "id": "translator",
+   "family": "language_realestate",
+   "ko": "통번역사",
+   "en": "Translator / Interpreter"
+  },
+  {
+   "id": "real_estate_manager",
+   "family": "language_realestate",
+   "ko": "부동산 자산관리",
+   "en": "Real Estate Asset Manager"
+  }
+ ]
+}

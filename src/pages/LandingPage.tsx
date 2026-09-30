@@ -97,7 +97,7 @@ interface Props {
 
 function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview; onResume: () => void; onDiscard: () => void }) {
   const i = active.interview;
-  const answered = i.questions.filter((q) => q.answer).length;
+  const answered = i.questions.filter((q) => q.answer && !q.isFollowUp).length;
   return (
     <motion.div
       initial={{ opacity: 0, y: -6 }}
@@ -109,7 +109,7 @@ function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview
       <div className="min-w-0 flex-1">
         <p className="text-[15px] font-bold text-accent">진행 중이던 면접이 있습니다</p>
         <p className="mt-0.5 text-[13px] text-muted">
-          {i.config.position} · {INTERVIEW_TYPE_KO[i.config.interviewType]} · {answered}/{i.config.questionLimit}문항 답변 · {longDate(active.savedAt)} 저장
+          {i.config.position} · {INTERVIEW_TYPE_KO[i.config.interviewType]} · {answered}/{i.config.questionLimit}문항 진행 · {longDate(active.savedAt)} 저장
         </p>
       </div>
       <div className="flex gap-2">
@@ -214,7 +214,7 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
               <div>
                 <h2 className="text-base font-bold text-ink">기업별 모의면접</h2>
                 <p className="text-[13px] text-muted">
-                  {COMPANIES.length}개 기업·기관의 인재상, 면접 전형, 기출 기반 질문으로 연습해 보세요.
+                  {COMPANIES.length}개 기업·기관의 인재상, 면접 전형, 공개자료 기반 연습 질문으로 준비해 보세요.
                 </p>
               </div>
               <button type="button" onClick={onCompanies} className="shrink-0 text-[13px] text-muted hover:text-ink">

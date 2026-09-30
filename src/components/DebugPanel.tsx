@@ -1,4 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { COMPANIES } from "../../shared/companies";
+import { ROLE_STATS, roleContextFor } from "../../shared/roles";
+import { poolStats } from "../../shared/roleBank";
 import type { InterviewController } from "../hooks/useInterview";
 import { currentQuestion } from "../state/interviewMachine";
 import { overallScore } from "../utils/scoring";
@@ -10,6 +13,20 @@ export function DebugPanel({ ctl, onClearData }: { ctl: InterviewController; onC
   const q = currentQuestion(state);
   const score = state.interview ? overallScore(state.interview.questions) : null;
   const inInterview = ["ASKING", "LISTENING"].includes(state.phase);
+  const config = state.interview?.config;
+  const [pool, setPool] = useState<Awaited<ReturnType<typeof poolStats>> | null>(null);
+  const roleCtx = config ? roleContextFor(config) : null;
+  useEffect(() => {
+    if (!config) return;
+    let alive = true;
+    poolStats(roleContextFor(config))
+      .then((p) => alive && setPool(p))
+      .catch(() => undefined);
+    return () => {
+      alive = false;
+    };
+  }, [config]);
+  const companyQuestions = COMPANIES.reduce((n, c) => n + c.questionCount, 0);
 
   const rows: [string, string][] = [
     ["MODE", fallbackActive ? "MOCK (fallback)" : (status?.mode ?? "…").toUpperCase()],
@@ -18,6 +35,13 @@ export function DebugPanel({ ctl, onClearData }: { ctl: InterviewController; onC
     ["QUESTION INDEX", state.interview ? `${state.interview.questions.length} / ${state.interview.config.questionLimit}` : "—"],
     ["CURRENT QUESTION", q ? `${q.isFollowUp ? "↳ " : ""}[${q.type}] ${q.text}` : "—"],
     ["CURRENT SCORE", score === null ? "—" : String(score)],
+    ["TOTAL ROLES", `${ROLE_STATS.roles} · ${ROLE_STATS.domains} domains`],
+    ["TOTAL QUESTIONS", `${ROLE_STATS.questions.toLocaleString()} (common ${ROLE_STATS.commonQuestions})`],
+    ["COMPANIES", `${COMPANIES.length} · ${companyQuestions.toLocaleString()} questions`],
+    ["CURRENT ROLE", roleCtx ? `${roleCtx.role?.id ?? roleCtx.kind} · ${roleCtx.domain?.name ?? "—"} › ${roleCtx.family?.name ?? "—"} · ${roleCtx.archetype}` : "—"],
+    ["ROLE QUESTIONS", config && pool ? `${pool.total} visible · ${pool.roleLevel} role/family/domain` : "—"],
+    ["ROLE TYPES", config && pool ? Object.entries(pool.types).sort((a, b) => b[1] - a[1]).map(([t, n]) => `${t} ${n}`).join(", ") : "—"],
+    ["ROLE CATEGORIES", config && pool ? String(pool.categories) : "—"],
     ["TOKEN STATUS", tokens.calls ? `${tokens.calls} calls · in ${tokens.inputTokens} · out ${tokens.outputTokens}` : status?.mode === "ai" ? "0 calls" : "n/a (mock)"],
   ];
 

@@ -1,0 +1,6167 @@
+{
+  "batch": "b02",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "여수광양항만공사 NCS 기반 채용 직무설명자료 — 사무직(회계: 회계·감사, 세무)",
+      "url": "https://raspfiles2.incruit.com/ygpa/data/108/SuccessData/addFile/05_%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C(%EA%B3%B5%EA%B0%9C%EA%B2%BD%EC%9F%81_4%EA%B8%89%20%EC%82%AC%EB%AC%B4_%ED%9A%8C%EA%B3%84).pdf",
+      "type": "ncs"
+    },
+    {
+      "id": "s2",
+      "title": "KIST 행정부문(재무·회계) NCS 기반 직무기술서 — 예산·자금·회계감사·세무",
+      "url": "https://kist.re.kr/ko/notice/employment-announcement.do?mode=download&articleNo=5523&attachNo=7645",
+      "type": "ncs",
+      "year": 2017
+    },
+    {
+      "id": "s3",
+      "title": "IBK기업은행 NCS기반 채용직무 설명자료 — 금융일반·금융전문",
+      "url": "https://raspfiles2.incruit.com/ibk/data/106/SuccessData/addFile/%EC%A7%81%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%84%9C.pdf",
+      "type": "official_recruitment",
+      "year": 2021
+    },
+    {
+      "id": "s4",
+      "title": "링커리어 커뮤니티 — 2025 우리은행 면접 합격 후기 모음",
+      "url": "https://community.linkareer.com/employment_data/4891176",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "s5",
+      "title": "링커리어 커뮤니티 — KB국민은행 2022 하반기 글로벌 IB 최종 면접 후기",
+      "url": "https://community.linkareer.com/interview/1927913",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "s6",
+      "title": "한화생명 공식 블로그 — 상품/계리 직무 소개(신입공개채용)",
+      "url": "https://www.lifentalk.com/1702",
+      "type": "official_recruitment"
+    },
+    {
+      "id": "s7",
+      "title": "한국보험계리사회 채용게시판 — 상품/계리/IFRS17/리스크관리 부문 통합 채용",
+      "url": "https://www.actuary.or.kr/board/offerView.do?id=634",
+      "type": "job_description",
+      "year": 2024
+    },
+    {
+      "id": "s8",
+      "title": "잡코리아 직업사전 — 손해사정사(업무·연봉·전망)",
+      "url": "https://m.jobkorea.co.kr/goodjob/tip/view?News_No=19002&schCtgr=120005",
+      "type": "other_public"
+    },
+    {
+      "id": "s9",
+      "title": "링커리어 채용공고 — 린데코리아 재경기획부문 FP&A specialist",
+      "url": "https://linkareer.com/activity/310937",
+      "type": "job_description",
+      "year": 2026
+    }
+  ],
+  "profiles": [
+    {
+      "id": "accountant",
+      "aliases": [
+        "회계",
+        "재무회계",
+        "회계 담당자",
+        "회계팀",
+        "결산 담당",
+        "Accountant",
+        "Financial Accountant",
+        "GL Accountant"
+      ],
+      "skills": [
+        "K-IFRS 회계처리",
+        "월·분기·연 결산",
+        "재무제표 작성",
+        "계정 분석",
+        "연결 결산",
+        "ERP(SAP FI)",
+        "엑셀"
+      ],
+      "responsibilities": [
+        "전표 검토와 계정 관리",
+        "월·분기·연 결산",
+        "재무제표·주석 작성",
+        "외부감사 대응",
+        "연결재무제표 작성 지원"
+      ],
+      "keywords": [
+        "결산",
+        "전표",
+        "계정과목",
+        "K-IFRS",
+        "재무제표",
+        "주석",
+        "수익인식",
+        "충당부채",
+        "연결",
+        "외부감사",
+        "시산표",
+        "closing"
+      ],
+      "topics": {
+        "role": [
+          "월 결산",
+          "수익 인식",
+          "재무제표 작성",
+          "외부감사 대응",
+          "계정 분석"
+        ],
+        "scenario": [
+          "결산 직전 잔액 불일치",
+          "현업의 기간 귀속 조정 요청",
+          "감사인의 회계처리 이의 제기",
+          "자회사 결산 자료 지연"
+        ],
+        "result": [
+          "결산 소요일",
+          "감사 수정 사항 건수",
+          "재무제표 오류율"
+        ],
+        "en": [
+          "month-end close",
+          "revenue recognition",
+          "financial reporting",
+          "external audit"
+        ]
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "cost_accountant",
+      "aliases": [
+        "관리회계",
+        "원가회계",
+        "원가 담당자",
+        "원가관리",
+        "원가팀",
+        "Cost Accountant",
+        "Management Accountant"
+      ],
+      "skills": [
+        "원가계산(표준·실제)",
+        "원가 차이 분석",
+        "간접비 배부",
+        "손익 분석",
+        "ERP(SAP CO)",
+        "엑셀 모델링"
+      ],
+      "responsibilities": [
+        "제품별 원가 산정",
+        "표준원가 설정과 차이 분석",
+        "사업·제품별 손익 분석",
+        "원가 절감 과제 지원",
+        "재무 결산과 원가 대사"
+      ],
+      "keywords": [
+        "원가",
+        "표준원가",
+        "배부",
+        "공헌이익",
+        "차이 분석",
+        "재공품",
+        "가동률",
+        "고정비",
+        "변동비",
+        "ABC",
+        "손익분기점",
+        "costing"
+      ],
+      "topics": {
+        "role": [
+          "표준원가 관리",
+          "간접비 배부",
+          "제품별 수익성",
+          "원가 절감",
+          "원가·재무 대사"
+        ],
+        "scenario": [
+          "원자재 가격 급등",
+          "원가 이하 수주 요청",
+          "배부 기준에 대한 현업 반발"
+        ],
+        "result": [
+          "원가율",
+          "원가 차이율",
+          "절감 금액"
+        ],
+        "en": [
+          "standard costing",
+          "variance analysis",
+          "overhead allocation",
+          "product profitability"
+        ]
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "internal_control",
+      "aliases": [
+        "내부회계",
+        "내부회계관리",
+        "내부통제",
+        "ICFR",
+        "SOX",
+        "Internal Control",
+        "내부회계관리제도 담당"
+      ],
+      "skills": [
+        "프로세스 위험 평가",
+        "통제 설계·운영 평가",
+        "통제 테스트와 표본 추출",
+        "미비점 평가",
+        "규정·문서화"
+      ],
+      "responsibilities": [
+        "내부회계관리제도 운영",
+        "핵심통제 선정과 문서화",
+        "통제 테스트 수행",
+        "미비점 개선 관리",
+        "외부감사인 대응"
+      ],
+      "keywords": [
+        "내부회계관리제도",
+        "핵심통제",
+        "RCM",
+        "설계평가",
+        "운영평가",
+        "미비점",
+        "직무분리",
+        "권한",
+        "부정위험",
+        "ITGC",
+        "walkthrough",
+        "control"
+      ],
+      "topics": {
+        "role": [
+          "핵심통제 관리",
+          "통제 테스트",
+          "미비점 평가",
+          "프로세스 문서화",
+          "부정 위험 관리"
+        ],
+        "scenario": [
+          "문서와 다른 실제 업무",
+          "감사인의 취약점 지적",
+          "현업의 통제 절차 반발"
+        ],
+        "result": [
+          "미비점 개선율",
+          "통제 테스트 예외 건수",
+          "감사 지적 사항 수"
+        ],
+        "en": [
+          "internal control over financial reporting",
+          "control testing",
+          "deficiency evaluation",
+          "segregation of duties"
+        ]
+      },
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "finance_manager",
+      "aliases": [
+        "재무",
+        "재무관리",
+        "재무팀",
+        "재무 담당자",
+        "기업재무",
+        "Corporate Finance",
+        "Finance Manager"
+      ],
+      "skills": [
+        "투자 타당성 분석(NPV·IRR)",
+        "자본구조 관리",
+        "자금 조달 구조 설계",
+        "재무 모델링",
+        "신용평가 대응",
+        "재무제표 분석"
+      ],
+      "responsibilities": [
+        "투자·자금 조달 의사결정 지원",
+        "자본구조와 재무 건전성 관리",
+        "금융기관·신용평가사 대응",
+        "M&A 등 재무 검토",
+        "재무 리스크 관리"
+      ],
+      "keywords": [
+        "NPV",
+        "IRR",
+        "WACC",
+        "부채비율",
+        "이자보상배율",
+        "회사채",
+        "차입",
+        "운전자본",
+        "신용등급",
+        "M&A",
+        "자본비용",
+        "capital structure"
+      ],
+      "topics": {
+        "role": [
+          "투자 타당성 검토",
+          "자본구조 관리",
+          "자금 조달",
+          "재무 리스크",
+          "신용평가 대응"
+        ],
+        "scenario": [
+          "대출 재약정 조건 변경",
+          "단기간 M&A 검토 요청",
+          "낙관적 사업계획 투자 요청"
+        ],
+        "result": [
+          "조달 금리",
+          "부채비율",
+          "투자 수익률"
+        ],
+        "en": [
+          "capital budgeting",
+          "capital structure",
+          "debt financing",
+          "credit rating"
+        ]
+      },
+      "sources": [
+        "s2"
+      ]
+    },
+    {
+      "id": "treasury",
+      "aliases": [
+        "자금",
+        "자금팀",
+        "자금 담당자",
+        "자금관리",
+        "트레저리",
+        "Treasury",
+        "Cash Management"
+      ],
+      "skills": [
+        "일일 자금 수지 관리",
+        "자금 계획 수립",
+        "여유자금 운용",
+        "외환 위험 관리",
+        "은행 거래 관리",
+        "지급 통제"
+      ],
+      "responsibilities": [
+        "일·월 자금 계획과 수지 관리",
+        "차입·상환과 금융기관 관리",
+        "여유자금 운용",
+        "환위험 관리",
+        "지급 집행과 통제"
+      ],
+      "keywords": [
+        "자금수지",
+        "유동성",
+        "여유자금",
+        "차입금",
+        "만기",
+        "환헤지",
+        "외화",
+        "지급",
+        "은행 한도",
+        "현금흐름",
+        "선물환",
+        "liquidity"
+      ],
+      "topics": {
+        "role": [
+          "유동성 관리",
+          "자금 계획",
+          "여유자금 운용",
+          "환위험 관리",
+          "지급 통제"
+        ],
+        "scenario": [
+          "지급일 잔고 부족",
+          "만기 연장 거절",
+          "계좌 변경 사칭 메일"
+        ],
+        "result": [
+          "자금 예측 정확도",
+          "조달 비용",
+          "유휴 현금 비율"
+        ],
+        "en": [
+          "cash management",
+          "liquidity planning",
+          "FX hedging",
+          "bank relationship"
+        ]
+      },
+      "sources": [
+        "s2"
+      ]
+    },
+    {
+      "id": "fpa",
+      "aliases": [
+        "FP&A",
+        "경영분석",
+        "재무기획",
+        "경영관리",
+        "예산 담당",
+        "Financial Planning & Analysis",
+        "FP&A Analyst"
+      ],
+      "skills": [
+        "사업계획·예산 수립",
+        "실적 차이(Variance) 분석",
+        "포캐스트",
+        "재무 모델링",
+        "KPI 관리",
+        "경영진 보고서 작성"
+      ],
+      "responsibilities": [
+        "연간 사업계획·예산 편성",
+        "월별 실적 리뷰와 차이 분석",
+        "롤링 포캐스트",
+        "사업부별 수익성 분석",
+        "경영진 의사결정 지원"
+      ],
+      "keywords": [
+        "예산",
+        "사업계획",
+        "포캐스트",
+        "Variance",
+        "Bridge",
+        "KPI",
+        "공헌이익",
+        "OPEX",
+        "시나리오",
+        "실적 리뷰",
+        "수익성",
+        "budget"
+      ],
+      "topics": {
+        "role": [
+          "예산 편성",
+          "실적 차이 분석",
+          "포캐스트",
+          "수익성 분석",
+          "경영 보고"
+        ],
+        "scenario": [
+          "목표 미달 전망",
+          "부서 간 예산 경합",
+          "보고 직전 수치 오류"
+        ],
+        "result": [
+          "전망 정확도",
+          "예산 대비 차이율",
+          "보고 리드타임"
+        ],
+        "en": [
+          "budgeting",
+          "variance analysis",
+          "forecasting",
+          "management reporting"
+        ]
+      },
+      "sources": [
+        "s2",
+        "s9"
+      ]
+    },
+    {
+      "id": "tax_specialist",
+      "aliases": [
+        "세무",
+        "세무 담당자",
+        "세무팀",
+        "기업 세무",
+        "택스",
+        "Tax Specialist",
+        "Tax Accountant"
+      ],
+      "skills": [
+        "법인세 세무조정",
+        "부가가치세 신고",
+        "원천징수",
+        "이연법인세",
+        "세무조사 대응",
+        "세법 해석"
+      ],
+      "responsibilities": [
+        "법인세·부가세·원천세 신고",
+        "세무조정과 세무 리스크 검토",
+        "세무조사 대응",
+        "절세 방안 수립",
+        "거래 구조 세무 자문"
+      ],
+      "keywords": [
+        "법인세",
+        "부가가치세",
+        "원천징수",
+        "세무조정",
+        "세금계산서",
+        "세무조사",
+        "조세불복",
+        "이전가격",
+        "유효세율",
+        "이연법인세",
+        "절세",
+        "tax"
+      ],
+      "topics": {
+        "role": [
+          "세무 신고",
+          "세무조정",
+          "세무조사 대응",
+          "절세 방안",
+          "세법 변경 대응"
+        ],
+        "scenario": [
+          "세무조사 통지",
+          "과세 당국과 해석 차이",
+          "세무 검토 없는 거래 구조 확정"
+        ],
+        "result": [
+          "가산세 발생 여부",
+          "유효세율",
+          "추징 세액"
+        ],
+        "en": [
+          "corporate tax",
+          "VAT",
+          "tax audit",
+          "tax planning"
+        ]
+      },
+      "sources": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "auditor",
+      "aliases": [
+        "회계감사",
+        "공인회계사",
+        "CPA",
+        "외부감사인",
+        "감사본부",
+        "Auditor",
+        "Audit Associate"
+      ],
+      "skills": [
+        "감사 계획과 중요성 판단",
+        "실증 절차 설계",
+        "표본 감사",
+        "회계 추정 검토",
+        "감사조서 작성",
+        "K-IFRS·회계감사기준"
+      ],
+      "responsibilities": [
+        "재무제표 감사",
+        "위험 평가와 감사 절차 설계",
+        "조회·실사 등 증거 수집",
+        "감사조서 작성",
+        "피감사 회사 커뮤니케이션"
+      ],
+      "keywords": [
+        "감사",
+        "중요성",
+        "조회서",
+        "재고실사",
+        "표본",
+        "감사조서",
+        "부정위험",
+        "회계추정",
+        "감사의견",
+        "독립성",
+        "전문가적 의심",
+        "audit"
+      ],
+      "topics": {
+        "role": [
+          "감사 계획",
+          "실증 절차",
+          "회계 추정 검증",
+          "부정 위험 대응",
+          "감사 의견 형성"
+        ],
+        "scenario": [
+          "조회서 미회신",
+          "수정 사항 반영 거부",
+          "마감 직전 자료 제출"
+        ],
+        "result": [
+          "감사 일정 준수",
+          "발견 사항",
+          "감사 품질 검토 결과"
+        ],
+        "en": [
+          "financial statement audit",
+          "materiality",
+          "substantive testing",
+          "professional skepticism"
+        ]
+      },
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "internal_auditor",
+      "aliases": [
+        "내부감사",
+        "감사팀",
+        "감사실",
+        "경영감사",
+        "Internal Auditor",
+        "Internal Audit"
+      ],
+      "skills": [
+        "위험 기반 감사 계획",
+        "프로세스 감사",
+        "부정 조사",
+        "면담·증거 수집",
+        "감사 보고서 작성",
+        "후속 조치 관리"
+      ],
+      "responsibilities": [
+        "연간 감사 계획 수립",
+        "부서·프로세스 감사",
+        "비위·제보 조사",
+        "감사 결과 보고",
+        "개선 이행 점검"
+      ],
+      "keywords": [
+        "내부감사",
+        "감사계획",
+        "부정",
+        "제보",
+        "법인카드",
+        "지적사항",
+        "개선 조치",
+        "독립성",
+        "면담",
+        "위험평가",
+        "컴플라이언스",
+        "internal audit"
+      ],
+      "topics": {
+        "role": [
+          "위험 기반 감사",
+          "부정 조사",
+          "감사 보고",
+          "개선 이행 점검",
+          "예방 감사"
+        ],
+        "scenario": [
+          "임원 연루 비위 정황",
+          "지적 사항 삭제 요청",
+          "관행을 이유로 한 반발"
+        ],
+        "result": [
+          "개선 이행률",
+          "적발·예방 금액",
+          "재발 건수"
+        ],
+        "en": [
+          "risk-based audit",
+          "fraud investigation",
+          "audit reporting",
+          "follow-up"
+        ]
+      },
+      "sources": []
+    },
+    {
+      "id": "bank_teller",
+      "aliases": [
+        "은행원",
+        "리테일",
+        "개인금융",
+        "창구",
+        "텔러",
+        "영업점 직원",
+        "Retail Banker",
+        "Bank Teller"
+      ],
+      "skills": [
+        "수신·여신 창구 업무",
+        "금융상품 상담·판매",
+        "완전판매 절차",
+        "고객 응대",
+        "시재 관리",
+        "금융소비자 보호"
+      ],
+      "responsibilities": [
+        "예금·대출·외환 창구 업무",
+        "개인 고객 상품 상담",
+        "적합성·설명의무 이행",
+        "민원 응대",
+        "영업점 마케팅"
+      ],
+      "keywords": [
+        "창구",
+        "예금",
+        "적금",
+        "IRP",
+        "연금",
+        "시재",
+        "완전판매",
+        "불완전판매",
+        "적합성",
+        "설명의무",
+        "보이스피싱",
+        "고객상담"
+      ],
+      "topics": {
+        "role": [
+          "고객 상담",
+          "상품 판매",
+          "금융소비자 보호",
+          "창구 정확성",
+          "고객 관리"
+        ],
+        "scenario": [
+          "시재 불일치",
+          "손실 후 불완전판매 항의",
+          "금융사기 의심 이체"
+        ],
+        "result": [
+          "신규 고객 수",
+          "민원 건수",
+          "거래 유지율"
+        ],
+        "en": [
+          "retail banking",
+          "customer service",
+          "suitability",
+          "consumer protection"
+        ]
+      },
+      "sources": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "id": "private_banker",
+      "aliases": [
+        "PB",
+        "프라이빗뱅커",
+        "WM",
+        "자산관리",
+        "VIP 자산관리",
+        "Private Banker",
+        "Wealth Manager"
+      ],
+      "skills": [
+        "자산 포트폴리오 설계",
+        "투자성향 분석",
+        "세무·상속 기초 자문",
+        "고객 관계 관리",
+        "시장 분석",
+        "상품 비교·설명"
+      ],
+      "responsibilities": [
+        "고액 자산가 자산 관리",
+        "포트폴리오 제안과 리밸런싱",
+        "세무·부동산 연계 자문",
+        "고객 관계 유지",
+        "시장 정보 제공"
+      ],
+      "keywords": [
+        "자산관리",
+        "포트폴리오",
+        "리밸런싱",
+        "투자성향",
+        "상속",
+        "증여",
+        "은퇴설계",
+        "펀드",
+        "채권",
+        "신탁",
+        "VIP",
+        "wealth management"
+      ],
+      "topics": {
+        "role": [
+          "자산 배분 제안",
+          "고객 관계 관리",
+          "투자 성향 조율",
+          "종합 자산 자문",
+          "사후 관리"
+        ],
+        "scenario": [
+          "급락장 전액 환매 요구",
+          "규정 외 우대 요구",
+          "가족 간 자산 분쟁"
+        ],
+        "result": [
+          "관리 자산 규모",
+          "고객 유지율",
+          "포트폴리오 성과"
+        ],
+        "en": [
+          "wealth management",
+          "asset allocation",
+          "client relationship",
+          "portfolio review"
+        ]
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "relationship_manager",
+      "aliases": [
+        "기업금융",
+        "RM",
+        "기업영업",
+        "기업금융 RM",
+        "기업 여신 담당",
+        "Relationship Manager",
+        "Corporate Banker"
+      ],
+      "skills": [
+        "기업 고객 발굴",
+        "기업 재무 분석",
+        "여신 구조 설계",
+        "종합 금융 솔루션 제안",
+        "여신 사후 관리",
+        "약정·서류 관리"
+      ],
+      "responsibilities": [
+        "기업 고객 발굴과 관계 관리",
+        "운전·시설자금 여신 취급",
+        "외환·자금관리 등 부수 거래 제안",
+        "여신 사후 관리",
+        "심사 부서와 협업"
+      ],
+      "keywords": [
+        "기업여신",
+        "운전자금",
+        "시설자금",
+        "담보",
+        "매출채권",
+        "환헤지",
+        "주거래",
+        "약정",
+        "사후관리",
+        "재무제표",
+        "중소기업",
+        "corporate banking"
+      ],
+      "topics": {
+        "role": [
+          "기업 고객 발굴",
+          "여신 취급",
+          "종합 거래 확대",
+          "사후 관리",
+          "기업 분석"
+        ],
+        "scenario": [
+          "심사 한도 초과 대출 요청",
+          "거래 기업 부정 소문",
+          "경쟁 은행의 금리 공세"
+        ],
+        "result": [
+          "여신 잔액",
+          "신규 거래처 수",
+          "연체율"
+        ],
+        "en": [
+          "corporate lending",
+          "client acquisition",
+          "cross-selling",
+          "credit monitoring"
+        ]
+      },
+      "sources": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "id": "credit_analyst",
+      "aliases": [
+        "여신심사",
+        "심사역",
+        "신용분석",
+        "신용평가",
+        "Credit Analyst",
+        "Credit Officer"
+      ],
+      "skills": [
+        "기업 신용분석",
+        "현금흐름 분석",
+        "담보·보증 평가",
+        "산업 분석",
+        "조기경보 관리",
+        "심사 보고서 작성"
+      ],
+      "responsibilities": [
+        "기업·개인 여신 심사",
+        "상환 능력 평가",
+        "여신 조건 설정",
+        "부실 징후 모니터링",
+        "포트폴리오 위험 관리"
+      ],
+      "keywords": [
+        "여신심사",
+        "신용등급",
+        "상환능력",
+        "현금흐름",
+        "이자보상배율",
+        "부채비율",
+        "담보",
+        "조기경보",
+        "연체",
+        "부실",
+        "산업위험",
+        "credit"
+      ],
+      "topics": {
+        "role": [
+          "신용 평가",
+          "상환 능력 판단",
+          "담보 평가",
+          "조기 경보",
+          "심사 독립성"
+        ],
+        "scenario": [
+          "영업점의 빠른 승인 압박",
+          "대표자 연체 이력",
+          "업종 연체율 상승"
+        ],
+        "result": [
+          "부실률",
+          "승인 후 연체 발생",
+          "심사 소요 시간"
+        ],
+        "en": [
+          "credit analysis",
+          "repayment capacity",
+          "early warning",
+          "loan approval"
+        ]
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "securities",
+      "aliases": [
+        "증권",
+        "리서치",
+        "애널리스트",
+        "RA",
+        "증권 세일즈",
+        "기관영업",
+        "Equity Research",
+        "Securities Sales"
+      ],
+      "skills": [
+        "기업·산업 분석",
+        "실적 추정",
+        "밸류에이션",
+        "리포트 작성",
+        "기관 투자자 커뮤니케이션",
+        "시장 동향 분석"
+      ],
+      "responsibilities": [
+        "커버 기업·산업 분석",
+        "투자 의견과 목표가 산출",
+        "리포트 발간 지원",
+        "기관 투자자 세일즈",
+        "기업 탐방·IR 미팅"
+      ],
+      "keywords": [
+        "리서치",
+        "애널리스트",
+        "RA",
+        "섹터",
+        "실적 추정",
+        "PER",
+        "DCF",
+        "목표주가",
+        "투자의견",
+        "기관투자자",
+        "탐방",
+        "equity research"
+      ],
+      "topics": {
+        "role": [
+          "기업 분석",
+          "실적 추정",
+          "밸류에이션",
+          "리포트 작성",
+          "기관 세일즈"
+        ],
+        "scenario": [
+          "어닝 쇼크",
+          "커버 기업 항의",
+          "기관 고객 반론"
+        ],
+        "result": [
+          "추정 정확도",
+          "리포트 적중률",
+          "기관 평가"
+        ],
+        "en": [
+          "equity research",
+          "earnings forecast",
+          "valuation",
+          "institutional sales"
+        ]
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "investment_banker",
+      "aliases": [
+        "IB",
+        "투자은행",
+        "기업금융(IB)",
+        "ECM",
+        "DCM",
+        "M&A 자문",
+        "Investment Banker",
+        "IB Analyst"
+      ],
+      "skills": [
+        "밸류에이션",
+        "재무 모델링",
+        "실사",
+        "딜 구조화",
+        "투자설명서 작성",
+        "발행 시장 이해"
+      ],
+      "responsibilities": [
+        "IPO·유상증자 주관",
+        "회사채 발행 주관",
+        "M&A 자문과 인수금융",
+        "PF·구조화 금융",
+        "딜 실사와 자료 작성"
+      ],
+      "keywords": [
+        "IPO",
+        "공모가",
+        "회사채",
+        "수요예측",
+        "M&A",
+        "인수금융",
+        "PF",
+        "실사",
+        "밸류에이션",
+        "멀티플",
+        "EBITDA",
+        "deal"
+      ],
+      "topics": {
+        "role": [
+          "주식·채권 발행 주관",
+          "M&A 자문",
+          "인수금융",
+          "PF",
+          "밸류에이션"
+        ],
+        "scenario": [
+          "클로징 직전 우발채무 발견",
+          "수요예측 부진",
+          "긴급 밸류에이션 수정 요청"
+        ],
+        "result": [
+          "딜 성사 건수",
+          "주관 실적",
+          "수수료 수익"
+        ],
+        "en": [
+          "equity capital markets",
+          "debt capital markets",
+          "M&A advisory",
+          "due diligence"
+        ]
+      },
+      "sources": [
+        "s5"
+      ]
+    },
+    {
+      "id": "asset_manager",
+      "aliases": [
+        "자산운용",
+        "펀드매니저",
+        "운용역",
+        "포트폴리오 매니저",
+        "Asset Manager",
+        "Portfolio Manager",
+        "Fund Manager"
+      ],
+      "skills": [
+        "포트폴리오 구성",
+        "자산배분",
+        "주식·채권 분석",
+        "대체투자 평가",
+        "성과 평가",
+        "운용 리스크 관리"
+      ],
+      "responsibilities": [
+        "펀드·일임 자산 운용",
+        "투자 대상 분석과 편입 결정",
+        "자산배분 전략 수립",
+        "성과 분석과 고객 보고",
+        "운용 규정 준수"
+      ],
+      "keywords": [
+        "펀드",
+        "포트폴리오",
+        "자산배분",
+        "벤치마크",
+        "추적오차",
+        "듀레이션",
+        "대체투자",
+        "환매",
+        "샤프지수",
+        "리밸런싱",
+        "선관주의",
+        "asset management"
+      ],
+      "topics": {
+        "role": [
+          "종목 선정",
+          "자산배분",
+          "채권 운용",
+          "대체투자",
+          "성과 평가"
+        ],
+        "scenario": [
+          "편입 종목 장기 하락",
+          "기관 고객 전략 변경 요구",
+          "대규모 환매"
+        ],
+        "result": [
+          "초과수익률",
+          "위험조정수익률",
+          "수탁고"
+        ],
+        "en": [
+          "portfolio management",
+          "asset allocation",
+          "performance attribution",
+          "alternative investment"
+        ]
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "risk_manager",
+      "aliases": [
+        "리스크관리",
+        "리스크 매니저",
+        "위험관리",
+        "시장리스크",
+        "신용리스크",
+        "Risk Manager",
+        "Risk Analyst"
+      ],
+      "skills": [
+        "VaR·스트레스 테스트",
+        "신용·시장·유동성 리스크 측정",
+        "한도 관리",
+        "리스크 보고",
+        "모델 검증",
+        "통계 분석"
+      ],
+      "responsibilities": [
+        "리스크 측정과 모니터링",
+        "리스크 한도 설정·관리",
+        "스트레스 테스트",
+        "경영진 리스크 보고",
+        "리스크 모델 검증"
+      ],
+      "keywords": [
+        "VaR",
+        "스트레스테스트",
+        "한도",
+        "익스포저",
+        "부도율",
+        "손실률",
+        "유동성",
+        "금리리스크",
+        "집중위험",
+        "거래상대방",
+        "자본적정성",
+        "risk"
+      ],
+      "topics": {
+        "role": [
+          "위험 측정",
+          "한도 관리",
+          "스트레스 테스트",
+          "리스크 보고",
+          "모델 검증"
+        ],
+        "scenario": [
+          "한도 초과 허용 요청",
+          "지표 급변",
+          "거래상대방 등급 하락"
+        ],
+        "result": [
+          "한도 준수율",
+          "손실 규모",
+          "모델 예측력"
+        ],
+        "en": [
+          "market risk",
+          "credit risk",
+          "stress testing",
+          "risk limits"
+        ]
+      },
+      "sources": [
+        "s3",
+        "s7"
+      ]
+    },
+    {
+      "id": "underwriter",
+      "aliases": [
+        "언더라이터",
+        "언더라이팅",
+        "보험심사",
+        "계약심사",
+        "인수심사",
+        "Underwriter"
+      ],
+      "skills": [
+        "위험 평가",
+        "인수 기준 적용",
+        "의학·공학 기초 지식",
+        "고지의무 검토",
+        "재보험 이해",
+        "손해율 분석"
+      ],
+      "responsibilities": [
+        "청약 계약 심사",
+        "인수 조건 결정",
+        "기업성 물건 위험 조사",
+        "인수 가이드라인 관리",
+        "영업 채널 심사 지원"
+      ],
+      "keywords": [
+        "언더라이팅",
+        "인수",
+        "청약",
+        "고지의무",
+        "역선택",
+        "손해율",
+        "재보험",
+        "부담보",
+        "할증",
+        "위험도",
+        "심사기준",
+        "underwriting"
+      ],
+      "topics": {
+        "role": [
+          "계약 인수 심사",
+          "위험 평가",
+          "인수 기준 관리",
+          "재보험 활용",
+          "손해율 관리"
+        ],
+        "scenario": [
+          "기준 초과 대형 계약",
+          "다수 보험사 중복 가입 정황",
+          "심사 결과 항의"
+        ],
+        "result": [
+          "손해율",
+          "심사 소요 시간",
+          "인수 계약 건전성"
+        ],
+        "en": [
+          "underwriting",
+          "risk selection",
+          "adverse selection",
+          "reinsurance"
+        ]
+      },
+      "sources": []
+    },
+    {
+      "id": "actuary",
+      "aliases": [
+        "보험계리",
+        "계리사",
+        "보험계리사",
+        "계리",
+        "상품계리",
+        "Actuary",
+        "Actuarial Analyst"
+      ],
+      "skills": [
+        "보험료 산출",
+        "책임준비금 평가",
+        "위험률 개발",
+        "현금흐름 모델링",
+        "IFRS17·K-ICS 이해",
+        "통계 분석"
+      ],
+      "responsibilities": [
+        "상품 보험료·준비금 산출",
+        "위험률 개발과 요율 결정",
+        "결산 준비금 평가",
+        "이원별 손익 분석",
+        "규제자본 산출 지원"
+      ],
+      "keywords": [
+        "위험률",
+        "보험료",
+        "책임준비금",
+        "이원분석",
+        "해지율",
+        "현금흐름",
+        "IFRS17",
+        "CSM",
+        "K-ICS",
+        "기초서류",
+        "보험수리",
+        "actuarial"
+      ],
+      "topics": {
+        "role": [
+          "보험료 산출",
+          "준비금 평가",
+          "위험률 개발",
+          "손익 분석",
+          "신제도 대응"
+        ],
+        "scenario": [
+          "출시 직전 산출 오류",
+          "보험료 인하 요구",
+          "가정과 실제의 괴리"
+        ],
+        "result": [
+          "손익 차이",
+          "준비금 적정성",
+          "가정 적합도"
+        ],
+        "en": [
+          "pricing",
+          "reserving",
+          "experience study",
+          "cash flow projection"
+        ]
+      },
+      "sources": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "id": "claims_adjuster",
+      "aliases": [
+        "보상",
+        "손해사정",
+        "손해사정사",
+        "보상 담당자",
+        "클레임",
+        "Claims Adjuster",
+        "Loss Adjuster"
+      ],
+      "skills": [
+        "사고 조사",
+        "손해액 산정",
+        "약관 해석",
+        "과실 판단",
+        "협상·민원 응대",
+        "보고서 작성"
+      ],
+      "responsibilities": [
+        "사고 접수와 사실 조사",
+        "보상 범위 판단과 손해액 산정",
+        "보험금 지급 결정",
+        "피해자 협상",
+        "보험사기 의심 건 검토"
+      ],
+      "keywords": [
+        "보상",
+        "손해사정",
+        "사고조사",
+        "과실비율",
+        "손해액",
+        "약관",
+        "후유장해",
+        "보험사기",
+        "합의",
+        "민원",
+        "현장조사",
+        "claims"
+      ],
+      "topics": {
+        "role": [
+          "사고 조사",
+          "손해액 산정",
+          "약관 해석",
+          "피해자 협상",
+          "보험사기 대응"
+        ],
+        "scenario": [
+          "보상금 불만 항의",
+          "과잉 진료 의심",
+          "청구 급증"
+        ],
+        "result": [
+          "지급 소요 기간",
+          "민원율",
+          "누수 방지 금액"
+        ],
+        "en": [
+          "claims handling",
+          "loss assessment",
+          "fraud detection",
+          "settlement negotiation"
+        ]
+      },
+      "sources": [
+        "s8"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "text": "회계 담당자가 회사 안에서 만들어 내는 가장 중요한 가치는 무엇이라고 보세요?",
+      "scope": "family:accounting",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무회계, 관리회계, 내부통제 업무는 서로 어떻게 맞물려 돌아간다고 이해하고 계신가요?",
+      "scope": "family:accounting",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 업무에서 정확성과 마감 속도가 부딪힐 때 무엇을 기준으로 균형을 잡아야 한다고 생각하세요?",
+      "scope": "family:accounting",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "의사결정자에게 쓸모 있는 정보를 제공한다는 회계의 역할을 본인 말로 풀어서 말씀해 주세요.",
+      "scope": "family:accounting",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "꼼꼼하게 검토해서 다른 사람이 놓친 오류를 찾아낸 경험이 있다면 말씀해 주세요.",
+      "scope": "family:accounting",
+      "category": "강점",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업 부서가 증빙을 늦게 주거나 규정에 맞지 않는 처리를 요구했을 때 어떻게 설득해 보셨나요?",
+      "scope": "family:accounting",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "반복되는 수작업을 줄이려고 업무 방식을 바꿔 본 경험을 말씀해 주세요.",
+      "scope": "family:accounting",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 사람에게서 자료를 받아야 끝나는 일을 제때 마무리하려고 어떻게 조율하셨나요?",
+      "scope": "family:accounting",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원가 정보가 필요한 부서와 일하면서 서로 원하는 수준이 달라 조율했던 경험이 있나요?",
+      "scope": "family:accounting",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "결산 마감 하루 전에 매출채권 잔액이 거래처 조회 결과와 맞지 않는다는 걸 알게 되면 어떻게 하시겠어요?",
+      "scope": "family:accounting",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "팀장님이 이번 분기만 비용 인식을 다음 달로 미루자고 하신다면 어떻게 대응하시겠어요?",
+      "scope": "family:accounting",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "외부감사인이 회사의 회계처리 방식에 이의를 제기하면 무엇부터 준비하시겠어요?",
+      "scope": "family:accounting",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "처음 보는 유형의 거래가 들어와 어떤 계정으로 처리할지 판단이 서지 않으면 어떻게 하시겠어요?",
+      "scope": "family:accounting",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "새로 도입한 회계 시스템의 데이터와 기존 장부 수치가 어긋나면 어떤 순서로 확인하시겠어요?",
+      "scope": "family:accounting",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무제표나 장부를 직접 작성하거나 분석해 본 경험이 있으면 말씀해 주세요.",
+      "scope": "family:accounting",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "숫자 하나를 끝까지 추적해서 차이의 원인을 밝혀냈던 경험을 들려주세요.",
+      "scope": "family:accounting",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 과목이나 자격증을 공부하면서 실무에 가장 도움이 될 것 같다고 느낀 내용은 무엇인가요?",
+      "scope": "family:accounting",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 업무에 자동화가 확산되면 회계 담당자의 역할은 어떻게 바뀔 거라고 보세요?",
+      "scope": "family:accounting",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 부정 사례들을 보면서 회계 담당자가 가장 경계해야 할 점이 무엇이라고 느끼셨나요?",
+      "scope": "family:accounting",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "ESG 공시 요구가 커지는 흐름이 회계팀 업무에 어떤 영향을 줄 거라고 생각하세요?",
+      "scope": "family:accounting",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "친한 동료가 경비 증빙을 부풀려 올린 것을 알게 되면 어떻게 하시겠어요?",
+      "scope": "family:accounting",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 담당자에게 규정 준수가 가장 기본적인 직업 태도로 꼽히는 이유는 무엇이라고 생각하세요?",
+      "scope": "family:accounting",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "숫자를 다루면서 본인이 자주 하는 실수 유형과 그걸 막기 위해 쓰는 방법을 말씀해 주세요.",
+      "scope": "family:accounting",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 업무를 하면서 가장 크게 배운 교훈 하나를 꼽는다면 무엇인가요?",
+      "scope": "family:accounting",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "결산 기간을 줄이거나 오류를 줄였던 경험이 있다면 그 성과를 어떻게 측정하셨나요?",
+      "scope": "family:accounting",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 만든 회계 자료가 실제 경영 의사결정에 쓰였던 사례와 그 결과를 말씀해 주세요.",
+      "scope": "family:accounting",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "월 결산을 앞당기기 위해 회계팀이 바꿔야 할 프로세스를 제안하는 발표를 해 주세요.",
+      "scope": "family:accounting",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 담당자는 보수적으로 판단해야 한다는 입장과 사업을 적극 지원해야 한다는 입장 중 어느 쪽에 서시겠어요?",
+      "scope": "family:accounting",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "월 결산을 어떤 순서로 진행하시는지, 그중 어디서 오류가 가장 많이 난다고 보세요?",
+      "scope": "role:accountant",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "수익 인식 시점을 판단하기 애매한 거래가 있다면 K-IFRS에 비춰 무엇을 확인하시겠어요?",
+      "scope": "role:accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "충당부채로 인식할지 주석 공시만 할지 판단할 때 어떤 요소를 따져 보시겠어요?",
+      "scope": "role:accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고자산 평가손실을 검토할 때 현업에서 어떤 자료를 받아 보시겠어요?",
+      "scope": "role:accountant",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "연결재무제표를 만들 때 내부거래 제거에서 특히 주의할 점은 무엇이라고 생각하세요?",
+      "scope": "role:accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계정별 명세서와 총계정원장 잔액이 맞지 않으면 어떻게 추적하시겠어요?",
+      "scope": "role:accountant",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "유형자산의 내용연수를 바꾸자는 요청이 들어오면 어떤 근거를 확인하시겠어요?",
+      "scope": "role:accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "분기 공시 직전에 전기 재무제표의 오류를 발견하면 누구에게 어떻게 보고하시겠어요?",
+      "scope": "role:accountant",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업팀이 분기 말 대량 출고분을 모두 이번 분기 매출로 잡아 달라고 하면 어떻게 판단하시겠어요?",
+      "scope": "role:accountant",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 자회사의 결산 자료가 기한을 넘기고 양식도 맞지 않게 들어오면 어떻게 대응하시겠어요?",
+      "scope": "role:accountant",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업이익은 늘었는데 영업활동 현금흐름이 크게 줄었다면 어떤 원인부터 의심하시겠어요?",
+      "scope": "role:accountant",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "결산 중에 판관비가 전월보다 30% 늘어난 걸 발견했다면 어떻게 원인을 찾으시겠어요?",
+      "scope": "role:accountant",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "결산이나 감사 대응 업무를 맡아 끝까지 마무리해 본 경험을 말씀해 주세요.",
+      "scope": "role:accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계처리 방식을 두고 다른 사람과 의견이 달랐을 때 어떻게 결론을 냈는지 들려주세요.",
+      "scope": "role:accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무회계 담당자가 외부 이해관계자에게 책임지는 범위는 어디까지라고 생각하세요?",
+      "scope": "role:accountant",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 직무 가운데서도 재무회계를 선택한 이유를 말씀해 주세요.",
+      "scope": "role:accountant",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "방금 말씀하신 회계처리가 K-IFRS에 맞는다는 근거를 기준서 어디에서 찾으시겠습니까?",
+      "scope": "role:accountant",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "표준원가와 실제원가의 차이가 크게 났을 때 어떤 순서로 원인을 분석하시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "공통 간접비를 제품별로 배부할 때 배부 기준은 어떻게 정하시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "활동기준원가계산을 도입하면 어떤 제품의 원가가 가장 크게 달라질 거라고 보세요?",
+      "scope": "role:cost_accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산팀이나 영업팀이 원가 정보를 실제로 쓰게 하려면 보고서를 어떻게 구성하시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재공품 진척도를 현장에서 파악하기 어려울 때 원가계산의 신뢰도는 어떻게 확보하시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원가계산 결과를 결산 수치와 맞추는 과정에서 흔히 생기는 차이는 무엇이 있을까요?",
+      "scope": "role:cost_accountant",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "영업팀이 수주를 위해 원가 이하 가격도 괜찮다고 주장하면 어떤 자료로 판단을 도우시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산팀이 원가 배부 방식이 불공정하다며 강하게 반발하면 어떻게 대응하시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원자재 가격이 급등해 분기 원가율이 크게 나빠질 것 같다면 경영진에게 무엇부터 보고하시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "한 제품의 매출은 늘었는데 공헌이익은 줄었다면 어떤 요인으로 나눠서 보시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고정비 비중이 높은 공장의 가동률이 20% 떨어지면 단위원가는 어떻게 달라질까요?",
+      "scope": "role:cost_accountant",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "외주 생산과 자체 생산 중 무엇이 유리한지 판단할 때 어떤 원가를 비교하시겠어요?",
+      "scope": "role:cost_accountant",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원가를 줄일 수 있는 지점을 찾아 제안했던 경험이 있나요?",
+      "scope": "role:cost_accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산 현장이나 공정을 직접 보면서 숫자를 이해하려고 했던 경험을 말씀해 주세요.",
+      "scope": "role:cost_accountant",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "관리회계는 재무회계와 달리 누구를 위해, 무엇을 목적으로 한다고 이해하고 계신가요?",
+      "scope": "role:cost_accountant",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원가·관리회계 직무에 관심을 갖게 된 계기가 무엇인가요?",
+      "scope": "role:cost_accountant",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "그 배부 기준을 쓰면 특정 제품 원가가 과소 계상될 텐데, 그래도 그 방식을 유지하시겠습니까?",
+      "scope": "role:cost_accountant",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "내부회계관리제도에서 핵심통제를 선정할 때 어떤 기준으로 판단하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "통제의 설계 평가와 운영 평가는 실제로 어떻게 다르게 진행하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출 프로세스에서 생길 수 있는 위험 하나와 그에 대응하는 통제를 예로 들어 말씀해 주세요.",
+      "scope": "role:internal_control",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통제 테스트 표본 중 한 건에서 승인 누락이 나왔다면 미비점으로 볼지 어떻게 판단하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "업무 분장이 어려운 소규모 조직이라면 직무 분리를 대신할 보완 통제로 무엇을 두시겠어요?",
+      "scope": "role:internal_control",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계 시스템의 접근 권한 관리가 재무보고의 신뢰성과 어떻게 연결되는지 말씀해 주세요.",
+      "scope": "role:internal_control",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통제 활동을 문서화할 때 반드시 들어가야 한다고 생각하는 요소는 무엇인가요?",
+      "scope": "role:internal_control",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통제 문서와 실제 현업의 업무 방식이 다르다는 걸 발견하면 어떻게 조치하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "외부감사인이 중요한 취약점 가능성을 언급하면 내부적으로 어떤 순서로 대응하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업 팀장이 통제 절차 때문에 업무가 너무 느려졌다고 항의하면 어떻게 설득하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 거래처에 소액으로 쪼갠 지급이 반복된다면 어떤 부정 위험을 의심하고 무엇을 확인하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통제 미비점이 여러 개 나왔을 때 개선 우선순위는 어떤 기준으로 정하시겠어요?",
+      "scope": "role:internal_control",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규정이나 절차를 새로 만들거나 고쳐서 실제로 지켜지게 만든 경험이 있나요?",
+      "scope": "role:internal_control",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "다른 부서의 업무 흐름을 파악하려고 인터뷰하거나 문서를 분석해 본 경험을 말씀해 주세요.",
+      "scope": "role:internal_control",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "내부회계관리제도가 회사에 실제로 주는 가치는 무엇이라고 보세요?",
+      "scope": "role:internal_control",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "내부통제처럼 겉으로 잘 드러나지 않는 업무를 하고 싶은 이유가 무엇인가요?",
+      "scope": "role:internal_control",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통제를 늘릴수록 비용과 시간이 드는데, 그 통제가 꼭 필요하다는 걸 어떻게 증명하시겠습니까?",
+      "scope": "role:internal_control",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무, 자금, FP&A 기능은 각각 회사의 어떤 질문에 답하는 조직이라고 보세요?",
+      "scope": "family:corporate_finance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무 담당자가 회계 담당자와 가장 다르게 바라봐야 하는 숫자는 무엇이라고 생각하세요?",
+      "scope": "family:corporate_finance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "예산을 편성하고 집행하고 통제하는 과정 중 재무팀이 가장 신경 써야 할 단계는 어디라고 보세요?",
+      "scope": "family:corporate_finance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "재무 부서가 현업에게 숫자로 브레이크만 거는 조직으로 보이지 않으려면 무엇이 필요할까요?",
+      "scope": "family:corporate_finance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이해관계가 다른 여러 부서의 의견을 조정해서 하나의 결론을 만들어 낸 경험을 말씀해 주세요.",
+      "scope": "family:corporate_finance",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "불확실한 정보만 있는 상태에서 재무적인 판단을 내려야 했던 경험이 있나요?",
+      "scope": "family:corporate_finance",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "복잡한 분석 결과를 숫자에 익숙하지 않은 사람에게 쉽게 설명했던 경험을 들려주세요.",
+      "scope": "family:corporate_finance",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인의 분석이나 가정이 틀렸다는 걸 알게 됐을 때 어떻게 바로잡으셨나요?",
+      "scope": "family:corporate_finance",
+      "category": "실패",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "데이터를 근거로 윗사람의 기존 판단을 바꿔 본 경험이 있나요?",
+      "scope": "family:corporate_finance",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "분기 중반에 주요 거래처가 대금 지급을 두 달 미루겠다고 통보하면 무엇부터 점검하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대표이사가 내일 아침까지 신규 투자 건의 수익성을 한 장으로 보고하라고 하면 어떻게 준비하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사업부가 이미 써 버린 비용을 사후에 예산으로 처리해 달라고 요청하면 어떻게 하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "환율이 급변해 외화 부채 평가손실이 크게 예상되면 경영진에게 어떻게 보고하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "투자를 집행한 직후 사업 환경이 바뀌어 수익성이 크게 떨어질 것 같으면 어떻게 하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "엑셀로 재무 모델이나 분석 표를 직접 만들어 본 경험을 말씀해 주세요.",
+      "scope": "family:corporate_finance",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "기업의 재무제표를 분석해서 결론을 냈던 과제나 프로젝트 경험이 있나요?",
+      "scope": "family:corporate_finance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "비용 구조나 자금 흐름을 개선하는 데 기여했던 경험을 들려주세요.",
+      "scope": "family:corporate_finance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금리 수준이 달라지면 기업 재무 전략에서 가장 먼저 바뀌어야 하는 부분은 무엇이라고 보세요?",
+      "scope": "family:corporate_finance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "요즘 기업 재무 담당자들이 가장 신경 써야 할 외부 리스크는 무엇이라고 보세요?",
+      "scope": "family:corporate_finance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기업들이 현금 보유를 늘리는 흐름과 투자를 늘리는 흐름 중 어느 쪽이 더 설득력 있다고 보세요?",
+      "scope": "family:corporate_finance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대출 약정 조건을 맞추려고 결산 직전 부채비율을 일시적으로 낮춰 보이게 하자는 제안을 받으면 어떻게 하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회사 자금을 개인적으로 잠깐 융통해 쓰는 관행을 보게 되면 어떻게 하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무 업무에 필요한 역량 중 본인이 아직 부족하다고 느끼는 부분과 채우는 방법을 말씀해 주세요.",
+      "scope": "family:corporate_finance",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "숫자 뒤에 있는 사업을 이해하려고 최근 스스로 노력한 것이 있다면 무엇인가요?",
+      "scope": "family:corporate_finance",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인의 분석이 실제 비용 절감이나 수익 개선으로 이어진 사례를 수치로 말씀해 주세요.",
+      "scope": "family:corporate_finance",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "예산 대비 실적을 관리하면서 차이를 줄이기 위해 했던 일과 그 결과를 말씀해 주세요.",
+      "scope": "family:corporate_finance",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "경기 둔화가 예상되는 상황에서 회사의 내년 자금 운용 방향을 제안하는 발표를 해 주세요.",
+      "scope": "family:corporate_finance",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "여유 자금이 생겼다면 배당 확대와 설비 투자 중 어느 쪽을 지지하시겠어요?",
+      "scope": "family:corporate_finance",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신규 설비 투자 검토에서 NPV와 IRR이 서로 다른 결론을 낸다면 어떻게 판단하시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "우리 회사에 맞는 적정 부채비율은 어떤 요소를 고려해서 정하시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "운전자본이 늘어 현금이 부족해질 때 재무팀이 쓸 수 있는 수단에는 무엇이 있을까요?",
+      "scope": "role:finance_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신용평가사와의 미팅을 준비한다면 어떤 자료와 설명에 가장 공을 들이시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "자기자본비용을 추정할 때 어떤 가정이 결과를 가장 크게 흔든다고 보세요?",
+      "scope": "role:finance_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회사채 발행과 은행 차입 중 하나를 고를 때 무엇을 비교하시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래처의 부실 징후를 재무제표로 미리 알아채려면 어떤 지표부터 보시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금융기관이 대출 재약정 조건으로 담보 추가를 요구하면 어떻게 협상하시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인수합병 검토 요청이 갑자기 들어왔는데 기간이 2주뿐이라면 무엇부터 보시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "사업부장이 회수 기간이 긴 투자안을 밀어붙인다면 재무 담당자로서 어떻게 의견을 내시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출은 꾸준히 성장하는데 이자보상배율이 계속 떨어진다면 무엇을 의심하시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "수익률이 높은 투자안과 위험이 낮은 투자안 중 하나만 골라야 한다면 어떻게 비교하시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "투자나 비용 집행의 타당성을 숫자로 검토해 본 경험을 말씀해 주세요.",
+      "scope": "role:finance_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금융기관이나 외부 기관과 자료를 주고받으며 협의해 본 경험이 있나요?",
+      "scope": "role:finance_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기업 재무 담당자의 핵심 목표를 한 문장으로 정의한다면 어떻게 말씀하시겠어요?",
+      "scope": "role:finance_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금융회사가 아니라 일반 기업의 재무팀에서 일하고 싶은 이유는 무엇인가요?",
+      "scope": "role:finance_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "할인율을 1%포인트만 바꿔도 결론이 뒤집히는 모델이라면, 경영진이 그 분석을 믿어야 할 이유가 있을까요?",
+      "scope": "role:finance_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "일일 자금 수지를 관리할 때 어떤 항목을 가장 먼저 확인하시겠어요?",
+      "scope": "role:treasury",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "장·단기 여유자금을 운용할 때 수익성보다 먼저 따져야 할 조건은 무엇이라고 보세요?",
+      "scope": "role:treasury",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "월간 자금 계획을 세울 때 영업, 투자, 재무 활동별로 어떤 정보를 모으시겠어요?",
+      "scope": "role:treasury",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "외화 결제가 많은 회사라면 환위험을 관리하는 방법으로 무엇을 검토하시겠어요?",
+      "scope": "role:treasury",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래 은행이 여러 곳일 때 여신 한도와 금리 조건을 어떻게 관리하시겠어요?",
+      "scope": "role:treasury",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대규모 지급 전에 이중 지급이나 오지급을 막으려면 어떤 절차를 두시겠어요?",
+      "scope": "role:treasury",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자금 집행 권한이 한 사람에게 몰려 있다면 어떤 통제가 필요하다고 보세요?",
+      "scope": "role:treasury",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "월말 대금 지급일에 예상했던 입금이 늦어져 잔고가 모자라면 어떻게 대응하시겠어요?",
+      "scope": "role:treasury",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래 은행 담당자가 예고 없이 차입금 만기 연장이 어렵다고 알려 오면 무엇부터 하시겠어요?",
+      "scope": "role:treasury",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래처 담당자를 사칭한 메일로 입금 계좌 변경 요청이 들어오면 어떻게 확인하시겠어요?",
+      "scope": "role:treasury",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "3개월 뒤 대규모 차입금 상환이 예정돼 있다면 지금부터 어떤 시나리오를 준비하시겠어요?",
+      "scope": "role:treasury",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원화 약세가 이어질 때 수출 대금과 수입 대금 규모를 보고 순노출을 어떻게 판단하시겠어요?",
+      "scope": "role:treasury",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "돈의 흐름을 기록하고 맞춰 보는 일을 책임지고 해 본 경험이 있나요?",
+      "scope": "role:treasury",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "예상하지 못한 지출 때문에 계획을 급히 조정했던 경험을 말씀해 주세요.",
+      "scope": "role:treasury",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자금 담당자에게는 수익률보다 유동성이 더 중요하다는 말을 어떻게 생각하세요?",
+      "scope": "role:treasury",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무 조직 안에서도 자금 업무를 하고 싶은 이유가 무엇인가요?",
+      "scope": "role:treasury",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여유 자금을 안전하게만 굴려서 기회비용이 컸다는 지적을 받으면 뭐라고 답하시겠습니까?",
+      "scope": "role:treasury",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "월별 실적 리뷰에서 예산 대비 차이를 분석할 때 어떤 구조로 나눠서 보시겠어요?",
+      "scope": "role:fpa",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s9",
+      "confidence": "high"
+    },
+    {
+      "text": "연간 사업계획을 세울 때 현업이 준 매출 가정이 맞는지 어떻게 검증하시겠어요?",
+      "scope": "role:fpa",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s9",
+      "confidence": "high"
+    },
+    {
+      "text": "롤링 포캐스트를 운영하면 기존 연간 예산 방식과 비교해 무엇이 달라질까요?",
+      "scope": "role:fpa",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사업부별 수익성을 볼 때 공통비 배분 방식에 따라 결론이 달라진다면 어떻게 다루시겠어요?",
+      "scope": "role:fpa",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경영진 보고용 핵심 지표를 다섯 개만 고른다면 무엇을 넣으시겠어요?",
+      "scope": "role:fpa",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업 부서장에게 세부 예산 수립 기준을 안내할 때 무엇을 가장 강조하시겠어요?",
+      "scope": "role:fpa",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "분기 실적 전망이 목표를 크게 밑돌 것 같다면 경영진에게 언제, 어떻게 알리시겠어요?",
+      "scope": "role:fpa",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "두 사업부가 한정된 예산을 두고 서로 자기 쪽이 우선이라고 주장하면 어떻게 조정하시겠어요?",
+      "scope": "role:fpa",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "보고서 제출 한 시간 전에 핵심 수치에서 오류를 발견하면 어떻게 하시겠어요?",
+      "scope": "role:fpa",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출은 목표를 넘었는데 영업이익은 목표에 못 미쳤다면 브릿지 분석을 어떻게 구성하시겠어요?",
+      "scope": "role:fpa",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신제품 출시가 내년 손익에 미칠 영향을 시나리오로 짠다면 어떤 변수를 두시겠어요?",
+      "scope": "role:fpa",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "숫자를 분석해서 의사결정권자에게 보고했던 경험을 구체적으로 말씀해 주세요.",
+      "scope": "role:fpa",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계획과 실제 결과의 차이를 분석해 다음 계획에 반영해 본 경험이 있나요?",
+      "scope": "role:fpa",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "FP&A와 회계팀은 같은 숫자를 보면서도 어떤 점에서 역할이 다르다고 보세요?",
+      "scope": "role:fpa",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기획과 재무가 만나는 FP&A 업무에 끌린 이유를 말씀해 주세요.",
+      "scope": "role:fpa",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업 부서장이 예산 삭감 결과를 받아들이지 못하면 어떻게 설명하시겠어요?",
+      "scope": "role:fpa",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "지난 분기 전망이 크게 빗나갔는데, 이번 전망은 왜 믿어야 합니까?",
+      "scope": "role:fpa",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세무, 외부감사, 내부감사는 모두 검증과 관련이 있는데 각각 무엇을 지키는 일이라고 보세요?",
+      "scope": "family:tax",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세법 범위 안에서 세금 부담을 줄이는 일과 탈세의 경계는 어디라고 생각하세요?",
+      "scope": "family:tax",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "감사나 세무 업무에서 전문가적 의심은 실제로 어떤 행동으로 나타나야 한다고 보세요?",
+      "scope": "family:tax",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세무·감사 업무에서는 빠른 대응보다 신중한 대응이 중요하다는 말을 어떻게 이해하세요?",
+      "scope": "family:tax",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "상대가 불편해할 걸 알면서도 문제를 지적해야 했던 경험을 말씀해 주세요.",
+      "scope": "family:tax",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "방대한 자료 속에서 핵심 이상 징후를 찾아냈던 경험이 있나요?",
+      "scope": "family:tax",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "반드시 지켜야 하는 기한이 있는 일을 어떻게 관리해서 마쳤는지 말씀해 주세요.",
+      "scope": "family:tax",
+      "category": "강점",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "바뀐 규정이나 기준을 빠르게 공부해서 실무에 적용했던 경험을 들려주세요.",
+      "scope": "family:tax",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "여러 사람이 함께 검토하는 일에서 본인이 맡은 부분의 품질을 어떻게 책임지셨나요?",
+      "scope": "family:tax",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자료를 요청한 부서가 계속 제출을 미루며 비협조적으로 나오면 어떻게 하시겠어요?",
+      "scope": "family:tax",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "검토 중 발견한 이슈가 중요한지 애매할 때 보고 여부를 어떻게 결정하시겠어요?",
+      "scope": "family:tax",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "검토 대상 부서가 윗선과의 친분을 내세우며 압박하면 어떻게 하시겠어요?",
+      "scope": "family:tax",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기한이 촉박한데 검토해야 할 자료가 예상보다 두 배 많다면 어떻게 하시겠어요?",
+      "scope": "family:tax",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "전문 용어로 된 검토 결과를 상대가 이해하지 못해 반발하면 어떻게 설명하시겠어요?",
+      "scope": "family:tax",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세법이나 감사 과목을 공부하면서 가장 어려웠던 부분과 극복한 방법을 말씀해 주세요.",
+      "scope": "family:tax",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "규정이나 기준을 해석해서 결론을 내려야 했던 경험이 있다면 들려주세요.",
+      "scope": "family:tax",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "증빙과 기록을 대조해서 사실관계를 확인해 본 경험을 말씀해 주세요.",
+      "scope": "family:tax",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "과세 당국의 전산 분석이 정교해지는 흐름이 기업 세무 업무를 어떻게 바꿀 거라고 보세요?",
+      "scope": "family:tax",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사 품질에 대한 사회적 요구가 커지면서 감사인의 역할은 어떻게 달라지고 있다고 보세요?",
+      "scope": "family:tax",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "글로벌 최저한세 같은 국제 조세 흐름이 국내 기업에 어떤 부담을 줄 거라고 생각하세요?",
+      "scope": "family:tax",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오랫동안 관계를 맺어 온 고객사의 문제를 지적해야 한다면 독립성을 어떻게 지키시겠어요?",
+      "scope": "family:tax",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "지인이 세금을 줄일 방법을 물으며 사실과 다른 처리를 부탁하면 어떻게 하시겠어요?",
+      "scope": "family:tax",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "검토에서 놓친 부분이 나중에 문제가 됐던 경험과 그 뒤로 바꾼 습관을 말씀해 주세요.",
+      "scope": "family:tax",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세무·감사 전문가로 성장하기 위해 앞으로 3년간 어떤 역량을 쌓고 싶으신가요?",
+      "scope": "family:tax",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인의 검토로 오류나 위험을 미리 막았던 사례와 그 효과를 말씀해 주세요.",
+      "scope": "family:tax",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "업무 절차를 보완하자고 제안해서 실제로 채택된 결과가 있다면 들려주세요.",
+      "scope": "family:tax",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사인이 같은 회사에 경영 자문까지 제공하는 것을 허용해야 하는지 입장을 말씀해 주세요.",
+      "scope": "family:tax",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "중소기업을 위한 절세 방안과 세무 리스크 관리 계획을 세워 발표해 주세요.",
+      "scope": "family:tax",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "법인세 신고를 준비할 때 세무조정 항목은 어떤 순서로 검토하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "부가가치세 신고 전에 매입세액 불공제 대상은 어떻게 걸러 내시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "수정세금계산서를 발급해야 하는 상황이 생기면 무엇부터 확인하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "high"
+    },
+    {
+      "text": "원천징수 대상 소득을 잘못 분류했다는 걸 신고 후에 알게 되면 어떻게 처리하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이연법인세를 계산할 때 회계 담당자와 가장 자주 부딪히는 쟁점은 무엇일까요?",
+      "scope": "role:tax_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 특수관계자와 거래가 많은 회사라면 이전가격 측면에서 무엇을 준비해 두시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "세무조사 통지를 받았다면 첫 일주일 동안 무엇을 준비하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "현업이 거래 구조를 먼저 확정하고 세금 문제는 나중에 봐 달라고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "과세 당국과 회사의 해석이 다를 때 불복 절차까지 갈지 어떻게 판단하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "high"
+    },
+    {
+      "text": "신규 사업을 자회사로 할지 사업부로 할지 정할 때 세무상 어떤 차이를 비교하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "전년보다 유효세율이 크게 달라졌다면 어떤 원인을 먼저 확인하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세금 신고서나 세무 관련 서류를 직접 작성해 본 경험을 말씀해 주세요.",
+      "scope": "role:tax_specialist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "복잡한 세법 조항을 해석해서 결론을 낸 경험이 있다면 들려주세요.",
+      "scope": "role:tax_specialist",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기업 세무 담당자의 역할이 신고 업무에만 머물지 않는다면 그 밖에 어떤 일을 해야 한다고 보세요?",
+      "scope": "role:tax_specialist",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세무 분야로 진로를 정하게 된 계기를 말씀해 주세요.",
+      "scope": "role:tax_specialist",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "세법이 바뀌었을 때 회사에 미치는 영향을 정리해 현업에 어떻게 전파하시겠어요?",
+      "scope": "role:tax_specialist",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "그 절세 방안이 나중에 조세 회피로 판단된다면 누가 책임져야 한다고 보십니까?",
+      "scope": "role:tax_specialist",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사 계획 단계에서 중요성 금액은 어떤 기준으로 정하시겠어요?",
+      "scope": "role:auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출채권 조회서 회신이 오지 않으면 어떤 대체 절차를 수행하시겠어요?",
+      "scope": "role:auditor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고실사 입회에 나갔을 때 특히 주의 깊게 봐야 할 부분은 무엇인가요?",
+      "scope": "role:auditor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경영진이 제시한 회계 추정치가 합리적인지 어떻게 검증하시겠어요?",
+      "scope": "role:auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "표본 테스트에서 오류가 나왔을 때 그 결과를 모집단 전체로 어떻게 해석하시겠어요?",
+      "scope": "role:auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "부정 위험이 높다고 판단한 계정은 감사 절차를 어떻게 바꿔서 수행하시겠어요?",
+      "scope": "role:auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "필드 마감 직전에 회사가 중요한 계약서를 뒤늦게 제출하면 어떻게 대응하시겠어요?",
+      "scope": "role:auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회사 재무 임원이 감사 수정 사항을 반영하지 않겠다고 버티면 어떻게 하시겠어요?",
+      "scope": "role:auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시니어가 시간이 없다며 절차를 생략하자는데 본인은 꼭 필요하다고 본다면 어떻게 하시겠어요?",
+      "scope": "role:auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출총이익률이 업계보다 유독 높은 회사를 감사한다면 어떤 가설부터 세우시겠어요?",
+      "scope": "role:auditor",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "연말에 매출이 몰리고 다음 해 초에 반품이 많다면 어떤 위험을 의심하시겠어요?",
+      "scope": "role:auditor",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회계사 시험을 준비하면서 실무와 가장 가깝다고 느낀 과목과 그 이유를 말씀해 주세요.",
+      "scope": "role:auditor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "팀으로 짧은 기간에 많은 양의 검토를 끝내 본 경험을 말씀해 주세요.",
+      "scope": "role:auditor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "외부감사인이 재무제표에 대해 보증하는 것과 보증하지 않는 것은 무엇이라고 이해하고 계신가요?",
+      "scope": "role:auditor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사, 세무, 자문 가운데 감사 업무를 선택한 이유는 무엇인가요?",
+      "scope": "role:auditor",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시즌 중에 체력과 집중력이 떨어질 때 감사 품질을 어떻게 유지하시겠어요?",
+      "scope": "role:auditor",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "적정 의견을 냈던 회사에서 나중에 분식이 드러난다면 감사인은 무엇을 놓친 걸까요?",
+      "scope": "role:auditor",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "연간 내부감사 계획을 세울 때 감사 대상 부서의 우선순위를 어떻게 정하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "구매 프로세스 감사를 맡는다면 어떤 부정 시나리오를 먼저 점검하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사 보고서의 지적 사항을 현업이 받아들이게 하려면 어떻게 작성하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "법인카드 사용 내역을 감사한다면 어떤 패턴을 이상 징후로 보시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "지적 사항에 대한 개선 조치가 실제로 이행됐는지 어떻게 사후 점검하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "제보를 받아 조사를 시작할 때 제보자 보호와 사실 확인을 어떻게 함께 챙기시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사 중에 고위 임원이 관련된 비위 정황을 발견하면 누구에게 어떻게 보고하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "피감 부서장이 보고서에서 지적 내용을 빼 달라고 요청하면 어떻게 하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현업 직원이 원래 다들 이렇게 해 왔다며 관행을 내세우면 어떻게 대응하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 지점의 비용이 다른 지점보다 꾸준히 높게 나온다면 어떤 순서로 원인을 좁혀 가시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재고 차이가 반복되는 창고가 있다면 감사 범위를 어떻게 설계하시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규정 위반이나 잘못된 관행을 발견하고 개선을 이끌어 낸 경험이 있나요?",
+      "scope": "role:internal_auditor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상대가 말하기 꺼리는 이야기를 대화로 끌어내 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:internal_auditor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "내부감사가 적발 중심에서 예방과 자문 중심으로 바뀌어야 한다는 의견을 어떻게 보세요?",
+      "scope": "role:internal_auditor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "동료들에게 불편한 존재가 될 수도 있는 내부감사 업무에 지원한 이유는 무엇인가요?",
+      "scope": "role:internal_auditor",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사 결과가 인사 조치로 이어질 수 있을 때 판단의 공정성을 어떻게 지키시겠어요?",
+      "scope": "role:internal_auditor",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "감사팀도 결국 회사 조직의 일부인데, 경영진으로부터 정말 독립적일 수 있다고 보십니까?",
+      "scope": "role:internal_auditor",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "은행이 다른 금융업권보다 사회적으로 더 무거운 책임을 진다고 본다면 그 이유는 무엇인가요?",
+      "scope": "family:banking",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객의 말을 경청하고 질문하고 다시 확인하는 상담 과정이 은행 업무에서 왜 중요할까요?",
+      "scope": "family:banking",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "은행 영업점과 본부 부서는 역할이 어떻게 다르다고 알고 계신가요?",
+      "scope": "family:banking",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "은행 수익에서 비이자이익 비중이 커지는 흐름이 은행원 업무에 어떤 의미가 있다고 보세요?",
+      "scope": "family:banking",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "증권이나 보험이 아닌 은행을 선택한 이유를 말씀해 주세요.",
+      "scope": "family:banking",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "까다로운 상대를 끝까지 응대해서 결국 신뢰를 얻었던 경험을 말씀해 주세요.",
+      "scope": "family:banking",
+      "category": "고객",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 입장에서 불편한 절차를 찾아 개선하자고 제안해 본 경험이 있나요?",
+      "scope": "family:banking",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "팀에서 자기 몫을 하지 않는 구성원이 있었을 때 어떻게 대처하셨나요?",
+      "scope": "family:banking",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "목표 실적을 달성하려고 스스로 방법을 찾아 끈질기게 노력했던 경험을 들려주세요.",
+      "scope": "family:banking",
+      "category": "성과",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "정확성과 속도가 부딪힌 상황에서 무엇을 우선했고 왜 그렇게 판단했는지 말씀해 주세요.",
+      "scope": "family:banking",
+      "category": "가치관",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "입행 후 기대와 다른 업무를 맡아 실망스럽다면 어떻게 극복하시겠어요?",
+      "scope": "family:banking",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "고령 고객이 설명을 이해하지 못한 채 가입 서류에 서명하려고 하면 어떻게 하시겠어요?",
+      "scope": "family:banking",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "실적 압박이 심한 달에 고객에게 맞지 않는 상품이라도 팔자는 분위기라면 어떻게 하시겠어요?",
+      "scope": "family:banking",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보이스피싱 피해가 의심되는 고객이 급하게 거액 이체를 요청하면 어떻게 대응하시겠어요?",
+      "scope": "family:banking",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "직원 실수로 손해를 봤다며 고객이 객장에서 크게 항의하면 어떻게 하시겠어요?",
+      "scope": "family:banking",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금융 상품이나 경제 이슈를 공부하면서 가장 관심이 생긴 분야와 그 계기를 말씀해 주세요.",
+      "scope": "family:banking",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "판매나 고객 응대 아르바이트에서 성과를 냈던 경험을 들려주세요.",
+      "scope": "family:banking",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 데이터나 설문을 분석해서 서비스 개선 아이디어를 냈던 경험이 있나요?",
+      "scope": "family:banking",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "비대면 거래가 늘어나는 상황에서 영업점 은행원의 역할은 어떻게 달라져야 한다고 보세요?",
+      "scope": "family:banking",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금리 변화가 은행의 수익과 고객의 금융 행동에 왜 중요한지 말씀해 주세요.",
+      "scope": "family:banking",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "인터넷전문은행과 경쟁하는 전통 은행이 지켜야 할 강점은 무엇이라고 보세요?",
+      "scope": "family:banking",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 정보를 수집하고 이용하고 파기하는 과정에서 은행원이 특히 조심해야 할 점은 무엇일까요?",
+      "scope": "family:banking",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "지인이 대출 심사를 좀 잘 봐 달라고 부탁하면 어떻게 대응하시겠어요?",
+      "scope": "family:banking",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "은행원으로서 본인에게 가장 부족한 역량은 무엇이고 어떻게 보완하고 계신가요?",
+      "scope": "family:banking",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입행 후 10년 뒤 어떤 금융인이 되어 있고 싶은지 말씀해 주세요.",
+      "scope": "family:banking",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 만족이나 재방문으로 이어졌다고 확인할 수 있었던 본인의 성과가 있나요?",
+      "scope": "family:banking",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "스스로 세운 목표 대비 실제 결과를 수치로 보여 줄 수 있는 경험을 말씀해 주세요.",
+      "scope": "family:banking",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "은행 수수료 인상이 정당하다는 입장과 과도하다는 입장 중 어느 쪽을 지지하시겠어요?",
+      "scope": "family:banking",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "20대 고객을 영업점으로 끌어들이기 위한 마케팅 방안을 발표해 주세요.",
+      "scope": "family:banking",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "창구 마감 때 시재가 맞지 않으면 어떤 순서로 원인을 찾으시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "예금 상품을 권유할 때 고객의 자금 사용 계획을 먼저 확인해야 하는 이유는 무엇일까요?",
+      "scope": "role:bank_teller",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "투자성 상품의 적합성 확인 절차를 고객이 번거로워하면 어떻게 설명하시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "노후 준비용 IRP나 연금 상품에 관심 있는 사회초년생 고객에게 무엇을 먼저 물어보시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "대리인이 예금 해지를 요청하러 왔을 때 확인해야 할 사항은 무엇인가요?",
+      "scope": "role:bank_teller",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대기 고객이 많은 시간대에도 업무 정확도를 지키는 본인만의 방법이 있나요?",
+      "scope": "role:bank_teller",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이 금리가 더 높은 다른 은행으로 옮기겠다고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "설명을 다 들었던 투자 상품에서 손실이 나자 고객이 설명을 못 들었다고 항의하면 어떻게 하시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "한국어가 서툰 외국인 고객이 계좌 개설 서류 작성을 어려워하면 어떻게 도우시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "1년 뒤 전세 보증금으로 쓸 3천만 원을 맡기려는 고객에게 어떤 상품 조합을 제안하시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업점 신규 고객은 늘었는데 거래 유지율이 낮다면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "돈 계산이나 정산을 맡아 오차 없이 처리해 본 경험을 말씀해 주세요.",
+      "scope": "role:bank_teller",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 실수를 반복하지 않으려고 업무 절차를 스스로 정리해 본 경험이 있나요?",
+      "scope": "role:bank_teller",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리테일 창구 업무에서 단순 처리 이상의 가치를 만들려면 무엇이 필요하다고 보세요?",
+      "scope": "role:bank_teller",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객을 직접 만나는 리테일 업무를 하고 싶은 이유를 말씀해 주세요.",
+      "scope": "role:bank_teller",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이 원하는 상품이 그 고객에게 맞지 않는다고 판단되면 가입을 말리시겠어요?",
+      "scope": "role:bank_teller",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "판매 실적이 낮은 이유가 고객 보호를 너무 신경 써서라고 한다면, 핑계로 들리지 않을까요?",
+      "scope": "role:bank_teller",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자산가 고객과의 첫 상담에서 포트폴리오를 제안하기 전에 꼭 파악할 정보는 무엇인가요?",
+      "scope": "role:private_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객의 투자 성향과 실제 원하는 수익률이 맞지 않을 때 어떻게 조율하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금융 자산뿐 아니라 부동산과 상속까지 함께 고민하는 고객에게는 어떻게 자문하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 포트폴리오를 정기 점검할 때 리밸런싱을 제안하는 기준은 무엇으로 두시겠어요?",
+      "scope": "role:private_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상품을 제안한 뒤 고객이 내용을 제대로 이해했는지 어떻게 확인하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "거래가 없는 시기에도 고객과의 관계를 이어 가기 위해 어떤 접점을 만드시겠어요?",
+      "scope": "role:private_banker",
+      "category": "고객",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "시장 급락으로 자산이 크게 줄자 고객이 전액 환매를 요구하면 어떻게 상담하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오래 거래한 VIP 고객이 규정상 불가능한 우대 조건을 요구하면 어떻게 하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "가족 간 자산 분쟁 중인 고객이 한쪽 편을 들어 달라고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "은퇴를 앞둔 60대 고객이 매달 생활비를 안정적으로 받고 싶어 한다면 어떤 구조를 제안하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 포트폴리오 수익률이 벤치마크보다 낮다면 원인을 어떻게 나눠서 설명하시겠어요?",
+      "scope": "role:private_banker",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "누군가의 돈이나 중요한 결정에 대해 조언해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:private_banker",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "한 번 만난 사람과의 인연을 지속적인 관계로 발전시켰던 경험을 들려주세요.",
+      "scope": "role:private_banker",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "PB가 상품 판매자가 아니라 자산 관리 파트너로 인정받으려면 무엇이 필요하다고 보세요?",
+      "scope": "role:private_banker",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리테일 업무 중에서도 PB를 목표로 하는 이유를 말씀해 주세요.",
+      "scope": "role:private_banker",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "최근 경제 이슈 중 고객에게 먼저 연락해서 설명하고 싶었던 것이 있다면 무엇인가요?",
+      "scope": "role:private_banker",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "추천한 상품으로 고객이 손실을 봤는데도 그 추천이 옳았다고 말할 수 있습니까?",
+      "scope": "role:private_banker",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "중소기업 대출 상담을 할 때 재무제표 외에 어떤 비재무 정보를 확인하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "신규 기업 고객을 발굴할 때 어떤 기준으로 거래 가망 기업을 고르시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "기업 고객이 요청한 운전자금 규모가 적정한지 어떻게 판단하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대출 말고도 기업 고객과의 거래를 넓히려면 어떤 금융 서비스를 제안하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여신 약정 서류를 받을 때 법률과 내부 규정상 빠뜨리면 안 되는 확인 사항은 무엇일까요?",
+      "scope": "role:relationship_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "담보 가치가 떨어진 기존 여신 고객에게 추가 담보를 요청해야 한다면 어떻게 접근하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오랜 거래처 대표가 심사를 통과하기 어려운 규모의 대출을 요청하면 어떻게 대응하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "거래 기업에 대한 부정적인 소문이 돌 때 사실 확인과 여신 관리를 어떻게 하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "경쟁 은행이 더 낮은 금리로 주거래 기업을 빼 가려 한다면 어떻게 대응하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여신 거래처 공장을 방문했는데 가동이 거의 멈춘 것처럼 보인다면 무엇을 확인하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "매출은 성장하는데 매출채권 회수 기간이 계속 길어지는 기업이라면 어떤 위험을 보시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "수출 비중이 높은 제조기업 고객에게 환율이 급변할 때 어떤 금융 솔루션을 제안하시겠어요?",
+      "scope": "role:relationship_manager",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상대의 사업이나 상황을 깊이 이해하려고 직접 발로 뛰었던 경험을 말씀해 주세요.",
+      "scope": "role:relationship_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "과제나 공모전에서 한 기업의 재무 상태를 평가해 본 경험이 있나요?",
+      "scope": "role:relationship_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "기업금융 RM에게 영업력과 심사 관점 중 무엇이 더 필요하다고 보세요?",
+      "scope": "role:relationship_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "개인금융이 아닌 기업금융 업무를 하고 싶은 이유는 무엇인가요?",
+      "scope": "role:relationship_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "실적을 위해 무리하게 취급한 여신이 부실화되면 RM의 책임은 어디까지라고 보십니까?",
+      "scope": "role:relationship_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기업 신용을 평가할 때 산업, 경영, 영업, 재무 위험 중 무엇부터 보시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "차주의 상환 능력과 상환 의지는 각각 어떤 자료로 판단하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "담보가 충분한 차주인데도 대출을 거절해야 하는 경우가 있다면 어떤 경우일까요?",
+      "scope": "role:credit_analyst",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "소득 증빙이 불안정한 자영업자의 신용대출은 어떻게 평가하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "차입금 의존도가 높은 기업의 상환 능력을 볼 때 현금흐름표에서 무엇을 확인하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여신 사후 관리에서 조기 경보 신호로 볼 만한 지표에는 어떤 것이 있을까요?",
+      "scope": "role:credit_analyst",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업점이 우량 고객이라며 빠른 승인을 강하게 요청하는데 서류에 의문점이 있다면 어떻게 하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이익은 좋은데 대표자가 다른 금융기관에 연체 이력이 있다면 어떻게 판단하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "심사 기한이 촉박한데 핵심 자료가 빠져 있다면 어떻게 처리하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "부채비율은 낮은데 이자보상배율이 1배 미만인 기업이라면 어떻게 해석하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 업종의 연체율이 오르기 시작했다면 포트폴리오 차원에서 어떤 조치를 검토하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재무제표를 믿기 어려운 소규모 기업이라면 실제 사업 규모를 어떤 방법으로 추정하시겠어요?",
+      "scope": "role:credit_analyst",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자료를 검토한 끝에 누군가의 요청을 거절하거나 반대 의견을 냈던 경험이 있나요?",
+      "scope": "role:credit_analyst",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "숫자만으로는 드러나지 않는 위험을 현장이나 대화에서 알아챘던 경험이 있나요?",
+      "scope": "role:credit_analyst",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여신심사역은 영업점과 어떤 관계를 유지해야 한다고 보세요?",
+      "scope": "role:credit_analyst",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업보다 심사 업무에 더 끌리는 이유가 무엇인가요?",
+      "scope": "role:credit_analyst",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 승인한 대출이 1년 만에 부실이 됐다면 심사가 잘못된 건지 어떻게 가려내시겠습니까?",
+      "scope": "role:credit_analyst",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "증권사와 자산운용사는 고객과 시장을 대하는 방식이 어떻게 다르다고 보세요?",
+      "scope": "family:securities_am",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자본시장에서 일하는 사람에게 가장 중요한 자질 하나를 꼽는다면 무엇인가요?",
+      "scope": "family:securities_am",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 자산을 선량한 관리자로서 다룬다는 원칙은 실제 업무에서 어떻게 지켜져야 할까요?",
+      "scope": "family:securities_am",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "수익을 내는 부서와 위험을 통제하는 부서의 긴장 관계는 조직에 어떤 역할을 한다고 보세요?",
+      "scope": "family:securities_am",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인의 투자 판단이나 예측이 틀렸던 경험과 그 뒤에 어떻게 대응했는지 말씀해 주세요.",
+      "scope": "family:securities_am",
+      "category": "실패",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "짧은 시간 안에 많은 정보를 소화해서 결론을 내야 했던 경험을 들려주세요.",
+      "scope": "family:securities_am",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "강한 압박 속에서도 원칙을 지켰던 경험이 있다면 말씀해 주세요.",
+      "scope": "family:securities_am",
+      "category": "가치관",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시장 전망을 두고 다른 사람과 논쟁했을 때 본인 주장을 어떻게 뒷받침하셨나요?",
+      "scope": "family:securities_am",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신중함과 적극성 중 본인은 어느 쪽에 가까운지 실제 경험으로 보여 주세요.",
+      "scope": "family:securities_am",
+      "category": "가치관",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "장중에 보유 종목의 큰 악재 뉴스가 나왔다면 첫 30분 동안 무엇을 하시겠어요?",
+      "scope": "family:securities_am",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "선배가 고객에게 확인되지 않은 정보를 전달하는 걸 보게 되면 어떻게 하시겠어요?",
+      "scope": "family:securities_am",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 낸 전망과 반대 방향으로 시장이 계속 움직이면 판단을 어떻게 점검하시겠어요?",
+      "scope": "family:securities_am",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "주문 실수로 고객 계좌에 잘못된 거래가 체결된 걸 발견하면 어떻게 하시겠어요?",
+      "scope": "family:securities_am",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "팀 전체가 한 방향의 투자 의견을 낼 때 본인만 생각이 다르다면 어떻게 하시겠어요?",
+      "scope": "family:securities_am",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "직접 투자를 해 보셨다면 가장 기억에 남는 판단과 그 근거를 말씀해 주세요.",
+      "scope": "family:securities_am",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "한 기업을 골라 가치를 분석해 봤다면 그때 잡은 투자 포인트를 말씀해 주세요.",
+      "scope": "family:securities_am",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "금융 학회나 인턴, 투자 대회에서 가장 많이 배운 경험을 말씀해 주세요.",
+      "scope": "family:securities_am",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "금리 방향에 대한 시장의 기대가 바뀔 때 주식과 채권 시장은 어떻게 반응한다고 보세요?",
+      "scope": "family:securities_am",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "개인 투자자의 영향력이 커진 시장 환경이 증권·운용업에 어떤 변화를 가져왔다고 보세요?",
+      "scope": "family:securities_am",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "요즘 관심 있게 지켜보는 산업이나 섹터가 있다면 그 이유를 말씀해 주세요.",
+      "scope": "family:securities_am",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "업무 중 알게 된 미공개 정보로 지인이 투자하려 한다는 걸 알게 되면 어떻게 하시겠어요?",
+      "scope": "family:securities_am",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인 계좌의 매매와 고객 주문이 겹치는 이해상충 상황에서는 어떤 원칙을 지키시겠어요?",
+      "scope": "family:securities_am",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "시장을 공부하면서 본인의 투자 관점이 크게 바뀌었던 계기가 있나요?",
+      "scope": "family:securities_am",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "변동성이 큰 이 분야에서 오래 일하기 위해 스트레스를 어떻게 관리하고 계신가요?",
+      "scope": "family:securities_am",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 분석하거나 운용한 결과를 수익률 같은 지표로 설명할 수 있는 사례가 있나요?",
+      "scope": "family:securities_am",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "모의투자나 투자 대회에서 낸 성과가 운이 아니라 실력이었다고 볼 근거가 있을까요?",
+      "scope": "family:securities_am",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "향후 1년을 가정한 자산배분 전략을 세워 발표해 주세요.",
+      "scope": "family:securities_am",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "패시브 투자 확대가 시장 효율성을 높인다는 입장과 해친다는 입장 중 어느 쪽을 지지하시겠어요?",
+      "scope": "family:securities_am",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "담당하고 싶은 섹터에서 가장 경쟁력 있다고 보는 기업과 그 이유를 말씀해 주세요.",
+      "scope": "role:securities",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기업 리포트를 쓸 때 실적 추정은 어떤 순서로 세우시겠어요?",
+      "scope": "role:securities",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상대가치 지표와 DCF 같은 절대가치 평가가 다른 결론을 낸다면 어떻게 판단하시겠어요?",
+      "scope": "role:securities",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기관 투자자와의 아침 미팅에서 3분 안에 종목 아이디어를 전달한다면 어떻게 구성하시겠어요?",
+      "scope": "role:securities",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기업 IR 담당자와 미팅할 때 회사가 굳이 말하지 않는 부분을 파악하려면 무엇을 물어보시겠어요?",
+      "scope": "role:securities",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "RA로 입사하면 애널리스트를 지원하면서 어떤 일을 가장 잘해야 한다고 보세요?",
+      "scope": "role:securities",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "커버하는 기업이 어닝 쇼크를 냈는데 매수 의견을 유지하고 있다면 어떻게 하시겠어요?",
+      "scope": "role:securities",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "커버 기업이 부정적인 리포트에 항의하며 탐방을 거절하면 어떻게 대응하시겠어요?",
+      "scope": "role:securities",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기관 고객이 다른 증권사와 정반대인 우리 의견의 근거를 따져 물으면 어떻게 하시겠어요?",
+      "scope": "role:securities",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "한 기업의 영업이익률이 3년 연속 떨어졌다면 원인을 어떤 순서로 쪼개 보시겠어요?",
+      "scope": "role:securities",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "국내 커피 전문점 시장 규모를 추정한다면 어떤 논리로 접근하시겠어요?",
+      "scope": "role:securities",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리포트나 공시를 읽다가 숫자에서 이상한 점을 발견했던 경험이 있나요?",
+      "scope": "role:securities",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "애널리스트 리포트를 읽고 본인 의견이 달랐던 경험이 있다면 들려주세요.",
+      "scope": "role:securities",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리서치 애널리스트의 고객은 누구이고 그 고객에게 어떤 가치를 줘야 한다고 보세요?",
+      "scope": "role:securities",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "운용이나 IB가 아니라 리서치·세일즈를 선택한 이유가 무엇인가요?",
+      "scope": "role:securities",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 종목이라도 기관 투자자와 개인 고객에게 설명하는 방식은 어떻게 달라야 할까요?",
+      "scope": "role:securities",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리서치가 매도 의견을 거의 내지 않는다는 비판에 대해 어떻게 답하시겠습니까?",
+      "scope": "role:securities",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상장을 준비하는 회사의 공모가를 산정할 때 비교 기업은 어떤 방식으로 고르시겠어요?",
+      "scope": "role:investment_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "회사채 발행을 주관할 때 발행 금리에 영향을 주는 요인은 무엇이라고 보세요?",
+      "scope": "role:investment_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인수금융 구조를 검토할 때 대주단 입장에서 가장 먼저 확인할 위험은 무엇인가요?",
+      "scope": "role:investment_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "부동산 PF 딜을 검토한다면 사업성 평가에서 무엇을 가장 먼저 보시겠어요?",
+      "scope": "role:investment_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "투자 제안서를 작성할 때 투자자가 가장 궁금해할 내용은 무엇이라고 생각하세요?",
+      "scope": "role:investment_banker",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "실사에서 대상 회사의 재무제표를 볼 때 어떤 항목이 조정 대상이 될 수 있을까요?",
+      "scope": "role:investment_banker",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "딜 클로징 직전에 대상 회사의 우발채무가 새로 발견되면 어떻게 대응하시겠어요?",
+      "scope": "role:investment_banker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "밤늦게 고객사가 내일 아침까지 밸류에이션 수정본을 달라고 하면 우선순위를 어떻게 정하시겠어요?",
+      "scope": "role:investment_banker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "발행사가 원하는 금리와 시장 수요가 맞지 않아 수요예측이 부진하면 어떻게 하시겠어요?",
+      "scope": "role:investment_banker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해외 딜이나 해외 근무를 맡게 된다면 어떤 어려움이 예상되고 어떻게 대비하시겠어요?",
+      "scope": "role:investment_banker",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "EBITDA가 100억 원이고 업계 멀티플이 8배라면 그 숫자를 그대로 쓰기 전에 무엇을 보정하시겠어요?",
+      "scope": "role:investment_banker",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "오너 경영 중소기업이 가업 승계를 고민한다면 어떤 자본시장 해법을 검토해 볼 수 있을까요?",
+      "scope": "role:investment_banker",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "관심 있는 IB 분야와 그 분야를 위해 준비해 온 역량을 말씀해 주세요.",
+      "scope": "role:investment_banker",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "극도로 바쁜 일정 속에서도 결과물의 질을 지켜 냈던 경험을 말씀해 주세요.",
+      "scope": "role:investment_banker",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "IB 업무에서 신입이 가장 먼저 익혀야 하는 역량은 무엇이라고 보세요?",
+      "scope": "role:investment_banker",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 금융 직무 중에서 IB에 지원한 이유를 말씀해 주세요.",
+      "scope": "role:investment_banker",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "수수료를 받는 주관사는 발행사에 유리한 평가를 할 수밖에 없다는 비판에 어떻게 답하시겠습니까?",
+      "scope": "role:investment_banker",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "주식형 펀드를 운용한다면 종목 편입 여부를 어떤 기준으로 결정하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "채권 포트폴리오의 듀레이션을 늘리거나 줄이는 판단은 무엇을 근거로 하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대체투자 자산을 편입할 때 전통 자산과 다르게 봐야 할 위험은 무엇인가요?",
+      "scope": "role:asset_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "펀드 성과를 평가할 때 수익률 말고 어떤 지표를 함께 보시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "벤치마크를 크게 이기려면 추적오차를 감수해야 할 텐데, 그 한도는 어떻게 정하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대규모 환매가 몰릴 때를 대비해 평소 유동성을 어떻게 관리하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "편입한 종목이 투자 논리와 다르게 3개월째 하락하고 있다면 어떻게 판단하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기관 고객이 단기 성과 부진을 이유로 운용 전략을 바꾸라고 요구하면 어떻게 대응하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "운용 규정상 편입 한도에 거의 닿은 종목을 더 사고 싶다면 어떻게 하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 수익률을 낸 두 펀드가 있다면 어느 매니저가 더 잘했는지 어떻게 가려내시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인플레이션이 예상보다 오래 지속된다면 멀티에셋 포트폴리오를 어떻게 조정하시겠어요?",
+      "scope": "role:asset_manager",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인만의 투자 원칙을 세우고 그것을 지켜 본 경험을 말씀해 주세요.",
+      "scope": "role:asset_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 자산에 나눠 투자하면서 비중을 조절해 본 경험을 말씀해 주세요.",
+      "scope": "role:asset_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "펀드매니저는 좋은 종목을 고르는 사람이라는 말에 동의하시나요?",
+      "scope": "role:asset_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "증권사가 아닌 운용사에서 투자 업무를 하고 싶은 이유는 무엇인가요?",
+      "scope": "role:asset_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "ESG 요소를 투자 판단에 반영하면 수익률을 희생하게 된다는 주장을 어떻게 보세요?",
+      "scope": "role:asset_manager",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대부분의 액티브 펀드가 장기적으로 지수를 못 이긴다면 액티브 운용역은 왜 필요합니까?",
+      "scope": "role:asset_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "VaR 수치만으로 시장 위험을 관리할 때 놓칠 수 있는 위험은 무엇일까요?",
+      "scope": "role:risk_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "스트레스 테스트 시나리오를 설계한다면 어떤 기준으로 극단적인 상황을 고르시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리스크 한도를 부서별로 배분할 때 무엇을 기준으로 삼으시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "신용위험을 측정할 때 부도 시 손실률을 추정하기 어려운 이유는 무엇이라고 보세요?",
+      "scope": "role:risk_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "유동성 위험을 관리할 때 평상시 지표와 위기 시 대응 계획은 어떻게 연결하시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리스크 측정에 쓰는 데이터와 계산 산식이 정확한지 어떻게 검증하시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s3",
+      "confidence": "high"
+    },
+    {
+      "text": "운용 부서가 수익 기회를 이유로 한도 초과를 잠시만 허용해 달라고 하면 어떻게 하시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보고 직전에 리스크 지표가 전일보다 급변했는데 데이터 오류인지 실제 위험인지 모르겠다면요?",
+      "scope": "role:risk_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "주요 거래상대방의 신용등급이 갑자기 떨어졌다는 소식을 들으면 무엇부터 점검하시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금리가 1%포인트 오를 때 채권 포트폴리오 가치가 얼마나 변할지 어떻게 추정하시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 업종에 익스포저가 몰려 있다면 집중 위험을 어떻게 측정하고 줄이시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "위험 요인을 미리 찾아내 문제를 예방했던 경험을 말씀해 주세요.",
+      "scope": "role:risk_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통계나 계량 분석을 활용해서 결론을 도출해 본 경험을 들려주세요.",
+      "scope": "role:risk_manager",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "리스크관리 업무를 처음 듣는 사람에게 이 일이 왜 필요한지 어떻게 설명하시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "수익을 내는 쪽이 아니라 위험을 지키는 쪽에서 일하고 싶은 이유가 무엇인가요?",
+      "scope": "role:risk_manager",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "영업 부서가 리스크 한도 설정 근거를 납득하지 못하면 어떻게 설명하시겠어요?",
+      "scope": "role:risk_manager",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "모델이 예측하지 못한 위기가 실제로 터졌다면 리스크관리 부서는 책임을 피할 수 있을까요?",
+      "scope": "role:risk_manager",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험업은 다른 금융업과 비교해 수익이 만들어지는 구조가 어떻게 다르다고 보세요?",
+      "scope": "family:insurance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "생명보험과 손해보험은 다루는 위험과 업무 방식에서 어떤 차이가 있다고 알고 계신가요?",
+      "scope": "family:insurance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상품, 언더라이팅, 계리, 보상 부서가 서로 어떻게 영향을 주고받는지 말씀해 주세요.",
+      "scope": "family:insurance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험사에서 손해율 관리가 여러 부서의 공동 과제가 되는 이유는 무엇이라고 보세요?",
+      "scope": "family:insurance",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "원칙대로 처리하느라 상대에게 불리한 결론을 전달해야 했던 경험이 있나요?",
+      "scope": "family:insurance",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사고나 손실로 힘들어하는 사람의 이야기를 들어 주고 실제 도움을 줬던 경험이 있나요?",
+      "scope": "family:insurance",
+      "category": "고객",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 부서의 이해가 얽힌 문제를 협업으로 풀어 본 경험이 있나요?",
+      "scope": "family:insurance",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "근거를 가지고 판단했는데 결과가 예상과 달랐던 경험이 있다면 들려주세요.",
+      "scope": "family:insurance",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "반복적이고 세밀한 검토 업무를 오랫동안 집중해서 해낸 경험을 말씀해 주세요.",
+      "scope": "family:insurance",
+      "category": "강점",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이 약관 설명을 듣지 못했다며 계약 자체를 취소해 달라고 하면 어떻게 하시겠어요?",
+      "scope": "family:insurance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "실적 압박 때문에 인수 기준을 느슨하게 적용하자는 분위기가 생기면 어떻게 하시겠어요?",
+      "scope": "family:insurance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험사기가 의심되지만 증거가 부족한 청구 건을 맡게 되면 어떻게 처리하시겠어요?",
+      "scope": "family:insurance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "대형 재해로 보험금 청구가 한꺼번에 몰리면 무엇을 먼저 정비하시겠어요?",
+      "scope": "family:insurance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 민원이 금융당국에 접수됐다는 연락을 받으면 어떤 순서로 대응하시겠어요?",
+      "scope": "family:insurance",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험이나 위험 관리에 관심을 갖게 된 계기가 된 경험이 있다면 말씀해 주세요.",
+      "scope": "family:insurance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "levels": [
+        "entry"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "text": "약관이나 규정처럼 복잡한 문서를 읽고 핵심을 정리해 본 경험을 들려주세요.",
+      "scope": "family:insurance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "통계나 데이터를 근거로 위험을 판단해 본 경험이 있나요?",
+      "scope": "family:insurance",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고령화가 보험 상품과 보험사 수익 구조에 어떤 변화를 가져올 거라고 보세요?",
+      "scope": "family:insurance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "IFRS17 도입 이후 보험사들의 상품 전략은 어떤 방향으로 바뀌고 있다고 보세요?",
+      "scope": "family:insurance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기후 변화로 자연재해가 늘어나는 흐름이 손해보험업에 어떤 과제를 준다고 보세요?",
+      "scope": "family:insurance",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험금 지급을 줄이면 실적에 도움이 되는 상황에서 공정한 지급을 어떻게 지키시겠어요?",
+      "scope": "family:insurance",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "업무상 알게 된 고객의 병력이나 사고 정보를 다룰 때 어떤 원칙을 지키시겠어요?",
+      "scope": "family:insurance",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험 분야 전문성을 쌓기 위해 어떤 자격이나 공부를 계획하고 계신가요?",
+      "scope": "family:insurance",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "내 판단이 누군가의 생활에 큰 영향을 줄 수 있다는 부담은 어떻게 다루시겠어요?",
+      "scope": "family:insurance",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "본인이 기여해서 비용이나 손실이 줄어든 경험이 있다면 수치와 함께 말씀해 주세요.",
+      "scope": "family:insurance",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객이나 상대방의 만족도를 높였다고 확인할 수 있었던 성과를 말씀해 주세요.",
+      "scope": "family:insurance",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험사기 예방과 선량한 고객의 편의를 함께 높이는 방안을 발표해 주세요.",
+      "scope": "family:insurance",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험료 산정에 개인 건강 데이터를 더 많이 활용하는 것에 찬성하시나요, 반대하시나요?",
+      "scope": "family:insurance",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "과거 병력이 있는 고객의 청약서를 심사할 때 어떤 정보를 추가로 확인하시겠어요?",
+      "scope": "role:underwriter",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인수 거절과 조건부 인수 중 무엇을 택할지 판단하는 기준은 무엇인가요?",
+      "scope": "role:underwriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "기업성 화재보험을 인수할 때 현장 위험 조사에서 무엇을 중점적으로 보시겠어요?",
+      "scope": "role:underwriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "고지의무 위반 가능성을 청약 단계에서 걸러 내려면 어떤 점을 살펴보시겠어요?",
+      "scope": "role:underwriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "재보험을 활용할지 결정할 때 어떤 위험 규모와 조건을 따져 보시겠어요?",
+      "scope": "role:underwriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인수 가이드라인에 없는 새로운 유형의 위험이 들어오면 판단 기준을 어떻게 세우시겠어요?",
+      "scope": "role:underwriter",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "우수 설계사가 가져온 대형 계약인데 위험도가 기준을 조금 넘는다면 어떻게 하시겠어요?",
+      "scope": "role:underwriter",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "같은 고객이 짧은 기간에 여러 보험사에 고액 보장을 가입하려는 정황이 보이면 어떻게 하시겠어요?",
+      "scope": "role:underwriter",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "심사 결과에 불만을 가진 고객이 직접 전화해 이유를 따지면 어떻게 설명하시겠어요?",
+      "scope": "role:underwriter",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "심사 기간이 길다는 영업 채널의 불만이 계속되면 어떤 개선을 제안하시겠어요?",
+      "scope": "role:underwriter",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 상품의 손해율이 판매 1년 만에 급등했다면 언더라이팅 측면에서 무엇을 점검하시겠어요?",
+      "scope": "role:underwriter",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인수 기준을 강화하면 손해율은 좋아지지만 판매가 줄어든다면 그 균형을 어떻게 잡으시겠어요?",
+      "scope": "role:underwriter",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규정에 따라 판단하면서도 예외를 고려해야 했던 경험이 있다면 말씀해 주세요.",
+      "scope": "role:underwriter",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "의학이나 공학처럼 낯선 분야의 지식을 업무 때문에 공부해 본 경험을 들려주세요.",
+      "scope": "role:underwriter",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "언더라이터를 보험사의 문지기라고 부르기도 하는데, 그 표현에 동의하시나요?",
+      "scope": "role:underwriter",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험사 여러 직무 중에서 언더라이팅을 선택한 이유를 말씀해 주세요.",
+      "scope": "role:underwriter",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "인수를 거절한 고객이 결국 다른 회사에 가입했다면, 그 거절은 회사에 손해 아닌가요?",
+      "scope": "role:underwriter",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "신상품 보험료를 산출할 때 위험률, 이율, 사업비 가정은 어떻게 정하시겠어요?",
+      "scope": "role:actuary",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "high"
+    },
+    {
+      "text": "위험률을 개발할 때 자사 경험 통계가 부족하다면 어떤 방법을 쓰시겠어요?",
+      "scope": "role:actuary",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공고기반",
+      "src": "s7",
+      "confidence": "high"
+    },
+    {
+      "text": "책임준비금이 부족하다는 신호는 어떤 분석에서 가장 먼저 나타난다고 보세요?",
+      "scope": "role:actuary",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "이원별 손익 분석 결과를 보고 어느 원천에서 이익과 손실이 났는지 어떻게 설명하시겠어요?",
+      "scope": "role:actuary",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "high"
+    },
+    {
+      "text": "IFRS17의 보험계약마진은 보험사 이익을 보는 방식을 어떻게 바꿨다고 이해하고 계신가요?",
+      "scope": "role:actuary",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "해지율 가정에 따라 상품 수익성이 크게 달라진다면 그 가정은 어떻게 검증하시겠어요?",
+      "scope": "role:actuary",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상품 출시 일정이 촉박한데 검증에서 산출 오류 가능성이 발견되면 어떻게 하시겠어요?",
+      "scope": "role:actuary",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "상품팀이 경쟁력을 위해 보험료를 더 낮춰 달라고 요구하면 계리적으로 어떻게 대응하시겠어요?",
+      "scope": "role:actuary",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "실제 사고 발생률이 가정과 계속 다르게 나타나면 어떤 조치를 검토하시겠어요?",
+      "scope": "role:actuary",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "금리가 크게 떨어지면 금리확정형 저축성 보험의 부채는 어떻게 변할지 설명해 주실 수 있나요?",
+      "scope": "role:actuary",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "미래 현금흐름 예측 모델의 결과가 직관과 다르게 나오면 무엇부터 점검하시겠어요?",
+      "scope": "role:actuary",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공고기반",
+      "src": "s7",
+      "confidence": "high"
+    },
+    {
+      "text": "보험계리사 시험이나 보험수리 공부 중 실무와 가장 연결된다고 느낀 내용은 무엇인가요?",
+      "scope": "role:actuary",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "levels": [
+        "entry"
+      ],
+      "src": "s6",
+      "confidence": "high"
+    },
+    {
+      "text": "수학적 모델을 만들거나 검증하면서 가정의 한계를 느꼈던 경험이 있나요?",
+      "scope": "role:actuary",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "계리 조직이 상품, 결산, 리스크 측면에서 각각 어떤 역할을 한다고 이해하고 계신가요?",
+      "scope": "role:actuary",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "high"
+    },
+    {
+      "text": "수학이나 통계 역량을 살릴 수 있는 여러 길 중 보험계리를 택한 이유는 무엇인가요?",
+      "scope": "role:actuary",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "복잡한 계리 개념을 계리 전공이 아닌 동료에게 설명해야 한다면 어떻게 하시겠어요?",
+      "scope": "role:actuary",
+      "category": "커뮤니케이션",
+      "type": "communication",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "high"
+    },
+    {
+      "text": "가정 하나만 바꿔도 준비금이 크게 달라지는데, 그 숫자를 외부에서 믿어야 할 근거는 무엇입니까?",
+      "scope": "role:actuary",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "교통사고 보상 건을 처음 접수하면 어떤 순서로 사실관계를 확인하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "과실 비율에 대해 양측 주장이 엇갈리면 어떤 자료로 판단하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "약관상 보상 범위가 애매한 청구 건은 어떤 근거로 지급 여부를 결정하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "후유장해 보험금을 산정할 때 의료 자문이 필요한 경우는 언제라고 보세요?",
+      "scope": "role:claims_adjuster",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "화재 사고 현장 조사에서 손해액을 산정하려면 무엇을 확보하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "손해사정 보고서를 제3자가 봐도 납득하게 쓰려면 무엇을 담아야 할까요?",
+      "scope": "role:claims_adjuster",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "피해자가 보상금이 너무 적다며 여러 차례 강하게 항의하면 어떻게 대응하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "진료 기록에서 과잉 진료로 의심되는 정황이 보이면 어떻게 처리하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사고 직후 경황이 없는 고객이 앞으로 어떻게 해야 하느냐고 물으면 어떻게 안내하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 지역에서 비슷한 유형의 사고 청구가 갑자기 늘었다면 어떤 가능성을 검토하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보험금 지급 기간이 길어져 민원이 늘고 있다면 프로세스 중 어디부터 개선하시겠어요?",
+      "scope": "role:claims_adjuster",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "입장이 서로 다른 사람들 사이에서 합의를 이끌어 낸 경험이 있나요?",
+      "scope": "role:claims_adjuster",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "현장에 직접 가서 확인해야 문제를 풀 수 있었던 경험을 말씀해 주세요.",
+      "scope": "role:claims_adjuster",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "보상 담당자가 고객에게 보험의 가치를 실제로 느끼게 해 주는 순간은 언제라고 보세요?",
+      "scope": "role:claims_adjuster",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "자동차, 재물, 신체 손해사정 중 가장 관심 있는 분야와 그 이유를 말씀해 주세요.",
+      "scope": "role:claims_adjuster",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "사고를 겪은 고객을 매일 상대해야 하는 보상 업무에 지원한 이유는 무엇인가요?",
+      "scope": "role:claims_adjuster",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "normal",
+      "basis": "직무기반",
+      "confidence": "medium"
+    },
+    {
+      "text": "규정대로 지급을 거절했는데 고객이 언론에 알리겠다고 하면 결정을 바꾸시겠습니까?",
+      "scope": "role:claims_adjuster",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반",
+      "confidence": "medium"
+    }
+  ]
+}

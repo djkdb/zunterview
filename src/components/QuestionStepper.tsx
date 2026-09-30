@@ -11,22 +11,30 @@ interface Props {
   showScores: boolean;
 }
 
-/** One slot per question: done / current / upcoming, with follow-ups marked. */
+/** One slot per main question: done / current / upcoming; follow-ups are counted beside it. */
 export function QuestionStepper({ questions, total, showScores }: Props) {
-  const current = questions.length - 1;
+  const mains = questions.filter((x) => !x.isFollowUp);
+  const current = mains.length - 1;
+  const onFollowUp = Boolean(questions[questions.length - 1]?.isFollowUp);
+  const threadDone = (i: number) => {
+    const root = mains[i];
+    if (!root?.answer) return false;
+    // A main question stays "current" while its follow-ups are still being answered.
+    return i < current || !questions.some((x) => x.parentId === root.id && !x.answer);
+  };
   return (
     <nav aria-label="문항 진행" className="flex items-center gap-3">
       <ol className="flex flex-1 items-center gap-1">
         {Array.from({ length: total }).map((_, i) => {
-          const q = questions[i];
-          const done = Boolean(q?.answer);
+          const q = mains[i];
+          const done = threadDone(i) && !(i === current && onFollowUp && !questions[questions.length - 1].answer);
           const isCurrent = i === current && !done;
           const tone = done && showScores && q.score !== null ? TONE_BG[scoreTone(q.score)] : done ? "bg-navy" : "";
           return (
             <li
               key={i}
               className="relative h-1.5 flex-1 overflow-hidden rounded-full bg-line-strong/60"
-              aria-label={`${i + 1}번 문항${q?.isFollowUp ? " (꼬리질문)" : ""}: ${done ? "답변 완료" : isCurrent ? "진행 중" : "대기"}`}
+              aria-label={`${i + 1}번 문항: ${done ? "답변 완료" : isCurrent ? (onFollowUp ? "꼬리질문 진행 중" : "진행 중") : "대기"}`}
             >
               {done && <motion.span className={`absolute inset-0 ${tone}`} initial={{ width: 0 }} animate={{ width: "100%" }} transition={{ duration: 0.4 }} />}
               {isCurrent && <span className="absolute inset-0 animate-pulse bg-accent/60" />}
@@ -35,7 +43,7 @@ export function QuestionStepper({ questions, total, showScores }: Props) {
         })}
       </ol>
       <span className="shrink-0 font-mono text-[12px] text-muted tabular-nums">
-        <b className="text-ink">{pad2(Math.max(1, questions.length))}</b> / {pad2(total)}
+        <b className="text-ink">{pad2(Math.max(1, mains.length))}</b> / {pad2(total)}
         {questions.some((q) => q.isFollowUp) && (
           <span className="ml-2 font-sans text-faint">꼬리질문 {questions.filter((q) => q.isFollowUp).length}</span>
         )}

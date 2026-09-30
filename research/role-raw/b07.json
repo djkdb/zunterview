@@ -1,0 +1,6484 @@
+{
+  "batch": "b07",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "대입정보포털 직업정보 — 방송연출가(방송 프로듀서)",
+      "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=416101",
+      "type": "job_description"
+    },
+    {
+      "id": "s2",
+      "title": "대입정보포털 직업정보 — 영상·녹화·편집기사",
+      "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=411&searchCrCd=416601",
+      "type": "job_description"
+    },
+    {
+      "id": "s3",
+      "title": "브런치 — 구성작가 채용에서 방송사가 요구하는 것들",
+      "url": "https://brunch.co.kr/@jumi710/51",
+      "type": "interview_review"
+    },
+    {
+      "id": "s4",
+      "title": "링커리어 — 2023 하반기 대학 매체사 영상PD 인턴 면접 후기",
+      "url": "https://community.linkareer.com/intern_activity/4431096",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "s5",
+      "title": "링커리어 — 신입 반도체 공정기술 직무 인터뷰",
+      "url": "https://community.linkareer.com/junior_activity/1597139",
+      "type": "interview_review"
+    },
+    {
+      "id": "s6",
+      "title": "SK커리어스 저널 — 양산기술 직무 분석(단위공정기술, M&T 기술혁신)",
+      "url": "https://www.skcareersjournal.com/3020",
+      "type": "official_recruitment"
+    },
+    {
+      "id": "s7",
+      "title": "SK커리어스 저널 — 반도체 개발부터 양산까지 직무 이어보기(JD 입문서)",
+      "url": "https://www.skcareersjournal.com/3510",
+      "type": "official_recruitment"
+    },
+    {
+      "id": "s8",
+      "title": "코멘토 — 공정기술 직무면접 준비 질문과 현직자 답변",
+      "url": "https://comento.kr/job-questions/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90/%EA%B3%B5%EC%A0%95%EA%B8%B0%EC%88%A0/%EA%B3%B5%EC%A0%95%EA%B8%B0%EC%88%A0%EC%A7%81%EB%AC%B4_%EC%A7%81%EB%AC%B4%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4-610918",
+      "type": "interview_review"
+    },
+    {
+      "id": "s9",
+      "title": "링커리어 멘토 Q&A — 반도체연구소 공정기술 면접 관련 질문",
+      "url": "https://community.linkareer.com/mento_samsung/4324718",
+      "type": "interview_review"
+    },
+    {
+      "id": "s10",
+      "title": "대입정보포털 직업정보 — 전자제품 및 부품 개발기술자",
+      "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=153201",
+      "type": "job_description"
+    },
+    {
+      "id": "s11",
+      "title": "코멘토 직무위키 — 완성차 연구개발 현직자의 직무소개",
+      "url": "https://comento.kr/job-wiki/%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8/%EC%97%B0%EA%B5%AC%EA%B0%9C%EB%B0%9C/699",
+      "type": "other_public"
+    },
+    {
+      "id": "s12",
+      "title": "링커리어 — 2025 하반기 완성차 기업 면접 합격 후기 모음(1·2차 면접 질문)",
+      "url": "https://community.linkareer.com/employment_data/5018739",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "s13",
+      "title": "대입정보포털 직업정보 — 건설기계공학기술자 및 연구원",
+      "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=151101",
+      "type": "job_description"
+    },
+    {
+      "id": "s14",
+      "title": "2차전지 기업 채용 — R&D 직무소개(소재·Cell 개발, R&D 기획, Pack/BMS, 시뮬레이션)",
+      "url": "https://www.lgensol.com/mobile/kr/career/job-guide-tab1",
+      "type": "official_recruitment"
+    },
+    {
+      "id": "s15",
+      "title": "대입정보포털 직업정보 — 화학공학 기술자 및 시험원",
+      "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=154201",
+      "type": "job_description"
+    },
+    {
+      "id": "s16",
+      "title": "링커리어 — 2026 상반기 완성차 기업 면접 질문 리스트(1·2차 면접 후기)",
+      "url": "https://community.linkareer.com/employment_data/5898194",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "s17",
+      "title": "코멘토 — 반도체 기업 전공면접 준비 질문과 현직자 답변",
+      "url": "https://comento.kr/job-questions/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90/%EA%B3%B5%EC%A0%95%EA%B8%B0%EC%88%A0/%EB%B0%98%EB%8F%84%EC%B2%B4_%EA%B8%B0%EC%97%85%20%EC%A0%84%EA%B3%B5%EB%A9%B4%EC%A0%91%EC%97%90%20%EB%8C%80%ED%95%98%EC%97%AC-599950",
+      "type": "interview_review"
+    },
+    {
+      "id": "s18",
+      "title": "자소설닷컴 블로그 — 완성차 기업 합격 후기(면접 질문 정리)",
+      "url": "https://jasoseol.com/blog/post/%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EC%9E%90%EC%86%8C%EC%84%9C-%ED%8C%81-%EC%9D%B8%EC%A0%81%EC%84%B1-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8%EA%B9%8C/",
+      "type": "interview_review"
+    },
+    {
+      "id": "s19",
+      "title": "2차전지 기업 채용 — 생산기술·품질 직무소개(공정/요소기술, 설비기술, 품질보증)",
+      "url": "https://www.lgensol.com/mobile/kr/career/job-guide-tab2",
+      "type": "official_recruitment"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "broadcast_pd",
+      "aliases": [
+        "방송PD",
+        "PD",
+        "프로듀서",
+        "연출",
+        "방송 연출가",
+        "예능 PD",
+        "교양 PD",
+        "조연출",
+        "AD",
+        "Broadcast Producer",
+        "TV Producer"
+      ],
+      "skills": [
+        "프로그램 기획",
+        "출연자 섭외",
+        "촬영 연출",
+        "편집 방향 결정",
+        "제작비·일정 관리",
+        "생방송 운영"
+      ],
+      "responsibilities": [
+        "프로그램 기획안 작성과 제작 회의 주도",
+        "출연자 섭외와 촬영 현장 연출",
+        "편집·후반 작업 관장과 심의 대응",
+        "제작비 집행과 제작 일정 관리",
+        "홍보 전략 수립과 시청자 반응 분석"
+      ],
+      "keywords": [
+        "기획안",
+        "섭외",
+        "큐시트",
+        "녹화",
+        "생방송",
+        "편집",
+        "심의",
+        "시청률",
+        "제작비",
+        "조연출",
+        "포맷",
+        "화제성"
+      ],
+      "topics": {
+        "role": [
+          "프로그램 기획",
+          "섭외 전략",
+          "제작 일정 관리",
+          "생방송 운영",
+          "편집 방향",
+          "방송 심의"
+        ],
+        "scenario": [
+          "녹화 당일 출연자 불참",
+          "생방송 중계 화면 끊김",
+          "방송 후 자막 오류 제보",
+          "제작비 삭감"
+        ],
+        "result": [
+          "시청률·분당 시청률",
+          "온라인 클립 조회수",
+          "화제성 지표"
+        ],
+        "en": [
+          "program planning",
+          "casting",
+          "live broadcast",
+          "production schedule",
+          "ratings analysis"
+        ]
+      },
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "id": "video_producer",
+      "aliases": [
+        "영상PD",
+        "영상 제작자",
+        "콘텐츠 PD",
+        "브랜디드 콘텐츠 PD",
+        "유튜브 PD",
+        "영상 크리에이터",
+        "Video Producer",
+        "Content Producer"
+      ],
+      "skills": [
+        "영상 기획",
+        "콘티 작성",
+        "촬영(카메라·조명·오디오)",
+        "편집",
+        "클라이언트 커뮤니케이션",
+        "채널 지표 분석"
+      ],
+      "responsibilities": [
+        "영상 콘텐츠 기획과 콘티·촬영 리스트 작성",
+        "촬영 진행과 현장 관리",
+        "편집·후반 작업과 외주 관리",
+        "광고주·클라이언트 요구 조율",
+        "채널 성과 분석과 개선"
+      ],
+      "keywords": [
+        "콘티",
+        "촬영",
+        "브랜디드",
+        "숏폼",
+        "유튜브",
+        "클라이언트",
+        "광고주",
+        "시청 지속 시간",
+        "썸네일",
+        "초상권",
+        "포트폴리오",
+        "외주"
+      ],
+      "topics": {
+        "role": [
+          "영상 기획",
+          "브랜디드 콘텐츠",
+          "촬영 준비",
+          "클라이언트 조율",
+          "채널 지표"
+        ],
+        "scenario": [
+          "최종본 전면 수정 요청",
+          "예산 삭감",
+          "촬영 지연",
+          "주간 숏폼 연재"
+        ],
+        "result": [
+          "조회수·시청 지속 시간",
+          "댓글·공유 반응",
+          "클라이언트 만족도"
+        ],
+        "en": [
+          "video planning",
+          "storyboard",
+          "branded content",
+          "client management",
+          "channel analytics"
+        ]
+      },
+      "sources": [
+        "s4"
+      ]
+    },
+    {
+      "id": "video_editor",
+      "aliases": [
+        "영상편집자",
+        "편집자",
+        "편집 PD",
+        "편집기사",
+        "방송편집기사",
+        "유튜브 편집자",
+        "Video Editor",
+        "Post-production Editor"
+      ],
+      "skills": [
+        "컷 편집",
+        "색 보정",
+        "자막·그래픽",
+        "사운드 믹싱",
+        "프리미어·파이널컷·다빈치 리졸브",
+        "출력·납품 관리"
+      ],
+      "responsibilities": [
+        "촬영 원본 프리뷰와 가편집",
+        "컷 편집·색 보정·자막 작업",
+        "음악·효과음 선정과 사운드 정리",
+        "PD·작가 수정 요청 반영",
+        "플랫폼별 출력과 납품"
+      ],
+      "keywords": [
+        "가편집",
+        "컷",
+        "색 보정",
+        "자막",
+        "효과음",
+        "배경음악",
+        "렌더링",
+        "납품",
+        "프리뷰",
+        "저작권",
+        "이탈률",
+        "편집 리듬"
+      ],
+      "topics": {
+        "role": [
+          "편집 리듬",
+          "색 보정",
+          "자막 작업",
+          "사운드",
+          "납품 관리"
+        ],
+        "scenario": [
+          "납품 직전 렌더링 오류",
+          "상반된 수정 요청",
+          "부적절 발언 발견"
+        ],
+        "result": [
+          "시청 지속 시간",
+          "수정 회차",
+          "납기 준수"
+        ],
+        "en": [
+          "video editing",
+          "color grading",
+          "subtitles",
+          "sound mixing",
+          "delivery"
+        ]
+      },
+      "sources": [
+        "s2"
+      ]
+    },
+    {
+      "id": "broadcast_writer",
+      "aliases": [
+        "방송 작가",
+        "구성작가",
+        "예능작가",
+        "교양작가",
+        "막내작가",
+        "서브작가",
+        "메인작가",
+        "라디오 작가",
+        "Broadcast Writer",
+        "Scriptwriter"
+      ],
+      "skills": [
+        "아이템 발굴",
+        "자료조사·취재",
+        "섭외",
+        "구성안·대본 작성",
+        "자막 작성",
+        "프리뷰"
+      ],
+      "responsibilities": [
+        "아이템 발굴과 자료조사",
+        "출연자 섭외와 사전 인터뷰",
+        "촬영·편집 구성안 작성",
+        "대본·원고·자막 작성",
+        "시청률 흐름 모니터링"
+      ],
+      "keywords": [
+        "구성안",
+        "대본",
+        "섭외",
+        "자료조사",
+        "프리뷰",
+        "사전 인터뷰",
+        "자막",
+        "아이템",
+        "모니터",
+        "막내작가",
+        "코너",
+        "원고"
+      ],
+      "topics": {
+        "role": [
+          "아이템 발굴",
+          "구성안 작성",
+          "섭외",
+          "자료 검증",
+          "자막 작성"
+        ],
+        "scenario": [
+          "출연자 녹화 직전 취소",
+          "원고 수치 오류",
+          "즉석 글쓰기 과제"
+        ],
+        "result": [
+          "코너별 시청률",
+          "아이템 채택률",
+          "시청자 반응"
+        ],
+        "en": [
+          "scriptwriting",
+          "research",
+          "casting",
+          "program structure",
+          "fact checking"
+        ]
+      },
+      "sources": [
+        "s3"
+      ]
+    },
+    {
+      "id": "announcer",
+      "aliases": [
+        "아나운서",
+        "앵커",
+        "MC",
+        "진행자",
+        "캐스터",
+        "리포터",
+        "쇼호스트",
+        "Announcer",
+        "News Anchor",
+        "Presenter"
+      ],
+      "skills": [
+        "표준 발음·발성",
+        "뉴스 리딩",
+        "애드리브 진행",
+        "인터뷰 진행",
+        "원고 이해력",
+        "카메라 전달력"
+      ],
+      "responsibilities": [
+        "뉴스 원고 리딩과 전달",
+        "프로그램·행사 진행",
+        "스포츠 중계와 인터뷰",
+        "생방송 돌발 상황 대응",
+        "라디오 진행과 청취자 소통"
+      ],
+      "keywords": [
+        "발음",
+        "발성",
+        "뉴스 리딩",
+        "프롬프터",
+        "생방송",
+        "애드리브",
+        "톤",
+        "호흡",
+        "진행",
+        "인터뷰",
+        "카메라 테스트",
+        "표준어"
+      ],
+      "topics": {
+        "role": [
+          "발음·발성",
+          "뉴스 전달",
+          "돌발 상황 진행",
+          "인터뷰 진행",
+          "톤 조절"
+        ],
+        "scenario": [
+          "생방송 중 프롬프터 정지",
+          "출연자 사실 오류 발언",
+          "행사 순서 지연"
+        ],
+        "result": [
+          "전달 정확도",
+          "청취자·시청자 반응",
+          "진행 안정성"
+        ],
+        "en": [
+          "pronunciation",
+          "news reading",
+          "live hosting",
+          "ad-lib",
+          "interviewing"
+        ]
+      }
+    },
+    {
+      "id": "rnd_planner",
+      "aliases": [
+        "연구기획",
+        "R&D 기획",
+        "연구관리",
+        "기술기획",
+        "R&D PM",
+        "연구지원",
+        "R&D Planner",
+        "Technology Planning"
+      ],
+      "skills": [
+        "연구 과제 기획",
+        "기술 로드맵",
+        "과제 평가·관리",
+        "국가 R&D 제안서 작성",
+        "연구비 관리",
+        "지식재산 전략"
+      ],
+      "responsibilities": [
+        "R&D 전략과 기술 로드맵 수립",
+        "연구 과제 선정·중간 점검·평가",
+        "국가 과제 제안과 연구비 관리",
+        "외부 공동 연구·오픈이노베이션 추진",
+        "연구 성과 관리와 특허 전략 협의"
+      ],
+      "keywords": [
+        "로드맵",
+        "과제",
+        "포트폴리오",
+        "국가 R&D",
+        "제안서",
+        "연구비",
+        "성과 지표",
+        "특허",
+        "오픈이노베이션",
+        "사업화",
+        "게이트 심사",
+        "TRL"
+      ],
+      "topics": {
+        "role": [
+          "과제 우선순위",
+          "기술 로드맵",
+          "과제 평가",
+          "연구비 관리",
+          "사업화"
+        ],
+        "scenario": [
+          "장기 과제 예산 삭감 요구",
+          "정부 과제 목표 미달",
+          "연구원 보고 부담 불만"
+        ],
+        "result": [
+          "사업화 건수",
+          "과제 목표 달성률",
+          "연구비 집행률"
+        ],
+        "en": [
+          "R&D strategy",
+          "technology roadmap",
+          "project portfolio",
+          "government R&D",
+          "commercialization"
+        ]
+      },
+      "sources": [
+        "s14"
+      ]
+    },
+    {
+      "id": "product_developer",
+      "aliases": [
+        "제품개발",
+        "제품개발자",
+        "개발 엔지니어",
+        "NPD 엔지니어",
+        "제품 설계 엔지니어",
+        "Product Development Engineer",
+        "Product Engineer"
+      ],
+      "skills": [
+        "요구사항 정의",
+        "DFMEA",
+        "신뢰성 시험",
+        "설계 변경 관리",
+        "DFM",
+        "BOM 관리"
+      ],
+      "responsibilities": [
+        "고객 요구사항 분석과 제품 사양 정의",
+        "시제품 제작과 신뢰성 검증",
+        "설계 변경·BOM 관리",
+        "생산 이관과 양산 초기 품질 대응",
+        "원가·성능 절충"
+      ],
+      "keywords": [
+        "요구사항",
+        "사양",
+        "시제품",
+        "DFMEA",
+        "신뢰성",
+        "BOM",
+        "설계 변경",
+        "게이트",
+        "양산 이관",
+        "원가",
+        "DFM",
+        "단종"
+      ],
+      "topics": {
+        "role": [
+          "요구사항 정의",
+          "시제품 검증",
+          "설계 변경 관리",
+          "원가·성능 절충",
+          "양산 이관"
+        ],
+        "scenario": [
+          "양산 초기 고객 불만",
+          "출시 전 소음 문제",
+          "핵심 부품 단종"
+        ],
+        "result": [
+          "시험 합격률",
+          "개발 일정 준수",
+          "원가 목표 달성"
+        ],
+        "en": [
+          "requirements",
+          "DFMEA",
+          "reliability test",
+          "design change",
+          "mass production transfer"
+        ]
+      }
+    },
+    {
+      "id": "control_engineer",
+      "aliases": [
+        "제어",
+        "제어설계",
+        "자동제어",
+        "PLC 엔지니어",
+        "제어 시스템 엔지니어",
+        "Control Engineer",
+        "Controls Engineer",
+        "Automation Engineer"
+      ],
+      "skills": [
+        "PID 튜닝",
+        "PLC 프로그래밍",
+        "시스템 식별",
+        "시뮬레이션(MATLAB/Simulink)",
+        "센서·액추에이터 인터페이스",
+        "시운전"
+      ],
+      "responsibilities": [
+        "제어 알고리즘 설계와 튜닝",
+        "PLC·임베디드 제어 로직 개발",
+        "시뮬레이션 기반 검증",
+        "현장 시운전과 트러블슈팅",
+        "안전 인터록 설계"
+      ],
+      "keywords": [
+        "PID",
+        "게인",
+        "오버슈트",
+        "PLC",
+        "인터록",
+        "시뮬레이션",
+        "센서",
+        "노이즈",
+        "필터",
+        "제어 주기",
+        "시운전",
+        "사이클 타임"
+      ],
+      "topics": {
+        "role": [
+          "제어기 튜닝",
+          "PLC 로직",
+          "시스템 식별",
+          "시운전",
+          "안전 인터록"
+        ],
+        "scenario": [
+          "간헐적 설비 정지",
+          "가동 중 로직 수정",
+          "사이클 타임 단축 요청"
+        ],
+        "result": [
+          "정착 시간·오버슈트",
+          "사이클 타임",
+          "설비 가동률"
+        ],
+        "en": [
+          "PID control",
+          "PLC",
+          "system identification",
+          "commissioning",
+          "interlock"
+        ]
+      }
+    },
+    {
+      "id": "semi_process",
+      "aliases": [
+        "공정기술",
+        "공정 엔지니어",
+        "양산기술",
+        "단위공정 엔지니어",
+        "포토 엔지니어",
+        "식각 엔지니어",
+        "박막 엔지니어",
+        "Process Engineer",
+        "Semiconductor Process Engineer"
+      ],
+      "skills": [
+        "8대 공정 이해",
+        "공정 조건 최적화",
+        "SPC",
+        "실험계획법(DOE)",
+        "공정 데이터 분석",
+        "불량 원인 분석"
+      ],
+      "responsibilities": [
+        "단위 공정(포토·식각·증착·CMP 등) 조건 최적화",
+        "공정 모니터링과 SPC 관리",
+        "수율·품질 개선을 위한 공정 조건 표준화",
+        "신규 공정 양산 적용 검증",
+        "불량 원인 분석과 타 부서 협업"
+      ],
+      "keywords": [
+        "포토",
+        "식각",
+        "증착",
+        "CVD",
+        "ALD",
+        "CMP",
+        "오버레이",
+        "선폭",
+        "균일도",
+        "SPC",
+        "수율",
+        "레시피"
+      ],
+      "topics": {
+        "role": [
+          "공정 조건 최적화",
+          "수율 개선",
+          "불량 원인 분석",
+          "SPC",
+          "신규 공정 적용"
+        ],
+        "scenario": [
+          "특정 챔버 균일도 저하",
+          "관리 한계 이탈",
+          "선폭 편차 증가"
+        ],
+        "result": [
+          "수율",
+          "공정 능력 지수",
+          "불량률"
+        ],
+        "en": [
+          "process optimization",
+          "yield",
+          "SPC",
+          "etch",
+          "deposition"
+        ]
+      },
+      "sources": [
+        "s5",
+        "s6",
+        "s8",
+        "s9",
+        "s17"
+      ]
+    },
+    {
+      "id": "semi_equipment",
+      "aliases": [
+        "설비기술",
+        "설비 엔지니어",
+        "장비 엔지니어",
+        "장비기술",
+        "양산 설비",
+        "Equipment Engineer",
+        "Maintenance Engineer"
+      ],
+      "skills": [
+        "장비 유지보수",
+        "예방 정비(PM)",
+        "진공·플라즈마 이해",
+        "알람·로그 분석",
+        "장비 개조·개선",
+        "부품 국산화 검증"
+      ],
+      "responsibilities": [
+        "장비 설치·유지보수와 PM 수행",
+        "장비 고장 대응과 재발 방지",
+        "장비 가동률 관리",
+        "장비사와 협력한 개조·성능 개선",
+        "부품·소재 대체 검증"
+      ],
+      "keywords": [
+        "PM",
+        "가동률",
+        "MTBF",
+        "MTTR",
+        "진공",
+        "플라즈마",
+        "RF",
+        "파티클",
+        "알람",
+        "챔버",
+        "부품",
+        "고장예지"
+      ],
+      "topics": {
+        "role": [
+          "예방 정비",
+          "고장 대응",
+          "가동률 개선",
+          "장비 개조",
+          "부품 국산화"
+        ],
+        "scenario": [
+          "핵심 장비 정지",
+          "정비 후 파티클 증가",
+          "반복 알람"
+        ],
+        "result": [
+          "가동률",
+          "MTBF·MTTR",
+          "PM 후 재발률"
+        ],
+        "en": [
+          "equipment maintenance",
+          "preventive maintenance",
+          "uptime",
+          "vacuum",
+          "plasma"
+        ]
+      },
+      "sources": [
+        "s7"
+      ]
+    },
+    {
+      "id": "semi_design",
+      "aliases": [
+        "회로설계",
+        "반도체 설계",
+        "아날로그 설계",
+        "디지털 설계",
+        "레이아웃",
+        "설계 검증",
+        "Circuit Designer",
+        "IC Design Engineer",
+        "ASIC Engineer"
+      ],
+      "skills": [
+        "디지털 RTL 설계(Verilog/SystemVerilog)",
+        "아날로그 회로 설계",
+        "타이밍 분석(STA)",
+        "회로 시뮬레이션",
+        "설계 검증",
+        "레이아웃 이해"
+      ],
+      "responsibilities": [
+        "회로 사양 정의와 설계",
+        "시뮬레이션·타이밍 검증",
+        "레이아웃 후 기생 성분 반영 검증",
+        "테이프아웃 준비",
+        "샘플 평가와 디버깅"
+      ],
+      "keywords": [
+        "RTL",
+        "HDL",
+        "STA",
+        "셋업",
+        "홀드",
+        "CDC",
+        "PVT",
+        "레이아웃",
+        "기생 성분",
+        "테이프아웃",
+        "저전력",
+        "커버리지"
+      ],
+      "topics": {
+        "role": [
+          "타이밍 클로저",
+          "저전력 설계",
+          "아날로그 설계",
+          "설계 검증",
+          "샘플 디버깅"
+        ],
+        "scenario": [
+          "테이프아웃 직전 오류 발견",
+          "특정 온도 오동작",
+          "면적·성능 절충"
+        ],
+        "result": [
+          "타이밍 마진",
+          "검증 커버리지",
+          "첫 샘플 동작률"
+        ],
+        "en": [
+          "RTL design",
+          "timing analysis",
+          "analog design",
+          "verification",
+          "tape-out"
+        ]
+      },
+      "sources": [
+        "s7"
+      ]
+    },
+    {
+      "id": "semi_yield",
+      "aliases": [
+        "수율",
+        "수율 엔지니어",
+        "불량분석",
+        "FA 엔지니어",
+        "품질 분석",
+        "Yield Engineer",
+        "Failure Analysis Engineer",
+        "Product Engineer"
+      ],
+      "skills": [
+        "웨이퍼 맵 분석",
+        "공통성 분석",
+        "통계 분석",
+        "물리적 불량 분석",
+        "결함 검사 데이터 해석",
+        "재현 시험"
+      ],
+      "responsibilities": [
+        "수율 모니터링과 저하 원인 분석",
+        "전기적 테스트·인라인 데이터 연계 분석",
+        "불량 칩 물리 분석",
+        "고객 반품 불량 분석",
+        "공정·소자 부서와 개선 협업"
+      ],
+      "keywords": [
+        "수율",
+        "웨이퍼 맵",
+        "불량 모드",
+        "공통성 분석",
+        "FA",
+        "결함",
+        "인라인",
+        "EDS",
+        "상관분석",
+        "로트",
+        "재현",
+        "반품"
+      ],
+      "topics": {
+        "role": [
+          "수율 저하 원인 분석",
+          "불량 분석",
+          "통계 분석",
+          "결함 영향도",
+          "부서 협업"
+        ],
+        "scenario": [
+          "로트 수율 급락",
+          "점진적 수율 하락",
+          "분석 결과 불인정"
+        ],
+        "result": [
+          "수율 회복률",
+          "원인 규명 리드타임",
+          "반품 불량률"
+        ],
+        "en": [
+          "yield analysis",
+          "failure analysis",
+          "wafer map",
+          "commonality analysis",
+          "defect"
+        ]
+      },
+      "sources": [
+        "s7"
+      ]
+    },
+    {
+      "id": "hw_engineer",
+      "aliases": [
+        "하드웨어 개발",
+        "HW 개발자",
+        "회로 개발",
+        "전자회로 설계",
+        "보드 설계",
+        "PCB 설계",
+        "Hardware Engineer",
+        "Electronics Engineer"
+      ],
+      "skills": [
+        "회로도 설계",
+        "PCB 아티웍 검토",
+        "전원 설계",
+        "신호 무결성",
+        "측정 장비 활용",
+        "부품 선정"
+      ],
+      "responsibilities": [
+        "제품 회로 설계와 부품 선정",
+        "PCB 설계 검토",
+        "시제품 디버깅과 성능 측정",
+        "EMC·인증 대응",
+        "양산 불량 분석"
+      ],
+      "keywords": [
+        "회로도",
+        "PCB",
+        "전원",
+        "LDO",
+        "DC-DC",
+        "디커플링",
+        "노이즈",
+        "EMC",
+        "오실로스코프",
+        "데이터시트",
+        "접지",
+        "MCU"
+      ],
+      "topics": {
+        "role": [
+          "전원 설계",
+          "신호 무결성",
+          "디버깅",
+          "부품 선정",
+          "EMC 대응"
+        ],
+        "scenario": [
+          "첫 샘플 노이즈",
+          "간헐적 리셋",
+          "HW·FW 책임 공방"
+        ],
+        "result": [
+          "전원 효율",
+          "EMC 시험 통과",
+          "양산 불량률"
+        ],
+        "en": [
+          "schematic design",
+          "PCB",
+          "power design",
+          "signal integrity",
+          "EMC"
+        ]
+      },
+      "sources": [
+        "s10"
+      ]
+    },
+    {
+      "id": "electrical_engineer",
+      "aliases": [
+        "전기설계",
+        "전기 엔지니어",
+        "전기 설계 엔지니어",
+        "수배전 설계",
+        "플랜트 전기",
+        "Electrical Engineer",
+        "Electrical Design Engineer"
+      ],
+      "skills": [
+        "부하 계산",
+        "단선결선도 작성",
+        "케이블·차단기 선정",
+        "보호 협조",
+        "접지 설계",
+        "전기 CAD"
+      ],
+      "responsibilities": [
+        "부하 산정과 수배전 계통 설계",
+        "케이블·차단기·변압기 선정",
+        "도면 작성과 시공 협의",
+        "비상전원 설계",
+        "준공·검사 대응"
+      ],
+      "keywords": [
+        "부하 계산",
+        "수용률",
+        "단선결선도",
+        "차단기",
+        "보호 협조",
+        "전압강하",
+        "접지",
+        "역률",
+        "UPS",
+        "비상발전기",
+        "KEC",
+        "수배전"
+      ],
+      "topics": {
+        "role": [
+          "부하 계산",
+          "보호 협조",
+          "케이블 선정",
+          "비상전원",
+          "시공 협의"
+        ],
+        "scenario": [
+          "현장 배치 불일치",
+          "대용량 설비 추가",
+          "준공 전 시공 오류"
+        ],
+        "result": [
+          "설계 변경 건수",
+          "역률 개선 효과",
+          "준공 검사 통과"
+        ],
+        "en": [
+          "load calculation",
+          "single line diagram",
+          "protection coordination",
+          "grounding",
+          "power distribution"
+        ]
+      }
+    },
+    {
+      "id": "display_engineer",
+      "aliases": [
+        "디스플레이 엔지니어",
+        "디스플레이 공정",
+        "패널 개발",
+        "OLED 엔지니어",
+        "디스플레이 회로",
+        "Display Engineer",
+        "Panel Engineer"
+      ],
+      "skills": [
+        "OLED·LCD 원리 이해",
+        "TFT 특성 분석",
+        "광학 측정",
+        "패널 불량 분석",
+        "신뢰성 평가",
+        "공정 데이터 분석"
+      ],
+      "responsibilities": [
+        "패널 공정·구동 조건 개선",
+        "화질 불량(무라·점 결함) 분석",
+        "광학 특성 측정과 평가",
+        "신소재 적용 신뢰성 검증",
+        "고객 품질 대응"
+      ],
+      "keywords": [
+        "OLED",
+        "LCD",
+        "TFT",
+        "무라",
+        "번인",
+        "휘도",
+        "색 재현",
+        "봉지",
+        "폴더블",
+        "점 결함",
+        "수명",
+        "모듈"
+      ],
+      "topics": {
+        "role": [
+          "화질 불량 분석",
+          "TFT 특성",
+          "광학 평가",
+          "신뢰성 평가",
+          "수율 개선"
+        ],
+        "scenario": [
+          "반복 점 결함",
+          "색 재현 이의 제기",
+          "신소재 수명 저하"
+        ],
+        "result": [
+          "패널 수율",
+          "휘도 균일도",
+          "수명 평가 결과"
+        ],
+        "en": [
+          "OLED",
+          "TFT",
+          "mura",
+          "optical measurement",
+          "reliability"
+        ]
+      }
+    },
+    {
+      "id": "mechanical_designer",
+      "aliases": [
+        "기계설계",
+        "기구설계",
+        "설계 엔지니어",
+        "기계 엔지니어",
+        "기구 엔지니어",
+        "Mechanical Design Engineer",
+        "Mechanical Engineer"
+      ],
+      "skills": [
+        "3D CAD(CATIA·SolidWorks·NX)",
+        "도면·GD&T",
+        "공차 해석",
+        "재료 선정",
+        "강도 계산",
+        "가공 공법 이해"
+      ],
+      "responsibilities": [
+        "부품·조립체 3D 모델링과 도면 작성",
+        "공차 설계와 누적 해석",
+        "재료·표준 부품 선정",
+        "가공·조립성 검토",
+        "설계 변경과 출도 관리"
+      ],
+      "keywords": [
+        "CAD",
+        "도면",
+        "공차",
+        "GD&T",
+        "데이텀",
+        "안전계수",
+        "재질",
+        "체결",
+        "간섭",
+        "가공",
+        "출도",
+        "BOM"
+      ],
+      "topics": {
+        "role": [
+          "공차 설계",
+          "재료 선정",
+          "강도 검토",
+          "가공성",
+          "도면 관리"
+        ],
+        "scenario": [
+          "가공 불가 통보",
+          "출도 후 치수 오류",
+          "공차 원가 지적"
+        ],
+        "result": [
+          "설계 변경 건수",
+          "조립 불량률",
+          "부품 원가"
+        ],
+        "en": [
+          "mechanical design",
+          "CAD",
+          "GD&T",
+          "tolerance analysis",
+          "material selection"
+        ]
+      },
+      "sources": [
+        "s13"
+      ]
+    },
+    {
+      "id": "automotive_engineer",
+      "aliases": [
+        "자동차 연구원",
+        "차량 개발",
+        "차량 설계",
+        "차량 시험",
+        "완성차 R&D",
+        "자동차 엔지니어",
+        "Automotive Engineer",
+        "Vehicle Engineer"
+      ],
+      "skills": [
+        "차량 시스템 이해",
+        "NVH",
+        "내구·충돌 평가",
+        "시험 데이터 분석",
+        "전동화 이해",
+        "기능 안전"
+      ],
+      "responsibilities": [
+        "차량 부품·시스템 설계",
+        "차량 성능 시험(내구·충돌·NVH·연비)",
+        "시험 데이터 분석과 개선 제안",
+        "협력사 부품 개발 관리",
+        "양산 전 문제 해결"
+      ],
+      "keywords": [
+        "NVH",
+        "내구",
+        "충돌",
+        "연비",
+        "전비",
+        "경량화",
+        "열관리",
+        "전동화",
+        "기능 안전",
+        "주행 시험",
+        "연료전지",
+        "협력사"
+      ],
+      "topics": {
+        "role": [
+          "차량 시험",
+          "NVH",
+          "경량화",
+          "전동화",
+          "기능 안전"
+        ],
+        "scenario": [
+          "양산 직전 떨림",
+          "혹한 시동 문제",
+          "설계·시험 부서 책임 공방"
+        ],
+        "result": [
+          "시험 합격률",
+          "연비·전비",
+          "중량 절감"
+        ],
+        "en": [
+          "vehicle development",
+          "NVH",
+          "durability test",
+          "electrification",
+          "functional safety"
+        ]
+      },
+      "sources": [
+        "s11",
+        "s12",
+        "s16",
+        "s18"
+      ]
+    },
+    {
+      "id": "cae_engineer",
+      "aliases": [
+        "CAE",
+        "해석 엔지니어",
+        "구조해석",
+        "열유동 해석",
+        "시뮬레이션 엔지니어",
+        "CAE Engineer",
+        "Simulation Engineer",
+        "FEA Engineer"
+      ],
+      "skills": [
+        "유한요소해석(FEA)",
+        "CFD",
+        "메시 생성",
+        "경계 조건 설정",
+        "시험 상관성 검증",
+        "ANSYS·Abaqus 등 해석 툴"
+      ],
+      "responsibilities": [
+        "구조·열유동·충돌 해석 수행",
+        "해석 모델 구축과 검증",
+        "시험 결과와 상관성 확보",
+        "설계 변경 제안",
+        "해석 프로세스 표준화"
+      ],
+      "keywords": [
+        "FEA",
+        "CFD",
+        "메시",
+        "경계 조건",
+        "응력 집중",
+        "비선형",
+        "피로",
+        "충돌",
+        "상관성",
+        "수렴",
+        "모델 단순화",
+        "민감도"
+      ],
+      "topics": {
+        "role": [
+          "해석 모델링",
+          "결과 검증",
+          "시험 상관성",
+          "설계 최적화",
+          "피로 해석"
+        ],
+        "scenario": [
+          "해석·시험 결과 불일치",
+          "하루 만의 해석 요청",
+          "결론 맞추기 압박"
+        ],
+        "result": [
+          "해석-시험 오차",
+          "해석 리드타임",
+          "시험 횟수 절감"
+        ],
+        "en": [
+          "finite element analysis",
+          "CFD",
+          "meshing",
+          "correlation",
+          "fatigue"
+        ]
+      },
+      "sources": [
+        "s14"
+      ]
+    },
+    {
+      "id": "robotics_engineer",
+      "aliases": [
+        "로봇 엔지니어",
+        "로봇 개발",
+        "메카트로닉스",
+        "자동화 엔지니어",
+        "로봇 제어",
+        "Robotics Engineer",
+        "Mechatronics Engineer"
+      ],
+      "skills": [
+        "기구학",
+        "모터·감속기 선정",
+        "로봇 제어",
+        "센서·비전",
+        "ROS",
+        "자동화 셀 구성"
+      ],
+      "responsibilities": [
+        "로봇 기구·구동부 설계",
+        "로봇 제어·경로 계획",
+        "센서·비전 연동",
+        "현장 설치와 티칭",
+        "안전 기능 구현"
+      ],
+      "keywords": [
+        "기구학",
+        "역기구학",
+        "감속기",
+        "모터",
+        "엔코더",
+        "협동 로봇",
+        "비전",
+        "티칭",
+        "반복 정밀도",
+        "SLAM",
+        "ROS",
+        "사이클 타임"
+      ],
+      "topics": {
+        "role": [
+          "기구 설계",
+          "로봇 제어",
+          "비전 연동",
+          "현장 셋업",
+          "안전"
+        ],
+        "scenario": [
+          "시연 전 떨림",
+          "현장 잦은 정지",
+          "하중 증가 요청"
+        ],
+        "result": [
+          "반복 정밀도",
+          "사이클 타임",
+          "투자 회수 기간"
+        ],
+        "en": [
+          "kinematics",
+          "motion control",
+          "machine vision",
+          "collaborative robot",
+          "automation"
+        ]
+      }
+    },
+    {
+      "id": "chemical_process",
+      "aliases": [
+        "화공 엔지니어",
+        "공정 엔지니어",
+        "화학공정",
+        "플랜트 공정",
+        "생산기술(화학)",
+        "Chemical Process Engineer",
+        "Process Engineer"
+      ],
+      "skills": [
+        "물질·에너지 수지",
+        "단위 조작 이해",
+        "PFD·P&ID 해석",
+        "HAZOP",
+        "공정 시뮬레이션",
+        "운전 데이터 분석"
+      ],
+      "responsibilities": [
+        "공정 운전 조건 관리와 최적화",
+        "공정 문제 해결과 개선",
+        "공정 안전(PSM·HAZOP) 관리",
+        "증설·개선 설계 검토",
+        "품질 표준 준수 관리"
+      ],
+      "keywords": [
+        "물질수지",
+        "증류",
+        "반응기",
+        "열교환기",
+        "파울링",
+        "P&ID",
+        "PFD",
+        "HAZOP",
+        "PSM",
+        "촉매",
+        "원단위",
+        "병목"
+      ],
+      "topics": {
+        "role": [
+          "공정 최적화",
+          "공정 안전",
+          "에너지 절감",
+          "병목 해소",
+          "품질 관리"
+        ],
+        "scenario": [
+          "재가동 중 압력 상승",
+          "증산 요청",
+          "절차서 미준수 관행"
+        ],
+        "result": [
+          "원단위",
+          "가동률",
+          "공정 사고 건수"
+        ],
+        "en": [
+          "process optimization",
+          "mass balance",
+          "HAZOP",
+          "distillation",
+          "process safety"
+        ]
+      },
+      "sources": [
+        "s15"
+      ]
+    },
+    {
+      "id": "materials_researcher",
+      "aliases": [
+        "소재 연구원",
+        "소재 개발",
+        "재료 연구원",
+        "신소재 연구",
+        "고분자 연구원",
+        "Materials Researcher",
+        "Materials Scientist"
+      ],
+      "skills": [
+        "소재 합성·가공",
+        "구조·물성 분석(XRD·SEM·DSC 등)",
+        "신뢰성 시험",
+        "조성 설계",
+        "실험 설계",
+        "데이터 해석"
+      ],
+      "responsibilities": [
+        "신규 소재 합성과 조성 최적화",
+        "소재 구조·물성 분석",
+        "소재 신뢰성 평가",
+        "고객 평가 대응과 적용 기술 지원",
+        "양산 이관 지원"
+      ],
+      "keywords": [
+        "소재",
+        "물성",
+        "조성",
+        "미세구조",
+        "XRD",
+        "SEM",
+        "DSC",
+        "바인더",
+        "도전재",
+        "코팅",
+        "가속 시험",
+        "로트 편차"
+      ],
+      "topics": {
+        "role": [
+          "소재 합성",
+          "물성 분석",
+          "신뢰성 평가",
+          "조성 최적화",
+          "양산 이관"
+        ],
+        "scenario": [
+          "로트 간 편차",
+          "원료 등급 하향 요청",
+          "가공성 불만"
+        ],
+        "result": [
+          "물성 목표 달성",
+          "로트 편차",
+          "고객 승인"
+        ],
+        "en": [
+          "materials development",
+          "characterization",
+          "reliability test",
+          "composition",
+          "scale-up"
+        ]
+      },
+      "sources": [
+        "s14"
+      ]
+    },
+    {
+      "id": "chemical_researcher",
+      "aliases": [
+        "화학 연구원",
+        "합성 연구원",
+        "분석 연구원",
+        "유기합성",
+        "분석화학",
+        "Chemical Researcher",
+        "Synthetic Chemist",
+        "Analytical Chemist"
+      ],
+      "skills": [
+        "유기·무기 합성",
+        "정제",
+        "기기 분석(NMR·HPLC·GC·MS)",
+        "분석법 개발·검증",
+        "실험 설계",
+        "시약 안전 관리"
+      ],
+      "responsibilities": [
+        "목표 물질 합성과 경로 개발",
+        "정제와 구조 확인",
+        "분석법 개발과 검증",
+        "원료·제품 시험 분석",
+        "실험 안전과 기록 관리"
+      ],
+      "keywords": [
+        "합성",
+        "수율",
+        "정제",
+        "NMR",
+        "HPLC",
+        "GC",
+        "검량선",
+        "불순물",
+        "재현성",
+        "배치",
+        "시약",
+        "스케일업"
+      ],
+      "topics": {
+        "role": [
+          "합성 경로",
+          "정제",
+          "기기 분석",
+          "분석법 검증",
+          "실험 안전"
+        ],
+        "scenario": [
+          "배치 간 색 차이",
+          "분석 의뢰 폭주",
+          "독성 시약 실험"
+        ],
+        "result": [
+          "합성 수율",
+          "순도",
+          "분석 재현성"
+        ],
+        "en": [
+          "organic synthesis",
+          "purification",
+          "NMR",
+          "HPLC",
+          "method validation"
+        ]
+      },
+      "sources": [
+        "s15"
+      ]
+    },
+    {
+      "id": "battery_engineer",
+      "aliases": [
+        "2차전지",
+        "배터리 엔지니어",
+        "배터리 연구원",
+        "셀 개발",
+        "전지 공정",
+        "전극 공정",
+        "Battery Engineer",
+        "Cell Engineer"
+      ],
+      "skills": [
+        "전기화학 이해",
+        "양극·음극재 이해",
+        "셀 설계",
+        "전극·조립·활성화 공정",
+        "충방전 데이터 분석",
+        "안전성 평가"
+      ],
+      "responsibilities": [
+        "셀 설계와 소재 적용 평가",
+        "전극·조립·활성화 공정 개선",
+        "수명·안전성 평가",
+        "양산 불량 분석",
+        "고객 요구 사양 대응"
+      ],
+      "keywords": [
+        "양극재",
+        "음극재",
+        "전해액",
+        "분리막",
+        "SEI",
+        "리튬 석출",
+        "로딩",
+        "활성화",
+        "열폭주",
+        "수명",
+        "급속 충전",
+        "에너지 밀도"
+      ],
+      "topics": {
+        "role": [
+          "셀 설계",
+          "수명 열화",
+          "안전성",
+          "전극 공정",
+          "활성화"
+        ],
+        "scenario": [
+          "저전압 불량 증가",
+          "급속 충전 요구",
+          "수명 평가 이상"
+        ],
+        "result": [
+          "에너지 밀도",
+          "사이클 수명",
+          "공정 수율"
+        ],
+        "en": [
+          "battery cell",
+          "electrochemistry",
+          "cycle life",
+          "thermal runaway",
+          "electrode process"
+        ]
+      },
+      "sources": [
+        "s14",
+        "s19"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "text": "방송·영상 제작 현장에서 실제로 가장 많은 시간이 어디에 쓰인다고 보시는지 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제작팀 안에서 PD, 작가, 편집자, 진행자의 역할은 어디서 겹치고 어디서 나뉜다고 보세요?",
+      "scope": "family:broadcast",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "좋은 프로그램이 되려면 기획 단계에서 반드시 정리돼 있어야 하는 게 무엇이라고 생각하세요?",
+      "scope": "family:broadcast",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이 일을 오래 하려면 불규칙한 일정 말고도 어떤 점을 감당할 수 있어야 한다고 보세요?",
+      "scope": "family:broadcast",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "마감이 정해진 촬영이나 행사 준비에서 일정이 밀렸을 때 팀을 어떻게 움직였는지 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연출 방향을 두고 선배나 동료와 의견이 갈렸던 경험이 있다면 어떻게 풀었는지 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회의에서 본인 아이디어가 거절당했을 때 어떻게 반응했고 그다음 무엇을 했는지 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출연자나 외부 관계자에게 부담스러운 부탁을 해야 했을 때 어떻게 설득하셨는지 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아무도 맡으려 하지 않던 궂은일을 먼저 맡아 결과를 바꿔 본 경험이 있으신가요?",
+      "scope": "family:broadcast",
+      "category": "조직적합성",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "녹화 당일 아침에 핵심 출연자가 갑자기 못 온다고 연락해 오면 무엇부터 하시겠어요?",
+      "scope": "family:broadcast",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송이 나간 뒤 자막에 사실과 다른 내용이 있었다는 제보가 들어오면 어떻게 처리하시겠어요?",
+      "scope": "family:broadcast",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "야외 촬영 중 날씨가 급변해 준비한 구성대로 찍을 수 없게 되면 어떻게 판단하시겠어요?",
+      "scope": "family:broadcast",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송된 장면을 두고 온라인에서 비판이 빠르게 번진다면 제작진으로서 어떻게 대응하시겠어요?",
+      "scope": "family:broadcast",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "거리 촬영 중 화면에 잡힌 일반인이 촬영을 원치 않는다고 항의하면 어떻게 하시겠어요?",
+      "scope": "family:broadcast",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 기획하거나 제작에 참여한 작업 중 가장 애착이 가는 것과 본인이 맡은 부분을 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "제작 과정에서 예상치 못한 사고가 났는데 수습해 낸 경험이 있다면 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시청자나 구독자 반응을 보고 다음 작업의 방향을 바꿔 본 경험을 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송사, OTT, 유튜브 채널 사이에서 콘텐츠를 만드는 방식이 어떻게 달라지고 있다고 보세요?",
+      "scope": "family:broadcast",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "짧은 영상이 늘어나는 흐름이 긴 호흡의 방송 콘텐츠에는 어떤 영향을 준다고 생각하세요?",
+      "scope": "family:broadcast",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "최근 본 프로그램 하나를 골라 제작진 입장에서 잘된 점과 고칠 점을 요소별로 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "재미를 위해 편집으로 출연자 발언의 맥락을 바꾸자는 의견이 나오면 어떻게 하시겠어요?",
+      "scope": "family:broadcast",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협찬사가 방송 내용에 과도하게 관여하려 할 때 어디까지 받아들일 수 있다고 보세요?",
+      "scope": "family:broadcast",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "제작 일을 하며 스스로 가장 부족하다고 느끼는 부분과 채우려는 노력을 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "열심히 만들었는데 반응이 좋지 않았던 작업에서 무엇을 배웠는지 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "참여한 콘텐츠의 성과를 조회수나 시청률 말고 어떤 기준으로 설명하실 수 있나요?",
+      "scope": "family:broadcast",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "참여했던 작업에서 본인의 기여가 결과에 어떤 차이를 만들었는지 구체적으로 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시청률과 화제성 중 무엇을 프로그램 성과의 기준으로 삼아야 할지 한쪽 입장을 정해 말씀해 주세요.",
+      "scope": "family:broadcast",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "20대를 겨냥한 10분 분량 웹 예능을 기획해 발표한다면 어떤 흐름으로 구성하시겠어요?",
+      "scope": "family:broadcast",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PD가 기획부터 섭외, 편집, 예산까지 총괄한다고 할 때 그중 가장 어려운 부분은 어디라고 보세요?",
+      "scope": "role:broadcast_pd",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "여러 제작 직군 중에서 PD를 택하게 된 계기가 된 경험을 말씀해 주세요.",
+      "scope": "role:broadcast_pd",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새 프로그램 기획안을 쓸 때 기획의도, 타깃, 포맷 중 무엇을 먼저 확정하시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "섭외가 어렵기로 알려진 인물을 꼭 모셔야 한다면 어떤 순서로 접근하시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "한 회차 제작 일정을 짤 때 촬영, 편집, 심의 사이 어디에 여유를 두시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제한된 제작비 안에서 출연료, 장소, 장비 중 어디를 줄이고 어디를 지키시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "조연출로서 녹화 전날 반드시 점검해야 할 항목을 말씀해 주세요.",
+      "scope": "role:broadcast_pd",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "levels": [
+        "entry",
+        "junior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "생방송 큐시트를 짤 때 돌발 상황에 대비해 어떤 장치를 넣어 두시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송 심의에서 문제가 될 수 있는 장면을 편집 단계에서 어떻게 걸러내시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "첫 방송 전에 홍보 전략을 세운다면 어떤 채널과 소재를 활용하시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s1",
+      "confidence": "medium"
+    },
+    {
+      "text": "생방송 도중 현장 중계 화면이 끊기면 부조정실에서 어떻게 지시하시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "녹화 분량이 방송 시간의 두 배를 넘게 나왔다면 무엇을 기준으로 덜어내시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송일이 사흘 남았는데 메인 작가와 편집 방향이 크게 다르다면 어떻게 결정하시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "첫 회 시청률은 낮았는데 온라인 클립 조회수는 높다면 이 결과를 어떻게 해석하시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분당 시청률 그래프에서 특정 코너마다 수치가 떨어진다면 무엇을 확인해 보시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 사람을 이끌고 영상이나 행사를 끝까지 완성해 낸 경험을 말씀해 주세요.",
+      "scope": "role:broadcast_pd",
+      "category": "리더십",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "촬영 현장에서 계획이 틀어졌을 때 즉석에서 판단해 해결한 경험을 말씀해 주세요.",
+      "scope": "role:broadcast_pd",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 기획안이 뻔하다는 평가를 받는다면 무엇으로 차별점을 증명하시겠어요?",
+      "scope": "role:broadcast_pd",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "브랜디드 콘텐츠를 만드는 영상 PD와 방송사 PD는 일하는 방식이 어떻게 다르다고 보세요?",
+      "scope": "role:video_producer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영상 제작 중에서도 기획부터 촬영까지 이끄는 PD 역할에 끌린 이유를 말씀해 주세요.",
+      "scope": "role:video_producer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광고주와 대행사, 제작진 사이에서 영상 PD가 어떤 역할을 해야 한다고 보세요?",
+      "scope": "role:video_producer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "촬영 전에 콘티와 촬영 리스트를 어느 수준까지 구체적으로 준비하시나요?",
+      "scope": "role:video_producer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소수 인원으로 인터뷰 영상을 찍을 때 조명, 오디오, 앵글 중 무엇을 가장 먼저 챙기시겠어요?",
+      "scope": "role:video_producer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "유튜브 영상의 첫 몇 초를 어떻게 구성해야 초반 이탈을 줄일 수 있다고 보세요?",
+      "scope": "role:video_producer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "촬영 장소 허가나 출연자 초상권 동의는 어떤 절차로 챙기시나요?",
+      "scope": "role:video_producer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "외주 촬영팀이나 편집자에게 일을 맡길 때 방향이 어긋나지 않게 어떻게 전달하시겠어요?",
+      "scope": "role:video_producer",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "짧은 영상 시리즈를 매주 발행해야 한다면 기획부터 업로드까지 흐름을 어떻게 짜시겠어요?",
+      "scope": "role:video_producer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클라이언트가 최종 편집본을 보고 방향을 완전히 바꾸자고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:video_producer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "촬영 당일 출연자가 대본을 소화하지 못해 촬영이 계속 지연되면 어떻게 하시겠어요?",
+      "scope": "role:video_producer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "예산이 계획보다 30% 줄었다는 통보를 받으면 영상 완성도를 어떻게 지키시겠어요?",
+      "scope": "role:video_producer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "평균 시청 지속 시간이 짧게 나온 영상이라면 어느 구간부터 원인을 찾으시겠어요?",
+      "scope": "role:video_producer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조회수는 높은데 댓글과 공유가 거의 없는 영상이라면 어떻게 해석하시겠어요?",
+      "scope": "role:video_producer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "포트폴리오 중 한 작품을 골라 기획부터 편집까지 본인이 내린 결정을 설명해 주세요.",
+      "scope": "role:video_producer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "혼자서 기획, 촬영, 편집을 모두 맡아 완성한 영상 경험을 말씀해 주세요.",
+      "scope": "role:video_producer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "계획을 촘촘히 세우는 편인지 유연하게 대처하는 편인지, 그 성향이 약점이 되는 순간은 언제인가요?",
+      "scope": "role:video_producer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s4",
+      "confidence": "medium"
+    },
+    {
+      "text": "촬영 원본을 받아 음악, 자막, 효과까지 입힌 완성본을 만들기까지 어떤 단계를 거치시나요?",
+      "scope": "role:video_editor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "촬영이나 연출보다 편집이라는 일에 더 끌리는 이유를 말씀해 주세요.",
+      "scope": "role:video_editor",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원본이 수십 시간 분량일 때 프리뷰와 가편집을 어떻게 진행하시나요?",
+      "scope": "role:video_editor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "편집 프로그램에서 프로젝트 파일과 소스 폴더를 어떤 규칙으로 정리하시나요?",
+      "scope": "role:video_editor",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "컷 전환의 리듬을 정할 때 음악 비트와 대사 흐름 중 무엇을 우선하시나요?",
+      "scope": "role:video_editor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 카메라로 찍은 화면의 색감을 맞출 때 어떤 순서로 보정하시나요?",
+      "scope": "role:video_editor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s2",
+      "confidence": "medium"
+    },
+    {
+      "text": "자막을 넣을 때 정보 전달과 재미 사이의 균형을 어떻게 잡으시나요?",
+      "scope": "role:video_editor",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "배경음악과 효과음을 쓸 때 저작권 문제가 없는지 어떻게 확인하시나요?",
+      "scope": "role:video_editor",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송 납품본과 유튜브 업로드본을 만들 때 출력 설정을 어떻게 다르게 가져가시나요?",
+      "scope": "role:video_editor",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "납품 몇 시간 전에 렌더링 오류로 파일이 계속 깨진다면 어떻게 하시겠어요?",
+      "scope": "role:video_editor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PD의 수정 요청과 작가의 수정 요청이 서로 반대라면 어떻게 조율하시겠어요?",
+      "scope": "role:video_editor",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "편집하다가 출연자의 부적절한 발언이 섞여 있는 걸 발견하면 어떻게 하시겠어요?",
+      "scope": "role:video_editor",
+      "category": "윤리",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 장면을 두 가지 버전으로 편집했을 때 어느 쪽이 나은지 무엇으로 판단하시겠어요?",
+      "scope": "role:video_editor",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시청 이탈 그래프에서 특정 전환 지점마다 이탈이 몰린다면 편집에서 무엇을 바꿔 보시겠어요?",
+      "scope": "role:video_editor",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 편집으로 영상의 분위기나 메시지가 크게 달라졌던 작업을 말씀해 주세요.",
+      "scope": "role:video_editor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "촉박한 마감 안에 많은 분량을 편집해 낸 경험과 그때 쓴 방법을 말씀해 주세요.",
+      "scope": "role:video_editor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 편집 스타일이 채널 톤과 맞지 않는다는 피드백을 계속 받는다면 어떻게 하시겠어요?",
+      "scope": "role:video_editor",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "막내작가 시절의 자료조사, 섭외, 프리뷰 같은 일이 프로그램에서 왜 중요하다고 보세요?",
+      "scope": "role:broadcast_writer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송작가라는 직업을 구체적으로 꿈꾸게 된 계기를 말씀해 주세요.",
+      "scope": "role:broadcast_writer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지원하는 프로그램의 한 회 구성안을 새로 짠다면 어떤 아이템으로 어떻게 구성하시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "섭외 전화를 걸 때 처음 30초 안에 무엇을 전달해야 한다고 생각하세요?",
+      "scope": "role:broadcast_writer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자료조사를 할 때 인터넷에서 찾은 정보의 사실 여부를 어떻게 검증하시나요?",
+      "scope": "role:broadcast_writer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "촬영구성안과 편집구성안은 각각 무엇에 초점을 둬야 한다고 보세요?",
+      "scope": "role:broadcast_writer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출연자 사전 인터뷰에서 방송에 쓸 만한 이야기를 끌어내려면 어떻게 질문하시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출연자를 희화화하지 않으면서 자막의 재미를 살리려면 무엇을 조심하시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이미 여러 번 다뤄진 주제를 다른 시각으로 풀어낸 아이템을 하나 제안해 주세요.",
+      "scope": "role:broadcast_writer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "녹화 이틀 전에 섭외가 확정된 출연자가 취소를 통보하면 어떻게 움직이시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "방송 직전에 원고 속 수치가 틀렸다는 걸 발견하면 어떻게 하시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "선배 작가가 주제를 주고 짧은 시간 안에 원고를 써 오라고 하면 어떻게 접근하시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s3",
+      "confidence": "medium"
+    },
+    {
+      "text": "코너별 시청률 흐름을 보고 다음 회 구성을 바꾼다면 어떤 기준으로 판단하시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "담당 프로그램 시청률이 몇 주째 떨어진다면 구성 측면에서 원인을 어떻게 찾아보시겠어요?",
+      "scope": "role:broadcast_writer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "글이나 기획으로 다른 사람의 반응을 이끌어 낸 경험을 말씀해 주세요.",
+      "scope": "role:broadcast_writer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "누군가를 인터뷰하거나 취재해서 이야기를 정리해 본 경험을 말씀해 주세요.",
+      "scope": "role:broadcast_writer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "작가는 결국 PD의 뜻을 따르는 역할이라는 말에 어떻게 생각하시는지 말씀해 주세요.",
+      "scope": "role:broadcast_writer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아나운서가 뉴스, 진행, 중계에서 공통으로 책임지는 것이 무엇이라고 보세요?",
+      "scope": "role:announcer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 방송 직군 중 말로 전달하는 아나운서를 택한 이유를 말씀해 주세요.",
+      "scope": "role:announcer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "뉴스 원고를 처음 받으면 읽기 전에 무엇을 표시하고 준비하시나요?",
+      "scope": "role:announcer",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "숫자와 외래어, 고유명사가 많은 원고를 정확히 읽기 위해 어떻게 연습하시나요?",
+      "scope": "role:announcer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "표준 발음에서 본인이 특히 신경 써서 교정한 부분이 있다면 말씀해 주세요.",
+      "scope": "role:announcer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "대본 없이 스포츠 중계나 행사를 진행할 때 말을 자연스럽게 이어 가는 요령을 말씀해 주세요.",
+      "scope": "role:announcer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "뉴스, 예능, 라디오를 진행할 때 말의 속도와 톤을 어떻게 다르게 가져가시나요?",
+      "scope": "role:announcer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인터뷰 중 게스트가 단답으로만 대답한다면 어떻게 대화를 끌어내시겠어요?",
+      "scope": "role:announcer",
+      "category": "커뮤니케이션",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "무거운 사고 소식 직후 가벼운 소식을 이어서 전해야 할 때 어떻게 전환하시겠어요?",
+      "scope": "role:announcer",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생방송 뉴스 도중 프롬프터가 멈추면 어떻게 진행하시겠어요?",
+      "scope": "role:announcer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생방송 중 출연자가 사실과 다른 발언을 하면 진행자로서 어떻게 대처하시겠어요?",
+      "scope": "role:announcer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "행사 순서가 지연돼 10분 넘게 무대를 채워야 한다면 어떻게 하시겠어요?",
+      "scope": "role:announcer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 진행한 영상을 다시 볼 때 어떤 기준으로 스스로를 평가하시나요?",
+      "scope": "role:announcer",
+      "category": "성장",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "라디오 청취자 사연 참여가 눈에 띄게 줄었다면 진행 방식에서 무엇을 먼저 점검하시겠어요?",
+      "scope": "role:announcer",
+      "category": "문제해결",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "많은 사람 앞에서 진행하거나 발표하다가 실수를 수습했던 경험을 말씀해 주세요.",
+      "scope": "role:announcer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "목소리나 발음을 개선하려고 꾸준히 해 온 훈련과 그 결과를 말씀해 주세요.",
+      "scope": "role:announcer",
+      "category": "성장",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전달력은 좋은데 개성이 없다는 평가를 받는다면 어떻게 답하시겠어요?",
+      "scope": "role:announcer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구 성과가 제품이나 사업으로 이어지지 못하는 이유는 주로 어디에 있다고 보세요?",
+      "scope": "family:rnd",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구소, 사업부, 생산 현장이 한 과제를 두고 기대하는 것이 어떻게 다르다고 생각하세요?",
+      "scope": "family:rnd",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발 과제에서 일정, 원가, 성능 목표가 충돌할 때 엔지니어가 먼저 해야 할 일은 무엇이라고 보세요?",
+      "scope": "family:rnd",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신입 연구원에게 가장 먼저 요구되는 역량이 무엇이라고 생각하시는지 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 전공이나 부서 사람들과 하나의 결과물을 만들며 의견을 맞춘 경험을 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험이나 시제품 결과가 기대와 달랐을 때 끝까지 원인을 파고든 경험을 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기술적인 내용을 비전공자에게 설명해서 결정을 이끌어 낸 경험을 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "팀 프로젝트에서 담당이 불분명한 일을 주도적으로 정리해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 판단이 틀렸다는 걸 알게 된 뒤 방향을 바꾼 경험을 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양산 직전 검증 시험에서 규격을 살짝 벗어나는 결과가 나오면 어떻게 하시겠어요?",
+      "scope": "family:rnd",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "과제 중간에 고객 요구사항이 바뀌어 기존 설계를 크게 고쳐야 한다면 어떻게 대응하시겠어요?",
+      "scope": "family:rnd",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협력사가 납품한 부품 문제로 시험 일정이 밀리게 되면 어떻게 하시겠어요?",
+      "scope": "family:rnd",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "1년째 뚜렷한 성과가 없는 선행 연구 과제를 계속할지 어떻게 판단하시겠어요?",
+      "scope": "family:rnd",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "선배들이 해 온 방식에 비효율이 보이는데 바꾸자고 말하기 어려운 분위기라면 어떻게 하시겠어요?",
+      "scope": "family:rnd",
+      "category": "조직적합성",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "학부나 대학원에서 가장 깊이 파고든 연구나 프로젝트를 문제 정의부터 결과까지 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 실험 계획을 세워 데이터를 얻고 결론을 내 본 경험을 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "문헌이나 특허를 조사해서 과제 방향을 잡아 본 경험이 있다면 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "국내 제조업 연구개발이 앞으로 어떤 역량을 더 갖춰야 한다고 보세요?",
+      "scope": "family:rnd",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "AI나 시뮬레이션 도구가 연구개발 방식을 어떻게 바꾸고 있다고 생각하세요?",
+      "scope": "family:rnd",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "탄소중립이나 환경 규제가 제품 개발 방향에 어떤 영향을 준다고 보세요?",
+      "scope": "family:rnd",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "목표 성능을 맞추기 위해 불리한 시험 데이터를 빼자는 제안을 받는다면 어떻게 하시겠어요?",
+      "scope": "family:rnd",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "예전 연구실이나 직장에서 알게 된 기술 정보를 새 과제에 써도 되는지 어떻게 판단하시겠어요?",
+      "scope": "family:rnd",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구나 프로젝트에서 실패한 뒤 일하는 방식이 어떻게 바뀌었는지 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "실패",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "엔지니어로서 본인에게 가장 부족한 역량과 보완 계획을 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "약점",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "참여한 과제의 성과를 숫자로 설명한다면 어떤 지표로 말씀하시겠어요?",
+      "scope": "family:rnd",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "과제 결과가 다음 단계나 다른 팀 업무에 어떻게 활용됐는지 말씀해 주세요.",
+      "scope": "family:rnd",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자체 개발과 외부 기술 도입 중 무엇을 택할지 기술 과제 하나를 예로 들어 발표해 주세요.",
+      "scope": "family:rnd",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구기획 담당자가 연구원과 경영진 사이에서 해야 하는 역할을 어떻게 이해하고 계신지 말씀해 주세요.",
+      "scope": "role:rnd_planner",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "직접 연구하는 대신 연구를 기획하고 관리하는 일을 택한 이유를 말씀해 주세요.",
+      "scope": "role:rnd_planner",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 연구 과제 후보 중 우선순위를 정할 때 어떤 기준을 쓰시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "과제 중간 점검에서 계속, 수정, 중단을 판단할 때 무엇을 보시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "의사결정",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "국가 R&D 과제 제안서를 준비할 때 연구 목표와 성과 지표를 어떻게 잡으시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기술 로드맵을 만들 때 시장 요구와 내부 기술 수준을 어떻게 연결하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "외부 기관이나 스타트업과 공동 연구를 추진할 때 계약 전에 확인할 사항을 말씀해 주세요.",
+      "scope": "role:rnd_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "연구비 집행 관리에서 자주 생기는 문제와 예방 방법을 말씀해 주세요.",
+      "scope": "role:rnd_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구 성과를 특허로 보호할지 노하우로 남길지 어떻게 판단하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "직무전문성",
+      "type": "role_specific",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구원들이 일정 보고가 연구를 방해한다고 불만을 제기하면 어떻게 하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경영진이 성과가 안 보이는 장기 과제 예산을 절반으로 줄이자고 하면 어떻게 설득하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "정부 과제 최종 평가를 앞두고 핵심 목표 하나를 달성하지 못한 게 확인되면 어떻게 하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구개발 투자 대비 성과를 측정하려면 어떤 지표를 조합하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "특허 출원 수는 늘었는데 사업화 건수는 그대로라면 원인을 어떻게 분석하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 사람의 일정을 조율하며 프로젝트를 관리해 본 경험을 말씀해 주세요.",
+      "scope": "role:rnd_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자료를 조사해 보고서나 제안서를 쓰고 그것이 결정에 반영된 경험을 말씀해 주세요.",
+      "scope": "role:rnd_planner",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기술을 깊이 모르는 기획자가 연구원의 판단을 평가할 수 있느냐는 지적에 어떻게 답하시겠어요?",
+      "scope": "role:rnd_planner",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품개발 엔지니어가 콘셉트 단계부터 양산 이관까지 책임지는 범위를 어떻게 이해하고 계세요?",
+      "scope": "role:product_developer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연구보다 실제 제품으로 나오는 개발 업무에 관심을 갖게 된 계기를 말씀해 주세요.",
+      "scope": "role:product_developer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 요구사항을 설계 사양으로 바꿀 때 어떤 과정을 거치시겠어요?",
+      "scope": "role:product_developer",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "DFMEA를 작성해 본 적이 있다면 위험 우선순위를 어떻게 정했는지 말씀해 주세요.",
+      "scope": "role:product_developer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시제품 단계에서 신뢰성 시험 항목을 정할 때 무엇을 근거로 삼으시겠어요?",
+      "scope": "role:product_developer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계 변경이 생겼을 때 도면, BOM, 협력사 공유까지 어떤 순서로 관리하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "실무",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부품 원가를 낮추라는 요구와 내구성 확보가 충돌하면 어떻게 절충하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "의사결정",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제조하기 쉬운 설계를 위해 개발 초기에 생산 부서와 무엇을 협의하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발 단계별 게이트 심사에서 다음 단계로 넘어가도 되는지 무엇으로 판단하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양산 초기에 고객 불만이 특정 부품에 몰린다면 개발자로서 무엇부터 확인하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출시 일정은 고정인데 시험에서 소음 문제가 발견되면 어떻게 하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "핵심 부품이 단종된다는 통보를 받으면 대체 부품 검증을 어떻게 진행하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시험 샘플 10개 중 2개에서만 불량이 나왔다면 이 결과를 어떻게 해석하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 제품을 분해해 비교한다면 어떤 항목을 중심으로 분석하시겠어요?",
+      "scope": "role:product_developer",
+      "category": "경쟁",
+      "type": "case",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아이디어를 실제로 만들어 보고 시험하며 개선한 경험을 말씀해 주세요.",
+      "scope": "role:product_developer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "요구사항이 모호했던 과제에서 사양을 스스로 정의해 나간 경험을 말씀해 주세요.",
+      "scope": "role:product_developer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발자가 원가까지 신경 쓰면 좋은 제품이 안 나온다는 의견에 어떻게 생각하세요?",
+      "scope": "role:product_developer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제어 엔지니어의 역할을 기계·전기 엔지니어와 어떻게 구분해서 설명하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제어 분야에 관심을 갖게 된 계기가 된 수업이나 프로젝트를 말씀해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PID 제어기 게인을 튜닝할 때 어떤 순서로 조정하시는지 말씀해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "응답에 오버슈트가 크게 나타난다면 어떤 원인부터 의심하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "센서 신호 노이즈 때문에 필터를 넣으면 제어 성능에 어떤 영향이 생기는지 설명해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PLC 로직을 짤 때 비상정지와 인터록은 어떻게 반영하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실제 설비에 적용하기 전에 시뮬레이션으로 제어기를 검증하는 과정을 말씀해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "모델을 정확히 알기 어려운 대상은 어떻게 식별하고 제어기를 설계하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제어 주기와 통신 지연이 성능에 어떤 영향을 주는지 예를 들어 설명해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시운전 중 설비가 간헐적으로 멈추는데 재현이 잘 안 된다면 어떻게 추적하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "라인이 가동 중인데 제어 로직을 수정해야 한다면 어떤 절차로 적용하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이 사이클 타임을 10% 줄여 달라고 요청하면 어디부터 검토하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "온도 제어 로그에서 목표값 주변으로 진동이 계속된다면 어떻게 분석하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "서로 다른 두 제어 방식을 비교할 때 어떤 성능 지표로 판단하시겠어요?",
+      "scope": "role:control_engineer",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제어 이론 수업에서 배운 내용을 실제 하드웨어에 적용해 본 경험을 말씀해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "응답 속도나 정착 시간을 줄이려고 제어기를 직접 튜닝해 본 경험을 말씀해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이론대로 설계한 제어기가 현장에서 안 맞는다면 이론이 쓸모없는 것 아니냐는 질문에 답해 주세요.",
+      "scope": "role:control_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반도체 개발 단계와 양산 단계에서 엔지니어에게 요구되는 역량이 어떻게 다르다고 보세요?",
+      "scope": "family:semiconductor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "불량 이슈 하나를 두고 공정, 소자, 수율 부서가 어떻게 협업한다고 이해하고 계세요?",
+      "scope": "family:semiconductor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "반도체 8대 공정이 웨이퍼 위에서 어떤 흐름으로 이어지는지 간단히 설명해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "s9",
+      "confidence": "medium"
+    },
+    {
+      "text": "팹에서 일하는 엔지니어에게 교대 근무나 긴급 호출 말고 어떤 어려움이 있다고 보세요?",
+      "scope": "family:semiconductor",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원인이 여러 가지로 얽힌 문제를 데이터로 좁혀 들어간 경험을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "다른 팀 협조가 필요했는데 우선순위가 달라 어려웠던 경험을 어떻게 풀었는지 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반복적이고 꼼꼼함이 필요한 작업을 실수 없이 해내기 위해 쓰는 본인만의 방법을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "실무",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "낯선 기술이나 장비를 빠르게 익혀야 했던 경험을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "시행착오를 여러 번 겪으면서도 목표 사양을 끝까지 맞춰 낸 경험을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s5",
+      "confidence": "medium"
+    },
+    {
+      "text": "야간에 특정 공정 이후 웨이퍼 불량이 급증했다는 연락을 받으면 무엇부터 하시겠어요?",
+      "scope": "family:semiconductor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수율 저하 원인이 어느 공정인지 부서 간 의견이 엇갈리면 어떻게 하시겠어요?",
+      "scope": "family:semiconductor",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "선배 지시대로 조건을 바꿨는데 결과가 나빠졌다면 어떻게 보고하시겠어요?",
+      "scope": "family:semiconductor",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새 소재나 부품으로 바꾸면 원가는 줄지만 검증 기간이 부족하다면 어떻게 판단하시겠어요?",
+      "scope": "family:semiconductor",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "생산 물량 목표 때문에 생산팀이 장비 PM 연기를 요청하면 어떻게 하시겠어요?",
+      "scope": "family:semiconductor",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반도체 공정 실습이나 관련 프로젝트에서 직접 해 본 공정과 배운 점을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험이나 측정 데이터에서 이상치를 발견하고 원인을 밝혀낸 경험을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 사람이 함께 쓰는 장비나 시설을 관리하거나 운영해 본 경험을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "메모리와 시스템 반도체 시장이 앞으로 어떻게 달라질 것이라고 보시는지 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "미세화가 한계에 다가가면서 패키징 기술이 더 중요해지는 이유를 어떻게 이해하고 계세요?",
+      "scope": "family:semiconductor",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소재·부품·장비 공급망 이슈가 반도체 제조 현장에 어떤 영향을 준다고 보세요?",
+      "scope": "family:semiconductor",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "규격을 약간 벗어난 측정값을 재측정해서 통과시키자는 분위기라면 어떻게 하시겠어요?",
+      "scope": "family:semiconductor",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클린룸 안전 수칙을 지키면 작업이 늦어지는 상황에서 어떻게 행동하시겠어요?",
+      "scope": "family:semiconductor",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "변화가 빠른 반도체 분야에서 스스로 공부를 이어 가는 방법을 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "학교에서 배운 이론과 현장 실무 사이의 차이를 어떻게 메워 가실 생각인지 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 참여한 개선 활동의 효과를 어떤 데이터로 증명했는지 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "프로젝트 결과를 정리할 때 성공한 부분과 한계를 어떻게 나눠 보고했는지 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수율 개선 과제 하나를 가정해 원인 분석부터 개선 검증까지의 계획을 발표해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공정 개선에 AI 예측을 적극 도입할지 엔지니어 경험을 우선할지 한쪽 입장에서 말씀해 주세요.",
+      "scope": "family:semiconductor",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s6",
+      "confidence": "medium"
+    },
+    {
+      "text": "공정 엔지니어가 장비를 고치는 사람이 아니라 공정 조건과 수율을 관리하는 사람이라는 말을 어떻게 이해하세요?",
+      "scope": "role:semi_process",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "반도체 단위 공정 중 특히 관심 있는 공정과 그 이유를 말씀해 주세요.",
+      "scope": "role:semi_process",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "식각 공정에서 웨이퍼 위치에 따라 선폭 편차가 커진다면 어떤 원인을 의심하시겠어요?",
+      "scope": "role:semi_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s8",
+      "confidence": "medium"
+    },
+    {
+      "text": "CVD 대신 ALD를 택하는 경우는 언제인지 장단점을 들어 설명해 주세요.",
+      "scope": "role:semi_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s9",
+      "confidence": "medium"
+    },
+    {
+      "text": "열산화막과 CVD 산화막을 각각 어떤 경우에 쓰는지 설명해 주세요.",
+      "scope": "role:semi_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s9",
+      "confidence": "medium"
+    },
+    {
+      "text": "CMP 이후 디싱이나 에로전이 생기면 어떤 공정 변수를 먼저 조정해 보시겠어요?",
+      "scope": "role:semi_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "포토 공정에서 오버레이가 틀어졌다면 확인할 항목을 어떤 순서로 보시겠어요?",
+      "scope": "role:semi_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새 공정 조건을 양산에 적용하기 전에 어떤 검증 절차를 거치시겠어요?",
+      "scope": "role:semi_process",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "식각 속도와 선택비를 동시에 맞춰야 할 때 공정 변수를 어떻게 조정하시겠어요?",
+      "scope": "role:semi_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "열역학이나 반응공학 같은 전공 지식이 공정의 어떤 현상을 설명하는 데 쓰이는지 예를 들어 주세요.",
+      "scope": "role:semi_process",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "s17",
+      "confidence": "medium"
+    },
+    {
+      "text": "특정 챔버에서 처리한 웨이퍼만 두께 균일도가 나빠졌다면 무엇부터 확인하시겠어요?",
+      "scope": "role:semi_process",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조건을 바꾸면 불량은 줄지만 처리 시간이 늘어 생산량이 떨어진다면 어떻게 결정하시겠어요?",
+      "scope": "role:semi_process",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "관리도에서 관리 한계를 벗어난 점이 하나 찍혔다면 바로 설비를 멈추시겠어요?",
+      "scope": "role:semi_process",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공정 파라미터 변화와 품질 데이터의 관계를 확인하려면 어떤 방식으로 분석하시겠어요?",
+      "scope": "role:semi_process",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s9",
+      "confidence": "medium"
+    },
+    {
+      "text": "두 공정 조건의 결과 차이가 통계적으로 의미 있는지 어떻게 판단하시겠어요?",
+      "scope": "role:semi_process",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공정 실습이나 연구에서 박막이나 식각 같은 공정을 직접 다뤄 보며 배운 점을 말씀해 주세요.",
+      "scope": "role:semi_process",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "측정 결과가 예상과 달라 공정 조건을 다시 잡아 본 경험을 말씀해 주세요.",
+      "scope": "role:semi_process",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수율이 떨어졌는데 본인 공정에는 이상이 없다고 확신한다면 무엇으로 증명하시겠어요?",
+      "scope": "role:semi_process",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설비 엔지니어의 일을 유지보수, 개조, 부품 개선으로 나눈다면 각각 어떤 일이라고 보세요?",
+      "scope": "role:semi_equipment",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "공정보다 장비를 다루는 설비 엔지니어에 끌린 이유를 말씀해 주세요.",
+      "scope": "role:semi_equipment",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "진공 챔버 압력이 목표까지 내려가지 않으면 어떤 순서로 원인을 찾으시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "예방 정비 주기를 정할 때 제조사 권고와 실제 고장 이력 중 무엇을 기준으로 삼으시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장비 가동률을 높이려면 고장 대응 시간과 정비 시간 중 어디를 먼저 줄이시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "의사결정",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "플라즈마 장비에서 RF 반사파가 커지면 무엇을 점검하시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장비 알람 로그와 센서 데이터를 활용해 고장을 미리 예측하려면 어떻게 접근하시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "데이터",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장비 부품을 국산 대체품으로 바꿀 때 어떤 항목을 검증해야 한다고 보세요?",
+      "scope": "role:semi_equipment",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "정비를 마친 장비를 생산에 다시 투입하기 전에 확인할 절차를 말씀해 주세요.",
+      "scope": "role:semi_equipment",
+      "category": "실무",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장비 제조사와 함께 개조나 성능 개선을 진행할 때 엔지니어가 챙겨야 할 부분을 말씀해 주세요.",
+      "scope": "role:semi_equipment",
+      "category": "실무",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "핵심 장비가 멈췄는데 제조사 엔지니어는 이틀 뒤에나 올 수 있다면 어떻게 하시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "정비 직후 해당 장비를 거친 웨이퍼에서 파티클 불량이 늘었다면 어떻게 대응하시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 알람이 한 달에 여러 번 반복되는데 매번 리셋으로 넘어가고 있다면 어떻게 하시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 모델 장비 여러 대 중 한 대만 고장이 잦다면 무엇을 비교 분석하시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장비 MTBF와 MTTR 추이를 보고 어떤 개선 과제를 뽑아내시겠어요?",
+      "scope": "role:semi_equipment",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기계나 전자 장치를 직접 분해하거나 수리해 본 경험을 말씀해 주세요.",
+      "scope": "role:semi_equipment",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "장비나 실험 도구의 문제를 개선해 작업 효율을 높인 경험을 말씀해 주세요.",
+      "scope": "role:semi_equipment",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "장비 문제는 제조사에 맡기면 되는데 설비 엔지니어가 왜 깊이 알아야 하느냐는 질문에 답해 주세요.",
+      "scope": "role:semi_equipment",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회로설계 안에서 아날로그, 디지털, 레이아웃, 검증 업무가 어떻게 이어지는지 설명해 주세요.",
+      "scope": "role:semi_design",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "반도체 공정이나 소자보다 회로설계를 택한 이유를 말씀해 주세요.",
+      "scope": "role:semi_design",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디지털 설계에서 타이밍 위반이 발생하면 어떤 방법으로 해결을 시도하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "셋업 타임 위반과 홀드 타임 위반은 원인과 해결 방식이 어떻게 다른지 설명해 주세요.",
+      "scope": "role:semi_design",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "클럭 도메인이 다른 신호를 주고받을 때 생기는 문제와 처리 방법을 말씀해 주세요.",
+      "scope": "role:semi_design",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "저전력 설계를 해야 할 때 회로 수준에서 쓸 수 있는 방법을 말씀해 주세요.",
+      "scope": "role:semi_design",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "아날로그 회로를 공정 편차에 강하게 설계하려면 무엇을 고려하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "레이아웃 후 기생 성분을 반영한 시뮬레이션이 목표에 못 미치면 어떻게 하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계 검증에서 커버리지를 어떻게 정의하고 어느 수준이면 충분하다고 판단하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "테이프아웃 일주일 전에 기능 오류가 발견되면 어떻게 대응하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "첫 샘플 칩이 특정 온도에서만 오동작한다면 원인을 어떻게 좁혀 가시겠어요?",
+      "scope": "role:semi_design",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "면적 목표를 맞추려면 성능 여유를 줄여야 하는 상황이라면 어떻게 결정하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "PVT 코너 시뮬레이션 중 한 코너만 스펙을 벗어난다면 어떻게 분석하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "타이밍 분석에서 임계 경로가 계속 같은 블록에서 나온다면 어떻게 분석하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "HDL로 회로를 설계하고 검증해 본 프로젝트를 말씀해 주세요.",
+      "scope": "role:semi_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계한 회로가 예상대로 동작하지 않아 디버깅했던 경험을 말씀해 주세요.",
+      "scope": "role:semi_design",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시뮬레이션은 다 통과했는데 실리콘에서 실패했다면 설계자 책임 아니냐는 지적에 어떻게 답하시겠어요?",
+      "scope": "role:semi_design",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수율 엔지니어가 단위 공정 담당자와 달리 전체 공정을 가로질러 봐야 하는 이유를 말씀해 주세요.",
+      "scope": "role:semi_yield",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "불량의 원인을 찾아가는 수율·불량분석 업무에 관심을 갖게 된 계기를 말씀해 주세요.",
+      "scope": "role:semi_yield",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "웨이퍼 맵에서 가장자리에 불량이 몰려 있다면 어떤 공정 원인을 먼저 떠올리시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "불량 칩의 물리적 원인을 확인하기 위해 어떤 분석 순서를 밟으시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "전기적 테스트 결과와 인라인 계측 데이터를 연결해 원인을 좁히는 방법을 말씀해 주세요.",
+      "scope": "role:semi_yield",
+      "category": "데이터",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "랜덤 불량과 체계적 불량을 구분하려면 무엇을 보시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "결함 검사에서 잡힌 결함 중 실제 수율에 영향을 주는 것을 어떻게 가려내시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수율 저하 원인을 특정 장비로 좁히기 위해 공통성 분석을 어떻게 하시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "데이터",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 반품 불량을 분석할 때 재현 시험을 어떻게 설계하시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수율이 몇 주에 걸쳐 서서히 떨어진다면 급격한 하락과 어떻게 다르게 접근하시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원인으로 지목된 공정 팀이 분석 결과를 받아들이지 않으면 어떻게 하시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원인을 찾기 전에 생산을 계속할지 멈출지 정해야 한다면 무엇을 근거로 판단하시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수율이 2% 떨어졌을 때 이것이 의미 있는 변화인지 어떻게 판단하시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 공정 변수 중 수율에 영향을 주는 인자를 데이터로 찾으려면 어떤 분석을 쓰시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "많은 데이터를 정리하고 시각화해서 결론을 끌어낸 경험을 말씀해 주세요.",
+      "scope": "role:semi_yield",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "원인이 불분명한 문제를 가설을 세워 하나씩 지워 가며 해결한 경험을 말씀해 주세요.",
+      "scope": "role:semi_yield",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "상관관계만 보고 원인을 단정한 것 아니냐는 반론을 받으면 무엇으로 입증하시겠어요?",
+      "scope": "role:semi_yield",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기·전자 개발에서 설계만큼 시험과 검증이 중요한 이유를 어떻게 이해하고 계세요?",
+      "scope": "family:electronics",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회로나 전기 설계 담당자가 기구, 소프트웨어 담당자와 어디서 가장 많이 부딪힌다고 보세요?",
+      "scope": "family:electronics",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전자제품이 개발되어 양산되기까지 전기·전자 엔지니어가 어느 단계에 관여하는지 설명해 주세요.",
+      "scope": "family:electronics",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공식자료",
+      "src": "s10",
+      "confidence": "medium"
+    },
+    {
+      "text": "안전 규격이나 인증이 전기·전자 설계에 어떤 제약을 준다고 이해하고 계세요?",
+      "scope": "family:electronics",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "혼자 해결하기 어려운 기술 문제를 주변 도움을 받아 풀어 낸 경험을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "다른 파트 담당자와 인터페이스 사양을 맞추며 조율했던 경험을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "맡은 설계나 제작물을 마감까지 완성도 있게 마무리한 경험을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "조직적합성",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "영문 데이터시트나 기술 문서를 읽고 처음 쓰는 부품을 적용해 본 경험을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "성장",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "일정이 촉박해 검증 범위를 줄이자는 압박을 받았을 때 어떻게 대응했는지 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시제품에 전원을 넣자마자 부품이 타 버렸다면 무엇부터 확인하시겠어요?",
+      "scope": "family:electronics",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "인증 시험에서 전자파 방사가 기준을 넘었다면 어떻게 대응하시겠어요?",
+      "scope": "family:electronics",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양산 제품 중 특정 로트만 불량률이 높게 나온다면 어떻게 추적하시겠어요?",
+      "scope": "family:electronics",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "현장 설비에서 원인 모를 이유로 차단기가 자주 떨어진다면 어떻게 조사하시겠어요?",
+      "scope": "family:electronics",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "선배가 만든 회로나 도면에서 오류로 보이는 부분을 발견하면 어떻게 하시겠어요?",
+      "scope": "family:electronics",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "회로를 직접 만들어 동작시켜 본 프로젝트에서 본인이 맡은 부분을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "전공 실험에서 이론값과 측정값이 달라 원인을 따져 본 경험을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기·전자 관련 자격증이나 교육에서 배운 것을 실제로 적용해 본 경험을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "차량과 가전에 전자 부품이 늘어나면서 전기·전자 엔지니어에게 새로 요구되는 역량은 무엇이라고 보세요?",
+      "scope": "family:electronics",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전력 반도체나 고효율 전원 기술이 왜 주목받는다고 생각하세요?",
+      "scope": "family:electronics",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전자 부품 산업에서 해외 경쟁이 치열해지는 가운데 국내 기업이 가져야 할 강점은 무엇이라고 보세요?",
+      "scope": "family:electronics",
+      "category": "시장",
+      "type": "industry",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "고전압 작업에서 정해진 절차를 건너뛰는 동료를 봤다면 어떻게 하시겠어요?",
+      "scope": "family:electronics",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경쟁 제품을 분석하다 알게 된 회로 구조를 그대로 가져다 쓰자는 의견에 어떻게 생각하세요?",
+      "scope": "family:electronics",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계 검토에서 받은 지적 중 가장 기억에 남는 것과 그 뒤로 달라진 점을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기·전자 엔지니어로서 앞으로 3년 동안 가장 키우고 싶은 역량을 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 설계하거나 개선한 결과물의 성능을 어떤 측정값으로 검증했는지 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "참여한 프로젝트에서 원가나 불량률을 줄인 성과가 있다면 어떻게 산출했는지 말씀해 주세요.",
+      "scope": "family:electronics",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소형 IoT 기기의 전원부를 설계한다고 가정하고 요구사항 정리부터 검증 계획까지 발표해 주세요.",
+      "scope": "family:electronics",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "하드웨어 개발자가 회로도 작성 외에 시험 계획이나 제품 검사까지 책임지는 이유를 말씀해 주세요.",
+      "scope": "role:hw_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s10",
+      "confidence": "medium"
+    },
+    {
+      "text": "소프트웨어보다 전자회로 하드웨어 개발을 택한 이유를 말씀해 주세요.",
+      "scope": "role:hw_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전원부에 LDO와 스위칭 레귤레이터 중 무엇을 쓸지 어떻게 결정하시나요?",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고속 신호 배선에서 신호 무결성을 위해 PCB에서 무엇을 신경 쓰시나요?",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디커플링 커패시터의 용량과 배치 위치를 어떻게 정하시나요?",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부품을 선정할 때 데이터시트에서 반드시 확인하는 항목을 말씀해 주세요.",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "회로의 발열 문제를 설계 단계에서 어떻게 예측하고 대비하시겠어요?",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "MCU와 주변 센서 사이 통신 방식을 무엇으로 정할지 어떻게 판단하시나요?",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "보드 접지를 잘못 설계했을 때 생기는 문제와 예방 방법을 말씀해 주세요.",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "첫 샘플 보드에서 노이즈 때문에 ADC 값이 흔들린다면 어떻게 추적하시겠어요?",
+      "scope": "role:hw_engineer",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "펌웨어 담당자는 하드웨어 문제라 하고 본인은 소프트웨어 문제로 본다면 어떻게 확인하시겠어요?",
+      "scope": "role:hw_engineer",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양산 보드 일부에서만 간헐적으로 리셋이 발생한다면 어떻게 원인을 찾으시겠어요?",
+      "scope": "role:hw_engineer",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전원 효율이 설계 계산보다 낮게 측정됐다면 손실을 어디서부터 따져 보시겠어요?",
+      "scope": "role:hw_engineer",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부품 공차를 고려해 회로가 최악 조건에서도 동작하는지 어떻게 계산하시겠어요?",
+      "scope": "role:hw_engineer",
+      "category": "기술",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 PCB를 설계하거나 납땜해서 보드를 완성해 본 경험을 말씀해 주세요.",
+      "scope": "role:hw_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "동작하지 않는 회로를 측정 장비로 디버깅해 해결했던 경험을 말씀해 주세요.",
+      "scope": "role:hw_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지금 설계한 회로에서 부품 수를 30% 줄이라고 하면 무엇을 포기하고 무엇을 지키시겠어요?",
+      "scope": "role:hw_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기설계 엔지니어가 건축물이나 플랜트 프로젝트에서 담당하는 범위를 설명해 주세요.",
+      "scope": "role:electrical_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기 분야 중에서 설계 업무를 택하게 된 계기를 말씀해 주세요.",
+      "scope": "role:electrical_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부하 계산을 할 때 수용률과 부등률을 어떻게 반영하시는지 설명해 주세요.",
+      "scope": "role:electrical_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "케이블 굵기를 정할 때 허용전류 외에 어떤 조건을 함께 검토하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "차단기 용량과 보호 협조를 검토할 때 무엇을 기준으로 삼으시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "단선결선도를 작성할 때 반드시 들어가야 할 정보를 말씀해 주세요.",
+      "scope": "role:electrical_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "계통 접지 방식을 정할 때 설비 특성과 안전을 어떻게 함께 고려하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전압강하가 허용 범위를 넘는 구간이 있다면 설계에서 어떻게 해결하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "비상발전기나 UPS 용량을 정할 때 어떤 부하를 기준으로 산정하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시공 중 도면과 현장 배치가 달라 케이블 경로를 바꿔야 한다면 어떻게 하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계를 마친 뒤 발주처가 대용량 설비를 추가하겠다고 하면 무엇부터 다시 검토하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "준공 검사를 앞두고 설계 기준에 어긋난 시공이 발견되면 어떻게 하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "윤리",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "역률이 낮은 설비가 많은 공장에서 개선 효과를 어떤 방식으로 계산하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "두 배전 방식 중 하나를 고를 때 초기 비용과 운영 신뢰성을 어떻게 비교하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기 관련 설계나 CAD 도면 작업을 해 본 경험을 말씀해 주세요.",
+      "scope": "role:electrical_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "설비를 점검하거나 시공 현장을 보며 설계와 현장의 차이를 느낀 경험을 말씀해 주세요.",
+      "scope": "role:electrical_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여유를 크게 둔 설계는 안전하지만 원가가 올라간다는 지적에 어떻게 답하시겠어요?",
+      "scope": "role:electrical_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디스플레이 엔지니어가 패널 공정, 구동 회로, 광학 특성 중 어디까지 이해해야 한다고 보세요?",
+      "scope": "role:display_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 전자 분야 중 디스플레이에 관심을 갖게 된 계기를 말씀해 주세요.",
+      "scope": "role:display_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "LCD와 OLED의 구동 원리 차이가 화질 특성에 어떻게 나타나는지 설명해 주세요.",
+      "scope": "role:display_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "OLED 패널에서 번인이 생기는 원인과 완화 방법을 말씀해 주세요.",
+      "scope": "role:display_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "화면 얼룩인 무라가 생겼을 때 공정 원인과 구동 원인을 어떻게 구분하시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "TFT 특성이 흔들리면 화면에 어떤 문제가 나타나고 무엇을 측정하시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "봉지 공정에서 수분 침투를 막기 위해 무엇을 관리해야 한다고 보세요?",
+      "scope": "role:display_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "휘도와 소비전력 목표가 충돌할 때 패널 설계에서 어떤 선택지가 있을까요?",
+      "scope": "role:display_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "폴더블 패널의 신뢰성을 평가할 때 어떤 시험이 중요하다고 보세요?",
+      "scope": "role:display_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양산 라인에서 특정 위치에 점 결함이 반복해서 생긴다면 어떻게 추적하시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객사가 색 재현이 승인 샘플과 다르다고 이의를 제기하면 어떻게 대응하시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 소재 적용 후 수명 평가 결과가 기존보다 나빠졌다면 어떻게 하시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "패널 수율 데이터에서 셀 공정과 모듈 공정 중 어디서 손실이 큰지 어떻게 구분하시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "휘도 균일도가 목표에 못 미친다면 측정 데이터를 어떻게 나눠 보시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "광학이나 박막 관련 실험에서 측정 결과를 해석해 본 경험을 말씀해 주세요.",
+      "scope": "role:display_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "시료나 소자를 직접 만들어 특성을 측정하고 비교해 본 경험을 말씀해 주세요.",
+      "scope": "role:display_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "디스플레이 기술 경쟁이 치열한데 지금 이 분야를 택하는 게 맞느냐는 질문에 어떻게 답하시겠어요?",
+      "scope": "role:display_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기계·자동차 개발에서 설계, 시험, 해석 업무가 서로 어떻게 맞물린다고 이해하고 계세요?",
+      "scope": "family:mechanical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지원 전에 생각한 직무와 실제 업무가 다를 수 있는데 그 차이를 어떻게 확인해 보셨나요?",
+      "scope": "family:mechanical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "levels": [
+        "entry"
+      ],
+      "basis": "공개후기",
+      "src": "s16",
+      "confidence": "medium"
+    },
+    {
+      "text": "설계한 부품이 양산 제품에 들어가기 전까지 엔지니어가 책임지는 범위를 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발 일정이 자주 바뀌는 환경에서 엔지니어가 가장 힘들어지는 지점은 어디라고 보세요?",
+      "scope": "family:mechanical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "팀 프로젝트 결과물이 목표 성능에 못 미쳤을 때 어떻게 대응했는지 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협력사나 다른 부서에 기술적인 요청을 해서 원하는 결과를 받아 낸 경험을 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "커뮤니케이션",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제작이나 조립 과정에서 직접 손을 움직여 문제를 해결한 경험을 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "실무",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "한정된 예산이나 재료로 결과물을 만들어야 했던 경험과 그때의 판단을 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "의사결정",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "팀으로 일하면서 가장 불만스러웠던 점과 그때 본인이 한 행동을 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "팀워크",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s18",
+      "confidence": "medium"
+    },
+    {
+      "text": "조립 라인에서 본인이 설계한 부품이 잘 안 끼워진다는 연락을 받으면 어떻게 하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "내구 시험을 통과하지 못했는데 일정상 재설계 시간이 거의 없다면 어떻게 하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시험 중 시편이 예상보다 훨씬 이른 시점에 파손됐다면 무엇부터 조사하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "근거 없이 중량을 10% 줄이라는 요구를 받으면 어떻게 대응하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이전 모델에서 문제가 됐던 부위를 신규 모델에 그대로 쓰자는 의견이 나오면 어떻게 판단하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "캡스톤 디자인이나 제작 프로젝트에서 본인이 맡은 설계와 그 결과를 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "CAD 툴을 익히면서 가장 어려웠던 점과 극복한 방법을 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "도구",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "시험이나 측정을 직접 수행하고 데이터를 해석해 본 경험을 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전동화와 자율주행이 기계 엔지니어의 역할을 어떻게 바꾸고 있다고 보세요?",
+      "scope": "family:mechanical",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s16",
+      "confidence": "medium"
+    },
+    {
+      "text": "제조 현장의 자동화가 기계 설계 방식에 어떤 영향을 준다고 생각하세요?",
+      "scope": "family:mechanical",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경량화 요구가 커지면서 소재와 설계 방식은 어떻게 달라지고 있다고 보세요?",
+      "scope": "family:mechanical",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "비용 절감을 위해 안전 여유를 줄이자는 결정에 동의하기 어렵다면 어떻게 하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시험이 규정과 다른 조건으로 진행된 걸 뒤늦게 알게 됐다면 어떻게 하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "지난 프로젝트를 다시 한다면 설계 단계에서 무엇을 다르게 하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기계 분야에서 오래 일하기 위해 본인이 지키고 싶은 원칙이 있다면 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "가치관",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인이 참여한 개선으로 무게, 원가, 성능 중 무엇이 얼마나 좋아졌는지 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 결과물이 실제 사용 환경에서 어떤 평가를 받았는지 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가상 검증을 늘려 실물 시험을 줄이는 방향에 찬성하는지 반대하는지 말씀해 주세요.",
+      "scope": "family:mechanical",
+      "category": "토론",
+      "type": "debate",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부품 파손 사례 자료를 짧은 시간 안에 읽고 원인과 대책, 리스크를 발표한다면 어떻게 구성하시겠어요?",
+      "scope": "family:mechanical",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "s12",
+      "confidence": "medium"
+    },
+    {
+      "text": "기계설계 엔지니어가 도면 한 장에 책임지는 범위가 어디까지라고 보세요?",
+      "scope": "role:mechanical_designer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기계공학 여러 분야 중 설계 직무를 택한 이유를 말씀해 주세요.",
+      "scope": "role:mechanical_designer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "조립되는 두 부품의 공차를 정할 때 어떤 순서로 검토하시나요?",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공차 누적 해석에서 최악 조건법과 통계적 방법을 어떤 기준으로 선택하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기하공차를 도면에 넣을 때 데이텀을 어떻게 잡으시는지 설명해 주세요.",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부품 재질을 선정할 때 강도 말고 어떤 요소를 함께 고려하시나요?",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "볼트 체결부가 진동으로 풀린다면 설계에서 어떤 대책을 검토하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가공 방식에 따라 설계 형상을 어떻게 바꿔야 하는지 예를 들어 설명해 주세요.",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "베어링이나 기어 같은 표준 부품을 고를 때 어떤 계산과 자료를 근거로 삼으시나요?",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "가공업체에서 도면대로는 가공이 어렵다고 연락해 오면 어떻게 대응하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계 검토 회의에서 공차가 너무 빡빡해 원가가 올라간다는 지적을 받으면 어떻게 하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "출도 이후 치수 오류가 발견됐는데 이미 부품 제작이 시작됐다면 어떻게 하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "샤프트 강도를 검토할 때 안전계수를 얼마로 둘지 무엇을 근거로 정하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "기술",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 기능을 내는 두 설계안 중 하나를 고를 때 어떤 항목으로 비교하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계한 부품을 직접 가공하거나 3D 프린팅으로 만들어 조립해 본 경험을 말씀해 주세요.",
+      "scope": "role:mechanical_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "조립 간섭이나 치수 문제를 발견해 설계를 바꾼 경험을 말씀해 주세요.",
+      "scope": "role:mechanical_designer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기존 도면을 그대로 복사해 쓰면 되는데 왜 매번 검토가 필요하냐는 질문에 어떻게 답하시겠어요?",
+      "scope": "role:mechanical_designer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자동차 연구개발의 설계, 시험, 해석, 개발 지원 업무가 어떻게 이어지는지 말씀해 주세요.",
+      "scope": "role:automotive_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자동차 연구개발 중 관심 있는 시스템과 그 이유를 말씀해 주세요.",
+      "scope": "role:automotive_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "차량에서 NVH 문제가 생기면 소음원을 어떤 순서로 찾아가시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전기차에서 배터리 열관리가 중요한 이유와 대표적인 냉각 방식을 설명해 주세요.",
+      "scope": "role:automotive_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "차체 경량화를 위해 소재를 바꿀 때 충돌 성능은 어떻게 확보하시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "부품 내구 시험 조건을 실제 주행 환경과 연결하려면 어떻게 설정하시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "연비나 전비를 개선하기 위해 차량 설계에서 손볼 수 있는 요소를 말씀해 주세요.",
+      "scope": "role:automotive_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "ISO 26262 같은 기능 안전 기준이 개발 과정에 어떤 절차를 요구한다고 이해하고 계세요?",
+      "scope": "role:automotive_engineer",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수소 연료전지차가 배터리 전기차와 비교해 어떤 장단점이 있다고 보세요?",
+      "scope": "role:automotive_engineer",
+      "category": "산업",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "s18",
+      "confidence": "medium"
+    },
+    {
+      "text": "양산 직전 시험에서 특정 속도 구간 떨림이 발견되면 어떻게 대응하시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "혹한 시험 중 저온에서만 시동 문제가 발생한다면 무엇부터 확인하시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계 부서와 시험 부서가 불합격 원인을 서로 상대에게 돌린다면 어떻게 하시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "갈등",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "주행 시험 데이터에서 이상 신호를 찾을 때 어떤 방식으로 걸러내시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "차량 무게가 100kg 늘면 주행거리나 연비에 어떤 영향이 있을지 대략 추정해 보시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자작 자동차 대회나 차량 관련 프로젝트에서 맡았던 역할을 말씀해 주세요.",
+      "scope": "role:automotive_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "차량 부품을 분해하거나 정비해 보며 구조를 이해한 경험을 말씀해 주세요.",
+      "scope": "role:automotive_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "자동차 산업이 빠르게 바뀌는데 기계 전공 지식이 여전히 경쟁력이 있느냐는 질문에 어떻게 답하시겠어요?",
+      "scope": "role:automotive_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해석 엔지니어가 설계와 시험 사이에서 어떤 가치를 만든다고 보세요?",
+      "scope": "role:cae_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 설계하는 것보다 해석 업무에 관심을 갖게 된 이유를 말씀해 주세요.",
+      "scope": "role:cae_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "구조 해석에서 메시 크기를 정할 때 정확도와 계산 시간을 어떻게 절충하시나요?",
+      "scope": "role:cae_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "경계 조건을 잘못 주면 결과가 어떻게 달라지는지 예를 들어 설명해 주세요.",
+      "scope": "role:cae_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "응력 집중부 결과가 메시를 바꿀 때마다 계속 커진다면 어떻게 해석하시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "선형 해석 대신 비선형 해석을 택해야 하는 경우는 언제인가요?",
+      "scope": "role:cae_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "열유동 해석 결과를 믿을 수 있는지 판단하기 위해 무엇을 확인하시나요?",
+      "scope": "role:cae_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "피로 수명을 예측할 때 필요한 입력 데이터와 그 한계를 말씀해 주세요.",
+      "scope": "role:cae_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "충돌 해석처럼 계산량이 큰 경우 모델을 어떻게 단순화하시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계 일정 때문에 해석 결과를 하루 만에 달라고 하면 어떻게 대응하시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해석에서는 안전하다고 나왔는데 시험에서 파손됐다면 어떻게 하시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "설계자가 원하는 결론이 나오도록 해석 조건을 바꿔 달라고 하면 어떻게 하시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "윤리",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해석 모델의 신뢰도를 높이기 위해 시험 데이터와 상관성을 어떻게 맞추시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 설계 변수 중 성능에 영향이 큰 변수를 찾으려면 해석을 어떻게 계획하시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해석 툴로 구조나 열 문제를 분석해 본 경험을 말씀해 주세요.",
+      "scope": "role:cae_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "해석 결과를 근거로 설계 변경을 이끌어 낸 경험이 있다면 말씀해 주세요.",
+      "scope": "role:cae_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "해석은 결국 가정의 산물인데 그 결과를 왜 믿어야 하느냐는 질문에 어떻게 답하시겠어요?",
+      "scope": "role:cae_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로봇 개발에서 기구, 제어, 소프트웨어 담당이 어떻게 협업하는지 이해하신 대로 말씀해 주세요.",
+      "scope": "role:robotics_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로봇이나 메카트로닉스 분야를 택하게 된 계기가 된 경험을 말씀해 주세요.",
+      "scope": "role:robotics_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로봇 팔의 순기구학과 역기구학이 실제 작업에서 각각 어떻게 쓰이는지 설명해 주세요.",
+      "scope": "role:robotics_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "협동 로봇을 설계할 때 사람과의 충돌 안전을 어떻게 확보하시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "감속기나 모터를 선정할 때 어떤 계산을 거치시나요?",
+      "scope": "role:robotics_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "엔코더 값과 실제 위치가 어긋난다면 어떤 원인을 의심하시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "비전 센서로 물체를 집는 작업에서 인식 실패가 잦다면 무엇을 개선하시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "이동 로봇이 지도에서 자기 위치를 잃는 경우 어떤 원인과 대책이 있을까요?",
+      "scope": "role:robotics_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로봇 작업 경로를 티칭할 때 사이클 타임과 정밀도를 어떻게 함께 맞추시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "실무",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "시연 전날 로봇이 특정 자세에서만 떨림을 보인다면 어떻게 대응하시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객 현장에 설치한 로봇이 작업자 개입 때문에 자주 멈춘다면 어떻게 하시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "기구 설계가 거의 끝난 뒤 탑재 하중을 늘려 달라는 요청이 오면 어떻게 하시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반복 정밀도 측정 결과가 사양보다 나쁘다면 원인을 어떻게 나눠서 분석하시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "문제해결",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "로봇 자동화를 도입할 때 투자 회수 기간을 어떻게 계산해 보시겠어요?",
+      "scope": "role:robotics_engineer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "직접 만든 로봇이 계획대로 움직이지 않았을 때 어떻게 고쳐 나갔는지 말씀해 주세요.",
+      "scope": "role:robotics_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "하드웨어와 소프트웨어 문제를 동시에 의심해야 했던 디버깅 경험을 말씀해 주세요.",
+      "scope": "role:robotics_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "사람이 하는 게 더 싸고 유연한 작업이라면 굳이 로봇을 쓸 이유가 있느냐는 질문에 답해 주세요.",
+      "scope": "role:robotics_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "화학·소재 분야에서 실험실 결과가 양산으로 이어지기 어려운 이유를 어떻게 이해하고 계세요?",
+      "scope": "family:chemical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 소재 하나를 두고 연구소, 공정, 품질 부서가 각각 무엇을 중요하게 본다고 생각하세요?",
+      "scope": "family:chemical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원료부터 최종 제품까지 시험·분석이 어떤 역할을 한다고 보세요?",
+      "scope": "family:chemical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "basis": "공식자료",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "화학 분야 엔지니어나 연구원에게 안전 의식이 특히 강조되는 이유를 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 결과가 재현되지 않아 원인을 끝까지 추적했던 경험을 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "문제해결",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험실 안전 규칙을 지키려고 불편을 감수하거나 동료에게 말했던 경험을 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "조직적합성",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공동 실험에서 역할 분담이나 데이터 해석을 두고 의견이 달랐던 경험을 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "갈등",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 노트나 데이터를 체계적으로 관리해서 도움이 됐던 경험을 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "실무",
+      "type": "behavioral",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험이 계속 실패하는 동안 팀의 의욕을 유지하려고 노력했던 경험을 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "리더십",
+      "type": "behavioral",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 중 반응이 예상보다 격렬해지며 온도가 급상승하면 어떻게 하시겠어요?",
+      "scope": "family:chemical",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "랩 스케일에서 좋던 결과가 파일럿 스케일에서 재현되지 않는다면 무엇부터 검토하시겠어요?",
+      "scope": "family:chemical",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원료 공급처가 바뀐 뒤 제품 물성이 달라졌다면 어떻게 대응하시겠어요?",
+      "scope": "family:chemical",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객이 요구한 물성을 맞추면 다른 물성이 나빠지는 상황이라면 어떻게 하시겠어요?",
+      "scope": "family:chemical",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분석 장비 고장으로 중요한 결과 제출 기한을 맞추기 어렵다면 어떻게 하시겠어요?",
+      "scope": "family:chemical",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "학부 실험이나 연구실에서 수행한 합성·분석 실험 하나를 골라 과정과 결과를 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 계획을 세울 때 변수와 대조군을 어떻게 설정했는지 경험을 들어 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분석 장비를 다루며 측정 결과의 신뢰성을 높이려고 했던 경험을 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "친환경 소재나 재활용 기술이 화학 산업의 방향을 어떻게 바꾸고 있다고 보세요?",
+      "scope": "family:chemical",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "범용 제품보다 고부가 스페셜티 소재로 옮겨 가는 흐름을 어떻게 보시나요?",
+      "scope": "family:chemical",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "2차전지나 반도체 소재 수요가 화학·소재 연구 방향에 어떤 영향을 준다고 생각하세요?",
+      "scope": "family:chemical",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "동료가 폐액이나 유해 물질을 규정과 다르게 처리하는 것을 봤다면 어떻게 하시겠어요?",
+      "scope": "family:chemical",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고객에게 제출할 물질안전 정보에 불확실한 부분이 있다면 어떻게 처리하시겠어요?",
+      "scope": "family:chemical",
+      "category": "윤리",
+      "type": "ethics",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 가설에 너무 집착했던 순간이 있었다면 그걸 어떻게 깨달았는지 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "화학·소재 분야에서 앞으로 깊게 파고들고 싶은 주제와 그 이유를 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "성장",
+      "type": "reflection",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "본인 실험이나 개선으로 수율, 순도, 물성 같은 지표가 얼마나 바뀌었는지 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "성과",
+      "type": "result",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 결과가 의미 있는 차이라는 것을 어떤 반복 횟수와 통계로 보여 줬는지 말씀해 주세요.",
+      "scope": "family:chemical",
+      "category": "데이터",
+      "type": "result",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "신규 소재를 랩에서 양산 라인까지 옮기는 스케일업 계획을 단계별로 발표해 주세요.",
+      "scope": "family:chemical",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "화공 공정엔지니어가 생산 현장에서 운전, 개선, 안전을 어떻게 함께 책임지는지 말씀해 주세요.",
+      "scope": "role:chemical_process",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "연구보다 플랜트 공정을 다루는 엔지니어를 택한 이유를 말씀해 주세요.",
+      "scope": "role:chemical_process",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공정 흐름도와 배관계장도를 받으면 가장 먼저 무엇을 확인하시나요?",
+      "scope": "role:chemical_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "증류탑의 분리 효율이 떨어졌다면 어떤 운전 변수부터 점검하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반응기 온도가 설정값을 자주 벗어난다면 열전달 측면에서 무엇을 의심하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "열교환기 효율이 점점 떨어질 때 파울링 여부를 어떻게 판단하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "물질수지와 에너지수지가 맞지 않으면 어디부터 확인하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "HAZOP이 공정의 위험을 어떤 방식으로 찾아내는지 설명해 주세요.",
+      "scope": "role:chemical_process",
+      "category": "직무전문성",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "펌프에서 캐비테이션이 생기면 어떤 현상이 나타나고 어떻게 해결하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "중간제품 시험 결과가 작업 표준을 벗어났다면 공정에서 어떤 조치부터 하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "실무",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "정기 보수 뒤 재가동 과정에서 압력이 비정상적으로 올라간다면 어떻게 대응하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생산량을 20% 늘려 달라는 요청이 오면 어느 설비가 병목이 될지 어떻게 찾으시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "운전원이 절차서와 다르게 운전하는 게 관행이 되어 있다면 어떻게 하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "윤리",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "제품 단위당 에너지 사용량이 지난달보다 늘었다면 어떤 데이터를 보며 원인을 찾으시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "촉매 교체 주기를 정할 때 교체 비용과 성능 저하 손실을 어떻게 비교하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "공정 설계 과목이나 실습에서 공정 시뮬레이션을 해 본 경험을 말씀해 주세요.",
+      "scope": "role:chemical_process",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "현장 실습이나 인턴에서 공정 문제를 보고 개선 아이디어를 낸 경험을 말씀해 주세요.",
+      "scope": "role:chemical_process",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "안전 설비 투자가 생산성을 떨어뜨린다는 현장의 반발이 있다면 어떻게 설득하시겠어요?",
+      "scope": "role:chemical_process",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "개발한 소재가 제품에 적용되기까지 어떤 검증을 거친다고 이해하고 계세요?",
+      "scope": "role:materials_researcher",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 연구 분야 중 소재 연구를 선택한 이유를 말씀해 주세요.",
+      "scope": "role:materials_researcher",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소재의 미세구조와 물성의 관계를 확인하려면 어떤 분석을 조합하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "XRD와 SEM 결과가 서로 다른 해석을 가리킨다면 어떻게 판단하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "고분자 소재의 열적 특성을 평가할 때 어떤 분석을 쓰고 무엇을 보시나요?",
+      "scope": "role:materials_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "소재의 장기 신뢰성을 짧은 기간에 평가하려면 가속 시험을 어떻게 설계하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "코팅층의 접착력이 부족하다면 어떤 원인을 먼저 검토하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "합성 조건 중 입자 크기에 영향을 주는 변수를 어떻게 찾아내시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "바인더나 도전재 같은 첨가 소재의 함량을 정할 때 어떤 트레이드오프를 고려하시나요?",
+      "scope": "role:materials_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객 평가 기준은 통과했지만 로트마다 편차가 크다면 어떻게 하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "원가 절감을 위해 원료 등급을 낮추자는 요청을 받으면 어떻게 검증하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "의사결정",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "성능은 경쟁 소재보다 좋은데 가공성이 나빠 고객이 쓰기 어렵다고 한다면 어떻게 하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "물성 측정값의 편차가 크다면 측정 문제인지 소재 문제인지 어떻게 구분하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "여러 조성 후보 중 다음 실험 대상을 고를 때 어떤 기준으로 좁히시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "의사결정",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소재를 합성하거나 가공해서 특성을 평가해 본 경험을 말씀해 주세요.",
+      "scope": "role:materials_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "원하는 물성이 나오지 않아 조성이나 공정을 바꿔 본 경험을 말씀해 주세요.",
+      "scope": "role:materials_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "논문 수준의 성능은 양산에서 의미 없다는 지적을 받으면 연구 결과의 가치를 어떻게 설명하시겠어요?",
+      "scope": "role:materials_researcher",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "합성 연구원과 분석 연구원은 한 과제에서 어떻게 역할을 나누고 협업한다고 보세요?",
+      "scope": "role:chemical_researcher",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "합성이나 분석 연구에 흥미를 느끼게 된 실험 경험을 말씀해 주세요.",
+      "scope": "role:chemical_researcher",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "합성 수율이 낮을 때 반응 조건 중 무엇부터 바꿔 보시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "생성물의 순도를 높이기 위해 정제 방법을 어떻게 선택하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "NMR 스펙트럼에 예상하지 못한 피크가 보이면 어떻게 해석해 나가시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "HPLC 분석법을 새로 세울 때 어떤 항목을 검증해야 한다고 보세요?",
+      "scope": "role:chemical_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분석 결과의 재현성을 위해 표준 시료와 검량선을 어떻게 관리하시나요?",
+      "scope": "role:chemical_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s15",
+      "confidence": "medium"
+    },
+    {
+      "text": "반응 규모를 크게 키울 때 발열 관리 측면에서 무엇을 먼저 점검하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "새 합성 경로를 설계할 때 원료 가격, 단계 수, 안전성을 어떻게 저울질하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "의사결정",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "같은 절차로 합성했는데 이번 배치만 색이 다르게 나왔다면 어떻게 하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "분석 의뢰가 한꺼번에 몰렸을 때 어떤 기준으로 우선순위를 정하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "독성이 강한 시약을 쓰는 실험을 처음 맡게 되면 무엇을 준비하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "불순물 함량이 규격 경계에 걸린 결과를 어떻게 판단하고 보고하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "반응 조건 여러 개를 효율적으로 최적화하려면 실험 횟수를 어떻게 설계하시겠어요?",
+      "scope": "role:chemical_researcher",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 중 예상치 못한 결과가 나와 새로운 사실을 알게 된 경험을 말씀해 주세요.",
+      "scope": "role:chemical_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "실험 중 사고가 날 뻔했던 순간과 그 뒤로 바꾼 행동을 말씀해 주세요.",
+      "scope": "role:chemical_researcher",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "결과는 좋은데 재현이 한 번밖에 안 됐다면 그 결과를 보고해야 하느냐는 질문에 답해 주세요.",
+      "scope": "role:chemical_researcher",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "소재, 셀 설계, 공정 중 어느 영역에서 일하든 2차전지 엔지니어가 공통으로 알아야 할 것은 무엇이라고 보세요?",
+      "scope": "role:battery_engineer",
+      "category": "직무이해",
+      "type": "role_understanding",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s14",
+      "confidence": "medium"
+    },
+    {
+      "text": "2차전지 분야에 관심을 갖게 된 계기와 특히 끌리는 영역을 말씀해 주세요.",
+      "scope": "role:battery_engineer",
+      "category": "지원동기",
+      "type": "motivation",
+      "difficulty": "easy",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양극재 종류에 따라 에너지 밀도와 안전성이 어떻게 달라지는지 설명해 주세요.",
+      "scope": "role:battery_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "충방전을 반복할수록 셀 용량이 줄어드는 주요 원인을 말씀해 주세요.",
+      "scope": "role:battery_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전극 코팅에서 로딩 편차가 생기면 셀 성능에 어떤 영향이 있고 무엇을 조정하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s19",
+      "confidence": "medium"
+    },
+    {
+      "text": "음극에 리튬 석출이 생기는 조건과 이를 막는 설계 방법을 말씀해 주세요.",
+      "scope": "role:battery_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "활성화 공정에서 SEI 형성이 왜 중요한지 설명해 주세요.",
+      "scope": "role:battery_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "공식자료",
+      "src": "s19",
+      "confidence": "medium"
+    },
+    {
+      "text": "셀의 열폭주 위험을 어떻게 평가하고 설계에서 어떻게 대응하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전해액 첨가제를 바꿀 때 어떤 성능 지표를 함께 확인하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "기술",
+      "type": "technical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "양산 셀 일부에서 저전압 불량이 늘었다면 전극, 조립, 활성화 중 어디부터 추적하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "문제해결",
+      "type": "situational",
+      "difficulty": "hard",
+      "basis": "공식자료",
+      "src": "s19",
+      "confidence": "medium"
+    },
+    {
+      "text": "고객사가 급속 충전 시간을 크게 줄여 달라고 하면 무엇과 절충해야 하나요?",
+      "scope": "role:battery_engineer",
+      "category": "고객",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "수명 평가 도중 한 채널의 셀만 갑자기 용량이 떨어진다면 어떻게 하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "충방전 곡선에서 전압 평탄 구간이 짧아졌다면 무엇을 의심하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "데이터",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "초기 수명 데이터만으로 목표 수명 달성 여부를 어떻게 예측하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "데이터",
+      "type": "numerical",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    },
+    {
+      "text": "전지나 전기화학 관련 실험을 직접 해 본 경험과 결과를 말씀해 주세요.",
+      "scope": "role:battery_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "easy",
+      "levels": [
+        "entry"
+      ],
+      "basis": "직무기반"
+    },
+    {
+      "text": "전극이나 소재 조건을 바꿔 전기화학 성능을 비교해 본 경험을 말씀해 주세요.",
+      "scope": "role:battery_engineer",
+      "category": "경험",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "직무기반"
+    },
+    {
+      "text": "에너지 밀도를 높이라는 요구와 안전성 확보가 충돌하면 어느 쪽을 우선하시겠어요?",
+      "scope": "role:battery_engineer",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "직무기반"
+    }
+  ]
+}

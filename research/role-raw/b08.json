@@ -1,0 +1,7440 @@
+{
+ "batch": "b08",
+ "sources": [
+  {
+   "id": "b08s1",
+   "title": "NCS 세분류 — 의약품품질관리(17030602): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200020",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s2",
+   "title": "NCS 세분류 — 의약품연구개발(17030603): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200021",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s3",
+   "title": "NCS 세분류 — 의약품임상시험(17030605): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400180",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "b08s4",
+   "title": "NCS 세분류 — 바이오의약품개발(17050102): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200034",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s5",
+   "title": "NCS 세분류 — 대기환경관리(23010201): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200058",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s6",
+   "title": "NCS 세분류 — 환경관리(23040103): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400286",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "b08s7",
+   "title": "NCS 세분류 — 환경영향평가(23040201): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400287",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "b08s8",
+   "title": "NCS 세분류 — 환경컨설팅(23040101): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100046",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "b08s9",
+   "title": "NCS 세분류 — 화력발전설비운영(19010202): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400230",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "b08s10",
+   "title": "NCS 세분류 — 태양광에너지생산(23050501): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202000091",
+   "type": "ncs",
+   "year": 2020
+  },
+  {
+   "id": "b08s11",
+   "title": "NCS 세분류 — 풍력에너지생산(23050506): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC201800070",
+   "type": "ncs",
+   "year": 2018
+  },
+  {
+   "id": "b08s12",
+   "title": "NCS 세분류 — 송변전배전설비운영(19010302): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100018",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "b08s13",
+   "title": "NCS 세분류 — 건축설계(14030101): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100111",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "b08s14",
+   "title": "NCS 세분류 — 건설공사공정관리(14010201): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500022",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "b08s15",
+   "title": "NCS 세분류 — 건설공사공무관리(14010204): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202500025",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "b08s16",
+   "title": "NCS 세분류 — 건축설비설계(14030301): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200330",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s17",
+   "title": "NCS 세분류 — 교량설계(14020104): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400189",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "b08s18",
+   "title": "NCS 세분류 — 토목건설사업관리(14020111): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202400193",
+   "type": "ncs",
+   "year": 2024
+  },
+  {
+   "id": "b08s19",
+   "title": "NCS 세분류 — 건축구조설계(14030102): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202100110",
+   "type": "ncs",
+   "year": 2021
+  },
+  {
+   "id": "b08s20",
+   "title": "NCS 세분류 — 조경설계(14050101): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202300100",
+   "type": "ncs",
+   "year": 2023
+  },
+  {
+   "id": "b08s21",
+   "title": "NCS 세분류 — 조경시공(14050102): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202300101",
+   "type": "ncs",
+   "year": 2023
+  },
+  {
+   "id": "b08s22",
+   "title": "NCS 세분류 — 산업안전관리공통직무(23060100): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200050",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s23",
+   "title": "NCS 세분류 — 산업보건관리(23060201): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202300105",
+   "type": "ncs",
+   "year": 2023
+  },
+  {
+   "id": "b08s24",
+   "title": "NCS 세분류 — 건설안전관리(23060103): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200053",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s25",
+   "title": "NCS 세분류 — 철근콘크리트시공(14030206): 직무정의·능력단위",
+   "url": "https://www.ncs.go.kr/unity/th03/ncsResultSearch.do?dutySvcNo=SVC202200419",
+   "type": "ncs",
+   "year": 2022
+  },
+  {
+   "id": "b08s26",
+   "title": "대입정보포털 어디가 — 직업정보 '산업안전원'(고용24 제공 하는 일)",
+   "url": "https://www.adiga.kr/jbp/jnf/jobInfoDetail.do?menuId=PCJBPJNF2000&searchCrSeClsfCd=151&searchCrCd=158401",
+   "type": "job_description"
+  },
+  {
+   "id": "b08s27",
+   "title": "잡코리아 취업 Q&A — 안전관리자 면접(산업안전, 제조안전) 답변 모음",
+   "url": "https://www.jobkorea.co.kr/User/Qstn/AnswerWrite?qstnNo=64615",
+   "type": "interview_review"
+  },
+  {
+   "id": "b08s28",
+   "title": "잡코리아 취업 Q&A — 제약회사 품질보증(QA) 면접 답변 모음",
+   "url": "https://www.jobkorea.co.kr/User/Qstn/AnswerWrite?qstnNo=74848",
+   "type": "interview_review"
+  },
+  {
+   "id": "b08s29",
+   "title": "잡코리아 취업 Q&A — 제약 QA 지원 시 분석기기 경험 어필(면접에서 QA 지원 이유 질문)",
+   "url": "https://www.jobkorea.co.kr/User/Qstn/AnswerWrite?qstnNo=124745",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "b08s30",
+   "title": "코멘토 직무 질문 — 안전분야 직무면접에서 나올만한 질문(현직자 답변)",
+   "url": "https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EC%95%88%EC%A0%84/%EC%95%88%EC%A0%84%EB%B6%84%EC%95%BC_%EC%A7%81%EB%AC%B4%EB%A9%B4%EC%A0%91%EC%97%90%EC%84%9C_%EB%82%98%EC%98%AC%EB%A7%8C%ED%95%9C_%EC%A7%88%EB%AC%B8-466154",
+   "type": "other_public",
+   "year": 2023
+  },
+  {
+   "id": "b08s31",
+   "title": "코멘토 직무 질문 — 건설사 직무면접 관련 질문(현직자 답변)",
+   "url": "https://comento.kr/job-questions/%EB%AA%A8%EB%93%A0%ED%9A%8C%EC%82%AC/%EC%8B%9C%EA%B3%B5%EA%B4%80%EB%A6%AC%EC%9E%90/%EA%B1%B4%EC%84%A4%EC%82%AC_%EC%A7%81%EB%AC%B4%EB%A9%B4%EC%A0%91_%EA%B4%80%EB%A0%A8_%EC%A7%88%EB%AC%B8-573165",
+   "type": "other_public",
+   "year": 2025
+  },
+  {
+   "id": "b08s32",
+   "title": "코멘토 직무 질문 — 토목 공무 실무면접 예상질문(현직자 답변)",
+   "url": "https://comento.kr/job-questions/%EC%8C%8D%EC%9A%A9%EA%B1%B4%EC%84%A4/%EB%AA%A8%EB%93%A0%EC%A7%81%EB%AC%B4/%ED%86%A0%EB%AA%A9_%EA%B3%B5%EB%AC%B4_%EC%8B%A4%EB%AC%B4%EB%A9%B4%EC%A0%91_%EC%98%88%EC%83%81%EC%A7%88%EB%AC%B8-592090",
+   "type": "other_public",
+   "year": 2025
+  }
+ ],
+ "profiles": [
+  {
+   "id": "bio_researcher",
+   "aliases": [
+    "바이오 연구원",
+    "생명과학 연구원",
+    "바이오 R&D",
+    "세포배양 연구원",
+    "분자생물학 연구원",
+    "Bio Researcher",
+    "Life Science Researcher"
+   ],
+   "skills": [
+    "세포 배양",
+    "분자생물학 실험",
+    "단백질 발현·정제",
+    "실험 설계",
+    "결과 통계 분석",
+    "연구노트 작성"
+   ],
+   "responsibilities": [
+    "연구 과제 실험 설계와 수행",
+    "후보물질 도출·검증",
+    "배양·정제 공정 초기 개발",
+    "실험 결과 분석과 보고",
+    "문헌 조사와 기법 도입"
+   ],
+   "keywords": [
+    "세포배양",
+    "오염",
+    "발현",
+    "정제",
+    "대조군",
+    "재현성",
+    "스케일업",
+    "후보물질",
+    "실험노트",
+    "통계",
+    "assay",
+    "cell line"
+   ],
+   "topics": {
+    "role": [
+     "실험 설계",
+     "재현성 확보",
+     "후보물질 검증",
+     "공정 개발 연계",
+     "연구 기록"
+    ],
+    "scenario": [
+     "배양 오염 의심",
+     "핵심 가설 실패",
+     "데이터 불일치",
+     "공용 장비 충돌"
+    ],
+    "result": [
+     "실험 성공률",
+     "재현성",
+     "과제 마일스톤 달성",
+     "논문·특허 성과"
+    ],
+    "en": [
+     "experimental design",
+     "cell culture",
+     "reproducibility",
+     "candidate discovery"
+    ]
+   },
+   "sources": [
+    "b08s4"
+   ]
+  },
+  {
+   "id": "pharma_researcher",
+   "aliases": [
+    "제약 연구원",
+    "신약개발 연구원",
+    "제제 연구원",
+    "분석 연구원",
+    "의약품 연구개발",
+    "Formulation Scientist",
+    "Drug Discovery Scientist"
+   ],
+   "skills": [
+    "제형 설계",
+    "분석법 개발·밸리데이션",
+    "안정성 시험",
+    "기술이전",
+    "비임상 자료 해석",
+    "HPLC 등 분석기기"
+   ],
+   "responsibilities": [
+    "후보물질 평가와 최적화",
+    "제형·공정 개발",
+    "분석법 개발과 검증",
+    "임상시험약 준비",
+    "허가용 품질 자료 작성"
+   ],
+   "keywords": [
+    "제형",
+    "용해도",
+    "분석법",
+    "밸리데이션",
+    "안정성",
+    "유효기간",
+    "기술이전",
+    "스케일업",
+    "비임상",
+    "임상시험약",
+    "HPLC",
+    "CMC"
+   ],
+   "topics": {
+    "role": [
+     "제형 설계",
+     "분석법 개발",
+     "안정성 평가",
+     "기술이전",
+     "후보물질 선정"
+    ],
+    "scenario": [
+     "임상시험약 일정 중 안정성 문제",
+     "경쟁 약물 선허가",
+     "검증 전 결과 요청"
+    ],
+    "result": [
+     "개발 일정 준수",
+     "기술이전 성공",
+     "허가 자료 적합성"
+    ],
+    "en": [
+     "formulation",
+     "analytical method validation",
+     "stability testing",
+     "tech transfer"
+    ]
+   },
+   "sources": [
+    "b08s2"
+   ]
+  },
+  {
+   "id": "pharma_qa",
+   "aliases": [
+    "제약 QA",
+    "제약 QC",
+    "품질보증",
+    "품질관리",
+    "GMP 담당",
+    "밸리데이션 담당",
+    "Pharma QA",
+    "Quality Assurance"
+   ],
+   "skills": [
+    "GMP",
+    "일탈·CAPA 관리",
+    "변경관리",
+    "OOS 조사",
+    "밸리데이션",
+    "문서 검토·승인",
+    "실사 대응"
+   ],
+   "responsibilities": [
+    "제조기록 검토와 출하 승인",
+    "일탈 조사와 CAPA 관리",
+    "변경관리 검토",
+    "시험 결과 적합성 판단",
+    "GMP 교육과 문서 관리",
+    "실사 수검"
+   ],
+   "keywords": [
+    "GMP",
+    "일탈",
+    "CAPA",
+    "변경관리",
+    "OOS",
+    "밸리데이션",
+    "출하승인",
+    "제조기록서",
+    "데이터 완전성",
+    "실사",
+    "SOP",
+    "근본원인"
+   ],
+   "topics": {
+    "role": [
+     "일탈 관리",
+     "CAPA 효과성",
+     "변경관리",
+     "출하 판정",
+     "GMP 교육"
+    ],
+    "scenario": [
+     "출하 직전 일탈 발견",
+     "실사 중 기록 지적",
+     "이물 혼입 불만",
+     "반복 일탈"
+    ],
+    "result": [
+     "일탈 재발률",
+     "CAPA 기한 준수율",
+     "실사 지적 건수",
+     "출하 리드타임"
+    ],
+    "en": [
+     "GMP compliance",
+     "deviation management",
+     "CAPA",
+     "change control"
+    ]
+   },
+   "sources": [
+    "b08s1",
+    "b08s28",
+    "b08s29"
+   ]
+  },
+  {
+   "id": "cra",
+   "aliases": [
+    "CRA",
+    "임상연구 담당자",
+    "임상시험 모니터요원",
+    "임상 모니터",
+    "Clinical Research Associate",
+    "Clinical Monitor"
+   ],
+   "skills": [
+    "GCP",
+    "모니터링 방문",
+    "원자료 검증",
+    "이상반응 보고 관리",
+    "기관 커뮤니케이션",
+    "모니터링 보고서 작성"
+   ],
+   "responsibilities": [
+    "기관 개시·모니터링·종료 방문",
+    "증례기록서와 원자료 검증",
+    "프로토콜 위반 관리",
+    "임상시험용 의약품 관리 점검",
+    "대상자 등록 관리"
+   ],
+   "keywords": [
+    "GCP",
+    "모니터링",
+    "SDV",
+    "CRF",
+    "프로토콜 위반",
+    "동의서",
+    "이상반응",
+    "SAE",
+    "IRB",
+    "CRC",
+    "등록률",
+    "IP 관리"
+   ],
+   "topics": {
+    "role": [
+     "모니터링 방문",
+     "원자료 검증",
+     "프로토콜 준수",
+     "안전성 보고",
+     "기관 관계 관리"
+    ],
+    "scenario": [
+     "반복되는 프로토콜 위반",
+     "등록 지연",
+     "동의 절차 문제",
+     "코디네이터 교체"
+    ],
+    "result": [
+     "등록 목표 달성률",
+     "쿼리 해결 기간",
+     "모니터링 지적 건수"
+    ],
+    "en": [
+     "site monitoring",
+     "source data verification",
+     "protocol deviation",
+     "GCP"
+    ]
+   },
+   "sources": [
+    "b08s3"
+   ]
+  },
+  {
+   "id": "regulatory_affairs",
+   "aliases": [
+    "RA",
+    "인허가 담당",
+    "허가 담당",
+    "약사 업무",
+    "규제 대응",
+    "Regulatory Affairs",
+    "Regulatory Specialist"
+   ],
+   "skills": [
+    "허가 자료 작성",
+    "규제 가이드라인 해석",
+    "보완 요청 대응",
+    "변경 허가 관리",
+    "표시 문구 검토",
+    "다국가 허가 전략"
+   ],
+   "responsibilities": [
+    "품목 허가 신청 자료 준비",
+    "심사 보완 대응",
+    "허가 후 변경 관리",
+    "규제 동향 수집과 전파",
+    "표시·광고 문구 검토"
+   ],
+   "keywords": [
+    "허가",
+    "심사",
+    "보완",
+    "가이드라인",
+    "변경허가",
+    "CTD",
+    "표시기재",
+    "규제 동향",
+    "허가 전략",
+    "심사관",
+    "적응증",
+    "labeling"
+   ],
+   "topics": {
+    "role": [
+     "허가 자료 준비",
+     "보완 대응",
+     "허가 후 변경",
+     "규제 정보 관리",
+     "표시 검토"
+    ],
+    "scenario": [
+     "마감 직전 자료 지연",
+     "심사관과 해석 차이",
+     "허가 범위 밖 표현 요구"
+    ],
+    "result": [
+     "허가 일정 준수",
+     "보완 요청 건수",
+     "허가 성공률"
+    ],
+    "en": [
+     "regulatory submission",
+     "agency deficiency response",
+     "post-approval change",
+     "labeling review"
+    ]
+   },
+   "sources": [
+    "b08s2",
+    "b08s4"
+   ]
+  },
+  {
+   "id": "env_engineer",
+   "aliases": [
+    "환경 엔지니어",
+    "환경 담당자",
+    "환경관리 담당",
+    "수처리 엔지니어",
+    "대기 엔지니어",
+    "Environmental Engineer",
+    "EHS 환경"
+   ],
+   "skills": [
+    "대기·수질 방지시설 운전",
+    "배출 기준 관리",
+    "자가측정",
+    "폐기물 관리",
+    "환경 인허가",
+    "공정 분석"
+   ],
+   "responsibilities": [
+    "배출·방지시설 운영과 점검",
+    "배출 농도 모니터링과 기준 관리",
+    "폐기물 보관·처리 관리",
+    "환경 인허가와 관청 대응",
+    "환경 개선 과제 수행"
+   ],
+   "keywords": [
+    "배출허용기준",
+    "방지시설",
+    "자가측정",
+    "폐수",
+    "활성슬러지",
+    "대기오염물질",
+    "지정폐기물",
+    "TMS",
+    "인허가",
+    "악취",
+    "처리효율",
+    "누출"
+   ],
+   "topics": {
+    "role": [
+     "방지시설 운전",
+     "배출 기준 관리",
+     "폐기물 관리",
+     "측정 자료 관리",
+     "환경 사고 대응"
+    ],
+    "scenario": [
+     "배출 농도 기준 초과",
+     "방지시설 고장",
+     "야간 누출",
+     "유입 수질 악화"
+    ],
+    "result": [
+     "기준 준수율",
+     "처리 효율",
+     "폐기물 처리 비용",
+     "환경 사고 건수"
+    ],
+    "en": [
+     "emission control",
+     "wastewater treatment",
+     "environmental monitoring",
+     "waste management"
+    ]
+   },
+   "sources": [
+    "b08s5",
+    "b08s6"
+   ]
+  },
+  {
+   "id": "env_consultant",
+   "aliases": [
+    "환경 컨설턴트",
+    "환경영향평가",
+    "환경평가 담당",
+    "환경 조사",
+    "Environmental Consultant",
+    "EIA Specialist"
+   ],
+   "skills": [
+    "환경영향평가 수행",
+    "현지 조사·분석",
+    "예측 모델 해석",
+    "저감 방안 수립",
+    "주민·기관 의견 수렴",
+    "보고서 작성"
+   ],
+   "responsibilities": [
+    "사업계획 분석과 평가계획 수립",
+    "분야별 환경 조사와 영향 예측",
+    "저감 방안과 사후환경관리계획 수립",
+    "협의 기관 보완 대응",
+    "고객사 환경 진단"
+   ],
+   "keywords": [
+    "환경영향평가",
+    "현지조사",
+    "저감방안",
+    "사후환경관리",
+    "주민설명회",
+    "협의",
+    "보완",
+    "예측",
+    "생태",
+    "소음",
+    "대기질",
+    "컨설팅"
+   ],
+   "topics": {
+    "role": [
+     "평가 항목 설정",
+     "영향 예측",
+     "저감 방안",
+     "의견 수렴",
+     "환경 진단"
+    ],
+    "scenario": [
+     "주민 반대",
+     "발주처의 결과 완화 요구",
+     "보완 요구 폭주",
+     "보호종 발견"
+    ],
+    "result": [
+     "협의 통과",
+     "보완 횟수",
+     "납기 준수",
+     "고객 재의뢰"
+    ],
+    "en": [
+     "environmental impact assessment",
+     "field survey",
+     "mitigation",
+     "stakeholder consultation"
+    ]
+   },
+   "sources": [
+    "b08s7",
+    "b08s8"
+   ]
+  },
+  {
+   "id": "esg_manager",
+   "aliases": [
+    "ESG 담당",
+    "지속가능경영 담당",
+    "ESG 매니저",
+    "탄소중립 담당",
+    "Sustainability Manager",
+    "ESG Manager"
+   ],
+   "skills": [
+    "지속가능경영보고서 작성",
+    "중대성 평가",
+    "온실가스 인벤토리",
+    "공급망 ESG 관리",
+    "ESG 평가 대응",
+    "이해관계자 소통"
+   ],
+   "responsibilities": [
+    "ESG 전략과 과제 관리",
+    "보고서·공시 작성",
+    "온실가스 배출 관리",
+    "ESG 평가 대응",
+    "공급망 실사",
+    "경영진 보고"
+   ],
+   "keywords": [
+    "ESG",
+    "지속가능경영보고서",
+    "중대성 평가",
+    "온실가스",
+    "탄소중립",
+    "공급망",
+    "공시",
+    "평가등급",
+    "그린워싱",
+    "이해관계자",
+    "Scope",
+    "감축목표"
+   ],
+   "topics": {
+    "role": [
+     "중대성 평가",
+     "탄소 관리",
+     "공급망 ESG",
+     "공시 대응",
+     "사내 협업"
+    ],
+    "scenario": [
+     "근거 없는 친환경 홍보",
+     "현업의 자료 제출 지연",
+     "고객사 감축 요구",
+     "평가 등급 하락"
+    ],
+    "result": [
+     "평가 등급",
+     "배출 감축량",
+     "공시 적시성",
+     "협력사 참여율"
+    ],
+    "en": [
+     "sustainability reporting",
+     "materiality assessment",
+     "GHG inventory",
+     "supply chain due diligence"
+    ]
+   }
+  },
+  {
+   "id": "power_plant_ops",
+   "aliases": [
+    "발전 운전원",
+    "발전설비 운영",
+    "발전소 운전",
+    "발전 정비",
+    "Power Plant Operator",
+    "Plant Operations Engineer"
+   ],
+   "skills": [
+    "보일러·터빈 운전",
+    "설비 이상 감지",
+    "운전 절차 준수",
+    "교대 인수인계",
+    "환경설비 운전",
+    "성능 관리"
+   ],
+   "responsibilities": [
+    "발전설비 기동·정지와 운전",
+    "설비 상태 감시와 이상 대응",
+    "정비 부서 협업",
+    "환경설비 운전 관리",
+    "효율·성능 관리"
+   ],
+   "keywords": [
+    "보일러",
+    "터빈",
+    "발전기",
+    "진동",
+    "효율",
+    "급전",
+    "기동",
+    "정지",
+    "인수인계",
+    "운전절차서",
+    "탈황",
+    "탈질"
+   ],
+   "topics": {
+    "role": [
+     "설비 이상 징후",
+     "운전 절차",
+     "교대 근무",
+     "효율 관리",
+     "환경설비"
+    ],
+    "scenario": [
+     "야간 경보",
+     "출력 증발 지시",
+     "재가동 중 이상",
+     "반복 고장"
+    ],
+    "result": [
+     "발전 효율",
+     "고장 정지 건수",
+     "가동률"
+    ],
+    "en": [
+     "boiler operation",
+     "turbine monitoring",
+     "shift handover",
+     "plant efficiency"
+    ]
+   },
+   "sources": [
+    "b08s9"
+   ]
+  },
+  {
+   "id": "renewable_energy",
+   "aliases": [
+    "신재생에너지 엔지니어",
+    "태양광 엔지니어",
+    "풍력 엔지니어",
+    "재생에너지 사업개발",
+    "Renewable Energy Engineer",
+    "Solar Engineer"
+   ],
+   "skills": [
+    "발전량 예측",
+    "태양광·풍력 설계",
+    "부지·인허가 검토",
+    "경제성 분석",
+    "운영·유지보수",
+    "계통 연계 이해"
+   ],
+   "responsibilities": [
+    "발전사업 부지 검토와 인허가",
+    "발전 시스템 설계·시공 관리",
+    "발전소 운영과 성능 관리",
+    "사업 경제성 분석",
+    "주민·지자체 협의"
+   ],
+   "keywords": [
+    "태양광",
+    "풍력",
+    "발전량",
+    "인버터",
+    "어레이",
+    "풍황",
+    "인허가",
+    "경제성",
+    "계통연계",
+    "출력변동",
+    "준공검사",
+    "O&M"
+   ],
+   "topics": {
+    "role": [
+     "발전량 관리",
+     "사업 개발",
+     "설계·시공",
+     "유지보수",
+     "주민 수용성"
+    ],
+    "scenario": [
+     "주민 반대",
+     "준공 전 결함",
+     "과열 경보",
+     "발전량 미달"
+    ],
+    "result": [
+     "이용률",
+     "발전량 달성률",
+     "사업 수익성"
+    ],
+    "en": [
+     "solar PV design",
+     "wind resource assessment",
+     "grid interconnection",
+     "O&M"
+    ]
+   },
+   "sources": [
+    "b08s10",
+    "b08s11"
+   ]
+  },
+  {
+   "id": "power_grid",
+   "aliases": [
+    "전력계통 엔지니어",
+    "계통 운영",
+    "송배전 엔지니어",
+    "변전 운영",
+    "Power Systems Engineer",
+    "Grid Operator"
+   ],
+   "skills": [
+    "계통 해석",
+    "보호계전 협조",
+    "전압·주파수 조정",
+    "송변전 설비 유지보수",
+    "정전 작업 계획",
+    "고장 복구"
+   ],
+   "responsibilities": [
+    "계통 운영과 감시",
+    "송변전·배전 설비 운영과 점검",
+    "보호 협조 검토",
+    "신규 설비 연계 검토",
+    "고장 대응과 복구"
+   ],
+   "keywords": [
+    "계통",
+    "송전",
+    "변전",
+    "배전",
+    "보호계전기",
+    "주파수",
+    "전압",
+    "예비력",
+    "정전",
+    "고장복구",
+    "계통연계",
+    "열화"
+   ],
+   "topics": {
+    "role": [
+     "계통 안정",
+     "보호 협조",
+     "설비 유지보수",
+     "연계 검토",
+     "고장 대응"
+    ],
+    "scenario": [
+     "예비력 부족",
+     "정전 작업 중 고장",
+     "절차 외 조작 요청",
+     "송전 제약"
+    ],
+    "result": [
+     "공급 신뢰도",
+     "정전 시간",
+     "고장 복구 시간"
+    ],
+    "en": [
+     "power system operation",
+     "protection coordination",
+     "voltage control",
+     "outage management"
+    ]
+   },
+   "sources": [
+    "b08s12"
+   ]
+  },
+  {
+   "id": "architect",
+   "aliases": [
+    "건축설계",
+    "건축 디자이너",
+    "설계사무소",
+    "건축가",
+    "Architectural Designer",
+    "Architect"
+   ],
+   "skills": [
+    "배치·평면 계획",
+    "건축법규 검토",
+    "BIM·CAD",
+    "협업 설계",
+    "설계 프레젠테이션",
+    "재료 검토"
+   ],
+   "responsibilities": [
+    "기획·계획·실시설계",
+    "법규 검토와 인허가 협의",
+    "구조·설비 협업",
+    "설계도서 작성",
+    "건축주 커뮤니케이션"
+   ],
+   "keywords": [
+    "배치",
+    "평면",
+    "매스",
+    "법규",
+    "인허가",
+    "실시설계",
+    "BIM",
+    "간섭",
+    "재료",
+    "건축주",
+    "설계변경",
+    "도서"
+   ],
+   "topics": {
+    "role": [
+     "배치 계획",
+     "법규 검토",
+     "협업 설계",
+     "도서 품질",
+     "설계 설명"
+    ],
+    "scenario": [
+     "인허가 협의 변경",
+     "마감 직전 변경 요청",
+     "시공 불일치",
+     "예산 삭감"
+    ],
+    "result": [
+     "설계 일정 준수",
+     "인허가 통과",
+     "도면 오류 건수"
+    ],
+    "en": [
+     "architectural design",
+     "code review",
+     "BIM coordination",
+     "client presentation"
+    ]
+   },
+   "sources": [
+    "b08s13"
+   ]
+  },
+  {
+   "id": "building_construction",
+   "aliases": [
+    "건축시공",
+    "현장관리",
+    "현장 기사",
+    "시공관리",
+    "공사 담당",
+    "Construction Site Manager",
+    "Site Engineer"
+   ],
+   "skills": [
+    "공정 관리",
+    "품질 관리",
+    "안전 관리",
+    "원가 관리",
+    "협력업체 조율",
+    "설계 변경 대응"
+   ],
+   "responsibilities": [
+    "공정 계획과 진도 관리",
+    "시공 품질 검측",
+    "현장 안전 확인",
+    "실행예산 대비 원가 관리",
+    "협력업체 작업 조율"
+   ],
+   "keywords": [
+    "공정",
+    "품질",
+    "안전",
+    "원가",
+    "타설",
+    "거푸집",
+    "동바리",
+    "협력업체",
+    "설계변경",
+    "검측",
+    "실행예산",
+    "하자"
+   ],
+   "topics": {
+    "role": [
+     "공정 관리",
+     "품질 관리",
+     "안전 관리",
+     "원가 관리",
+     "협력업체 조율"
+    ],
+    "scenario": [
+     "공정 지연",
+     "동바리 보강 미흡",
+     "자재 반입 지연",
+     "협력업체 갈등"
+    ],
+    "result": [
+     "공정률",
+     "하자 건수",
+     "원가율",
+     "무재해"
+    ],
+    "en": [
+     "schedule control",
+     "quality inspection",
+     "site safety",
+     "subcontractor coordination"
+    ]
+   },
+   "sources": [
+    "b08s14",
+    "b08s25"
+   ]
+  },
+  {
+   "id": "building_services",
+   "aliases": [
+    "건축설비",
+    "MEP",
+    "기계설비",
+    "전기설비",
+    "설비 엔지니어",
+    "MEP Engineer",
+    "HVAC Engineer"
+   ],
+   "skills": [
+    "공조·위생 설계",
+    "부하 계산",
+    "전기 간선 계획",
+    "에너지 계획",
+    "시운전",
+    "간섭 조정"
+   ],
+   "responsibilities": [
+    "기계·전기 설비 설계",
+    "설비 시공 관리와 간섭 조정",
+    "시운전과 성능 확인",
+    "에너지 절감 계획",
+    "하자 대응"
+   ],
+   "keywords": [
+    "공조",
+    "냉난방부하",
+    "덕트",
+    "배관",
+    "급수",
+    "간선",
+    "시운전",
+    "에너지",
+    "간섭",
+    "누수",
+    "소방설비",
+    "자동제어"
+   ],
+   "topics": {
+    "role": [
+     "설비 설계",
+     "간섭 조정",
+     "시운전",
+     "에너지 효율",
+     "하자 대응"
+    ],
+    "scenario": [
+     "실내 온도 불만",
+     "설비 공기 부족",
+     "원인 불명 누수"
+    ],
+    "result": [
+     "에너지 사용량",
+     "시운전 성능",
+     "하자 건수"
+    ],
+    "en": [
+     "HVAC design",
+     "load calculation",
+     "commissioning",
+     "clash coordination"
+    ]
+   },
+   "sources": [
+    "b08s16"
+   ]
+  },
+  {
+   "id": "cost_estimator",
+   "aliases": [
+    "적산",
+    "공무",
+    "견적",
+    "원가관리",
+    "현장 공무",
+    "Cost Estimator",
+    "Project Controls"
+   ],
+   "skills": [
+    "물량 산출",
+    "단가 산정",
+    "실행예산 편성",
+    "기성·정산",
+    "계약·하도급 관리",
+    "설계변경 증액"
+   ],
+   "responsibilities": [
+    "도면 기반 물량·공사비 산정",
+    "실행예산 수립과 원가 관리",
+    "하도급 계약과 정산",
+    "기성 청구",
+    "설계변경 공사비 정리"
+   ],
+   "keywords": [
+    "적산",
+    "물량",
+    "품셈",
+    "단가",
+    "실행예산",
+    "기성",
+    "정산",
+    "하도급",
+    "계약",
+    "설계변경",
+    "VE",
+    "견적"
+   ],
+   "topics": {
+    "role": [
+     "물량 산출",
+     "실행예산",
+     "하도급 관리",
+     "기성·정산",
+     "원가 절감"
+    ],
+    "scenario": [
+     "자재 가격 급등",
+     "추가 공사비 요구",
+     "정산 서류 혼란"
+    ],
+    "result": [
+     "원가율",
+     "견적 정확도",
+     "정산 기간"
+    ],
+    "en": [
+     "quantity takeoff",
+     "cost estimating",
+     "budget control",
+     "progress billing"
+    ]
+   },
+   "sources": [
+    "b08s15",
+    "b08s32"
+   ]
+  },
+  {
+   "id": "civil_designer",
+   "aliases": [
+    "토목설계",
+    "토목 엔지니어",
+    "도로설계",
+    "교량설계",
+    "Civil Design Engineer"
+   ],
+   "skills": [
+    "도로·배수 설계",
+    "교량 형식 검토",
+    "지반 검토",
+    "수량·사업비 산정",
+    "설계 기준 해석",
+    "CAD"
+   ],
+   "responsibilities": [
+    "기본·실시설계 수행",
+    "설계 계산과 도면 작성",
+    "수량과 사업비 산정",
+    "관계 기관 협의",
+    "설계 VE 대응"
+   ],
+   "keywords": [
+    "선형",
+    "배수",
+    "교량",
+    "연약지반",
+    "토공",
+    "설계기준",
+    "수량",
+    "사업비",
+    "노선",
+    "협의",
+    "터널",
+    "성과품"
+   ],
+   "topics": {
+    "role": [
+     "노선 계획",
+     "구조물 형식",
+     "지반 대책",
+     "수량·사업비",
+     "기관 협의"
+    ],
+    "scenario": [
+     "설계 기간 단축 요구",
+     "납품 후 오류 지적",
+     "노선 변경 요구"
+    ],
+    "result": [
+     "설계 오류 건수",
+     "납기 준수",
+     "사업비 정확도"
+    ],
+    "en": [
+     "road alignment",
+     "bridge type selection",
+     "drainage design",
+     "cost estimation"
+    ]
+   },
+   "sources": [
+    "b08s17"
+   ]
+  },
+  {
+   "id": "civil_construction",
+   "aliases": [
+    "토목시공",
+    "토목 현장 기사",
+    "토목 공사 관리",
+    "Civil Construction Engineer",
+    "Site Engineer (Civil)"
+   ],
+   "skills": [
+    "토공·다짐 관리",
+    "흙막이·계측 관리",
+    "장비 계획",
+    "품질 시험",
+    "감리 검측 대응",
+    "공정 관리"
+   ],
+   "responsibilities": [
+    "토목 공사 시공 관리",
+    "품질·계측 관리",
+    "장비·자재 투입 계획",
+    "검측 준비",
+    "공정·안전 관리"
+   ],
+   "keywords": [
+    "토공",
+    "다짐",
+    "흙막이",
+    "계측",
+    "슬럼프",
+    "매설물",
+    "장비",
+    "포장",
+    "검측",
+    "우기",
+    "공정",
+    "감리"
+   ],
+   "topics": {
+    "role": [
+     "시공 품질",
+     "계측 관리",
+     "장비 계획",
+     "공정 관리",
+     "현장 대응"
+    ],
+    "scenario": [
+     "미확인 매설물",
+     "자재 납품 지연",
+     "계측 값 이상"
+    ],
+    "result": [
+     "공정률",
+     "품질 시험 합격률",
+     "무재해"
+    ],
+    "en": [
+     "earthwork",
+     "excavation monitoring",
+     "equipment planning",
+     "quality testing"
+    ]
+   },
+   "sources": [
+    "b08s18",
+    "b08s32"
+   ]
+  },
+  {
+   "id": "structural_engineer",
+   "aliases": [
+    "구조 엔지니어",
+    "구조설계",
+    "구조기술자",
+    "Structural Engineer"
+   ],
+   "skills": [
+    "하중 산정",
+    "구조 해석",
+    "RC·강구조 부재 설계",
+    "내진 설계",
+    "구조 검토",
+    "균열 원인 조사"
+   ],
+   "responsibilities": [
+    "구조 계획과 시스템 선정",
+    "해석과 부재 설계",
+    "구조 계산서·도면 작성",
+    "시공 중 구조 검토",
+    "기존 건물 안전성 검토"
+   ],
+   "keywords": [
+    "하중",
+    "구조해석",
+    "부재설계",
+    "철근콘크리트",
+    "강구조",
+    "내진",
+    "연성",
+    "처짐",
+    "진동",
+    "배근",
+    "균열",
+    "리모델링"
+   ],
+   "topics": {
+    "role": [
+     "하중 검토",
+     "해석 검증",
+     "부재 설계",
+     "내진 설계",
+     "현장 구조 검토"
+    ],
+    "scenario": [
+     "배근 변경 요청",
+     "무주 공간 요구",
+     "준공 후 균열"
+    ],
+    "result": [
+     "구조 안전성",
+     "물량 경제성",
+     "검토 오류 건수"
+    ],
+    "en": [
+     "structural analysis",
+     "member design",
+     "seismic design",
+     "structural review"
+    ]
+   },
+   "sources": [
+    "b08s19"
+   ]
+  },
+  {
+   "id": "landscape_architect",
+   "aliases": [
+    "조경설계",
+    "조경시공",
+    "조경 엔지니어",
+    "조경기사",
+    "Landscape Architect",
+    "Landscape Designer"
+   ],
+   "skills": [
+    "식재 설계",
+    "대상지 조사·분석",
+    "조경 시설 설계",
+    "조경 적산",
+    "현장 공사 관리",
+    "수목 관리"
+   ],
+   "responsibilities": [
+    "조경 기본·실시설계",
+    "식재·시설 계획",
+    "조경 공사 현장 관리",
+    "하자 보수와 유지관리",
+    "발주처·주민 협의"
+   ],
+   "keywords": [
+    "식재",
+    "수종",
+    "활착",
+    "고사",
+    "옥상조경",
+    "포장",
+    "공원",
+    "대상지 분석",
+    "조경적산",
+    "하자보수",
+    "생태",
+    "유지관리"
+   ],
+   "topics": {
+    "role": [
+     "식재 설계",
+     "대상지 분석",
+     "현장 관리",
+     "하자 관리",
+     "공간 계획"
+    ],
+    "scenario": [
+     "규격 수목 수급 곤란",
+     "고사목 분쟁",
+     "식재 수량 축소 요구"
+    ],
+    "result": [
+     "활착률",
+     "이용자 만족도",
+     "유지관리 비용"
+    ],
+    "en": [
+     "planting design",
+     "site analysis",
+     "landscape construction",
+     "maintenance"
+    ]
+   },
+   "sources": [
+    "b08s20",
+    "b08s21"
+   ]
+  },
+  {
+   "id": "safety_manager",
+   "aliases": [
+    "안전관리자",
+    "산업안전",
+    "EHS 안전",
+    "안전팀",
+    "Safety Manager",
+    "HSE Manager"
+   ],
+   "skills": [
+    "위험성평가",
+    "안전 점검",
+    "작업허가 관리",
+    "사고 조사",
+    "안전 교육",
+    "법규 대응"
+   ],
+   "responsibilities": [
+    "위험성평가 실시와 개선 관리",
+    "사업장 순회 점검",
+    "위험 작업 허가 관리",
+    "협력업체 안전관리",
+    "사고 조사와 재발 방지",
+    "안전 교육"
+   ],
+   "keywords": [
+    "위험성평가",
+    "작업중지",
+    "작업허가",
+    "PSM",
+    "MSDS",
+    "아차사고",
+    "중대재해",
+    "산업안전보건법",
+    "보호구",
+    "협력업체",
+    "사고조사",
+    "안전교육"
+   ],
+   "topics": {
+    "role": [
+     "위험성평가",
+     "작업중지 판단",
+     "현장 설득",
+     "협력업체 관리",
+     "사고 대응"
+    ],
+    "scenario": [
+     "관리자의 불안전 지시",
+     "중대재해 발생",
+     "보호구 거부",
+     "방호장치 해제"
+    ],
+    "result": [
+     "재해율",
+     "아차사고 보고 건수",
+     "개선 조치 완료율"
+    ],
+    "en": [
+     "risk assessment",
+     "stop work authority",
+     "permit to work",
+     "incident investigation"
+    ]
+   },
+   "sources": [
+    "b08s22",
+    "b08s26",
+    "b08s27",
+    "b08s30"
+   ]
+  },
+  {
+   "id": "health_manager",
+   "aliases": [
+    "보건관리자",
+    "산업보건",
+    "산업간호",
+    "사내 보건",
+    "Occupational Health Manager",
+    "Industrial Health Nurse"
+   ],
+   "skills": [
+    "작업환경 관리",
+    "건강진단 사후관리",
+    "근골격계 예방",
+    "직무 스트레스 관리",
+    "응급 대응",
+    "보건 교육"
+   ],
+   "responsibilities": [
+    "작업환경측정 결과 관리",
+    "건강진단 사후관리",
+    "근골격계·직업병 예방",
+    "건강증진 프로그램 운영",
+    "응급 체계 운영"
+   ],
+   "keywords": [
+    "작업환경측정",
+    "특수건강진단",
+    "유소견자",
+    "근골격계",
+    "직무스트레스",
+    "폭염",
+    "보호구",
+    "응급조치",
+    "건강증진",
+    "노출기준",
+    "직업병",
+    "보건교육"
+   ],
+   "topics": {
+    "role": [
+     "건강진단 사후관리",
+     "작업환경 개선",
+     "근골격계 예방",
+     "정신건강",
+     "응급 대응"
+    ],
+    "scenario": [
+     "폭염 옥외 작업",
+     "집단 증상 호소",
+     "건강정보 비공개 요청"
+    ],
+    "result": [
+     "유소견자 관리율",
+     "건강증진 참여율",
+     "직업병 발생 건수"
+    ],
+    "en": [
+     "occupational health",
+     "exposure monitoring",
+     "health surveillance",
+     "ergonomics"
+    ]
+   },
+   "sources": [
+    "b08s23"
+   ]
+  },
+  {
+   "id": "construction_safety",
+   "aliases": [
+    "건설 안전관리자",
+    "현장 안전관리",
+    "건설안전",
+    "Construction Safety Manager"
+   ],
+   "skills": [
+    "건설 위험성평가",
+    "가설구조물 점검",
+    "중장비 안전",
+    "산업안전보건관리비 관리",
+    "안전 조회 운영",
+    "협력업체 안전 지도"
+   ],
+   "responsibilities": [
+    "공정별 위험성평가",
+    "비계·동바리 등 가설 점검",
+    "중장비·굴착 작업 안전 확인",
+    "안전관리비 집행",
+    "작업중지 판단"
+   ],
+   "keywords": [
+    "추락",
+    "비계",
+    "동바리",
+    "굴착",
+    "붕괴",
+    "크레인",
+    "안전관리비",
+    "TBM",
+    "작업중지",
+    "위험성평가",
+    "협력업체",
+    "중대재해"
+   ],
+   "topics": {
+    "role": [
+     "위험성평가",
+     "가설구조물",
+     "중장비 안전",
+     "작업중지",
+     "현장 설득"
+    ],
+    "scenario": [
+     "공정 압박 속 안전 미흡",
+     "작업반장 반발",
+     "경상자 진료 거부"
+    ],
+    "result": [
+     "무재해 일수",
+     "지적 개선율",
+     "안전관리비 집행률"
+    ],
+    "en": [
+     "construction safety",
+     "temporary works inspection",
+     "lifting safety",
+     "stop work"
+    ]
+   },
+   "sources": [
+    "b08s24"
+   ]
+  },
+  {
+   "id": "fire_safety",
+   "aliases": [
+    "소방안전관리자",
+    "소방 담당",
+    "방재 담당",
+    "시설 소방",
+    "Fire Safety Manager"
+   ],
+   "skills": [
+    "소방계획 수립",
+    "소방시설 점검",
+    "피난·방화 관리",
+    "소방 훈련",
+    "화기 작업 관리",
+    "화재 대응"
+   ],
+   "responsibilities": [
+    "소방계획서 작성과 운영",
+    "소방시설 점검·보수 관리",
+    "피난시설 관리",
+    "소방 훈련·교육",
+    "화재 시 초기 대응 지휘"
+   ],
+   "keywords": [
+    "소방계획서",
+    "스프링클러",
+    "자동화재탐지설비",
+    "감지기",
+    "피난",
+    "방화문",
+    "비상구",
+    "소방훈련",
+    "오작동",
+    "화기작업",
+    "초기대응",
+    "소방점검"
+   ],
+   "topics": {
+    "role": [
+     "소방시설 관리",
+     "피난 관리",
+     "훈련 운영",
+     "화기 관리",
+     "화재 대응"
+    ],
+    "scenario": [
+     "경보 무시",
+     "비상구 적치",
+     "소방 설비 차단 공사"
+    ],
+    "result": [
+     "점검 지적 건수",
+     "훈련 참여율",
+     "오작동 빈도"
+    ],
+    "en": [
+     "fire protection systems",
+     "evacuation management",
+     "fire drills",
+     "hot work control"
+    ]
+   }
+  }
+ ],
+ "questions": [
+  {
+   "text": "바이오·제약 분야에서 연구, 품질, 임상, 인허가 부서가 서로 어떻게 맞물려 돌아간다고 이해하고 계신가요?",
+   "scope": "family:bio_pharma",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의약품 개발 과정에서 GMP와 GCP가 각각 어떤 단계를 지키는 기준인지 본인 말로 설명해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제약·바이오 업무에서 '기록으로 남기지 않은 일은 하지 않은 일'이라는 말을 어떻게 받아들이시나요?",
+   "scope": "family:bio_pharma",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이 분야 신입이 입사 첫해에 가장 많이 어려워하는 부분은 무엇일 거라고 생각하세요?",
+   "scope": "family:bio_pharma",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정해진 절차를 끝까지 지키느라 일정이 늦어졌던 경험이 있다면, 그때 어떻게 설명하고 조율했는지 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "가치관",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전공 배경이 다른 사람과 협업하면서 용어나 관점 차이를 좁혔던 경험을 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 실수를 먼저 보고해서 문제가 커지는 것을 막았던 경험이 있으신가요?",
+   "scope": "family:bio_pharma",
+   "category": "윤리",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "반복적이고 꼼꼼함이 필요한 작업을 오랫동안 정확하게 해냈던 경험을 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배나 지도교수의 지시에 의문이 들었을 때 의견을 어떻게 전달했는지 사례로 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "마감 직전인데 기록서에 서명 누락이 발견됐고 담당자가 휴가 중이라면 어떻게 처리하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배가 기록은 나중에 한꺼번에 정리하자고 한다면 어떻게 대응하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외부 실사 당일, 점검관 질문에 대한 답을 정확히 모르는 상황이라면 어떻게 하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "두 부서가 서로 다른 우선순위를 내세우며 동시에 급한 업무를 맡긴다면 어떻게 조율하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "해외 협력사와 시차 때문에 의사결정이 계속 늦어진다면 일정을 어떻게 챙기시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험이나 분석 결과가 예상과 전혀 다르게 나왔을 때 원인을 찾아갔던 경험을 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장비나 시약 관리 문제로 결과의 신뢰성이 흔들렸던 경험이 있다면 어떻게 대처했는지 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규정이나 가이드라인 문서를 읽고 실제 작업 절차로 옮겨 본 경험이 있다면 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "바이오의약품이나 새로운 치료 방식 쪽으로 산업의 무게중심이 옮겨가는 흐름을 어떻게 보시나요?",
+   "scope": "family:bio_pharma",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "국내 제약·바이오 기업이 해외 시장에 진출할 때 가장 큰 장벽은 무엇이라고 생각하세요?",
+   "scope": "family:bio_pharma",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "위탁개발생산이나 임상 수탁 같은 외주 모델이 커지는 것이 이 분야 직무에 어떤 변화를 줄까요?",
+   "scope": "family:bio_pharma",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "결과가 기준에서 살짝 벗어났는데 재시험하면 통과할 것 같다는 말을 듣는다면 어떻게 하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자 안전과 회사 일정이 부딪힐 때 본인은 어떤 기준으로 판단하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "꼼꼼함이 필요한 일에서 본인이 자주 놓치는 부분은 무엇이고 어떻게 보완하고 계신가요?",
+   "scope": "family:bio_pharma",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이 분야에서 5년 뒤 어떤 전문성을 가진 사람이 되어 있고 싶은지 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여했던 연구나 프로젝트의 성과를 숫자나 결과물로 설명한다면 무엇을 말씀하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 개선 제안이 실제로 절차나 결과를 바꾼 사례가 있다면 그 효과를 어떻게 확인했는지 말씀해 주세요.",
+   "scope": "family:bio_pharma",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신약 개발 기간을 줄이기 위해 규제 절차를 간소화하는 것에 찬성하시나요, 반대하시나요?",
+   "scope": "family:bio_pharma",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신입 직원 대상 데이터 완전성 교육을 5분 발표로 구성한다면 어떤 흐름으로 하시겠어요?",
+   "scope": "family:bio_pharma",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "세포 배양 중 오염이 의심될 때 어떤 신호로 판단하고 무엇부터 조치하시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "단백질 발현량이 기대보다 낮게 나왔다면 어떤 변수들을 순서대로 점검하시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "최근 수행한 실험을 예로 들어 대조군을 어떻게 설정했는지 설명해 주세요.",
+   "scope": "role:bio_researcher",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 사람이 재현할 수 있도록 실험노트에 반드시 남기는 항목은 무엇인가요?",
+   "scope": "role:bio_researcher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재현성이 떨어지는 결과를 두고 생물학적 변동인지 실험 오류인지 어떻게 구분하시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 실험 기법을 도입할 때 문헌 조사부터 셋업까지 어떤 순서로 진행하시나요?",
+   "scope": "role:bio_researcher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "후보물질을 도출한 뒤 공정 개발 부서로 넘기기 전에 연구 단계에서 꼭 확인해야 할 것은 무엇일까요?",
+   "scope": "role:bio_researcher",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s4",
+   "confidence": "high"
+  },
+  {
+   "text": "배양 공정을 소규모에서 스케일업할 때 결과가 달라질 수 있는 요인은 어떤 것들이 있을까요?",
+   "scope": "role:bio_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s4",
+   "confidence": "high"
+  },
+  {
+   "text": "몇 달간 진행한 실험의 핵심 가설이 틀린 것으로 보인다면 다음 단계를 어떻게 정하시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공용 장비를 다른 팀과 같은 시간대에 써야 하는 상황이라면 어떻게 조율하시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발표를 앞두고 데이터 하나가 다른 결과와 맞지 않는다면 그 데이터를 어떻게 다루시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "두 조건의 실험 결과 차이가 작을 때 통계적으로 의미 있는 차이인지 어떻게 판단하시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한정된 예산으로 세 가지 후보 과제 중 하나에 집중해야 한다면 어떤 기준으로 고르시겠어요?",
+   "scope": "role:bio_researcher",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직접 설계하고 수행한 실험 중 가장 어려웠던 과정을 처음부터 끝까지 말씀해 주세요.",
+   "scope": "role:bio_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험이 반복해서 실패했을 때 방법을 바꿔 결국 결과를 얻어낸 경험이 있으신가요?",
+   "scope": "role:bio_researcher",
+   "category": "실패",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교 연구실 연구와 기업 연구소 연구는 목적과 방식에서 어떤 점이 다르다고 생각하세요?",
+   "scope": "role:bio_researcher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 생명과학 진로 중에서 기업 연구원을 선택한 이유는 무엇인가요?",
+   "scope": "role:bio_researcher",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 연구 주제가 우리 과제와 거리가 있어 보이는데, 어떻게 기여할 수 있다고 보시나요?",
+   "scope": "role:bio_researcher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제형을 설계할 때 약물의 물리화학적 특성 중 가장 먼저 확인하는 것은 무엇인가요?",
+   "scope": "role:pharma_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s2",
+   "confidence": "high"
+  },
+  {
+   "text": "분석법을 개발한 뒤 밸리데이션까지 가려면 어떤 항목들을 검증해야 한다고 알고 계신가요?",
+   "scope": "role:pharma_researcher",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s2",
+   "confidence": "high"
+  },
+  {
+   "text": "후보물질의 약효는 좋은데 용해도가 낮다면 어떤 방향으로 개선을 시도해 보시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구소에서 만든 공정을 생산 현장으로 기술이전할 때 흔히 생기는 문제는 무엇일까요?",
+   "scope": "role:pharma_researcher",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s2",
+   "confidence": "high"
+  },
+  {
+   "text": "안정성 시험 결과를 바탕으로 유효기간 설정 근거를 어떻게 정리하시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비임상 결과를 임상 진입 판단 자료로 정리할 때 연구원이 신경 써야 할 점은 무엇인가요?",
+   "scope": "role:pharma_researcher",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "임상시험약 제조 일정이 잡혔는데 제형 안정성에 새로운 문제가 발견된다면 어떻게 하시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경쟁 약물이 비슷한 적응증으로 먼저 허가를 받았다는 소식이 들리면 무엇부터 검토하시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "전략",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협업 부서가 분석 결과를 빨리 달라고 재촉하는데 검증이 덜 끝났다면 어떻게 대응하시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동물 시험에서는 효과가 좋았는데 초기 임상에서 기대보다 낮다면 원인을 어떻게 나눠 보시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "후보물질 두 개 중 하나만 다음 단계로 올려야 한다면 어떤 데이터를 비교해 결정하시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "HPLC 같은 분석 장비 결과가 이상하게 나와 원인을 추적했던 경험을 말씀해 주세요.",
+   "scope": "role:pharma_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "합성이나 제형 실험에서 조건을 바꿔 가며 최적화했던 과정을 말씀해 주세요.",
+   "scope": "role:pharma_researcher",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신약 개발에서 연구원이 후보 발굴부터 허가까지 어느 단계에 관여한다고 알고 계신가요?",
+   "scope": "role:pharma_researcher",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 제약 직무 중 신약 연구개발을 택하게 된 계기가 궁금합니다.",
+   "scope": "role:pharma_researcher",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신약 개발 성공 확률이 매우 낮은데, 실패가 이어져도 동기를 유지할 수 있다고 어떻게 확신하시나요?",
+   "scope": "role:pharma_researcher",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 결과를 비전공 경영진에게 5분 안에 설명해야 한다면 무엇을 빼고 무엇을 남기시겠어요?",
+   "scope": "role:pharma_researcher",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제조 중 일탈이 보고되면 QA로서 어떤 순서로 조사를 진행하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "일탈 조사에서 근본원인을 '작업자 실수'로 결론 내리는 것이 왜 위험하다고 보시나요?",
+   "scope": "role:pharma_qa",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "CAPA를 수립한 뒤 그 조치가 실제로 효과가 있었는지 어떻게 확인하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원료 공급처를 바꾸겠다는 변경관리 요청이 들어오면 무엇을 검토해야 할까요?",
+   "scope": "role:pharma_qa",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "OOS 결과가 나왔을 때 QC 조사보고서가 타당한지 QA 입장에서 어떻게 검토하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "b08s29",
+   "confidence": "medium"
+  },
+  {
+   "text": "제조기록서를 검토해 출하 승인 여부를 판단할 때 특히 눈여겨볼 부분은 무엇인가요?",
+   "scope": "role:pharma_qa",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s1",
+   "confidence": "high"
+  },
+  {
+   "text": "시험방법 밸리데이션에서 확인하는 항목들을 신입 사원에게 설명하듯 말씀해 주세요.",
+   "scope": "role:pharma_qa",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공식자료",
+   "src": "b08s1",
+   "confidence": "high"
+  },
+  {
+   "text": "GMP 교육을 해도 현장에서 같은 실수가 반복된다면 교육 방식을 어떻게 바꾸시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s1",
+   "confidence": "high"
+  },
+  {
+   "text": "출하가 급한 제품에서 경미해 보이는 일탈이 발견됐고 영업팀은 예정대로 출하를 원한다면 어떻게 하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실사 중 점검관이 기록의 수정 흔적을 지적한다면 그 자리에서 어떻게 대응하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이물 혼입 관련 고객 불만이 접수됐다면 첫날 무엇을 하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 유형의 일탈이 석 달 사이 세 번 발생했다면 추세를 어떻게 분석하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "함량 시험 결과가 여러 배치에서 기준 하한 가까이 반복된다면 어떤 가능성들을 검토하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "GMP나 밸리데이션과 관련해 공부하거나 직접 해 본 경험을 구체적으로 말씀해 주세요.",
+   "scope": "role:pharma_qa",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "b08s28",
+   "confidence": "medium"
+  },
+  {
+   "text": "문서나 기록을 검토하다가 다른 사람이 놓친 오류를 찾아낸 경험이 있다면 말씀해 주세요.",
+   "scope": "role:pharma_qa",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "QA와 QC의 역할 차이를 실제 업무 흐름에 빗대어 설명해 주세요.",
+   "scope": "role:pharma_qa",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "QC나 연구 직무가 아니라 QA를 지원하신 이유는 무엇인가요?",
+   "scope": "role:pharma_qa",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "b08s29",
+   "confidence": "medium"
+  },
+  {
+   "text": "QA는 현장 일을 막는 부서라는 말을 들으면 어떻게 답하시겠어요?",
+   "scope": "role:pharma_qa",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "모니터링 방문 전에 어떤 것들을 준비하고 확인해 가시나요?",
+   "scope": "role:cra",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b08s3",
+   "confidence": "high"
+  },
+  {
+   "text": "원자료 검증 중 증례기록서와 의무기록 내용이 다르면 어떻게 처리하시겠어요?",
+   "scope": "role:cra",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "중대한 이상반응이 보고됐을 때 CRA가 기관과 함께 챙겨야 할 일은 무엇인가요?",
+   "scope": "role:cra",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s3",
+   "confidence": "high"
+  },
+  {
+   "text": "임상시험용 의약품의 보관과 수불 상태를 방문 때 어떻게 점검하시나요?",
+   "scope": "role:cra",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s3",
+   "confidence": "high"
+  },
+  {
+   "text": "모니터링 보고서를 쓸 때 사실과 의견을 구분하기 위해 어떤 점을 신경 쓰시겠어요?",
+   "scope": "role:cra",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기관에서 프로토콜 위반이 반복되는데 연구자가 대수롭지 않게 여긴다면 어떻게 설득하시겠어요?",
+   "scope": "role:cra",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대상자 등록이 목표보다 크게 늦어지고 있다면 기관과 어떤 대화를 나눠 보시겠어요?",
+   "scope": "role:cra",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구 코디네이터가 자주 바뀌어 기록 품질이 떨어진 기관을 맡게 되면 어떻게 하시겠어요?",
+   "scope": "role:cra",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동의서 서명 날짜가 첫 시험 절차보다 늦게 적혀 있는 것을 발견하면 어떻게 대응하시겠어요?",
+   "scope": "role:cra",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 기관 중 한 곳만 이상반응 보고가 유독 적다면 어떤 가능성을 의심해 보시겠어요?",
+   "scope": "role:cra",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담당 기관 다섯 곳의 방문 일정이 한 주에 몰렸다면 어떤 기준으로 우선순위를 정하시겠어요?",
+   "scope": "role:cra",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "까다로운 상대에게 원칙을 지키면서도 관계를 해치지 않고 요청을 관철했던 경험을 말씀해 주세요.",
+   "scope": "role:cra",
+   "category": "커뮤니케이션",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 일정이 겹친 상황에서 이동과 업무를 스스로 관리했던 경험을 말씀해 주세요.",
+   "scope": "role:cra",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "CRA와 CRC의 역할은 어떻게 다르고, 서로 어떻게 협력한다고 알고 계신가요?",
+   "scope": "role:cra",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연구실이나 병원이 아니라 CRA로 임상시험에 참여하고 싶은 이유는 무엇인가요?",
+   "scope": "role:cra",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "출장이 잦고 서류 업무가 많은 직무인데, 1년 뒤에도 잘 버틸 수 있다는 근거가 있으신가요?",
+   "scope": "role:cra",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교수급 연구자에게 기록 수정을 요청해야 할 때 어떤 방식으로 말씀드리겠어요?",
+   "scope": "role:cra",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "허가 신청 자료를 준비할 때 연구, 품질, 임상 부서 자료의 일관성을 어떻게 확인하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "심사 기관에서 보완 요청이 왔을 때 답변서를 어떤 순서로 준비하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관련 규제 가이드라인이 바뀌었을 때 내용을 파악해 사내에 어떻게 전파하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s4",
+   "confidence": "high"
+  },
+  {
+   "text": "허가 이후 제조소나 원료를 바꿀 때 RA가 검토해야 할 사항은 무엇일까요?",
+   "scope": "role:regulatory_affairs",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제품 설명서나 표시 문구를 검토할 때 특히 조심하는 부분은 무엇인가요?",
+   "scope": "role:regulatory_affairs",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "해외 허가를 병행할 때 국가별 요구 자료가 다르면 어떻게 관리하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s4",
+   "confidence": "high"
+  },
+  {
+   "text": "허가 제출 마감 직전 개발 부서가 데이터 일부가 늦어진다고 알려 오면 어떻게 대응하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "심사관과의 회의에서 우리 해석과 다른 의견이 나오면 그 자리에서 어떻게 하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "마케팅팀이 허가 범위를 넘어서는 효능 표현을 쓰고 싶어 한다면 어떻게 설득하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비슷한 제품의 과거 심사 사례를 분석해 예상 쟁점을 뽑는다면 어떻게 접근하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "허가 일정이 6개월 늦어질 위기라면 일정을 줄이기 위해 어떤 선택지를 검토하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "방대한 규정이나 문서를 읽고 핵심만 정리해 다른 사람에게 전달했던 경험을 말씀해 주세요.",
+   "scope": "role:regulatory_affairs",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "문서의 사소한 표현 차이가 큰 문제로 이어졌거나 이어질 뻔했던 경험이 있으신가요?",
+   "scope": "role:regulatory_affairs",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의약품 개발 초기부터 인허가 담당자가 참여해야 하는 이유는 무엇이라고 보세요?",
+   "scope": "role:regulatory_affairs",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s2",
+   "confidence": "high"
+  },
+  {
+   "text": "연구나 품질 직무 대신 인허가 업무에 관심을 갖게 된 계기는 무엇인가요?",
+   "scope": "role:regulatory_affairs",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "RA는 결국 서류 작업 아니냐는 시각에 대해 어떻게 반박하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "심사 결과가 불리하게 나올 가능성을 경영진에게 보고해야 한다면 어떻게 전달하시겠어요?",
+   "scope": "role:regulatory_affairs",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 직무는 법적 기준을 지키는 일과 환경을 개선하는 일 중 어디에 더 무게가 있다고 보시나요?",
+   "scope": "family:environment",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사업장 환경 담당자, 환경 컨설턴트, ESG 담당자는 같은 문제를 각각 어떤 시각으로 본다고 생각하세요?",
+   "scope": "family:environment",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 분야에서 일하려면 현장 이해와 법규 이해 중 무엇이 먼저 갖춰져야 한다고 보시나요?",
+   "scope": "family:environment",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 업무에서 인허가 기관과 신뢰 관계를 유지하는 것이 왜 중요한지 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비용이나 번거로움 때문에 반대하는 사람을 설득해 환경 개선을 이끌어낸 경험이 있다면 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 조사나 측정처럼 몸을 쓰는 일을 끝까지 책임지고 해낸 경험을 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람의 자료를 모아 하나의 보고서로 완성하면서 생긴 어려움과 해결 과정을 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규정 해석이 애매할 때 스스로 근거를 찾아 판단했던 경험이 있으신가요?",
+   "scope": "family:environment",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "민원인이나 외부 이해관계자의 불만을 직접 응대했던 경험을 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "고객",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주민이 악취 민원을 계속 제기하는데 측정값은 기준 이내라면 어떻게 대응하시겠어요?",
+   "scope": "family:environment",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관할 기관으로부터 갑작스러운 점검 통보를 받으면 무엇부터 준비하시겠어요?",
+   "scope": "family:environment",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산팀이 환경 설비 가동을 줄여 비용을 아끼자고 제안한다면 어떻게 답하시겠어요?",
+   "scope": "family:environment",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체가 폐기물을 부적절하게 처리한 정황을 발견하면 어떻게 하시겠어요?",
+   "scope": "family:environment",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 환경 규제가 예고됐는데 회사 준비가 전혀 안 돼 있다면 어떤 계획부터 세우시겠어요?",
+   "scope": "family:environment",
+   "category": "전략",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 관련 수업이나 실습에서 시료를 채취하거나 분석해 본 경험을 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 관련 자격증이나 교육을 준비하며 실제 업무에 도움이 될 것 같은 내용을 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "성장",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "측정 결과 같은 수치를 해석해 의미 있는 결론을 끌어냈던 경험을 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "데이터",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "탄소중립 흐름이 환경 직무의 역할을 어떻게 바꾸고 있다고 보시나요?",
+   "scope": "family:environment",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 규제가 강해지는 것이 기업에게 부담만 된다고 보시나요, 기회도 된다고 보시나요?",
+   "scope": "family:environment",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "앞으로 환경 분야에서 수요가 커질 전문 영역은 어디라고 생각하세요?",
+   "scope": "family:environment",
+   "category": "시장",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상사가 측정 결과 보고서에서 불리한 수치를 빼자고 한다면 어떻게 하시겠어요?",
+   "scope": "family:environment",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기준을 겨우 맞추는 수준과 실제 환경 개선 사이에서 본인은 어디에 선을 그으시겠어요?",
+   "scope": "family:environment",
+   "category": "가치관",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 문제에 관심을 갖게 된 뒤 본인의 생각이 크게 바뀐 계기가 있다면 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 업무에서 본인이 아직 부족하다고 느끼는 역량은 무엇이고 어떻게 채우고 있나요?",
+   "scope": "family:environment",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여했던 환경 관련 활동에서 개선 효과를 어떤 지표로 확인했는지 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비용 절감과 환경 개선을 동시에 이룬 사례가 있다면 그 결과를 구체적으로 말씀해 주세요.",
+   "scope": "family:environment",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 규제를 지키지 못한 기업에 과징금을 크게 높이는 것이 효과적인 해법이라고 보시나요?",
+   "scope": "family:environment",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사업장 오염물질 배출 저감 로드맵을 3년 단위로 발표한다고 가정하고 목차를 구성해 주세요.",
+   "scope": "family:environment",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대기 방지시설의 처리 효율이 떨어졌을 때 어떤 운전 변수부터 점검하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s5",
+   "confidence": "high"
+  },
+  {
+   "text": "폐수처리장 유입 수질이 갑자기 나빠졌다면 생물학적 처리 공정을 어떻게 조정하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "활성슬러지 공정에서 슬러지 팽화가 생겼다면 원인을 어떻게 찾고 조치하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자가측정 결과를 기록하고 관리할 때 신뢰성을 높이려면 무엇을 챙겨야 할까요?",
+   "scope": "role:env_engineer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대기와 수질 중 한 분야를 골라 주요 오염물질을 처리하는 원리를 설명해 주세요.",
+   "scope": "role:env_engineer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "배출시설과 방지시설 관리계획을 세울 때 어떤 항목들을 포함하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s6",
+   "confidence": "high"
+  },
+  {
+   "text": "지정폐기물을 보관하고 위탁 처리할 때 담당자가 확인해야 할 사항은 무엇인가요?",
+   "scope": "role:env_engineer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실시간 측정에서 배출 농도가 기준을 넘기 시작했다면 첫 30분 동안 무엇을 하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "방지시설 주요 설비가 고장 났는데 생산을 멈추기 어렵다고 한다면 어떻게 판단하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간에 폐수 누출 신고가 들어오면 어떤 순서로 대응하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "1년치 측정 자료에서 특정 계절에만 농도가 오르는 패턴이 보이면 어떻게 해석하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "방지시설 교체와 기존 설비 보강 중 하나를 골라야 한다면 무엇을 비교해 결정하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수질이나 대기 시료를 분석하다 결과가 이상했던 경험과 해결 과정을 말씀해 주세요.",
+   "scope": "role:env_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비나 장치를 직접 운전하거나 점검해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:env_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사업장 환경 엔지니어가 하루에 주로 챙기는 업무는 어떤 것들일지 말씀해 주세요.",
+   "scope": "role:env_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b08s6",
+   "confidence": "high"
+  },
+  {
+   "text": "환경 분야 중에서도 현장 설비를 다루는 엔지니어를 지원하신 이유는 무엇인가요?",
+   "scope": "role:env_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기준만 지키면 되는데 굳이 추가 투자를 해야 하느냐는 경영진 질문에 어떻게 답하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산 현장 작업자들이 폐기물 분리 기준을 지키게 하려면 어떻게 안내하시겠어요?",
+   "scope": "role:env_engineer",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경영향평가를 맡으면 사업계획을 검토해 평가 항목을 어떻게 정하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s7",
+   "confidence": "high"
+  },
+  {
+   "text": "사후환경관리계획을 세울 때 조사 항목과 주기를 무엇을 기준으로 정하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s7",
+   "confidence": "high"
+  },
+  {
+   "text": "저감 방안을 제시할 때 효과와 비용을 함께 설명하려면 어떤 자료가 필요할까요?",
+   "scope": "role:env_consultant",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객사의 환경 관리 수준을 진단할 때 어떤 순서로 현황을 파악하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s8",
+   "confidence": "high"
+  },
+  {
+   "text": "대기나 소음 예측 결과를 보고서에 담을 때 불확실성을 어떻게 표현하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주민설명회에서 사업에 반대하는 목소리가 크다면 의견을 어떻게 수렴하고 반영하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s7",
+   "confidence": "high"
+  },
+  {
+   "text": "발주처가 부정적인 평가 결과를 완화해서 써 달라고 요구한다면 어떻게 하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협의 기관의 보완 요구가 여러 건 한꺼번에 왔고 기한이 촉박하다면 어떻게 처리하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현지 조사 중 보호 대상 생물종이 새로 확인된다면 평가를 어떻게 조정하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "계절별 조사 자료 일부가 빠져 있다면 평가의 신뢰성을 어떻게 보완하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 부지에 두 가지 배치안이 있을 때 환경 측면에서 어떤 기준으로 비교하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 자료를 조사·분석해 보고서를 썼던 경험 중 가장 공들인 것을 말씀해 주세요.",
+   "scope": "role:env_consultant",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 답사나 조사 활동을 계획부터 정리까지 해 본 경험을 말씀해 주세요.",
+   "scope": "role:env_consultant",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경 컨설턴트는 사업자와 규제기관 사이에서 어떤 역할을 한다고 보시나요?",
+   "scope": "role:env_consultant",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s8",
+   "confidence": "high"
+  },
+  {
+   "text": "사업장 담당자가 아닌 컨설팅 쪽에서 커리어를 시작하려는 이유는 무엇인가요?",
+   "scope": "role:env_consultant",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환경영향평가가 결국 사업을 통과시키기 위한 형식 아니냐는 비판에 어떻게 답하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전문 용어가 많은 평가 결과를 주민들에게 쉽게 설명하려면 어떻게 하시겠어요?",
+   "scope": "role:env_consultant",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지속가능경영보고서를 준비할 때 중대성 평가를 어떤 절차로 진행하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "온실가스 배출량을 산정할 때 직접 배출과 간접 배출을 어떻게 구분해 관리하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공급망의 ESG 리스크를 점검하려면 협력사에 무엇을 어떻게 요청하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "부서마다 흩어진 ESG 자료를 모을 때 정확성을 어떻게 확보하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이사회나 경영진에게 ESG 이슈를 보고할 때 어떤 형식으로 정리하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "투자자와 평가기관이 요구하는 공시 기준이 서로 다를 때 어떻게 대응하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "홍보팀이 근거가 부족한 친환경 문구를 보도자료에 쓰려 한다면 어떻게 하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현업 부서가 ESG 자료 요청을 업무 부담이라며 계속 미룬다면 어떻게 협조를 이끌어내시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주요 고객사가 탄소 감축 목표를 제출하라고 갑자기 요구한다면 어떻게 준비하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외부 ESG 평가 등급이 낮게 나왔다면 개선 과제를 어떻게 도출하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "매출이 늘면서 온실가스 배출량도 함께 늘었다면 성과를 어떻게 해석하고 설명하시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감축 예산이 한정돼 있을 때 설비 개선, 재생에너지 구매, 외부 감축 중 무엇을 먼저 고르시겠어요?",
+   "scope": "role:esg_manager",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 부서나 단체의 이해관계를 조율해 하나의 결과물을 만든 경험을 말씀해 주세요.",
+   "scope": "role:esg_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사회공헌이나 환경 관련 활동을 기획하거나 운영해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:esg_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "ESG 담당자가 환경 부서나 홍보 부서와 구별되는 고유한 역할은 무엇이라고 보시나요?",
+   "scope": "role:esg_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "ESG 업무에 관심을 갖게 된 계기와 이 직무를 선택한 이유를 말씀해 주세요.",
+   "scope": "role:esg_manager",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "ESG가 유행처럼 지나갈 수도 있다는 의견에 대해 본인은 어떻게 생각하시나요?",
+   "scope": "role:esg_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발전, 신재생, 전력계통 업무가 전기를 안정적으로 공급하는 흐름에서 각각 어떤 역할을 맡는다고 보시나요?",
+   "scope": "family:energy",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "에너지 설비 직무에서 교대 근무나 비상 대기가 필요한 이유를 어떻게 이해하고 계신가요?",
+   "scope": "family:energy",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "에너지 분야 엔지니어에게 전기, 기계, 제어 지식 중 무엇이 가장 중요하다고 생각하세요?",
+   "scope": "family:energy",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "에너지 설비 업무에서 안정성과 경제성이 부딪히는 대표적인 장면은 어떤 것이 있을까요?",
+   "scope": "family:energy",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정해진 절차를 따르지 않으면 위험할 수 있는 작업을 수행했던 경험을 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "가치관",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "긴박한 상황에서 침착하게 판단해 문제를 수습했던 경험이 있으신가요?",
+   "scope": "family:energy",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 사람과 이어서 일할 때 정보를 빠짐없이 넘기려고 노력했던 경험을 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배나 동료의 작업에서 위험 요소를 발견하고 직접 말했던 경험이 있다면 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전공 지식을 실제 장비나 설비 문제에 적용해 해결했던 경험을 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "근무 중 계측값이 평소와 다르게 조금씩 변하고 있다면 어떻게 판단하고 보고하시겠어요?",
+   "scope": "family:energy",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정비 작업이 예정보다 길어져 설비 재가동 일정이 밀린다면 어떻게 조율하시겠어요?",
+   "scope": "family:energy",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "태풍이나 폭염처럼 설비 부담이 급변할 상황이 예보되면 무엇을 미리 준비하시겠어요?",
+   "scope": "family:energy",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체 작업자가 작업허가 없이 설비에 접근하려 한다면 어떻게 하시겠어요?",
+   "scope": "family:energy",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사고 원인이 본인 팀의 조작 실수로 보이는 상황에서 보고서를 어떻게 쓰시겠어요?",
+   "scope": "family:energy",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전기나 기계 관련 실습에서 장비를 직접 다뤄 본 경험을 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전기기사 같은 자격 공부를 하며 가장 어려웠던 내용과 극복 과정을 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "성장",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규모가 큰 설비나 현장을 견학하거나 실습하며 느낀 점을 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재생에너지 비중이 늘어나면 기존 발전설비와 계통 운영은 어떻게 달라져야 할까요?",
+   "scope": "family:energy",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "에너지 전환 과정에서 전력 공급 안정성과 탄소 감축을 어떻게 함께 가져갈 수 있다고 보시나요?",
+   "scope": "family:energy",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분산 에너지와 에너지 저장 장치가 확대되면 이 분야 엔지니어에게 어떤 역량이 필요해질까요?",
+   "scope": "family:energy",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "점검표에 형식적으로 체크만 하는 관행을 보게 된다면 어떻게 하시겠어요?",
+   "scope": "family:energy",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "납기 때문에 검증되지 않은 대체 부품을 쓰자는 제안을 받으면 어떻게 하시겠어요?",
+   "scope": "family:energy",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기술 직무에서 본인이 보완해야 할 점을 하나 꼽고 그 이유를 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "에너지 분야에서 오래 일하기 위해 스스로 지키고 싶은 원칙이 있다면 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비나 공정 개선으로 효율을 높이거나 손실을 줄인 결과를 수치로 설명해 주실 수 있나요?",
+   "scope": "family:energy",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 제안한 방법이 실제로 문제 재발을 막았는지 어떻게 확인했는지 말씀해 주세요.",
+   "scope": "family:energy",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전력 수요 증가에 대응하려면 원전 확대와 재생에너지 확대 중 어디에 무게를 둬야 한다고 보시나요?",
+   "scope": "family:energy",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "노후 발전설비의 수명 연장과 신규 설비 교체를 비교하는 발표를 준비한다면 어떻게 구성하시겠어요?",
+   "scope": "family:energy",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보일러 기동 과정에서 운전원이 특히 주의 깊게 봐야 할 변수는 무엇인가요?",
+   "scope": "role:power_plant_ops",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s9",
+   "confidence": "high"
+  },
+  {
+   "text": "터빈 진동값이 서서히 올라간다면 어떤 원인들을 의심하고 확인하시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s9",
+   "confidence": "high"
+  },
+  {
+   "text": "발전소 효율을 떨어뜨리는 주요 손실 요인을 열 흐름을 따라 설명해 주세요.",
+   "scope": "role:power_plant_ops",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "운전 절차서와 실제 현장 상황이 다를 때 운전원은 어떻게 행동해야 한다고 보시나요?",
+   "scope": "role:power_plant_ops",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "탈황·탈질 같은 환경 설비 운전이 발전 운영에서 왜 중요한지 말씀해 주세요.",
+   "scope": "role:power_plant_ops",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s9",
+   "confidence": "high"
+  },
+  {
+   "text": "교대 근무 인수인계 때 반드시 전달해야 한다고 생각하는 항목은 무엇인가요?",
+   "scope": "role:power_plant_ops",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "펌프에서 이상 소음과 온도 상승이 함께 나타나면 어떤 순서로 점검하시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간 근무 중 주요 설비에서 경보가 울렸는데 원인이 바로 보이지 않는다면 어떻게 하시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "출력을 빠르게 올리라는 지시가 왔는데 일부 설비 상태가 불안하다면 어떻게 판단하시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정비 후 재가동 과정에서 이상 징후가 보이는데 일정 압박이 크다면 어떻게 하시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 설비에서 비슷한 고장이 반복된다면 운전 기록을 어떻게 분석해 원인을 좁히시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발전 효율이 지난달보다 1%포인트 떨어졌다면 어떤 지표들을 확인해 원인을 찾으시겠어요?",
+   "scope": "role:power_plant_ops",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기계나 전기 장비를 직접 조작하며 이상을 발견했던 경험이 있으신가요?",
+   "scope": "role:power_plant_ops",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규칙적인 생활이나 체력 관리가 필요한 활동을 오래 유지해 온 경험을 말씀해 주세요.",
+   "scope": "role:power_plant_ops",
+   "category": "강점",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발전설비 운영 직무에서 운전과 정비는 각각 어떤 역할이고 어떻게 협업한다고 알고 계신가요?",
+   "scope": "role:power_plant_ops",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교대 근무가 있는 발전 운영 직무를 지원하신 이유를 말씀해 주세요.",
+   "scope": "role:power_plant_ops",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "몇 년씩 같은 설비를 반복해서 운전하는 일인데, 지루해지지 않을 거라고 어떻게 장담하시나요?",
+   "scope": "role:power_plant_ops",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "태양광 어레이를 설계할 때 발전량에 영향을 주는 요소를 어떤 순서로 검토하시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s10",
+   "confidence": "high"
+  },
+  {
+   "text": "풍력 단지 후보지를 검토할 때 풍황 자료에서 무엇을 중요하게 보시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s11",
+   "confidence": "high"
+  },
+  {
+   "text": "발전사업 부지를 검토할 때 인허가 측면에서 미리 확인해야 할 사항은 무엇인가요?",
+   "scope": "role:renewable_energy",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s10",
+   "confidence": "high"
+  },
+  {
+   "text": "인버터 고장이 잦은 현장을 맡게 된다면 어떤 점검과 개선을 해 보시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재생에너지 출력 변동성이 계통 연계에서 일으킬 수 있는 문제와 대응 방법을 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발전사업의 경제성을 검토할 때 꼭 넣어야 하는 변수는 무엇이라고 보시나요?",
+   "scope": "role:renewable_energy",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s10",
+   "confidence": "high"
+  },
+  {
+   "text": "지역 주민이 경관이나 소음 문제로 발전 단지 건설에 반대한다면 어떻게 대화를 시작하시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "준공 검사를 앞두고 시공 결함이 발견됐는데 일정이 촉박하다면 어떻게 하시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "폭염 중 설비 과열 경보가 여러 곳에서 동시에 뜬다면 무엇부터 조치하시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "태양광 발전량이 예측치보다 계속 낮게 나온다면 어떤 자료를 비교해 원인을 좁히시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 예산으로 신규 발전소 건설과 노후 설비 교체 중 하나를 고른다면 무엇을 따져 보시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신재생에너지 관련 프로젝트나 실습에서 맡았던 역할과 결과를 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 조사를 위해 장비를 설치하고 자료를 모아 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신재생에너지 직무가 사업 개발, 설계·시공, 운영 단계에서 각각 무엇을 한다고 알고 계신가요?",
+   "scope": "role:renewable_energy",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b08s11",
+   "confidence": "high"
+  },
+  {
+   "text": "에너지 분야 중에서도 신재생에너지를 선택한 이유를 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신재생에너지는 보조금 없이는 경쟁력이 없다는 주장에 어떻게 답하시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발전 단지 운영 성과를 비전문가인 투자자에게 설명한다면 어떤 지표로 보여 주시겠어요?",
+   "scope": "role:renewable_energy",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호계전기 협조가 맞지 않으면 어떤 문제가 생기는지 예를 들어 설명해 주세요.",
+   "scope": "role:power_grid",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s12",
+   "confidence": "high"
+  },
+  {
+   "text": "송전선로 고장이 났을 때 고장 구간을 분리하고 복구하는 흐름을 설명해 주세요.",
+   "scope": "role:power_grid",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전압이 기준 범위를 벗어났을 때 계통 운영자가 쓸 수 있는 조정 수단은 무엇이 있을까요?",
+   "scope": "role:power_grid",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주파수가 급격히 떨어지는 상황에서 계통을 안정시키기 위한 대응을 설명해 주세요.",
+   "scope": "role:power_grid",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "변전 설비를 점검할 때 열화 징후를 어떻게 찾아내시겠어요?",
+   "scope": "role:power_grid",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s12",
+   "confidence": "high"
+  },
+  {
+   "text": "대규모 발전소가 새로 계통에 연결될 때 사전에 무엇을 검토해야 할까요?",
+   "scope": "role:power_grid",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s12",
+   "confidence": "high"
+  },
+  {
+   "text": "정전 작업 계획을 세울 때 안전과 공급 신뢰도를 함께 지키려면 무엇을 챙겨야 할까요?",
+   "scope": "role:power_grid",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "폭염으로 수요가 예측보다 크게 늘어 예비력이 부족해진다면 어떤 순서로 대응하시겠어요?",
+   "scope": "role:power_grid",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정전 작업 중 예상치 못한 고장이 겹쳐 공급 지역이 넓게 끊길 위험이 있다면 어떻게 하시겠어요?",
+   "scope": "role:power_grid",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 작업자가 절차서에 없는 방식으로 조작하겠다고 연락해 온다면 어떻게 대응하시겠어요?",
+   "scope": "role:power_grid",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 지역에서 순간 정전이 반복된다면 어떤 자료를 모아 원인을 분석하시겠어요?",
+   "scope": "role:power_grid",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재생에너지가 몰린 지역의 송전 용량이 부족하다면 어떤 해법들을 비교해 보시겠어요?",
+   "scope": "role:power_grid",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "회로 이론이나 전력공학 과제에서 계산 결과를 실제 측정과 비교해 본 경험을 말씀해 주세요.",
+   "scope": "role:power_grid",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람이 동시에 움직이는 작업에서 소통 실수를 막으려고 노력했던 경험을 말씀해 주세요.",
+   "scope": "role:power_grid",
+   "category": "팀워크",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전력계통 직무는 발전설비 운영과 어떻게 다르다고 이해하고 계신가요?",
+   "scope": "role:power_grid",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전력계통 분야에 관심을 갖게 된 계기는 무엇인가요?",
+   "scope": "role:power_grid",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "판단 하나가 광역 정전으로 이어질 수 있는 일인데, 그 부담을 감당할 수 있다고 보시나요?",
+   "scope": "role:power_grid",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 프로젝트에서 설계, 시공, 설비, 공무가 기획부터 준공까지 어떻게 이어진다고 알고 계신가요?",
+   "scope": "family:architecture",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 분야에서는 왜 모든 담당자에게 도면을 읽는 능력이 필요하다고 보시나요?",
+   "scope": "family:architecture",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발주처, 설계사, 시공사, 감리가 각각 어떤 입장에서 일한다고 이해하고 계세요?",
+   "scope": "family:architecture",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 분야 신입이 현장이나 사무실에서 가장 먼저 익혀야 할 것은 무엇이라고 생각하세요?",
+   "scope": "family:architecture",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "나이나 경력 차이가 큰 사람들과 함께 일하면서 신뢰를 얻었던 경험을 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람의 요구가 충돌하는 상황에서 절충안을 만들어 냈던 경험이 있으신가요?",
+   "scope": "family:architecture",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정해진 기한을 맞추기 위해 우선순위를 다시 짜고 밀어붙였던 경험을 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 틀렸다는 것을 인정하고 방향을 바꿨던 경험을 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "성장",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "체력적으로 힘든 환경에서도 끝까지 책임을 다했던 경험을 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공사 중 인접 건물에 균열이 생겼다는 민원이 들어오면 어떻게 대응하시겠어요?",
+   "scope": "family:architecture",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발주처가 공사 도중 큰 폭의 설계 변경을 요구한다면 어떤 순서로 검토하시겠어요?",
+   "scope": "family:architecture",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분야별 도면끼리 맞지 않는 부분을 공사 직전에 발견하면 어떻게 처리하시겠어요?",
+   "scope": "family:architecture",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관할 관청 점검에서 지적 사항이 여러 건 나왔다면 조치 계획을 어떻게 세우시겠어요?",
+   "scope": "family:architecture",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원가 절감을 위해 자재를 바꾸자는 제안이 품질에 영향을 줄 수 있어 보인다면 어떻게 하시겠어요?",
+   "scope": "family:architecture",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계·시공 실습이나 공모전, 졸업작품에서 맡았던 역할을 구체적으로 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 실습이나 인턴에서 실제 공사 과정을 보며 배운 점을 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 답사나 전시를 통해 영향을 받은 공간이 있다면 그 이유를 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건설 경기 변동이 건축 직무 종사자에게 어떤 영향을 준다고 보시나요?",
+   "scope": "family:architecture",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "모듈러 건축 같은 탈현장 공법이 확대되면 건축 업무 방식은 어떻게 달라질까요?",
+   "scope": "family:architecture",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제로에너지 건축 같은 친환경 요구가 커지는 흐름을 어떻게 보고 계신가요?",
+   "scope": "family:architecture",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체가 명절 선물이나 식사 대접을 제안한다면 어떻게 하시겠어요?",
+   "scope": "family:architecture",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감리 검측을 앞두고 누락된 공정을 서류로만 맞추자는 제안을 받으면 어떻게 대응하시겠어요?",
+   "scope": "family:architecture",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축을 공부하면서 본인의 성향이 어떤 업무에 잘 맞는다고 느끼셨나요?",
+   "scope": "family:architecture",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "프로젝트를 마친 뒤 다시 한다면 다르게 하고 싶었던 부분이 있다면 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여했던 과제에서 일정, 비용, 품질 중 어떤 성과를 냈는지 구체적으로 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "개선 아이디어로 공사 기간이나 비용을 줄였던 결과가 있다면 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공사 기간을 줄이기 위해 주말 작업을 늘리는 것이 바람직한지 입장을 말씀해 주세요.",
+   "scope": "family:architecture",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 품질 하자를 줄이기 위한 개선안을 10분 발표로 준비한다면 어떻게 구성하시겠어요?",
+   "scope": "family:architecture",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대지 조건을 분석해 배치 계획을 세울 때 어떤 요소부터 검토하시겠어요?",
+   "scope": "role:architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s13",
+   "confidence": "high"
+  },
+  {
+   "text": "설계 초기에 건축법규 검토에서 반드시 확인하는 항목은 무엇인가요?",
+   "scope": "role:architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "BIM으로 설계할 때 2D 도면 작업과 비교해 어떤 점이 달라진다고 보시나요?",
+   "scope": "role:architect",
+   "category": "도구",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s13",
+   "confidence": "high"
+  },
+  {
+   "text": "구조, 설비 담당과 협업 설계를 할 때 간섭 문제를 어떻게 줄이시겠어요?",
+   "scope": "role:architect",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축주의 요구와 법적 제약이 충돌하면 대안을 어떻게 만들어 제안하시겠어요?",
+   "scope": "role:architect",
+   "category": "문제해결",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실시설계 도면을 마무리할 때 시공 단계에서 문제가 없도록 무엇을 점검하시겠어요?",
+   "scope": "role:architect",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외장 재료를 선정할 때 디자인 말고 어떤 기준을 함께 보시나요?",
+   "scope": "role:architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b08s13",
+   "confidence": "high"
+  },
+  {
+   "text": "인허가 협의에서 설계안의 핵심 요소를 바꿔야 한다는 의견이 나오면 어떻게 대응하시겠어요?",
+   "scope": "role:architect",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "마감 이틀 전에 건축주가 평면을 크게 바꾸고 싶다고 한다면 어떻게 하시겠어요?",
+   "scope": "role:architect",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장에서 설계 의도와 다르게 시공되고 있다는 연락을 받으면 어떻게 하시겠어요?",
+   "scope": "role:architect",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공사비 예산이 20% 줄어든다면 설계의 어떤 부분을 조정해 대응하시겠어요?",
+   "scope": "role:architect",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 대지에 두 가지 매스 안이 있을 때 일조, 조망, 동선 측면에서 어떻게 비교하시겠어요?",
+   "scope": "role:architect",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "포트폴리오 작품 하나를 골라 콘셉트가 실제 도면으로 구체화된 과정을 말씀해 주세요.",
+   "scope": "role:architect",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 과제에서 크리틱 받은 내용을 반영해 안을 크게 고쳤던 경험을 말씀해 주세요.",
+   "scope": "role:architect",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실무 건축설계가 학교 설계 과제와 가장 다른 점은 무엇이라고 생각하세요?",
+   "scope": "role:architect",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 분야 중에서도 설계 직무를 지원하신 이유를 말씀해 주세요.",
+   "scope": "role:architect",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 사무소는 야근이 많고 보상이 적다는 이야기가 많은데, 그래도 설계를 하려는 이유가 있나요?",
+   "scope": "role:architect",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비전문가인 건축주에게 설계안을 설명할 때 어떤 방식으로 이해를 돕나요?",
+   "scope": "role:architect",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s13",
+   "confidence": "high"
+  },
+  {
+   "text": "공정이 계획보다 2주 늦어졌다면 만회 대책을 어떻게 세우시겠어요?",
+   "scope": "role:building_construction",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s14",
+   "confidence": "high"
+  },
+  {
+   "text": "콘크리트 타설 전에 현장 담당자로서 반드시 확인할 사항은 무엇인가요?",
+   "scope": "role:building_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s25",
+   "confidence": "high"
+  },
+  {
+   "text": "여러 협력업체의 작업이 한 구간에 몰릴 때 작업 순서를 어떻게 조율하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주간 공정회의에서 진도를 점검할 때 어떤 자료를 보고 판단하시나요?",
+   "scope": "role:building_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s14",
+   "confidence": "high"
+  },
+  {
+   "text": "동절기 콘크리트 공사에서 품질을 지키기 위해 어떤 관리를 하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 변경이 생겼을 때 현장에서 도면, 물량, 공정을 어떤 순서로 정리하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "품질 검측에서 불합격이 나오면 재시공 여부를 어떤 기준으로 판단하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "타설 일정이 잡힌 날 거푸집 동바리 보강이 덜 된 것을 발견하면 어떻게 하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자재 반입이 늦어져 다음 공종 작업자들이 대기해야 한다면 어떻게 하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체 소장과 작업 방식을 두고 의견이 강하게 부딪힌다면 어떻게 풀어 가시겠어요?",
+   "scope": "role:building_construction",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전수칙을 지키지 않는 작업자가 경력 많은 숙련공이라면 어떻게 말씀하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "골조 공사 중 같은 하자가 특정 층에서만 반복된다면 원인을 어떻게 추적하시겠어요?",
+   "scope": "role:building_construction",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실행예산 대비 원가가 10% 초과될 것으로 보인다면 어떤 항목부터 들여다보시겠어요?",
+   "scope": "role:building_construction",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람의 일정을 맞춰 계획대로 일을 끝냈던 경험을 말씀해 주세요.",
+   "scope": "role:building_construction",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 실습이나 아르바이트에서 안전과 관련해 기억에 남는 경험을 말씀해 주세요.",
+   "scope": "role:building_construction",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 관리자가 공정, 품질, 안전, 원가를 동시에 관리한다는 것이 실제로 어떤 의미라고 보시나요?",
+   "scope": "role:building_construction",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계나 사무직이 아닌 현장 시공 관리를 택하신 이유는 무엇인가요?",
+   "scope": "role:building_construction",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 경험이 없는 신입이 수십 년 경력의 작업자들을 어떻게 관리할 수 있다고 보시나요?",
+   "scope": "role:building_construction",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공조 설비 용량을 산정할 때 냉난방 부하에 영향을 주는 요소를 설명해 주세요.",
+   "scope": "role:building_services",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s16",
+   "confidence": "high"
+  },
+  {
+   "text": "급수·급탕 배관 설계에서 수압이나 유량 문제를 어떻게 검토하시겠어요?",
+   "scope": "role:building_services",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건물 에너지 사용을 줄이기 위한 설비 계획을 어떻게 세우시겠어요?",
+   "scope": "role:building_services",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s16",
+   "confidence": "high"
+  },
+  {
+   "text": "전기 설비 설계에서 부하 계산과 간선 계획을 할 때 무엇을 고려하시나요?",
+   "scope": "role:building_services",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "천장 속에서 덕트, 배관, 전기 트레이가 간섭될 때 어떤 원칙으로 조정하시겠어요?",
+   "scope": "role:building_services",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비 시운전에서 성능이 설계값에 미치지 못한다면 무엇부터 확인하시겠어요?",
+   "scope": "role:building_services",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소방 설비와 일반 설비가 공간을 함께 써야 할 때 우선순위를 어떻게 정하시겠어요?",
+   "scope": "role:building_services",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "준공 직전 입주자 측에서 특정 실이 덥다는 불만을 제기한다면 어떻게 대응하시겠어요?",
+   "scope": "role:building_services",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 공정에 밀려 설비 배관 작업 기간이 부족해진다면 어떻게 조율하시겠어요?",
+   "scope": "role:building_services",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "누수가 났는데 원인이 설비 배관인지 방수 불량인지 불분명하다면 어떻게 하시겠어요?",
+   "scope": "role:building_services",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "초기 투자비가 비싼 고효율 장비와 저렴한 일반 장비 중 무엇을 제안할지 어떻게 판단하시겠어요?",
+   "scope": "role:building_services",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건물 에너지 사용량이 전년보다 늘었다면 설비 측면에서 어떤 자료를 비교해 원인을 찾으시겠어요?",
+   "scope": "role:building_services",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "열역학이나 유체역학 지식을 실제 문제에 적용해 본 경험을 말씀해 주세요.",
+   "scope": "role:building_services",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 분야 담당자와 도면을 맞춰 가며 작업했던 경험이 있으신가요?",
+   "scope": "role:building_services",
+   "category": "팀워크",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축설비 엔지니어가 건축, 구조 담당과 다르게 책임지는 영역은 무엇이라고 보시나요?",
+   "scope": "role:building_services",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 분야에서 설비 직무를 선택한 이유는 무엇인가요?",
+   "scope": "role:building_services",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설비는 겉으로 드러나지 않는 일인데, 그런 일에서도 보람을 느낄 수 있다고 보시나요?",
+   "scope": "role:building_services",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "도면을 받아 물량을 산출할 때 누락을 막기 위해 어떤 순서로 작업하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실행예산을 편성할 때 도급 내역과 무엇을 비교해 보시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s15",
+   "confidence": "high"
+  },
+  {
+   "text": "하도급 업체를 선정할 때 가격 말고 어떤 기준을 함께 보시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s15",
+   "confidence": "high"
+  },
+  {
+   "text": "기성 청구 자료를 준비할 때 발주처와 다툼이 생기지 않도록 무엇을 챙기시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 변경으로 공사비가 늘어날 때 증액 근거를 어떻게 정리하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s15",
+   "confidence": "high"
+  },
+  {
+   "text": "표준 품셈 기준 단가와 실제 시장 단가가 다르면 어떻게 판단하시나요?",
+   "scope": "role:cost_estimator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공사 계약서에서 공무 담당자가 꼼꼼히 봐야 할 조항은 무엇이라고 보시나요?",
+   "scope": "role:cost_estimator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "자재 가격이 급등해 실행예산을 넘어설 상황이라면 어떤 대응을 검토하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체가 추가 공사비를 요구하는데 근거가 애매하다면 어떻게 협상하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "준공이 가까워졌는데 정산 서류가 공종마다 제각각이라면 어떻게 정리하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 공종 견적 세 건이 30% 이상 차이 난다면 어떤 이유를 먼저 의심하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원가 절감을 위해 VE를 검토한다면 어떤 항목을 대상으로 삼으시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "사례",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "엑셀로 많은 숫자를 정리하거나 계산하다가 오류를 찾아냈던 경험을 말씀해 주세요.",
+   "scope": "role:cost_estimator",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "금액이나 조건을 두고 상대와 협상해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:cost_estimator",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장에서 공무와 시공 담당의 역할은 어떻게 다르다고 알고 계신가요?",
+   "scope": "role:cost_estimator",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "적산·공무처럼 숫자와 계약을 다루는 직무에 끌린 이유는 무엇인가요?",
+   "scope": "role:cost_estimator",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공무는 현장을 모르는 숫자 관리자라는 말을 들으면 어떻게 답하시겠어요?",
+   "scope": "role:cost_estimator",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목 사업이 조사, 설계, 시공, 유지관리로 이어질 때 단계마다 핵심 과제는 무엇이라고 보시나요?",
+   "scope": "family:civil",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공공 발주가 많은 토목 분야에서 발주처와 일하는 방식은 민간 사업과 어떻게 다르다고 생각하세요?",
+   "scope": "family:civil",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목 기술자에게 현장 감각과 이론 지식이 각각 왜 필요하다고 보시나요?",
+   "scope": "family:civil",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목 구조물을 설계하고 시공할 때 유지관리까지 고려해야 하는 이유는 무엇일까요?",
+   "scope": "family:civil",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "계산이나 검토에서 본인의 실수를 발견하고 바로잡았던 경험을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "실패",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전공이 다른 사람들과 함께 과제를 하며 서로의 기준을 맞췄던 경험이 있으신가요?",
+   "scope": "family:civil",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "오랜 기간 한 가지 목표를 두고 꾸준히 노력했던 경험을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정보가 불확실한 상황에서 결정을 내려야 했던 경험을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "의사결정",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배나 상사에게 기술적으로 다른 의견을 제시했던 경험이 있다면 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 도서와 현장 여건이 맞지 않는 것을 발견하면 어떻게 처리하시겠어요?",
+   "scope": "family:civil",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "집중호우 예보가 있는데 현장이나 시설물에 취약 구간이 있다면 무엇을 먼저 하시겠어요?",
+   "scope": "family:civil",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발주처 감독관이 기준보다 과도한 요구를 한다면 어떻게 대응하시겠어요?",
+   "scope": "family:civil",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "인근 주민이 진동과 소음 피해를 호소하며 공사 중단을 요구한다면 어떻게 하시겠어요?",
+   "scope": "family:civil",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지반 조사 결과가 설계 당시 가정과 다르게 나왔다면 어떤 절차로 대응하시겠어요?",
+   "scope": "family:civil",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "측량 실습이나 토질 실험 같은 전공 실습에서 가장 기억에 남는 경험을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "캡스톤이나 설계 과제에서 설계 기준서를 찾아 적용해 본 경험을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 견학이나 인턴에서 토목 공사를 가까이 보며 느낀 점을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "노후 인프라가 늘어나는 흐름이 토목 분야의 일과 역할에 어떤 변화를 줄까요?",
+   "scope": "family:civil",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "스마트 건설 기술이 토목 설계와 시공 방식을 어떻게 바꿀 것이라고 보시나요?",
+   "scope": "family:civil",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "해외 인프라 사업에 참여할 때 국내 사업과 다른 어려움은 무엇일까요?",
+   "scope": "family:civil",
+   "category": "시장",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공사비를 아끼려고 기준에 못 미치는 자재를 쓰자는 압력을 받는다면 어떻게 하시겠어요?",
+   "scope": "family:civil",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "부실시공을 막기 위해 기술자 개인이 지켜야 할 원칙은 무엇이라고 보시나요?",
+   "scope": "family:civil",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목을 전공하며 본인이 가장 성장했다고 느끼는 부분은 무엇인가요?",
+   "scope": "family:civil",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기술자로서 본인의 부족한 점을 하나 꼽고 어떻게 보완하고 있는지 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여했던 과제에서 안전성이나 경제성을 개선한 결과를 구체적으로 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "과제나 실습 결과물이 실제 기준을 충족하는지 어떻게 검증했는지 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공공 인프라 사업에서 최저가 낙찰과 기술 평가 중 무엇을 더 중시해야 할지 입장을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역의 노후 교량 관리 방안을 발표한다고 가정하고 핵심 구성을 말씀해 주세요.",
+   "scope": "family:civil",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교량 형식을 결정할 때 어떤 조건들을 비교해 선택하시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s17",
+   "confidence": "high"
+  },
+  {
+   "text": "도로 선형을 계획할 때 평면 선형과 종단 선형에서 주의할 점을 설명해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연약지반 위에 구조물을 계획할 때 어떤 검토와 대책이 필요할까요?",
+   "scope": "role:civil_designer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "배수 계획을 세울 때 강우 자료를 어떻게 활용해 설계 유량을 정하시나요?",
+   "scope": "role:civil_designer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 단계에서 사업비를 산정할 때 자주 빠뜨리는 항목은 무엇이라고 보시나요?",
+   "scope": "role:civil_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s17",
+   "confidence": "high"
+  },
+  {
+   "text": "설계 보고서, 도면, 수량이 서로 맞는지 검토할 때 어떤 방법을 쓰시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토공 설계에서 절토와 성토의 균형을 맞추는 것이 왜 중요한지 설명해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발주처가 설계 기간을 절반으로 줄여 달라고 요청한다면 어떻게 대응하시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 납품 후 시공사가 도면 오류를 지적해 왔다면 어떻게 처리하시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관계 기관 협의에서 노선을 바꾸라는 요구가 나오면 어떤 순서로 검토하시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "터널과 우회 도로 중 하나를 선택해야 한다면 어떤 기준으로 비교안을 만드시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 수량이 과거 유사 사업보다 크게 많게 나왔다면 원인을 어떻게 찾으시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "CAD로 도면을 작성하면서 겪은 어려움과 해결 과정을 말씀해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "도구",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 기준을 해석하다 애매한 부분이 있어 확인했던 경험을 말씀해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목설계 엔지니어가 시공 엔지니어보다 더 책임지는 부분은 무엇이라고 보시나요?",
+   "scope": "role:civil_designer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목 분야 중 설계 직무를 선택하신 이유를 말씀해 주세요.",
+   "scope": "role:civil_designer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장을 모르면 설계가 탁상공론이 되기 쉬운데, 현장 경험 없이 어떻게 좋은 설계를 하시겠어요?",
+   "scope": "role:civil_designer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토공 작업에서 다짐 품질을 어떻게 확인하고 관리하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장에 들어온 콘크리트의 슬럼프가 기준을 벗어나면 어떻게 조치하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "흙막이 공사 중 계측 값이 관리 기준에 가까워지면 어떻게 대응하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장비 조합과 투입 계획을 세울 때 무엇을 기준으로 삼으시나요?",
+   "scope": "role:civil_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감리단 검측을 준비할 때 시공 담당자가 미리 챙겨야 할 서류와 확인 사항은 무엇인가요?",
+   "scope": "role:civil_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s18",
+   "confidence": "high"
+  },
+  {
+   "text": "우기 전에 토목 현장에서 반드시 점검해야 할 항목은 무엇이라고 보시나요?",
+   "scope": "role:civil_construction",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 계획을 세울 때 날씨와 장비 변수를 어떻게 반영하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "굴착 중 도면에 없는 지하 매설물이 발견된다면 어떻게 하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "강재 납품이 지연돼 교량 상부 공정이 멈출 위기라면 협력사와 어떻게 소통하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s32",
+   "confidence": "medium"
+  },
+  {
+   "text": "하도급 작업자가 계측 장비를 훼손하고 숨긴 사실을 알게 된다면 어떻게 하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "도로 포장 후 특정 구간에서만 균열이 빠르게 생긴다면 원인을 어떻게 추적하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "하루 토공량 목표 대비 실적이 70%에 그친다면 어떤 요소를 확인해 개선하시겠어요?",
+   "scope": "role:civil_construction",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공사나 행사처럼 여러 단계가 있는 작업의 순서를 직접 계획해 본 경험을 말씀해 주세요.",
+   "scope": "role:civil_construction",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 근로자나 연장자와 의견을 조율해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:civil_construction",
+   "category": "갈등",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목시공 엔지니어의 하루는 어떻게 흘러간다고 알고 계신가요?",
+   "scope": "role:civil_construction",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목 분야에서 시공 직무를 지원하신 이유는 무엇인가요?",
+   "scope": "role:civil_construction",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외진 지역 현장에서 몇 년씩 근무해야 할 수도 있는데 정말 괜찮으신가요?",
+   "scope": "role:civil_construction",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "src": "b08s31",
+   "confidence": "medium"
+  },
+  {
+   "text": "구조 설계에서 고려하는 주요 하중을 설명하고, 그중 가장 까다로운 것을 말씀해 주세요.",
+   "scope": "role:structural_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s19",
+   "confidence": "high"
+  },
+  {
+   "text": "구조 해석 결과를 그대로 믿기 전에 어떤 방법으로 검증하시나요?",
+   "scope": "role:structural_engineer",
+   "category": "직무전문성",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s19",
+   "confidence": "high"
+  },
+  {
+   "text": "철근콘크리트 보에서 전단 파괴를 피하도록 설계하는 이유를 휨 파괴와 비교해 설명해 주세요.",
+   "scope": "role:structural_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내진 설계에서 연성을 확보하는 것이 왜 중요한지 말씀해 주세요.",
+   "scope": "role:structural_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "강구조 접합부를 설계할 때 특히 주의하는 부분은 무엇인가요?",
+   "scope": "role:structural_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기존 건물을 리모델링하며 하중이 늘어날 때 구조 안전성을 어떻게 검토하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처짐과 진동 같은 사용성 문제를 설계에서 어떻게 다루시나요?",
+   "scope": "role:structural_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장에서 시공 편의를 위해 철근 배근을 바꾸자는 요청이 오면 어떻게 판단하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건축 설계자가 기둥 없는 넓은 공간을 원하는데 구조적으로 무리라면 어떻게 대안을 제시하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "준공된 건물에서 균열이 발견돼 원인 조사를 맡게 되면 어떤 순서로 진행하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "철골조와 철근콘크리트조 중 어떤 구조 시스템을 제안할지 어떤 기준으로 판단하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s19",
+   "confidence": "high"
+  },
+  {
+   "text": "해석 결과에서 특정 부재에만 응력이 비정상적으로 크게 나온다면 무엇을 의심하시겠어요?",
+   "scope": "role:structural_engineer",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "구조 과제에서 손 계산 결과와 해석 소프트웨어 결과를 비교해 본 경험을 말씀해 주세요.",
+   "scope": "role:structural_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "모형 제작이나 재료 실험으로 구조 거동을 직접 확인해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "role:structural_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "구조 엔지니어의 판단이 건물 사용자 안전과 어떻게 연결된다고 보시나요?",
+   "scope": "role:structural_engineer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "토목·건축 분야 중 구조 엔지니어를 목표로 하게 된 계기는 무엇인가요?",
+   "scope": "role:structural_engineer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "해석 소프트웨어가 계산을 다 해 주는 시대에 구조 엔지니어의 역할이 줄지 않을까요?",
+   "scope": "role:structural_engineer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경이 건축이나 토목과 비교해 공간에 어떤 가치를 더한다고 보시나요?",
+   "scope": "family:landscape",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경 업무가 설계, 시공, 유지관리로 이어질 때 각 단계에서 무엇이 중요하다고 보시나요?",
+   "scope": "family:landscape",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "살아 있는 식물을 다룬다는 점이 조경을 다른 건설 업무와 어떻게 다르게 만든다고 보세요?",
+   "scope": "family:landscape",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경 분야에서 일하려면 디자인 감각과 식물 지식 중 무엇이 먼저라고 생각하세요?",
+   "scope": "family:landscape",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "계절이나 날씨처럼 통제할 수 없는 변수 때문에 계획을 수정했던 경험을 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사용자 의견을 듣고 디자인을 바꿔 더 좋은 결과를 얻었던 경험을 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "고객",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 작업자와 협업하며 설계 의도를 전달하려고 노력했던 경험이 있으신가요?",
+   "scope": "family:landscape",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "꾸준한 관찰과 관리가 필요한 일을 책임지고 해 본 경험을 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "적은 예산으로 최대한의 효과를 내려고 고민했던 경험을 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재한 수목이 병해충 피해를 크게 입었다면 어떻게 대응하시겠어요?",
+   "scope": "family:landscape",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시공 중 설계에 지정된 규격의 수목을 구하기 어렵다면 어떻게 대응하시겠어요?",
+   "scope": "family:landscape",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주민들이 공원 설계안에 대해 서로 다른 요구를 한다면 어떻게 조율하시겠어요?",
+   "scope": "family:landscape",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재 적기를 놓쳐 한여름에 나무를 심어야 한다면 어떤 대책을 세우시겠어요?",
+   "scope": "family:landscape",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "놀이시설이나 포장 공사에서 이용자 안전 문제가 우려된다면 어떻게 조치하시겠어요?",
+   "scope": "family:landscape",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경 설계 과제나 공모전에서 대상지를 분석하고 콘셉트를 잡았던 과정을 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식물을 직접 기르거나 관리해 본 경험 중 기억에 남는 것을 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생태나 식물 관련 수업에서 배운 내용 중 설계에 적용해 보고 싶은 것을 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "성장",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "도시 열섬이나 기후 위기 대응에서 조경의 역할이 어떻게 커지고 있다고 보시나요?",
+   "scope": "family:landscape",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "옥상 정원이나 실내 조경 같은 새로운 조경 수요를 어떻게 보고 계신가요?",
+   "scope": "family:landscape",
+   "category": "시장",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경 산업이 공공 발주에 많이 기대는 구조에 대해 어떻게 생각하세요?",
+   "scope": "family:landscape",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "납품된 수목이 규격에 못 미치는데 업체가 그냥 넘어가 달라고 한다면 어떻게 하시겠어요?",
+   "scope": "family:landscape",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "준공 검사 때만 보기 좋게 꾸미고 이후 관리는 소홀한 관행을 어떻게 보시나요?",
+   "scope": "family:landscape",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경을 공부하면서 공간을 보는 시각이 어떻게 달라졌는지 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경 실무자로서 보완하고 싶은 부족한 점은 무엇인가요?",
+   "scope": "family:landscape",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여했던 설계나 시공 결과물이 이용자에게 어떤 변화를 줬는지 말씀해 주세요.",
+   "scope": "family:landscape",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재 활착률이나 유지관리 비용 같은 지표로 조경 성과를 어떻게 보여 주시겠어요?",
+   "scope": "family:landscape",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "도심 공원에 관리가 쉬운 인공 소재를 쓰는 것과 자연 소재를 고집하는 것 중 어느 쪽이 맞다고 보시나요?",
+   "scope": "family:landscape",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "방치된 도심 유휴지를 주민 쉼터로 바꾸는 조경 계획을 발표한다면 어떻게 구성하시겠어요?",
+   "scope": "family:landscape",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재 설계를 할 때 수종을 선정하는 기준을 말씀해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b08s20",
+   "confidence": "high"
+  },
+  {
+   "text": "대상지의 토양, 배수, 일조 조건을 조사한 결과를 설계에 어떻게 반영하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s20",
+   "confidence": "high"
+  },
+  {
+   "text": "조경 공사 현장을 관리할 때 다른 공종과 부딪히는 부분을 어떻게 조율하시나요?",
+   "scope": "role:landscape_architect",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s21",
+   "confidence": "high"
+  },
+  {
+   "text": "수목을 옮겨 심을 때 활착률을 높이기 위해 어떤 조치를 하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경 내역서를 작성할 때 수량과 단가에서 실수가 잦은 부분은 어디라고 보시나요?",
+   "scope": "role:landscape_architect",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s20",
+   "confidence": "high"
+  },
+  {
+   "text": "옥상 조경을 설계할 때 구조, 방수, 배수 측면에서 무엇을 확인해야 할까요?",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "포장 재료를 고를 때 보행성, 투수성, 유지관리를 어떻게 비교하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "발주처가 준공 직전 식재 수량을 줄여 비용을 아끼자고 한다면 어떻게 대응하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "하자 보수 기간에 고사목이 계속 나오는데 관리 소홀인지 시공 문제인지 다툼이 생기면 어떻게 하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호해야 할 기존 수목 가까이에서 굴착을 해야 하는 상황이라면 어떻게 하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 예산으로 큰 나무 몇 그루와 작은 나무 여러 그루 중 무엇을 고를지 어떻게 판단하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공원 이용자들이 특정 구역만 피한다면 어떤 관점에서 원인을 분석해 보시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "설계 도면이나 조감도를 작성하며 표현 방식을 고민했던 경험을 말씀해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장에서 식재나 조경 시설 공사를 직접 보거나 참여해 본 경험을 말씀해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조경설계와 조경시공 담당자가 서로에게 가장 필요로 하는 것은 무엇이라고 보시나요?",
+   "scope": "role:landscape_architect",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s21",
+   "confidence": "high"
+  },
+  {
+   "text": "조경 분야를 진로로 선택하게 된 계기를 말씀해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예산이 부족하면 조경이 가장 먼저 깎이곤 하는데, 이런 현실에서 조경의 가치를 어떻게 증명하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전·보건 담당자가 사업장에서 맡는 핵심 역할을 본인의 말로 설명해 주세요.",
+   "scope": "family:safety",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b08s26",
+   "confidence": "high"
+  },
+  {
+   "text": "산업안전보건법과 중대재해처벌법이 현장 안전 업무에 요구하는 관점은 어떻게 다르다고 보시나요?",
+   "scope": "family:safety",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b08s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 담당자는 감시자가 아니라 조력자여야 한다는 말을 어떻게 받아들이시나요?",
+   "scope": "family:safety",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전보건 교육이 형식적으로 끝나지 않으려면 무엇이 달라져야 한다고 보시나요?",
+   "scope": "family:safety",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s22",
+   "confidence": "high"
+  },
+  {
+   "text": "규칙을 지키지 않는 사람에게 불편한 말을 해야 했던 경험을 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람이 참여하는 활동에서 위험 요소를 미리 찾아 예방했던 경험이 있으신가요?",
+   "scope": "family:safety",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "반발하는 사람을 설득해 행동을 바꾸게 했던 경험을 구체적으로 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "리더십",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "점검이나 기록을 오랫동안 빠짐없이 유지했던 경험을 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 부서와 협력해 공동의 문제를 해결했던 경험을 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "라인을 세우면 손실이 큰 상황에서 방호장치가 해제된 설비를 발견하면 어떻게 하시겠어요?",
+   "scope": "family:safety",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경영진이 안전 예산을 줄이자고 할 때 어떤 논리로 설득하시겠어요?",
+   "scope": "family:safety",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아차사고 보고가 거의 올라오지 않는 사업장이라면 원인을 어떻게 보고 개선하시겠어요?",
+   "scope": "family:safety",
+   "category": "문제해결",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체 근로자가 다쳤는데 원청과 협력업체가 서로 책임을 미룬다면 어떻게 대응하시겠어요?",
+   "scope": "family:safety",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로 부임한 사업장에서 첫 한 달 동안 무엇부터 파악하시겠어요?",
+   "scope": "family:safety",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 관련 자격 공부나 교육에서 현장에 가장 필요하다고 느낀 내용을 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "성장",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실험실이나 현장 실습에서 안전 수칙 덕분에 사고를 피했던 경험이 있다면 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사고 사례를 조사하거나 분석해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "중대재해처벌법 시행 이후 기업의 안전 조직과 문화가 어떻게 달라졌다고 보시나요?",
+   "scope": "family:safety",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "스마트 안전장비나 웨어러블 기기가 현장 안전관리를 얼마나 바꿀 수 있다고 보시나요?",
+   "scope": "family:safety",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고령 근로자와 외국인 근로자가 늘어나는 현장에서 안전관리의 과제는 무엇일까요?",
+   "scope": "family:safety",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사고 후 상급자가 산재 보고 없이 조용히 처리하자고 한다면 어떻게 하시겠어요?",
+   "scope": "family:safety",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실제 교육 없이 교육 이수 서명만 받아 두자는 요구를 받는다면 어떻게 하시겠어요?",
+   "scope": "family:safety",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 업무를 하면서 가장 지키기 어렵다고 생각하는 본인의 원칙은 무엇인가요?",
+   "scope": "family:safety",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 직무에서 오래 일하기 위해 본인이 키워야 할 역량은 무엇이라고 보시나요?",
+   "scope": "family:safety",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 제안한 안전 개선 활동의 효과를 어떤 지표로 확인할 수 있을까요?",
+   "scope": "family:safety",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재해율 같은 후행 지표 외에 안전 성과를 보여줄 선행 지표로 무엇을 쓰시겠어요?",
+   "scope": "family:safety",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 수칙을 위반한 근로자에게 강한 불이익을 주는 방식이 효과적인지 입장을 말씀해 주세요.",
+   "scope": "family:safety",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사업장의 중대재해 예방 계획을 경영진에게 10분 동안 발표한다면 어떻게 구성하시겠어요?",
+   "scope": "family:safety",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "위험성평가를 처음부터 진행한다면 어떤 절차로 하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s22",
+   "confidence": "high"
+  },
+  {
+   "text": "위험성평가 결과가 실제 개선으로 이어지도록 어떻게 관리하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b08s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "체크리스트나 작업안전분석 같은 평가 기법 중 상황에 따라 어떤 것을 고르시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "화학 설비가 있는 사업장에서 공정안전관리를 운영할 때 중점을 둘 부분은 무엇인가요?",
+   "scope": "role:safety_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "b08s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "물질안전보건자료가 현장에서 실제로 활용되게 하려면 어떻게 관리하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b08s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체가 사업장에 들어와 작업할 때 안전관리를 어떻게 하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s22",
+   "confidence": "high"
+  },
+  {
+   "text": "밀폐공간이나 화기작업 같은 위험 작업의 작업허가 절차에서 무엇을 반드시 확인하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 관리자가 불안전한 작업을 지시하는 것을 봤다면 그 자리에서 어떻게 하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "b08s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "중대재해가 발생했다는 연락을 받았다면 처음 한 시간 동안 무엇을 하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호구 착용을 계속 거부하는 작업자가 있다면 어떻게 대응하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감전 사고가 발생했다면 원인을 어떤 방식으로 분석하시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b08s30",
+   "confidence": "medium"
+  },
+  {
+   "text": "최근 1년간 경미한 사고가 특정 공정에 몰려 있다면 자료를 어떻게 분석해 대책을 세우시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 점검이나 순회를 하며 개선점을 찾아 조치했던 경험이 있다면 말씀해 주세요.",
+   "scope": "role:safety_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사람들 앞에서 교육하거나 발표해서 행동 변화를 이끌었던 경험을 말씀해 주세요.",
+   "scope": "role:safety_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전관리자의 하루 업무 사이클이 어떻게 구성된다고 알고 계신가요?",
+   "scope": "role:safety_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "b08s27",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전관리자라는 직무를 선택하신 이유와 계기를 말씀해 주세요.",
+   "scope": "role:safety_manager",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전관리자는 현장에서 일을 늦추는 사람으로 보이기 쉬운데, 미움받을 각오가 되어 있으신가요?",
+   "scope": "role:safety_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교대 조마다 안전 수칙 이해도가 다르다면 전달 방식을 어떻게 맞추시겠어요?",
+   "scope": "role:safety_manager",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업환경측정에서 노출 기준에 가까운 공정이 확인됐다면 어떤 개선을 추진하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s23",
+   "confidence": "high"
+  },
+  {
+   "text": "특수건강진단에서 유소견자가 나오면 사후관리를 어떻게 하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s23",
+   "confidence": "high"
+  },
+  {
+   "text": "근골격계 부담 작업을 파악하고 개선하는 과정을 어떻게 진행하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직무 스트레스나 정신건강 문제를 사업장 차원에서 어떻게 관리하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사업장 응급 상황에 대비해 평소 어떤 체계를 갖춰 두시겠어요?",
+   "scope": "role:health_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s23",
+   "confidence": "high"
+  },
+  {
+   "text": "화학물질 취급 근로자의 보호구 선정과 착용 관리를 어떻게 하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건 분야 위험성평가에서는 안전 분야와 달리 어떤 요소를 봐야 할까요?",
+   "scope": "role:health_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s23",
+   "confidence": "high"
+  },
+  {
+   "text": "폭염 경보가 내려진 날 옥외 작업을 계속해야 한다는 현장 요청이 오면 어떻게 대응하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "근로자가 개인 건강 정보를 회사에 알리고 싶지 않다고 한다면 어떻게 하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 부서에서 비슷한 증상을 호소하는 근로자가 연달아 나온다면 무엇부터 조사하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건강증진 프로그램 참여율이 낮다면 어떤 자료를 보고 개선 방향을 잡으시겠어요?",
+   "scope": "role:health_manager",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한정된 예산으로 소음 저감 설비 투자와 보호구 지급 확대 중 무엇을 우선하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호나 보건 관련 실습에서 건강 상담을 해 본 경험을 말씀해 주세요.",
+   "scope": "role:health_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건강 관련 캠페인이나 교육을 기획하거나 진행해 본 경험을 말씀해 주세요.",
+   "scope": "role:health_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건관리자는 병원 간호사나 안전관리자와 어떤 점에서 다른 일을 한다고 보시나요?",
+   "scope": "role:health_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "임상이 아닌 산업보건 분야를 선택하신 이유는 무엇인가요?",
+   "scope": "role:health_manager",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사고 예방처럼 눈에 띄는 성과가 없는 보건 업무의 가치를 경영진에게 어떻게 증명하시겠어요?",
+   "scope": "role:health_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비계나 동바리 같은 가설 구조물을 점검할 때 무엇을 중점적으로 보시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s24",
+   "confidence": "high"
+  },
+  {
+   "text": "산업안전보건관리비를 계획하고 집행할 때 어떤 점에 유의하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s24",
+   "confidence": "high"
+  },
+  {
+   "text": "공정이 매일 바뀌는 건설 현장에서 위험성평가를 어떻게 살아 있게 운영하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b08s24",
+   "confidence": "high"
+  },
+  {
+   "text": "추락 재해를 막기 위해 현장에서 우선적으로 챙겨야 할 조치는 무엇인가요?",
+   "scope": "role:construction_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "크레인 같은 중장비 작업 전에 어떤 사항을 확인하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b08s24",
+   "confidence": "high"
+  },
+  {
+   "text": "작업 전 안전 조회를 형식적이지 않게 운영하려면 어떻게 하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "굴착 작업 구간에서 붕괴 위험을 줄이기 위해 무엇을 확인하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정이 급한데 안전 조치가 미흡하다면 작업을 멈추시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "협력업체 작업반장이 안전 지적에 반발하며 작업자를 철수시키겠다고 한다면 어떻게 하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업자가 경미한 부상을 입었는데 괜찮다며 병원 진료를 거부한다면 어떻게 하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 현장에서 넘어짐 사고가 한 달에 여러 번 발생했다면 원인을 어떻게 찾으시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전시설 설치 비용과 공정 지연 비용을 비교해야 한다면 판단 근거를 어떻게 만드시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야외 활동이나 행사에서 여러 사람의 안전을 책임졌던 경험이 있다면 말씀해 주세요.",
+   "scope": "role:construction_safety",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건설 관련 인턴이나 실습에서 안전 서류를 작성하거나 관리해 본 경험을 말씀해 주세요.",
+   "scope": "role:construction_safety",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건설 현장 안전관리자는 제조업 안전관리자와 무엇이 다르다고 보시나요?",
+   "scope": "role:construction_safety",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "제조업이 아닌 건설 현장의 안전관리를 지원하신 이유는 무엇인가요?",
+   "scope": "role:construction_safety",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시공사 소속 안전관리자가 회사 이익과 안전 사이에서 독립적으로 판단할 수 있다고 보시나요?",
+   "scope": "role:construction_safety",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정회의에서 시공 담당자들이 안전 요구를 부담스러워할 때 어떻게 이야기하시겠어요?",
+   "scope": "role:construction_safety",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소방계획서를 작성할 때 건물 특성에 맞게 반드시 반영해야 할 내용은 무엇인가요?",
+   "scope": "role:fire_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "스프링클러나 자동화재탐지설비를 점검할 때 자주 발견되는 문제는 무엇이라고 알고 계세요?",
+   "scope": "role:fire_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "피난 통로와 방화문 관리가 평소 잘 지켜지지 않는 이유와 개선 방법을 말씀해 주세요.",
+   "scope": "role:fire_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소방 훈련을 실제 상황처럼 운영하려면 어떻게 계획하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "화재 감지기의 종류별 특성을 설명하고 장소에 따라 어떻게 선택하는지 말씀해 주세요.",
+   "scope": "role:fire_safety",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공사 중인 건물에서 용접 같은 화기 작업을 관리할 때 무엇을 확인하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "화재 경보가 오작동으로 자주 울리는 건물이라면 원인을 어떻게 찾고 조치하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "문제해결",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새벽에 화재 경보가 울렸는데 입주자들이 또 오작동이라며 대피하지 않는다면 어떻게 하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "입주 업체가 비상구 앞에 물건을 계속 쌓아 둔다면 어떻게 대응하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관리 업체가 소방 설비를 차단한 상태로 공사하겠다고 한다면 어떻게 하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건물 화재가 났을 때 초기 확산을 키운 요인을 사후에 어떻게 분석하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "노후 건물의 소방 설비 개선 계획을 세운다면 어떤 기준으로 우선순위를 정하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비상 상황이나 대피 훈련에서 사람들을 안내했던 경험이 있다면 말씀해 주세요.",
+   "scope": "role:fire_safety",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시설이나 장비를 정기적으로 점검하고 기록했던 경험을 말씀해 주세요.",
+   "scope": "role:fire_safety",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소방안전관리자는 평상시와 화재 발생 시에 각각 어떤 역할을 해야 한다고 보시나요?",
+   "scope": "role:fire_safety",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "안전 분야 중에서도 소방안전을 선택하신 이유를 말씀해 주세요.",
+   "scope": "role:fire_safety",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "몇 년간 화재가 없던 건물이라 소방 관리 비용이 낭비라는 말에 어떻게 답하시겠어요?",
+   "scope": "role:fire_safety",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  }
+ ]
+}

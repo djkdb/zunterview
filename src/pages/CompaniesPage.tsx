@@ -8,7 +8,7 @@ import { useCompanyFilter } from "../hooks/useCompanyFilter";
 
 export function CompaniesPage({ onOpen, onHome, onStart }: { onOpen: (id: string) => void; onHome: () => void; onStart: () => void }) {
   const f = useCompanyFilter();
-  const total = COMPANIES.reduce((s, c) => s + c.questions.length, 0);
+  const total = COMPANIES.reduce((s, c) => s + c.questionCount, 0);
   return (
     <div className="min-h-dvh pb-16">
       <TopBar

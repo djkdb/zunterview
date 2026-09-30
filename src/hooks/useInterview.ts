@@ -6,7 +6,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { GeneratedQuestion, ReportRequest, Usage } from "../../shared/schemas";
 import { buildPanel, seatFor, type Seat } from "../config/panel";
 import { SAMPLE_ANSWERS } from "../config/sampleAnswers";
-import { getCompany } from "../../shared/companies";
+import { getCompany, loadCompanyQuestions } from "../../shared/companies";
+import { roleContextFor } from "../../shared/roles";
+import { fillRole, questionPool } from "../../shared/roleBank";
 import { similarity } from "../utils/fingerprint";
 import { AIRequestError, type AIProvider } from "../services/ai/AIProvider";
 import { injectFailure } from "../services/ai/faults";
@@ -14,11 +16,11 @@ import { MockAIProvider } from "../services/ai/MockAIProvider";
 import { createProvider, detectProviderStatus, type ProviderStatus } from "../services/ai/providerFactory";
 import { cancelLine, isVoiceOutputAvailable, speakLine } from "../services/speech/tts";
 import { currentQuestion, initialState, reducer, type Action, type InterviewState } from "../state/interviewMachine";
-import type { Interview, InterviewConfig, InterviewQuestion, ProviderKind } from "../types/interview";
+import type { Interview, InterviewConfig, InterviewQuestion, ProviderKind, QuestionOrigin } from "../types/interview";
 import { buildContext, toAIConfig, toCurrentTurn } from "../utils/context";
 import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
-import { canAskFollowUp, isLastQuestion, threadDepth } from "../utils/policy";
+import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
 import { clearActiveInterview, saveActiveInterview, saveInterview, type ActiveInterview } from "../utils/storage";
 
@@ -31,6 +33,22 @@ interface NextQuestion {
   reason?: string;
   anchor?: string;
   source: ProviderKind;
+  origin?: QuestionOrigin;
+}
+
+/** Does a question match our company or role dataset? (for the "공개후기 기반" / "직무기반" badge) */
+async function originOf(text: string, config: InterviewConfig): Promise<QuestionOrigin | undefined> {
+  const company = getCompany(config.companyId);
+  const hit = company ? (await loadCompanyQuestions(company.id)).find((q) => similarity(q.text, text) >= 0.55) : undefined;
+  if (hit) return hit.basis;
+  const role = roleContextFor(config);
+  const pool = await questionPool(role).catch(() => []);
+  const match = pool.find((q) => {
+    const t = fillRole(q.text, role.title);
+    return t === text || similarity(t, text) >= 0.6;
+  });
+  if (!match || match.basis === "일반면접") return undefined;
+  return match.basis;
 }
 
 export interface TokenStatus {
@@ -100,7 +118,7 @@ export function useInterview() {
     if (!i) return;
     if ((voiceRef.current || force) && isVoiceOutputAvailable()) {
       setSpeaking(true);
-      const v = buildPanel(i.config.position)[seat].voice;
+      const v = buildPanel(i.config)[seat].voice;
       // Even if the browser's speech engine fails instantly, give people time to read the line.
       await Promise.all([speakLine(text, { voice: seat, lang: speechLang(i.config), pitch: v.pitch, rate: v.rate, voiceIndex: v.index }), force ? null : delay(Math.min(1500, 500 + text.length * 12))]);
       if (runRef.current === run) setSpeaking(false);
@@ -151,7 +169,7 @@ export function useInterview() {
         source = "mock";
       }
     }
-    return { gen, isFollowUp: false, parentId: null, source };
+    return { gen, isFollowUp: false, parentId: null, source, origin: await originOf(gen.question, interview.config) };
   }, []);
 
   const present = useCallback(
@@ -171,12 +189,8 @@ export function useInterview() {
         score: null,
         followUps: [],
         source: next.source,
+        ...(next.origin && !next.isFollowUp ? { origin: next.origin } : {}),
       };
-      const company = getCompany(stateRef.current.interview?.config.companyId);
-      if (company && !question.isFollowUp) {
-        const match = company.questions.find((q) => similarity(q.text, question.text) >= 0.55);
-        if (match) question.origin = match.basis;
-      }
       dispatch({ type: "QUESTION", question, now: Date.now() });
       const seat = seatFor(question.type, question.isFollowUp);
       // First question: the panel chair greets the candidate, as in a real interview.
@@ -240,12 +254,14 @@ export function useInterview() {
       const ctxBefore = buildContext({ ...before, questions: before.questions.map((x) => (x.id === q.id ? { ...x, answer: null } : x)) });
       const turn = toCurrentTurn(q, answer);
       const provider = providerRef.current;
-      const last = isLastQuestion(before);
+      const mainsDone = allMainsAsked(before);
       const forceFollowUp = forceFollowUpRef.current;
       const forceNext = forceNextRef.current;
       forceFollowUpRef.current = false;
       forceNextRef.current = false;
-      const wantFollowUp = !last && !forceNext && (forceFollowUp || canAskFollowUp(before, q));
+      const wantFollowUp = !forceNext && (forceFollowUp || canAskFollowUp(before, q));
+      // The last main question is answered and nothing left to dig into → wrap up.
+      const last = mainsDone && !wantFollowUp;
       const root = q.parentId ?? q.id;
 
       const stageTimers = [
@@ -256,7 +272,7 @@ export function useInterview() {
         const minThink = delay(1900);
         const analysisP = provider.analyzeAnswer(ctxBefore, turn);
         const followP = wantFollowUp ? provider.generateFollowUp(buildContext(before), turn, threadDepth(before, q)) : null;
-        const mainP = !last && !wantFollowUp ? nextMainQuestion(before) : null;
+        const mainP = !mainsDone && !wantFollowUp ? nextMainQuestion(before) : null;
         const [analysis, follow, main] = await Promise.all([analysisP, followP, mainP, minThink]);
         if (runRef.current !== run) return;
         dispatch({ type: "ANALYZED", questionId: q.id, analysis, score: answerScore(analysis), source: provider.kind });
@@ -286,6 +302,11 @@ export function useInterview() {
             anchor: decision.anchor,
             source: provider.kind,
           };
+        }
+        if (!next && mainsDone) {
+          await say(analysis.reaction, run, askedBy);
+          if (runRef.current === run) await complete(false, run);
+          return;
         }
         next ??= await nextMainQuestion(stateRef.current.interview!);
         if (runRef.current !== run) return;
@@ -360,6 +381,17 @@ export function useInterview() {
         providers: [],
       };
       dispatch({ type: "START", interview });
+      // A job we don't list ("방송 기술감독"): let the AI infer a practice profile during the intro.
+      const provider = providerRef.current;
+      if (provider.inferRole && !config.roleId && roleContextFor(config).kind !== "role") {
+        const run = runRef.current;
+        provider
+          .inferRole(config.position, config.language)
+          .then((customRole) => {
+            if (customRole && runRef.current === run) dispatch({ type: "PATCH_CONFIG", patch: { customRole } });
+          })
+          .catch(() => undefined);
+      }
       // Prefetch the opening question while the intro sequence plays.
       firstQuestionRef.current = nextMainQuestion(interview);
       firstQuestionRef.current.catch(() => undefined);
@@ -446,7 +478,7 @@ export function useInterview() {
         await say(ko ? `다시 여쭤보겠습니다. ${last.text}` : `Let me ask again. ${last.text}`, run, seatFor(last.type, last.isFollowUp));
       } else if (s.phase === "ANALYZING") {
         void processRef.current(last, last.answer!, run);
-      } else if (isLastQuestion(s.interview!)) {
+      } else if (allMainsAsked(s.interview!)) {
         await complete(false, run);
       } else {
         try {

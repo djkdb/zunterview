@@ -1,0 +1,124 @@
+{
+  "_comment": "Manual review applied on top of research/role-raw by scripts/build-role-data.ts. Raw research files stay unmodified for provenance.",
+  "aliases": {
+    "frontend": [
+      "프론트엔드",
+      "프론트",
+      "FE",
+      "FE 개발자",
+      "웹 프론트엔드 개발자",
+      "Frontend Engineer",
+      "Front-end Developer"
+    ],
+    "backend": [
+      "백엔드",
+      "BE",
+      "서버 개발자",
+      "Backend Engineer",
+      "Back-end Developer"
+    ],
+    "ai_engineer": [
+      "AI 엔지니어",
+      "AI Engineer",
+      "인공지능 엔지니어",
+      "LLM 엔지니어"
+    ],
+    "service_planner": [
+      "서비스 기획자",
+      "서비스 기획자 (PM)",
+      "웹기획자",
+      "앱 기획자"
+    ],
+    "ux_designer": [
+      "UX/UI 디자이너",
+      "UI/UX 디자이너",
+      "UXUI 디자이너"
+    ],
+    "accountant": [
+      "회계",
+      "회계 담당자",
+      "재무회계",
+      "회계팀",
+      "Accounting"
+    ],
+    "nurse": [
+      "간호",
+      "간호사",
+      "RN",
+      "병동 간호사",
+      "신규 간호사"
+    ],
+    "semi_process": [
+      "반도체 공정",
+      "반도체 공정 엔지니어",
+      "공정 엔지니어(반도체)",
+      "Fab 공정 엔지니어"
+    ],
+    "admin_civil_servant": [
+      "공무원",
+      "행정직 공무원",
+      "일반행정직",
+      "9급 공무원",
+      "7급 공무원"
+    ],
+    "brand_marketer": [
+      "BM",
+      "브랜드 매니저"
+    ],
+    "data_analyst": [
+      "데이터 애널리스트",
+      "데이터 애널",
+      "Data Analyst"
+    ],
+    "hrd": [
+      "HRD",
+      "HRD 담당자",
+      "교육 담당자",
+      "인재개발"
+    ]
+  },
+  "removeAliases": [],
+  "dropQuestions": [],
+  "reclassify": [],
+  "dropSourcesEverywhere": [
+    "happycampus",
+    "reportworld",
+    "happyhaksul",
+    "welldone",
+    "allreport"
+  ],
+  "demoteReviewSources": [
+    {
+      "urlIncludes": "jobkorea.co.kr/User/Qstn/AnswerWrite?qstnNo=15775",
+      "why": "current HR staff answering a Q&A, not a candidate's report"
+    },
+    {
+      "urlIncludes": "bufs.ac.kr/bbs/board.php?bo_table=diss_board&wr_id=1722",
+      "why": "2011 compiled list on a university board"
+    },
+    {
+      "urlIncludes": "community.linkareer.com/STEM_mentoring/2528066",
+      "why": "mentor list of commonly asked questions"
+    },
+    {
+      "urlIncludes": "brunch.co.kr/@jumi710/51",
+      "why": "writer's advice post about hiring"
+    },
+    {
+      "urlIncludes": "comento.kr/job-questions",
+      "why": "practitioner Q&A, not a first-hand review"
+    },
+    {
+      "urlIncludes": "community.linkareer.com/mento_",
+      "why": "mentor Q&A thread"
+    },
+    {
+      "urlIncludes": "dadoc.or.kr/377",
+      "why": "reporter's advice article"
+    },
+    {
+      "urlIncludes": "saramin.co.kr/career-information/job-interview-view",
+      "why": "practitioner job interview (career article), not a candidate report"
+    }
+  ]
+}

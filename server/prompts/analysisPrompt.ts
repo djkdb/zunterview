@@ -1,14 +1,18 @@
 import type { CurrentTurn, InterviewContext } from "../../shared/schemas";
 import { QUESTION_TYPE_LABEL } from "../../shared/labels";
+import { blueprintFor } from "../../shared/blueprints";
+import { roleContextFor } from "../../shared/roles";
 import { GROUNDING_RULES, describeConfig, interviewerIdentity, languageRule } from "./common";
 
 /** Scores a single answer with reasons grounded in the answer text. */
-export function analysisPrompt(ctx: InterviewContext, turn: CurrentTurn) {
+export async function analysisPrompt(ctx: InterviewContext, turn: CurrentTurn) {
+  const role = roleContextFor(ctx.config);
+  const bp = blueprintFor(role.archetype);
   const system = `${interviewerIdentity(ctx.config)}
 
 Your task: evaluate one answer for practice feedback. This is a mock interview for practice, not a hiring decision.
 
-Score each category 0-100 against the position and experience level:
+Score each category 0-100 against the position (${role.title}) and experience level:
 - relevance: does it answer the question that was asked?
 - logic: is the reasoning coherent and causal?
 - specificity: concrete situations, actions, tools, numbers — as actually stated.
@@ -26,6 +30,8 @@ STAR: set applicable=true for behavioral, project or experience questions. For e
 
 betterAnswer: describe the main problem, how to improve, and an illustrative example sentence. The example must not state new facts as if they were the candidate's — use [bracketed placeholders] for any number or detail the candidate did not give.
 
+roleSignal: on top of the six common scores, judge the role-specific signal for this job — "${bp.signal.label.ko}" (${bp.signal.label.en}) for ${role.title}. label = that signal's name in the candidate's language; note = one sentence on how the answer shows or lacks it, grounded in the answer. Use null when the answer gives nothing to judge it by. Do not change the numeric scores because of it.
+
 evidence: up to 3 short phrases copied verbatim from the answer. notFound: up to 3 things the answer did not mention.
 
 reaction: one natural spoken sentence the interviewer says before continuing — e.g. a brief acknowledgement for a strong answer, or a gentle nudge when the answer was vague. Do not reveal scores in it and do not ask a question in it.
@@ -34,7 +40,7 @@ ${GROUNDING_RULES}
 ${languageRule(ctx.config)}`;
 
   const user = `## Interview setup
-${describeConfig(ctx.config)}
+${await describeConfig(ctx.config)}
 
 ## Question [${QUESTION_TYPE_LABEL[turn.type]}${turn.isFollowUp ? ", follow-up" : ""}]
 ${turn.question}

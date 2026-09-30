@@ -51,7 +51,7 @@ function SheetSection({ no, title, children, delay = 0 }: { no: number; title: s
 export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onRetake, onHistory, onHome }: Props) {
   const [open, setOpen] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
-  const panel = useMemo(() => buildPanel(i.config.position), [i.config.position]);
+  const panel = useMemo(() => buildPanel(i.config), [i.config]);
   const scores = i.categoryScores!;
   const overall = i.overallScore ?? 0;
   const { strongest, weakest } = strongestAndWeakest(scores);
@@ -78,7 +78,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
     ["면접 일시", longDate(i.createdAt)],
     ["소요 시간", durationLabel(i.duration)],
     ["면접 위원", `${panel.center.name}(위원장) · ${panel.left.name} · ${panel.right.name}`],
-    ["답변 문항", `${i.questions.length} / ${i.config.questionLimit}문항${i.endedEarly ? " (조기 종료)" : ""}`],
+    ["답변 문항", `메인 ${i.questions.filter((q) => !q.isFollowUp).length} / ${i.config.questionLimit}문항 · 꼬리질문 ${i.questions.filter((q) => q.isFollowUp).length}${i.endedEarly ? " (조기 종료)" : ""}`],
   ];
 
   return (

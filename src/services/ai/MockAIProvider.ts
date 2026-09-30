@@ -21,7 +21,11 @@ import {
 import { clampScore, sanitizeAnalysis, sanitizeFollowUp } from "../../../shared/sanitize";
 import { CATEGORY_LABEL } from "../../../shared/labels";
 import { CATEGORY_KO } from "../../config/labelsKo";
-import { getCompany, questionsForTrack, type CompanyQuestionCategory } from "../../../shared/companies";
+import { getCompany, loadCompanyQuestions, questionsForTrack, type CompanyQuestionCategory } from "../../../shared/companies";
+import { blueprintFor, planInterview, TYPE_BUCKET } from "../../../shared/blueprints";
+import { roleContextFor, type RoleContext } from "../../../shared/roles";
+import { loadRoleProfile, questionPool, rankCandidates, typesFor } from "../../../shared/roleBank";
+import { fillSlots } from "../../../shared/korean";
 import { isDuplicateQuestion } from "../../utils/fingerprint";
 import { delay } from "../../utils/id";
 import type { AIProvider } from "./AIProvider";
@@ -35,16 +39,12 @@ import {
   type Localized,
 } from "./mock/questionBank";
 import { CLOSING, hash, reactionFor } from "./mock/phrases";
-import { extractMethods, extractTechs, josa, objectParticle, quoteAround, readSignals, topicPhrase, TOPICS, type Signals } from "./mock/signals";
+import { extractMethods, extractTechs, josa, objectParticle, quoteAround, readSignals, ROLE_TOPICS, topicPhrase, TOPICS, type Signals } from "./mock/signals";
 
 const L = (lang: Language, ko: string, en: string) => (lang === "ko" ? ko : en);
 
 /** Fills {var} and {var:을/를}-style slots (the particle is chosen to match the value). */
-const fill = (tpl: string, vars: Record<string, string>) =>
-  tpl.replace(/\{(\w+)(?::(을\/를|이\/가|은\/는|와\/과))?\}/g, (_, k: string, pair?: "을/를" | "이/가" | "은/는" | "와/과") => {
-    const v = vars[k] ?? "";
-    return pair ? v + josa(v, pair) : v;
-  });
+const fill = fillSlots;
 
 export class MockAIProvider implements AIProvider {
   readonly kind = "mock" as const;
@@ -85,28 +85,83 @@ export class MockAIProvider implements AIProvider {
       return { question: fill(item[lang], vars), type: "opening", intent: L(lang, "배경과 경험을 파악합니다.", "Understand background and experience.") };
     }
 
-    // Company interview mode: ask from the researched question bank in a realistic order.
+    // The job being interviewed for decides the plan (question types in order) and the bank.
+    const role = roleContextFor(config);
     const company = getCompany(config.companyId);
+    const plan = planInterview({ archetype: role.archetype, interviewType: config.interviewType, experience: config.experience, questionLimit: config.questionLimit, company: Boolean(company) });
+    const mainIndex = Math.min(ctx.progress.asked, plan.length - 1);
+    const planned = plan[mainIndex];
+    const seed = hash(asked.join("|") + config.position);
+
+    // Company + role interview: company questions for fit/motivation/culture, the role bank for the job.
     if (company && lang === "ko") {
-      const bank = questionsForTrack(company, config.companyTrack).filter((q) => !isDuplicateQuestion(q.text, asked));
-      const lastT = ctx.usedTypes[ctx.usedTypes.length - 1];
-      const n = ctx.usedTypes.length;
-      for (let i = 0; i < COMPANY_PLAN.length; i++) {
-        const type = COMPANY_PLAN[(n - 1 + i + COMPANY_PLAN.length) % COMPANY_PLAN.length];
-        if (type === lastT) continue;
-        const pool = bank.filter((q) => CATEGORY_TO_TYPE[q.category] === type);
-        if (pool.length) {
-          const q = pool[Math.floor(Math.random() * pool.length)];
-          return { question: q.text, type, intent: `${company.name} ${q.basis === "후기" ? "면접 후기에 보고된" : "인재상·사업 기반"} ${q.category} 질문` };
+      const bank = questionsForTrack(await loadCompanyQuestions(company.id), config.companyTrack).filter((q) => !isDuplicateQuestion(q.text, asked));
+      const bucket = TYPE_BUCKET[planned];
+      const wantCompany = planned === "company_understanding" || planned === "motivation" || bucket === "fit" || (bucket !== "job" && mainIndex % 2 === 1) || (bucket === "job" && mainIndex % 3 === 0);
+      if (wantCompany) {
+        const cats = COMPANY_CATEGORIES_FOR[bucket];
+        const pool = bank.filter((q) => cats.includes(q.category));
+        const pick = (pool.length ? pool : bank)[seed % Math.max(1, (pool.length ? pool : bank).length)];
+        if (pick) {
+          return { question: pick.text, type: CATEGORY_TO_TYPE[pick.category], intent: `${company.name} ${pick.basis === "후기" ? "공개 면접 후기 기반" : "인재상·공식자료 기반"} ${pick.category} 질문` };
         }
       }
     }
 
-    const mainCount = ctx.usedTypes.length; // approximate position in plan
-    const plan = TYPE_PLAN[config.interviewType];
+    // Job posting: verify a stated requirement against real experience (once or twice per interview).
+    const jdAsked = asked.filter((q) => q.includes("채용공고") || /job (?:description|posting)/i.test(q)).length;
+    const jdReqs = extractJdRequirements(config.jobDescription);
+    if (TYPE_BUCKET[planned] === "job" && jdAsked < Math.min(2, jdReqs.length) && mainIndex >= (config.interviewType === "technical" ? 1 : 2)) {
+      const req = jdReqs[jdAsked];
+      const q = L(lang, `채용공고에서 ${req}${josa(req, "을/를")} 요구하고 있는데, 실제 업무나 경험에서 어떻게 해 보셨나요?`, `The job posting asks for ${req}. How have you actually done that in your work or experience?`);
+      if (!isDuplicateQuestion(q, asked)) return { question: q, type: "experience", intent: L(lang, "채용공고의 요구 역량을 실제 경험으로 검증합니다.", "Verify a posted requirement against real experience.") };
+    }
+
+    // Deep dive: pick up something the candidate already said, so it feels like one conversation.
+    if (planned === "deep_dive" && earlierText.trim()) {
+      const q = fill(GENERAL.deep_dive[0][lang], vars);
+      if (!isDuplicateQuestion(q, asked)) return { question: q, type: "deep_dive", intent: intentFor("deep_dive", lang) };
+    }
+
+    // The role question bank: role → family → domain → common, filtered by type, level and repeats.
+    const pool = await questionPool(role).catch(() => []);
+    if (pool.length) {
+      const usedCategories = asked.map((a) => pool.find((p) => p.text === a || fill(p.text, { role: role.title }) === a)?.category).filter((c): c is NonNullable<typeof c> => Boolean(c));
+      const lastType = ctx.usedTypes[ctx.usedTypes.length - 1];
+      const ranked = rankCandidates(pool, {
+        ctx: role,
+        types: typesFor(planned).filter((t) => t !== lastType || t === planned),
+        difficulty: config.difficulty,
+        experience: config.experience,
+        language: lang,
+        asked,
+        usedCategories,
+        limit: 6,
+        seed,
+      });
+      if (ranked.length) {
+        const pick = ranked[seed % Math.min(3, ranked.length)];
+        return { question: pick.text, type: pick.q.type, intent: roleIntent(pick.q.type, role, lang) };
+      }
+    }
+
+    // English interviews: role-specific prompts built from the role profile's topics.
+    if (lang === "en") {
+      const profile = await loadRoleProfile(role).catch(() => null);
+      const topics = profile?.topics.en ?? [];
+      for (const [i, topic] of topics.entries()) {
+        const tpl = EN_TEMPLATES[TYPE_BUCKET[planned]][(i + mainIndex) % EN_TEMPLATES[TYPE_BUCKET[planned]].length];
+        const q = fill(tpl, { topic, role: role.titleEn });
+        if (!isDuplicateQuestion(q, asked)) return { question: q, type: planned === "opening" ? "role_specific" : planned, intent: roleIntent(planned, role, lang) };
+      }
+    }
+
+    // Last resort (bank unavailable or exhausted): the built-in general questions.
+    const mainCount = ctx.usedTypes.length;
+    const legacyPlan = TYPE_PLAN[config.interviewType];
     const lastType = ctx.usedTypes[ctx.usedTypes.length - 1];
     const order: QuestionType[] = [];
-    for (let i = 0; i < plan.length; i++) order.push(plan[(mainCount + i) % plan.length]);
+    for (let i = 0; i < legacyPlan.length; i++) order.push(legacyPlan[(mainCount + i) % legacyPlan.length]);
     // Don't ask for numbers the candidate just gave us.
     const recentlyQuantified = /\d/.test(ctx.history.slice(-2).map((h) => h.answer).join(" "));
     const candidatesTypes = order.filter(
@@ -119,9 +174,10 @@ export class MockAIProvider implements AIProvider {
         for (const kw of jdKeywords.slice(0, 3)) {
           for (const tpl of JD_TECHNICAL) pool.push({ ko: fill(tpl.ko, { jd: kw }), en: fill(tpl.en, { jd: kw }) });
         }
-        pool.push(...TECHNICAL[roleFamily(config.position)], ...TECHNICAL.general);
+        const techRole = ["tech_dev", "data_analytic", "product_planning", "design_creative", "marketing_growth"].includes(roleContextFor(config).archetype);
+        pool.push(...(techRole ? TECHNICAL[roleFamily(config.position)] : []), ...TECHNICAL.general);
       } else {
-        const items = GENERAL[type];
+        const items = GENERAL[type as keyof typeof GENERAL] ?? [];
         const tagged = items.filter((i) => !i.tags || i.tags.includes(config.interviewType));
         pool.push(...tagged, ...items);
       }
@@ -165,6 +221,10 @@ export class MockAIProvider implements AIProvider {
     const topic = s.topics[0];
     const action = s.star.action > 0;
     const opening = turn.type === "opening";
+    const role = roleContextFor(ctx.config);
+    const bp = blueprintFor(role.archetype);
+    const techish = role.archetype === "tech_dev" || role.archetype === "data_analytic";
+    const threadText = [...ctx.history.map((h) => h.answer), turn.answer].join("\n");
     const candidates: FollowUpDecision[] = [];
     const push = (question: Localized, type: QuestionType, reason: Localized, anchor = "") =>
       candidates.push({ needed: true, question: question[lang], type, reason: reason[lang], anchor });
@@ -184,6 +244,25 @@ export class MockAIProvider implements AIProvider {
     if (topic && (!action || s.chars < 40) && s.methods.length < 2) {
       const q = TOPIC_HOW[topic.id];
       if (q) push(q, "deep_dive", { ko: `'${topic.label.ko}'${josa(topic.label.ko, "을/를")} 언급했지만 해결 과정이 구체적으로 설명되지 않았습니다.`, en: `Mentions ${topic.label.en} but not how it was handled.` }, topicPhrase(turn.answer, topic.pattern));
+    }
+
+    // Hard (압박) interviews push back on a solid answer, the way this field's interviewers do.
+    if (ctx.config.difficulty === "hard" && depth === 0 && s.chars >= 45 && !s.teamOnly && !opening) {
+      const line = bp.pressure.find((p) => !isDuplicateQuestion(p[lang], asked));
+      if (line) push(line, "challenge", { ko: "압박 면접: 답변의 근거가 버티는지 확인합니다.", en: "Pressure round: test whether the answer holds up." });
+    }
+
+    // JD question → did that skill actually change a decision or result?
+    if (/채용공고|job posting/i.test(turn.question) && depth === 0) {
+      const tool = s.techs[0] ?? s.methods[0];
+      if (tool) {
+        push(
+          { ko: `그중 ${tool}${objectParticle(tool)} 활용해 실제 의사결정이나 결과를 바꾼 사례가 있었나요?`, en: `Was there a case where using ${tool} actually changed a decision or a result?` },
+          "deep_dive",
+          { ko: `채용공고 역량('${tool}')을 실제 성과와 연결해 확인합니다.`, en: `Tie the posted skill ('${tool}') to a real outcome.` },
+          tool,
+        );
+      }
     }
 
     // Hypothetical ("what would you do if…") answers get a stress-test, not "what did you do".
@@ -207,6 +286,25 @@ export class MockAIProvider implements AIProvider {
         turn.answer.match(/팀|우리|저희|\bwe\b|\bteam\b/i)?.[0] ?? "",
       );
     }
+
+    // 3b) Job-specific things the candidate mentioned (결산, 환자, 캠페인, 불량, 민원…).
+    // (In a self-introduction, the experience they named comes first — see rule 4.)
+    const roleTopic = opening && (s.project || s.roleClaim) ? undefined : ROLE_TOPICS.find((t) => t.pattern.test(turn.answer));
+    if (roleTopic && depth <= 1) {
+      const anchor = turn.answer.match(roleTopic.pattern)?.[0] ?? "";
+      push(roleTopic.ask, "deep_dive", { ko: `'${anchor}'${josa(anchor, "을/를")} 언급해 이 직무에서 중요한 판단 과정을 확인합니다.`, en: `Mentions '${anchor}' — probe the judgment this job depends on.` }, anchor);
+    }
+    // 3c) The field's own follow-up path (마케팅: 목표→타깃→채널→KPI, 회계: 기준→오류→처리…):
+    // ask for the first step the answer (or this thread) hasn't covered yet.
+    const chainStep = !opening && s.chars >= 25 ? bp.chain.find((st) => !st.covered.test(threadText) && !isDuplicateQuestion(st.ask[lang], asked)) : undefined;
+    const chainAsk = chainStep
+      ? () =>
+          push(chainStep.ask, chainStep.key === "result" ? "result" : "deep_dive", {
+            ko: `${bp.label.ko} 직무 관점에서 아직 답변에 나오지 않은 부분을 확인합니다.`,
+            en: `From a ${bp.label.en} angle, ask about what the answer hasn't covered yet.`,
+          })
+      : null;
+    if (chainAsk && !techish) chainAsk();
 
     // 4) Something they owned or built — real interviewers dig into it.
     if (depth === 0 && (s.roleClaim || s.project)) {
@@ -250,6 +348,9 @@ export class MockAIProvider implements AIProvider {
         tech,
       );
     }
+
+    // Engineers get the field's path after the more specific technical probes above.
+    if (chainAsk && techish) chainAsk();
 
     // 8) Too short to work with — ask them to expand (naturally, depending on the question).
     if (s.chars < 25) {
@@ -362,6 +463,7 @@ export class MockAIProvider implements AIProvider {
               example: L(lang, "“직접 경험은 없지만, 저라면 먼저 [확인할 지표]를 보고 [접근 방법]으로 원인을 좁혀 보겠습니다.”", "“I haven't done it myself, but I'd start by checking [metric] and narrow it down with [approach].”"),
             }
           : betterAnswerFor(worst, s),
+        roleSignal: roleSignalFor(ctx, turn.answer, s),
         evidence,
         notFound,
         reaction: s.dontKnow ? dontKnowReaction(ctx.config.persona, lang) : reactionFor(quality, ctx.config.persona, lang, seed),
@@ -410,16 +512,67 @@ export class MockAIProvider implements AIProvider {
 
 /* ───────────────────────────── copy helpers ──────────────────────────── */
 
-const COMPANY_PLAN: QuestionType[] = ["motivation", "deep_dive", "technical", "challenge", "reflection", "technical", "deep_dive"];
 const CATEGORY_TO_TYPE: Record<CompanyQuestionCategory, QuestionType> = {
-  기업이해: "motivation",
-  경험: "deep_dive",
+  기업이해: "company_understanding",
+  경험: "experience",
   인성: "reflection",
-  상황: "challenge",
-  "PT·토론": "challenge",
-  직무: "technical",
+  상황: "situational",
+  "PT·토론": "pt",
+  직무: "role_specific",
   기술: "technical",
 };
+
+/** Which company-bank categories fit each part of the plan. */
+const COMPANY_CATEGORIES_FOR: Record<"job" | "experience" | "situation" | "fit", CompanyQuestionCategory[]> = {
+  fit: ["기업이해", "인성"],
+  experience: ["경험", "인성"],
+  situation: ["상황", "PT·토론"],
+  job: ["직무", "기술", "PT·토론"],
+};
+
+/** English role prompts, built from the role profile's topics (the bank itself is Korean). */
+const EN_TEMPLATES: Record<"job" | "experience" | "situation" | "fit", string[]> = {
+  job: ["In a {role} role, how would you approach {topic}?", "Walk me through how you would handle {topic}.", "What do you pay most attention to when it comes to {topic}?"],
+  experience: ["Tell me about a time you worked on {topic}.", "What is the hardest {topic} problem you've dealt with, and what did you do?"],
+  situation: ["Suppose something went wrong with {topic} right before a deadline. What would you do first?", "If your manager and a client disagreed about {topic}, how would you handle it?"],
+  fit: ["What draws you to {topic} as part of a {role} role?", "What have you done to prepare yourself for {topic}?"],
+};
+
+/**
+ * Requirements stated in a job posting ("GA4 및 SQL 활용 능력", "B2B 영업 경험 우대")
+ * → short phrases to verify ("GA4 및 SQL 활용", "B2B 영업").
+ */
+export function extractJdRequirements(jd: string): string[] {
+  const out: string[] = [];
+  for (const raw of jd.split(/\n|[•·▪■◦\-*]\s|[,;]|(?<=[.])\s/)) {
+    const line = raw.replace(/^\s*(?:\d+[.)]|[-*•])\s*/, "").trim();
+    const m = line.match(/^(.{2,28}?)\s*(?:에\s?대한|관련|업무)?\s*(?:경험|능력|역량|지식|이해|활용\s?능력|가능자|가능|보유자|우대|자격증|숙련|역량 보유)/);
+    if (!m) continue;
+    const phrase = m[1].replace(/\s*(?:을|를|의|에|과|와|및)$/u, "").replace(/^(?:관련|유관)\s*/, "").trim();
+    if (phrase.length >= 2 && phrase.length <= 24 && !/^(?:해당|관련|직무|업무|원활한|우수한|뛰어난)$/.test(phrase)) out.push(phrase);
+  }
+  // Named tools come first ("React와 TypeScript"): they're the most concrete thing to verify.
+  const tools = [...extractTechs(jd), ...extractMethods(jd)].slice(0, 2);
+  const toolPhrase = tools.length === 2 ? `${tools[0]}${josa(tools[0], "와/과")} ${tools[1]}` : (tools[0] ?? "");
+  const rest = out.filter((o) => !tools.some((t) => o.includes(t)));
+  return [...new Set([toolPhrase, ...rest].filter(Boolean))].slice(0, 4);
+}
+
+/** "회계(재무회계) 직무의 실무 판단을 확인합니다." */
+function roleIntent(type: QuestionType, role: RoleContext, lang: Language): string {
+  const base = intentFor(type, lang);
+  if (lang !== "ko" || !role.family) return base;
+  return `${role.title} — ${base}`;
+}
+
+/** Role-specific feedback lens (회계 → 정확성·기준 준수, 간호 → 환자 안전·소통…). */
+function roleSignalFor(ctx: InterviewContext, answer: string, s: Signals): AnswerAnalysis["roleSignal"] {
+  if (s.dontKnow || s.chars < 25) return null;
+  const bp = blueprintFor(roleContextFor(ctx.config).archetype);
+  const lang = ctx.config.language;
+  const present = bp.signal.evidence.test(answer);
+  return { label: bp.signal.label[lang], note: (present ? bp.signal.present : bp.signal.missing)[lang] };
+}
 
 /** "쇼핑몰 프로젝트를 진행하면서", "결제 시스템을 만들면서", "현장실습에서" */
 function projectVerb(k: string): string {
@@ -456,12 +609,27 @@ const TOPIC_HOW: Record<string, Localized> = {
 function intentFor(type: QuestionType, lang: Language): string {
   const m: Record<QuestionType, Localized> = {
     opening: { ko: "배경과 경험을 파악합니다.", en: "Understand background." },
-    motivation: { ko: "지원 동기와 기업·직무 이해도를 확인합니다.", en: "Check motivation and company understanding." },
+    motivation: { ko: "지원 동기와 직무 선택의 이유를 확인합니다.", en: "Check motivation for the role." },
+    role_understanding: { ko: "직무를 얼마나 이해하고 있는지 확인합니다.", en: "Check understanding of the role." },
+    company_understanding: { ko: "지원 조직에 대한 이해도를 확인합니다.", en: "Check understanding of the organization." },
+    behavioral: { ko: "과거 행동으로 역량을 확인합니다.", en: "Assess competencies through past behavior." },
+    experience: { ko: "직무와 관련된 실제 경험을 확인합니다.", en: "Check real, role-related experience." },
     deep_dive: { ko: "구체적인 상황을 깊게 확인합니다.", en: "Dig into a concrete situation." },
+    situational: { ko: "실제 업무 상황에서의 판단을 봅니다.", en: "Test judgment in a realistic work situation." },
+    role_specific: { ko: "직무 실무 지식과 판단 기준을 확인합니다.", en: "Check practical job knowledge and judgment." },
     technical: { ko: "기술적 판단 기준을 확인합니다.", en: "Check technical decision-making." },
+    case: { ko: "사례를 구조적으로 풀어가는 방식을 봅니다.", en: "See how a case is reasoned through." },
+    numerical: { ko: "숫자와 지표를 다루는 감각을 확인합니다.", en: "Check comfort with numbers and metrics." },
+    analytical: { ko: "원인과 근거를 분석하는 방식을 봅니다.", en: "See how causes and evidence are analyzed." },
+    industry: { ko: "산업과 시장에 대한 관점을 확인합니다.", en: "Check perspective on the industry." },
+    leadership: { ko: "사람을 이끌고 영향을 주는 방식을 봅니다.", en: "See how the candidate leads and influences." },
+    communication: { ko: "설명하고 설득하는 방식을 봅니다.", en: "See how the candidate explains and persuades." },
+    ethics: { ko: "원칙과 윤리적 판단을 확인합니다.", en: "Check integrity and ethical judgment." },
     challenge: { ko: "예상치 못한 상황에서의 판단을 봅니다.", en: "Test judgment under a counter-scenario." },
     reflection: { ko: "경험에서 배운 점을 확인합니다.", en: "Check learning and self-awareness." },
     result: { ko: "성과와 임팩트를 검증합니다.", en: "Verify outcomes and impact." },
+    pt: { ko: "주제를 구조화해 발표하는 역량을 봅니다.", en: "See how a topic is structured and presented." },
+    debate: { ko: "근거를 들어 입장을 세우는 방식을 봅니다.", en: "See how a position is argued with evidence." },
   };
   return m[type][lang];
 }

@@ -25,7 +25,7 @@ export function CompanyPicker({ companyId, track, onChange }: Props) {
           <div>
             <p className="text-[16px] font-bold text-ink">{c.name}</p>
             <p className="text-[12px] text-muted">
-              {c.category} · {c.industry} · 예상 질문 {c.questions.length}개
+              {c.category} · {c.industry} · 연습 질문 {c.questionCount}개
             </p>
           </div>
           <div className="flex gap-1.5">
@@ -74,7 +74,7 @@ export function CompanyPicker({ companyId, track, onChange }: Props) {
     return (
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-dashed border-line-strong px-4 py-3.5">
         <p className="text-[14px] text-muted">
-          <b className="text-ink">일반 면접</b>으로 진행합니다. 기업을 고르면 그 기업의 인재상·전형·기출 기반 질문으로 면접합니다.
+          기업을 고르지 않아도 <b className="text-ink">직무 면접</b>으로 진행돼요. 기업을 고르면 그 기업의 인재상·전형·공개후기 기반 질문이 직무 질문과 함께 나옵니다.
         </p>
         <Button size="sm" variant="secondary" onClick={() => setBrowsing(true)}>
           기업 선택하기

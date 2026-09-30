@@ -2,7 +2,8 @@
  * The interview panel (다대일 면접). Fictional interviewers — the AI speaks
  * through whichever seat fits the kind of question being asked.
  */
-import type { QuestionType } from "../../shared/schemas";
+import type { CustomRole, QuestionType } from "../../shared/schemas";
+import { practitionerDept, roleContextFor } from "../../shared/roles";
 
 export type Seat = "left" | "center" | "right";
 
@@ -26,17 +27,18 @@ export interface PanelMember {
   voice: { pitch: number; rate: number; index: number };
 }
 
-export function departmentFor(position: string): string {
-  const p = position.toLowerCase();
-  if (/\bai\b|ml|data|데이터|인공지능/.test(p)) return "AI연구소";
-  if (/front|back|개발|engineer|developer|엔지니어|devops|ios|android/.test(p)) return "개발팀";
-  if (/product|pm|기획/.test(p)) return "서비스기획팀";
-  if (/design|디자인|ux/.test(p)) return "디자인팀";
-  if (/market|마케팅|마케터|growth|brand/.test(p)) return "마케팅팀";
-  return "현업부서";
+export interface JobRef {
+  position: string;
+  roleId?: string;
+  customRole?: CustomRole;
 }
 
-export function buildPanel(position: string): Record<Seat, PanelMember> {
+/** The practitioner's department for the job: "재무회계팀" for an accountant, "간호부" for a nurse. */
+export function departmentFor(job: string | JobRef): string {
+  return practitionerDept(roleContextFor(typeof job === "string" ? { position: job } : job));
+}
+
+export function buildPanel(job: string | JobRef): Record<Seat, PanelMember> {
   return {
     left: {
       seat: "left",
@@ -58,18 +60,25 @@ export function buildPanel(position: string): Record<Seat, PanelMember> {
       seat: "right",
       name: "박준호",
       title: "선임",
-      role: departmentFor(position),
+      role: departmentFor(job),
       look: { suit: "#4a4f58", shirt: "#e8eef6", tie: null, skin: "#efcfb2", hair: "#241e1a", hairStyle: "side", glasses: true },
       voice: { pitch: 1.0, rate: 1.06, index: 2 },
     },
   };
 }
 
-/** Which interviewer asks a given question — like a real panel taking turns. */
+/**
+ * Which interviewer asks a given question — like a real panel taking turns:
+ * HR asks about motivation, values and behavior; the practitioner asks the job
+ * questions (for every job, not just engineers); the chair opens, presses and closes.
+ */
+const PRACTITIONER = new Set<QuestionType>(["technical", "role_specific", "case", "numerical", "analytical", "industry", "role_understanding", "pt"]);
+const HR = new Set<QuestionType>(["motivation", "reflection", "behavioral", "ethics", "communication", "company_understanding"]);
+
 export function seatFor(type: QuestionType, isFollowUp: boolean): Seat {
-  if (type === "technical") return "right";
-  if (isFollowUp) return type === "deep_dive" ? "right" : "center";
-  if (type === "reflection" || type === "motivation") return "left";
+  if (PRACTITIONER.has(type)) return "right";
+  if (isFollowUp) return type === "deep_dive" || type === "experience" ? "right" : "center";
+  if (HR.has(type)) return "left";
   return "center";
 }
 

@@ -1,4 +1,6 @@
 import type {
+  CustomRole,
+  Language,
   AnswerAnalysis,
   CurrentTurn,
   FinalReport,
@@ -21,6 +23,8 @@ export interface AIProvider {
   generateFollowUp(ctx: InterviewContext, turn: CurrentTurn, depth: number): Promise<FollowUpDecision>;
   analyzeAnswer(ctx: InterviewContext, turn: CurrentTurn): Promise<AnswerAnalysis>;
   generateFinalReport(req: ReportRequest): Promise<FinalReport>;
+  /** RoleResolver: a practice profile for a job title outside the taxonomy (AI mode only). */
+  inferRole?(position: string, language: Language): Promise<CustomRole | null>;
 }
 
 export type AIErrorKind = "network" | "timeout" | "server" | "parse" | "unavailable" | "refusal" | "rate_limited" | "injected";

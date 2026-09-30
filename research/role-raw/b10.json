@@ -1,0 +1,6172 @@
+{
+ "batch": "b10",
+ "sources": [
+  {
+   "id": "b10s1",
+   "title": "널스링크 커뮤니티 — 2025년 창원 지역 종합병원 간호사 면접 후기",
+   "url": "https://nurse-link.co.kr/community/interviewstory/105389087",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "b10s2",
+   "title": "널스링크 커뮤니티 — 2025년 간호사 최종합격 후기(용인 소재 대학병원, 1·2차 면접 질문)",
+   "url": "https://nurse-link.co.kr/community/successstory/111422347",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "b10s3",
+   "title": "NCS 기반 채용 직무 설명자료 — 계약직(간호사): 임상간호 능력단위·필요지식·태도",
+   "url": "https://media-cdn.linkareer.com/activity_manager/applications/562533",
+   "type": "ncs"
+  },
+  {
+   "id": "b10s4",
+   "title": "NCS 기반 채용 직무 설명자료 — 행정직(세분류 병원행정): 원무·진료비관리·심사청구·고객관리",
+   "url": "https://media-cdn.linkareer.com/activity_manager/applications/554264",
+   "type": "ncs",
+   "year": 2025
+  },
+  {
+   "id": "b10s5",
+   "title": "NCS 기반 직무기술서 — 사무원(병원행정)·물리치료사 (공공 의료기관 채용)",
+   "url": "https://media-cdn.linkareer.com/activity_manager/applications/565963",
+   "type": "ncs"
+  },
+  {
+   "id": "b10s6",
+   "title": "대한간호협회 — 간호사 취업분야 안내",
+   "url": "https://www.koreanursing.or.kr/kna_ko/130/subview.do",
+   "type": "job_description"
+  },
+  {
+   "id": "b10s7",
+   "title": "대한영양사협회 — 영양사란(업무 범위)",
+   "url": "https://www.dietitian.or.kr/work/introduction/ki_about.do",
+   "type": "job_description"
+  },
+  {
+   "id": "b10s8",
+   "title": "대한영양사협회 — 임상영양사 소개",
+   "url": "https://www.dietitian.or.kr/work/introduction/ki_clinical.do",
+   "type": "job_description"
+  },
+  {
+   "id": "b10s9",
+   "title": "대한작업치료사협회 — 작업치료의 정의와 작업치료사의 직무",
+   "url": "https://www.kaot.org/pds/definition.jsp",
+   "type": "job_description"
+  },
+  {
+   "id": "b10s10",
+   "title": "대한방사선사협회 — 방사선사 윤리강령",
+   "url": "https://krta.or.kr/page/assoc/coe.php",
+   "type": "other_public"
+  },
+  {
+   "id": "b10s11",
+   "title": "널스링크 커뮤니티 — 간호사 면접 진행 방식과 빈출 질문 주제 정리(수험생 정리글)",
+   "url": "https://nurse-link.co.kr/community/free/122325282",
+   "type": "other_public",
+   "year": 2025
+  }
+ ],
+ "profiles": [
+  {
+   "id": "nurse",
+   "aliases": [
+    "간호사",
+    "병동 간호사",
+    "임상간호사",
+    "신규간호사",
+    "RN",
+    "Registered Nurse",
+    "Staff Nurse",
+    "대학병원 간호사"
+   ],
+   "skills": [
+    "환자 사정·활력징후 관찰",
+    "투약 간호(5R)",
+    "감염관리·격리",
+    "응급상황 대응(CPR)",
+    "SBAR 보고·인수인계",
+    "간호기록",
+    "환자·보호자 교육"
+   ],
+   "responsibilities": [
+    "담당 환자 상태 관찰과 간호 수행",
+    "처방에 따른 투약·주사·수혈",
+    "낙상·욕창·감염 예방 활동",
+    "의사 보고와 다직종 협업",
+    "교대 시 인수인계와 간호기록",
+    "환자·보호자 교육과 퇴원 지도"
+   ],
+   "keywords": [
+    "투약",
+    "5R",
+    "활력징후",
+    "SBAR",
+    "인수인계",
+    "낙상",
+    "욕창",
+    "감염관리",
+    "격리",
+    "수혈",
+    "CPR",
+    "3교대",
+    "프리셉터",
+    "간호기록",
+    "환자안전"
+   ],
+   "topics": {
+    "role": [
+     "투약 안전",
+     "환자 상태 변화 조기 발견",
+     "감염관리",
+     "낙상·욕창 예방",
+     "인수인계",
+     "보호자 소통",
+     "교대 근무 적응"
+    ],
+    "scenario": [
+     "투약 오류 발견",
+     "환자 상태 급변",
+     "보호자 항의",
+     "선배와의 갈등",
+     "야간 단독 판단 상황",
+     "원하지 않는 부서 배치"
+    ],
+    "result": [
+     "환자안전 사건 감소",
+     "정확한 보고·기록",
+     "환자 교육 이해도",
+     "신규 적응 기간"
+    ],
+    "en": [
+     "medication safety",
+     "patient assessment",
+     "infection control",
+     "fall prevention",
+     "SBAR handoff",
+     "shift work"
+    ]
+   },
+   "sources": [
+    "b10s1",
+    "b10s2",
+    "b10s3",
+    "b10s6",
+    "b10s11"
+   ]
+  },
+  {
+   "id": "nurse_aide",
+   "aliases": [
+    "간호조무사",
+    "간호보조",
+    "간조",
+    "의원 간호조무사",
+    "요양병원 간호조무사",
+    "Nursing Assistant",
+    "Nurse Aide"
+   ],
+   "skills": [
+    "활력징후 측정",
+    "진료·처치 보조",
+    "멸균·소독 관리",
+    "환자 이동·체위 변경 보조",
+    "접수·수납 보조",
+    "보고 체계 준수"
+   ],
+   "responsibilities": [
+    "간호사·의사 지도 아래 간호 보조",
+    "활력징후 측정과 이상 보고",
+    "처치실·주사실 준비와 정리",
+    "물품·멸균 관리",
+    "환자 이동·위생·식사 보조",
+    "의원 접수와 안내"
+   ],
+   "keywords": [
+    "간호보조",
+    "활력징후",
+    "멸균",
+    "소독",
+    "처치 보조",
+    "환자 이동",
+    "체위 변경",
+    "의료폐기물",
+    "접수",
+    "보고",
+    "업무 범위"
+   ],
+   "topics": {
+    "role": [
+     "업무 범위 준수",
+     "정확한 측정과 보고",
+     "감염 예방",
+     "환자 이동 안전",
+     "의원 운영 보조"
+    ],
+    "scenario": [
+     "범위를 넘는 지시",
+     "측정값 이상",
+     "식사 중 사레",
+     "대기 환자 불만",
+     "물품 부족"
+    ],
+    "result": [
+     "보고 누락 방지",
+     "물품·멸균 관리 정확도",
+     "환자 안전사고 예방"
+    ],
+    "en": [
+     "nursing assistance",
+     "vital signs",
+     "sterilization",
+     "patient transfer",
+     "scope of practice"
+    ]
+   },
+   "sources": [
+    "b10s3"
+   ]
+  },
+  {
+   "id": "physician",
+   "aliases": [
+    "의사",
+    "전공의",
+    "레지던트",
+    "인턴",
+    "수련의",
+    "Resident",
+    "Physician",
+    "Medical Doctor"
+   ],
+   "skills": [
+    "문진·진찰·감별진단",
+    "환자·보호자 설명과 동의",
+    "협진 의뢰",
+    "당직 우선순위 판단",
+    "의료윤리 판단",
+    "의무기록 작성"
+   ],
+   "responsibilities": [
+    "입원·외래 환자 진료와 처방",
+    "검사 결과 판독과 치료 계획 수립",
+    "타과 협진과 전원 의뢰",
+    "수술·시술 동의서 설명",
+    "당직 대응",
+    "간호사 등 다직종과 협업"
+   ],
+   "keywords": [
+    "전공의",
+    "당직",
+    "협진",
+    "동의서",
+    "설명의무",
+    "나쁜 소식 전하기",
+    "감별진단",
+    "인계",
+    "의료윤리",
+    "수련",
+    "교수",
+    "회진"
+   ],
+   "topics": {
+    "role": [
+     "환자 설명과 동의",
+     "협진",
+     "당직 우선순위",
+     "의료 윤리",
+     "수련과 진료의 균형"
+    ],
+    "scenario": [
+     "보호자의 진단 비공개 요청",
+     "지시와 판단의 충돌",
+     "병동 동시 호출",
+     "환자 상태 악화 책임 추궁"
+    ],
+    "result": [
+     "환자 이해도",
+     "합병증·재입원",
+     "재원일수",
+     "협진 회신 시간"
+    ],
+    "en": [
+     "informed consent",
+     "breaking bad news",
+     "consultation",
+     "on-call triage",
+     "medical ethics"
+    ]
+   }
+  },
+  {
+   "id": "pharmacist",
+   "aliases": [
+    "약사",
+    "병원약사",
+    "약제부 약사",
+    "근무약사",
+    "개국약사",
+    "Pharmacist",
+    "Clinical Pharmacist"
+   ],
+   "skills": [
+    "처방 검토",
+    "조제·검수",
+    "복약지도",
+    "약물 상호작용·중복 확인",
+    "고위험 약물 관리",
+    "의약품 재고 관리"
+   ],
+   "responsibilities": [
+    "처방전 검토와 처방 의사 문의",
+    "조제와 이중 검수",
+    "환자 복약지도",
+    "병동 약품 공급·관리",
+    "약물 이상반응 모니터링",
+    "일반의약품 상담"
+   ],
+   "keywords": [
+    "처방 검토",
+    "처방 문의",
+    "조제",
+    "복약지도",
+    "중복 투약",
+    "상호작용",
+    "고위험 약물",
+    "마약류",
+    "유효기간",
+    "이상반응",
+    "DUR"
+   ],
+   "topics": {
+    "role": [
+     "처방 오류 의심 대응",
+     "복약지도",
+     "고위험 약물 관리",
+     "조제 오류 예방",
+     "재고 관리"
+    ],
+    "scenario": [
+     "과량 처방 의심",
+     "조제 오류 뒤늦게 발견",
+     "처방의 연락 불가",
+     "복약지도 거부"
+    ],
+    "result": [
+     "처방 중재 건수",
+     "조제 오류율",
+     "복약 순응도",
+     "폐기 약품 감소"
+    ],
+    "en": [
+     "prescription review",
+     "patient counseling",
+     "drug interaction",
+     "dispensing error",
+     "high-alert medication"
+    ]
+   }
+  },
+  {
+   "id": "hospital_admin",
+   "aliases": [
+    "병원행정",
+    "원무",
+    "원무과",
+    "원무팀",
+    "병원 사무직",
+    "보험심사",
+    "Hospital Administrator",
+    "Patient Accounts"
+   ],
+   "skills": [
+    "외래·입퇴원 원무",
+    "진료비 산정·수납",
+    "보험 청구·삭감 대응",
+    "제증명 발급",
+    "민원 응대",
+    "병원 경영 자료 관리"
+   ],
+   "responsibilities": [
+    "외래 접수와 입퇴원 수속",
+    "진료비 계산·수납·정산",
+    "진료비 심사청구와 이의신청",
+    "진단서 등 제증명 발급",
+    "환자 민원 처리",
+    "원무 통계와 경영 지원"
+   ],
+   "keywords": [
+    "원무",
+    "접수",
+    "수납",
+    "진료비",
+    "급여",
+    "비급여",
+    "심사청구",
+    "삭감",
+    "제증명",
+    "초진",
+    "재진",
+    "민원",
+    "시재",
+    "건강보험"
+   ],
+   "topics": {
+    "role": [
+     "진료비 관리",
+     "심사청구",
+     "입퇴원 원무",
+     "제증명",
+     "고객 민원"
+    ],
+    "scenario": [
+     "진료비 항의",
+     "시재 불일치",
+     "청구 삭감",
+     "보험 자격 미확인 환자",
+     "전산 장애"
+    ],
+    "result": [
+     "삭감률",
+     "수납 대기 시간",
+     "민원 처리 시간",
+     "미수금"
+    ],
+    "en": [
+     "patient registration",
+     "medical billing",
+     "insurance claims",
+     "claim denial",
+     "customer complaints"
+    ]
+   },
+   "sources": [
+    "b10s4",
+    "b10s5"
+   ]
+  },
+  {
+   "id": "medical_coordinator",
+   "aliases": [
+    "병원 코디네이터",
+    "상담실장",
+    "상담 코디네이터",
+    "치과 코디네이터",
+    "피부과 코디",
+    "Medical Coordinator",
+    "Patient Coordinator"
+   ],
+   "skills": [
+    "진료 상담",
+    "예약·동선 관리",
+    "비급여 비용 안내",
+    "고객 관리·사후 연락",
+    "불만 응대",
+    "부서 간 일정 조율"
+   ],
+   "responsibilities": [
+    "내원 고객 응대와 진료 상담",
+    "예약 관리와 진료 흐름 조정",
+    "진료비·치료 계획 안내",
+    "시술 후 사후 관리 연락",
+    "고객 불만 처리",
+    "재방문 관리"
+   ],
+   "keywords": [
+    "상담",
+    "예약",
+    "대기",
+    "비급여",
+    "치료 계획",
+    "사후 관리",
+    "재방문",
+    "전환율",
+    "불만 응대",
+    "의료광고",
+    "고객 관리"
+   ],
+   "topics": {
+    "role": [
+     "상담과 신뢰",
+     "예약·흐름 관리",
+     "비용 안내",
+     "사후 관리",
+     "상담 범위"
+    ],
+    "scenario": [
+     "시술 결과 불만 환불 요구",
+     "진료 지연",
+     "노쇼 반복",
+     "실적 압박"
+    ],
+    "result": [
+     "상담 후 예약 전환율",
+     "재방문율",
+     "대기 시간",
+     "불만 건수"
+    ],
+    "en": [
+     "patient counseling",
+     "appointment scheduling",
+     "customer retention",
+     "cost explanation"
+    ]
+   }
+  },
+  {
+   "id": "physical_therapist",
+   "aliases": [
+    "물리치료사",
+    "PT",
+    "재활치료사",
+    "도수치료사",
+    "Physical Therapist",
+    "Physiotherapist"
+   ],
+   "skills": [
+    "물리치료 평가",
+    "운동치료",
+    "전기·온열·광선 치료",
+    "신경계·정형계 재활",
+    "보조기·의지 훈련",
+    "환자 교육"
+   ],
+   "responsibilities": [
+    "환자 평가와 치료 계획 수립",
+    "운동치료와 기능훈련",
+    "물리적 인자 치료 적용",
+    "보조기·의지 착용 훈련",
+    "치료 기록과 경과 평가",
+    "치료실 안전·장비 관리"
+   ],
+   "keywords": [
+    "운동치료",
+    "전기치료",
+    "온열치료",
+    "금기증",
+    "적응증",
+    "신경계",
+    "정형계",
+    "보조기",
+    "의지",
+    "기능훈련",
+    "ROM",
+    "낙상 예방",
+    "홈 프로그램"
+   ],
+   "topics": {
+    "role": [
+     "평가와 치료 계획",
+     "금기증 확인",
+     "질환별 접근",
+     "치료실 안전",
+     "경과 측정"
+    ],
+    "scenario": [
+     "치료 중 통증 악화",
+     "회복 정체",
+     "과다 환자 배정",
+     "처방 범위 밖 요구"
+    ],
+    "result": [
+     "기능 평가 점수 변화",
+     "치료 목표 달성",
+     "재활 기간"
+    ],
+    "en": [
+     "therapeutic exercise",
+     "physical modalities",
+     "rehabilitation",
+     "contraindications",
+     "outcome measures"
+    ]
+   },
+   "sources": [
+    "b10s5"
+   ]
+  },
+  {
+   "id": "occupational_therapist",
+   "aliases": [
+    "작업치료사",
+    "OT",
+    "재활치료사",
+    "감각통합치료사",
+    "연하재활",
+    "Occupational Therapist"
+   ],
+   "skills": [
+    "작업수행 평가",
+    "일상생활활동(ADL) 훈련",
+    "인지재활",
+    "연하재활",
+    "감각통합",
+    "환경수정·보조도구"
+   ],
+   "responsibilities": [
+    "상담과 평가",
+    "일상생활 활동 분석과 훈련",
+    "감각·운동·인지 기능 치료",
+    "환경 수정과 보조도구 적용",
+    "보호자 교육",
+    "치료 목표 설정과 경과 기록"
+   ],
+   "keywords": [
+    "작업",
+    "ADL",
+    "일상생활",
+    "인지재활",
+    "연하",
+    "감각통합",
+    "보조도구",
+    "환경수정",
+    "상지",
+    "아동",
+    "치매",
+    "목표 설정"
+   ],
+   "topics": {
+    "role": [
+     "작업 중심 평가",
+     "ADL 훈련",
+     "인지·연하 재활",
+     "환경 수정",
+     "보호자 협력"
+    ],
+    "scenario": [
+     "활동 참여 거부",
+     "보호자와 목표 불일치",
+     "목표 미달성",
+     "치료 시간 축소 압박"
+    ],
+    "result": [
+     "ADL 독립 수준",
+     "목표 달성 정도",
+     "퇴원 후 생활 적응"
+    ],
+    "en": [
+     "occupational performance",
+     "activities of daily living",
+     "cognitive rehabilitation",
+     "home modification"
+    ]
+   },
+   "sources": [
+    "b10s9"
+   ]
+  },
+  {
+   "id": "clinical_lab_scientist",
+   "aliases": [
+    "임상병리사",
+    "진단검사 임상병리사",
+    "검사실",
+    "채혈",
+    "생리기능검사",
+    "Clinical Laboratory Scientist",
+    "Medical Technologist"
+   ],
+   "skills": [
+    "채혈·검체 관리",
+    "진단검사 분석",
+    "정도관리",
+    "위급값 보고",
+    "생리기능검사",
+    "생물안전"
+   ],
+   "responsibilities": [
+    "채혈과 검체 접수·처리",
+    "검사 장비 운영과 결과 분석",
+    "내부·외부 정도관리",
+    "위급값 보고",
+    "심전도·폐기능 등 생리기능검사",
+    "검사실 감염·안전 관리"
+   ],
+   "keywords": [
+    "채혈",
+    "검체",
+    "라벨링",
+    "용혈",
+    "정도관리",
+    "QC",
+    "위급값",
+    "재검",
+    "TAT",
+    "생리기능검사",
+    "생물안전"
+   ],
+   "topics": {
+    "role": [
+     "검체 식별",
+     "정도관리",
+     "위급값 보고",
+     "검사 결과 신뢰성",
+     "검사실 안전"
+    ],
+    "scenario": [
+     "검체 뒤바뀜 의심",
+     "QC 이탈",
+     "응급 결과 재촉",
+     "소아 채혈"
+    ],
+    "result": [
+     "재검률",
+     "결과 보고 시간",
+     "검체 불량률"
+    ],
+    "en": [
+     "specimen handling",
+     "quality control",
+     "critical value",
+     "turnaround time",
+     "biosafety"
+    ]
+   }
+  },
+  {
+   "id": "radiologic_technologist",
+   "aliases": [
+    "방사선사",
+    "영상의학과 방사선사",
+    "CT 방사선사",
+    "MRI 방사선사",
+    "Radiologic Technologist",
+    "Radiographer"
+   ],
+   "skills": [
+    "일반촬영·CT·MRI",
+    "촬영 조건 설정",
+    "피폭 관리",
+    "조영제 검사 보조",
+    "환자 자세·안전",
+    "영상 품질 관리"
+   ],
+   "responsibilities": [
+    "처방에 따른 영상 촬영",
+    "촬영 전 환자 확인과 금기 확인",
+    "환자·종사자 피폭 관리",
+    "조영제 검사 시 관찰과 대응",
+    "영상 품질 확인과 재촬영 판단",
+    "장비 점검"
+   ],
+   "keywords": [
+    "촬영",
+    "CT",
+    "MRI",
+    "피폭",
+    "차폐",
+    "조영제",
+    "금속",
+    "임신 확인",
+    "재촬영",
+    "영상 품질",
+    "선량"
+   ],
+   "topics": {
+    "role": [
+     "환자 확인",
+     "피폭 최소화",
+     "조영제 안전",
+     "MRI 안전",
+     "영상 품질"
+    ],
+    "scenario": [
+     "조영제 이상반응",
+     "처방 부위 의심",
+     "보호자 동반 요청",
+     "촬영 거부"
+    ],
+    "result": [
+     "재촬영률",
+     "검사 대기일",
+     "피폭선량 관리"
+    ],
+    "en": [
+     "radiography",
+     "radiation protection",
+     "contrast safety",
+     "image quality"
+    ]
+   },
+   "sources": [
+    "b10s10"
+   ]
+  },
+  {
+   "id": "dental_hygienist",
+   "aliases": [
+    "치과위생사",
+    "치위생사",
+    "덴탈 하이지니스트",
+    "Dental Hygienist"
+   ],
+   "skills": [
+    "스케일링",
+    "구강보건교육",
+    "예방처치",
+    "진료 협조",
+    "감염관리·멸균",
+    "환자 상담"
+   ],
+   "responsibilities": [
+    "치석 제거와 예방처치",
+    "구강보건교육",
+    "진료 보조와 준비",
+    "기구 멸균·보관",
+    "구강검진 결과 안내",
+    "정기 검진 관리"
+   ],
+   "keywords": [
+    "스케일링",
+    "치석",
+    "구강보건교육",
+    "칫솔질",
+    "불소",
+    "예방처치",
+    "진료 협조",
+    "멸균",
+    "리콜",
+    "치주"
+   ],
+   "topics": {
+    "role": [
+     "예방처치",
+     "구강보건교육",
+     "진료 협조",
+     "감염관리",
+     "치료 상담"
+    ],
+    "scenario": [
+     "출혈 증가",
+     "치료비 부담으로 미룸",
+     "진료 시간 단축 압박",
+     "기록 변경 요구"
+    ],
+    "result": [
+     "정기 검진 재내원",
+     "교육 후 구강위생 개선"
+    ],
+    "en": [
+     "scaling",
+     "oral health education",
+     "preventive care",
+     "infection control"
+    ]
+   }
+  },
+  {
+   "id": "dietitian",
+   "aliases": [
+    "영양사",
+    "임상영양사",
+    "급식 영양사",
+    "학교 영양사",
+    "위탁급식 영양사",
+    "Dietitian",
+    "Clinical Dietitian"
+   ],
+   "skills": [
+    "식단 작성",
+    "식재료 검수",
+    "위생관리(HACCP)",
+    "영양 평가·상담",
+    "치료식 관리",
+    "급식 원가 관리"
+   ],
+   "responsibilities": [
+    "식단 작성과 검식·배식 관리",
+    "식재료 발주·검수",
+    "조리 종사자 위생 교육",
+    "환자 영양판정과 영양상담",
+    "알레르기·치료식 대체식 관리",
+    "급식 운영 일지와 원가 관리"
+   ],
+   "keywords": [
+    "식단",
+    "검수",
+    "검식",
+    "배식",
+    "HACCP",
+    "위생",
+    "잔반",
+    "치료식",
+    "영양판정",
+    "영양상담",
+    "알레르기",
+    "단가",
+    "식중독"
+   ],
+   "topics": {
+    "role": [
+     "식단과 원가",
+     "위생관리",
+     "영양판정과 상담",
+     "대체식",
+     "급식 만족도"
+    ],
+    "scenario": [
+     "이물 발견",
+     "식중독 의심",
+     "치료식 거부",
+     "식재료 단가 상승"
+    ],
+    "result": [
+     "잔반량",
+     "만족도",
+     "식재료비 비율",
+     "영양 상태 개선"
+    ],
+    "en": [
+     "menu planning",
+     "food safety",
+     "nutrition assessment",
+     "therapeutic diet",
+     "food cost"
+    ]
+   },
+   "sources": [
+    "b10s7",
+    "b10s8"
+   ]
+  },
+  {
+   "id": "public_health_officer",
+   "aliases": [
+    "보건직",
+    "보건직 공무원",
+    "보건소",
+    "보건행정",
+    "지방보건직",
+    "Public Health Officer"
+   ],
+   "skills": [
+    "감염병 대응",
+    "예방접종 관리",
+    "건강증진 사업 기획",
+    "방문 건강관리",
+    "공중위생 점검",
+    "민원 행정"
+   ],
+   "responsibilities": [
+    "감염병 신고 접수와 역학조사 지원",
+    "예방접종과 백신 관리",
+    "금연·만성질환 등 건강증진 사업",
+    "방문 건강관리",
+    "공중위생업소 점검",
+    "보건 민원과 행정 업무"
+   ],
+   "keywords": [
+    "보건소",
+    "감염병",
+    "역학조사",
+    "예방접종",
+    "콜드체인",
+    "건강증진",
+    "금연",
+    "만성질환",
+    "방문건강관리",
+    "공중위생",
+    "민원",
+    "지역보건"
+   ],
+   "topics": {
+    "role": [
+     "감염병 대응",
+     "건강증진 사업",
+     "방문 건강관리",
+     "공중위생",
+     "보건 행정"
+    ],
+    "scenario": [
+     "집단 발병 신고",
+     "접종 이상반응 항의",
+     "대상자 급증",
+     "예산 축소"
+    ],
+    "result": [
+     "관리율",
+     "참여 지속률",
+     "건강 행태 변화"
+    ],
+    "en": [
+     "communicable disease control",
+     "immunization",
+     "health promotion",
+     "community health"
+    ]
+   },
+   "sources": [
+    "b10s6"
+   ]
+  },
+  {
+   "id": "social_worker",
+   "aliases": [
+    "사회복지사",
+    "사회복지 전담공무원",
+    "복지관 사회복지사",
+    "사례관리자",
+    "Social Worker"
+   ],
+   "skills": [
+    "욕구 사정",
+    "사례관리",
+    "자원 연계",
+    "프로그램 기획·평가",
+    "후원 개발",
+    "기록·보고"
+   ],
+   "responsibilities": [
+    "초기 상담과 욕구 사정",
+    "사례관리 계획과 점검",
+    "공공·민간 자원 연계",
+    "복지 프로그램 기획·운영",
+    "후원자 관리",
+    "사업 보고와 정산"
+   ],
+   "keywords": [
+    "사례관리",
+    "욕구 사정",
+    "자원 연계",
+    "자기결정권",
+    "비밀보장",
+    "복지관",
+    "후원",
+    "사례회의",
+    "욕구조사",
+    "사각지대"
+   ],
+   "topics": {
+    "role": [
+     "사례관리",
+     "자원 연계",
+     "프로그램 기획",
+     "윤리적 딜레마",
+     "기록과 정산"
+    ],
+    "scenario": [
+     "기준 미달 위기가정",
+     "사적 연락",
+     "정원 초과 신청",
+     "이용자 감소"
+    ],
+    "result": [
+     "사례 목표 달성",
+     "연계 성공",
+     "이용자 변화"
+    ],
+    "en": [
+     "case management",
+     "needs assessment",
+     "resource linkage",
+     "program evaluation"
+    ]
+   }
+  },
+  {
+   "id": "care_manager",
+   "aliases": [
+    "요양 관리자",
+    "요양원 사회복지사",
+    "재가복지 관리자",
+    "센터장",
+    "돌봄 코디네이터",
+    "Care Manager"
+   ],
+   "skills": [
+    "케어플랜 수립",
+    "요양보호사 배치·관리",
+    "노인학대 예방",
+    "안전사고 관리",
+    "보호자 소통",
+    "기관 평가 대응"
+   ],
+   "responsibilities": [
+    "장기요양 수급자 급여 계획",
+    "요양보호사 일정 배치와 교육",
+    "낙상·욕창 등 안전 관리",
+    "학대 예방과 인권 점검",
+    "보호자 상담과 상태 공유",
+    "기록·평가 관리"
+   ],
+   "keywords": [
+    "장기요양",
+    "케어플랜",
+    "요양보호사",
+    "재가",
+    "시설",
+    "치매",
+    "노인학대",
+    "낙상",
+    "욕창",
+    "보호자",
+    "기관 평가"
+   ],
+   "topics": {
+    "role": [
+     "급여 계획",
+     "인력 배치",
+     "학대 예방",
+     "안전 관리",
+     "보호자 소통"
+    ],
+    "scenario": [
+     "돌봄 소홀 항의",
+     "원인 모를 멍",
+     "인력 공백",
+     "운영 적자"
+    ],
+    "result": [
+     "사고 건수",
+     "종사자 유지율",
+     "보호자 만족"
+    ],
+    "en": [
+     "care planning",
+     "long-term care",
+     "elder abuse prevention",
+     "caregiver management"
+    ]
+   }
+  },
+  {
+   "id": "youth_worker",
+   "aliases": [
+    "청소년지도사",
+    "청소년 수련관",
+    "청소년 활동 지도자",
+    "청소년센터",
+    "Youth Worker"
+   ],
+   "skills": [
+    "청소년 프로그램 기획",
+    "활동 안전 관리",
+    "참여기구 지원",
+    "위기 청소년 발견·연계",
+    "보호자 소통"
+   ],
+   "responsibilities": [
+    "청소년 활동 프로그램 기획·운영",
+    "수련활동 안전 점검",
+    "동아리·참여기구 지원",
+    "학교 밖 청소년 발굴",
+    "활동 평가와 기록"
+   ],
+   "keywords": [
+    "청소년 활동",
+    "수련관",
+    "캠프",
+    "안전",
+    "참여기구",
+    "동아리",
+    "학교 밖 청소년",
+    "위기 청소년",
+    "자기주도"
+   ],
+   "topics": {
+    "role": [
+     "청소년 참여",
+     "활동 안전",
+     "위기 대응",
+     "프로그램 평가"
+    ],
+    "scenario": [
+     "따돌림 발견",
+     "자해 흔적",
+     "보호자 불만",
+     "예산 제약"
+    ],
+    "result": [
+     "참여 지속률",
+     "청소년 만족·성장"
+    ],
+    "en": [
+     "youth programs",
+     "youth participation",
+     "activity safety",
+     "at-risk youth"
+    ]
+   }
+  },
+  {
+   "id": "medical_social_worker",
+   "aliases": [
+    "의료사회복지사",
+    "병원 사회복지사",
+    "사회사업팀",
+    "정신건강사회복지사",
+    "Medical Social Worker"
+   ],
+   "skills": [
+    "심리사회적 사정",
+    "의료비 지원 연계",
+    "퇴원 계획",
+    "가족 상담",
+    "다직종 팀 협업",
+    "지역 자원 연계"
+   ],
+   "responsibilities": [
+    "입원 환자 심리사회적 평가",
+    "의료비·생계 지원 제도 연계",
+    "퇴원·전원 계획 수립",
+    "환자·가족 상담",
+    "의료진과 사례 공유",
+    "지역사회 자원 연계"
+   ],
+   "keywords": [
+    "심리사회적 사정",
+    "의료비 지원",
+    "퇴원 계획",
+    "전원",
+    "무연고",
+    "호스피스",
+    "재활",
+    "정신건강",
+    "다학제",
+    "지역 연계"
+   ],
+   "topics": {
+    "role": [
+     "심리사회적 평가",
+     "경제적 지원",
+     "퇴원 계획",
+     "가족 지원",
+     "다학제 협업"
+    ],
+    "scenario": [
+     "무연고 환자 퇴원",
+     "진료비 미납 퇴원 시도",
+     "전원 의견 충돌",
+     "의뢰 과다"
+    ],
+    "result": [
+     "연계 성사",
+     "퇴원 지연 감소",
+     "가족 만족"
+    ],
+    "en": [
+     "psychosocial assessment",
+     "discharge planning",
+     "financial assistance",
+     "interdisciplinary team"
+    ]
+   }
+  },
+  {
+   "id": "counselor",
+   "aliases": [
+    "심리상담사",
+    "상담심리사",
+    "상담사",
+    "전문상담사",
+    "심리치료사",
+    "Counselor",
+    "Psychotherapist"
+   ],
+   "skills": [
+    "접수면접",
+    "사례개념화",
+    "위기 평가·개입",
+    "심리검사 해석",
+    "상담 기록",
+    "수퍼비전 활용"
+   ],
+   "responsibilities": [
+    "접수면접과 상담 구조화",
+    "개인·집단 상담",
+    "자살 위기 평가와 개입",
+    "심리검사 실시·해석",
+    "상담 기록 관리",
+    "외부 기관 연계"
+   ],
+   "keywords": [
+    "상담",
+    "구조화",
+    "접수면접",
+    "사례개념화",
+    "라포",
+    "비밀보장",
+    "위기개입",
+    "자살 위험성",
+    "역전이",
+    "수퍼비전",
+    "심리검사",
+    "종결"
+   ],
+   "topics": {
+    "role": [
+     "상담 구조화",
+     "사례개념화",
+     "위기 개입",
+     "비밀보장의 한계",
+     "상담자 윤리"
+    ],
+    "scenario": [
+     "자살 언급",
+     "폭력 피해 고백",
+     "무단 불참",
+     "약물 중단 고백"
+    ],
+    "result": [
+     "회기 전후 변화",
+     "조기 종결률",
+     "내담자 만족"
+    ],
+    "en": [
+     "intake interview",
+     "case conceptualization",
+     "crisis intervention",
+     "confidentiality",
+     "supervision"
+    ]
+   }
+  },
+  {
+   "id": "career_counselor",
+   "aliases": [
+    "진로상담사",
+    "취업상담사",
+    "직업상담사",
+    "커리어 컨설턴트",
+    "잡매니저",
+    "Career Counselor"
+   ],
+   "skills": [
+    "구직자 상담",
+    "직업심리검사 활용",
+    "이력서·면접 지도",
+    "구인·구직 매칭",
+    "노동시장 정보 제공",
+    "취업 지원 제도 안내"
+   ],
+   "responsibilities": [
+    "구직자 초기 상담과 진단",
+    "직업심리검사 해석",
+    "서류·면접 준비 지원",
+    "구인처 발굴과 알선",
+    "취업 후 사후 관리",
+    "지원 제도 안내"
+   ],
+   "keywords": [
+    "진로",
+    "취업",
+    "구직자",
+    "직업선호도검사",
+    "이력서",
+    "자기소개서",
+    "알선",
+    "경력단절",
+    "청년",
+    "노동시장",
+    "사후관리"
+   ],
+   "topics": {
+    "role": [
+     "구직자 진단",
+     "검사 활용",
+     "서류·면접 지원",
+     "매칭",
+     "사후 관리"
+    ],
+    "scenario": [
+     "반복 탈락 무기력",
+     "비현실적 희망 조건",
+     "지원 요건 미달 항의",
+     "실적 미달"
+    ],
+    "result": [
+     "취업률",
+     "고용 유지율",
+     "상담 만족도"
+    ],
+    "en": [
+     "career counseling",
+     "job matching",
+     "vocational assessment",
+     "employment services"
+    ]
+   }
+  },
+  {
+   "id": "school_counselor",
+   "aliases": [
+    "전문상담교사",
+    "학교 상담교사",
+    "Wee클래스",
+    "학교상담",
+    "School Counselor"
+   ],
+   "skills": [
+    "학생 개인·집단 상담",
+    "위기 학생 관리",
+    "정서·행동특성검사 사후관리",
+    "교사·학부모 협력",
+    "외부 기관 연계",
+    "예방 교육"
+   ],
+   "responsibilities": [
+    "학생 상담과 위기 개입",
+    "관심군 학생 사후 관리",
+    "학교폭력 관련 상담 지원",
+    "교사·학부모 자문",
+    "Wee센터 등 외부 연계",
+    "예방 교육 운영"
+   ],
+   "keywords": [
+    "Wee클래스",
+    "학생 상담",
+    "위기 학생",
+    "정서·행동특성검사",
+    "관심군",
+    "학교폭력",
+    "등교 거부",
+    "담임",
+    "학부모",
+    "외부 연계"
+   ],
+   "topics": {
+    "role": [
+     "위기 학생 개입",
+     "관심군 관리",
+     "교사 협력",
+     "학부모 소통",
+     "예방 교육"
+    ],
+    "scenario": [
+     "친구의 자살 계획 제보",
+     "학부모 상담 반대",
+     "수업 시간 조율",
+     "등교 거부 증가"
+    ],
+    "result": [
+     "위기 학생 연계",
+     "상담 이용률",
+     "재발 방지"
+    ],
+    "en": [
+     "school counseling",
+     "crisis intervention",
+     "student mental health",
+     "teacher consultation"
+    ]
+   }
+  }
+ ],
+ "questions": [
+  {
+   "text": "간호사와 간호조무사가 함께 일하는 병동에서 업무 범위를 명확히 나누는 것이 왜 중요하다고 보세요?",
+   "scope": "family:nursing",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병동 간호 업무 중에서 겉으로 잘 드러나지 않지만 환자에게 큰 영향을 주는 일은 무엇이라고 생각하세요?",
+   "scope": "family:nursing",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자 안전을 위해 간호 인력이 매 근무마다 예외 없이 지켜야 하는 기본 원칙은 무엇이라고 보세요?",
+   "scope": "family:nursing",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원, 보건소, 산업체처럼 간호 인력이 일하는 현장마다 요구되는 역량이 어떻게 다르다고 보세요?",
+   "scope": "family:nursing",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습이나 근무 중 바쁜 상황에서도 절차를 건너뛰지 않아 문제를 막았던 경험을 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배나 동료에게 실수를 지적받았을 때 어떻게 받아들이고 무엇을 바꿨는지 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "성장",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람이 동시에 도움을 요청해서 우선순위를 정해 처리해야 했던 경험이 있나요?",
+   "scope": "family:nursing",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "까다로운 환자나 보호자와 결국 신뢰를 쌓았던 경험을 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "팀원이 업무에 치여 힘들어할 때 먼저 나서서 일을 나눴던 경험이 있으신가요?",
+   "scope": "family:nursing",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "근무 교대 직전에 담당 환자의 활력징후가 평소와 다르게 나왔다면 인계 전에 무엇부터 하시겠어요?",
+   "scope": "family:nursing",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "함께 일하는 선배와 업무 방식 때문에 갈등이 생긴다면 어떻게 풀어 가시겠어요?",
+   "scope": "family:nursing",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b10s1",
+   "confidence": "high"
+  },
+  {
+   "text": "퇴원이 늦어지는 바람에 먼 지역에서 온 환자가 기차를 놓쳤다며 화를 낸다면 어떻게 응대하시겠어요?",
+   "scope": "family:nursing",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b10s2",
+   "confidence": "high"
+  },
+  {
+   "text": "야간 근무 중 판단이 어려운 상황이 생겼는데 책임 간호사와 바로 연락이 닿지 않으면 어떻게 하시겠어요?",
+   "scope": "family:nursing",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "희망하지 않은 부서로 발령이 난다면 처음 석 달을 어떻게 보내시겠어요?",
+   "scope": "family:nursing",
+   "category": "조직적합성",
+   "type": "situational",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습하면서 본받고 싶다고 느낀 간호사 선생님이 있었다면 어떤 장면이었는지 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "공개후기",
+   "src": "b10s2",
+   "confidence": "high"
+  },
+  {
+   "text": "실습이나 근무 중 규정이 제대로 지켜지지 않는 장면을 봤을 때 어떻게 행동하셨는지 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "윤리",
+   "type": "experience",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "b10s2",
+   "confidence": "high"
+  },
+  {
+   "text": "환자에게 설명한 내용이 제대로 전달되지 않아 방식을 바꿔 다시 설명했던 경험이 있나요?",
+   "scope": "family:nursing",
+   "category": "커뮤니케이션",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호 인력의 이직률이 높은 이유는 무엇이라고 보고, 줄이려면 무엇이 필요하다고 생각하세요?",
+   "scope": "family:nursing",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b10s1",
+   "confidence": "high"
+  },
+  {
+   "text": "간호간병통합서비스 병동이 늘어나면서 간호 인력의 역할이 어떻게 달라지고 있다고 보세요?",
+   "scope": "family:nursing",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "입원 환자 중 고령 환자 비중이 커지는 흐름이 병동 간호에 어떤 과제를 준다고 보세요?",
+   "scope": "family:nursing",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 치료를 거부하면서 가족에게는 알리지 말아 달라고 한다면 어떻게 하시겠어요?",
+   "scope": "family:nursing",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 실수로 환자에게 문제가 생길 뻔했는데 아무도 알아채지 못했다면 어떻게 하시겠어요?",
+   "scope": "family:nursing",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교대 근무와 높은 업무 강도 속에서 본인만의 회복 방법이 있다면 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호 인력에게 가장 중요한 덕목 하나를 고른다면 무엇이고, 왜 그렇게 생각하세요?",
+   "scope": "family:nursing",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "b10s2",
+   "confidence": "high"
+  },
+  {
+   "text": "본인의 관찰이나 보고 덕분에 환자 상태가 나아졌던 사례가 있다면 결과까지 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병동 업무를 개선하려고 제안했던 일이 있다면 실제로 무엇이 달라졌는지 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신규 간호사 교육 기간을 길게 두는 것과 빨리 독립 근무를 시키는 것 중 어느 쪽이 환자 안전에 유리한지 입장을 정해 말씀해 주세요.",
+   "scope": "family:nursing",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병동 낙상 사고를 줄이기 위한 개선안을 5분 발표로 구성한다면 어떤 흐름으로 하시겠어요?",
+   "scope": "family:nursing",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "투약 직후 다른 환자의 약이 들어간 것을 알게 됐다면 무엇부터 하시겠어요?",
+   "scope": "role:nurse",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "b10s1",
+   "confidence": "high"
+  },
+  {
+   "text": "투약 전에 확인하는 5R을 실제 병동에서 어떻게 적용하는지 설명해 주세요.",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "b10s1",
+   "confidence": "high"
+  },
+  {
+   "text": "격리와 역격리는 대상과 목적이 어떻게 다른지 설명해 주세요.",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b10s2",
+   "confidence": "high"
+  },
+  {
+   "text": "밤사이 환자 상태 변화를 의사에게 전화로 보고할 때 SBAR로 어떻게 전달하시겠어요?",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "낙상 고위험 환자를 맡았다면 근무 중에 어떤 예방 활동을 하시겠어요?",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "수혈을 시작하기 전에 거치는 확인 절차와 시작 직후 관찰할 점을 말씀해 주세요.",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호기록을 작성할 때 가장 중요하게 지켜야 할 원칙은 무엇이라고 생각하세요?",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "항암제 같은 고위험 약물을 다룰 때 일반 약물과 다르게 챙겨야 할 점은 무엇인가요?",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "인수인계에서 빠뜨리기 쉬운 정보는 무엇이고, 누락을 막기 위해 어떻게 하시겠어요?",
+   "scope": "role:nurse",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "오래 누워 지내는 환자의 욕창을 예방하기 위해 근무 중에 무엇을 확인하시겠어요?",
+   "scope": "role:nurse",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고령 환자에게 퇴원 교육을 한 뒤 제대로 이해했는지 어떻게 확인하시겠어요?",
+   "scope": "role:nurse",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "병실 순회 중 심정지 환자를 처음 발견했다면 처음 1분 동안 무엇을 하시겠어요?",
+   "scope": "role:nurse",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 환자가 동시에 호출하는데 그중 한 명이 가슴 통증을 호소한다면 어떤 순서로 움직이시겠어요?",
+   "scope": "role:nurse",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 담당 의사 설명이 부족하다며 간호사실에서 언성을 높인다면 어떻게 대응하시겠어요?",
+   "scope": "role:nurse",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처방이 이상해 보이는데 담당의가 바쁘니 일단 그대로 하라고 한다면 어떻게 하시겠어요?",
+   "scope": "role:nurse",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정맥주사에 한 번 실패하자 환자가 다른 간호사로 바꿔 달라고 하면 어떻게 하시겠어요?",
+   "scope": "role:nurse",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간에 섬망이 있는 환자가 수액 줄을 계속 뽑으려 한다면 어떻게 대처하시겠어요?",
+   "scope": "role:nurse",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병동에서 한 달 사이 낙상 보고가 늘었다면 어떤 순서로 원인을 찾아보시겠어요?",
+   "scope": "role:nurse",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "비슷한 투약 근접오류가 반복된다면 개인 실수와 시스템 문제 중 어디부터 살펴보시겠어요?",
+   "scope": "role:nurse",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자 안전과 업무 속도가 부딪히는 순간에 어떤 기준으로 판단하시겠어요?",
+   "scope": "role:nurse",
+   "category": "의사결정",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습 중 환자의 상태 변화를 먼저 알아차리고 보고했던 경험이 있나요?",
+   "scope": "role:nurse",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습에서 가장 어려웠던 간호 술기와 그것을 익히기 위해 한 노력을 말씀해 주세요.",
+   "scope": "role:nurse",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "3교대 근무를 오래 이어 가려면 무엇이 가장 중요하다고 보세요?",
+   "scope": "role:nurse",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "희망하는 부서가 있다면 그 부서 간호사에게 특히 필요한 역량은 무엇이라고 보세요?",
+   "scope": "role:nurse",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "b10s1",
+   "confidence": "high"
+  },
+  {
+   "text": "여러 보건 계열 직업 가운데 간호사를 선택하게 된 계기가 무엇인가요?",
+   "scope": "role:nurse",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "신규 간호사는 한동안 실수가 많을 수밖에 없는데, 그래도 본인을 뽑아야 하는 이유가 무엇인가요?",
+   "scope": "role:nurse",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배에게 혼나는 일이 반복될 때 그것이 교육인지 태움인지 어떻게 구분하고 대응하시겠어요?",
+   "scope": "role:nurse",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "5년 뒤 임상 현장에서 어떤 역할을 맡고 있고 싶은지 말씀해 주세요.",
+   "scope": "role:nurse",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "활력징후를 측정했는데 평소와 많이 다르게 나왔다면 누구에게 어떻게 보고하시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "멸균 물품을 준비하거나 정리할 때 오염을 막기 위해 어떤 점을 지키시나요?",
+   "scope": "role:nurse_aide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "거동이 불편한 환자의 이동을 도울 때 안전을 위해 미리 확인하는 것은 무엇인가요?",
+   "scope": "role:nurse_aide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의원에서 접수와 진료 보조를 함께 맡을 때 환자가 몰리면 일을 어떻게 나누시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주사실이나 처치실에서 환자 본인 확인을 어떤 방법으로 하시나요?",
+   "scope": "role:nurse_aide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사용한 주사침과 의료폐기물은 어떤 기준으로 분리해 처리하시나요?",
+   "scope": "role:nurse_aide",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 간호사에게는 말하지 말라며 몸이 불편하다고 털어놓는다면 어떻게 하시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원장님이 자격 범위를 넘는 처치를 해 달라고 지시한다면 어떻게 대응하시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요양병원에서 식사를 돕던 중 환자가 사레가 들려 심하게 기침한다면 무엇부터 하시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료를 기다리던 어린이 환자가 대기실에서 다쳐 보호자가 화를 낸다면 어떻게 대응하시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처치에 필요한 물품이 자주 떨어져 업무가 늦어진다면 재고 관리를 어떻게 바꿔 보시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람에게 동시에 업무 지시를 받았을 때 처리 순서를 어떤 기준으로 정하시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "의사결정",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습하면서 환자나 보호자에게 고맙다는 말을 들었던 경험을 말씀해 주세요.",
+   "scope": "role:nurse_aide",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지시를 잘못 이해해 업무를 다시 해야 했던 경험과 그 뒤 달라진 점을 말씀해 주세요.",
+   "scope": "role:nurse_aide",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호조무사가 스스로 판단하지 않고 반드시 간호사나 의사에게 넘겨야 하는 일은 어떤 것이라고 보세요?",
+   "scope": "role:nurse_aide",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호조무사라는 직업을 택하게 된 계기를 말씀해 주세요.",
+   "scope": "role:nurse_aide",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호조무사는 보조 인력일 뿐이라는 말을 듣는다면 어떻게 답하시겠어요?",
+   "scope": "role:nurse_aide",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 병원에 들어와 진료를 받고 약을 받아 나가기까지, 지원하신 직무가 그 흐름의 어디에 있는지 설명해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원에서 일하는 사람에게 전문 지식 외에 꼭 필요한 역량은 무엇이라고 보세요?",
+   "scope": "family:medical_staff",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료기관 인증평가 같은 외부 평가가 현장 업무에 어떤 영향을 준다고 이해하고 계신가요?",
+   "scope": "family:medical_staff",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자 개인정보가 오가는 병원 업무에서 지원하신 직무가 특히 조심해야 할 부분은 무엇인가요?",
+   "scope": "family:medical_staff",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 직종과 협업하면서 서로 쓰는 용어나 우선순위가 달라 어려웠던 경험을 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "바쁜 상황에서도 정확성을 지키기 위해 스스로 만든 확인 습관이 있다면 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "실무",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "화가 난 사람을 진정시키고 문제 해결까지 이끌었던 경험을 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "잘 모르는 일을 맡게 됐을 때 빠르게 배워서 해냈던 경험을 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "성장",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "규정대로 처리하면 상대가 불편해지는 상황에서 원칙과 관계를 함께 지켰던 경험이 있나요?",
+   "scope": "family:medical_staff",
+   "category": "윤리",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료 과정에서 불쾌했던 일을 인터넷에 올리겠다고 환자가 말한다면 어떻게 대응하시겠어요?",
+   "scope": "family:medical_staff",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유명인 환자가 입원했는데 동료가 진료 내용을 궁금해하며 물어본다면 어떻게 하시겠어요?",
+   "scope": "family:medical_staff",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 부서의 실수로 생긴 환자 불만이 나에게 들어왔다면 어떻게 처리하시겠어요?",
+   "scope": "family:medical_staff",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "퇴근 직전에 급한 요청이 들어왔는데 내일 처리해도 되는지 판단이 서지 않으면 어떻게 하시겠어요?",
+   "scope": "family:medical_staff",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "말이 잘 통하지 않는 외국인 환자가 불안해한다면 지원하신 자리에서 어떻게 도우시겠어요?",
+   "scope": "family:medical_staff",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원이나 의료 관련 현장에서 실습하거나 일하면서 가장 크게 배운 점을 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실수를 한 뒤 바로 보고하고 수습했던 경험을 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자 입장에서 불편한 절차를 발견하고 개선을 제안했던 경험이 있나요?",
+   "scope": "family:medical_staff",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역 병원을 두고 수도권 대형병원으로 환자가 몰리는 현상에 대해 어떻게 생각하세요?",
+   "scope": "family:medical_staff",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비대면 진료와 디지털 헬스케어가 확산되면 병원 현장의 일이 어떻게 달라질 거라고 보세요?",
+   "scope": "family:medical_staff",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료 분쟁이 늘어나는 흐름 속에서 병원 구성원이 가져야 할 태도는 무엇이라고 보세요?",
+   "scope": "family:medical_staff",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동료의 잘못된 관행을 알게 됐는데 부서 분위기상 말하기 어렵다면 어떻게 하시겠어요?",
+   "scope": "family:medical_staff",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "거래처나 제약회사에서 식사나 작은 선물을 제안한다면 어디까지 받아도 된다고 보세요?",
+   "scope": "family:medical_staff",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료 현장에서 오래 일하면서 지치지 않기 위해 본인이 지키는 원칙이 있나요?",
+   "scope": "family:medical_staff",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료 분야에서 일하겠다는 결심에 가장 큰 영향을 준 일은 무엇이었나요?",
+   "scope": "family:medical_staff",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지금까지 맡은 일에서 숫자로 보여 줄 수 있는 성과가 있다면 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "팀의 업무 방식을 바꾸는 데 기여했던 일이 있다면 전후로 무엇이 달라졌는지 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "응급실 과밀을 줄이기 위해 경증 환자의 응급실 이용을 제한하는 것에 찬성하시는지 입장을 정해 말씀해 주세요.",
+   "scope": "family:medical_staff",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외래 대기 시간을 줄이는 방안을 발표한다면 어떤 자료를 근거로 구성하시겠어요?",
+   "scope": "family:medical_staff",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수술 전 동의서를 받을 때 환자가 반드시 이해해야 할 내용을 어떻게 설명하시겠어요?",
+   "scope": "role:physician",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 과에 협진을 의뢰할 때 어떤 정보를 담아야 회신이 빠르고 정확하다고 보세요?",
+   "scope": "role:physician",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "당직 중 여러 병동에서 동시에 연락이 오면 어떤 기준으로 우선순위를 정하시겠어요?",
+   "scope": "role:physician",
+   "category": "의사결정",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "나쁜 소식을 환자와 가족에게 전해야 할 때 어떤 순서로 이야기를 꺼내시겠어요?",
+   "scope": "role:physician",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "인계받은 환자의 처방을 이어서 낼 때 무엇을 먼저 확인하시나요?",
+   "scope": "role:physician",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호사의 보고를 받고 전화로 판단하지 않고 직접 가서 봐야 하는 기준은 무엇이라고 보세요?",
+   "scope": "role:physician",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 환자 본인에게는 암 진단을 알리지 말아 달라고 요청한다면 어떻게 하시겠어요?",
+   "scope": "role:physician",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "윗년차나 교수님의 지시가 환자에게 최선이 아니라고 판단될 때 어떻게 의견을 전하시겠어요?",
+   "scope": "role:physician",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 인터넷에서 찾은 정보를 들고 와 다른 치료를 요구한다면 어떻게 대화하시겠어요?",
+   "scope": "role:physician",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담당 환자들의 재원일수가 예전보다 길어졌다면 어떤 요인부터 살펴보시겠어요?",
+   "scope": "role:physician",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 병동에서 비슷한 감염 증상이 잇따라 생긴다면 어떤 순서로 상황을 파악하시겠어요?",
+   "scope": "role:physician",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습이나 인턴 기간에 환자와 소통이 잘 되지 않아 어려웠던 사례를 말씀해 주세요.",
+   "scope": "role:physician",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수련 과정에서 체력적으로 가장 힘들었던 시기를 어떻게 버텼는지 말씀해 주세요.",
+   "scope": "role:physician",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전공의는 배우는 사람이면서 진료 인력이기도 한데, 이 두 역할의 균형을 어떻게 이해하고 계신가요?",
+   "scope": "role:physician",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 전문과목 중 이 과를 지원하신 이유는 무엇인가요?",
+   "scope": "role:physician",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 판단 착오로 환자 상태가 나빠졌다는 지적을 받는다면 어떻게 대응하시겠어요?",
+   "scope": "role:physician",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연속 근무로 지친 상태에서 진료를 이어 가야 할 때 환자 안전을 어떻게 지키시겠어요?",
+   "scope": "role:physician",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처방 용량이 평소보다 과도해 보인다면 어떤 절차로 처방 의사에게 확인하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고령 환자가 약을 제대로 복용하도록 복약지도를 할 때 어떤 방법을 쓰시나요?",
+   "scope": "role:pharmacist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 병원에서 약을 처방받는 환자의 중복 투약을 어떻게 찾아내시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원 약제부에서 고위험 약물을 보관하고 불출할 때 특히 지켜야 할 원칙은 무엇인가요?",
+   "scope": "role:pharmacist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "일반의약품을 사러 온 손님에게 병원 진료를 권해야 하는 경우를 어떻게 판단하시나요?",
+   "scope": "role:pharmacist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조제 과정의 실수를 줄이기 위해 쓸 수 있는 이중 확인 방법을 말씀해 주세요.",
+   "scope": "role:pharmacist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처방 의사와 연락이 닿지 않는데 환자는 당장 약을 받아 가야 한다고 재촉하면 어떻게 하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이미 조제해서 나간 약이 잘못된 것을 뒤늦게 알게 됐다면 무엇부터 하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 설명은 필요 없으니 약만 달라고 하면 어떻게 응대하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병동에서 특정 약물의 이상반응 보고가 늘었다면 원인을 어떻게 분석해 보시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "유효기간이 임박한 약이 자주 생긴다면 재고 관리를 어떻게 개선하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습 중 처방이나 조제 과정에서 이상한 점을 발견했던 경험이 있나요?",
+   "scope": "role:pharmacist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복약 설명을 했는데 환자가 오해해서 바로잡았던 경험을 말씀해 주세요.",
+   "scope": "role:pharmacist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원 약사와 지역 약국 약사의 역할은 어떻게 다르다고 보시나요?",
+   "scope": "role:pharmacist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "약사로서 갈 수 있는 길이 여럿인데 이 분야를 선택하신 이유는 무엇인가요?",
+   "scope": "role:pharmacist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조제만 정확하면 되지 복약지도가 왜 중요하냐고 묻는 사람을 어떻게 설득하시겠어요?",
+   "scope": "role:pharmacist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료비를 안내할 때 급여와 비급여 항목을 구분해서 설명해야 하는 이유는 무엇이라고 보세요?",
+   "scope": "role:hospital_admin",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "보험 청구 후 심사에서 삭감 통보를 받았다면 어떤 순서로 원인을 확인하시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "입원 수속부터 퇴원 정산까지 원무에서 챙겨야 하는 과정을 설명해 주세요.",
+   "scope": "role:hospital_admin",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "진단서나 진료기록 사본 발급 요청을 받으면 신청인의 자격을 어떻게 확인하시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "수납 마감 때 시재가 맞지 않는다면 어떤 순서로 확인하시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "초진과 재진을 정확히 구분하는 것이 진료비와 환자 안내에 어떤 영향을 주는지 말씀해 주세요.",
+   "scope": "role:hospital_admin",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료비가 예상보다 많이 나왔다며 환자가 수납 창구에서 항의한다면 어떻게 응대하시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "건강보험 자격이 확인되지 않는 환자가 응급 진료를 받으러 왔다면 접수를 어떻게 진행하시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "접수·수납 시스템이 갑자기 멈춰 창구에 줄이 길어진다면 현장에서 어떻게 대처하시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 진료과의 청구 삭감이 계속 많다면 어떤 자료를 보고 개선 방향을 잡으시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "외래 수납 대기 시간이 길다는 불만이 늘었다면 원인을 어떻게 찾아보시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "규정이나 지침을 정확히 적용해야 했던 사무 업무 경험을 말씀해 주세요.",
+   "scope": "role:hospital_admin",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "민원이나 불만을 처리하면서 상대의 태도가 바뀌었던 경험이 있나요?",
+   "scope": "role:hospital_admin",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "원무 업무가 병원 경영에 어떤 영향을 준다고 이해하고 계신가요?",
+   "scope": "role:hospital_admin",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "일반 사무직이 아니라 병원 행정을 선택하신 이유는 무엇인가요?",
+   "scope": "role:hospital_admin",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원무는 누구나 할 수 있는 반복 업무라는 시각에 대해 어떻게 반박하시겠어요?",
+   "scope": "role:hospital_admin",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시술을 망설이는 고객에게 무리하게 권하지 않으면서 신뢰를 얻는 방법은 무엇이라고 보세요?",
+   "scope": "role:medical_coordinator",
+   "category": "고객",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예약이 한 시간대에 몰렸을 때 진료 흐름을 어떻게 조정하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비급여 진료비를 안내할 때 환자가 오해하지 않도록 어떻게 설명하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시술 후 사후 관리 연락은 어떤 기준과 시점으로 하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담이나 홍보에서 치료 효과를 과장하면 안 되는 이유를 어떻게 이해하고 계신가요?",
+   "scope": "role:medical_coordinator",
+   "category": "윤리",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 중 환자가 의학적 판단을 물어볼 때 코디네이터가 답할 수 있는 범위는 어디까지라고 보세요?",
+   "scope": "role:medical_coordinator",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시술 결과에 불만인 고객이 대기실에서 환불을 요구하며 큰소리를 낸다면 어떻게 하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "원장님 진료가 계속 늦어져 대기 고객들이 불만을 보인다면 어떻게 대응하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예약한 환자가 연락 없이 오지 않는 일이 반복된다면 어떻게 대응하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담을 받은 고객 중 실제 예약으로 이어지는 비율이 떨어졌다면 어떤 원인부터 살펴보시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재방문율을 높이기 위한 고객 관리 방안을 제안해 보라고 하면 무엇부터 하시겠어요?",
+   "scope": "role:medical_coordinator",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고객의 불편을 먼저 알아채고 해결했던 서비스 경험을 말씀해 주세요.",
+   "scope": "role:medical_coordinator",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 부서 사이에서 일정을 조율해 문제를 해결했던 경험이 있나요?",
+   "scope": "role:medical_coordinator",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원 코디네이터가 단순 안내 업무와 다른 점은 무엇이라고 보세요?",
+   "scope": "role:medical_coordinator",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "서비스 직무 가운데 병원 코디네이터를 선택한 이유를 말씀해 주세요.",
+   "scope": "role:medical_coordinator",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 실적 압박을 받다 보면 필요 없는 시술까지 권하게 되지 않을까요?",
+   "scope": "role:medical_coordinator",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료기사가 의사의 지도 아래 일한다는 것이 실제 업무에서 어떤 의미라고 보세요?",
+   "scope": "family:allied_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원하신 직무의 검사나 치료 결과가 진료 결정에 어떻게 연결되는지 예를 들어 설명해 주세요.",
+   "scope": "family:allied_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원하신 직무에서 하루 업무가 어떻게 흘러가는지 알고 계신 대로 설명해 주세요.",
+   "scope": "family:allied_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원 인증평가에서 검사실이나 치료실이 주로 점검받는 부분은 무엇이라고 알고 계신가요?",
+   "scope": "family:allied_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "장비나 기구를 사용하기 전에 점검하다가 이상을 발견했던 경험이 있나요?",
+   "scope": "family:allied_health",
+   "category": "실무",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검사나 치료를 두려워하는 환자를 설명과 태도로 안심시켰던 경험을 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "고객",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "간호사나 의사에게 검사·치료와 관련된 의견을 전달해 받아들여졌던 경험이 있나요?",
+   "scope": "family:allied_health",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로운 장비나 기법을 익히기 위해 스스로 공부했던 경험을 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "성장",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "동료와 업무량 배분 문제로 불만이 생겼을 때 어떻게 해결했는지 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검사나 치료 도중 환자가 어지럽다며 식은땀을 흘린다면 무엇부터 하시겠어요?",
+   "scope": "family:allied_health",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자 확인 과정에서 등록된 정보와 환자가 말한 이름이 다르다면 어떻게 하시겠어요?",
+   "scope": "family:allied_health",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "선배가 예전 방식대로 하라고 하는데 최신 지침과 다르다면 어떻게 하시겠어요?",
+   "scope": "family:allied_health",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장비가 고장 나 예약된 환자들의 검사나 치료가 줄줄이 밀린다면 어떻게 대응하시겠어요?",
+   "scope": "family:allied_health",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 검사나 치료 결과가 어떻게 나왔는지 알려 달라고 조른다면 어떻게 답하시겠어요?",
+   "scope": "family:allied_health",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "임상 실습 중 지도 선생님께 받은 피드백 가운데 가장 기억에 남는 것은 무엇인가요?",
+   "scope": "family:allied_health",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습이나 근무에서 감염 예방 수칙을 지키기 위해 실천했던 일을 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 환자의 변화를 꾸준히 지켜보며 기록했던 경험이 있나요?",
+   "scope": "family:allied_health",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건강검진 수요 증가가 보건의료기술 인력의 업무 환경을 어떻게 바꾸고 있다고 보세요?",
+   "scope": "family:allied_health",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원 밖 지역사회나 산업 현장으로 보건의료기술 인력의 활동 영역이 넓어지는 흐름을 어떻게 보세요?",
+   "scope": "family:allied_health",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료기사 직종 사이의 업무 범위를 둘러싼 논쟁에 대해 어떻게 생각하세요?",
+   "scope": "family:allied_health",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검사나 치료 기록을 실제보다 늘려서 입력하라는 요구를 받는다면 어떻게 하시겠어요?",
+   "scope": "family:allied_health",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자의 사진이나 검사 영상을 교육 자료로 쓰고 싶을 때 무엇을 먼저 지켜야 한다고 보세요?",
+   "scope": "family:allied_health",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이 직무에서 아직 부족하다고 느끼는 부분과 그것을 채우기 위한 계획을 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자에게 늘 친절해야 한다는 부담이 클 때 감정을 어떻게 다스리시나요?",
+   "scope": "family:allied_health",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 참여한 개선 활동으로 검사나 치료의 정확도가 높아졌던 사례가 있다면 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담당했던 환자나 대상자에게서 확인한 변화 중 가장 뿌듯했던 결과를 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검사실이나 치료실의 감염 관리 수준을 높이는 방안을 5분 발표로 구성해 보라면 어떻게 하시겠어요?",
+   "scope": "family:allied_health",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료기사도 독립적으로 개업할 수 있어야 한다는 주장에 대해 찬반 입장을 정해 말씀해 주세요.",
+   "scope": "family:allied_health",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "처음 온 환자를 평가할 때 어떤 순서로 정보를 모아 치료 계획을 세우시나요?",
+   "scope": "role:physical_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "전기치료나 온열치료를 적용하면 안 되는 경우를 어떻게 확인하시나요?",
+   "scope": "role:physical_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "뇌졸중 환자와 정형외과 수술 후 환자의 운동치료 접근은 어떻게 다르다고 보세요?",
+   "scope": "role:physical_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "보조기나 의지를 처음 착용하는 환자에게 어떤 순서로 훈련을 진행하시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "집에서 할 운동을 알려 줄 때 환자가 꾸준히 따라 하도록 어떻게 설명하시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료 중 환자 낙상을 막기 위해 치료실에서 지키는 안전 수칙을 말씀해 주세요.",
+   "scope": "role:physical_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "운동치료 중 환자가 통증이 심해졌다며 그만하자고 하면 어떻게 하시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 치료 시간을 늘려 달라고 하는데 처방 범위를 넘는다면 어떻게 설명하시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한 시간에 여러 환자를 동시에 봐야 하는 상황에서 치료의 질을 어떻게 지키시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "몇 주째 기능 회복이 정체된 환자가 있다면 어떤 부분부터 다시 평가하시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료 전후의 변화를 객관적으로 보여 주려면 어떤 평가 지표를 쓰시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s5",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습 중 환자의 기능이 좋아지는 과정을 곁에서 지켜봤던 경험을 말씀해 주세요.",
+   "scope": "role:physical_therapist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료 방법을 두고 선배나 동료와 의견이 달랐던 경험이 있나요?",
+   "scope": "role:physical_therapist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "물리치료사와 작업치료사가 협업할 때 각자 맡는 영역이 어떻게 다르다고 보세요?",
+   "scope": "role:physical_therapist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "물리치료사가 되기로 마음먹은 계기를 말씀해 주세요.",
+   "scope": "role:physical_therapist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 원하는 치료와 치료사로서 필요하다고 판단한 치료가 다르다면 결국 누구 뜻을 따르시겠어요?",
+   "scope": "role:physical_therapist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업치료 평가에서 기능 평가 결과와 일상생활 수행 평가를 어떻게 연결하시나요?",
+   "scope": "role:occupational_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "뇌졸중 후 옷 입기를 어려워하는 환자에게 어떤 단계로 훈련을 진행하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "삼킴 장애가 의심되는 환자를 맡았을 때 치료 전에 무엇을 확인하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "퇴원을 앞둔 환자의 집 환경을 고려해 어떤 수정이나 보조도구를 제안하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "인지 기능이 떨어진 어르신에게 치료 활동을 고를 때 무엇을 기준으로 삼으시나요?",
+   "scope": "role:occupational_therapist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "발달이 늦은 아동의 감각통합 치료에서 보호자와 목표를 어떻게 공유하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료 활동이 유치하다며 환자가 참여를 거부한다면 어떻게 하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 걷기 훈련만 원하고 일상생활 훈련은 필요 없다고 한다면 어떻게 설득하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료 중 환자가 갑자기 우울감을 털어놓으며 울기 시작한다면 어떻게 대응하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "일상생활 훈련 목표를 세웠는데 몇 주가 지나도 달성되지 않는다면 원인을 어떻게 분석하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료 목표를 측정 가능하게 세운다면 어떤 식으로 표현하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습에서 환자에게 의미 있는 활동을 찾아 치료에 활용했던 경험을 말씀해 주세요.",
+   "scope": "role:occupational_therapist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "아동이나 어르신처럼 특정 대상자와 소통하려고 방식을 바꿨던 경험이 있나요?",
+   "scope": "role:occupational_therapist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "작업치료에서 말하는 작업이란 무엇이고, 왜 그것이 치료의 중심이 되는지 말씀해 주세요.",
+   "scope": "role:occupational_therapist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s9",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 재활 분야 중에서 작업치료에 끌린 이유를 말씀해 주세요.",
+   "scope": "role:occupational_therapist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "효과가 눈에 잘 보이지 않는다며 병원이 작업치료 시간을 줄이자고 하면 어떻게 설득하시겠어요?",
+   "scope": "role:occupational_therapist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "채혈 전 환자 확인과 검체 라벨 부착은 어떤 순서로 하시나요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검체가 용혈되었거나 양이 부족할 때는 어떻게 처리하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정도관리 결과가 허용 범위를 벗어났다면 환자 검사를 계속해도 되는지 어떻게 판단하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "생명을 위협할 수 있는 위급값이 나오면 누구에게 어떻게 보고하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "심전도나 폐기능 같은 생리기능검사를 할 때 환자 협조를 얻기 위해 무엇을 신경 쓰시나요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감염 위험이 있는 검체를 다룰 때 지키는 안전 수칙을 말씀해 주세요.",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 환자의 결과가 이전과 크게 달라 검체가 뒤바뀐 것 같다면 무엇부터 확인하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "응급실에서 결과를 빨리 달라고 재촉하는데 장비 점검이 끝나지 않았다면 어떻게 하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "소아 환자가 채혈을 무서워하며 심하게 울고 버틴다면 어떻게 진행하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 검사 항목의 재검률이 갑자기 높아졌다면 어떤 순서로 원인을 찾으시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "검사 결과 보고가 자주 늦어진다면 검체가 흘러가는 과정 중 어디를 먼저 살펴보시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습 중 검사 결과의 이상을 먼저 발견했던 경험이 있나요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "야간이나 혼자 근무하는 상황에서 검사를 책임지고 처리했던 경험이 있나요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진단검사, 병리, 생리기능검사 중 어느 분야에서 일하고 싶고 그 분야는 어떤 특징이 있나요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자를 직접 만나는 일보다 검사실 업무에 끌린 이유가 있다면 말씀해 주세요.",
+   "scope": "role:clinical_lab_scientist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "분석은 대부분 장비가 하는데 임상병리사의 판단이 왜 필요하냐는 질문에 어떻게 답하시겠어요?",
+   "scope": "role:clinical_lab_scientist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가임기 여성 환자를 촬영하기 전에 어떤 확인 절차를 거치시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자 피폭을 줄이기 위해 촬영 조건과 차폐를 어떻게 관리하시나요?",
+   "scope": "role:radiologic_technologist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "src": "b10s10",
+   "confidence": "medium"
+  },
+  {
+   "text": "조영제를 쓰는 검사 전후에 환자에게서 무엇을 확인하고 관찰하시나요?",
+   "scope": "role:radiologic_technologist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "MRI 검사 전에 금속물이나 체내 기기를 확인하는 과정이 왜 중요한지 말씀해 주세요.",
+   "scope": "role:radiologic_technologist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "거동이 어려운 환자를 촬영할 때 영상 품질과 환자 안전을 어떻게 함께 지키시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 방사선 피폭을 관리하기 위해 평소 어떤 습관을 지키시나요?",
+   "scope": "role:radiologic_technologist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조영제 주입 직후 환자가 가려움과 호흡 불편을 호소한다면 무엇부터 하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "촬영 부위가 처방과 다르게 적힌 것 같다면 어떻게 하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 촬영실에 함께 들어가 아이를 잡아 주겠다고 한다면 어떻게 안내하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "피폭이 걱정된다며 꼭 필요한 촬영을 거부하는 환자에게 어떻게 설명하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재촬영 비율이 높아졌다면 어떤 원인부터 확인하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "CT 검사 예약이 몇 주씩 밀린다면 어떤 방식으로 개선해 보시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습 중 환자 자세를 잡기 어려웠던 사례와 해결 방법을 말씀해 주세요.",
+   "scope": "role:radiologic_technologist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "판독에 필요한 정보를 의료진과 주고받으며 협력했던 경험이 있나요?",
+   "scope": "role:radiologic_technologist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "일반촬영, CT, MRI, 방사선치료 가운데 관심 있는 분야와 그 업무의 특징을 말씀해 주세요.",
+   "scope": "role:radiologic_technologist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "영상의학 분야에서 일하고 싶다고 생각한 이유는 무엇인가요?",
+   "scope": "role:radiologic_technologist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "바쁜 날 재촬영을 줄이려고 조금 흐릿한 영상도 넘기자는 동료에게 어떻게 말하시겠어요?",
+   "scope": "role:radiologic_technologist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "스케일링 전에 환자의 전신 질환이나 복용 약을 확인해야 하는 이유는 무엇인가요?",
+   "scope": "role:dental_hygienist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연령대에 따라 칫솔질 교육 방식을 어떻게 다르게 하시나요?",
+   "scope": "role:dental_hygienist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료 협조를 할 때 진료가 끊기지 않도록 미리 준비하는 것은 무엇인가요?",
+   "scope": "role:dental_hygienist",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치과 기구를 멸균하고 보관하는 과정에서 가장 신경 쓰는 단계는 어디인가요?",
+   "scope": "role:dental_hygienist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "구강 검진 결과를 설명하고 다음 내원을 권할 때 어떻게 말씀하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치주 상태가 나쁜 환자에게 예방처치의 필요성을 어떻게 이해시키시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치석 제거 중 출혈이 평소보다 많다면 어떻게 대처하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료비가 부담된다며 환자가 치료 계획을 미루려 한다면 어떻게 상담하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예약 환자가 많다며 스케일링 시간을 줄이라는 지시를 받는다면 어떻게 하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역 아동센터에서 구강보건교육을 한 뒤 효과를 어떻게 측정하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "데이터",
+   "type": "numerical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료실 소모품 비용이 눈에 띄게 늘었다면 어디서부터 점검하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습 중 환자에게 구강관리 방법을 교육했던 경험을 말씀해 주세요.",
+   "scope": "role:dental_hygienist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료 보조를 하다 실수가 생겼을 때 어떻게 수습했는지 말씀해 주세요.",
+   "scope": "role:dental_hygienist",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치과위생사와 치과 보조 인력의 업무 범위 차이를 어떻게 이해하고 계신가요?",
+   "scope": "role:dental_hygienist",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치위생을 공부하면서 이 일이 나와 맞는다고 느낀 순간이 있다면 말씀해 주세요.",
+   "scope": "role:dental_hygienist",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "스케일링이 반복되는 일에서 전문성을 어떻게 키워 가겠다는 건지 구체적으로 말씀해 주세요.",
+   "scope": "role:dental_hygienist",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자가 보험 청구 때문에 진료 내용을 다르게 적어 달라고 요청한다면 어떻게 하시겠어요?",
+   "scope": "role:dental_hygienist",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "급식 식단을 짤 때 영양 기준과 단가, 기호도를 어떻게 균형 있게 맞추시나요?",
+   "scope": "role:dietitian",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재료 검수에서 불합격 판정을 내리는 기준과 그때의 처리 방법을 말씀해 주세요.",
+   "scope": "role:dietitian",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "조리 종사자에게 위생 교육을 할 때 실제로 지켜지게 하려면 어떻게 하시겠어요?",
+   "scope": "role:dietitian",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s7",
+   "confidence": "medium"
+  },
+  {
+   "text": "입원 환자의 영양 상태를 판정할 때 어떤 정보를 모으시나요?",
+   "scope": "role:dietitian",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공식자료",
+   "src": "b10s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "당뇨 환자에게 식사요법을 상담할 때 실천율을 높이는 방법은 무엇이라고 보세요?",
+   "scope": "role:dietitian",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공식자료",
+   "src": "b10s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "알레르기가 있는 학생이나 환자에게 대체식을 낼 때 어떤 확인 절차를 두시겠어요?",
+   "scope": "role:dietitian",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "배식 직전 음식에서 이물이 발견됐다면 어떻게 대응하시겠어요?",
+   "scope": "role:dietitian",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "급식 후 식중독 의심 증상을 호소하는 사람이 여러 명 나왔다면 무엇부터 하시겠어요?",
+   "scope": "role:dietitian",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치료식이 맛이 없다며 환자가 식사를 거부한다면 어떻게 하시겠어요?",
+   "scope": "role:dietitian",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "잔반량이 계속 늘어난다면 어떤 자료를 보고 원인을 찾으시겠어요?",
+   "scope": "role:dietitian",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "식재료 단가가 올라 정해진 급식비 안에서 운영이 어려워진다면 어떻게 조정하시겠어요?",
+   "scope": "role:dietitian",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "실습에서 식단을 짜거나 급식 운영에 참여했던 경험을 말씀해 주세요.",
+   "scope": "role:dietitian",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "조리원 등 현장 인력과 의견이 달라 조율했던 경험이 있나요?",
+   "scope": "role:dietitian",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "급식 영양사와 임상영양사의 업무는 어떻게 다르다고 알고 계신가요?",
+   "scope": "role:dietitian",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "식품영양 분야에서 영양사의 길을 택한 이유를 말씀해 주세요.",
+   "scope": "role:dietitian",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "영양 기준은 다 지켰는데 이용자 만족도가 낮다면 영양사 책임이 아니라고 할 수 있을까요?",
+   "scope": "role:dietitian",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건소가 지역 주민에게 제공하는 서비스를 크게 나눈다면 어떻게 설명하시겠어요?",
+   "scope": "family:public_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "공식자료",
+   "src": "b10s6",
+   "confidence": "medium"
+  },
+  {
+   "text": "공공 보건 업무가 병원 진료와 가장 크게 다른 점은 무엇이라고 보세요?",
+   "scope": "family:public_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건 분야 공무원에게 필요한 역량을 전문성과 행정 능력으로 나눠 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감염병 대응에서 보건소가 맡는 역할을 알고 계신 대로 설명해 주세요.",
+   "scope": "family:public_health",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여율이 낮은 활동에 사람들을 끌어들이기 위해 방법을 바꿨던 경험을 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 기관이나 단체와 함께 일하며 역할을 조정했던 경험을 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "갑자기 업무가 몰렸을 때 동료들과 역할을 나눠 버텨 냈던 경험을 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "어르신이나 외국인처럼 정보 접근이 어려운 분들에게 내용을 쉽게 전달했던 경험을 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 조사나 방문을 하면서 예상하지 못한 문제를 해결했던 경험을 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감염병 환자가 늘어 선별진료 업무에 갑자기 투입된다면 어떻게 적응하시겠어요?",
+   "scope": "family:public_health",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예방접종 뒤 이상반응이 생겼다며 주민이 항의하러 온다면 어떻게 응대하시겠어요?",
+   "scope": "family:public_health",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "방문 건강관리 대상 어르신 댁에서 방임이 의심되는 정황을 봤다면 어떻게 하시겠어요?",
+   "scope": "family:public_health",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건강증진 사업 예산이 줄어 프로그램 일부를 없애야 한다면 무엇을 기준으로 정하시겠어요?",
+   "scope": "family:public_health",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "민원인이 규정에 없는 서비스를 요구하며 담당자를 바꾸라고 한다면 어떻게 하시겠어요?",
+   "scope": "family:public_health",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건강 관련 캠페인이나 교육을 기획하거나 운영해 본 경험을 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역사회 봉사나 공공 기관 현장에서 일하면서 느낀 점을 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자료를 모아 문제를 파악하고 보고서로 정리했던 경험이 있나요?",
+   "scope": "family:public_health",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "고령화와 1인 가구 증가가 지역 보건 사업의 우선순위를 어떻게 바꾼다고 보세요?",
+   "scope": "family:public_health",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대규모 감염병 유행을 겪은 뒤 공공 보건 체계에서 보완이 필요한 부분은 무엇이라고 생각하세요?",
+   "scope": "family:public_health",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역 간 건강 격차를 줄이기 위해 보건소가 할 수 있는 일은 무엇일까요?",
+   "scope": "family:public_health",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "친분 있는 주민이 검사 결과나 접종 순서를 먼저 챙겨 달라고 부탁한다면 어떻게 하시겠어요?",
+   "scope": "family:public_health",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사업 실적을 맞추려고 참여 인원을 부풀려 보고하자는 분위기라면 어떻게 하시겠어요?",
+   "scope": "family:public_health",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공공 조직의 절차와 속도가 답답하게 느껴질 때 어떻게 받아들이시겠어요?",
+   "scope": "family:public_health",
+   "category": "조직적합성",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공공 보건 분야에서 일하면서 지키고 싶은 원칙 한 가지를 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 참여한 활동에서 참여자의 행동 변화까지 확인했던 사례가 있나요?",
+   "scope": "family:public_health",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건 사업의 성과를 참여 인원 말고 어떤 지표로 평가해야 한다고 보세요?",
+   "scope": "family:public_health",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역 주민의 흡연율을 낮추기 위한 사업을 발표로 제안한다면 어떻게 구성하시겠어요?",
+   "scope": "family:public_health",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건소의 진료 기능을 줄이고 예방과 건강증진에 집중해야 한다는 주장에 대해 입장을 정해 말씀해 주세요.",
+   "scope": "family:public_health",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "금연클리닉 등록자가 중간에 그만두는 비율을 낮추려면 어떤 관리가 필요하다고 보세요?",
+   "scope": "role:public_health_officer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "감염병 발생 신고가 들어왔을 때 역학조사 전까지 어떤 순서로 준비하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "예방접종 업무에서 백신 보관 온도를 관리하는 절차를 말씀해 주세요.",
+   "scope": "role:public_health_officer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "방문 건강관리 대상자를 선정할 때 어떤 기준으로 우선순위를 정하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공중위생업소를 점검하다 위반 사항을 발견하면 어떻게 처리하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "건강증진 프로그램 참여자를 모집하는 홍보물을 만들 때 무엇을 중점에 두시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주말에 관내 집단 설사 환자 발생 신고를 받는다면 누구에게 무엇부터 알리시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "방문한 어르신이 처방받은 약을 제대로 드시지 않는 것을 알게 됐다면 어떻게 하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건 교육 현장에 신청 인원보다 훨씬 많은 사람이 몰렸다면 어떻게 운영하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "관내 고혈압 관리율이 인근 지역보다 낮다면 어떤 자료부터 살펴보시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한정된 인력으로 방문 건강관리 대상자가 크게 늘었다면 업무를 어떻게 재구성하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "서류나 행정 절차를 정확하게 처리해서 문제를 막았던 경험을 말씀해 주세요.",
+   "scope": "role:public_health_officer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 사람 앞에서 건강 정보를 설명하거나 교육했던 경험이 있나요?",
+   "scope": "role:public_health_officer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보건직 업무에서 현장 사업과 행정 업무의 비중이 어떻다고 알고 계신지 말씀해 주세요.",
+   "scope": "role:public_health_officer",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원 대신 공공 보건 분야에서 일하고 싶은 이유는 무엇인가요?",
+   "scope": "role:public_health_officer",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주민이 보건소 사업은 세금 낭비라고 따진다면 어떻게 설득하시겠어요?",
+   "scope": "role:public_health_officer",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사례관리가 단순히 서비스를 한 번 제공하는 것과 어떻게 다르다고 보세요?",
+   "scope": "family:welfare",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사회복지 실천에서 대상자의 자기결정권을 존중한다는 것은 실제로 어떤 모습인가요?",
+   "scope": "family:welfare",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "공공 복지 전달체계와 민간 복지기관은 역할을 어떻게 나누고 협력한다고 이해하고 계신가요?",
+   "scope": "family:welfare",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복지 현장 종사자가 소진되기 쉬운 이유는 무엇이라고 보세요?",
+   "scope": "family:welfare",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "도움을 거부하던 사람과 관계를 맺기 위해 오랫동안 공을 들였던 경험을 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "필요한 자원을 찾으려고 여러 기관에 직접 연락해 연결했던 경험이 있나요?",
+   "scope": "family:welfare",
+   "category": "문제해결",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "프로그램 참여자들 사이에 생긴 갈등을 중재했던 경험을 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "갈등",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기록이나 보고서를 꼼꼼히 남겨 둔 덕분에 업무에 도움이 되었던 경험을 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "실무",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "봉사자나 지역 주민을 모아 함께 일을 진행했던 경험이 있나요?",
+   "scope": "family:welfare",
+   "category": "리더십",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 중 아동 학대가 의심되는 이야기를 들었다면 어떻게 하시겠어요?",
+   "scope": "family:welfare",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이용자가 고맙다며 선물을 건넨다면 어떻게 하시겠어요?",
+   "scope": "family:welfare",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사례관리 대상자가 연락을 끊고 몇 주째 나타나지 않는다면 어떻게 하시겠어요?",
+   "scope": "family:welfare",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "후원자가 특정 이용자에게만 지원하겠다고 조건을 건다면 어떻게 대응하시겠어요?",
+   "scope": "family:welfare",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이용자가 술에 취해 기관에 찾아와 소란을 피운다면 어떻게 대처하시겠어요?",
+   "scope": "family:welfare",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장실습에서 맡았던 역할과 가장 기억에 남는 대상자를 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "프로그램을 직접 기획하고 운영해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대상자의 변화가 더뎌 좌절했던 경험과 그때 어떤 마음으로 버텼는지 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "1인 가구와 사회적 고립 문제가 커지면서 복지 현장에 어떤 변화가 필요하다고 보세요?",
+   "scope": "family:welfare",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "돌봄을 시설 중심에서 지역사회 중심으로 옮기려는 흐름을 어떻게 보세요?",
+   "scope": "family:welfare",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복지 사각지대를 줄이기 위해 가장 먼저 개선해야 할 부분은 무엇이라고 생각하세요?",
+   "scope": "family:welfare",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대상자의 비밀을 지켜야 하지만 본인이나 다른 사람이 위험해질 수 있다면 어떻게 판단하시겠어요?",
+   "scope": "family:welfare",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "후원금이나 후원 물품을 정해진 목적과 다르게 쓰자는 제안을 받는다면 어떻게 하시겠어요?",
+   "scope": "family:welfare",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대상자의 아픔에 너무 깊이 공감해 힘들었던 적이 있다면 어떻게 회복하셨나요?",
+   "scope": "family:welfare",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복지 현장에서 일하면서 본인의 편견을 깨닫게 되었던 순간이 있나요?",
+   "scope": "family:welfare",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 연결한 서비스나 자원으로 대상자의 삶이 달라졌던 사례를 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사례를 종결할 때 목표가 달성됐는지 무엇으로 판단하셨는지 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역 안의 고립 가구를 찾아내는 사업을 발표로 제안한다면 어떻게 구성하시겠어요?",
+   "scope": "family:welfare",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복지 급여를 선별적으로 주는 것과 보편적으로 주는 것 중 어느 쪽이 바람직한지 입장을 정해 말씀해 주세요.",
+   "scope": "family:welfare",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "초기 상담에서 대상자의 욕구를 사정할 때 어떤 영역을 꼭 확인하시나요?",
+   "scope": "role:social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사례관리 계획을 세울 때 대상자를 어떻게 참여시키시겠어요?",
+   "scope": "role:social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역의 공공·민간 자원을 파악하고 정리해 두는 본인만의 방법이 있나요?",
+   "scope": "role:social_worker",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사례회의에서 다른 기관 담당자들과 의견이 갈린다면 어떻게 정리하시겠어요?",
+   "scope": "role:social_worker",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사업 결과보고서를 쓸 때 숫자 외에 어떤 내용을 담아야 한다고 보세요?",
+   "scope": "role:social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "후원자 개발과 관리를 맡는다면 어떤 방식으로 관계를 이어 가시겠어요?",
+   "scope": "role:social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "긴급 지원이 필요한 가정인데 서류상 기준에 조금 못 미친다면 어떻게 하시겠어요?",
+   "scope": "role:social_worker",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "대상자가 담당자인 본인에게 사적인 연락을 계속한다면 어떻게 경계를 세우시겠어요?",
+   "scope": "role:social_worker",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복지관 프로그램 신청이 정원을 크게 넘었다면 선정 기준을 어떻게 정하시겠어요?",
+   "scope": "role:social_worker",
+   "category": "의사결정",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복지관 이용자 수가 몇 년째 줄고 있다면 어떤 순서로 원인을 찾아보시겠어요?",
+   "scope": "role:social_worker",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역 욕구조사 결과를 사업 계획에 반영할 때 무엇을 우선으로 보시겠어요?",
+   "scope": "role:social_worker",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보조금 정산이나 행정 서류를 꼼꼼하게 처리했던 경험을 말씀해 주세요.",
+   "scope": "role:social_worker",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "가정 방문을 하면서 예상과 다른 상황을 마주했던 경험이 있나요?",
+   "scope": "role:social_worker",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "복지관, 행정복지센터, 생활시설 가운데 지원하신 곳의 사회복지사가 주로 하는 일을 말씀해 주세요.",
+   "scope": "role:social_worker",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사회복지를 평생 직업으로 삼겠다고 결심한 이유를 말씀해 주세요.",
+   "scope": "role:social_worker",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "도움을 줘도 대상자가 바뀌지 않는다면 그 지원이 의미가 있다고 할 수 있을까요?",
+   "scope": "role:social_worker",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "장기요양 수급자의 급여 계획을 세울 때 어떤 정보를 바탕으로 하시나요?",
+   "scope": "role:care_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요양보호사 배치와 일정을 짤 때 어르신 특성과 인력 상황을 어떻게 맞추시겠어요?",
+   "scope": "role:care_manager",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "시설에서 어르신 낙상이나 욕창을 예방하려면 관리자로서 무엇을 점검하시겠어요?",
+   "scope": "role:care_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "노인학대 예방을 위해 종사자 교육과 점검을 어떻게 운영하시겠어요?",
+   "scope": "role:care_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "치매 어르신의 행동 증상에 대해 요양보호사들과 대응 원칙을 어떻게 맞추시겠어요?",
+   "scope": "role:care_manager",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자에게 어르신 상태 변화를 정기적으로 알리는 방식을 어떻게 만들어 가시겠어요?",
+   "scope": "role:care_manager",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 요양보호사의 돌봄이 소홀하다며 강하게 항의한다면 어떻게 처리하시겠어요?",
+   "scope": "role:care_manager",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "어르신 몸에서 원인을 알 수 없는 멍을 발견했다는 보고를 받는다면 어떻게 하시겠어요?",
+   "scope": "role:care_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요양보호사가 갑자기 그만둬 다음 주 방문 일정에 공백이 생겼다면 어떻게 하시겠어요?",
+   "scope": "role:care_manager",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기관 평가를 앞두고 기록 누락이 많다는 것을 알게 됐다면 어떻게 정비하시겠어요?",
+   "scope": "role:care_manager",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수급자 수와 인건비를 따져 봤을 때 운영이 적자라면 어떤 부분부터 검토하시겠어요?",
+   "scope": "role:care_manager",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "어르신이나 장애인을 돌보는 현장에서 일했던 경험을 말씀해 주세요.",
+   "scope": "role:care_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "현장 인력의 고충을 듣고 근무 환경을 개선했던 경험이 있나요?",
+   "scope": "role:care_manager",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요양 서비스 관리자가 현장 돌봄과 행정 사이에서 맡는 역할을 어떻게 이해하고 계신가요?",
+   "scope": "role:care_manager",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "노인 돌봄 분야에서 일하고 싶은 이유를 말씀해 주세요.",
+   "scope": "role:care_manager",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "요양 인력이 부족한 상황에서 서비스 질을 높이겠다는 계획이 현실적이라고 보시나요?",
+   "scope": "role:care_manager",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년 프로그램을 기획할 때 청소년의 의견을 어떻게 반영하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년 수련활동을 운영하기 전에 안전사고 예방을 위해 무엇을 점검하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여 의지가 낮은 청소년이 활동에 끝까지 참여하게 하려면 어떻게 하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년 동아리나 참여기구를 지원할 때 지도자가 개입하는 정도를 어떻게 조절하시나요?",
+   "scope": "role:youth_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "체험 활동이 끝난 뒤 청소년이 스스로 돌아보게 하는 방법이 있다면 말씀해 주세요.",
+   "scope": "role:youth_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교 밖 청소년을 만나려면 어떤 경로와 방법을 쓰시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "캠프 중 한 청소년이 따돌림을 당하고 있다는 것을 알게 됐다면 어떻게 하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년이 자해 흔적을 보이며 부모에게는 말하지 말아 달라고 한다면 어떻게 하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "활동 도중 보호자가 프로그램 방식에 불만을 제기한다면 어떻게 대응하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "같은 프로그램에 중학생과 고등학생의 반응이 크게 다르다면 이유를 어떻게 분석하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "한정된 예산으로 방학 프로그램을 운영해야 한다면 무엇을 우선으로 편성하시겠어요?",
+   "scope": "role:youth_worker",
+   "category": "의사결정",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년을 대상으로 활동을 이끌어 본 경험을 말씀해 주세요.",
+   "scope": "role:youth_worker",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년과 신뢰가 쌓였다고 느꼈던 순간이 있다면 말씀해 주세요.",
+   "scope": "role:youth_worker",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년지도사는 교사나 상담사와 어떤 점이 다르다고 보세요?",
+   "scope": "role:youth_worker",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청소년 분야에 관심을 갖게 된 이유를 말씀해 주세요.",
+   "scope": "role:youth_worker",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학원 때문에 활동에 올 시간이 없는 청소년이 많은데도 청소년 활동이 필요하다고 설득할 수 있을까요?",
+   "scope": "role:youth_worker",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "입원 환자의 심리사회적 사정을 할 때 어떤 부분을 중점적으로 보시나요?",
+   "scope": "role:medical_social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료비 부담이 큰 환자에게 활용할 수 있는 지원 제도를 어떻게 찾아 연결하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "퇴원 계획을 세울 때 의료진, 가족과 어떤 순서로 협의하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "재활 병동이나 정신건강 병동에서 의료사회복지사가 하는 역할을 말씀해 주세요.",
+   "scope": "role:medical_social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "호스피스 환자의 가족을 지원할 때 사회복지사가 할 수 있는 일은 무엇이라고 보세요?",
+   "scope": "role:medical_social_worker",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료진에게 환자의 사회적 상황을 전달할 때 어떤 방식으로 보고하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "커뮤니케이션",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "연고자가 없는 환자가 퇴원해야 하는데 갈 곳이 없다면 어떻게 하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진료비를 낼 수 없다며 환자가 몰래 퇴원하려 한다면 어떻게 대응하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의료진은 요양병원 전원을 권하는데 가족은 집으로 모시겠다고 한다면 어떻게 조정하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "의뢰는 많은데 인력이 부족할 때 어떤 기준으로 개입 우선순위를 정하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "의사결정",
+   "type": "analytical",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "사회사업 의뢰가 특정 진료과에서만 들어온다면 어떻게 개선하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원이나 보건 현장 실습에서 환자 가족과 상담했던 경험을 말씀해 주세요.",
+   "scope": "role:medical_social_worker",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 직종과 한 팀으로 환자 문제를 해결했던 경험이 있나요?",
+   "scope": "role:medical_social_worker",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "병원 안에 의료사회복지사가 필요한 이유를 의료진에게 설명한다면 어떻게 말씀하시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지역사회 복지가 아니라 의료 현장의 사회복지를 택한 이유를 말씀해 주세요.",
+   "scope": "role:medical_social_worker",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "환자의 이익과 병원의 병상 운영 방침이 부딪힌다면 누구 편에 서시겠어요?",
+   "scope": "role:medical_social_worker",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "첫 회기에 상담을 구조화하는 이유는 무엇이라고 보세요?",
+   "scope": "family:counseling",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비밀보장에도 한계가 있는데, 어떤 경우에 예외가 되는지 알고 계신 대로 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담자가 수퍼비전을 꾸준히 받는 것이 왜 중요하다고 생각하세요?",
+   "scope": "family:counseling",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담은 조언이나 충고와 어떻게 다르다고 보세요?",
+   "scope": "family:counseling",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "누군가의 이야기를 끝까지 들어 줘서 상대가 스스로 답을 찾았던 경험을 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "커뮤니케이션",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 감정이 크게 올라오는 상황에서도 차분함을 유지했던 경험이 있나요?",
+   "scope": "family:counseling",
+   "category": "강점",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "집단 활동에서 소외된 사람을 자연스럽게 참여시켰던 경험을 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "팀워크",
+   "type": "behavioral",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "기록과 일정 관리를 체계적으로 해서 여러 사람을 동시에 챙겼던 경험을 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "실무",
+   "type": "behavioral",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인과 가치관이 크게 다른 사람을 도와야 했던 경험을 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "가치관",
+   "type": "behavioral",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내담자가 상담 도중 죽고 싶다는 말을 꺼낸다면 어떻게 대응하시겠어요?",
+   "scope": "family:counseling",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 시간이 끝났는데 내담자가 중요한 이야기를 꺼내기 시작한다면 어떻게 하시겠어요?",
+   "scope": "family:counseling",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "새로 배정된 내담자가 알고 보니 지인의 가족이라면 어떻게 하시겠어요?",
+   "scope": "family:counseling",
+   "category": "윤리",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내담자가 상담이 전혀 도움이 안 된다며 화를 낸다면 어떻게 반응하시겠어요?",
+   "scope": "family:counseling",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "보호자가 자녀의 상담 내용을 전부 알려 달라고 요구한다면 어떻게 하시겠어요?",
+   "scope": "family:counseling",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내담자 정보를 드러내지 않는 선에서, 실습이나 수련 중 가장 어려웠던 사례를 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수퍼비전에서 받은 피드백으로 상담 방식을 바꿨던 경험이 있다면 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "심리검사를 실시하고 해석해 본 경험이 있다면 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "비대면 상담이 늘어나는 흐름을 어떻게 보세요?",
+   "scope": "family:counseling",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정신건강에 대한 사회적 인식 변화가 상담 현장에 어떤 영향을 준다고 보세요?",
+   "scope": "family:counseling",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 관련 자격이 지나치게 다양하다는 지적에 대해 어떻게 생각하세요?",
+   "scope": "family:counseling",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내담자 동의 없이 상담 내용을 사례 발표에 써도 되는지 어떻게 판단하시겠어요?",
+   "scope": "family:counseling",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인의 역량을 벗어나는 문제를 가진 내담자를 만났다면 어떻게 하시겠어요?",
+   "scope": "family:counseling",
+   "category": "윤리",
+   "type": "ethics",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담자로서 본인의 한계나 약점이라고 느끼는 부분을 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "약점",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 공부를 하면서 본인에 대해 새롭게 알게 된 점은 무엇인가요?",
+   "scope": "family:counseling",
+   "category": "성장",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 효과를 확인하려고 회기 전후로 무엇을 비교해 보셨나요?",
+   "scope": "family:counseling",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 운영한 집단 프로그램이나 교육에서 참여자 반응을 어떻게 확인하고 반영하셨나요?",
+   "scope": "family:counseling",
+   "category": "성과",
+   "type": "result",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 서비스를 무료로 넓게 제공하는 것과 유료로 질을 관리하는 것 중 어느 쪽이 나은지 입장을 정해 말씀해 주세요.",
+   "scope": "family:counseling",
+   "category": "토론",
+   "type": "debate",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청년층 정신건강 지원을 강화하는 방안을 발표한다면 어떻게 구성하시겠어요?",
+   "scope": "family:counseling",
+   "category": "PT",
+   "type": "pt",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "접수면접에서 꼭 확인해야 할 정보는 무엇이라고 보세요?",
+   "scope": "role:counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내담자의 호소 문제를 사례개념화할 때 어떤 틀로 정리하시나요?",
+   "scope": "role:counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "자살 위험성을 평가할 때 어떤 요소를 순서대로 확인하시겠어요?",
+   "scope": "role:counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "주로 사용하는 상담 이론이 있다면 그 이론을 선택한 이유를 말씀해 주세요.",
+   "scope": "role:counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 기록을 작성할 때 무엇을 남기고 무엇을 조심해야 한다고 보세요?",
+   "scope": "role:counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "심리검사 결과를 내담자에게 설명할 때 주의하는 점은 무엇인가요?",
+   "scope": "role:counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내담자가 배우자에게 폭력을 당하고 있다고 털어놓았다면 어떻게 하시겠어요?",
+   "scope": "role:counselor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 번 연락 없이 상담에 오지 않는 내담자에게 어떻게 대응하시겠어요?",
+   "scope": "role:counselor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "내담자가 복용하던 정신과 약을 스스로 끊었다고 말한다면 어떻게 하시겠어요?",
+   "scope": "role:counselor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담이 여러 회기째 진전이 없다면 어떤 부분부터 점검하시겠어요?",
+   "scope": "role:counselor",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담센터에서 조기 종결 비율이 높다면 원인을 어떻게 분석하시겠어요?",
+   "scope": "role:counselor",
+   "category": "데이터",
+   "type": "case",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "수련 과정에서 본인의 역전이를 알아차렸던 경험을 말씀해 주세요.",
+   "scope": "role:counselor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "집단상담을 진행하거나 참여해 본 경험을 말씀해 주세요.",
+   "scope": "role:counselor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "심리상담사, 정신건강의학과 의사, 임상심리사의 역할 차이를 어떻게 이해하고 계신가요?",
+   "scope": "role:counselor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담을 전문 분야로 선택하게 된 개인적인 계기가 있다면 말씀해 주세요.",
+   "scope": "role:counselor",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이야기를 들어 주는 것만으로 사람이 정말 바뀔 수 있다고 보시나요?",
+   "scope": "role:counselor",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "구직자를 처음 만났을 때 어떤 정보를 파악해서 상담 방향을 정하시나요?",
+   "scope": "role:career_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "직업선호도검사 같은 검사 결과를 구직자 상담에 어떻게 활용하시나요?",
+   "scope": "role:career_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "이력서와 자기소개서를 첨삭할 때 가장 먼저 보는 부분은 무엇인가요?",
+   "scope": "role:career_counselor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "경력이 끊겼던 여성의 재취업 상담에서 특히 고려해야 할 점은 무엇이라고 보세요?",
+   "scope": "role:career_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "구인 기업과 구직자를 연결할 때 서로 맞는지를 어떻게 판단하시나요?",
+   "scope": "role:career_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "청년 구직자에게 노동시장 정보를 전달할 때 어떤 자료를 활용하시겠어요?",
+   "scope": "role:career_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "여러 번 면접에서 떨어져 무기력해진 구직자를 어떻게 상담하시겠어요?",
+   "scope": "role:career_counselor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "구직자가 현실과 동떨어진 조건의 일자리만 고집한다면 어떻게 하시겠어요?",
+   "scope": "role:career_counselor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "지원 요건을 채우지 못해 혜택을 받을 수 없게 된 구직자가 항의한다면 어떻게 하시겠어요?",
+   "scope": "role:career_counselor",
+   "category": "고객",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담당 구직자들이 취업 후 금방 퇴사하는 일이 많다면 어떤 원인을 먼저 살펴보시겠어요?",
+   "scope": "role:career_counselor",
+   "category": "데이터",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "월 취업 목표의 절반도 채우지 못했다면 남은 기간을 어떻게 계획하시겠어요?",
+   "scope": "role:career_counselor",
+   "category": "성과",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "다른 사람의 진로나 취업 준비를 도와 좋은 결과로 이어졌던 경험을 말씀해 주세요.",
+   "scope": "role:career_counselor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 진로를 정하면서 겪은 시행착오가 상담에 어떻게 도움이 될 거라고 보세요?",
+   "scope": "role:career_counselor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "진로·취업상담에서 깊이 있는 상담과 빠른 알선 사이의 균형을 어떻게 이해하고 계신가요?",
+   "scope": "role:career_counselor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "취업 지원 분야에서 일하려는 이유를 말씀해 주세요.",
+   "scope": "role:career_counselor",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "취업만 시키면 되는데 상담이 왜 길어야 하냐는 질문에 어떻게 답하시겠어요?",
+   "scope": "role:career_counselor",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "담임교사에게 학생 상담을 의뢰받았을 때 어떤 정보를 먼저 확인하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교폭력 사안에서 전문상담교사가 맡는 역할을 어떻게 이해하고 계신가요?",
+   "scope": "role:school_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "정서·행동특성검사에서 관심군으로 나온 학생을 어떻게 관리하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교에서 집단상담이나 예방 교육을 운영한다면 어떤 주제를 먼저 다루시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "외부 전문기관 연계가 필요한 학생인지 어떤 기준으로 판단하시나요?",
+   "scope": "role:school_counselor",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학생들이 상담실을 부담 없이 찾아오게 하려면 어떻게 운영하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "친구가 자살을 계획하고 있다며 학생이 찾아왔다면 어떻게 하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담을 받고 있는 학생의 학부모가 상담 자체를 반대한다면 어떻게 하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "커뮤니케이션",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담 때문에 학생을 수업에서 빼는 문제로 교과 교사와 부딪힌다면 어떻게 조율하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "갈등",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "특정 학년에서 등교 거부 학생이 늘어난다면 어떤 방식으로 원인을 파악하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "문제해결",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전교생의 정서 상태를 살피기 위한 연간 계획을 세운다면 무엇부터 하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "전략",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교육실습이나 학교 현장에서 학생을 상담해 본 경험을 말씀해 주세요.",
+   "scope": "role:school_counselor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "entry"
+   ],
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "교사나 학부모와 협력해 학생 문제를 해결했던 경험이 있나요?",
+   "scope": "role:school_counselor",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "전문상담교사는 교과 교사나 외부 상담센터 상담사와 역할이 어떻게 다르다고 보세요?",
+   "scope": "role:school_counselor",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "학교라는 현장에서 상담을 하고 싶은 이유를 말씀해 주세요.",
+   "scope": "role:school_counselor",
+   "category": "지원동기",
+   "type": "motivation",
+   "difficulty": "easy",
+   "basis": "직무기반",
+   "confidence": "medium"
+  },
+  {
+   "text": "상담실에 오는 학생만 만나서는 학교 문제를 해결할 수 없다는 지적에 어떻게 답하시겠어요?",
+   "scope": "role:school_counselor",
+   "category": "압박",
+   "type": "challenge",
+   "difficulty": "hard",
+   "basis": "직무기반",
+   "confidence": "medium"
+  }
+ ]
+}

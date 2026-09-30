@@ -51,7 +51,7 @@ npm run dev
 | 변수 | 위치 | 설명 |
 |---|---|---|
 | `ANTHROPIC_API_KEY` | 서버 전용 | 없으면 MOCK MODE |
-| `AI_MODEL` | 서버 전용 | 기본 `claude-opus-5-5`. 비용을 절반 정도로 줄이려면 `claude-sonnet-5-5` |
+| `AI_MODEL` | 서버 전용 | 기본 `claude-sonnet-5-5` (빠르고 Opus의 절반 정도 비용). 가장 강한 모델은 `claude-opus-5-5` |
 | `AI_EFFORT` | 서버 전용 | 기본 `low` (면접 턴 응답 속도 우선). `medium`/`high` 로 올릴 수 있음 |
 | `AI_FALLBACKS` | 서버 전용 | 기본 켜짐 — 모델이 요청을 거절(refusal)하면 서버 측에서 권장 모델로 재시도. `off` 로 끔 |
 | `RATE_LIMIT_PER_MINUTE` | 서버 전용 | IP당 AI 호출 제한 (기본 40) |

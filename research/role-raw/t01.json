@@ -1,0 +1,305 @@
+{
+  "batch": "t01",
+  "sources": [
+    {
+      "id": "t01s1",
+      "title": "사람인 면접후기 — 프리티 신사업기획 면접 (2022)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/18223",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "t01s2",
+      "title": "사람인 면접후기 — 지엔이노베이션 사업기획·신사업기획 면접 (2022)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/29470",
+      "type": "interview_review",
+      "year": 2022
+    },
+    {
+      "id": "t01s3",
+      "title": "사람인 면접후기 — 블루엘리펀트 사업기획·신사업기획 면접 (2025)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/63768",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t01s4",
+      "title": "사람인 면접후기 — 풀리드 신사업기획·사업개발 면접 (2023)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/32108",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t01s5",
+      "title": "사람인 면접후기 — 지씨케어 사업개발 면접 (2025)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/57635",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t01s6",
+      "title": "네이버 블로그(미전실형) — 대기업 투자팀 면접 경험기: 1차 화상면접과 인수 대상 케이스 스터디 임원 PT (2026)",
+      "url": "https://m.blog.naver.com/merger_acquisition/224273078910",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t01s7",
+      "title": "네이버 블로그(미전실형) — 회계법인 FAS에서 대기업 미전실(M&A·CVC)로 이직한 면접 경험기 (2026)",
+      "url": "https://m.blog.naver.com/merger_acquisition/224294601823",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t01s8",
+      "title": "사람인 면접후기 — 베바스토코리아홀딩스 인사기획(데이터분석) 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66995",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t01s9",
+      "title": "사람인 면접후기 — 블루엘리펀트 인사기획 면접 (2025)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/61488",
+      "type": "interview_review",
+      "year": 2025
+    },
+    {
+      "id": "t01s10",
+      "title": "사람인 면접후기 — 휴런 인사·인사기획 면접 (2024)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/39101",
+      "type": "interview_review",
+      "year": 2024
+    },
+    {
+      "id": "t01s11",
+      "title": "사람인 면접후기 — 디퍼런트밀리언즈 인사·인사기획 면접 (2023)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/28492",
+      "type": "interview_review",
+      "year": 2023
+    },
+    {
+      "id": "t01s12",
+      "title": "사람인 면접후기 — 공공기관 사무보조 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/63964",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t01s13",
+      "title": "사람인 면접후기 — 공단 내방객응대·사무보조 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/62463",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t01s14",
+      "title": "사람인 면접후기 — 신세계종합주택관리 사무행정·사무보조 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66487",
+      "type": "interview_review",
+      "year": 2026
+    },
+    {
+      "id": "t01s15",
+      "title": "사람인 면접후기 — 한국급식학회 사무직 면접 (2026)",
+      "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/66905",
+      "type": "interview_review",
+      "year": 2026
+    }
+  ],
+  "profiles": [],
+  "questions": [
+    {
+      "text": "회사의 가치를 높이기 위해 제안하고 싶은 새로운 사업 아이디어가 있다면 말씀해 주세요.",
+      "scope": "role:new_business",
+      "category": "전략",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s1",
+      "confidence": "high"
+    },
+    {
+      "text": "업력이 짧은 회사의 사업 아이템이 시장에 자리 잡으려면 무엇이 가장 중요하다고 보세요?",
+      "scope": "role:new_business",
+      "category": "시장",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s2",
+      "confidence": "high"
+    },
+    {
+      "text": "해외 시장에서 아직 인지도가 낮은 회사를 성장시킨다면 어떤 방법으로 접근하시겠어요?",
+      "scope": "role:new_business",
+      "category": "전략",
+      "type": "case",
+      "difficulty": "hard",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t01s3",
+      "confidence": "high"
+    },
+    {
+      "text": "한 기업의 사례 자료를 받고 그 회사의 사업 방향을 제시해야 한다면 어떤 순서로 정리하시겠어요?",
+      "scope": "role:new_business",
+      "category": "사례",
+      "type": "case",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t01s4",
+      "confidence": "high"
+    },
+    {
+      "text": "인력이나 예산이 부족한 상황에서 새 사업을 추진해야 한다면 어떻게 접근하시겠어요?",
+      "scope": "role:new_business",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s5",
+      "confidence": "high"
+    },
+    {
+      "text": "해외 기업 하나를 인수 대상으로 골라 투자 이유와 시너지, 적정 가치를 발표한다면 어떻게 구성하시겠어요?",
+      "scope": "role:corporate_investment",
+      "category": "PT",
+      "type": "pt",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t01s6",
+      "confidence": "high"
+    },
+    {
+      "text": "여러 후보 가운데 왜 하필 그 회사를 투자 대상으로 골랐는지 임원을 설득해 보시겠어요?",
+      "scope": "role:corporate_investment",
+      "category": "압박",
+      "type": "challenge",
+      "difficulty": "hard",
+      "basis": "공개후기",
+      "src": "t01s6",
+      "confidence": "high"
+    },
+    {
+      "text": "인수 대상 회사와 우리 본업 사이의 시너지를 구체적으로 어떻게 찾아내시겠어요?",
+      "scope": "role:corporate_investment",
+      "category": "전략",
+      "type": "analytical",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s6",
+      "confidence": "high"
+    },
+    {
+      "text": "투자 담당자로서 회사 본업이 속한 산업을 어떻게 이해하고 공부하고 계신지 말씀해 주세요.",
+      "scope": "role:corporate_investment",
+      "category": "산업",
+      "type": "industry",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s6",
+      "confidence": "high"
+    },
+    {
+      "text": "해외 상대방과 협상할 때 우리가 유리한 위치에 있다면 어떤 태도로 협상을 이끄시겠어요?",
+      "scope": "role:corporate_investment",
+      "category": "커뮤니케이션",
+      "type": "situational",
+      "difficulty": "normal",
+      "levels": [
+        "mid",
+        "senior"
+      ],
+      "basis": "공개후기",
+      "src": "t01s7",
+      "confidence": "medium"
+    },
+    {
+      "text": "인사 데이터를 시각화 도구로 정리해 분석하거나 보고해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:hr_planner",
+      "category": "데이터",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s8",
+      "confidence": "high"
+    },
+    {
+      "text": "맡아 보신 인사 업무 하나를 골라 처리 프로세스를 처음부터 끝까지 설명해 주세요.",
+      "scope": "role:hr_planner",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "levels": [
+        "junior",
+        "mid"
+      ],
+      "basis": "공개후기",
+      "src": "t01s9",
+      "confidence": "high"
+    },
+    {
+      "text": "인사 업무를 하면서 기존 방식의 불편을 찾아 개선해 본 경험이 있다면 말씀해 주세요.",
+      "scope": "role:hr_planner",
+      "category": "문제해결",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s10",
+      "confidence": "high"
+    },
+    {
+      "text": "회사의 인재상이나 조직문화를 만들고 알리는 일에 참여해 본 경험이 있으신가요?",
+      "scope": "role:hr_planner",
+      "category": "조직적합성",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s11",
+      "confidence": "high"
+    },
+    {
+      "text": "반복되는 단순 업무에서 실수를 줄이기 위한 본인만의 방법이 있으신가요?",
+      "scope": "role:office_admin",
+      "category": "실무",
+      "type": "role_specific",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s12",
+      "confidence": "high"
+    },
+    {
+      "text": "같은 문제로 매일 찾아와 항의하는 방문객이 있다면 어떻게 응대하시겠어요?",
+      "scope": "role:office_admin",
+      "category": "상황대처",
+      "type": "situational",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s13",
+      "confidence": "high"
+    },
+    {
+      "text": "엑셀은 어느 수준까지 다루실 수 있는지 실제로 써 본 기능을 들어 말씀해 주세요.",
+      "scope": "role:office_admin",
+      "category": "도구",
+      "type": "role_specific",
+      "difficulty": "easy",
+      "basis": "공개후기",
+      "src": "t01s14",
+      "confidence": "high"
+    },
+    {
+      "text": "회의록이나 보고서를 작성할 때 내용을 어떻게 정리하시는지 경험을 들어 말씀해 주세요.",
+      "scope": "role:office_admin",
+      "category": "실무",
+      "type": "experience",
+      "difficulty": "normal",
+      "basis": "공개후기",
+      "src": "t01s15",
+      "confidence": "high"
+    }
+  ]
+}

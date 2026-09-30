@@ -58,21 +58,21 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "경영·전략",
    "nameEn": "Strategy & Management",
    "group": "biz",
-   "q": 223
+   "q": 233
   },
   {
    "id": "hr",
    "name": "인사·노무",
    "nameEn": "HR & Labor Relations",
    "group": "biz",
-   "q": 207
+   "q": 211
   },
   {
    "id": "admin",
    "name": "총무·사무",
    "nameEn": "General Affairs & Office",
    "group": "biz",
-   "q": 110
+   "q": 114
   },
   {
    "id": "accounting",
@@ -419,7 +419,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Strategy & Planning",
    "dept": "전략기획팀",
    "archetype": "strategy_business",
-   "q": 146
+   "q": 151
   },
   {
    "id": "investment_ir",
@@ -428,7 +428,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Investment & IR",
    "dept": "재무전략팀",
    "archetype": "strategy_business",
-   "q": 77
+   "q": 82
   },
   {
    "id": "hr_people",
@@ -437,7 +437,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Human Resources",
    "dept": "인사팀",
    "archetype": "hr_people",
-   "q": 156
+   "q": 160
   },
   {
    "id": "labor",
@@ -455,7 +455,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "General Affairs & Office",
    "dept": "경영지원팀",
    "archetype": "admin_support",
-   "q": 110
+   "q": 114
   },
   {
    "id": "accounting",
@@ -1141,7 +1141,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "BD",
     "신규사업"
    ],
-   "q": 17
+   "q": 22
   },
   {
    "id": "management_consultant",
@@ -1191,7 +1191,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Corporate Development",
     "투자 담당"
    ],
-   "q": 24
+   "q": 29
   },
   {
    "id": "recruiter",
@@ -1224,7 +1224,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "인사전략",
     "HRM 기획"
    ],
-   "q": 17
+   "q": 21
   },
   {
    "id": "hrd",
@@ -1341,7 +1341,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "사무보조",
     "Administrative Assistant"
    ],
-   "q": 16
+   "q": 20
   },
   {
    "id": "secretary",
@@ -5299,16 +5299,16 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
   "roles": 256,
   "domains": 51,
   "families": 72,
-  "questions": 7693,
+  "questions": 7711,
   "commonQuestions": 383,
   "byBasis": {
-   "공개후기": 698,
+   "공개후기": 716,
    "공식자료": 764,
    "공고기반": 135,
    "직무기반": 5769,
    "일반면접": 327
   },
-  "sources": 581,
+  "sources": 596,
   "generatedAt": "2026-09-30"
  }
 };

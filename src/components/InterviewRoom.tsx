@@ -192,81 +192,164 @@ const WallClock = memo(function WallClock() {
   );
 });
 
+/*
+ * Figures are drawn in a restrained, flat editorial style: realistic head/shoulder proportions,
+ * tailored jackets, neutral expressions. Origin (0,0) is the desk edge under each seat.
+ * Head: crown ≈ -224, eyes -181, chin -144. Shoulders ≈ ±86 at -112.
+ */
+const FACE =
+  "M-27 -196 C-28 -210 -17 -218 0 -218 C17 -218 28 -210 27 -196 L27.5 -179 C27 -167 23.5 -158 17 -152 C11 -147 6 -144.5 0 -144.5 C-6 -144.5 -11 -147 -17 -152 C-23.5 -158 -27 -167 -27.5 -179 Z";
+const FACE_SHADE = "M10 -217 C23 -213 28 -204 27.5 -186 L27.5 -179 C27 -167 23.5 -158 17 -152 C11 -147 6 -144.5 0 -144.5 C9 -150 16 -161 18.5 -176 C20.5 -192 18 -208 10 -217 Z";
+
 function Hair({ look, layer }: { look: PanelMember["look"]; layer: "back" | "front" }) {
   const c = look.hair;
+  const sheen = <path d="M-8 -221 C4 -224 16 -220 22 -212" stroke="#fff" strokeOpacity="0.07" strokeWidth="3" fill="none" strokeLinecap="round" />;
   if (look.hairStyle === "bob") {
     return layer === "back" ? (
-      <path d="M-40 -146 C-48 -196 -36 -230 0 -230 C36 -230 48 -196 40 -146 C33 -140 26 -146 26 -156 L26 -186 L-26 -186 L-26 -156 C-26 -146 -33 -140 -40 -146 Z" fill={c} />
+      <path d="M-34 -150 C-40 -174 -41 -204 -29 -219 C-19 -231 19 -231 29 -219 C41 -204 40 -174 34 -150 C30 -146 25 -146 22 -150 L22 -190 L-22 -190 L-22 -150 C-25 -146 -30 -146 -34 -150 Z" fill={c} />
     ) : (
-      <path d="M-33 -186 C-34 -222 -12 -228 4 -226 C26 -224 36 -206 33 -186 C22 -200 6 -204 -10 -198 C-18 -195 -27 -192 -33 -186 Z" fill={c} />
+      <g>
+        <path d="M-31 -166 C-35 -204 -23 -226 0 -227 C23 -228 35 -209 31 -170 C29 -186 25 -198 17 -205 C7 -199 -8 -196 -19 -197 C-24 -190 -28 -179 -31 -166 Z" fill={c} />
+        {sheen}
+      </g>
     );
   }
   if (layer === "back") return null;
+  const sideburns = <path d="M-27.6 -194 L-25.2 -194 L-25.8 -184 L-27.6 -184.5 Z M27.6 -194 L25.2 -194 L25.8 -184 L27.6 -184.5 Z" fill={c} />;
   if (look.hairStyle === "side") {
-    return <path d="M-33 -182 C-36 -222 -10 -228 6 -226 C28 -224 36 -206 33 -184 C30 -198 22 -206 8 -204 C-6 -212 -24 -200 -33 -182 Z" fill={c} />;
+    return (
+      <g>
+        <path d="M-30 -184 C-34 -214 -15 -229 5 -228 C25 -227 34 -212 30 -186 C28 -196 24 -203 19 -205 C9 -200 -6 -201 -17 -207 C-23 -201 -27 -193 -30 -184 Z" fill={c} />
+        <path d="M-17 -207 C-6 -213 8 -214 19 -205" stroke="#000" strokeOpacity="0.16" strokeWidth="1" fill="none" />
+        {sideburns}
+        {sheen}
+      </g>
+    );
   }
   if (look.hairStyle === "neat") {
-    return <path d="M-32 -184 C-34 -220 -14 -226 2 -225 C24 -224 34 -210 32 -186 C29 -198 18 -205 -2 -205 C-14 -205 -26 -198 -32 -184 Z" fill={c} />;
+    return (
+      <g>
+        <path d="M-30 -185 C-33 -214 -16 -228 3 -228 C24 -228 34 -213 30 -187 C29 -194 27 -199 23 -202 C14 -207 0 -207 -10 -209 C-16 -203 -24 -196 -30 -185 Z" fill={c} />
+        <path d="M-10 -209 C-9 -216 -7 -222 -4 -226" stroke="#fff" strokeOpacity="0.1" strokeWidth="1.2" fill="none" />
+        {sideburns}
+        {sheen}
+      </g>
+    );
   }
-  return <path d="M-32 -186 C-32 -218 -14 -224 0 -224 C14 -224 32 -218 32 -186 C26 -202 12 -206 0 -206 C-12 -206 -26 -202 -32 -186 Z" fill={c} />;
+  return (
+    <g>
+      <path d="M-30 -186 C-31 -215 -14 -226 0 -226 C14 -226 31 -215 30 -186 C26 -200 13 -205 0 -205 C-13 -205 -26 -200 -30 -186 Z" fill={c} />
+      {sideburns}
+      {sheen}
+    </g>
+  );
 }
 
 function InterviewerBody({ x, member, talking, reviewing, nodding, nodDelay }: { x: number; member: PanelMember; talking: boolean; reviewing: boolean; nodding: boolean; nodDelay: number }) {
   const { look } = member;
+  const narrow = look.hairStyle === "bob";
+  const lip = narrow ? "#a9645a" : "#9a6457";
   return (
     <g transform={`translate(${x} ${DESK_Y})`}>
-      {/* chair */}
-      <rect x="-68" y="-252" width="136" height="230" rx="22" fill="#2b2f37" />
-      <rect x="-58" y="-242" width="116" height="60" rx="16" fill="#353a44" />
-      {/* torso */}
-      <path d="M-88 40 L-82 -84 Q-78 -122 -42 -130 L42 -130 Q78 -122 82 -84 L88 40 Z" fill={look.suit} />
-      <path d="M-22 -130 L0 -76 L22 -130 Z" fill={look.shirt} />
-      {look.tie ? (
-        <>
-          <path d="M-6 -124 L6 -124 L9 -86 L0 -72 L-9 -86 Z" fill={look.tie} />
-          <rect x="-7" y="-130" width="14" height="8" rx="2" fill={look.tie} />
-        </>
-      ) : (
-        <path d="M-12 -130 L0 -112 L12 -130" fill="none" stroke="#000" strokeOpacity="0.12" strokeWidth="1.5" />
-      )}
-      <path d="M-22 -130 L-6 -76 L-34 -104 Z M22 -130 L6 -76 L34 -104 Z" fill="#000" opacity="0.12" />
-      {/* neck */}
-      <rect x="-12" y="-152" width="24" height="26" rx="6" fill={look.skin} />
-      <rect x="-12" y="-138" width="24" height="10" fill="#000" opacity="0.08" />
+      {/* high-back chair */}
+      <path d="M-66 -24 L-66 -226 C-66 -244 -54 -254 -36 -254 L36 -254 C54 -254 66 -244 66 -226 L66 -24 Z" fill="#23272e" />
+      <path d="M-56 -30 L-56 -222 C-56 -236 -48 -244 -34 -244 L34 -244 C48 -244 56 -236 56 -222 L56 -30 Z" fill="#2c3139" />
+      <path d="M-56 -196 L56 -196" stroke="#1d2127" strokeWidth="1.5" />
 
-      {/* head */}
-      <g className={`iv-part ${reviewing ? "iv-look-down" : nodding ? "iv-nod" : ""}`} style={nodding ? { animationDelay: `${nodDelay}s` } : undefined}>
-        <Hair look={look} layer="back" />
-        <ellipse cx="-31" cy="-178" rx="5" ry="8" fill={look.skin} />
-        <ellipse cx="31" cy="-178" rx="5" ry="8" fill={look.skin} />
-        <ellipse cx="0" cy="-180" rx="31" ry="37" fill={look.skin} />
-        <Hair look={look} layer="front" />
-        {/* brows */}
-        <path d={reviewing ? "M-18 -190 L-6 -189 M6 -189 L18 -190" : "M-18 -193 L-6 -195 M6 -195 L18 -193"} stroke="#2a211d" strokeWidth="2.6" strokeLinecap="round" />
-        {/* eyes */}
-        {reviewing ? (
-          <path d="M-15 -180 Q-11 -177 -7 -180 M7 -180 Q11 -177 15 -180" stroke="#2a2a2a" strokeWidth="2" fill="none" strokeLinecap="round" />
+      {/* jacket (sleeves are drawn with the desk items so the forearms can rest on the desk) */}
+      <g transform={narrow ? "scale(0.93 1)" : undefined}>
+        <path d="M-88 40 L-86 -80 C-85 -102 -78 -113 -60 -119 L-15 -131 L15 -131 L60 -119 C78 -113 85 -102 86 -80 L88 40 Z" fill={look.suit} />
+        <path d="M-15 -131 L0 -74 L15 -131 Z" fill={look.shirt} />
+        {/* neck */}
+        <path d="M-11 -154 L-12 -129 C-6 -126 6 -126 12 -129 L11 -154 Z" fill={look.skin} />
+        <path d="M-11.6 -143 C-6 -136 6 -136 11.6 -143 L11.8 -135 C6 -130 -6 -130 -11.8 -135 Z" fill="#000" opacity="0.12" />
+        {look.tie ? (
+          <>
+            <path d="M-12.5 -133 C-6 -128 6 -128 12.5 -133 L12 -129 L3 -116 L0 -121 L-3 -116 L-12 -129 Z" fill={look.shirt} />
+            <path d="M-12 -129 L-3 -116 M12 -129 L3 -116" stroke="#000" strokeOpacity="0.14" strokeWidth="0.8" />
+            <path d="M-4.5 -123 L4.5 -123 L3.5 -114 L-3.5 -114 Z" fill={look.tie} />
+            <path d="M-3.5 -114 L3.5 -114 L7 -88 L0 -79 L-7 -88 Z" fill={look.tie} />
+            <path d="M0 -114 L3.5 -114 L7 -88 L0 -79 Z" fill="#000" opacity="0.14" />
+          </>
+        ) : narrow ? (
+          <path d="M-12.5 -131 C-8 -118 -4 -106 0 -98 C4 -106 8 -118 12.5 -131" fill="none" stroke="#000" strokeOpacity="0.1" strokeWidth="1" />
         ) : (
-          <g className="iv-part iv-blink" style={{ animationDelay: `${nodDelay * 1.7}s` }}>
-            <ellipse cx="-11" cy="-180" rx="3.2" ry="3.6" fill="#2a2a2a" />
-            <ellipse cx="11" cy="-180" rx="3.2" ry="3.6" fill="#2a2a2a" />
-          </g>
+          <>
+            <path d="M-12.5 -133 C-6 -128 6 -128 12.5 -133 L12 -129 L4 -113 L0 -120 L-4 -113 L-12 -129 Z" fill={look.shirt} />
+            <path d="M-12 -129 L-4 -113 M12 -129 L4 -113 M0 -120 L0 -104" stroke="#000" strokeOpacity="0.14" strokeWidth="0.8" />
+            <circle cx="0" cy="-96" r="1.1" fill="#000" opacity="0.2" />
+          </>
         )}
-        {look.glasses && (
-          <g fill="none" stroke="#2f3136" strokeWidth="1.8">
-            <rect x="-21" y="-188" width="17" height="14" rx="4" />
-            <rect x="4" y="-188" width="17" height="14" rx="4" />
-            <path d="M-4 -182 L4 -182" />
-          </g>
-        )}
-        <path d="M0 -176 Q-3 -168 1 -166" stroke="#000" strokeOpacity="0.22" strokeWidth="1.6" fill="none" strokeLinecap="round" />
-        {talking ? (
-          <ellipse cx="0" cy="-157" rx="7" ry="4.5" fill="#7a3b33" className="iv-part iv-talk" />
-        ) : (
-          <path d="M-8 -159 Q0 -155 8 -159" stroke="#8a4b3f" strokeWidth="2" fill="none" strokeLinecap="round" />
-        )}
-        <ellipse cx="-19" cy="-166" rx="5" ry="3" fill="#e08a7a" opacity="0.18" />
-        <ellipse cx="19" cy="-166" rx="5" ry="3" fill="#e08a7a" opacity="0.18" />
+        {/* notch lapels */}
+        <path d="M-15 -131 L-31 -124 L-27 -107 L-36 -103 L-3 -70 L-1 -79 Z" fill={look.suit} />
+        <path d="M15 -131 L31 -124 L27 -107 L36 -103 L3 -70 L1 -79 Z" fill={look.suit} />
+        <path d="M-15 -131 L-31 -124 L-27 -107 L-36 -103 L-3 -70 L-1 -79 Z M15 -131 L31 -124 L27 -107 L36 -103 L3 -70 L1 -79 Z" fill="#000" opacity="0.1" />
+        <path d="M-15 -131 L-1 -79 M15 -131 L1 -79" stroke="#fff" strokeOpacity="0.1" strokeWidth="1" />
+        <path d="M-36 -103 L-3 -70 M36 -103 L3 -70" stroke="#000" strokeOpacity="0.22" strokeWidth="1" />
+        {/* chest pocket, buttons */}
+        <path d="M32 -90 L52 -92" stroke="#000" strokeOpacity="0.22" strokeWidth="1.4" />
+        {look.tie && <path d="M36 -91 L40 -95.5 L44 -92 L48 -96.5 L51 -92 Z" fill="#f4f5f7" />}
+        <circle cx="0" cy="-58" r="2" fill="#000" opacity="0.35" />
+        <circle cx="0" cy="-34" r="2" fill="#000" opacity="0.35" />
+      </g>
+
+      {/* head (outer group offsets it; the inner one carries the CSS nod/look-down transforms) */}
+      <g transform="translate(0 4)">
+        <g className={`iv-part ${reviewing ? "iv-look-down" : nodding ? "iv-nod" : ""}`} style={nodding ? { animationDelay: `${nodDelay}s` } : undefined}>
+          <Hair look={look} layer="back" />
+          {!narrow && (
+            <>
+              <path d="M-27 -186 C-33 -187 -34 -176 -31 -170 C-30 -167 -28 -166 -26.5 -167 Z" fill={look.skin} />
+              <path d="M27 -186 C33 -187 34 -176 31 -170 C30 -167 28 -166 26.5 -167 Z" fill={look.skin} />
+              <path d="M27 -186 C33 -187 34 -176 31 -170 C30 -167 28 -166 26.5 -167 Z" fill="#000" opacity="0.1" />
+            </>
+          )}
+          <path d={FACE} fill={look.skin} />
+          <path d={FACE_SHADE} fill="#000" opacity="0.07" />
+          <Hair look={look} layer="front" />
+
+          {/* brows */}
+          <path
+            d={
+              reviewing
+                ? "M-18 -188.5 Q-12 -190.5 -5 -189.5 L-5 -188 Q-12 -189 -18 -187 Z M18 -188.5 Q12 -190.5 5 -189.5 L5 -188 Q12 -189 18 -187 Z"
+                : "M-18 -189.5 Q-12 -193 -5 -191.5 L-5 -189.6 Q-12 -190.8 -18 -188 Z M18 -189.5 Q12 -193 5 -191.5 L5 -189.6 Q12 -190.8 18 -188 Z"
+            }
+            fill={look.hair}
+          />
+          {/* eyes */}
+          {reviewing ? (
+            <path d="M-16 -179.5 Q-11 -177.2 -6 -179.5 M6 -179.5 Q11 -177.2 16 -179.5" stroke="#2b221d" strokeWidth="1.3" fill="none" strokeLinecap="round" />
+          ) : (
+            <g className="iv-part iv-blink" style={{ animationDelay: `${nodDelay * 1.7}s` }}>
+              <path d="M-16 -181 Q-11 -185 -6 -181 Q-11 -178.4 -16 -181 Z M6 -181 Q11 -185 16 -181 Q11 -178.4 6 -181 Z" fill="#f6f2ec" />
+              <circle cx="-11" cy="-181.2" r="2.3" fill="#2a201b" />
+              <circle cx="11" cy="-181.2" r="2.3" fill="#2a201b" />
+              <path d="M-16.5 -181 Q-11 -185.4 -5.5 -181.3 M5.5 -181.3 Q11 -185.4 16.5 -181" stroke="#241c18" strokeWidth="1.3" fill="none" strokeLinecap="round" />
+            </g>
+          )}
+          {look.glasses && (
+            <g fill="#ffffff" fillOpacity="0.06" stroke="#26282c" strokeWidth="1.3">
+              <rect x="-19.5" y="-186.5" width="15.5" height="10.5" rx="2.5" />
+              <rect x="4" y="-186.5" width="15.5" height="10.5" rx="2.5" />
+              <path d="M-4 -183 Q0 -185 4 -183 M-19.5 -184 L-27 -185 M19.5 -184 L27 -185" fill="none" />
+            </g>
+          )}
+          {/* nose */}
+          <path d="M2.5 -180 C3.5 -174 5 -169 3.5 -166.5" stroke="#000" strokeOpacity="0.16" strokeWidth="1.3" fill="none" strokeLinecap="round" />
+          <path d="M-4 -165.8 Q0 -163.8 4 -165.8" stroke="#000" strokeOpacity="0.22" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+          {/* mouth — neutral, attentive */}
+          {talking ? (
+            <g>
+              <path d="M-5.5 -156.2 Q0 -157.2 5.5 -156.2 Q0 -151.8 -5.5 -156.2 Z" fill="#5a2c27" className="iv-part iv-talk" />
+            </g>
+          ) : (
+            <>
+              <path d="M-7 -156 Q0 -155.2 7 -156" stroke={lip} strokeWidth="1.6" fill="none" strokeLinecap="round" />
+              <path d="M-3.5 -152.8 Q0 -152 3.5 -152.8" stroke="#000" strokeOpacity="0.1" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+            </>
+          )}
+        </g>
       </g>
     </g>
   );
@@ -281,15 +364,27 @@ function DeskItems({ x, writing, member }: { x: number; writing: boolean; member
       {[10, 15, 20].map((y) => (
         <line key={y} x1={-36 - (y - 4) * 0.2} y1={y} x2={30 + (y - 4) * 0.2} y2={y} stroke="#9aa3b5" strokeWidth="1" opacity="0.6" />
       ))}
-      {/* sleeves + hands */}
-      <path d="M-80 -74 C-94 -34 -88 2 -70 14 L-38 18 L-46 -8 C-54 -28 -58 -50 -60 -74 Z" fill={look.suit} />
-      <path d="M80 -74 C94 -34 88 2 70 14 L38 18 L46 -8 C54 -28 58 -50 60 -74 Z" fill={look.suit} />
-      <rect x="-50" y="8" width="14" height="10" rx="3" fill={look.shirt} />
-      <ellipse cx="-30" cy="15" rx="13" ry="8" fill={look.skin} />
+      {/* sleeves resting on the desk */}
+      <g transform={member.look.hairStyle === "bob" ? "scale(0.93 1)" : undefined}>
+        <path d="M-60 -119 C-78 -114 -87 -103 -88 -80 C-91 -44 -92 -6 -80 8 C-70 16 -58 20 -45 20 L-41 5 C-52 1 -60 -9 -63 -30 C-66 -58 -66 -92 -60 -119 Z" fill={look.suit} />
+        <path d="M60 -119 C78 -114 87 -103 88 -80 C91 -44 92 -6 80 8 C70 16 58 20 45 20 L41 5 C52 1 60 -9 63 -30 C66 -58 66 -92 60 -119 Z" fill={look.suit} />
+        <path d="M-88 -80 C-91 -44 -92 -6 -80 8 C-74 12 -68 15 -62 17 C-78 4 -84 -30 -82 -80 C-82 -96 -76 -108 -66 -116 C-80 -110 -87 -100 -88 -80 Z" fill="#000" opacity="0.2" />
+        <path d="M88 -80 C91 -44 92 -6 80 8 C74 12 68 15 62 17 C78 4 84 -30 82 -80 C82 -96 76 -108 66 -116 C80 -110 87 -100 88 -80 Z" fill="#000" opacity="0.24" />
+        <path d="M-60 -119 C-66 -92 -66 -58 -63 -30 M60 -119 C66 -92 66 -58 63 -30" stroke="#000" strokeOpacity="0.2" strokeWidth="1" fill="none" />
+        <path d="M-78 -4 C-68 3 -58 5 -50 5 M78 -4 C68 3 58 5 50 5" stroke="#000" strokeOpacity="0.2" strokeWidth="1" fill="none" />
+        <path d="M-62 -118 C-74 -114 -82 -107 -85 -96" stroke="#fff" strokeOpacity="0.08" strokeWidth="3" fill="none" strokeLinecap="round" />
+      </g>
+      {/* hands: left resting, right holding a pen */}
+      <path d="M-45 20 L-41 5 L-37 6 L-40 21 Z" fill={look.shirt} />
+      <path d="M-39 7 C-32 4 -22 5 -16 9 C-12 12 -13 18 -19 19.5 L-38 21 C-43 20 -43 10 -39 7 Z" fill={look.skin} />
+      <path d="M-30 11 L-18 12.5 M-30 15 L-17 16" stroke="#000" strokeOpacity="0.1" strokeWidth="0.9" />
       <g className={`iv-part ${writing ? "iv-write" : ""}`}>
-        <rect x="36" y="8" width="14" height="10" rx="3" fill={look.shirt} />
-        <ellipse cx="28" cy="15" rx="13" ry="8" fill={look.skin} />
-        <line x1="20" y1="20" x2="34" y2="0" stroke="#222" strokeWidth="3" strokeLinecap="round" />
+        <path d="M45 20 L41 5 L37 6 L40 21 Z" fill={look.shirt} />
+        <path d="M39 7 C32 4 22 5 16 9 C12 12 13 18 19 19.5 L38 21 C43 20 43 10 39 7 Z" fill={look.skin} />
+        <line x1="17" y1="22" x2="31" y2="-2" stroke="#1d2026" strokeWidth="2.4" strokeLinecap="round" />
+        <line x1="17" y1="22" x2="19" y2="18.5" stroke="#b9bec6" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M22 9 C18 8 16 12 19 14 C21 15 24 13 22 9 Z" fill={look.skin} />
+        <path d="M22 9 C18 8 16 12 19 14" stroke="#000" strokeOpacity="0.14" strokeWidth="0.9" fill="none" />
       </g>
       {/* water bottle */}
       <g transform="translate(92 0)">

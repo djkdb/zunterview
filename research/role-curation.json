@@ -135,6 +135,10 @@
     {
       "urlIncludes": "m.blog.naver.com/whaehowl/223043922961",
       "why": "a list of questions the author prepared, not a record of what was asked"
+    },
+    {
+      "urlIncludes": "saramin.co.kr/zf_user/interview-review/detail/idx/68449",
+      "why": "a 생산관리 applicant's review (asked about their 산업공학 major), not an IE interview"
     }
   ]
 }

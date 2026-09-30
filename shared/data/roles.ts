@@ -247,7 +247,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "에너지",
    "nameEn": "Energy",
    "group": "rnd",
-   "q": 87
+   "q": 95
   },
   {
    "id": "architecture",
@@ -261,7 +261,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "토목",
    "nameEn": "Civil Engineering",
    "group": "rnd",
-   "q": 142
+   "q": 152
   },
   {
    "id": "safety",
@@ -289,14 +289,14 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "name": "공정",
    "nameEn": "Process Engineering",
    "group": "mfg",
-   "q": 99
+   "q": 106
   },
   {
    "id": "science",
    "name": "연구원·과학",
    "nameEn": "Science & Research",
    "group": "rnd",
-   "q": 97
+   "q": 100
   },
   {
    "id": "education",
@@ -797,7 +797,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Energy",
    "dept": "발전사업팀",
    "archetype": "manufacturing_quality",
-   "q": 87
+   "q": 95
   },
   {
    "id": "architecture",
@@ -824,7 +824,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Landscape",
    "dept": "조경팀",
    "archetype": "field_construction",
-   "q": 45
+   "q": 55
   },
   {
    "id": "safety",
@@ -860,7 +860,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Process",
    "dept": "공정기술팀",
    "archetype": "manufacturing_quality",
-   "q": 99
+   "q": 106
   },
   {
    "id": "science",
@@ -869,7 +869,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "nameEn": "Science",
    "dept": "연구소",
    "archetype": "research_science",
-   "q": 97
+   "q": 100
   },
   {
    "id": "school",
@@ -3642,7 +3642,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "재생에너지 사업개발",
     "Solar Engineer"
    ],
-   "q": 17
+   "q": 25
   },
   {
    "id": "power_grid",
@@ -3779,7 +3779,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "조경기사",
     "Landscape Designer"
    ],
-   "q": 17
+   "q": 27
   },
   {
    "id": "safety_manager",
@@ -3990,7 +3990,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "공정관리",
     "PE"
    ],
-   "q": 24
+   "q": 29
   },
   {
    "id": "process_innovation",
@@ -4030,7 +4030,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "Industrial Engineering",
     "IE 담당"
    ],
-   "q": 24
+   "q": 26
   },
   {
    "id": "research_scientist",
@@ -4083,7 +4083,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
     "통계 담당",
     "통계 컨설팅"
    ],
-   "q": 24
+   "q": 27
   },
   {
    "id": "elementary_teacher",
@@ -5299,16 +5299,16 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
   "roles": 256,
   "domains": 51,
   "families": 72,
-  "questions": 7961,
+  "questions": 7989,
   "commonQuestions": 383,
   "byBasis": {
-   "공개후기": 956,
+   "공개후기": 982,
    "공식자료": 770,
    "공고기반": 140,
-   "직무기반": 5768,
+   "직무기반": 5770,
    "일반면접": 327
   },
-  "sources": 722,
+  "sources": 738,
   "generatedAt": "2026-09-30"
  }
 };

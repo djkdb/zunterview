@@ -1,0 +1,464 @@
+{
+ "batch": "t06",
+ "sources": [
+  {
+   "id": "t06s1",
+   "title": "사람인 면접후기 — 신재생에너지 사업개발·솔루션 기술영업 경력 면접 (2025 상반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/52086",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "t06s2",
+   "title": "사람인 면접후기 — 태양광 모듈 제조사 연구원 신입 면접 (2023 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/47535",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "t06s3",
+   "title": "사람인 면접후기 — 재생에너지 사업기획·사업개발 경력 면접 (2026 상반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67777",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "t06s4",
+   "title": "사람인 면접후기 — 박막 태양전지 기업 연구원 신입 면접 (2021 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/17677",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "t06s5",
+   "title": "사람인 면접후기 — 태양광 발전 O&M 전기 엔지니어 신입 면접 (2026 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/67817",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "t06s6",
+   "title": "네이버 블로그 — 서울시 7급 조경직 최종합격 후기 (3) 면접후기 (주제발표·개별면접 질문)",
+   "url": "https://m.blog.naver.com/rkgus327/223735890090",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "t06s7",
+   "title": "네이버 블로그 — 지방 녹지직(조경) 합격, 면접 후기와 받은 질문 (2026)",
+   "url": "https://m.blog.naver.com/dntndus513/224401301261",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "t06s8",
+   "title": "네이버 블로그 — 조경설계 사무소 신입 면접 경험담 (슬기로운 조경생활: 면접에서 가장 중요했던 것)",
+   "url": "https://m.blog.naver.com/jkm9319/222273974425",
+   "type": "interview_review",
+   "year": 2021
+  },
+  {
+   "id": "t06s9",
+   "title": "사람인 면접후기 — 조경설계·조경공사 경력 면접 (2026 상반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/63479",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "t06s10",
+   "title": "사람인 면접후기 — 조경건설사 조경공사 현장기사 신입 면접 (2023 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/30985",
+   "type": "interview_review",
+   "year": 2023
+  },
+  {
+   "id": "t06s11",
+   "title": "사람인 면접후기 — 제조사 공정엔지니어 경력 면접 (2026 상반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/68466",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "t06s12",
+   "title": "사람인 면접후기 — 반도체 장비사 공정엔지니어 신입 면접 (2026 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/69110",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "t06s13",
+   "title": "사람인 면접후기 — 석유화학사 공정엔지니어 신입 면접 (2025 상반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/68184",
+   "type": "interview_review",
+   "year": 2025
+  },
+  {
+   "id": "t06s14",
+   "title": "사람인 면접후기 — 바이오의약품 CDMO 공정엔지니어 경력 면접 (2024 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/55695",
+   "type": "interview_review",
+   "year": 2024
+  },
+  {
+   "id": "t06s15",
+   "title": "사람인 면접후기 — 제조사 생산관리 신입(산업공학 전공 지원자) 면접 (2026 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/68449",
+   "type": "interview_review",
+   "year": 2026
+  },
+  {
+   "id": "t06s16",
+   "title": "사람인 면접후기 — 조사·통계 연구기관 통계/분석 신입 면접 (2016 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/1941",
+   "type": "interview_review",
+   "year": 2016
+  },
+  {
+   "id": "t06s17",
+   "title": "사람인 면접후기 — 리서치 연구소 통계/분석 신입 면접 (2023 하반기)",
+   "url": "https://www.saramin.co.kr/zf_user/interview-review/detail/idx/31838",
+   "type": "interview_review",
+   "year": 2023
+  }
+ ],
+ "profiles": [],
+ "questions": [
+  {
+   "text": "신재생에너지 발전사업이 어떤 구조로 수익을 내는지 이해하고 계신 대로 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s1",
+   "confidence": "high"
+  },
+  {
+   "text": "전력구매계약(PPA) 업무를 맡는다면 계약 과정에서 가장 중점적으로 챙겨야 할 부분은 무엇일까요?",
+   "scope": "role:renewable_energy",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s1",
+   "confidence": "high"
+  },
+  {
+   "text": "태양광 모듈이 어떻게 구성되는지, 효율을 좌우하는 요소는 무엇인지 아는 대로 설명해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s2",
+   "confidence": "high"
+  },
+  {
+   "text": "지자체와 함께 발전사업을 추진해 본 경험이 있다면 가장 어려웠던 점을 어떻게 풀었는지 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "hard",
+   "levels": [
+    "mid",
+    "senior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "발전사업 제안서나 보고서를 작성하면서 가장 신경 썼던 부분은 무엇이었나요?",
+   "scope": "role:renewable_energy",
+   "category": "실무",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s3",
+   "confidence": "medium"
+  },
+  {
+   "text": "태양광 산업의 앞으로의 전망을 어떻게 보고 계신지 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s4",
+   "confidence": "high"
+  },
+  {
+   "text": "결정질 실리콘 말고 박막형 태양전지 기술에 대해 알고 계신 내용을 말씀해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "t06s4",
+   "confidence": "medium"
+  },
+  {
+   "text": "태양광 발전소 O&M 직무에서 엔지니어가 맡는 일을 아는 대로 설명해 주세요.",
+   "scope": "role:renewable_energy",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s5",
+   "confidence": "high"
+  },
+  {
+   "text": "요즘 조경에 대한 사회적 관심이 커진 이유가 무엇이라고 보시는지 본인 생각을 말씀해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "산업",
+   "type": "industry",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s6",
+   "confidence": "high"
+  },
+  {
+   "text": "최근 가 본 정원 박람회나 공원 중 좋았던 점과 아쉬웠던 점을 말씀해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s6",
+   "confidence": "high"
+  },
+  {
+   "text": "시민들이 밖으로 나와 공원을 더 많이 이용하게 하려면 조경 측면에서 무엇을 할 수 있을까요?",
+   "scope": "role:landscape_architect",
+   "category": "문제해결",
+   "type": "case",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "t06s6",
+   "confidence": "high"
+  },
+  {
+   "text": "현장에서 수목을 심을 때 준비 단계부터 마무리까지 어떤 순서로 작업하는지 설명해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "실무",
+   "type": "role_specific",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s7",
+   "confidence": "high"
+  },
+  {
+   "text": "폭염이 계속되는 도시에서 실행할 수 있는 조경 대책에는 어떤 것이 있을까요?",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "case",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s7",
+   "confidence": "high"
+  },
+  {
+   "text": "가로수 가지치기가 지나치다는 민원이 들어오면 어떻게 대응하시겠어요?",
+   "scope": "role:landscape_architect",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s7",
+   "confidence": "high"
+  },
+  {
+   "text": "좋아하는 수목이나 초화 하나를 골라 그 특징과 조경에서의 활용법을 말씀해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s7",
+   "confidence": "high"
+  },
+  {
+   "text": "실시설계를 시작할 때 초기 단계에서 어느 정도까지 공을 들여야 한다고 보시나요?",
+   "scope": "role:landscape_architect",
+   "category": "직무전문성",
+   "type": "role_specific",
+   "difficulty": "hard",
+   "basis": "공개후기",
+   "src": "t06s8",
+   "confidence": "medium"
+  },
+  {
+   "text": "참여했던 조경 프로젝트 하나를 골라 본인이 맡은 역할을 중심으로 설명해 주세요.",
+   "scope": "role:landscape_architect",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s9",
+   "confidence": "high"
+  },
+  {
+   "text": "조경 현장에서 일할 때 가장 중요하게 생각하는 것은 무엇인가요?",
+   "scope": "role:landscape_architect",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "easy",
+   "basis": "공개후기",
+   "src": "t06s10",
+   "confidence": "high"
+  },
+  {
+   "text": "설비나 공정에서 까다로운 트러블이 생겼을 때 원인을 찾아 해결했던 과정을 구체적으로 말씀해 주세요.",
+   "scope": "role:process_engineer",
+   "category": "문제해결",
+   "type": "experience",
+   "difficulty": "hard",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s11",
+   "confidence": "high"
+  },
+  {
+   "text": "증착과 식각 공정에 대해 알고 계신 내용을 설명해 주세요.",
+   "scope": "role:process_engineer",
+   "category": "기술",
+   "type": "technical",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s12",
+   "confidence": "medium"
+  },
+  {
+   "text": "공정 엔지니어에게 안전이란 어떤 의미라고 생각하시나요?",
+   "scope": "role:process_engineer",
+   "category": "가치관",
+   "type": "reflection",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s13",
+   "confidence": "high"
+  },
+  {
+   "text": "본인이 다뤄 본 공정을 비전공자도 이해할 수 있게 설명해 주세요.",
+   "scope": "role:process_engineer",
+   "category": "커뮤니케이션",
+   "type": "communication",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s14",
+   "confidence": "high"
+  },
+  {
+   "text": "담당했던 공정에서 가장 중요하게 관리한 파라미터는 무엇이었고, 왜 그랬나요?",
+   "scope": "role:process_engineer",
+   "category": "직무전문성",
+   "type": "experience",
+   "difficulty": "normal",
+   "levels": [
+    "junior",
+    "mid",
+    "senior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s14",
+   "confidence": "high"
+  },
+  {
+   "text": "산업공학을 공부하면서 가장 인상 깊었던 과목은 무엇이고, 그 이유는 무엇인가요?",
+   "scope": "role:industrial_engineer",
+   "category": "경험",
+   "type": "experience",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s15",
+   "confidence": "medium"
+  },
+  {
+   "text": "생산성과 납기가 부딪힐 때 어느 쪽을 더 우선해야 한다고 보시는지 이유와 함께 말씀해 주세요.",
+   "scope": "role:industrial_engineer",
+   "category": "의사결정",
+   "type": "analytical",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s15",
+   "confidence": "medium"
+  },
+  {
+   "text": "본인이 생각하는 통계란 무엇인지 말씀해 주세요.",
+   "scope": "role:statistician",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "easy",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s16",
+   "confidence": "high"
+  },
+  {
+   "text": "조사·분석 기관에서 통계 분석 직무가 실제로 어떤 일을 하는지 알고 계신 대로 말씀해 주세요.",
+   "scope": "role:statistician",
+   "category": "직무이해",
+   "type": "role_understanding",
+   "difficulty": "normal",
+   "levels": [
+    "entry",
+    "junior"
+   ],
+   "basis": "공개후기",
+   "src": "t06s16",
+   "confidence": "medium"
+  },
+  {
+   "text": "조사를 의뢰한 고객이 분석 결과에 불만을 제기하면 어떻게 대응하시겠어요?",
+   "scope": "role:statistician",
+   "category": "상황대처",
+   "type": "situational",
+   "difficulty": "normal",
+   "basis": "공개후기",
+   "src": "t06s17",
+   "confidence": "medium"
+  }
+ ]
+}

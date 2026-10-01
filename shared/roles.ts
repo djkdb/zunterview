@@ -84,6 +84,8 @@ export const BROAD_TERMS: Record<string, { label: string; roles: string[] }> = {
   개발: { label: "개발", roles: ["frontend", "backend", "fullstack", "ios", "android", "game_client", "devops", "embedded_sw", "data_engineer"] },
   개발자: { label: "개발자", roles: ["frontend", "backend", "fullstack", "ios", "android", "game_client", "game_server", "devops", "embedded_sw", "data_engineer"] },
   엔지니어: { label: "엔지니어", roles: ["backend", "devops", "semi_process", "process_engineer", "mechanical_designer", "electrical_engineer", "quality_assurance", "chemical_process"] },
+  공정엔지니어: { label: "공정 엔지니어", roles: ["process_engineer", "chemical_process", "semi_process", "battery_engineer", "production_engineer"] },
+  공정: { label: "공정", roles: ["process_engineer", "chemical_process", "semi_process", "battery_engineer", "production_engineer"] },
   연구원: { label: "연구원", roles: ["research_scientist", "bio_researcher", "materials_researcher", "chemical_researcher", "ai_researcher", "policy_researcher", "gov_researcher", "food_researcher"] },
   연구개발: { label: "연구개발", roles: ["product_developer", "rnd_planner", "mechanical_designer", "hw_engineer", "materials_researcher", "bio_researcher", "automotive_engineer"] },
   마케팅: { label: "마케팅", roles: ["performance_marketer", "brand_marketer", "content_marketer", "crm_marketer", "growth_marketer", "product_marketer", "pr_specialist"] },

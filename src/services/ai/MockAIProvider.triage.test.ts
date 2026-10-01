@@ -72,3 +72,12 @@ describe("found in persona runs", () => {
     expect(a.reaction).toContain("각오는");
   });
 });
+
+describe("found in the CLI run", () => {
+  it("doesn't take '회전 속도' for a performance issue, or ask how a hypothetical 'was' solved", async () => {
+    const turn = { question: "CMP 이후 디싱이 생기면 어떤 공정 변수를 먼저 조정해 보시겠어요?", type: "technical" as const, isFollowUp: false, answer: "직접 다뤄 본 적은 없지만, 패드 압력과 회전 속도, 슬러리 유량 중 최근에 바뀐 조건이 있는지 이력부터 확인하고 한 번에 한 변수만 바꿔 비교하겠습니다." };
+    const f = await provider.generateFollowUp(ctx({ history: [turn] }), turn, 0);
+    expect(f.question).not.toContain("성능 문제");
+    expect(f.question).not.toMatch(/찾으셨나요/);
+  });
+});

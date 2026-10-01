@@ -269,8 +269,9 @@ export class MockAIProvider implements AIProvider {
       );
     }
 
-    // 2) A topic claim without the "how".
-    if (topic && (!action || s.chars < 40) && s.methods.length < 2) {
+    // 2) A topic claim without the "how" — asked about the past, so only after a story, not a "저라면 …하겠습니다".
+    const hypotheticalAnswer = /겠습니다|겠어요|하겠|할\s?것\s?같/.test(turn.answer) && !/(?:했|었|았|였)습니다/.test(turn.answer);
+    if (topic && !hypotheticalAnswer && (!action || s.chars < 40) && s.methods.length < 2) {
       const q = TOPIC_HOW[topic.id];
       if (q) push(q, "deep_dive", { ko: `'${topic.label.ko}'${josa(topic.label.ko, "을/를")} 언급했지만 해결 과정이 구체적으로 설명되지 않았습니다.`, en: `Mentions ${topic.label.en} but not how it was handled.` }, topicPhrase(turn.answer, topic.pattern));
     }

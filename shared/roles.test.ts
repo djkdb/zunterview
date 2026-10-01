@@ -101,3 +101,11 @@ describe("semantic duplicate detection", () => {
     expect(isNearDuplicate("고객 불만을 해결한 경험을 말씀해 주세요.", "고객 불만이 반복된다면 어떻게 하시겠어요?")).toBe(false);
   });
 });
+
+describe("ambiguous process titles", () => {
+  it("asks which kind of 공정 엔지니어 instead of picking semiconductors", () => {
+    const r = resolveRole("공정 엔지니어");
+    expect(r.kind).toBe("broad");
+    expect(r.suggestions.map((s) => s.id)).toEqual(expect.arrayContaining(["chemical_process", "semi_process"]));
+  });
+});

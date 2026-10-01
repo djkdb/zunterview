@@ -4,8 +4,8 @@ type Pool = Record<Language, string[]>;
 
 const REACTIONS: Record<AnswerQuality, Pool> = {
   strong: {
-    ko: ["좋습니다. 구체적으로 잘 설명해주셨네요.", "네, 흐름이 명확하게 잘 들립니다.", "좋습니다. 핵심이 잘 전달됐습니다."],
-    en: ["Good — that was clear and specific.", "Great, that was easy to follow.", "Good. The key point came through clearly."],
+    ko: ["좋습니다. 구체적으로 잘 설명해주셨네요.", "네, 흐름이 명확하게 잘 들립니다.", "좋습니다. 핵심이 잘 전달됐습니다.", "네, 근거까지 잘 들었습니다.", "알겠습니다. 판단 과정이 잘 보이네요."],
+    en: ["Good — that was clear and specific.", "Great, that was easy to follow.", "Good. The key point came through clearly.", "Thanks — the reasoning came through well.", "Got it. I can follow how you decided."],
   },
   adequate: {
     ko: ["네, 잘 들었습니다.", "네, 감사합니다.", "네, 좋습니다."],

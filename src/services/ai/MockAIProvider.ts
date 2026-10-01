@@ -40,7 +40,7 @@ import {
   type Localized,
 } from "./mock/questionBank";
 import { CLOSING, hash, reactionFor } from "./mock/phrases";
-import { extractMethods, extractTechs, josa, objectParticle, quoteAround, readSignals, ROLE_TOPICS, topicPhrase, TOPICS, type Signals } from "./mock/signals";
+import { extractMethods, extractTechs, josa, objectParticle, quoteAround, readSignals, ROLE_TOPICS, splitSentences, topicPhrase, TOPICS, type Signals } from "./mock/signals";
 
 const L = (lang: Language, ko: string, en: string) => (lang === "ko" ? ko : en);
 
@@ -271,7 +271,7 @@ export class MockAIProvider implements AIProvider {
 
     // 2) A topic claim without the "how" — asked about the past, so only after a story, not a "저라면 …하겠습니다".
     const hypotheticalAnswer = /겠습니다|겠어요|하겠|할\s?것\s?같/.test(turn.answer) && !/(?:했|었|았|였)습니다/.test(turn.answer);
-    if (topic && !hypotheticalAnswer && (!action || s.chars < 40) && s.methods.length < 2) {
+    if (topic && !hypotheticalAnswer && mentionedAsDone(turn.answer, topic.pattern) && (!action || s.chars < 40) && s.methods.length < 2) {
       const q = TOPIC_HOW[topic.id];
       if (q) push(q, "deep_dive", { ko: `'${topic.label.ko}'${josa(topic.label.ko, "을/를")} 언급했지만 해결 과정이 구체적으로 설명되지 않았습니다.`, en: `Mentions ${topic.label.en} but not how it was handled.` }, topicPhrase(turn.answer, topic.pattern));
     }
@@ -319,7 +319,7 @@ export class MockAIProvider implements AIProvider {
 
     // 3b) Job-specific things the candidate mentioned (결산, 환자, 캠페인, 불량, 민원…).
     // (In a self-introduction, the experience they named comes first — see rule 4.)
-    const roleTopic = opening && (s.project || s.roleClaim) ? undefined : ROLE_TOPICS.find((t) => t.pattern.test(turn.answer));
+    const roleTopic = opening && (s.project || s.roleClaim) ? undefined : ROLE_TOPICS.find((t) => t.pattern.test(turn.answer) && mentionedAsDone(turn.answer, t.pattern));
     if (roleTopic && depth <= 1) {
       const anchor = turn.answer.match(roleTopic.pattern)?.[0] ?? "";
       push(roleTopic.ask, "deep_dive", { ko: `'${anchor}'${josa(anchor, "을/를")} 언급해 이 직무에서 중요한 판단 과정을 확인합니다.`, en: `Mentions '${anchor}' — probe the judgment this job depends on.` }, anchor);
@@ -533,7 +533,8 @@ export class MockAIProvider implements AIProvider {
             ? L(lang, "각오는 잘 들었습니다. 다만 제가 여쭌 것에 대한 답을 듣고 싶었습니다.", "I hear the commitment, but I was looking for an answer to the question.")
           : repeated
             ? L(lang, "앞에서 하신 말씀과 같은 내용이네요.", "That's the same as your earlier answer.")
-            : reactionFor(quality, ctx.config.persona, lang, seed),
+            : // Rotate by turn so the same kind of answer doesn't get the same line every time.
+              reactionFor(quality, ctx.config.persona, lang, ctx.progress.asked + (ctx.progress.followUps ?? 0)),
       },
       turn.answer,
     );
@@ -654,6 +655,12 @@ function projectVerb(k: string): string {
   if (/(?:서비스|기능|플랫폼|시스템|파이프라인|대시보드|앱)$/.test(k)) return `${objectParticle(k)} 만들면서`;
   if (/(?:프로젝트|캠페인)$/.test(k)) return `${objectParticle(k)} 진행하면서`;
   return "에서";
+}
+
+/** The topic comes up in something the candidate did, not in a plan or wish ("장애가 생기면 …하고 싶습니다"). */
+function mentionedAsDone(answer: string, pattern: RegExp): boolean {
+  const sentence = splitSentences(answer).find((x) => pattern.test(x)) ?? answer;
+  return !/(?:싶습니다|싶어요|겠습니다|겠어요|하려고|할\s?것|예정|would|will|want to)/.test(sentence) || /(?:했|었|았|였)습니다/.test(sentence);
 }
 
 /** Answers to other questions. The follow-up request's history already contains this very turn. */

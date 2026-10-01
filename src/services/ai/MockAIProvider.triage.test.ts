@@ -81,3 +81,20 @@ describe("found in the CLI run", () => {
     expect(f.question).not.toMatch(/찾으셨나요/);
   });
 });
+
+describe("found in the SW graduate CLI run", () => {
+  it("doesn't ask about an incident the candidate only hopes to handle", async () => {
+    const turn = { question: "입사하면 팀에 어떤 기여를 할 수 있고, 강점과 약점은 무엇인가요?", type: "reflection" as const, isFollowUp: false, answer: "저는 문제를 재현하고 측정한 뒤에 고치는 습관이 강점입니다. 입사하면 장애나 버그가 생겼을 때 원인을 데이터로 좁히는 역할로 팀에 기여하고 싶습니다." };
+    const f = await provider.generateFollowUp(ctx({ history: [turn] }, { position: "백엔드 개발자", roleId: "backend" }), turn, 0);
+    expect(f.question).not.toContain("그 장애");
+  });
+  it("varies the reaction from one strong answer to the next", async () => {
+    const answer = "졸업 프로젝트에서 예약 API를 맡아 JMeter로 동시 요청 100건을 재현했고, 비관적 락으로 중복 예약을 0건으로 줄였습니다. 응답 시간은 200ms 안쪽으로 유지했습니다.";
+    const lines = new Set<string>();
+    for (let n = 0; n < 3; n++) {
+      const a = await provider.analyzeAnswer(ctx({ progress: { asked: 1 + n, total: 5, followUps: 0 } }), { question: `질문 ${n}`, type: "experience", isFollowUp: false, answer });
+      lines.add(a.reaction);
+    }
+    expect(lines.size).toBeGreaterThan(1);
+  });
+});

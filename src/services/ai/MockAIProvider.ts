@@ -27,6 +27,7 @@ import { roleContextFor, type RoleContext } from "../../../shared/roles";
 import { loadRoleProfile, questionPool, rankCandidates, typesFor } from "../../../shared/roleBank";
 import { fillSlots } from "../../../shared/korean";
 import { isDuplicateQuestion } from "../../utils/fingerprint";
+import { NEEDS_MATERIAL } from "../../../shared/questionRules";
 import { hasProfanity, questionCoverage, repeatsEarlier, triageAnswer, type Triage } from "../../../shared/answerTriage";
 import { delay } from "../../utils/id";
 import type { AIProvider } from "./AIProvider";
@@ -102,7 +103,7 @@ export class MockAIProvider implements AIProvider {
     // Company + role interview: company questions for fit/motivation/culture, the role bank for the job.
     if (company && lang === "ko") {
       // The interview already opened with a self-introduction — skip the bank's "자기소개와 함께 …" variants.
-      const bank = questionsForTrack(await loadCompanyQuestions(company.id), config.companyTrack).filter((q) => !/자기\s?소개/.test(q.text) && !NEEDS_WHITEBOARD.test(q.text) && !isDuplicateQuestion(q.text, asked));
+      const bank = questionsForTrack(await loadCompanyQuestions(company.id), config.companyTrack).filter((q) => !/자기\s?소개/.test(q.text) && !NEEDS_MATERIAL.test(q.text) && !isDuplicateQuestion(q.text, asked));
       const bucket = TYPE_BUCKET[planned];
       const wantCompany = planned === "company_understanding" || planned === "motivation" || bucket === "fit" || (bucket !== "job" && mainIndex % 2 === 1) || (bucket === "job" && mainIndex % 3 === 0);
       if (wantCompany) {
@@ -148,7 +149,7 @@ export class MockAIProvider implements AIProvider {
       });
       // Don't re-ask a posting requirement the JD question already covered ("K-IFRS …" twice).
       const coveredReqs = jdReqs.slice(0, jdAsked).map((r) => r.split(/\s/)[0]).filter((w) => w.length >= 2);
-      const fresh = ranked.filter((c) => !coveredReqs.some((w) => c.text.includes(w)) && !NEEDS_WHITEBOARD.test(c.text));
+      const fresh = ranked.filter((c) => !coveredReqs.some((w) => c.text.includes(w)) && !NEEDS_MATERIAL.test(c.text));
       const choices = fresh.length ? fresh : ranked;
       if (choices.length) {
         const pick = choices[seed % Math.min(3, choices.length)];
@@ -667,9 +668,6 @@ function mentionedAsDone(answer: string, pattern: RegExp): boolean {
 function earlierAnswers(ctx: InterviewContext, turn: CurrentTurn): string[] {
   return ctx.history.filter((h) => !(h.question === turn.question && h.answer === turn.answer)).map((h) => h.answer);
 }
-
-/** Questions that need a whiteboard, a live editor, material on screen or a résumé the app never asked for. */
-const NEEDS_WHITEBOARD = /(?:이력서|자기소개서|자소서|포트폴리오)에\s?(?:적|쓴|쓰신|적으신|기재)|라이브\s?코딩|화이트보드|코드를\s?(?:직접\s?)?(?:작성|짜)|손으로\s?(?:풀|그려)|^이\s?(?:부분|코드|화면|문제)을?/;
 
 /** Nothing but a resolution ("열심히 하겠습니다", "최선을 다하겠습니다") in place of an answer. */
 function isPlatitude(answer: string): boolean {

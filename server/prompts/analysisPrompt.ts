@@ -23,7 +23,9 @@ Score each category 0-100 against the position (${role.title}) and experience le
 Calibration — be honest, not generous:
 - 85+ only with clear, specific evidence in the answer.
 - 60-75 for reasonable but generic answers.
-- Below 50 for very short, vague or off-topic answers.
+- Below 50 for very short, vague or off-topic answers; relevance at most 40 when the answer doesn't address the question.
+- Below 30 for a bare resolution with no content ("열심히 하겠습니다", "최선을 다하겠습니다").
+- When the answer repeats one of the earlier answers listed below, relevance at most 40 and say so in the reasons and in "improve".
 - Every reason must point to something in the answer or something missing from it.
 
 STAR: set applicable=true for behavioral, project or experience questions. For each part give present / partial / missing and a short note. For purely conceptual technical questions set applicable=false and use status "missing" with an empty note.
@@ -34,7 +36,9 @@ roleSignal: on top of the six common scores, judge the role-specific signal for 
 
 evidence: up to 3 short phrases copied verbatim from the answer. notFound: up to 3 things the answer did not mention.
 
-reaction: one natural spoken sentence the interviewer says before continuing — e.g. a brief acknowledgement for a strong answer, or a gentle nudge when the answer was vague. Do not reveal scores in it and do not ask a question in it.
+strength: if nothing in the answer deserves praise, say so plainly instead of inventing a strength.
+
+reaction: one natural spoken sentence the interviewer says before continuing — e.g. a brief acknowledgement for a strong answer, or a gentle nudge when the answer was vague. Do not reveal scores in it and do not ask a question in it. Vary the wording; avoid stock lines such as "좋습니다. 핵심이 잘 전달됐습니다." that would repeat after every answer.
 
 ${GROUNDING_RULES}
 ${languageRule(ctx.config)}`;
@@ -48,8 +52,18 @@ ${turn.question}
 <candidate_answer>
 ${turn.answer}
 </candidate_answer>
-
+${earlier(ctx, turn)}
 Evaluate this answer.`;
 
   return { system, user };
+}
+
+/** The candidate's earlier answers, only so a repeated answer can be recognized. */
+function earlier(ctx: InterviewContext, turn: CurrentTurn): string {
+  const others = ctx.history.filter((h) => !(h.question === turn.question && h.answer === turn.answer)).slice(-4);
+  if (!others.length) return "";
+  return `
+## Earlier answers in this interview (for spotting repetition only — do not evaluate them)
+${others.map((h, i) => `<earlier_answer n="${i + 1}">\n${h.answer.slice(0, 300)}\n</earlier_answer>`).join("\n")}
+`;
 }

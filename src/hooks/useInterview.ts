@@ -22,6 +22,7 @@ import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
 import { clarifyLine } from "../utils/clarify";
 import { misconductOf, triageAnswer } from "../../shared/answerTriage";
+import { unaskable } from "../../shared/questionRules";
 import { conductLine, conductReport } from "../utils/conduct";
 import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
@@ -163,11 +164,13 @@ export function useInterview() {
   const nextMainQuestion = useCallback(async (interview: Interview): Promise<NextQuestion> => {
     const ctx = buildContext(interview);
     const provider = providerRef.current;
+    // A repeat, or something this room can't support (résumé, live coding, a second self-intro).
+    const bad = (q: string) => isDuplicateQuestion(q, ctx.askedQuestions) || unaskable(q, ctx.progress.asked);
     let gen = await provider.generateQuestion(ctx);
     let source: ProviderKind = provider.kind;
-    if (isDuplicateQuestion(gen.question, ctx.askedQuestions)) {
+    if (bad(gen.question)) {
       gen = await provider.generateQuestion(ctx);
-      if (isDuplicateQuestion(gen.question, ctx.askedQuestions)) {
+      if (bad(gen.question)) {
         gen = await mockRef.current.generateQuestion(ctx);
         source = "mock";
       }
@@ -309,7 +312,7 @@ export function useInterview() {
             decision = { needed: true, type: "deep_dive", anchor: "", reason: "debug", question: ko ? "방금 말씀하신 내용을 조금 더 구체적으로 설명해주시겠어요?" : "Could you go into a bit more detail on that?" };
           }
         }
-        if (decision?.needed && !isDuplicateQuestion(decision.question, ctxBefore.askedQuestions)) {
+        if (decision?.needed && !isDuplicateQuestion(decision.question, ctxBefore.askedQuestions) && !unaskable(decision.question, 1)) {
           next = {
             gen: { question: decision.question, type: decision.type, intent: decision.reason },
             isFollowUp: true,

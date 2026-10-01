@@ -19,7 +19,8 @@ describe("AI prompts carry the role profile and blueprint", () => {
     expect(user).toMatch(/Core skills: .*(결산|재무제표)/);
     expect(user).toContain("Interview blueprint");
     expect(user).toContain("Role question bank");
-    expect(system).toMatch(/recommends a \*\*\w+\*\* question now/);
+    expect(user).toMatch(/recommended next type is \*\*\w+\*\*/);
+    expect(system).toContain("blueprint");
     // Only a filtered handful of candidates, never the whole bank.
     expect((user.match(/^- \[/gm) ?? []).length).toBeLessThanOrEqual(40);
     expect(user).not.toMatch(/React|Docker|Kubernetes/);
@@ -44,5 +45,31 @@ describe("AI prompts carry the role profile and blueprint", () => {
     expect(f.system).toContain("본인의 기여");
     const a = await analysisPrompt(ctx("간호사"), turn);
     expect(a.system).toContain("환자 안전");
+  });
+});
+
+describe("prompts stay cacheable and carry the room rules", () => {
+  it("keeps the question and follow-up system prompts identical from turn to turn", async () => {
+    const a = await questionPrompt({ ...ctx("백엔드 개발자", { roleId: "backend" }), progress: { asked: 1, total: 10, followUps: 0 }, usedTypes: ["opening"] });
+    const b = await questionPrompt({ ...ctx("백엔드 개발자", { roleId: "backend" }), progress: { asked: 4, total: 10, followUps: 2 }, usedTypes: ["opening", "motivation", "technical", "situational"] });
+    expect(a.system).toBe(b.system);
+    expect(a.user).not.toBe(b.user);
+    const turn = { question: "동시성 문제를 해결한 경험을 말씀해 주세요.", type: "experience" as const, isFollowUp: false, answer: "예약 API에 비관적 락을 적용했습니다." };
+    const f0 = await followUpPrompt(ctx("백엔드 개발자"), turn, 0);
+    const f1 = await followUpPrompt(ctx("백엔드 개발자"), turn, 1);
+    expect(f0.system).toBe(f1.system);
+    expect(f1.user).toContain("depth on this question: 1");
+  });
+
+  it("tells the model what the room can't do and how to treat plans and repeats", async () => {
+    const turn = { question: "강점은 무엇인가요?", type: "reflection" as const, isFollowUp: false, answer: "끈기입니다." };
+    const q = await questionPrompt(ctx("회계"));
+    expect(q.system).toContain("이력서에 적은");
+    const f = await followUpPrompt(ctx("회계"), turn, 0);
+    expect(f.system).toMatch(/plan, a wish or a hypothetical/);
+    const history = [{ question: "자기소개 부탁드립니다.", type: "opening" as const, isFollowUp: false, answer: "결산을 6년 담당했습니다." }];
+    const a = await analysisPrompt({ ...ctx("회계"), history }, turn);
+    expect(a.user).toContain("<earlier_answer");
+    expect(a.system).toContain("repeats one of the earlier answers");
   });
 });

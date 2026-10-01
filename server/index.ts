@@ -35,7 +35,7 @@ const {
   QuestionRequestSchema,
   ReportRequestSchema,
 } = await import("../shared/schemas");
-const { AIError, MODEL, callStructured, isAIConfigured } = await import("./claude");
+const { AIError, MODEL, callStructured, costCents, isAIConfigured } = await import("./claude");
 const { questionPrompt } = await import("./prompts/questionPrompt");
 const { followUpPrompt } = await import("./prompts/followupPrompt");
 const { analysisPrompt } = await import("./prompts/analysisPrompt");
@@ -235,7 +235,9 @@ const server = createServer(async (req, res) => {
         const body = parsed.data as { position: string };
         if (!getDomain(r.domain)) r.domain = guessDomain(body.position)?.id ?? "strategy";
       }
-      console.log(`[ai] ${url.pathname} 200 ${Date.now() - started}ms in=${result.usage.inputTokens} out=${result.usage.outputTokens}`);
+      const u = result.usage;
+      const cents = costCents(u);
+      console.log(`[ai] ${url.pathname} 200 ${Date.now() - started}ms in=${u.inputTokens} cache_read=${u.cacheReadTokens ?? 0} cache_write=${u.cacheWriteTokens ?? 0} out=${u.outputTokens}${cents === null ? "" : ` ≈${cents}¢`}`);
       return send(res, 200, result);
     } catch (err) {
       const code = err instanceof AIError ? err.code : "upstream";

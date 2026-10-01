@@ -93,3 +93,15 @@ describe("misconductOf — what makes the chair end the interview", () => {
     expect(misconductOf(a, "ko")).toBeNull();
   });
 });
+
+import { unaskable } from "./questionRules";
+describe("unaskable", () => {
+  it.each(["이력서에 적은 JWT 인증 방식을 설명해 주세요.", "이 부분을 지금 라이브 코딩으로 개선해 보시겠어요?", "화이트보드에 구조를 그려 주세요.", "Walk me through the project on your resume."])("%s", (q) => {
+    expect(unaskable(q, 3)).toBe(true);
+  });
+  it("allows the self-introduction only first", () => {
+    expect(unaskable("먼저 1분 동안 간단하게 자기소개 부탁드립니다.", 0)).toBe(false);
+    expect(unaskable("1분 동안 자기소개와 함께 국민연금 제도를 소개해 주시겠습니까?", 2)).toBe(true);
+    expect(unaskable("트랜잭션 격리 수준을 조정해야 했던 상황이 있나요?", 3)).toBe(false);
+  });
+});

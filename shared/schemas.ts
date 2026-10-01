@@ -292,6 +292,9 @@ export type FinalReport = z.infer<typeof FinalReportSchema>;
 export const UsageSchema = z.object({
   inputTokens: z.number(),
   outputTokens: z.number(),
+  /** Prompt-cache reads / writes (the system prompt is cached across an interview's turns). */
+  cacheReadTokens: z.number().optional(),
+  cacheWriteTokens: z.number().optional(),
   model: z.string(),
 });
 export type Usage = z.infer<typeof UsageSchema>;

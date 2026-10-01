@@ -52,7 +52,9 @@ export async function callStructured<S extends z.ZodType>(
     response = await getClient().beta.messages.parse({
       model: MODEL,
       max_tokens: 16000,
-      system: prompt.system,
+      // The system prompt only depends on the interview setup, so it's cached across the interview's turns;
+      // everything that changes per call (answer, history, plan step) is in the user message.
+      system: [{ type: "text", text: prompt.system, cache_control: { type: "ephemeral" } }],
       messages: [{ role: "user", content: prompt.user }],
       output_config: { effort: EFFORT, format: betaZodOutputFormat(schema) },
       ...(USE_FALLBACKS ? { betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" as const } : {}),
@@ -77,7 +79,24 @@ export async function callStructured<S extends z.ZodType>(
     usage: {
       inputTokens: response.usage.input_tokens,
       outputTokens: response.usage.output_tokens,
+      cacheReadTokens: response.usage.cache_read_input_tokens ?? 0,
+      cacheWriteTokens: response.usage.cache_creation_input_tokens ?? 0,
       model: response.model,
     },
   };
+}
+
+/** $ per million tokens, for the cost estimate in the server log only (input, output). */
+const PRICE: Record<string, [number, number]> = {
+  "claude-sonnet-5-5": [2, 10],
+  "claude-opus-5-5": [4, 20],
+};
+
+/** Approximate cost of one call in US cents (cache reads at 0.1x input, writes at 1.25x). */
+export function costCents(usage: Usage): number | null {
+  const p = PRICE[usage.model] ?? PRICE[MODEL];
+  if (!p) return null;
+  const [inp, out] = p;
+  const dollars = (usage.inputTokens * inp + (usage.cacheReadTokens ?? 0) * inp * 0.1 + (usage.cacheWriteTokens ?? 0) * inp * 1.25 + usage.outputTokens * out) / 1e6;
+  return Math.round(dollars * 10000) / 100;
 }

@@ -1,7 +1,7 @@
 import type { InterviewContext } from "../../shared/schemas";
 import { QUESTION_TYPE_LABEL } from "../../shared/labels";
 import { roleContextFor } from "../../shared/roles";
-import { GROUNDING_RULES, describeCandidates, describeContext, interviewerIdentity, languageRule, plannedNext } from "./common";
+import { GROUNDING_RULES, ROOM_RULES, describeCandidates, describeContext, interviewerIdentity, languageRule, plannedNext } from "./common";
 
 /** Generates the next *main* question (a new topic, not a follow-up). */
 export async function questionPrompt(ctx: InterviewContext) {
@@ -32,15 +32,16 @@ Question types (use the one that fits; not every job uses every type):
 - pt / debate: a presentation or discussion prompt.
 
 Rules:
-- The interview blueprint recommends a **${next}** question now (planned sequence: ${plan.join(" → ")}). Follow it unless building on something the candidate just said is clearly better.
+- The interview blueprint (given with each request) recommends the type of the next question. Follow it unless building on something the candidate just said is clearly better.
 - Every question must be about this job's real work — a ${role.title} must never get questions from another field (e.g. no software questions for an accountant or a nurse).
 - Prefer a question from the role question bank below (as written or lightly adapted); in company mode mix in the company's questions for motivation, values and fit.
 - Fit the experience level, interview type, difficulty and job description.
 - Prefer building on something the candidate already said, so the interview feels like one conversation.
 - Vary the type: do not use the same type as the previous question unless it is clearly best.
-- Never repeat or closely paraphrase an already-asked question.
+- Never repeat or closely paraphrase an already-asked question — including asking again about a job-posting requirement that has already been covered (e.g. a second question about K-IFRS).
 - Difficulty: easy = broad and welcoming; normal = specific; hard = probing and sharp in this field's terms (constraints, trade-offs, "how do you know it was your contribution?").
 
+${ROOM_RULES}
 ${GROUNDING_RULES}
 ${languageRule(ctx.config)}${ctx.config.language === "en" ? "\nThe question bank is written in Korean — translate and adapt it into natural English." : ""}`;
 
@@ -48,6 +49,8 @@ ${languageRule(ctx.config)}${ctx.config.language === "en" ? "\nThe question bank
   const user = `${context}
 
 ${candidates}
+
+Interview blueprint: the recommended next type is **${next}** (planned sequence: ${plan.join(" → ")}).
 
 ${isFirst ? "Ask the opening question. A short greeting clause is fine (e.g. 'Let's begin.')." : `Ask the next main question (recommended type: ${next} — ${QUESTION_TYPE_LABEL[next]}).`}`;
 

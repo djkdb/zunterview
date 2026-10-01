@@ -16,6 +16,7 @@ Your task: write the final practice-feedback summary for this mock interview.
 - topFeedback: the single most impactful improvement.
 - closingRemark: the interviewer's short, natural closing line.
 - Never describe this as a hiring decision or a real assessment of ability.
+- Be honest when the interview went badly: if most answers were weak (e.g. overall below 45), say so and don't invent strengths — name the best answer and what would make it stronger instead.
 
 ${GROUNDING_RULES}
 ${languageRule(req.config)}`;

@@ -22,7 +22,8 @@ import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
 import { clarifyLine } from "../utils/clarify";
 import { misconductOf, triageAnswer } from "../../shared/answerTriage";
-import { unaskable } from "../../shared/questionRules";
+import { refersToDocuments, unaskable } from "../../shared/questionRules";
+import { hasDocuments } from "../../shared/documents";
 import { conductLine, conductReport } from "../utils/conduct";
 import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
@@ -42,6 +43,7 @@ interface NextQuestion {
 
 /** Does a question match our company or role dataset? (for the "공개후기 기반" / "직무기반" badge) */
 async function originOf(text: string, config: InterviewConfig): Promise<QuestionOrigin | undefined> {
+  if (hasDocuments(config.documents) && refersToDocuments(text)) return "서류기반";
   const company = getCompany(config.companyId);
   const hit = company ? (await loadCompanyQuestions(company.id)).find((q) => similarity(q.text, text) >= 0.55) : undefined;
   if (hit) return hit.basis;
@@ -187,7 +189,7 @@ export function useInterview() {
     const ctx = buildContext(interview);
     const provider = providerRef.current;
     // A repeat, or something this room can't support (résumé, live coding, a second self-intro).
-    const bad = (q: string) => isDuplicateQuestion(q, ctx.askedQuestions) || unaskable(q, ctx.progress.asked);
+    const bad = (q: string) => isDuplicateQuestion(q, ctx.askedQuestions) || unaskable(q, ctx.progress.asked, hasDocuments(ctx.config.documents));
     let [gen, source] = await withFallback(provider, (p) => p.generateQuestion(ctx));
     if (bad(gen.question) && source !== "mock") {
       [gen, source] = await withFallback(provider, (p) => p.generateQuestion(ctx));
@@ -245,7 +247,8 @@ export function useInterview() {
       }
       const { strongest, weakest } = strongestAndWeakest(i.categoryScores);
       const req: ReportRequest = {
-        config: toAIConfig(i),
+        // The report works from the turns; the documents needn't travel again.
+        config: { ...toAIConfig(i), documents: undefined },
         turns: i.questions.map((q) => ({
           question: q.text.slice(0, 600),
           type: q.type,
@@ -333,7 +336,7 @@ export function useInterview() {
             decision = { needed: true, type: "deep_dive", anchor: "", reason: "debug", question: ko ? "방금 말씀하신 내용을 조금 더 구체적으로 설명해주시겠어요?" : "Could you go into a bit more detail on that?" };
           }
         }
-        if (decision?.needed && !isDuplicateQuestion(decision.question, ctxBefore.askedQuestions) && !unaskable(decision.question, 1)) {
+        if (decision?.needed && !isDuplicateQuestion(decision.question, ctxBefore.askedQuestions) && !unaskable(decision.question, 1, hasDocuments(ctxBefore.config.documents))) {
           next = {
             gen: { question: decision.question, type: decision.type, intent: decision.reason },
             isFollowUp: true,

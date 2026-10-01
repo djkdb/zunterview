@@ -2,7 +2,7 @@ import type { CurrentTurn, InterviewContext } from "../../shared/schemas";
 import { QUESTION_TYPE_LABEL } from "../../shared/labels";
 import { blueprintFor } from "../../shared/blueprints";
 import { roleContextFor } from "../../shared/roles";
-import { GROUNDING_RULES, describeConfig, interviewerIdentity, languageRule } from "./common";
+import { GROUNDING_RULES, describeConfig, describeDocuments, interviewerIdentity, languageRule } from "./common";
 
 /** Scores a single answer with reasons grounded in the answer text. */
 export async function analysisPrompt(ctx: InterviewContext, turn: CurrentTurn) {
@@ -41,7 +41,7 @@ strength: if nothing in the answer deserves praise, say so plainly instead of in
 reaction: one natural spoken sentence the interviewer says before continuing — e.g. a brief acknowledgement for a strong answer, or a gentle nudge when the answer was vague. Do not reveal scores in it and do not ask a question in it. Vary the wording; avoid stock lines such as "좋습니다. 핵심이 잘 전달됐습니다." that would repeat after every answer.
 
 ${GROUNDING_RULES}
-${languageRule(ctx.config)}`;
+${languageRule(ctx.config)}${describeDocuments(ctx.config, "judge")}`;
 
   const user = `## Interview setup
 ${await describeConfig(ctx.config)}

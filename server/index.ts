@@ -50,7 +50,7 @@ type PromptParts = import("./claude").PromptParts;
 const PORT = Number(process.env.PORT ?? 8787);
 const IS_PROD = process.env.NODE_ENV === "production";
 const RATE_LIMIT = Number(process.env.RATE_LIMIT_PER_MINUTE ?? 40);
-const MAX_BODY_BYTES = 64 * 1024;
+const MAX_BODY_BYTES = 128 * 1024;
 const ROOT = resolve(fileURLToPath(new URL(".", import.meta.url)), "..");
 const DIST_DIR = join(ROOT, "dist");
 

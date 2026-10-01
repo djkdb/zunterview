@@ -42,7 +42,7 @@ export function InterviewHistory({ items, onOpen, onStart, canOpen, compact }: P
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-[15px] font-semibold text-ink">{s.company ? `${s.company} · ${s.position}` : s.position}</span>
                 <span className="mt-0.5 block text-[12px] text-faint">
-                  {INTERVIEW_TYPE_KO[s.interviewType]} · {s.questionCount}문항{!compact && ` · ${durationLabel(s.duration)}`} · {shortDate(s.createdAt)}
+                  {INTERVIEW_TYPE_KO[s.interviewType]}{s.usedDocuments?.length ? " · 서류 기반" : ""} · {s.questionCount}문항{!compact && ` · ${durationLabel(s.duration)}`} · {shortDate(s.createdAt)}
                 </span>
               </span>
               <span className="flex items-baseline gap-2">

@@ -5,13 +5,14 @@
  */
 import { LIMITS, type AIConfig, type CurrentTurn, type InterviewContext } from "../../shared/schemas";
 import type { Interview, InterviewQuestion } from "../types/interview";
+import { hasDocuments } from "../../shared/documents";
 
 const HISTORY_WINDOW = 4;
 const ANSWER_CHARS_IN_HISTORY = 1500;
 
 export function toAIConfig(i: Interview): AIConfig {
-  const { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack, roleId, customRole } = i.config;
-  return { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack, roleId, customRole };
+  const { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack, roleId, customRole, documents } = i.config;
+  return { position, experience, interviewType, difficulty, questionLimit, jobDescription, persona, language, companyId, companyTrack, roleId, customRole, ...(hasDocuments(documents) ? { documents } : {}) };
 }
 
 const clip = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1)}…` : s);

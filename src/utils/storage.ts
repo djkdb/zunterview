@@ -6,6 +6,8 @@
 import type { Interview, InterviewConfig, InterviewSummary } from "../types/interview";
 import { strongestAndWeakest } from "./scoring";
 import { getCompany } from "../../shared/companies";
+import { hasDocuments } from "../../shared/documents";
+import type { Documents } from "../../shared/schemas";
 
 const KEYS = {
   summaries: "interview-ai:history:v1",
@@ -13,6 +15,7 @@ const KEYS = {
   lastConfig: "interview-ai:last-config:v1",
   active: "interview-ai:active:v1",
   prefs: "interview-ai:prefs:v1",
+  documents: "interview-ai:documents:v1",
 } as const;
 const MAX_FULL_RECORDS = 10;
 
@@ -58,11 +61,26 @@ export function toSummary(i: Interview): InterviewSummary {
     questionCount: i.questions.filter((q) => q.answer).length,
     strongest: i.categoryScores ? strongestAndWeakest(i.categoryScores).strongest : null,
     company: getCompany(i.config.companyId)?.name,
+    ...(i.usedDocuments?.length ? { usedDocuments: i.usedDocuments } : {}),
   };
 }
 
+/**
+ * History keeps which documents an interview used, never their text: the résumé and cover
+ * letter stay only in the in-progress interview (and in the browser if the candidate asked).
+ */
+export function withoutDocuments(i: Interview): Interview {
+  const d = i.config.documents;
+  if (!d) return i;
+  const config = { ...i.config };
+  delete config.documents;
+  const used = hasDocuments(d) ? (["resume", "coverLetter"] as const).filter((k) => d[k].trim()) : [];
+  return { ...i, config, ...(used.length ? { usedDocuments: [...used] } : {}) };
+}
+
 /** Saves the summary and the full record (last N kept). Returns false if storage failed. */
-export function saveInterview(i: Interview): boolean {
+export function saveInterview(full: Interview): boolean {
+  const i = withoutDocuments(full);
   const list = loadHistory().filter((x) => x.id !== i.id);
   list.unshift(toSummary(i));
   const ok = write(KEYS.summaries, list.slice(0, 50));
@@ -87,6 +105,7 @@ export function clearAllLocalData() {
   remove(KEYS.lastConfig);
   remove(KEYS.active);
   remove(KEYS.prefs);
+  remove(KEYS.documents);
 }
 
 /* In-progress interview, so a refresh or closed tab doesn't lose everything. */
@@ -110,7 +129,15 @@ export function loadActiveInterview(): ActiveInterview | null {
 }
 
 export const loadLastConfig = (): Partial<InterviewConfig> | null => read(KEYS.lastConfig, null);
-export const saveLastConfig = (c: InterviewConfig) => write(KEYS.lastConfig, c);
+export const saveLastConfig = (c: InterviewConfig) => write(KEYS.lastConfig, { ...c, documents: undefined });
+
+/* The résumé / cover letter, kept in this browser only when the candidate ticks "remember". */
+export function loadSavedDocuments(): Documents | null {
+  const d = read<Documents | null>(KEYS.documents, null);
+  return d && typeof d.resume === "string" && typeof d.coverLetter === "string" ? d : null;
+}
+export const saveDocuments = (d: Documents) => write(KEYS.documents, d);
+export const forgetDocuments = () => remove(KEYS.documents);
 
 /** Most recent previous interview for comparison (same position preferred). */
 export function previousFor(i: Interview): InterviewSummary | null {

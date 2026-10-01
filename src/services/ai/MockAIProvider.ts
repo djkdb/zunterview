@@ -27,7 +27,8 @@ import { roleContextFor, type RoleContext } from "../../../shared/roles";
 import { loadRoleProfile, questionPool, rankCandidates, typesFor } from "../../../shared/roleBank";
 import { fillSlots } from "../../../shared/korean";
 import { isDuplicateQuestion } from "../../utils/fingerprint";
-import { NEEDS_MATERIAL } from "../../../shared/questionRules";
+import { NEEDS_MATERIAL, refersToDocuments } from "../../../shared/questionRules";
+import { documentClaims, documentQuestion, hasDocuments } from "../../../shared/documents";
 import { hasProfanity, questionCoverage, repeatsEarlier, triageAnswer, type Triage } from "../../../shared/answerTriage";
 import { delay } from "../../utils/id";
 import type { AIProvider } from "./AIProvider";
@@ -89,6 +90,10 @@ export class MockAIProvider implements AIProvider {
       const projectWord = archetype === "tech_dev" || archetype === "data_analytic" ? null : config.experience === "entry" ? "경험" : "업무";
       const text = fill(item[lang], vars);
       const question = projectWord && lang === "ko" ? text.replace("최근에 작업한 프로젝트", `최근에 맡았던 ${projectWord}`).replace("어려웠던 프로젝트", `어려웠던 ${projectWord}`) : text;
+      if (hasDocuments(config.documents)) {
+        const read = L(lang, "제출해 주신 서류는 잘 읽어 보았습니다. ", "We've read the documents you submitted. ");
+        return { question: read + question, type: "opening", intent: L(lang, "서류에 없는 지원자의 모습을 파악합니다.", "See what the documents don't show.") };
+      }
       return { question, type: "opening", intent: L(lang, "배경과 경험을 파악합니다.", "Understand background and experience.") };
     }
 
@@ -99,6 +104,10 @@ export class MockAIProvider implements AIProvider {
     const mainIndex = Math.min(ctx.progress.asked, plan.length - 1);
     const planned = plan[mainIndex];
     const seed = hash(asked.join("|") + config.position);
+
+    // Document-based interview: about half the main questions verify a claim from the résumé / cover letter.
+    const fromDocuments = documentTurn(ctx, planned, mainIndex);
+    if (fromDocuments) return fromDocuments;
 
     // Company + role interview: company questions for fit/motivation/culture, the role bank for the job.
     if (company && lang === "ko") {
@@ -310,7 +319,8 @@ export class MockAIProvider implements AIProvider {
     }
 
     // 3) Team did it — what did *you* do?
-    if (s.teamOnly && !hypothetical) {
+    // ("팀에서 일하고 싶었습니다" is a wish, not team work.)
+    if (s.teamOnly && !hypothetical && mentionedAsDone(turn.answer, /팀|우리|저희|\bwe\b|\bteam\b/i)) {
       push(
         { ko: "그중 본인이 직접 해결한 부분은 무엇인가요?", en: "Which part of that did you personally handle?" },
         "deep_dive",
@@ -652,6 +662,29 @@ function roleSignalFor(ctx: InterviewContext, answer: string, s: Signals): Answe
   return { label: bp.signal.label[lang], note: (present ? bp.signal.present : bp.signal.missing)[lang] };
 }
 
+/**
+ * The next question from the candidate's documents, when it's their turn: every other main
+ * question (or the motivation slot meets a motivation claim, or the remaining slots are needed to reach half).
+ */
+function documentTurn(ctx: InterviewContext, planned: QuestionType, mainIndex: number): GeneratedQuestion | null {
+  const { config, askedQuestions: asked } = ctx;
+  if (!hasDocuments(config.documents)) return null;
+  const target = Math.ceil((config.questionLimit - 1) / 2);
+  const done = asked.filter(refersToDocuments).length - (refersToDocuments(asked[0] ?? "") ? 1 : 0);
+  if (done >= target) return null;
+  const options = documentClaims(config.documents)
+    .filter((c) => !asked.some((a) => a.includes(c.quote)))
+    .map((c) => documentQuestion(c, config.language))
+    .filter((q) => !isDuplicateQuestion(q.question, asked));
+  if (!options.length) return null;
+  // The motivation slot is the natural place for the cover letter's motivation; otherwise the most askable claim (numbers first).
+  const matching = planned === "motivation" ? options.find((q) => q.type === "motivation") : undefined;
+  const remaining = config.questionLimit - mainIndex;
+  if (!matching && mainIndex % 2 === 0 && remaining > target - done) return null;
+  const lastType = ctx.usedTypes[ctx.usedTypes.length - 1];
+  return matching ?? options.find((q) => q.type !== lastType) ?? options[0];
+}
+
 /** "쇼핑몰 프로젝트를 진행하면서", "결제 시스템을 만들면서", "현장실습에서" */
 function projectVerb(k: string): string {
   if (/(?:서비스|기능|플랫폼|시스템|파이프라인|대시보드|앱)$/.test(k)) return `${objectParticle(k)} 만들면서`;
@@ -662,7 +695,7 @@ function projectVerb(k: string): string {
 /** The topic comes up in something the candidate did, not in a plan or wish ("장애가 생기면 …하고 싶습니다"). */
 function mentionedAsDone(answer: string, pattern: RegExp): boolean {
   const sentence = splitSentences(answer).find((x) => pattern.test(x)) ?? answer;
-  return !/(?:싶습니다|싶어요|겠습니다|겠어요|하려고|할\s?것|예정|would|will|want to)/.test(sentence) || /(?:했|었|았|였)습니다/.test(sentence);
+  return !/(?:싶습니다|싶어요|싶었습니다|겠습니다|겠어요|하려고|할\s?것|예정|would|will|want to)/.test(sentence) || /(?<!싶)(?:했|었|았|였)습니다/.test(sentence);
 }
 
 /** Answers to other questions. The follow-up request's history already contains this very turn. */

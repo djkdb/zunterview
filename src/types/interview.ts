@@ -18,7 +18,7 @@ export interface InterviewConfig extends AIConfig {
 
 export type ProviderKind = "ai" | "mock";
 
-export type QuestionOrigin = "후기" | "공식자료" | "공개후기" | "공고기반" | "직무기반";
+export type QuestionOrigin = "후기" | "공식자료" | "공개후기" | "공고기반" | "직무기반" | "서류기반";
 
 export interface InterviewQuestion {
   id: string;
@@ -68,8 +68,12 @@ export interface Interview {
   endedEarly: boolean;
   /** The panel stopped the interview because of the candidate's conduct: swearing/insults, or banmal/chat-speak. */
   terminated?: "conduct" | "informal";
+  /** Document-based interview: which documents were used (their text is not kept in history). */
+  usedDocuments?: DocumentKind[];
   providers: ProviderKind[];
 }
+
+export type DocumentKind = "resume" | "coverLetter";
 
 /** Compact record persisted to localStorage for the history list. */
 export interface InterviewSummary {
@@ -82,4 +86,5 @@ export interface InterviewSummary {
   questionCount: number;
   strongest: CategoryKey | null;
   company?: string;
+  usedDocuments?: DocumentKind[];
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { hasDocuments } from "../../shared/documents";
 import { DIFFICULTY_KO, INTERVIEW_TYPE_KO } from "../config/labelsKo";
 import { isVoiceOutputAvailable, speakLine } from "../services/speech/tts";
 import type { InterviewConfig } from "../types/interview";
@@ -84,6 +85,7 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
     ["지원 분야", config.position],
     ["면접 유형", `${INTERVIEW_TYPE_KO[config.interviewType]} · ${DIFFICULTY_KO[config.difficulty]}`],
     ["문항 수", `메인 ${config.questionLimit}문항 + 꼬리질문${ko ? "" : " (영어 면접)"}`],
+    ...(hasDocuments(config.documents) ? ([["제출 서류", `${[config.documents.coverLetter.trim() && "자기소개서", config.documents.resume.trim() && "이력서"].filter(Boolean).join(" · ")} (면접관 열람)`]] as [string, string][]) : []),
     ["면접 장소", "본관 3층 제2면접실"],
     ["면접 위원", "3인 (다대일 면접)"],
   ];

@@ -73,3 +73,21 @@ describe("prompts stay cacheable and carry the room rules", () => {
     expect(a.system).toContain("repeats one of the earlier answers");
   });
 });
+
+describe("document-based interviews", () => {
+  const documents = { resume: "기술: React, TypeScript", coverLetter: "쿼리를 개선해 응답 시간을 40% 줄였습니다." };
+  it("puts the documents in the cached system prompt and lets the panel cite them", async () => {
+    const q = await questionPrompt(ctx("프론트엔드 개발자", { documents }));
+    expect(q.system).toContain("<cover_letter>\n쿼리를 개선해 응답 시간을 40% 줄였습니다.\n</cover_letter>");
+    expect(q.system).not.toContain("never refer to \"이력서에 적은");
+    expect(q.user).toContain("Document-based questions so far");
+    const a = await analysisPrompt(ctx("프론트엔드 개발자", { documents }), { question: "q", type: "experience", isFollowUp: false, answer: "a" });
+    expect(a.system).toContain("<resume>");
+  });
+  it("keeps the no-document room unchanged", async () => {
+    const q = await questionPrompt(ctx("프론트엔드 개발자", { documents: { resume: " ", coverLetter: "" } }));
+    expect(q.system).not.toContain("submitted documents");
+    expect(q.system).toContain("이력서에 적은");
+    expect(q.user).not.toContain("Document-based");
+  });
+});

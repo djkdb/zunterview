@@ -123,7 +123,16 @@ export const LIMITS = {
   answer: 4000,
   historyTurns: 6,
   askedQuestions: 40,
+  /** Each of the résumé and the cover letter (document-based interviews). */
+  document: 3000,
 } as const;
+
+/** The candidate's own documents, already stripped of contact details in the browser. */
+export const DocumentsSchema = z.object({
+  resume: z.string().max(LIMITS.document),
+  coverLetter: z.string().max(LIMITS.document),
+});
+export type Documents = z.infer<typeof DocumentsSchema>;
 
 export const AIConfigSchema = z.object({
   position: z.string().trim().min(1).max(LIMITS.position),
@@ -141,6 +150,8 @@ export const AIConfigSchema = z.object({
   roleId: z.string().regex(ID).optional(),
   /** …or an inferred practice profile for a job typed freely. */
   customRole: CustomRoleSchema.optional(),
+  /** Document-based interview: the résumé / cover letter the candidate pasted (omitted = no documents). */
+  documents: DocumentsSchema.optional(),
 });
 export type AIConfig = z.infer<typeof AIConfigSchema>;
 

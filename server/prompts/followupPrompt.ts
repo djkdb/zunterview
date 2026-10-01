@@ -2,7 +2,7 @@ import type { CurrentTurn, InterviewContext } from "../../shared/schemas";
 import { QUESTION_TYPE_LABEL } from "../../shared/labels";
 import { blueprintFor } from "../../shared/blueprints";
 import { roleContextFor } from "../../shared/roles";
-import { GROUNDING_RULES, ROOM_RULES, describeContext, interviewerIdentity, languageRule } from "./common";
+import { GROUNDING_RULES, describeDocuments, roomRules, describeContext, interviewerIdentity, languageRule } from "./common";
 
 /**
  * Decides whether to dig deeper into the answer just given, and if so writes
@@ -42,9 +42,9 @@ A good follow-up:
 - is short and natural, as a human interviewer would say it,
 - stays inside ${role.title}'s work.
 
-${ROOM_RULES}
+${roomRules(ctx.config)}
 ${GROUNDING_RULES}
-${languageRule(ctx.config)}`;
+${languageRule(ctx.config)}${describeDocuments(ctx.config, "ask")}`;
 
   const user = `${await describeContext(ctx)}
 

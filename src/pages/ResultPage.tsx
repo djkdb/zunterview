@@ -20,6 +20,7 @@ import { shareResult } from "../utils/shareCard";
 import { loadInterview, previousFor } from "../utils/storage";
 import { TONE_BG, TONE_TEXT } from "../utils/tones";
 import { conductLabel } from "../utils/conduct";
+import { documentsLabel } from "../utils/documents";
 
 interface Props {
   interview: Interview;
@@ -75,6 +76,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
     ["지원번호", applicantNumber(i.id)],
     ["지원 직무", company ? `${company.name} · ${i.config.position}` : i.config.position],
     ["면접 유형", `${INTERVIEW_TYPE_KO[i.config.interviewType]} · ${DIFFICULTY_KO[i.config.difficulty]}`],
+    ["면접 자료", documentsLabel(i)],
     ["경력 구분", EXPERIENCE_KO[i.config.experience]],
     ["면접 일시", longDate(i.createdAt)],
     ["소요 시간", durationLabel(i.duration)],

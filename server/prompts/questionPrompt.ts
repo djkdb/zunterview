@@ -1,7 +1,9 @@
 import type { InterviewContext } from "../../shared/schemas";
 import { QUESTION_TYPE_LABEL } from "../../shared/labels";
 import { roleContextFor } from "../../shared/roles";
-import { GROUNDING_RULES, ROOM_RULES, describeCandidates, describeContext, interviewerIdentity, languageRule, plannedNext } from "./common";
+import { hasDocuments } from "../../shared/documents";
+import { refersToDocuments } from "../../shared/questionRules";
+import { GROUNDING_RULES, describeDocuments, roomRules, describeCandidates, describeContext, interviewerIdentity, languageRule, plannedNext } from "./common";
 
 /** Generates the next *main* question (a new topic, not a follow-up). */
 export async function questionPrompt(ctx: InterviewContext) {
@@ -41,9 +43,9 @@ Rules:
 - Never repeat or closely paraphrase an already-asked question — including asking again about a job-posting requirement that has already been covered (e.g. a second question about K-IFRS).
 - Difficulty: easy = broad and welcoming; normal = specific; hard = probing and sharp in this field's terms (constraints, trade-offs, "how do you know it was your contribution?").
 
-${ROOM_RULES}
+${roomRules(ctx.config)}
 ${GROUNDING_RULES}
-${languageRule(ctx.config)}${ctx.config.language === "en" ? "\nThe question bank is written in Korean — translate and adapt it into natural English." : ""}`;
+${languageRule(ctx.config)}${ctx.config.language === "en" ? "\nThe question bank is written in Korean — translate and adapt it into natural English." : ""}${describeDocuments(ctx.config, "ask")}`;
 
   const [context, candidates] = await Promise.all([describeContext(ctx, { next }), isFirst ? Promise.resolve("") : describeCandidates(ctx, next)]);
   const user = `${context}
@@ -51,7 +53,8 @@ ${languageRule(ctx.config)}${ctx.config.language === "en" ? "\nThe question bank
 ${candidates}
 
 Interview blueprint: the recommended next type is **${next}** (planned sequence: ${plan.join(" → ")}).
-
+${hasDocuments(ctx.config.documents) ? `Document-based questions so far: ${ctx.askedQuestions.filter(refersToDocuments).length} of ${ctx.progress.asked} main questions asked (aim for about half of ${ctx.progress.total}).${isFirst ? " Open by saying briefly that the panel has read the submitted documents." : ""}
+` : ""}
 ${isFirst ? "Ask the opening question. A short greeting clause is fine (e.g. 'Let's begin.')." : `Ask the next main question (recommended type: ${next} — ${QUESTION_TYPE_LABEL[next]}).`}`;
 
   return { system, user };

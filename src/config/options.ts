@@ -17,9 +17,10 @@ export const ANSWER_TIME_OPTIONS = [
   { value: 0, label: "제한 없음" },
 ] as const;
 
+/** A first-time candidate picks their own job (no preselected role); most are new graduates. */
 export const DEFAULT_CONFIG: InterviewConfig = {
-  position: "프론트엔드 개발자",
-  experience: "junior",
+  position: "",
+  experience: "entry",
   interviewType: "mixed",
   difficulty: "normal",
   questionLimit: 5,

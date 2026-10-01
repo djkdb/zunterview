@@ -98,3 +98,12 @@ describe("found in the SW graduate CLI run", () => {
     expect(lines.size).toBeGreaterThan(1);
   });
 });
+
+describe("situational answers given as a plan", () => {
+  it("get stress-tested instead of moving on", async () => {
+    const turn = { question: "평소보다 트래픽이 열 배 몰리는 이벤트가 예정돼 있다면 무엇부터 준비하시겠어요?", type: "situational" as const, isFollowUp: false, answer: "먼저 부하 테스트로 병목을 측정하고, 조회가 많은 API는 캐시를 적용하고 쓰기는 큐로 받아 처리하도록 바꾸겠습니다." };
+    const f = await provider.generateFollowUp(ctx({ history: [turn] }, { position: "백엔드 개발자", roleId: "backend" }), turn, 0);
+    expect(f.needed).toBe(true);
+    expect(f.type).toMatch(/challenge|technical/);
+  });
+});

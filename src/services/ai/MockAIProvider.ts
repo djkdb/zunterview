@@ -297,7 +297,8 @@ export class MockAIProvider implements AIProvider {
     }
 
     // Hypothetical ("what would you do if…") answers get a stress-test, not "what did you do".
-    const hypothetical = turn.type === "challenge";
+    // That includes a situational or case question answered with a plan ("~하겠습니다").
+    const hypothetical = turn.type === "challenge" || (["situational", "case", "ethics"].includes(turn.type) && /겠|would|I'd/.test(turn.answer));
     if (hypothetical && depth === 0 && s.chars >= 25) {
       push(
         /팀|합의|설득|동료|상사|team|agree/i.test(turn.answer)
@@ -675,8 +676,9 @@ function isPlatitude(answer: string): boolean {
   return t.length <= 30 && /(?:열심히|최선을\s?다|성실히|노력하|배우겠|배우며|잘\s?하겠|하겠습니다)/.test(answer) && !/\d/.test(answer);
 }
 
-/** Question types about something specific, where an answer can miss the point (not open questions or follow-ups). */
-const SPECIFIC_TYPES = new Set<QuestionType>(["situational", "role_specific", "technical", "case", "numerical", "analytical", "ethics", "industry", "role_understanding", "pt", "debate"]);
+/** Question types about a specific subject, where an answer can miss the point (not open questions or follow-ups). */
+// Knowledge questions only: a situational or case question can be answered well in entirely different words.
+const SPECIFIC_TYPES = new Set<QuestionType>(["role_specific", "technical", "numerical", "analytical", "industry", "role_understanding"]);
 
 /** The question's key phrase when a substantial answer picks up none of its content words. */
 function dodgedQuestion(turn: CurrentTurn, s: Signals): string | null {

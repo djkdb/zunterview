@@ -1002,7 +1002,7 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "domain": "public_enterprise",
    "name": "공기업",
    "nameEn": "Public Enterprises",
-   "dept": "인재개발원",
+   "dept": "경영지원처",
    "archetype": "public_service",
    "q": 129
   },
@@ -5309,6 +5309,6 @@ export const ROLE_TAXONOMY: RoleTaxonomy = {
    "일반면접": 327
   },
   "sources": 738,
-  "generatedAt": "2026-09-30"
+  "generatedAt": "2026-10-01"
  }
 };

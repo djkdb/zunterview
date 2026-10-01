@@ -96,7 +96,7 @@ describe("misconductOf — what makes the chair end the interview", () => {
 
 import { unaskable } from "./questionRules";
 describe("unaskable", () => {
-  it.each(["이력서에 적은 JWT 인증 방식을 설명해 주세요.", "이 부분을 지금 라이브 코딩으로 개선해 보시겠어요?", "화이트보드에 구조를 그려 주세요.", "Walk me through the project on your resume."])("%s", (q) => {
+  it.each(["이력서에 적은 JWT 인증 방식을 설명해 주세요.", "이 부분을 지금 라이브 코딩으로 개선해 보시겠어요?", "화이트보드에 구조를 그려 주세요.", "Walk me through the project on your resume.", "이 기술을 선택한 이유와 대안 대비 트레이드오프는 무엇인가요?"])("%s", (q) => {
     expect(unaskable(q, 3)).toBe(true);
   });
   it("allows the self-introduction only first", () => {

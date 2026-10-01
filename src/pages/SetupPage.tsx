@@ -39,6 +39,8 @@ const DIFFICULTY_HINT: Record<InterviewConfig["difficulty"], string> = {
 };
 
 /** Apply a company choice, keeping the job consistent with the chosen track / institution type. */
+const GENERIC_OFFICE = new Set(["office_admin", "general_affairs", "business_management"]);
+
 function withCompanyDefaults(p: InterviewConfig, id: string | undefined, track: string | undefined): InterviewConfig {
   const next = { ...p, companyId: id, companyTrack: track };
   const co = getCompany(id);
@@ -46,6 +48,10 @@ function withCompanyDefaults(p: InterviewConfig, id: string | undefined, track: 
   if (track && track !== "공통") {
     const position = positionForTrack(co.category, track);
     return { ...next, position, roleId: exactRoleId(position) };
+  }
+  // A generic office job at a public institution is its 공기업 사무·행정 track.
+  if ((co.category === "공기업" || co.category === "공공기관") && p.roleId && GENERIC_OFFICE.has(p.roleId)) {
+    return { ...next, position: "공기업 사무·행정", roleId: "pe_admin" };
   }
   const tech = ["tech_dev", "data_analytic"].includes(roleContextFor(p).archetype);
   if (tech && (co.category === "공기업" || co.category === "공공기관") && guessTrack(co, p.position) === "공통") {

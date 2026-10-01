@@ -160,23 +160,44 @@ export function useInterview() {
     [dispatch],
   );
 
+  /**
+   * Runs one AI call; if it fails (bad output, refusal, timeout, network), the mock interviewer
+   * answers that call instead so the interview keeps going. Three AI failures in a row switch the
+   * whole interview to mock mode.
+   */
+  const aiFailsRef = useRef(0);
+  const withFallback = useCallback(
+    async <T>(provider: AIProvider, call: (p: AIProvider) => Promise<T>): Promise<[T, ProviderKind]> => {
+      if (provider.kind === "mock") return [await call(provider), "mock"];
+      try {
+        const value = await call(provider);
+        aiFailsRef.current = 0;
+        return [value, provider.kind];
+      } catch (err) {
+        if (!(err instanceof AIRequestError)) throw err;
+        if (++aiFailsRef.current >= 3) switchToMock();
+        return [await call(mockRef.current), "mock"];
+      }
+    },
+    [switchToMock],
+  );
+
   /** Generates a main question, guarding against repeats (retry once, then mock bank). */
   const nextMainQuestion = useCallback(async (interview: Interview): Promise<NextQuestion> => {
     const ctx = buildContext(interview);
     const provider = providerRef.current;
     // A repeat, or something this room can't support (résumé, live coding, a second self-intro).
     const bad = (q: string) => isDuplicateQuestion(q, ctx.askedQuestions) || unaskable(q, ctx.progress.asked);
-    let gen = await provider.generateQuestion(ctx);
-    let source: ProviderKind = provider.kind;
-    if (bad(gen.question)) {
-      gen = await provider.generateQuestion(ctx);
+    let [gen, source] = await withFallback(provider, (p) => p.generateQuestion(ctx));
+    if (bad(gen.question) && source !== "mock") {
+      [gen, source] = await withFallback(provider, (p) => p.generateQuestion(ctx));
       if (bad(gen.question)) {
         gen = await mockRef.current.generateQuestion(ctx);
         source = "mock";
       }
     }
     return { gen, isFollowUp: false, parentId: null, source, origin: await originOf(gen.question, interview.config) };
-  }, []);
+  }, [withFallback]);
 
   const present = useCallback(
     async (next: NextQuestion, run: number, reaction?: string) => {
@@ -281,12 +302,12 @@ export function useInterview() {
       ];
       try {
         const minThink = delay(1900);
-        const analysisP = provider.analyzeAnswer(ctxBefore, turn);
-        const followP = wantFollowUp ? provider.generateFollowUp(buildContext(before), turn, threadDepth(before, q)) : null;
+        const analysisP = withFallback(provider, (p) => p.analyzeAnswer(ctxBefore, turn));
+        const followP = wantFollowUp ? withFallback(provider, (p) => p.generateFollowUp(buildContext(before), turn, threadDepth(before, q))).then(([f]) => f) : null;
         const mainP = !misconduct && !mainsDone && !wantFollowUp ? nextMainQuestion(before) : null;
-        const [analysis, follow, main] = await Promise.all([analysisP, followP, mainP, minThink]);
+        const [[analysis, analysisSource], follow, main] = await Promise.all([analysisP, followP, mainP, minThink]);
         if (runRef.current !== run) return;
-        dispatch({ type: "ANALYZED", questionId: q.id, analysis, score: answerScore(analysis), source: provider.kind });
+        dispatch({ type: "ANALYZED", questionId: q.id, analysis, score: answerScore(analysis), source: analysisSource });
 
         const askedBy = seatFor(q.type, q.isFollowUp);
         if (misconduct) {
@@ -345,7 +366,7 @@ export function useInterview() {
         stageTimers.forEach(clearTimeout);
       }
     },
-    [complete, dispatch, fail, nextMainQuestion, present, say],
+    [complete, dispatch, fail, nextMainQuestion, present, say, withFallback],
   );
 
   /* ─────────────────────────── persistence ─────────────────────────── */

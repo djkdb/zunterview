@@ -29,7 +29,7 @@ export function Button({ variant = "secondary", size = "md", mono = false, icon,
       type="button"
       {...rest}
       className={`inline-flex items-center justify-center gap-2 rounded-lg font-semibold whitespace-nowrap transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-40 ${
-        mono ? "font-mono tracking-[0.12em] uppercase" : ""
+        mono ? "tabular-nums uppercase" : ""
       } ${VARIANT[variant]} ${SIZE[size]} ${className}`}
     >
       {icon}

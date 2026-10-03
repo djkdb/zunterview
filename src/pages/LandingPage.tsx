@@ -6,7 +6,6 @@ import { COMPANIES, COMPANY_CATEGORIES } from "../../shared/companies";
 import { InterviewRoom, type RoomMode } from "../components/InterviewRoom";
 import { ModeBadge, TopBar } from "../components/TopBar";
 import { Button } from "../components/ui/Button";
-import { ArrowIcon } from "../components/ui/icons";
 import { DISCLAIMER } from "../config/options";
 import { buildPanel, type Seat } from "../config/panel";
 import type { ProviderStatus } from "../services/ai/providerFactory";
@@ -15,14 +14,14 @@ import type { ActiveInterview } from "../utils/storage";
 import { INTERVIEW_TYPE_KO } from "../config/labelsKo";
 import { longDate } from "../utils/format";
 
-const FEATURES = [
-  { title: "꼬리질문", body: "내 답변에서 말한 내용을 짚어 다시 묻습니다." },
-  { title: "다대일 면접", body: "인사·팀장·실무 면접관 3인이 번갈아 질문합니다." },
-  { title: "음성 면접", body: "질문을 음성으로 듣고, 말로 답할 수 있어요." },
-  { title: "면접 평가표", body: "항목별 점수·등급, 질문별 개선 방향까지." },
+/** How follow-ups differ by job: the phrase the candidate said, and what the panel asks next. */
+const FOLLOW_UPS: { job: string; answer: string; anchor: string; ask: string }[] = [
+  { job: "회계", answer: "월 결산 기간을 7영업일에서 5영업일로 줄였습니다.", anchor: "5영업일", ask: "줄어든 이틀은 결산의 어느 단계에서 나왔나요?" },
+  { job: "간호", answer: "낙상 고위험 환자 체크리스트를 인수인계에 넣자고 제안했습니다.", anchor: "인수인계", ask: "제안한 뒤 인수인계 방식이 실제로 어떻게 바뀌었나요?" },
+  { job: "마케팅", answer: "신규 고객 유입 캠페인을 3개월간 운영했습니다.", anchor: "신규 고객 유입", ask: "그 캠페인은 어떤 지표로 성공을 판단했나요?" },
 ];
 
-const STEPS = ["면접 접수", "대기실 · 호명", "면접 진행", "평가표 확인"];
+const STEPS = ["면접 접수", "대기실에서 호명", "면접", "평가표"];
 
 const SCRIPT: { who: Seat | "me"; text: string; mode: RoomMode; tag?: string }[] = [
   { who: "center", text: "가장 어려웠던 프로젝트 하나를 설명해주세요.", mode: "asking" },
@@ -58,7 +57,7 @@ function RoomPreview() {
                   <b className="text-ink">
                     {speaker.name} {speaker.title}
                   </b>
-                  · {speaker.role}
+                  <span>{speaker.role}</span>
                 </>
               ) : (
                 <b className="text-good">지원자 (나)</b>
@@ -109,7 +108,7 @@ function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview
       <div className="min-w-0 flex-1">
         <p className="text-[15px] font-bold text-accent">진행 중이던 면접이 있습니다</p>
         <p className="mt-0.5 text-[13px] text-muted">
-          {i.config.position} · {INTERVIEW_TYPE_KO[i.config.interviewType]} · {answered}/{i.config.questionLimit}문항 진행 · {longDate(active.savedAt)} 저장
+          {i.config.position} {INTERVIEW_TYPE_KO[i.config.interviewType]}, {i.config.questionLimit}문항 중 {answered}문항까지 답했습니다. ({longDate(active.savedAt)} 저장)
         </p>
       </div>
       <div className="flex gap-2">
@@ -148,64 +147,67 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
       />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 sm:px-6">
         {active && <ResumeBanner active={active} onResume={onResume} onDiscard={onDiscard} />}
-        <section className="grid items-center gap-10 py-10 lg:grid-cols-[1fr_1.15fr] lg:py-14">
+        <section className="grid items-center gap-10 py-10 lg:grid-cols-[1fr_1.15fr] lg:py-16">
           <div className="text-center lg:text-left">
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-sm font-semibold text-accent">
-              AI 모의면접실
-            </motion.p>
-            <motion.h1
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.05, duration: 0.5 }}
-              className="mt-3 text-[32px] leading-tight font-extrabold tracking-tight text-navy sm:text-5xl sm:leading-tight"
-            >
-              실제 면접장처럼,
+            <h1 className="text-[30px] leading-[1.25] font-extrabold tracking-tight text-navy sm:text-[44px]">
+              면접관 셋이 내 답을 듣고
               <br />
-              AI 면접관과 연습하세요
-            </motion.h1>
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="mt-5 text-[16px] leading-relaxed text-muted">
-              면접관 3인이 내 답변을 듣고 다시 파고듭니다.
-              <br className="hidden sm:inline" /> 면접이 끝나면 항목별 <b className="text-ink">면접 평가표</b>를 받아보세요.
-            </motion.p>
-            <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="mt-8 flex flex-col items-center gap-2.5 lg:items-start">
+              다시 묻습니다
+            </h1>
+            <p className="mx-auto mt-5 max-w-[34em] text-[16px] leading-relaxed text-muted lg:mx-0">
+              직무를 고르고 답하면 방금 한 말에서 꼬리질문이 나옵니다. 면접이 끝나면 항목별 점수와 문항마다 고칠 점이 적힌 평가표를 드립니다.
+            </p>
+            <div className="mt-8 flex flex-col items-center gap-3 lg:items-start">
               <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
-                <Button variant="primary" size="lg" onClick={onStart} icon={<ArrowIcon width={18} height={18} />} className="flex-row-reverse px-10">
-                  면접 시작하기
+                <Button variant="primary" size="lg" onClick={onStart} className="px-10">
+                  면접 접수하기
                 </Button>
                 {COMPANIES.length > 0 && (
                   <Button variant="secondary" size="lg" onClick={onCompanies} className="px-6">
-                    기업별 면접 보기
+                    기업별 질문 보기
                   </Button>
                 )}
               </div>
+              <ol className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-[13px] text-faint lg:justify-start" aria-label="진행 순서">
+                {STEPS.map((step, i) => (
+                  <li key={step}>
+                    <span className="text-muted tabular-nums">{i + 1}</span> {step}
+                  </li>
+                ))}
+              </ol>
               <span className="text-[13px] text-faint">
-                {status?.mode === "mock" ? "API 키 없이 MOCK 면접관으로 바로 체험할 수 있어요." : status?.mode === "ai" ? "실제 AI 면접관이 연결되어 있습니다." : "면접관 연결 상태를 확인하는 중…"}
+                {status?.mode === "mock" ? "API 키 없이도 연습용 면접관(MOCK)으로 바로 볼 수 있습니다." : status?.mode === "ai" ? "AI 면접관이 연결되어 있습니다." : "면접관 연결을 확인하고 있습니다."}
               </span>
-            </motion.div>
-          </div>
-          <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.5 }}>
-            <RoomPreview />
-          </motion.div>
-        </section>
-
-        <section aria-label="진행 순서" className="mb-6">
-          <ol className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-            {STEPS.map((s, i) => (
-              <li key={s} className="flex items-center gap-2.5 rounded-lg bg-surface-3/70 px-3.5 py-2.5 text-[13px] font-semibold text-ink">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-navy font-mono text-[11px] text-white">{i + 1}</span>
-                {s}
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        <section className="grid grid-cols-2 gap-3 pb-10 md:grid-cols-4" aria-label="주요 기능">
-          {FEATURES.map((f) => (
-            <div key={f.title} className="rounded-xl border border-line bg-surface px-4 py-4">
-              <p className="text-[15px] font-bold text-ink">{f.title}</p>
-              <p className="mt-1 text-[13px] leading-relaxed text-muted">{f.body}</p>
             </div>
-          ))}
+          </div>
+          <RoomPreview />
+        </section>
+
+        <section className="pb-12" aria-labelledby="follow-up-title">
+          <h2 id="follow-up-title" className="text-base font-bold text-ink">
+            직무마다 파고드는 곳이 다릅니다
+          </h2>
+          <p className="mt-1 text-[13px] text-muted">답변에 나온 말을 붙잡아 그 직무의 면접관이 확인할 만한 것을 묻습니다. 아래는 예시입니다.</p>
+          <ul className="mt-4 divide-y divide-line overflow-hidden rounded-xl border border-line bg-surface">
+            {FOLLOW_UPS.map((f) => {
+              const [before, after] = f.answer.split(f.anchor);
+              return (
+                <li key={f.job} className="grid gap-x-6 gap-y-2 px-5 py-4 sm:grid-cols-[5rem_1fr_1fr] sm:items-baseline">
+                  <span className="text-[13px] font-bold text-accent">{f.job}</span>
+                  <p className="text-[14px] leading-relaxed text-muted">
+                    <span className="sr-only">지원자: </span>
+                    {before}
+                    <mark className="rounded bg-[#dde6f3] px-0.5 text-ink">{f.anchor}</mark>
+                    {after}
+                  </p>
+                  <p className="text-[14px] leading-relaxed font-semibold text-ink">
+                    <span className="mr-1.5 text-accent" aria-label="꼬리질문">↳</span>
+                    {f.ask}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
         </section>
 
         {FEATURED.length > 0 && (
@@ -214,11 +216,11 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
               <div>
                 <h2 className="text-base font-bold text-ink">기업별 모의면접</h2>
                 <p className="text-[13px] text-muted">
-                  {COMPANIES.length}개 기업·기관의 인재상, 면접 전형, 공개자료 기반 연습 질문으로 준비해 보세요.
+                  {COMPANIES.length}개 기업·기관의 인재상과 면접 전형, 공개 후기에서 가져온 연습 질문이 있습니다.
                 </p>
               </div>
               <button type="button" onClick={onCompanies} className="shrink-0 text-[13px] text-muted hover:text-ink">
-                전체 보기 ›
+                기업 전체 보기
               </button>
             </div>
             <ul className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
@@ -236,7 +238,7 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
             <h2 className="text-base font-bold text-ink">최근 면접</h2>
             {history.length > 3 && (
               <button type="button" onClick={onHistory} className="text-[13px] text-muted hover:text-ink">
-                전체 보기 ›
+                기록 전체 보기
               </button>
             )}
           </div>

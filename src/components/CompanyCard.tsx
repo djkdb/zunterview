@@ -17,7 +17,7 @@ export function CompanyCard({ c, onClick, active, compact }: { c: Company; onCli
       </span>
       <span className="mt-0.5 text-[12px] text-faint">{c.industry}</span>
       {!compact && c.talent.length > 0 && (
-        <span className="mt-3 flex h-[22px] flex-wrap gap-1 overflow-hidden" title={c.talent.join(" · ")}>
+        <span className="mt-3 flex h-[22px] flex-wrap gap-1 overflow-hidden" title={c.talent.join(", ")}>
           {[...new Set(c.talent.map(talentKeyword))].slice(0, 3).map((t) => (
             <span key={t} className="rounded bg-accent-soft px-1.5 py-0.5 text-[11px] whitespace-nowrap text-accent">
               {t}
@@ -26,7 +26,7 @@ export function CompanyCard({ c, onClick, active, compact }: { c: Company; onCli
         </span>
       )}
       <span className="mt-auto pt-3 text-[11px] text-faint">
-        연습 질문 {c.questionCount}개{reported ? ` · 공개후기 기반 ${reported}` : ""}
+        연습 질문 {c.questionCount}개{reported ? ` (공개후기 기반 ${reported}개)` : ""}
       </span>
     </button>
   );

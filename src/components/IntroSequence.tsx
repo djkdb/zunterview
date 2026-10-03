@@ -81,9 +81,9 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
   const company = getCompany(config.companyId);
   const rows: [string, string][] = [
     ["지원번호", applicantNo],
-    ...(company ? ([["지원 기업", `${company.name}${config.companyTrack && config.companyTrack !== "공통" ? ` · ${config.companyTrack}` : ""}`]] as [string, string][]) : []),
+    ...(company ? ([["지원 기업", `${company.name}${config.companyTrack && config.companyTrack !== "공통" ? ` ${config.companyTrack}` : ""}`]] as [string, string][]) : []),
     ["지원 분야", config.position],
-    ["면접 유형", `${INTERVIEW_TYPE_KO[config.interviewType]} · ${DIFFICULTY_KO[config.difficulty]}`],
+    ["면접 유형", `${INTERVIEW_TYPE_KO[config.interviewType]} (${DIFFICULTY_KO[config.difficulty]})`],
     ["문항 수", `메인 ${config.questionLimit}문항 + 꼬리질문${ko ? "" : " (영어 면접)"}`],
     ...(hasDocuments(config.documents) ? ([["제출 서류", `${[config.documents.coverLetter.trim() && "자기소개서", config.documents.resume.trim() && "이력서"].filter(Boolean).join(" · ")} (면접관 열람)`]] as [string, string][]) : []),
     ["면접 장소", "본관 3층 제2면접실"],
@@ -105,7 +105,7 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
             >
               <div className="flex items-center justify-between bg-navy px-5 py-3 text-white">
                 <span className="text-[15px] font-bold">모의면접 수험표</span>
-                <span className="font-mono text-[11px] tracking-[0.18em] text-white/70">INTERVIEW//AI</span>
+                <span className="tabular-nums text-[11px] text-white/70">INTERVIEW//AI</span>
               </div>
               <dl className="grid grid-cols-[96px_1fr] text-[14px]">
                 {rows.map(([k, v]) => (
@@ -123,7 +123,7 @@ export function IntroSequence({ config, applicantNo, engineLabel, voiceInput, vo
                   <li>· {voiceInput ? "음성 답변은 [음성 답변] 버튼을 누를 때만 마이크가 켜집니다." : "이 브라우저에서는 텍스트로 답변합니다."}</li>
                 </ul>
                 <p className="mt-3 text-[11px] text-faint">
-                  면접관: {engineLabel} · 음성 안내 {voiceOutput ? "켜짐" : "꺼짐"}
+                  면접관: {engineLabel}, 음성 안내 {voiceOutput ? "켜짐" : "꺼짐"}
                 </p>
               </div>
             </motion.div>

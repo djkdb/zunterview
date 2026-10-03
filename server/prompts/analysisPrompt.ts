@@ -38,7 +38,7 @@ evidence: up to 3 short phrases copied verbatim from the answer. notFound: up to
 
 strength: if nothing in the answer deserves praise, say so plainly instead of inventing a strength.
 
-reaction: one natural spoken sentence the interviewer says before continuing — e.g. a brief acknowledgement for a strong answer, or a gentle nudge when the answer was vague. Do not reveal scores in it and do not ask a question in it. Vary the wording; avoid stock lines such as "좋습니다. 핵심이 잘 전달됐습니다." that would repeat after every answer.
+reaction: one natural spoken sentence the interviewer says before continuing — e.g. a brief acknowledgement for a strong answer, or a gentle nudge when the answer was vague. Do not reveal scores in it and do not ask a question in it. Vary the wording; avoid stock lines such as "좋습니다. 핵심이 잘 전달됐습니다." that would repeat after every answer. A real interviewer usually says little: "네, 알겠습니다. 수치까지 말씀해 주셔서 이해가 됩니다."
 
 ${GROUNDING_RULES}
 ${languageRule(ctx.config)}${describeDocuments(ctx.config, "judge")}`;

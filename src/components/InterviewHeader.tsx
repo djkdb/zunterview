@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { mmss, pad2 } from "../utils/format";
+import { mmss } from "../utils/format";
 import { MuteIcon, NotesIcon, VolumeIcon } from "./ui/icons";
 
 interface Props {
@@ -25,7 +25,7 @@ export function InterviewHeader(p: Props) {
     <header className="sticky top-0 z-30 bg-navy text-white shadow-md">
       <div className="mx-auto flex h-14 max-w-[1440px] items-center gap-3 px-3 sm:px-6">
         <div className="flex min-w-0 items-center gap-3">
-          <span className="hidden font-mono text-xs tracking-[0.2em] lg:inline">
+          <span className="hidden tabular-nums text-xs lg:inline">
             INTERVIEW<span className="text-[#7fa6e0]">//</span>AI
           </span>
           <span className="hidden h-4 w-px bg-white/20 lg:inline" />
@@ -42,11 +42,11 @@ export function InterviewHeader(p: Props) {
         <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
           <span className="text-[13px] whitespace-nowrap text-white/80" aria-label={`${p.total}문항 중 ${p.index}번째`}>
             <span className="hidden sm:inline">문항 </span>
-            <b className="font-mono text-white">{pad2(p.index)}</b>
-            <span className="font-mono text-white/60"> / {pad2(p.total)}</span>
+            <b className="tabular-nums text-white">{p.index}</b>
+            <span className="tabular-nums text-white/60"> / {p.total}</span>
           </span>
           <span className="mx-0.5 h-4 w-px bg-white/20 sm:mx-1" />
-          <span className="font-mono text-[13px] whitespace-nowrap text-white/80 tabular-nums" aria-label="면접 경과 시간">
+          <span className="tabular-nums text-[13px] whitespace-nowrap text-white/80" aria-label="면접 경과 시간">
             <span className="hidden font-sans sm:inline">경과 </span>
             {mmss(p.elapsed)}
           </span>

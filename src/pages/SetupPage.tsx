@@ -9,7 +9,7 @@ import { planComposition, planInterview, BUCKET_LABEL } from "../../shared/bluep
 import { roleContextFor, searchRoles } from "../../shared/roles";
 import { hasDocuments, redactPersonalInfo } from "../../shared/documents";
 import { Button } from "../components/ui/Button";
-import { ArrowIcon, CheckIcon, ChevronIcon } from "../components/ui/icons";
+import { CheckIcon, ChevronIcon } from "../components/ui/icons";
 import { Segmented } from "../components/ui/Segmented";
 import { Toggle } from "../components/ui/Toggle";
 import { DIFFICULTY_KO, EXPERIENCE_KO, INTERVIEW_TYPE_HINT_KO, INTERVIEW_TYPE_KO, PERSONA_KO } from "../config/labelsKo";
@@ -85,8 +85,8 @@ function initialConfig(preset?: { companyId: string; track?: string } | null): I
 
 type StyleKey = "real" | "light" | "pressure" | "focus";
 const STYLES: { key: StyleKey; title: string; desc: string; tag?: string; set: Pick<InterviewConfig, "interviewType" | "difficulty" | "persona"> }[] = [
-  { key: "real", title: "실전 1차 면접", desc: "인성·직무·경험을 섞어 실제 1차 면접처럼", tag: "추천", set: { interviewType: "mixed", difficulty: "normal", persona: "professional" } },
-  { key: "light", title: "가볍게 연습", desc: "부드러운 분위기에서 말하기에 익숙해지기", set: { interviewType: "mixed", difficulty: "easy", persona: "friendly" } },
+  { key: "real", title: "실전 1차 면접", desc: "인성, 직무, 경험 질문을 섞은 보통 난이도의 1차 면접", tag: "추천", set: { interviewType: "mixed", difficulty: "normal", persona: "professional" } },
+  { key: "light", title: "가볍게 연습", desc: "쉬운 질문에 친근한 면접관. 처음 연습할 때 좋습니다", set: { interviewType: "mixed", difficulty: "easy", persona: "friendly" } },
   { key: "pressure", title: "압박 면접", desc: "모호한 답은 바로 되묻고 반론을 던집니다", set: { interviewType: "mixed", difficulty: "hard", persona: "strict" } },
   { key: "focus", title: "직무 집중", desc: "실무 전문가가 직무 지식과 판단을 파고듭니다", set: { interviewType: "technical", difficulty: "normal", persona: "technical" } },
 ];
@@ -119,7 +119,7 @@ function Stepper({ step, reachable, onGo }: { step: number; reachable: (i: numbe
               } disabled:cursor-default`}
             >
               <span
-                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-mono text-[11px] ${
+                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full tabular-nums text-[11px] ${
                   active ? "bg-accent text-white" : done ? "bg-good text-white" : "bg-surface text-faint"
                 }`}
               >
@@ -237,13 +237,13 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
     ["지원 직무", position || "—", 0],
     ["경력", EXPERIENCE_KO[c.experience], 0],
     ["면접 자료", docLabel ? `${docLabel} 기반` : "서류 없이 (직무 기반)", 1],
-    ["지원 기업", company ? `${company.name}${c.companyTrack && c.companyTrack !== "공통" ? ` · ${c.companyTrack}` : ""}` : "선택 안 함", 1],
-    ["면접", STYLES.find((s) => s.key === style)?.title ?? `${INTERVIEW_TYPE_KO[c.interviewType]} · ${DIFFICULTY_KO[c.difficulty]} (직접 설정)`, 2],
-    ["분량", `메인 ${c.questionLimit}문항 · 약 ${minutes}분`, 2],
-    ["질문 구성", composition.map((x) => `${BUCKET_LABEL[x.bucket].ko} ${x.pct}%`).join(" · ") + (docLabel ? " (절반가량 서류 확인)" : ""), 2],
-    ["면접관", `${PERSONA_KO[c.persona]} · 음성 ${c.voiceEnabled && ttsOk ? "켜짐" : "꺼짐"}`, 2],
+    ["지원 기업", company ? `${company.name}${c.companyTrack && c.companyTrack !== "공통" ? ` ${c.companyTrack}` : ""}` : "선택 안 함", 1],
+    ["면접", STYLES.find((s) => s.key === style)?.title ?? `직접 설정 (${INTERVIEW_TYPE_KO[c.interviewType]}, ${DIFFICULTY_KO[c.difficulty]})`, 2],
+    ["분량", `메인 ${c.questionLimit}문항, 약 ${minutes}분`, 2],
+    ["질문 구성", composition.map((x) => `${BUCKET_LABEL[x.bucket].ko} ${x.pct}%`).join(", ") + (docLabel ? " (절반가량은 서류 확인)" : ""), 2],
+    ["면접관", `${PERSONA_KO[c.persona]} 스타일, 음성 ${c.voiceEnabled && ttsOk ? "켜짐" : "꺼짐"}`, 2],
   ];
-  const summaryLine = [position || "직무 미선택", EXPERIENCE_KO[c.experience], docLabel ? "서류 기반" : null, `${c.questionLimit}문항 · 약 ${minutes}분`].filter(Boolean).join(" · ");
+  const summaryLine = position ? `${position} ${EXPERIENCE_KO[c.experience]}${docLabel ? ", 서류 기반" : ""}, ${c.questionLimit}문항 약 ${minutes}분` : "직무를 아직 고르지 않았습니다";
 
   // Each step starts at the top of the page.
   const first = useRef(true);
@@ -274,7 +274,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
     else if (canNext) setStep(step + 1);
   };
   const blocker = step === 0 && !roleOk ? "직무를 먼저 선택해 주세요" : step === 1 && !docsOk ? "자기소개서나 이력서 중 하나 이상 붙여넣어 주세요" : "";
-  const nextLabel = last ? "접수하고 대기실로 이동" : `다음 · ${STEPS[step + 1].title}`;
+  const nextLabel = last ? "접수하고 대기실로 이동" : `다음: ${STEPS[step + 1].title}`;
 
   return (
     <div className="min-h-dvh pb-36 sm:pb-16">
@@ -295,10 +295,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
             <AnimatePresence mode="wait" initial={false}>
               <motion.div key={step} initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }} transition={{ duration: 0.18 }} className="space-y-4">
                 <header className="pb-1">
-                  <p className="text-sm font-semibold text-accent">
-                    면접 접수 · {step + 1}/{STEPS.length}
-                  </p>
-                  <h1 className="mt-1 text-[22px] font-extrabold text-navy sm:text-3xl">{STEPS[step].heading}</h1>
+                  <h1 className="text-[22px] font-extrabold text-navy sm:text-3xl">{STEPS[step].heading}</h1>
                   <p className="mt-1.5 text-[14px] text-muted sm:text-[15px]">{STEPS[step].sub}</p>
                 </header>
 
@@ -363,9 +360,9 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                         />
                         <div className="rounded-lg bg-surface-2 px-4 py-3 text-[12px] leading-relaxed text-muted">
                           <p>
-                            <strong className="text-ink">개인정보 보호</strong> — 이메일·전화번호·주민번호·링크는 자동으로 가립니다{masked > 0 ? ` (지금 ${masked}개 가림)` : ""}. 이름·주소·학교명은 직접 지워 주세요.
+                            이메일, 전화번호, 주민번호, 링크는 자동으로 가립니다{masked > 0 ? ` (지금 ${masked}개 가림)` : ""}. 이름과 주소, 학교명은 직접 지워 주세요.
                           </p>
-                          <p className="mt-1">서류는 질문을 만들 때만 면접관(AI)에게 전달되고 서버에 저장되지 않으며, 면접 기록에도 남기지 않습니다.</p>
+                          <p className="mt-1">서류는 질문을 만들 때만 면접관에게 보내고, 서버나 면접 기록에는 남기지 않습니다.</p>
                         </div>
                         <Toggle label="이 브라우저에 서류 기억하기" description="다음 면접에서 다시 붙여넣지 않아도 돼요. 이 기기에만 저장됩니다." checked={remember} onChange={setRemember} />
                       </Card>
@@ -423,7 +420,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                         <span className="min-w-0">
                           <span className="block text-[15px] font-bold text-ink">세부 설정</span>
                           <span className="mt-0.5 block text-[12px] text-faint">
-                            {INTERVIEW_TYPE_KO[c.interviewType]} · {DIFFICULTY_KO[c.difficulty]} · {PERSONA_KO[c.persona]} · {c.language === "ko" ? "한국어" : "영어"} · 답변 {c.answerTimeLimit ? `${c.answerTimeLimit / 60}분` : "제한 없음"} · 음성 {c.voiceEnabled && ttsOk ? "켜짐" : "꺼짐"}
+                            {INTERVIEW_TYPE_KO[c.interviewType]}, {DIFFICULTY_KO[c.difficulty]} 난이도, {PERSONA_KO[c.persona]} 면접관, {c.language === "ko" ? "한국어" : "영어"}, 답변 시간 {c.answerTimeLimit ? `${c.answerTimeLimit / 60}분` : "제한 없음"}, 음성 {c.voiceEnabled && ttsOk ? "켜짐" : "꺼짐"}
                           </span>
                         </span>
                         <ChevronIcon width={18} height={18} className={`shrink-0 text-faint transition-transform ${details ? "rotate-180" : ""}`} />
@@ -442,7 +439,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                           <div className="grid gap-3 sm:grid-cols-2">
                             <Toggle
                               label="면접관 음성"
-                              description={!ttsOk ? "이 브라우저는 음성 출력을 지원하지 않아요" : isNeuralTts() ? "Fish Audio 음성 · 면접관마다 다른 목소리" : "면접관이 질문을 소리 내어 읽어 줍니다"}
+                              description={!ttsOk ? "이 브라우저는 음성 출력을 지원하지 않아요" : isNeuralTts() ? "면접관마다 다른 목소리로 읽어 줍니다" : "면접관이 질문을 소리 내어 읽어 줍니다"}
                               checked={c.voiceEnabled && ttsOk}
                               onChange={(v) => set("voiceEnabled", v)}
                               disabled={!ttsOk}
@@ -453,7 +450,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                       )}
                     </section>
                     <p className="text-[12px] leading-relaxed text-faint">
-                      {isSpeechRecognitionSupported() ? "음성 답변 가능 — [음성 답변] 버튼을 누를 때만 마이크가 켜집니다." : "이 브라우저는 음성 답변을 지원하지 않아 텍스트로 답변합니다."} 카메라는 사용하지 않습니다.
+                      {isSpeechRecognitionSupported() ? "마이크는 [음성 답변] 버튼을 누를 때만 켜집니다." : "이 브라우저는 음성 답변을 지원하지 않아 텍스트로 답변합니다."} 카메라는 사용하지 않습니다.
                     </p>
                   </>
                 )}
@@ -469,7 +466,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                     이전
                   </Button>
                 )}
-                <Button type="submit" variant="primary" size="lg" disabled={!canNext} className="min-w-0 flex-1 flex-row-reverse sm:flex-none sm:px-10" icon={<ArrowIcon width={18} height={18} />}>
+                <Button type="submit" variant="primary" size="lg" disabled={!canNext} className="min-w-0 flex-1 sm:flex-none sm:px-10">
                   {nextLabel}
                 </Button>
                 {blocker && <span className="hidden text-[13px] text-warn sm:inline">{blocker}</span>}
@@ -477,7 +474,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
             </div>
           </form>
 
-          {/* desktop: sticky application summary — each row jumps to its step */}
+          {/* desktop: sticky application summary; each row jumps to its step */}
           <aside className="sticky top-20 hidden lg:block" aria-label="접수 요약">
             <div className="overflow-hidden rounded-xl border border-line-strong bg-surface shadow-sm">
               <div className="bg-navy px-5 py-3 text-[14px] font-bold text-white">접수 요약</div>
@@ -492,7 +489,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                 ))}
               </ul>
               <div className="border-t border-line p-4">
-                <Button variant="primary" size="lg" disabled={!roleOk || !docsOk} onClick={start} className="w-full flex-row-reverse" icon={<ArrowIcon width={18} height={18} />}>
+                <Button variant="primary" size="lg" disabled={!roleOk || !docsOk} onClick={start} className="w-full">
                   {last ? "접수하고 대기실로 이동" : "이대로 바로 시작"}
                 </Button>
                 <p className="mt-2.5 text-center text-[11px] leading-relaxed text-faint">면접관 3인이 번갈아 질문하고, 답변에 따라 꼬리질문이 이어집니다.</p>

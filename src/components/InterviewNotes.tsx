@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import type { Copy } from "../config/copy";
 import type { InterviewQuestion } from "../types/interview";
-import { pad2 } from "../utils/format";
 import { scoreTone } from "../utils/scoring";
 import { ScoreBadge } from "./ScoreBadge";
 
@@ -30,7 +29,7 @@ export function InterviewNotes({ questions, liveFeedback, copy }: Props) {
               className={`rounded-lg px-3 py-3 ${q.isFollowUp ? "ml-4 border-l-2 border-accent/30" : ""} ${!q.answer ? "bg-accent-soft" : ""}`}
             >
               <div className="flex items-center gap-2">
-                <span className="font-mono text-[11px] font-semibold text-faint">Q{pad2(i + 1)}</span>
+                <span className="tabular-nums text-[11px] font-semibold text-faint">{i + 1}번</span>
                 {q.isFollowUp && <span className="text-[11px] font-semibold text-accent">↳ {copy.followUp}</span>}
                 {liveFeedback && q.score !== null && (
                   <span className="ml-auto">

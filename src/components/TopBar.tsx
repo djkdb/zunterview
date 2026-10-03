@@ -5,7 +5,7 @@ export function TopBar({ onHome, right, modeBadge }: { onHome: () => void; right
     <header className="no-print sticky top-0 z-30 border-b border-line bg-surface/90 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center gap-3 px-4 sm:px-6">
         <button type="button" onClick={onHome} className="flex items-center gap-2.5" aria-label="INTERVIEW//AI 홈">
-          <span className="font-mono text-sm font-semibold tracking-[0.16em] text-navy">
+          <span className="tabular-nums text-sm font-semibold text-navy">
             INTERVIEW<span className="text-accent-2">//</span>AI
           </span>
           <span className="hidden text-[13px] text-faint md:inline">모의면접센터</span>

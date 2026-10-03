@@ -29,7 +29,15 @@ export function isGroundedQuote(quote: string, source: string): boolean {
   return normalize(source).includes(q);
 }
 
-const tidy = (s: string, max = 400): string => s.replace(/\s+/g, " ").trim().slice(0, max);
+/** Whitespace, length, and the em/en dashes models reach for (a spoken line never has them). */
+const tidy = (s: string, max = 400): string =>
+  s
+    .replace(/\s+/g, " ")
+    .replace(/\s*[—–]\s*/g, ", ")
+    .replace(/,\s*([,.?!])/g, "$1")
+    .replace(/,\s([은는이가을를의에도])(?=\s)/g, "$1")
+    .trim()
+    .slice(0, max);
 const tidyList = (xs: string[], maxItems: number, maxLen = 240): string[] =>
   xs.map((x) => tidy(x, maxLen)).filter(Boolean).slice(0, maxItems);
 

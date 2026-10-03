@@ -18,7 +18,7 @@ export function conductLine(lang: Language, reason: ConductReason): string {
 }
 
 export function conductLabel(reason: ConductReason): string {
-  return reason === "informal" ? "면접 중단 · 반말·무성의한 답변" : "면접 중단 · 부적절한 발언";
+  return reason === "informal" ? "면접 중단: 반말과 무성의한 답변" : "면접 중단: 부적절한 발언";
 }
 
 export function conductReport(lang: Language, reason: ConductReason): Pick<FinalReport, "headline" | "topFeedback" | "closingRemark"> {

@@ -340,7 +340,8 @@ export class MockAIProvider implements AIProvider {
     // ask for the first step the answer (or this thread) hasn't covered yet.
     // The field's path ("그 후 환자는…", "그 업무에서…") presumes the answer told a story of something done.
     const story = s.star.action > 0 && /(?:했|었|았|였)/.test(turn.answer) && !/(?:겠습니다|겠어요|ㄹ\s?것)/.test(turn.answer.slice(-20));
-    const chainStep = !opening && story && s.chars >= 25 ? bp.chain.find((st) => !st.covered.test(threadText) && !isDuplicateQuestion(st.ask[lang], asked)) : undefined;
+    // Motivation answers tell why, not what was built; "어떤 기술을 선택하셨나요?" doesn't follow from them.
+    const chainStep = !opening && story && s.chars >= 25 && turn.type !== "motivation" && turn.type !== "company_understanding" ? bp.chain.find((st) => !st.covered.test(threadText) && !isDuplicateQuestion(st.ask[lang], asked)) : undefined;
     const chainAsk = chainStep
       ? () =>
           push(chainStep.ask, chainStep.key === "result" ? "result" : "deep_dive", {
@@ -571,10 +572,10 @@ export class MockAIProvider implements AIProvider {
     const headline = barely
       ? L(lang, "대부분의 질문에 평가할 만한 답변이 나오지 않아 판단 근거가 부족했습니다.", "Most questions didn't get an answer that could be assessed.")
       : overall >= 80
-        ? L(lang, `전반적으로 안정적인 면접이었습니다. 특히 ${sName}${josa(sName, "이/가")} 돋보였습니다.`, `A solid interview overall — ${sName} stood out.`)
+        ? L(lang, `대부분의 질문에 근거를 갖춰 답했습니다. 항목 중에서는 ${sName}${josa(sName, "이/가")} 가장 좋았습니다.`, `You backed up most answers. ${sName} was your best category.`)
         : overall >= 65
-          ? L(lang, `기본기는 갖췄지만 ${wName}${josa(wName, "을/를")} 보완하면 답변이 훨씬 강해질 수 있습니다.`, `Good foundations; improving ${wName} would make your answers much stronger.`)
-          : L(lang, `답변을 더 구체적으로 구성하는 연습이 필요합니다.`, `Practice making your answers more concrete and structured.`);
+          ? L(lang, `답변의 뼈대는 갖췄습니다. ${wName}${josa(wName, "을/를")} 보완하면 점수가 가장 많이 오를 겁니다.`, `The basics are there. Work on ${wName} first; that's where your score moves most.`)
+          : L(lang, `질문마다 무엇을 했고 결과가 어땠는지 더 구체적으로 말해야 합니다.`, `Say more concretely what you did and how it turned out.`);
 
     return {
       headline,
@@ -589,7 +590,7 @@ export class MockAIProvider implements AIProvider {
             ]
           : [L(lang, `가장 점수가 높았던 답변은 Q${bestIdx}(${bestTurn.score}점)였지만, 뚜렷한 강점으로 볼 만한 답변은 아직 없었습니다.`, `Your best answer was Q${bestIdx} (${bestTurn.score}), but no clear strength came through yet.`)],
       improvements: [
-        L(lang, `${wName} 점수(${categoryScores[weakest]}점)를 높이는 것이 가장 큰 개선 포인트입니다.`, `${wName} (${categoryScores[weakest]}) is the biggest opportunity.`),
+        L(lang, `가장 낮은 항목은 ${wName}(${categoryScores[weakest]}점)입니다.`, `Your lowest category was ${wName} (${categoryScores[weakest]}).`),
         L(lang, `Q${worstIdx}: ${worstTurn.improve}`, `Q${worstIdx}: ${worstTurn.improve}`),
       ],
       nextSteps: NEXT_STEPS[weakest][lang],
@@ -884,11 +885,11 @@ function reasonFor(k: CategoryKey, s: Signals): string {
 function strengthFor(k: CategoryKey, s: Signals): string {
   const ko = s.lang === "ko";
   const m: Record<CategoryKey, string> = {
-    relevance: ko ? "질문의 의도에 맞춰 핵심을 바로 짚었습니다." : "Answered the actual question directly.",
-    logic: ko ? "판단의 이유를 논리적으로 설명했습니다." : "Explained the reasoning logically.",
-    specificity: ko ? "구체적인 방법과 사례로 답변을 뒷받침했습니다." : "Backed the answer with concrete methods and examples.",
-    structure: ko ? "상황과 행동, 결과의 흐름이 잘 정리되어 있습니다." : "Well structured from situation to result.",
-    communication: ko ? "간결하고 이해하기 쉽게 전달했습니다." : "Concise and easy to follow.",
+    relevance: ko ? "묻는 내용에 첫 문장부터 바로 답했습니다." : "Answered the actual question directly.",
+    logic: ko ? "왜 그렇게 판단했는지 이유를 함께 말했습니다." : "Explained the reasoning logically.",
+    specificity: ko ? "실제로 쓴 방법과 사례를 들어 답했습니다." : "Backed the answer with concrete methods and examples.",
+    structure: ko ? "상황, 한 일, 결과 순서로 말해 따라가기 쉬웠습니다." : "Well structured from situation to result.",
+    communication: ko ? "문장이 짧아 알아듣기 쉬웠습니다." : "Concise and easy to follow.",
     confidence: ko ? "본인의 역할과 결정을 분명하게 말했습니다." : "Spoke clearly about your own role and decisions.",
   };
   return s.chars < 20 ? (ko ? "질문에 바로 답하려는 태도가 보였습니다." : "You responded directly.") : m[k];
@@ -945,17 +946,17 @@ function betterAnswerFor(k: CategoryKey, s: Signals): AnswerAnalysis["betterAnsw
 }
 
 const TOP_FEEDBACK: Record<CategoryKey, Localized> = {
-  relevance: { ko: "질문의 핵심에 대한 답을 첫 문장에 먼저 말하면 전달력이 크게 좋아집니다.", en: "Lead with a direct answer to the question in your first sentence." },
-  logic: { ko: "무엇을 했는지뿐 아니라 왜 그렇게 판단했는지를 함께 설명해보세요.", en: "Explain not just what you did, but why you decided to do it." },
-  specificity: { ko: "무엇을 했고 그래서 무엇이 얼마나 달라졌는지, 결과와 수치를 구체적으로 말하는 연습이 가장 필요합니다.", en: "Say what you did and what changed as a result — concrete results and numbers are what's missing most." },
-  structure: { ko: "상황 → 행동 → 결과 순서로 답변을 정리하면 훨씬 설득력 있게 들립니다.", en: "Organize answers as situation → action → result to sound more convincing." },
+  relevance: { ko: "첫 문장에서 질문에 바로 답하세요. 설명은 그다음에 붙여도 됩니다.", en: "Answer the question in your first sentence, then explain." },
+  logic: { ko: "무엇을 했는지 말한 뒤, 왜 그렇게 판단했는지 한 문장을 덧붙여 보세요.", en: "After saying what you did, add one sentence on why you decided to." },
+  specificity: { ko: "무엇을 했고 그 결과 무엇이 얼마나 달라졌는지 숫자로 말하는 연습이 가장 필요합니다.", en: "Say what you did and how much changed, in numbers. That's what was missing most." },
+  structure: { ko: "상황, 행동, 결과 순서로 말하면 듣는 사람이 따라가기 쉽습니다.", en: "Tell it as situation, action, result so the panel can follow." },
   communication: { ko: "한 문장에 한 가지 내용만 담아 짧고 명확하게 말하는 연습을 해보세요.", en: "Practice short sentences with one idea each." },
-  confidence: { ko: "'저는 ~했습니다'처럼 본인의 역할과 결정을 분명하게 말해보세요.", en: "State your own role and decisions plainly — 'I did…'." },
+  confidence: { ko: "'저는 ~했습니다'처럼 본인의 역할과 결정을 분명하게 말해보세요.", en: "State your own role and decisions plainly: 'I did…'." },
 };
 
 const NEXT_STEPS: Record<CategoryKey, Record<Language, string[]>> = {
   relevance: { ko: ["질문을 한 문장으로 요약한 뒤 답변 시작하기", "결론 먼저 말하는 연습 5회"], en: ["Restate the question in one line before answering", "Practice answer-first responses 5 times"] },
-  logic: { ko: ["주요 경험마다 '왜?'를 3번 적어보기", "대안 비교 → 선택 이유 구조로 답변 정리"], en: ["Write 'why?' three times for each key experience", "Frame answers as options → choice → reason"] },
+  logic: { ko: ["주요 경험마다 '왜?'를 3번 적어보기", "대안을 비교하고 고른 이유를 말하는 순서로 답변 정리"], en: ["Write 'why?' three times for each key experience", "Frame answers as options, choice, then reason"] },
   specificity: { ko: ["대표 경험 3개에 대해 전후 수치 정리하기", "사용한 도구와 방법을 한 줄씩 적어두기"], en: ["Write before/after numbers for 3 key experiences", "List the tools and methods you used for each"] },
   structure: { ko: ["대표 경험을 STAR 템플릿으로 정리하기", "1분 안에 STAR로 말하는 연습"], en: ["Rewrite key stories with a STAR template", "Practice 1-minute STAR answers"] },
   communication: { ko: ["답변을 녹음해 군더더기 표현 체크하기", "한 문장 30자 이내로 말하는 연습"], en: ["Record answers and count filler words", "Keep sentences under ~15 words"] },

@@ -17,10 +17,10 @@ export const INTERVIEW_TYPE_KO: Record<InterviewType, string> = {
 };
 
 export const INTERVIEW_TYPE_HINT_KO: Record<InterviewType, string> = {
-  hr: "지원동기 · 조직적합성",
-  technical: "직무 전문성 · 실무",
+  hr: "지원동기, 조직적합성",
+  technical: "직무 지식과 실무",
   project: "수행 경험 검증",
-  behavioral: "과거 경험 · STAR",
+  behavioral: "과거 경험, STAR",
   mixed: "실제 1차 면접처럼",
 };
 

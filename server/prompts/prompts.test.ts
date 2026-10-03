@@ -91,3 +91,13 @@ describe("document-based interviews", () => {
     expect(q.user).not.toContain("Document-based");
   });
 });
+
+describe("the panel's voice", () => {
+  it("tells the model to avoid chatbot tells in every prompt", async () => {
+    const turn = { question: "강점은 무엇인가요?", type: "reflection" as const, isFollowUp: false, answer: "끈기입니다." };
+    for (const { system } of [await questionPrompt(ctx("회계")), await followUpPrompt(ctx("회계"), turn, 0), await analysisPrompt(ctx("회계"), turn)]) {
+      expect(system).toContain("not a chatbot");
+      expect(system).toContain("단순히 ~가 아니라");
+    }
+  });
+});

@@ -25,7 +25,7 @@ export function CompanyPicker({ companyId, track, onChange }: Props) {
           <div>
             <p className="text-[16px] font-bold text-ink">{c.name}</p>
             <p className="text-[12px] text-muted">
-              {c.category} · {c.industry} · 연습 질문 {c.questionCount}개
+              {c.category}, {c.industry}. 연습 질문 {c.questionCount}개
             </p>
           </div>
           <div className="flex gap-1.5">

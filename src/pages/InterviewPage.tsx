@@ -102,7 +102,7 @@ export function InterviewPage({ ctl, modeLabel, engineLabel }: { ctl: InterviewC
         total={interview.config.questionLimit}
         elapsed={elapsed}
         applicantNo={applicantNo}
-        position={company ? `${company.shortName ?? company.name} · ${interview.config.position}` : interview.config.position}
+        position={company ? `${company.shortName ?? company.name} ${interview.config.position}` : interview.config.position}
         typeLabel={INTERVIEW_TYPE_KO[interview.config.interviewType]}
         voiceOn={voiceOn}
         voiceSupported={isVoiceOutputAvailable()}

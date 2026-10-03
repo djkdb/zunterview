@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import type { InterviewQuestion } from "../types/interview";
-import { pad2 } from "../utils/format";
 import { scoreTone } from "../utils/scoring";
 import { TONE_BG } from "../utils/tones";
 
@@ -42,8 +41,8 @@ export function QuestionStepper({ questions, total, showScores }: Props) {
           );
         })}
       </ol>
-      <span className="shrink-0 font-mono text-[12px] text-muted tabular-nums">
-        <b className="text-ink">{pad2(Math.max(1, mains.length))}</b> / {pad2(total)}
+      <span className="shrink-0 tabular-nums text-[12px] text-muted">
+        <b className="text-ink">{Math.max(1, mains.length)}</b> / {total}
         {questions.some((q) => q.isFollowUp) && (
           <span className="ml-2 font-sans text-faint">꼬리질문 {questions.filter((q) => q.isFollowUp).length}</span>
         )}

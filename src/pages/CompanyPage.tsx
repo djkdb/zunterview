@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { COMPANY_Q_CATEGORIES, companyTracks, getCompany, loadCompanyQuestions, type CompanyQuestion } from "../../shared/companies";
 import { TopBar } from "../components/TopBar";
 import { Button } from "../components/ui/Button";
-import { ArrowIcon } from "../components/ui/icons";
 import { COMPANY_DISCLAIMER } from "../config/options";
 
 interface Props {
@@ -53,12 +52,12 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
       <main className="mx-auto w-full max-w-4xl px-4 sm:px-6">
         <motion.header initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="pt-8">
           <p className="text-sm font-semibold text-accent">
-            {c.category} · {c.industry}
+            {c.category}, {c.industry}
           </p>
           <h1 className="mt-1.5 text-3xl font-extrabold text-navy">{c.name} 모의면접</h1>
           {c.talent.length > 0 && (
             <div className="mt-4">
-              <p className="label mb-2">인재상 · 핵심가치</p>
+              <p className="label mb-2">인재상과 핵심가치</p>
               <div className="flex flex-wrap gap-1.5">
                 {c.talent.map((t) => (
                   <span key={t} className="rounded-md border border-accent/25 bg-accent-soft px-2.5 py-1 text-[13px] font-semibold text-accent">
@@ -76,7 +75,7 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
             <ol className="space-y-2">
               {c.process.map((p, i) => (
                 <li key={p} className="flex gap-2.5 text-[14px] text-ink">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy font-mono text-[10px] text-white">{i + 1}</span>
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy tabular-nums text-[10px] text-white">{i + 1}</span>
                   {p}
                 </li>
               ))}
@@ -156,7 +155,7 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
         </section>
 
         <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur sm:static sm:mt-8 sm:border-0 sm:bg-transparent sm:p-0">
-          <Button variant="primary" size="lg" className="w-full flex-row-reverse sm:w-auto sm:px-10" icon={<ArrowIcon width={18} height={18} />} onClick={() => onStart(c.id, track)}>
+          <Button variant="primary" size="lg" className="w-full sm:w-auto sm:px-10" onClick={() => onStart(c.id, track)}>
             {c.shortName ?? c.name} 모의면접 보기
           </Button>
         </div>

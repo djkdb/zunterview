@@ -143,7 +143,7 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
           <span className="ml-auto flex items-center gap-3">
             {left !== null && enabled && (
               <span
-                className={`font-mono text-xs tabular-nums ${over ? "text-low" : warn ? "text-warn" : "text-faint"}`}
+                className={`tabular-nums text-xs ${over ? "text-low" : warn ? "text-warn" : "text-faint"}`}
                 aria-label="남은 답변 시간"
               >
                 <span className="hidden font-sans sm:inline">남은 시간 </span>

@@ -3,7 +3,6 @@ import { CATEGORY_KEYS } from "../../shared/schemas";
 import { CATEGORY_KO, QUESTION_TYPE_KO, grade } from "../config/labelsKo";
 import type { PanelMember } from "../config/panel";
 import type { InterviewQuestion } from "../types/interview";
-import { pad2 } from "../utils/format";
 import { scoreTone } from "../utils/scoring";
 import { TONE_TEXT } from "../utils/tones";
 import { ScoreBadge } from "./ScoreBadge";
@@ -30,17 +29,17 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
   return (
     <li className={`rounded-lg border bg-surface transition-colors ${open ? "border-accent/40 shadow-sm" : "border-line hover:border-line-strong"}`}>
       <button type="button" onClick={onToggle} aria-expanded={open} aria-controls={panelId} className="flex w-full items-center gap-3 px-4 py-3.5 text-left sm:gap-4">
-        <span className="font-mono text-[13px] font-semibold text-faint">Q{pad2(index)}</span>
+        <span className="tabular-nums text-[13px] font-semibold text-faint">{index}번</span>
         <span className="min-w-0 flex-1">
           <span className="flex items-center gap-1.5 text-[11px] text-faint">
             {q.isFollowUp && <span className="rounded bg-accent px-1.5 py-px font-semibold text-white">↳ 꼬리질문</span>}
             <span>{QUESTION_TYPE_KO[q.type]}</span>
-            <span>· {asker.name} {asker.title}</span>
+            <span>{asker.name} {asker.title}</span>
           </span>
           <span className="mt-0.5 block truncate text-[15px] font-semibold text-ink">{q.text}</span>
         </span>
         <span className="rounded border border-line px-1.5 text-[12px] font-bold text-muted">{grade(q.score)}</span>
-        <span className={`w-9 text-right font-mono text-xl font-semibold tabular-nums ${TONE_TEXT[tone]}`}>{q.score}</span>
+        <span className={`w-9 text-right tabular-nums text-xl font-semibold ${TONE_TEXT[tone]}`}>{q.score}</span>
         <ChevronIcon className={`shrink-0 text-faint transition-transform ${open ? "rotate-90" : ""}`} />
       </button>
 
@@ -54,7 +53,7 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
                 {q.isFollowUp && q.followUpReason && <p className="mt-1 text-[13px] text-faint">질문 의도: {q.followUpReason}</p>}
               </div>
               <div>
-                <p className="label mb-1">내 답변 {q.answerMode === "voice" && <span className="font-normal text-accent">· 음성 답변</span>}</p>
+                <p className="label mb-1">내 답변 {q.answerMode === "voice" && <span className="font-normal text-accent">(음성 답변)</span>}</p>
                 <p className="rounded-lg bg-surface-2 px-3.5 py-2.5 text-[14px] leading-relaxed whitespace-pre-wrap text-muted">{q.answer}</p>
                 {f.evidence.length > 0 && (
                   <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[12px]">
@@ -81,7 +80,7 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
 
               {f.roleSignal && (
                 <div className="rounded-lg border border-accent/20 bg-accent-soft/60 p-3.5">
-                  <p className="label mb-1 text-accent">직무 관점 · {f.roleSignal.label}</p>
+                  <p className="label mb-1 text-accent">직무 관점: {f.roleSignal.label}</p>
                   <p className="text-[14px] text-ink">{f.roleSignal.note}</p>
                 </div>
               )}
@@ -93,7 +92,7 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
                     <li key={k} className="flex items-start gap-2 text-[13px]">
                       <ScoreBadge score={f.scores[k].score} tone={scoreTone(f.scores[k].score)} small />
                       <span>
-                        <span className="font-semibold text-ink">{CATEGORY_KO[k]}</span> <span className="text-muted">— {f.scores[k].reason}</span>
+                        <span className="font-semibold text-ink">{CATEGORY_KO[k]}</span> <span className="text-muted">{f.scores[k].reason}</span>
                       </span>
                     </li>
                   ))}
@@ -150,7 +149,7 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
                 </dl>
                 {f.notFound.length > 0 && (
                   <p className="mt-3 text-[13px] text-muted">
-                    <span className="text-faint">답변에서 확인되지 않은 정보:</span> {f.notFound.join(" · ")}
+                    <span className="text-faint">답변에서 확인되지 않은 정보:</span> {f.notFound.join(", ")}
                   </p>
                 )}
               </div>

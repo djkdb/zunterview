@@ -1,6 +1,6 @@
 import { INTERVIEW_TYPE_KO, grade } from "../config/labelsKo";
 import type { InterviewSummary } from "../types/interview";
-import { durationLabel, pad2, shortDate } from "../utils/format";
+import { durationLabel, shortDate } from "../utils/format";
 import { scoreTone } from "../utils/scoring";
 import { TONE_TEXT } from "../utils/tones";
 import { Button } from "./ui/Button";
@@ -21,7 +21,7 @@ export function InterviewHistory({ items, onOpen, onStart, canOpen, compact }: P
         <p className="text-base font-bold text-ink">아직 응시한 면접이 없습니다</p>
         <p className="mt-1.5 text-sm text-muted">면접을 마치면 평가표가 이곳에 보관됩니다. 기록은 이 브라우저에만 저장돼요.</p>
         <Button variant="primary" className="mt-5" onClick={onStart}>
-          첫 모의면접 보기
+          면접 접수하기
         </Button>
       </div>
     );
@@ -38,16 +38,16 @@ export function InterviewHistory({ items, onOpen, onStart, canOpen, compact }: P
               onClick={() => onOpen(s.id)}
               className="flex w-full items-center gap-4 px-4 py-3.5 text-left transition-colors hover:bg-surface-2 disabled:cursor-default disabled:hover:bg-surface sm:px-5"
             >
-              <span className="font-mono text-xs text-faint">{pad2(idx + 1)}</span>
+              <span className="tabular-nums text-xs text-faint">{idx + 1}</span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-[15px] font-semibold text-ink">{s.company ? `${s.company} · ${s.position}` : s.position}</span>
+                <span className="block truncate text-[15px] font-semibold text-ink">{s.company ? `${s.company} ${s.position}` : s.position}</span>
                 <span className="mt-0.5 block text-[12px] text-faint">
-                  {INTERVIEW_TYPE_KO[s.interviewType]}{s.usedDocuments?.length ? " · 서류 기반" : ""} · {s.questionCount}문항{!compact && ` · ${durationLabel(s.duration)}`} · {shortDate(s.createdAt)}
+                  {shortDate(s.createdAt)}, {INTERVIEW_TYPE_KO[s.interviewType]}{s.usedDocuments?.length ? " (서류 기반)" : ""} {s.questionCount}문항{!compact && `, ${durationLabel(s.duration)}`}
                 </span>
               </span>
               <span className="flex items-baseline gap-2">
                 <span className="rounded border border-line px-1.5 text-[12px] font-bold text-muted">{grade(s.score)}</span>
-                <span className={`font-mono text-xl font-semibold tabular-nums ${TONE_TEXT[scoreTone(s.score)]}`}>{s.score}</span>
+                <span className={`tabular-nums text-xl font-semibold ${TONE_TEXT[scoreTone(s.score)]}`}>{s.score}</span>
               </span>
               {openable && <ChevronIcon className="text-faint" />}
             </button>

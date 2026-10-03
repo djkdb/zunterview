@@ -32,10 +32,10 @@ export function CompletionScreen({ interview }: { interview: Interview }) {
           </motion.p>
           <motion.div className="mt-6 flex justify-center gap-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
             <span className="text-sm text-muted">
-              <span className="block font-mono text-2xl font-semibold text-ink tabular-nums">{answered}</span>답변 문항
+              <span className="block tabular-nums text-2xl font-semibold text-ink">{answered}</span>답변 문항
             </span>
             <span className="text-sm text-muted">
-              <span className="block font-mono text-2xl font-semibold text-ink tabular-nums">{durationLabel(interview.duration)}</span>소요 시간
+              <span className="block tabular-nums text-2xl font-semibold text-ink">{durationLabel(interview.duration)}</span>소요 시간
             </span>
           </motion.div>
           <motion.div className="mx-auto mt-8 w-64" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }}>

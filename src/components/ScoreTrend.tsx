@@ -20,11 +20,11 @@ function TrendTooltip({ active, payload }: { active?: boolean; payload?: { paylo
   return (
     <div className="rounded-lg border border-line-strong bg-surface px-3 py-2 text-[12px] shadow-md">
       <p className="text-faint">
-        {p.n}회차 · {p.label}
+        {p.n}회차 ({p.label})
       </p>
       <p className="mt-0.5 font-semibold text-ink">{p.title}</p>
       <p className="mt-0.5 text-ink">
-        <b className="font-mono text-[14px]">{p.score}</b>점 · {grade(p.score)}등급
+        <b className="tabular-nums text-[14px]">{p.score}</b>점, {grade(p.score)}등급
       </p>
     </div>
   );
@@ -35,7 +35,7 @@ export function ScoreTrend({ history }: { history: InterviewSummary[] }) {
   const data: Point[] = [...history]
     .sort((a, b) => a.createdAt - b.createdAt)
     .slice(-20)
-    .map((h, i) => ({ n: i + 1, label: shortDate(h.createdAt), score: h.score, title: h.company ? `${h.company} · ${h.position}` : h.position }));
+    .map((h, i) => ({ n: i + 1, label: shortDate(h.createdAt), score: h.score, title: h.company ? `${h.company} ${h.position}` : h.position }));
   const last = data[data.length - 1];
   const first = data[0];
   const delta = last.score - first.score;
@@ -45,7 +45,7 @@ export function ScoreTrend({ history }: { history: InterviewSummary[] }) {
       <div className="mb-2 flex flex-wrap items-end justify-between gap-2">
         <div>
           <h2 className="text-[15px] font-bold text-ink">종합 점수 추이</h2>
-          <p className="text-[12px] text-faint">최근 {data.length}회 · 질문 구성이 매번 달라 참고용 추세입니다</p>
+          <p className="text-[12px] text-faint">최근 {data.length}회. 매번 질문이 달라서 추세는 참고만 하세요.</p>
         </div>
         <p className="text-[13px] text-muted">
           첫 기록 대비{" "}

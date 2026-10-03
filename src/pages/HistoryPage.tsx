@@ -38,15 +38,15 @@ export function HistoryPage({ history, onOpen, canOpen, onStart, onHome, onClear
           {avg !== null && (
             <dl className="flex gap-6 text-[13px] text-muted">
               <div>
-                <dd className="font-mono text-xl font-semibold text-ink">{history.length}</dd>
+                <dd className="tabular-nums text-xl font-semibold text-ink">{history.length}</dd>
                 <dt>응시 횟수</dt>
               </div>
               <div>
-                <dd className="font-mono text-xl font-semibold text-ink">{avg}</dd>
+                <dd className="tabular-nums text-xl font-semibold text-ink">{avg}</dd>
                 <dt>평균 점수</dt>
               </div>
               <div>
-                <dd className="font-mono text-xl font-semibold text-ink">{best}</dd>
+                <dd className="tabular-nums text-xl font-semibold text-ink">{best}</dd>
                 <dt>최고 점수</dt>
               </div>
             </dl>

@@ -146,7 +146,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
           INTERVIEW<tspan fill="#7fa6e0">//</tspan>AI
         </text>
         <text x="600" y="100" textAnchor="middle" fill="#9fb0c9" fontSize="13" fontFamily="Pretendard Variable, sans-serif">
-          {companyName ? `${companyName} 모의면접` : "모의면접"} · {roomLabel}
+          {companyName ? `${companyName} 모의면접` : "모의면접"} {roomLabel}
         </text>
 
       </g>
@@ -199,7 +199,7 @@ export function InterviewRoom({ panel, speaking, mode, activity = 0, roomLabel =
       <g transform={`translate(600 ${DESK_Y + 106})`}>
         <rect x="-190" y="0" width="380" height="30" rx="2" fill="#1f2b45" />
         <text x="0" y="20" textAnchor="middle" fontSize="14" fontWeight="700" fill="#eef1f4" letterSpacing="2" fontFamily="Pretendard Variable, sans-serif">
-          {companyName ? `${companyName} 모의면접` : "INTERVIEW//AI 모의면접"} · {roomLabel}
+          {companyName ? `${companyName} 모의면접` : "INTERVIEW//AI 모의면접"} {roomLabel}
         </text>
       </g>
       {(["left", "center", "right"] as Seat[]).map((seat) => (
@@ -437,7 +437,7 @@ function PhotoScene({ panel, speaking, mode, activity, roomLabel, companyName }:
         INTERVIEW<tspan fill="#7fa6e0">//</tspan>AI
       </text>
       <text x="601" y="196" textAnchor="middle" fill="#9fb0c9" fontSize="14" fontFamily="Pretendard Variable, sans-serif" opacity="0.92">
-        {companyName ? `${companyName} 모의면접` : "모의면접"} · {roomLabel}
+        {companyName ? `${companyName} 모의면접` : "모의면접"} {roomLabel}
       </text>
 
       {(["left", "center", "right"] as Seat[]).map((seat, i) => (

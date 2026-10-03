@@ -5,7 +5,6 @@ import { ORIGIN_LABEL } from "../config/origin";
 import type { PanelMember } from "../config/panel";
 import type { Phase, ProcessingStage } from "../state/interviewMachine";
 import type { InterviewQuestion } from "../types/interview";
-import { pad2 } from "../utils/format";
 
 interface Props {
   question: InterviewQuestion | null;
@@ -54,7 +53,7 @@ function Speaker({ m }: { m: PanelMember }) {
         <b className="font-semibold text-ink">
           {m.name} {m.title}
         </b>{" "}
-        · {m.role}
+        <span className="text-faint">{m.role}</span>
       </span>
     </span>
   );
@@ -96,7 +95,7 @@ export function QuestionPanel({ question, index, phase, stage, transitionText, s
             <div className="flex flex-wrap items-center justify-between gap-2">
               <Speaker m={speaker} />
               <span className="flex items-center gap-1.5">
-                <span className="rounded-md bg-surface-3 px-2 py-0.5 font-mono text-[11px] font-semibold text-muted">Q{pad2(index)}</span>
+                <span className="rounded-md bg-surface-3 px-2 py-0.5 tabular-nums text-[11px] font-semibold text-muted">{index}번</span>
                 <span className="rounded-md border border-line px-2 py-0.5 text-[11px] text-muted">{QUESTION_TYPE_KO[question.type]}</span>
                 {question.origin && (
                   <span className="rounded-md bg-[#dde6f3] px-2 py-0.5 text-[11px] font-semibold text-ink" title={ORIGIN_LABEL[question.origin].title}>

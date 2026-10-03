@@ -21,6 +21,7 @@ import { loadInterview, previousFor } from "../utils/storage";
 import { TONE_BG, TONE_TEXT } from "../utils/tones";
 import { conductLabel } from "../utils/conduct";
 import { documentsLabel } from "../utils/documents";
+import { josa } from "../../shared/korean";
 
 interface Props {
   interview: Interview;
@@ -39,14 +40,28 @@ const reveal = (delay: number) => ({
   transition: { delay, duration: 0.45, ease: "easeOut" as const },
 });
 
-function SheetSection({ no, title, children, delay = 0 }: { no: number; title: string; children: ReactNode; delay?: number }) {
+/**
+ * The values a company names, as short words: "인재제일" stays, "핵심가치: 나눔과 배려 · 정직과 신뢰" gives its items,
+ * and a mission sentence ("미션: 끊임없는 도전과 …") is left out.
+ */
+function talentWords(talent: string[]): string[] {
+  const words = talent.flatMap((t) => {
+    const m = /^([^:]{1,12}):\s*(.+)$/.exec(t);
+    if (!m) return [t.split("(")[0].trim()];
+    return /가치|인재상/.test(m[1]) ? m[2].split(/\s*[·,]\s*/) : [];
+  });
+  return [...new Set(words.map((w) => w.trim()).filter((w) => w && w.length <= 16))].slice(0, 5);
+}
+
+/** One numbered part of the sheet. The sheet arrives once and the stamp lands; its parts don't animate on their own. */
+function SheetSection({ no, title, children }: { no: number; title: string; children: ReactNode; delay?: number }) {
   return (
-    <motion.section {...reveal(delay)} className="mt-8">
+    <section className="mt-8">
       <h2 className="mb-3 border-b-2 border-navy pb-1.5 text-[15px] font-extrabold text-navy">
         {no}. {title}
       </h2>
       {children}
-    </motion.section>
+    </section>
   );
 }
 
@@ -74,14 +89,14 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
   const company = getCompany(i.config.companyId);
   const info: [string, ReactNode][] = [
     ["지원번호", applicantNumber(i.id)],
-    ["지원 직무", company ? `${company.name} · ${i.config.position}` : i.config.position],
-    ["면접 유형", `${INTERVIEW_TYPE_KO[i.config.interviewType]} · ${DIFFICULTY_KO[i.config.difficulty]}`],
+    ["지원 직무", company ? `${company.name} ${i.config.position}` : i.config.position],
+    ["면접 유형", `${INTERVIEW_TYPE_KO[i.config.interviewType]} (${DIFFICULTY_KO[i.config.difficulty]})`],
     ["면접 자료", documentsLabel(i)],
     ["경력 구분", EXPERIENCE_KO[i.config.experience]],
     ["면접 일시", longDate(i.createdAt)],
     ["소요 시간", durationLabel(i.duration)],
-    ["면접 위원", `${panel.center.name}(위원장) · ${panel.left.name} · ${panel.right.name}`],
-    ["답변 문항", `메인 ${i.questions.filter((q) => !q.isFollowUp).length} / ${i.config.questionLimit}문항 · 꼬리질문 ${i.questions.filter((q) => q.isFollowUp).length}${i.terminated ? " (면접관 중단)" : i.endedEarly ? " (조기 종료)" : ""}`],
+    ["면접 위원", `${panel.center.name}(위원장), ${panel.left.name}, ${panel.right.name}`],
+    ["답변 문항", `메인 ${i.questions.filter((q) => !q.isFollowUp).length} / ${i.config.questionLimit}문항, 꼬리질문 ${i.questions.filter((q) => q.isFollowUp).length}${i.terminated ? " (면접관 중단)" : i.endedEarly ? " (조기 종료)" : ""}`],
   ];
 
   return (
@@ -110,7 +125,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
         {/* the evaluation sheet */}
         <motion.article {...reveal(0.05)} className="relative rounded-sm border border-line-strong bg-surface px-4 py-7 shadow-[0_18px_50px_-24px_rgba(15,27,46,0.35)] sm:px-10 sm:py-10">
           <Stamp className="absolute top-3 right-3 sm:top-8 sm:right-10" />
-          <p className="font-mono text-[11px] tracking-[0.2em] text-faint">INTERVIEW//AI 모의면접센터</p>
+          <p className="tabular-nums text-[11px] text-faint">INTERVIEW//AI 모의면접센터</p>
           <h1 className="mt-2 text-2xl font-extrabold tracking-[0.3em] text-navy sm:text-3xl">모의면접 평가표</h1>
 
           <dl className="mt-6 grid grid-cols-[84px_1fr] border-t border-l border-line text-[13px] sm:grid-cols-[96px_1fr_96px_1fr] sm:text-[14px]">
@@ -125,7 +140,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                 <ScoreRing score={overall} size={160} />
                 <div className="text-center">
                   <p className="label">종합 등급</p>
-                  <p className="mt-1 flex h-16 w-16 items-center justify-center rounded-full border-[3px] border-navy font-mono text-3xl font-bold text-navy">{grade(overall)}</p>
+                  <p className="mt-1 flex h-16 w-16 items-center justify-center rounded-full border-[3px] border-navy tabular-nums text-3xl font-bold text-navy">{grade(overall)}</p>
                 </div>
               </div>
               <div>
@@ -133,9 +148,9 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                   <p className="mb-2 inline-flex items-center gap-1.5 rounded border border-low/40 bg-low/10 px-2 py-1 text-[12px] font-semibold text-low">{conductLabel(i.terminated)}</p>
                 )}
                 {r && <p className="text-[17px] leading-relaxed font-bold text-ink">{r.headline}</p>}
-                {company && company.talent.length > 0 && (
+                {company && talentWords(company.talent).length > 0 && (
                   <p className="mt-2 text-[13px] text-muted">
-                    {company.name} 인재상: {company.talent.slice(0, 5).map((t) => t.split(/[:(]/)[0].trim()).filter(Boolean).join(" · ")} — 답변에 이 키워드가 드러나는 경험을 연결해 보세요.
+                    {company.name}{josa(company.name, "이/가")} 내세우는 가치는 {talentWords(company.talent).join(", ")}입니다. 답변에서 이 가치가 드러나는 경험을 골라 말해 보세요.
                   </p>
                 )}
                 <div className="mt-3 grid grid-cols-2 gap-2 text-[13px]">
@@ -155,7 +170,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                 {previous && delta !== null && (
                   <p className="mt-3 text-[13px] text-muted">
                     지난 면접 대비{" "}
-                    <span className="font-mono">
+                    <span className="tabular-nums">
                       {previous.score} → {overall}
                     </span>{" "}
                     <b className={delta > 0 ? "text-good" : delta < 0 ? "text-warn" : "text-muted"}>({delta > 0 ? `+${delta}` : delta})</b>
@@ -193,7 +208,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                         </div>
                       </td>
                       <td className="hidden border border-line px-2 py-2 text-muted sm:table-cell">{CATEGORY_DESC_KO[k]}</td>
-                      <td className={`border border-line px-2 py-2 text-center font-mono font-semibold ${TONE_TEXT[scoreTone(scores[k])]}`}>{scores[k]}</td>
+                      <td className={`border border-line px-2 py-2 text-center tabular-nums font-semibold ${TONE_TEXT[scoreTone(scores[k])]}`}>{scores[k]}</td>
                       <td className="border border-line px-2 py-2 text-center font-bold text-ink">{grade(scores[k])}</td>
                     </tr>
                   ))}
@@ -230,7 +245,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                   ))}
                 </div>
                 <p className="mt-5 text-right text-[13px] text-muted">
-                  “{r.closingRemark}” — 면접위원장 <b className="text-ink">{panel.center.name}</b>
+                  “{r.closingRemark}” <span className="whitespace-nowrap">면접위원장 <b className="text-ink">{panel.center.name}</b></span>
                 </p>
               </div>
             </SheetSection>

@@ -8,7 +8,7 @@ import { strongestAndWeakest } from "./scoring";
 
 export function shareText(i: Interview): string {
   const { strongest } = strongestAndWeakest(i.categoryScores!);
-  return `INTERVIEW//AI 모의면접\n${i.config.position} — ${i.overallScore}점 (${grade(i.overallScore ?? 0)}등급)\n강점: ${CATEGORY_KO[strongest]}\n(연습용 피드백)`;
+  return `INTERVIEW//AI 모의면접\n${i.config.position} ${i.overallScore}점 (${grade(i.overallScore ?? 0)}등급)\n강점: ${CATEGORY_KO[strongest]}\n(연습용 피드백)`;
 }
 
 export async function renderShareCard(i: Interview): Promise<Blob | null> {
@@ -66,7 +66,7 @@ export async function renderShareCard(i: Interview): Promise<Blob | null> {
   g.fillText(String(i.overallScore), cx, cy + 55);
   g.fillStyle = "#7b8494";
   g.font = `500 34px ${sans}`;
-  g.fillText(`/ 100점 · ${grade(i.overallScore ?? 0)}등급`, cx, cy + 115);
+  g.fillText(`/ 100점, ${grade(i.overallScore ?? 0)}등급`, cx, cy + 115);
 
   g.fillStyle = "#7b8494";
   g.font = `600 30px ${sans}`;
@@ -94,7 +94,7 @@ export async function renderShareCard(i: Interview): Promise<Blob | null> {
 
   g.fillStyle = "#7b8494";
   g.font = `400 26px ${sans}`;
-  g.fillText(`${shortDate(i.createdAt)} · ${i.questions.length}문항 · INTERVIEW//AI`, W / 2, 1200);
+  g.fillText(`${shortDate(i.createdAt)}, ${i.questions.length}문항, INTERVIEW//AI`, W / 2, 1200);
 
   return new Promise((resolve) => c.toBlob((b) => resolve(b), "image/png"));
 }

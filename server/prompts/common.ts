@@ -30,10 +30,28 @@ const PERSONA_TONE: Record<Persona, string> = {
     "Hands-on expert: a senior practitioner of the candidate's own field. Asks about trade-offs, procedures, standards and the reasoning behind decisions — in that field's terms.",
 };
 
+/**
+ * How the panel's words should sound: like a person at a Korean company, not a chatbot.
+ * (The tells listed here are the ones that made practice runs read as machine-written.)
+ */
+const PLAIN_VOICE = {
+  ko: `Sound like a real interviewer and evaluator, not a chatbot:
+- No em dashes (—), arrows (→) or exclamation marks; no bold, bullets or emoji inside strings.
+- No staged contrasts ("단순히 ~가 아니라 ~", "~뿐만 아니라 ~도") and no closing line that restates the point.
+- Avoid stock evaluation words when a specific one exists: 핵심, 효과적, 인사이트, 포인트, 역량을 발휘, 돋보였습니다, 인상적, 훌륭합니다.
+- Name the specific thing from the answer instead ("결산 단축 사례에서 본인 역할이 분명했습니다", not "구체적인 사례가 좋았습니다").
+- Short, plain sentences in 합니다/해요체 as fits the persona; one point per sentence.`,
+  en: `Sound like a real interviewer and evaluator, not a chatbot:
+- No em dashes, arrows or exclamation marks; no bold, bullets or emoji inside strings.
+- No "not X but Y" contrasts and no closing line that restates the point.
+- Avoid stock words such as crucial, key, robust, delve, showcase, valuable, impressive.
+- Name the specific thing from the answer instead of praising in general.`,
+} as const;
+
 export function languageRule(config: AIConfig): string {
   return config.language === "ko"
-    ? "Write every candidate-facing string in natural, polite Korean as spoken by an interviewer at a Korean company (존댓말, e.g. '~말씀해 주시겠어요?', '~설명해 주세요'). Address the candidate as '지원자님' only when needed. Keep enum values in English."
-    : "Write every candidate-facing string in natural, professional English.";
+    ? `Write every candidate-facing string in natural, polite Korean as spoken by an interviewer at a Korean company (존댓말, e.g. '~말씀해 주시겠어요?', '~설명해 주세요'). Address the candidate as '지원자님' only when needed. Keep enum values in English.\n${PLAIN_VOICE.ko}`
+    : `Write every candidate-facing string in natural, professional English.\n${PLAIN_VOICE.en}`;
 }
 
 export const GROUNDING_RULES = `Grounding rules (critical):

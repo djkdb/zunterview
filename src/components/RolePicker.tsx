@@ -110,7 +110,7 @@ export function RolePicker({ position, roleId, onChange, composition }: Props) {
           </svg>
         </div>
         <p id="role-search-hint" className="mt-1.5 text-[12px] text-faint">
-          {ROLE_STATS.domains}개 분야 · {ROLE_STATS.roles}개 직무 · 영어·약어 검색 가능 (FE, HRD, BM, Data Analyst…)
+          {ROLE_STATS.domains}개 분야 {ROLE_STATS.roles}개 직무. 영어나 약어로도 찾을 수 있습니다 (FE, HRD, BM, Data Analyst)
         </p>
       </div>
 
@@ -278,7 +278,7 @@ function Selected({ position, roleId, composition, onEdit, onPick }: { position:
       )}
       {!role && resolution && resolution.suggestions.length > 0 && (
         <div className="mt-3">
-          <p className="text-[12px] text-muted">비슷한 직무 — 고르면 더 정확한 질문으로 구성돼요</p>
+          <p className="text-[12px] text-muted">비슷한 직무를 고르면 질문이 더 정확해집니다</p>
           <div className="mt-1.5 flex flex-wrap gap-1.5">
             {resolution.suggestions.slice(0, 5).map((r) => (
               <button key={r.id} type="button" className={chip(false)} onClick={() => onPick(r.id)}>

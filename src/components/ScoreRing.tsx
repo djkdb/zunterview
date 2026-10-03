@@ -32,7 +32,7 @@ export function ScoreRing({ score, size = 180 }: { score: number; size?: number 
         />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="font-mono text-5xl font-semibold text-navy tabular-nums">{shown}</span>
+        <span className="tabular-nums text-5xl font-semibold text-navy">{shown}</span>
         <span className="text-[12px] text-faint">/ 100점</span>
       </div>
     </div>

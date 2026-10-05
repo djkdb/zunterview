@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { mmss } from "../utils/format";
 import { MuteIcon, NotesIcon, VolumeIcon } from "./ui/icons";
+import { Seal } from "./TopBar";
 
 interface Props {
   index: number;
@@ -25,8 +26,9 @@ export function InterviewHeader(p: Props) {
     <header className="sticky top-0 z-30 bg-navy text-white shadow-md">
       <div className="mx-auto flex h-14 max-w-[1440px] items-center gap-3 px-3 sm:px-6">
         <div className="flex min-w-0 items-center gap-3">
-          <span className="hidden tabular-nums text-xs lg:inline">
-            INTERVIEW<span className="text-[#7fa6e0]">//</span>AI
+          <span className="hidden items-center gap-2 text-[13px] font-bold lg:flex">
+            <Seal light />
+            INTERVIEW//AI
           </span>
           <span className="hidden h-4 w-px bg-white/20 lg:inline" />
           <span className="rounded bg-white/10 px-2 py-0.5 text-[12px] font-semibold whitespace-nowrap max-[400px]:hidden">
@@ -35,7 +37,7 @@ export function InterviewHeader(p: Props) {
             {p.applicantNo}
           </span>
           <span className="hidden min-w-0 truncate text-[13px] text-white/75 md:inline">
-            {p.position} · {p.typeLabel}
+            {p.position} <span className="text-white/50">{p.typeLabel}</span>
           </span>
         </div>
 

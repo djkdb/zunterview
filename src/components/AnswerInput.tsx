@@ -5,7 +5,7 @@ import { useNow } from "../hooks/useTimer";
 import { useVoiceInput } from "../hooks/useVoiceInput";
 import { mmss } from "../utils/format";
 import { Button } from "./ui/Button";
-import { MicIcon, SendIcon, StopIcon } from "./ui/icons";
+import { MicIcon, StopIcon } from "./ui/icons";
 
 interface Props {
   value: string;
@@ -152,7 +152,7 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
             )}
             {value.trim() && (
               <span className={`text-[11px] tabular-nums ${lengthHint(value).tone}`} title="말하기 기준 약 1분 ≈ 250~350자">
-                <span className="hidden sm:inline">{value.length}자 · </span>
+                <span className="hidden sm:inline">{value.length}자, </span>
                 {lengthHint(value).label}
               </span>
             )}
@@ -161,7 +161,6 @@ export function AnswerInput({ value, onChange, onSubmit, enabled, copy, lang, ti
               variant="primary"
               onClick={submit}
               disabled={!canSubmit}
-              icon={<SendIcon width={14} height={14} />}
               className="h-9 px-4"
               title="답변 제출 (Ctrl/⌘ + Enter)"
             >
@@ -202,5 +201,5 @@ function lengthHint(v: string): { label: string; tone: string } {
   const n = v.replace(/\s/g, "").length;
   if (n < 60) return { label: "조금 짧아요", tone: "text-warn" };
   if (n <= 450) return { label: "적당해요", tone: "text-good" };
-  return { label: "길어요 · 핵심만", tone: "text-warn" };
+  return { label: "길어요. 결론만 남겨 보세요", tone: "text-warn" };
 }

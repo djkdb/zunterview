@@ -865,7 +865,7 @@ function reasonFor(k: CategoryKey, s: Signals): string {
       return ko ? "구체적인 방법, 도구, 수치가 확인되지 않습니다." : "No concrete methods, tools or numbers.";
     case "structure":
       return s.structureMarkers > 0 || (s.star.situation && s.star.action && s.star.result)
-        ? ko ? "상황 → 행동 → 결과 흐름이 비교적 명확합니다." : "Situation → action → result flow is fairly clear."
+        ? ko ? "상황, 행동, 결과 순서가 비교적 분명합니다." : "Situation, action, result flow is fairly clear."
         : ko ? "답변의 순서가 정리되어 있지 않습니다." : "The answer lacks a clear order.";
     case "communication":
       return s.chars < 25
@@ -901,7 +901,7 @@ function improveFor(k: CategoryKey, s: Signals): string {
     relevance: ko ? "질문이 묻는 핵심에 먼저 답한 뒤 배경을 덧붙이세요." : "Answer the core of the question first, then add context.",
     logic: ko ? "왜 그 방법을 선택했는지 이유를 한 문장 추가하세요." : "Add one sentence on why you chose that approach.",
     specificity: ko ? "성과를 수치로 표현하면 더 명확합니다." : "Quantify the outcome to make it clearer.",
-    structure: ko ? "상황 → 행동 → 결과 순서로 정리해 말해보세요." : "Try ordering it as situation → action → result.",
+    structure: ko ? "상황, 한 일, 결과 순서로 정리해 말해 보세요." : "Try ordering it as situation, action, then result.",
     communication: ko ? "한 문장에 하나의 내용만 담아 간결하게 말해보세요." : "Keep one idea per sentence.",
     confidence: ko ? "'저는 ~을 했습니다'처럼 본인의 행동을 주어로 말해보세요." : "Use 'I did…' to make your own actions explicit.",
   };
@@ -933,7 +933,7 @@ function betterAnswerFor(k: CategoryKey, s: Signals): AnswerAnalysis["betterAnsw
     },
     communication: {
       problem: ko ? "문장이 길거나 불필요한 표현이 많음" : "Long sentences or filler",
-      suggestion: ko ? "핵심 → 근거 → 결과를 짧은 문장으로" : "Short sentences: point → evidence → result",
+      suggestion: ko ? "결론, 근거, 결과를 짧은 문장으로" : "Short sentences: point, evidence, result",
       example: ko ? "“핵심은 [요점]입니다. [근거] 덕분에 [결과]가 나왔습니다.”" : "“The key point is [point]. Because of [evidence], we got [result].”",
     },
     confidence: {

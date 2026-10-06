@@ -35,6 +35,8 @@ export interface DocClaim {
   source: DocSource;
   /** A short phrase copied from the document (what the interviewer quotes). */
   quote: string;
+  /** The whole line or sentence it came from, when the quote is shorter (e.g. a résumé line with the role). */
+  context?: string;
 }
 
 const KIND_TYPE: Record<ClaimKind, QuestionType> = {
@@ -99,7 +101,7 @@ function resumeLines(resume: string): DocClaim[] {
       for (const s of body.split(/[,/·|]\s*/).map((x) => x.replace(/\(.*?\)/g, "").replace(/\s?자격증$/, "").trim()).filter((x) => x.length >= 2 && x.length <= 24).slice(0, 2)) out.push({ kind: "cert", source: "resume", quote: s });
     } else if (/프로젝트|경력|경험|인턴|활동|근무|project|experience|intern/i.test(head) || /\d{4}[.\-/]\d{1,2}\s?[~–-]/.test(body)) {
       const title = body.split(/\s[-–|]\s/)[0].replace(/\(?\d{4}[.\-/]\d{1,2}.*?(?:\)|$)/g, "").replace(/\s{2,}/g, " ").replace(/[-–,]\s*$/, "").trim();
-      if (title.length >= 4) out.push({ kind: "project", source: "resume", quote: quotable(title, /./, 40) });
+      if (title.length >= 4) out.push({ kind: "project", source: "resume", quote: quotable(title, /./, 40), context: line });
     }
   }
   return out;

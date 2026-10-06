@@ -16,7 +16,7 @@ import { MockAIProvider } from "../services/ai/MockAIProvider";
 import { createProvider, detectProviderStatus, type ProviderStatus } from "../services/ai/providerFactory";
 import { cancelLine, isVoiceOutputAvailable, speakLine } from "../services/speech/tts";
 import { currentQuestion, initialState, reducer, type Action, type InterviewState } from "../state/interviewMachine";
-import type { Interview, InterviewConfig, InterviewQuestion, ProviderKind, QuestionOrigin } from "../types/interview";
+import type { Interview, InterviewConfig, InterviewQuestion, ProviderKind, QuestionOrigin, Reanswer } from "../types/interview";
 import { buildContext, toAIConfig, toCurrentTurn } from "../utils/context";
 import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
@@ -24,6 +24,7 @@ import { clarifyLine } from "../utils/clarify";
 import { misconductOf, triageAnswer } from "../../shared/answerTriage";
 import { refersToDocuments, unaskable } from "../../shared/questionRules";
 import { hasDocuments } from "../../shared/documents";
+import { checkDocuments, type CheckTurn } from "../../shared/documentCheck";
 import { conductLine, conductReport } from "../utils/conduct";
 import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
@@ -55,6 +56,15 @@ async function originOf(text: string, config: InterviewConfig): Promise<Question
   });
   if (!match || match.basis === "일반면접") return undefined;
   return match.basis;
+}
+
+/** The interview's answered turns, grouped by main question, for the document check. */
+function checkTurns(i: Interview): CheckTurn[] {
+  let thread = -1;
+  return i.questions.map((q, idx) => {
+    if (!q.isFollowUp) thread++;
+    return { question: q.text, answer: q.answer ?? "", thread, no: idx + 1, score: q.score };
+  });
 }
 
 export interface TokenStatus {
@@ -271,9 +281,11 @@ export function useInterview() {
         source = "mock";
       }
       if (terminated) report = { ...report, ...conductReport(i.config.language, terminated) };
+      // Document-based interview: compare what was said with what was written, while the documents are still here.
+      const documentChecks = hasDocuments(i.config.documents) ? checkDocuments(i.config.documents, checkTurns(i)) : undefined;
       await minShow;
       if (runRef.current !== run) return;
-      dispatch({ type: "REPORT", report, source });
+      dispatch({ type: "REPORT", report, source, documentChecks });
       setStorageOk(saveInterview(stateRef.current.interview!));
     },
     [dispatch, say],
@@ -513,6 +525,29 @@ export function useInterview() {
     r?.();
   }, []);
 
+  /**
+   * Answer one question again from the result sheet. The same interviewer scores it with the
+   * context the original answer had; the original answer and score stay as they were.
+   */
+  const reanswer = useCallback(
+    async (questionId: string, answer: string): Promise<Reanswer | null> => {
+      const i = stateRef.current.interview;
+      const idx = i?.questions.findIndex((q) => q.id === questionId) ?? -1;
+      if (!i || idx < 0 || !answer.trim()) return null;
+      const q = i.questions[idx];
+      const ctx = buildContext({ ...i, questions: [...i.questions.slice(0, idx), { ...q, answer: null }] });
+      const turn = toCurrentTurn(q, answer.trim());
+      const lang = i.config.language;
+      const provider = misconductOf(answer, lang) || triageAnswer(answer, lang) ? mockRef.current : providerRef.current;
+      const [feedback, source] = await withFallback(provider, (p) => p.analyzeAnswer(ctx, turn));
+      const result: Reanswer = { questionId, answer: answer.trim(), score: answerScore(feedback), feedback, source, at: Date.now() };
+      dispatch({ type: "REANSWERED", reanswer: result });
+      setStorageOk(saveInterview(stateRef.current.interview!));
+      return result;
+    },
+    [dispatch, withFallback],
+  );
+
   const continueWithMock = useCallback(() => {
     switchToMock();
     retry();
@@ -630,6 +665,7 @@ export function useInterview() {
       submitAnswer,
       endInterview,
       retry,
+      reanswer,
       continueWithMock,
       reset,
       viewInterview,

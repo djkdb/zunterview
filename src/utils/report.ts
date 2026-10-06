@@ -19,6 +19,10 @@ export function buildReportHtml(i: Interview): string {
   const bars = CATEGORY_KEYS.map(
     (k) => `<div class="bar"><span>${CATEGORY_KO[k]}</span><div class="track"><div style="width:${scores[k]}%"></div></div><b>${scores[k]}점 ${grade(scores[k])}</b></div>`,
   ).join("");
+  const checkLabel = { mismatch: "다름", unexplained: "설명 부족", match: "일치" } as const;
+  const checks = i.documentChecks?.length
+    ? `<h2>4. 서류와 답변 비교</h2><ul>${i.documentChecks.map((c) => `<li><b>${checkLabel[c.status]}</b> ${c.source === "resume" ? "이력서" : "자기소개서"} ‘${esc(c.claim)}’: ${esc(c.detail)} (${c.questionNo}번 문항)</li>`).join("")}</ul>`
+    : "";
   const questions = i.questions
     .map((q, idx) => {
       const f = q.feedback!;
@@ -65,7 +69,7 @@ ${r ? `<p><b>${esc(r.headline)}</b></p>` : ""}
 <p>가장 좋은 항목은 <b>${CATEGORY_KO[strongest]}</b>, 보완이 필요한 항목은 <b>${CATEGORY_KO[weakest]}</b>입니다.</p>
 <h2>2. 항목별 평가</h2>${bars}
 ${r ? `<h2>3. 면접위원 종합 의견</h2><p><b>“${esc(r.topFeedback)}”</b></p><h3>강점</h3>${list(r.strengths)}<h3>보완점</h3>${list(r.improvements)}<h3>다음 연습 과제</h3>${list(r.nextSteps)}` : ""}
-<h2>4. 문항별 평가</h2>${questions}
+${checks}<h2>${i.documentChecks?.length ? 5 : 4}. 문항별 평가</h2>${questions}
 <p class="note">${DISCLAIMER} 예시 답변은 참고용이며 본인의 경험에 대한 사실이 아닙니다.</p>
 </body></html>`;
 }

@@ -12,7 +12,7 @@ import { CATEGORY_DESC_KO, CATEGORY_KO, DIFFICULTY_KO, EXPERIENCE_KO, INTERVIEW_
 import { DISCLAIMER } from "../config/options";
 import { applicantNumber, buildPanel, seatFor } from "../config/panel";
 import { getCompany } from "../../shared/companies";
-import type { Interview } from "../types/interview";
+import type { Interview, Reanswer } from "../types/interview";
 import { durationLabel, longDate } from "../utils/format";
 import { downloadReport } from "../utils/report";
 import { scoreTone, strongestAndWeakest } from "../utils/scoring";
@@ -21,6 +21,8 @@ import { loadInterview, previousFor } from "../utils/storage";
 import { TONE_BG, TONE_TEXT } from "../utils/tones";
 import { conductLabel } from "../utils/conduct";
 import { documentsLabel } from "../utils/documents";
+import { DocumentChecks } from "../components/DocumentChecks";
+import { ReanswerPractice } from "../components/ReanswerPractice";
 import { josa } from "../../shared/korean";
 
 interface Props {
@@ -30,6 +32,8 @@ interface Props {
   onNew: () => void;
   /** Start again immediately with the same settings. */
   onRetake: () => void;
+  /** Answer a question again and get it scored (absent when the sheet is read-only). */
+  onReanswer?: (questionId: string, answer: string) => Promise<Reanswer | null>;
   onHistory: () => void;
   onHome: () => void;
 }
@@ -65,7 +69,8 @@ function SheetSection({ no, title, children }: { no: number; title: string; chil
   );
 }
 
-export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onRetake, onHistory, onHome }: Props) {
+export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onRetake, onHistory, onHome, onReanswer }: Props) {
+  const checks = i.documentChecks ?? [];
   const [open, setOpen] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const panel = useMemo(() => buildPanel(i.config), [i.config]);
@@ -251,7 +256,13 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
             </SheetSection>
           )}
 
-          <SheetSection no={4} title="문항별 평가" delay={0.45}>
+          {checks.length > 0 && (
+            <SheetSection no={4} title="서류와 답변 비교">
+              <DocumentChecks checks={checks} />
+            </SheetSection>
+          )}
+
+          <SheetSection no={checks.length > 0 ? 5 : 4} title="문항별 평가" delay={0.45}>
             <p className="mb-3 text-[13px] text-faint">문항을 누르면 내 답변, 평가 근거, 개선 방향을 볼 수 있습니다.</p>
             <ol className="space-y-2" lang={i.config.language}>
               {i.questions.map((q, idx) => (
@@ -272,6 +283,8 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
             <br />본 평가표는 연습용 자료이며 실제 기업의 채용 결과와 무관합니다.
           </p>
         </motion.article>
+
+        {onReanswer && <ReanswerPractice interview={i} onReanswer={onReanswer} />}
 
         <section className="no-print mt-8 flex flex-wrap items-center justify-center gap-2.5">
           <Button variant="secondary" onClick={() => downloadReport(i)} icon={<DownloadIcon width={16} height={16} />}>

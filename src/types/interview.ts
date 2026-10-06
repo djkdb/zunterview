@@ -1,3 +1,4 @@
+import type { DocumentCheck } from "../../shared/documentCheck";
 import type {
   AIConfig,
   AnswerAnalysis,
@@ -70,10 +71,24 @@ export interface Interview {
   terminated?: "conduct" | "informal";
   /** Document-based interview: which documents were used (their text is not kept in history). */
   usedDocuments?: DocumentKind[];
+  /** Document-based interview: what the answers said about the documents' numbers and roles. */
+  documentChecks?: DocumentCheck[];
+  /** Questions answered again from the result sheet, newest last. */
+  reanswers?: Reanswer[];
   providers: ProviderKind[];
 }
 
 export type DocumentKind = "resume" | "coverLetter";
+
+/** A second try at one question, scored by the same interviewer. */
+export interface Reanswer {
+  questionId: string;
+  answer: string;
+  score: number;
+  feedback: AnswerAnalysis;
+  source: ProviderKind;
+  at: number;
+}
 
 /** Compact record persisted to localStorage for the history list. */
 export interface InterviewSummary {

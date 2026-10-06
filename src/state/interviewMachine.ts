@@ -6,7 +6,8 @@
  *        → FOLLOW_UP | NEXT_QUESTION → ASKING …
  *        → COMPLETED → RESULT            (ERROR can interrupt INTRO/ANALYZING)
  */
-import type { AnswerAnalysis, FinalReport, Interview, InterviewQuestion, ProviderKind } from "../types/interview";
+import type { AnswerAnalysis, FinalReport, Interview, InterviewQuestion, ProviderKind, Reanswer } from "../types/interview";
+import type { DocumentCheck } from "../../shared/documentCheck";
 import { categoryAverages, overallScore } from "../utils/scoring";
 
 export type Phase =
@@ -55,7 +56,8 @@ export type Action =
   | { type: "DROP_CURRENT" }
   | { type: "CLARIFY"; questionId: string; text: string; now: number }
   | { type: "COMPLETE"; endedEarly: boolean; now: number; terminated?: "conduct" | "informal" }
-  | { type: "REPORT"; report: FinalReport; source: ProviderKind }
+  | { type: "REPORT"; report: FinalReport; source: ProviderKind; documentChecks?: DocumentCheck[] }
+  | { type: "REANSWERED"; reanswer: Reanswer }
   | { type: "FAIL"; error: InterviewError }
   | { type: "RECOVER" }
   | { type: "VIEW_RESULT"; interview: Interview }
@@ -186,8 +188,12 @@ export function reducer(state: InterviewState, action: Action): InterviewState {
       return {
         ...state,
         phase: "RESULT",
-        interview: { ...withProvider(state.interview, action.source), report: action.report, completed: true },
+        interview: { ...withProvider(state.interview, action.source), report: action.report, completed: true, ...(action.documentChecks ? { documentChecks: action.documentChecks } : {}) },
       };
+
+    case "REANSWERED":
+      if (!state.interview) return state;
+      return { ...state, interview: { ...state.interview, reanswers: [...(state.interview.reanswers ?? []), action.reanswer] } };
 
     case "FAIL":
       return { ...state, phase: "ERROR", error: action.error, resumePhase: state.phase === "ERROR" ? state.resumePhase : state.phase };

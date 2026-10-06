@@ -5,6 +5,7 @@ import { ModeBadge, TopBar } from "../components/TopBar";
 import { CompanyPicker } from "../components/CompanyPicker";
 import { COMPANIES, companyTracks, getCompany, guessTrack, type CompanyCategory } from "../../shared/companies";
 import { RolePicker } from "../components/RolePicker";
+import { FollowUpPath } from "../components/FollowUpPath";
 import { planComposition, planInterview, BUCKET_LABEL } from "../../shared/blueprints";
 import { roleContextFor, searchRoles } from "../../shared/roles";
 import { hasDocuments, redactPersonalInfo } from "../../shared/documents";
@@ -410,6 +411,8 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                       ))}
                     </div>
                     {!style && <p className="text-[12px] text-faint">세부 설정에서 직접 조정한 구성입니다.</p>}
+
+                    <FollowUpPath config={c} />
 
                     <Card title="면접 분량">
                       <Segmented label="메인 질문 수 (꼬리질문은 답변에 따라 추가)" value={c.questionLimit} onChange={(v) => set("questionLimit", v)} options={QUESTION_LENGTHS.map((v) => ({ value: v, label: `${v}문항`, hint: `약 ${Math.round(v * 2.5)}분` }))} />

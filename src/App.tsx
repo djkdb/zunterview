@@ -144,6 +144,7 @@ export default function App() {
                 }}
                 onHistory={goHistory}
                 onHome={goHome}
+                onReanswer={actions.reanswer}
               />
               </Suspense>
             )}

@@ -92,6 +92,7 @@ interface Props {
   active: ActiveInterview | null;
   onResume: () => void;
   onDiscard: () => void;
+  onLegal: (doc: "terms" | "privacy") => void;
 }
 
 function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview; onResume: () => void; onDiscard: () => void }) {
@@ -126,7 +127,7 @@ function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview
 /** A couple from each category so the section shows the range. */
 const FEATURED = COMPANY_CATEGORIES.flatMap((cat) => COMPANIES.filter((c) => c.category === cat).slice(0, 2)).slice(0, 8);
 
-export function LandingPage({ status, history, onStart, onHistory, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard }: Props) {
+export function LandingPage({ status, history, onStart, onHistory, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard, onLegal }: Props) {
   return (
     <div className="flex min-h-dvh flex-col">
       <TopBar
@@ -245,7 +246,17 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
           <InterviewHistory items={history.slice(0, 3)} onOpen={onOpenInterview} onStart={onStart} canOpen={canOpen} compact />
         </section>
       </main>
-      <footer className="border-t border-line py-5 text-center text-[12px] text-faint">{DISCLAIMER}</footer>
+      <footer className="border-t border-line px-4 py-5 text-center text-[12px] text-faint">
+        <p>{DISCLAIMER}</p>
+        <p className="mt-2 flex justify-center gap-4">
+          <button type="button" className="underline-offset-2 hover:text-ink hover:underline" onClick={() => onLegal("terms")}>
+            이용약관
+          </button>
+          <button type="button" className="font-semibold underline-offset-2 hover:text-ink hover:underline" onClick={() => onLegal("privacy")}>
+            개인정보처리방침
+          </button>
+        </p>
+      </footer>
     </div>
   );
 }

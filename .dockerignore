@@ -1,0 +1,12 @@
+node_modules
+dist
+var
+.env
+.env.*
+.git
+docs
+research
+assets
+src/**/*.js
+shared/**/*.js
+*.log

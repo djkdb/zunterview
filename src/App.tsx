@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useMemo, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, MotionConfig, motion } from "framer-motion";
 import { DebugPanel } from "./components/DebugPanel";
 import { useInterview } from "./hooks/useInterview";
@@ -8,7 +8,10 @@ import { LandingPage } from "./pages/LandingPage";
 import { SetupPage } from "./pages/SetupPage";
 import { CompaniesPage } from "./pages/CompaniesPage";
 import { CompanyPage } from "./pages/CompanyPage";
+import { LegalPage, type LegalDoc } from "./pages/LegalPage";
+import { AdminPage } from "./pages/AdminPage";
 import type { InterviewSummary } from "./types/interview";
+import { track } from "./services/events";
 import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview } from "./utils/storage";
 
 const loadResultPage = () => import("./pages/ResultPage").then((m) => ({ default: m.ResultPage }));
@@ -16,13 +19,24 @@ const ResultPage = lazy(loadResultPage);
 
 const DEBUG = new URLSearchParams(window.location.search).get("debug") === "true";
 
-type Screen = "landing" | "history" | "companies" | "company" | "setup" | "interview" | "result";
-type IdleView = "landing" | "history" | "companies" | "company";
+type Screen = "landing" | "history" | "companies" | "company" | "legal" | "admin" | "setup" | "interview" | "result";
+type IdleView = "landing" | "history" | "companies" | "company" | "legal" | "admin";
+
+/** /terms, /privacy and /admin open those pages directly (links from outside, search results). */
+function initialView(): { view: IdleView; legal: LegalDoc } {
+  const path = window.location.pathname.replace(/\/+$/, "");
+  if (path === "/terms" || path === "/privacy") return { view: "legal", legal: path === "/terms" ? "terms" : "privacy" };
+  if (path === "/admin") return { view: "admin", legal: "privacy" };
+  return { view: "landing", legal: "privacy" };
+}
 
 export default function App() {
   const ctl = useInterview();
   const { state, status, actions } = ctl;
-  const [idleView, setIdleView] = useState<IdleView>("landing");
+  const [start] = useState(initialView);
+  const [idleView, setIdleView] = useState<IdleView>(start.view);
+  const [legalDoc, setLegalDoc] = useState<LegalDoc>(start.legal);
+  const legalDocRef = useRef(legalDoc);
   const [companyView, setCompanyView] = useState<string | null>(null);
   const [preset, setPreset] = useState<{ companyId: string; track?: string } | null>(null);
   const [fromHistory, setFromHistory] = useState(false);
@@ -59,8 +73,19 @@ export default function App() {
       setIdleView(v);
       actions.reset();
       window.scrollTo(0, 0);
+      // Keep the address bar meaningful for the pages people link to.
+      const path = v === "legal" ? `/${legalDocRef.current}` : v === "admin" ? "/admin" : "/";
+      if (window.location.pathname !== path) window.history.replaceState(null, "", path + window.location.search);
     },
     [actions],
+  );
+  const openLegal = useCallback(
+    (d: LegalDoc) => {
+      legalDocRef.current = d;
+      setLegalDoc(d);
+      goIdle("legal");
+    },
+    [goIdle],
   );
   const goHome = useCallback(() => goIdle("landing"), [goIdle]);
   const goHistory = useCallback(() => goIdle("history"), [goIdle]);
@@ -77,6 +102,7 @@ export default function App() {
       void loadResultPage(); // warm the results chunk (charts) while the interview runs
       setPreset(p);
       setFromHistory(false);
+      track("setup_started", { company: Boolean(p) });
       actions.openSetup();
       window.scrollTo(0, 0);
     },
@@ -96,6 +122,9 @@ export default function App() {
     clearAllLocalData();
     setHistoryVersion((v) => v + 1);
   }, []);
+
+  // One count per visit, not per return to the landing page.
+  useEffect(() => track("landing_viewed", { returning: loadHistory().length > 0 }), []);
 
   const modeLabel = status?.mode === "ai" ? "AI 면접관" : "MOCK 모드";
   const engineLabel = status?.mode === "ai" ? `Claude AI${status.model ? ` (${status.model})` : ""}` : "MOCK 면접관 (API 키 없음)";
@@ -121,8 +150,11 @@ export default function App() {
                   clearActiveInterview();
                   setActiveVersion((v) => v + 1);
                 }}
+                onLegal={openLegal}
               />
             )}
+            {screen === "legal" && <LegalPage doc={legalDoc} onHome={goHome} onSwitch={openLegal} />}
+            {screen === "admin" && <AdminPage onHome={goHome} />}
             {screen === "history" && <HistoryPage history={history} onOpen={openInterview} canOpen={canOpen} onStart={() => goSetup()} onHome={goHome} onClear={clearData} />}
             {screen === "companies" && <CompaniesPage onOpen={openCompany} onHome={goHome} onStart={() => goSetup()} />}
             {screen === "company" && companyView && (

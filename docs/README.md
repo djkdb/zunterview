@@ -9,3 +9,5 @@
 | [TROUBLESHOOTING.md](TROUBLESHOOTING.md) | 문제마다 증상, 원인, 디버깅, 해결 | 최종: 트러블슈팅 및 위기 극복 |
 | [RETROSPECTIVE.md](RETROSPECTIVE.md) | 회고 초안 | 최종: 회고 및 학습 시사점 |
 | [PRESENTATION.md](PRESENTATION.md) | 발표 양식과 심사 기준에 맞춘 개요 | 전체 |
+| [BUSINESS.md](BUSINESS.md) | 고객, 수익 모델 가설, 원가, 출시까지 남은 일 | 향후 계획 |
+| [DEPLOY.md](DEPLOY.md) | 배포, 출시 전 체크리스트, 운영 지표, 비용 보호 장치 | 향후 계획 |

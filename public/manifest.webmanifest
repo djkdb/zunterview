@@ -1,0 +1,11 @@
+{
+  "name": "INTERVIEW//AI 모의면접센터",
+  "short_name": "모의면접",
+  "description": "면접관 셋이 내 답을 듣고 다시 묻는 한국식 AI 모의면접",
+  "lang": "ko",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eef0f3",
+  "theme_color": "#0f1b2e",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

@@ -26,6 +26,7 @@ import { refersToDocuments, unaskable } from "../../shared/questionRules";
 import { hasDocuments } from "../../shared/documents";
 import { checkDocuments, type CheckTurn } from "../../shared/documentCheck";
 import { conductLine, conductReport } from "../utils/conduct";
+import { track } from "../services/events";
 import { allMainsAsked, canAskFollowUp, threadDepth } from "../utils/policy";
 import { answerScore, strongestAndWeakest } from "../utils/scoring";
 import { clearActiveInterview, saveActiveInterview, saveInterview, type ActiveInterview } from "../utils/storage";
@@ -56,6 +57,11 @@ async function originOf(text: string, config: InterviewConfig): Promise<Question
   });
   if (!match || match.basis === "일반면접") return undefined;
   return match.basis;
+}
+
+/** What an event may say about an interview: the setup, never what was answered. */
+function eventProps(c: InterviewConfig) {
+  return { archetype: roleContextFor(c).archetype, questions: c.questionLimit, difficulty: c.difficulty, documents: hasDocuments(c.documents), company: Boolean(c.companyId), language: c.language };
 }
 
 /** The interview's answered turns, grouped by main question, for the document check. */
@@ -187,7 +193,8 @@ export function useInterview() {
         return [value, provider.kind];
       } catch (err) {
         if (!(err instanceof AIRequestError)) throw err;
-        if (++aiFailsRef.current >= 3) switchToMock();
+        // Out of today's AI share: no point asking again this interview.
+        if (err.kind === "quota" || ++aiFailsRef.current >= 3) switchToMock();
         return [await call(mockRef.current), "mock"];
       }
     },
@@ -286,6 +293,12 @@ export function useInterview() {
       await minShow;
       if (runRef.current !== run) return;
       dispatch({ type: "REPORT", report, source, documentChecks });
+      track(terminated ? "interview_terminated" : endedEarly ? "interview_ended_early" : "interview_completed", {
+        ...eventProps(i.config),
+        mode: source,
+        answered: i.questions.filter((q) => q.answer).length,
+        score: Math.round((i.overallScore ?? 0) / 10) * 10,
+      });
       setStorageOk(saveInterview(stateRef.current.interview!));
     },
     [dispatch, say],
@@ -436,6 +449,7 @@ export function useInterview() {
         providers: [],
       };
       dispatch({ type: "START", interview });
+      track("interview_started", { ...eventProps(config), mode: providerRef.current.kind });
       // A job we don't list ("방송 기술감독"): let the AI infer a practice profile during the intro.
       const provider = providerRef.current;
       if (provider.inferRole && !config.roleId && roleContextFor(config).kind !== "role") {
@@ -542,6 +556,7 @@ export function useInterview() {
       const [feedback, source] = await withFallback(provider, (p) => p.analyzeAnswer(ctx, turn));
       const result: Reanswer = { questionId, answer: answer.trim(), score: answerScore(feedback), feedback, source, at: Date.now() };
       dispatch({ type: "REANSWERED", reanswer: result });
+      track("reanswer", { mode: source, gain: Math.round((result.score - (q.score ?? 0)) / 5) * 5 });
       setStorageOk(saveInterview(stateRef.current.interview!));
       return result;
     },

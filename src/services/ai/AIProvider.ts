@@ -27,7 +27,8 @@ export interface AIProvider {
   inferRole?(position: string, language: Language): Promise<CustomRole | null>;
 }
 
-export type AIErrorKind = "network" | "timeout" | "server" | "parse" | "unavailable" | "refusal" | "rate_limited" | "injected";
+/** "quota": the visitor's daily AI share or the service's daily budget is used up. */
+export type AIErrorKind = "network" | "timeout" | "server" | "parse" | "unavailable" | "refusal" | "rate_limited" | "quota" | "injected";
 
 export class AIRequestError extends Error {
   constructor(

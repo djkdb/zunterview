@@ -19,6 +19,7 @@ import type { ProviderStatus } from "../services/ai/providerFactory";
 import { isSpeechRecognitionSupported } from "../services/speech/speechRecognition";
 import { isNeuralTts, isVoiceOutputAvailable } from "../services/speech/tts";
 import type { InterviewConfig } from "../types/interview";
+import { PRIVACY_VERSION } from "./LegalPage";
 import { forgetDocuments, loadLastConfig, loadSavedDocuments, saveDocuments, saveLastConfig } from "../utils/storage";
 
 /** The taxonomy role for an exact title/alias ("프론트엔드 개발자", "전기직"), if there is one. */
@@ -33,6 +34,8 @@ function positionForTrack(category: CompanyCategory, track: string): string {
   if (track === "개발") return "개발자";
   return track;
 }
+
+const CONSENT_KEY = "interview-ai:consent";
 
 const DIFFICULTY_HINT: Record<InterviewConfig["difficulty"], string> = {
   easy: "분위기 적응용",
@@ -224,6 +227,15 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
   const roleOk = position.length > 0 && position.length <= LIMITS.position;
   const docsOk = !docMode || hasDocuments(docs);
   const ttsOk = isVoiceOutputAvailable();
+  // AI mode sends answers abroad for processing: ask once per policy version.
+  const needsConsent = status?.mode === "ai";
+  const [consented, setConsented] = useState(() => {
+    try {
+      return localStorage.getItem(CONSENT_KEY) === PRIVACY_VERSION;
+    } catch {
+      return false;
+    }
+  });
   const reachable = (i: number) => i === 0 || (i === 1 ? roleOk : roleOk && docsOk);
   const masked = (docs.resume.match(MASKS) ?? []).length + (docs.coverLetter.match(MASKS) ?? []).length;
 
@@ -259,7 +271,14 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
   const redact = () => setDocs((d) => ({ resume: redactPersonalInfo(d.resume), coverLetter: redactPersonalInfo(d.coverLetter) }));
 
   const start = () => {
-    if (!roleOk || !docsOk) return;
+    if (!roleOk || !docsOk || (needsConsent && !consented)) return;
+    if (needsConsent) {
+      try {
+        localStorage.setItem(CONSENT_KEY, PRIVACY_VERSION);
+      } catch {
+        /* asked again next time */
+      }
+    }
     const documents = docMode && hasDocuments(docs) ? { resume: redactPersonalInfo(docs.resume.trim()), coverLetter: redactPersonalInfo(docs.coverLetter.trim()) } : undefined;
     if (documents && remember) saveDocuments(documents);
     else forgetDocuments();
@@ -269,12 +288,12 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
   };
 
   const last = step === STEPS.length - 1;
-  const canNext = step === 0 ? roleOk : step === 1 ? docsOk : true;
+  const canNext = step === 0 ? roleOk : step === 1 ? docsOk : !needsConsent || consented;
   const next = () => {
     if (last) start();
     else if (canNext) setStep(step + 1);
   };
-  const blocker = step === 0 && !roleOk ? "직무를 먼저 선택해 주세요" : step === 1 && !docsOk ? "자기소개서나 이력서 중 하나 이상 붙여넣어 주세요" : "";
+  const blocker = step === 0 && !roleOk ? "직무를 먼저 선택해 주세요" : step === 1 && !docsOk ? "자기소개서나 이력서 중 하나 이상 붙여넣어 주세요" : step === 2 && needsConsent && !consented ? "AI 면접관 이용 동의에 체크해 주세요" : "";
   const nextLabel = last ? "접수하고 대기실로 이동" : `다음: ${STEPS[step + 1].title}`;
 
   return (
@@ -455,6 +474,17 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                     <p className="text-[12px] leading-relaxed text-faint">
                       {isSpeechRecognitionSupported() ? "마이크는 [음성 답변] 버튼을 누를 때만 켜집니다." : "이 브라우저는 음성 답변을 지원하지 않아 텍스트로 답변합니다."} 카메라는 사용하지 않습니다.
                     </p>
+                    {needsConsent && (
+                      <label className="flex items-start gap-2.5 rounded-lg border border-line bg-surface px-4 py-3 text-[13px] leading-relaxed text-ink">
+                        <input type="checkbox" checked={consented} onChange={(e) => setConsented(e.target.checked)} className="mt-1 h-4 w-4 shrink-0 accent-[var(--color-accent)]" />
+                        <span>
+                          (필수) AI 면접관이 질문하고 채점할 수 있도록 면접 답변{docMode ? "과 서류가" : "이"} Anthropic(미국)으로 전송되는 데 동의합니다. 서버에는 저장하지 않습니다.{" "}
+                          <a href="/privacy" target="_blank" rel="noopener" className="font-semibold text-accent underline underline-offset-2">
+                            개인정보처리방침
+                          </a>
+                        </span>
+                      </label>
+                    )}
                   </>
                 )}
               </motion.div>
@@ -492,7 +522,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                 ))}
               </ul>
               <div className="border-t border-line p-4">
-                <Button variant="primary" size="lg" disabled={!roleOk || !docsOk} onClick={start} className="w-full">
+                <Button variant="primary" size="lg" disabled={!roleOk || !docsOk || (needsConsent && !consented)} onClick={start} className="w-full">
                   {last ? "접수하고 대기실로 이동" : "이대로 바로 시작"}
                 </Button>
                 <p className="mt-2.5 text-center text-[11px] leading-relaxed text-faint">면접관 3인이 번갈아 질문하고, 답변에 따라 꼬리질문이 이어집니다.</p>

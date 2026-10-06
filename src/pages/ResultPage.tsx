@@ -23,6 +23,8 @@ import { conductLabel } from "../utils/conduct";
 import { documentsLabel } from "../utils/documents";
 import { DocumentChecks } from "../components/DocumentChecks";
 import { ReanswerPractice } from "../components/ReanswerPractice";
+import { SheetFeedback } from "../components/SheetFeedback";
+import { track } from "../services/events";
 import { josa } from "../../shared/korean";
 
 interface Props {
@@ -88,6 +90,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
   };
   const share = async () => {
     const res = await shareResult(i);
+    if (res !== "failed") track("result_shared", { how: res });
     flash(res === "shared" ? "공유했습니다." : res === "downloaded" ? "결과 카드 이미지를 저장했습니다." : res === "copied" ? "결과 요약을 복사했습니다." : "이 환경에서는 공유할 수 없습니다.");
   };
 
@@ -285,9 +288,13 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
         </motion.article>
 
         {onReanswer && <ReanswerPractice interview={i} onReanswer={onReanswer} />}
+        {!fromHistory && <SheetFeedback score={i.overallScore} mode={i.providers.includes("ai") ? "ai" : "mock"} />}
 
         <section className="no-print mt-8 flex flex-wrap items-center justify-center gap-2.5">
-          <Button variant="secondary" onClick={() => downloadReport(i)} icon={<DownloadIcon width={16} height={16} />}>
+          <Button variant="secondary" onClick={() => {
+              downloadReport(i);
+              track("report_downloaded");
+            }} icon={<DownloadIcon width={16} height={16} />}>
             평가표 다운로드
           </Button>
           <Button variant="secondary" onClick={share} icon={<ShareIcon width={16} height={16} />}>

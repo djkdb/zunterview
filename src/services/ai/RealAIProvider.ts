@@ -63,6 +63,8 @@ export class RealAIProvider implements AIProvider {
       const kind: AIErrorKind =
         code === "parse" || code === "truncated"
           ? "parse"
+          : code === "quota" || code === "budget"
+            ? "quota"
           : res.status === 503
             ? "unavailable"
             : res.status === 429

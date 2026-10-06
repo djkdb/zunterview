@@ -238,6 +238,10 @@ ERROR 는 INTRO/ANALYZING 을 중단시키고, RETRY 시 중단된 단계로 복
 - 서버는 답변 내용을 로그/저장하지 않음 (경로·상태·토큰 수만 로그)
 - 마이크는 **Record 버튼을 눌렀을 때만** 활성화. 카메라는 사용하지 않음 (`Permissions-Policy: camera=()`)
 - 면접 기록은 이 브라우저의 localStorage에만 저장. 공유 카드는 직무·점수·강점만 포함 (답변 미포함)
+- 공개 서비스용 비용 보호: 서비스 전체 하루 AI 예산, 방문자별 하루 AI 호출·음성 글자 한도(넘으면 MOCK 면접관과 브라우저 음성으로 이어짐). 방문자 IP는 날마다 바뀌는 값으로 해시해 당일에만 씀 (`server/usage.ts`, [docs/DEPLOY.md](docs/DEPLOY.md))
+- 익명 이용 통계(면접 시작·완료, 직무 유형, 점수 구간, 평가표 만족도)만 수집하고 답변·서류·이름은 보내지 않음. 브라우저의 Do Not Track을 존중. 운영자는 `/admin`에서 확인
+- AI 모드는 시작 전에 국외 이전(Anthropic, 미국) 동의를 받음. 이용약관과 개인정보처리방침은 `/terms`, `/privacy` (출시 전 초안)
+- 운영 HTML 응답에 Content-Security-Policy, `X-Frame-Options: DENY`
 
 ---
 

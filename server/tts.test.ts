@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { ttsProviders, voiceId } from "./tts";
+import { synthesize, ttsProviders, voiceId } from "./tts";
 
 afterEach(() => vi.unstubAllEnvs());
 
@@ -36,5 +36,30 @@ describe("providers", () => {
     vi.stubEnv("ELEVEN_VOICE_CENTER", "chair-voice");
     expect(voiceId("center", "elevenlabs")).toBe("chair-voice");
     expect(voiceId("center", "fish")).not.toBe("chair-voice");
+  });
+});
+
+describe("ElevenLabs library voices on a free plan", () => {
+  afterEach(() => vi.unstubAllGlobals());
+
+  it("falls back to the seat's default voice once, then skips the library voice", async () => {
+    vi.stubEnv("ELEVEN_API_KEY", "x");
+    vi.stubEnv("FISH_AUDIO_API_KEY", "");
+    vi.stubEnv("ELEVEN_VOICE_CENTER", "");
+    vi.stubEnv("ELEVEN_VOICE_DEFAULT", "");
+    const library = voiceId("center", "elevenlabs");
+    const calls: string[] = [];
+    vi.stubGlobal("fetch", async (url: string) => {
+      calls.push(url);
+      return url.includes(library)
+        ? new Response(JSON.stringify({ detail: { code: "paid_plan_required" } }), { status: 402 })
+        : new Response(new Uint8Array([1, 2, 3]), { status: 200 });
+    });
+    const first = await synthesize("첫 질문입니다.", "center");
+    expect(first.provider).toBe("elevenlabs");
+    expect(first.audio.length).toBe(3);
+    await synthesize("두 번째 질문입니다.", "center");
+    expect(calls.filter((u) => u.includes(library))).toHaveLength(1);
+    expect(calls).toHaveLength(3);
   });
 });

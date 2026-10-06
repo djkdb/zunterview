@@ -73,7 +73,8 @@ ELEVEN_API_KEY=...            # ElevenLabs. 이것만 있어도 됩니다
 FISH_AUDIO_API_KEY=...        # Fish Audio. 둘 다 있으면 ElevenLabs가 먼저, 실패하면 Fish Audio
 ```
 
-- 목소리는 코드에 기본 지정돼 있어(`server/tts.ts`의 `BUILT_IN`), 배포 환경에는 API 키만 넣으면 됩니다. ElevenLabs는 모든 계정에 있는 기본 목소리(Sarah, George, Chris, Jessica)를 `eleven_multilingual_v2` 모델로 한국어로 읽게 합니다. 목소리 ID는 비밀이 아닙니다.
+- 목소리는 코드에 기본 지정돼 있어(`server/tts.ts`의 `BUILT_IN`), 배포 환경에는 API 키만 넣으면 됩니다. ElevenLabs는 계정에 추가해 둔 한국어 Voice Library 목소리를 씁니다: 면접위원장 Hyunbin, 인사팀 Juha, 실무 MJ, 호명 직원 Sola. 목소리 ID는 비밀이 아닙니다.
+- Voice Library 목소리를 API로 쓰려면 ElevenLabs 유료 플랜(Starter 이상)이 필요합니다. 무료 플랜이면 서버 로그에 `can't be used with this plan` 한 줄을 남기고, 자리마다 모든 계정에 있는 기본 목소리(Sarah, George, Chris, Jessica)로 자동으로 바꿔 읽습니다. 플랜을 올리면 코드 수정 없이 서버 재시작만으로 한국어 목소리가 나옵니다.
 - 다른 목소리를 쓰려면 자리별로 `ELEVEN_VOICE_LEFT`, `ELEVEN_VOICE_CENTER`, `ELEVEN_VOICE_RIGHT`, `ELEVEN_VOICE_STAFF`(또는 전체 `ELEVEN_VOICE_DEFAULT`)를 넣습니다. ElevenLabs Voice Library에서 한국어 목소리를 내 목소리에 추가한 뒤 그 voice ID를 쓰면 억양이 더 자연스럽습니다. Fish Audio는 `FISH_VOICE_*`에 fish.audio 목소리 URL의 `modelId`를 넣습니다.
 - `ELEVEN_MODEL=eleven_flash_v2_5`로 바꾸면 응답이 빨라지고 크레딧이 절반 듭니다(음질은 조금 낮음). 기본 모델은 글자당 1크레딧이라, 5문항 면접 한 번에 대략 1,000자 안팎이 듭니다.
 - 브라우저, `/api/tts`, TTS 서비스 순서로 호출하고 최근 음성은 서버에 캐시되어 "질문 다시 듣기"는 추가 비용이 없습니다. 서버 로그에는 `[tts] elevenlabs center 65663B 1296ms`처럼 어느 서비스가 읽었는지 남습니다.

@@ -6,6 +6,7 @@
  * ElevenLabs (https://elevenlabs.io/docs/api-reference/text-to-speech/convert)
  *   ELEVEN_API_KEY=...                 enables it (ELEVENLABS_API_KEY also works; secret, server env only)
  *   ELEVEN_VOICE_CENTER / _LEFT / _RIGHT / _STAFF / _DEFAULT = <voice id>   optional seat overrides
+ *   (Voice Library voices need a paid ElevenLabs plan for API use; see ELEVEN_PREMADE below)
  *   ELEVEN_MODEL=eleven_multilingual_v2   optional (eleven_flash_v2_5 is faster and half the credits)
  *   ELEVEN_API_URL=...                 optional endpoint override (proxy / testing)
  *
@@ -31,15 +32,17 @@ export const isTtsConfigured = (): boolean => ttsProviders().length > 0;
 
 /**
  * Built-in voices (public ids, not secrets), so a deployment only needs an API key.
- * ElevenLabs: default voices every account has, read in Korean by the multilingual model.
+ * ElevenLabs: Korean voices from the Voice Library, added to the project's ElevenLabs account.
+ * Library voices need a paid plan through the API; on a free plan (or another account that hasn't
+ * added them) each seat falls back to a default voice every account has (ELEVEN_PREMADE).
  * Fish Audio: fish.audio/app/text-to-speech/?modelId=<id> plays each one.
  */
 const BUILT_IN: Record<TtsProvider, Record<Voice, string>> = {
   elevenlabs: {
-    left: "EXAVITQu4vr4xnSDxMaL", // 이서연 책임 (인사팀): Sarah, calm female
-    center: "JBFqnCBsd6RMkjVDRZzb", // 김도윤 팀장 (면접위원장): George, low mature male
-    right: "iP95p4xoKVk53GoZ742B", // 박준호 선임 (실무): Chris, younger male
-    staff: "cgSgspJ2msm6clMCkdW9", // 안내 직원 (호명): Jessica
+    left: "hmewQCBsQh48wGHkpNwo", // 이서연 책임 (인사팀): Juha, calm and trustworthy female
+    center: "s07IwTCOrCDCaETjUVjx", // 김도윤 팀장 (면접위원장): Hyunbin, measured middle-aged male
+    right: "l6fNdLYgoqjfTIPUeFc9", // 박준호 선임 (실무): MJ, clear conversational male
+    staff: "KlstlYt9VVf3zgie2Oht", // 안내 직원 (호명): Sola, announcement voice
   },
   fish: {
     left: "3d31499f0e13438bbce8dcce7b7c4298",
@@ -47,6 +50,14 @@ const BUILT_IN: Record<TtsProvider, Record<Voice, string>> = {
     right: "d7ec83d63be940f19abd933eb7b28816",
     staff: "7bae2c48d30048c3a27b946279ac05ef",
   },
+};
+
+/** ElevenLabs default voices: usable on every plan, read in Korean by the multilingual model. */
+const ELEVEN_PREMADE: Record<Voice, string> = {
+  left: "EXAVITQu4vr4xnSDxMaL", // Sarah
+  center: "JBFqnCBsd6RMkjVDRZzb", // George
+  right: "iP95p4xoKVk53GoZ742B", // Chris
+  staff: "cgSgspJ2msm6clMCkdW9", // Jessica
 };
 
 export function voiceId(voice: Voice, provider: TtsProvider = "fish"): string {
@@ -113,15 +124,31 @@ async function post(name: string, url: string, headers: Record<string, string>, 
   return audio;
 }
 
-function eleven(text: string, voice: Voice, speed?: number): Promise<Buffer> {
+/** Voice ids this account can't use through the API (free plan, not in its library); skipped until restart. */
+const unusableVoices = new Set<string>();
+
+async function eleven(text: string, voice: Voice, speed?: number): Promise<Buffer> {
   const base = env("ELEVEN_API_URL") || "https://api.elevenlabs.io/v1/text-to-speech";
-  return post("ElevenLabs", `${base}/${encodeURIComponent(voiceId(voice, "elevenlabs"))}?output_format=mp3_44100_128`, { "xi-api-key": elevenKey(), Accept: "audio/mpeg" }, {
+  const body = {
     text,
     model_id: env("ELEVEN_MODEL") || "eleven_multilingual_v2",
     language_code: /[가-힣]/.test(text) ? "ko" : undefined,
     // Steady, unhurried interviewer delivery. ElevenLabs accepts speed 0.7–1.2.
     voice_settings: { stability: 0.6, similarity_boost: 0.75, style: 0, use_speaker_boost: true, ...(speed && speed !== 1 ? { speed: Math.min(1.2, Math.max(0.7, speed)) } : {}) },
-  });
+  };
+  const call = (id: string) => post("ElevenLabs", `${base}/${encodeURIComponent(id)}?output_format=mp3_44100_128`, { "xi-api-key": elevenKey(), Accept: "audio/mpeg" }, body);
+  const chosen = voiceId(voice, "elevenlabs");
+  const premade = ELEVEN_PREMADE[voice];
+  if (chosen === premade || unusableVoices.has(chosen)) return call(premade);
+  try {
+    return await call(chosen);
+  } catch (err) {
+    // A library voice on a free plan (402 paid_plan_required) or a voice this account doesn't have.
+    if (!(err instanceof TtsError) || !/paid_plan_required|voice_not_found|ElevenLabs 40[24]/.test(err.message)) throw err;
+    unusableVoices.add(chosen);
+    console.warn(`[tts] ElevenLabs voice ${chosen} (${voice}) can't be used with this plan or account; using a default voice instead`);
+    return call(premade);
+  }
 }
 
 function fish(text: string, voice: Voice, speed?: number): Promise<Buffer> {

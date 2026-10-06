@@ -315,7 +315,7 @@ export const HealthSchema = z.object({
   ai: z.boolean(),
   model: z.string().nullable(),
   /** Server-side neural TTS provider, when configured. */
-  tts: z.enum(["elevenlabs", "fish"]).nullable().optional(),
+  tts: z.enum(["typecast", "elevenlabs", "fish"]).nullable().optional(),
 });
 
 /** Who is speaking: the three interviewers, or the staff member calling the candidate in. */

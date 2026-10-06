@@ -1,7 +1,13 @@
 /**
  * Interviewer text-to-speech. API keys stay on the server; each interviewer seat has its own voice.
- * Two providers; ElevenLabs is used first when both are configured, and the other one takes over
- * if a call fails (no credit, outage), so the panel keeps its neural voices.
+ * Configured providers are tried in order (Typecast, ElevenLabs, Fish Audio); when one fails
+ * (no credit, outage) the next one reads the line, so the panel keeps its neural voices.
+ *
+ * Typecast (https://typecast.ai/docs): Korean voices
+ *   TYPECAST_API_KEY=...               enables it (secret, server env only)
+ *   TYPECAST_VOICE_CENTER / _LEFT / _RIGHT / _STAFF / _DEFAULT = <tc_ voice id>   optional seat overrides
+ *   TYPECAST_MODEL=ssfm-v30            optional
+ *   TYPECAST_API_URL=...               optional endpoint override (proxy / testing)
  *
  * ElevenLabs (https://elevenlabs.io/docs/api-reference/text-to-speech/convert)
  *   ELEVEN_API_KEY=...                 enables it (ELEVENLABS_API_KEY also works; secret, server env only)
@@ -18,26 +24,33 @@
  */
 import type { Voice } from "../shared/schemas";
 
-export type TtsProvider = "elevenlabs" | "fish";
+export type TtsProvider = "typecast" | "elevenlabs" | "fish";
 
 const env = (k: string) => process.env[k]?.trim() || "";
 const elevenKey = () => env("ELEVEN_API_KEY") || env("ELEVENLABS_API_KEY");
 
 /** Configured providers, in the order they are tried. */
 export function ttsProviders(): TtsProvider[] {
-  return [elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
+  return [env("TYPECAST_API_KEY") ? "typecast" : null, elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
 }
 
 export const isTtsConfigured = (): boolean => ttsProviders().length > 0;
 
 /**
  * Built-in voices (public ids, not secrets), so a deployment only needs an API key.
+ * Typecast: Korean voices from its catalog (GET /v2/voices).
  * ElevenLabs: Korean voices from the Voice Library, added to the project's ElevenLabs account.
  * Library voices need a paid plan through the API; on a free plan (or another account that hasn't
  * added them) each seat falls back to a default voice every account has (ELEVEN_PREMADE).
  * Fish Audio: fish.audio/app/text-to-speech/?modelId=<id> plays each one.
  */
 const BUILT_IN: Record<TtsProvider, Record<Voice, string>> = {
+  typecast: {
+    left: "tc_69f2e455ea79fd197aa0476f", // 이서연 책임 (인사팀): Seohyeon, announcer-like young female
+    center: "tc_685cdfad4027aeec7d097a28", // 김도윤 팀장 (면접위원장): Cheolhoon, middle-aged male
+    right: "tc_686dc43ebd6351e06ee64d74", // 박준호 선임 (실무): Wonwoo, conversational young male
+    staff: "tc_68785db8ba9cd7503f27d921", // 안내 직원 (호명): Gowoon
+  },
   elevenlabs: {
     left: "hmewQCBsQh48wGHkpNwo", // 이서연 책임 (인사팀): Juha, calm and trustworthy female
     center: "s07IwTCOrCDCaETjUVjx", // 김도윤 팀장 (면접위원장): Hyunbin, measured middle-aged male
@@ -61,7 +74,7 @@ const ELEVEN_PREMADE: Record<Voice, string> = {
 };
 
 export function voiceId(voice: Voice, provider: TtsProvider = "fish"): string {
-  const prefix = provider === "elevenlabs" ? "ELEVEN_VOICE_" : "FISH_VOICE_";
+  const prefix = { typecast: "TYPECAST_VOICE_", elevenlabs: "ELEVEN_VOICE_", fish: "FISH_VOICE_" }[provider];
   return env(prefix + voice.toUpperCase()) || env(`${prefix}DEFAULT`) || BUILT_IN[provider][voice];
 }
 
@@ -90,18 +103,34 @@ export async function synthesize(text: string, voice: Voice, speed?: number): Pr
     if (hit) return { audio: hit, cached: true, provider };
   }
   let last: TtsError | null = null;
-  for (const provider of providers) {
+  const now = Date.now();
+  // A provider that refused the account (bad key, no credit, blocked) sits out for a while instead of
+  // being asked, and refusing, before every line; the last one is still tried so a line is never lost.
+  const ready = providers.filter((p) => (resting.get(p) ?? 0) <= now);
+  for (const provider of ready.length ? ready : providers.slice(-1)) {
     try {
-      const audio = await (provider === "elevenlabs" ? eleven : fish)(text, voice, speed);
+      const audio = await { typecast, elevenlabs: eleven, fish }[provider](text, voice, speed);
+      resting.delete(provider);
       remember(`${provider}|${voice}|${speed ?? 1}|${text}`, audio);
       return { audio, cached: false, provider };
     } catch (err) {
       last = err instanceof TtsError ? err : new TtsError(502, String(err));
-      if (providers.length > 1) console.warn(`[tts] ${provider} failed, trying the next provider — ${last.message}`);
+      const refused = / 40[1-3]\b/.test(last.message);
+      if (refused) resting.set(provider, now + REST_MS);
+      if (providers.length > 1) console.warn(`[tts] ${provider} failed${refused ? ` (skipped for ${REST_MS / 60_000} min)` : ""}, trying the next provider — ${last.message}`);
     }
   }
   throw last ?? new TtsError(503, "no TTS provider configured");
 }
+
+/** Providers that refused the account recently, until when (ms). */
+const resting = new Map<TtsProvider, number>();
+const REST_MS = 10 * 60_000;
+export const resetTtsState = () => {
+  resting.clear();
+  cache.clear();
+  unusableVoices.clear();
+};
 
 /** POST with a timeout; turns a failed response into a TtsError whose message says why (logged server-side only). */
 async function post(name: string, url: string, headers: Record<string, string>, body: unknown): Promise<Buffer> {
@@ -122,6 +151,17 @@ async function post(name: string, url: string, headers: Record<string, string>, 
   const audio = Buffer.from(await res.arrayBuffer());
   if (!audio.length) throw new TtsError(502, `${name} returned no audio`);
   return audio;
+}
+
+function typecast(text: string, voice: Voice, speed?: number): Promise<Buffer> {
+  return post("Typecast", env("TYPECAST_API_URL") || "https://api.typecast.ai/v1/text-to-speech", { "X-API-KEY": env("TYPECAST_API_KEY") }, {
+    voice_id: voiceId(voice, "typecast"),
+    text,
+    model: env("TYPECAST_MODEL") || "ssfm-v30",
+    language: /[가-힣]/.test(text) ? "kor" : "eng",
+    prompt: { emotion_preset: "normal", emotion_intensity: 1 },
+    output: { audio_format: "mp3", ...(speed && speed !== 1 ? { audio_tempo: Math.min(2, Math.max(0.5, speed)) } : {}) },
+  });
 }
 
 /** Voice ids this account can't use through the API (free plan, not in its library); skipped until restart. */

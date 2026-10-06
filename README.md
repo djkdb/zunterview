@@ -63,21 +63,23 @@ npm run dev
 
 URL로 강제 목업: `/?mode=mock`
 
-### 면접관 목소리 (ElevenLabs / Fish Audio, 선택)
+### 면접관 목소리 (Typecast / ElevenLabs / Fish Audio, 선택)
 
 기본은 브라우저 내장 음성(Web Speech)이라 면접관 3명의 목소리가 높낮이와 속도만 다릅니다. 서버에 TTS 키를 넣으면 면접관마다 다른 실제 음성으로 말합니다.
 
 ```bash
 # 서버 환경변수 (배포 서비스의 Environment Variables 또는 로컬 .env, 브라우저로 전달되지 않음)
-ELEVEN_API_KEY=...            # ElevenLabs. 이것만 있어도 됩니다
-FISH_AUDIO_API_KEY=...        # Fish Audio. 둘 다 있으면 ElevenLabs가 먼저, 실패하면 Fish Audio
+TYPECAST_API_KEY=...          # Typecast. 한국어 목소리, 있으면 가장 먼저 씁니다
+ELEVEN_API_KEY=...            # ElevenLabs
+FISH_AUDIO_API_KEY=...        # Fish Audio. 하나만 있어도 되고, 여러 개면 위 순서대로 쓰다가 실패하면 다음으로 넘어갑니다
 ```
 
-- 목소리는 코드에 기본 지정돼 있어(`server/tts.ts`의 `BUILT_IN`), 배포 환경에는 API 키만 넣으면 됩니다. ElevenLabs는 계정에 추가해 둔 한국어 Voice Library 목소리를 씁니다: 면접위원장 Hyunbin, 인사팀 Juha, 실무 MJ, 호명 직원 Sola. 목소리 ID는 비밀이 아닙니다.
+- 목소리는 코드에 기본 지정돼 있어(`server/tts.ts`의 `BUILT_IN`), 배포 환경에는 API 키만 넣으면 됩니다. Typecast는 면접위원장 Cheolhoon, 인사팀 Seohyeon, 실무 Wonwoo, 호명 직원 Gowoon을 씁니다(`TYPECAST_VOICE_*`로 변경). ElevenLabs는 계정에 추가해 둔 한국어 Voice Library 목소리를 씁니다: 면접위원장 Hyunbin, 인사팀 Juha, 실무 MJ, 호명 직원 Sola. 목소리 ID는 비밀이 아닙니다.
 - Voice Library 목소리를 API로 쓰려면 ElevenLabs 유료 플랜(Starter 이상)이 필요합니다. 무료 플랜이면 서버 로그에 `can't be used with this plan` 한 줄을 남기고, 자리마다 모든 계정에 있는 기본 목소리(Sarah, George, Chris, Jessica)로 자동으로 바꿔 읽습니다. 플랜을 올리면 코드 수정 없이 서버 재시작만으로 한국어 목소리가 나옵니다.
 - 다른 목소리를 쓰려면 자리별로 `ELEVEN_VOICE_LEFT`, `ELEVEN_VOICE_CENTER`, `ELEVEN_VOICE_RIGHT`, `ELEVEN_VOICE_STAFF`(또는 전체 `ELEVEN_VOICE_DEFAULT`)를 넣습니다. ElevenLabs Voice Library에서 한국어 목소리를 내 목소리에 추가한 뒤 그 voice ID를 쓰면 억양이 더 자연스럽습니다. Fish Audio는 `FISH_VOICE_*`에 fish.audio 목소리 URL의 `modelId`를 넣습니다.
 - `ELEVEN_MODEL=eleven_flash_v2_5`로 바꾸면 응답이 빨라지고 크레딧이 절반 듭니다(음질은 조금 낮음). 기본 모델은 글자당 1크레딧이라, 5문항 면접 한 번에 대략 1,000자 안팎이 듭니다.
 - 브라우저, `/api/tts`, TTS 서비스 순서로 호출하고 최근 음성은 서버에 캐시되어 "질문 다시 듣기"는 추가 비용이 없습니다. 서버 로그에는 `[tts] elevenlabs center 65663B 1296ms`처럼 어느 서비스가 읽었는지 남습니다.
+- 키가 틀렸거나 크레딧이 없거나 계정이 막혀 401·402·403으로 거절한 서비스는 10분 동안 건너뛰고 다음 서비스로 읽습니다. Typecast 무료 계정은 짧은 시간에 요청이 몰리면 `UNUSUAL_ACTIVITY_DETECTED`(403)로 막을 수 있습니다.
 - Fish Audio는 웹 앱 크레딧과 별도인 API 크레딧을 씁니다([Developers](https://fish.audio/app/developers)에서 충전). 키가 틀리거나 크레딧이 없으면 서버 로그에 이유가 남고, 다른 TTS가 있으면 그쪽으로, 없으면 브라우저 음성으로 이어서 말합니다.
 
 ### 프로덕션

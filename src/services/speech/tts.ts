@@ -1,5 +1,5 @@
 /**
- * Interviewer voice output. Uses Fish Audio (through our /api/tts, so the key
+ * Interviewer voice output. Uses the server's neural TTS (ElevenLabs or Fish Audio, through our /api/tts, so the key
  * stays on the server) when the server has it configured — each interviewer
  * gets a distinct neural voice — and falls back to the browser's speech engine.
  */
@@ -94,7 +94,7 @@ export async function speakLine(text: string, opts: LineOptions): Promise<void> 
       return;
     } catch {
       if (gen !== generation) return;
-      // Fish Audio unavailable (network, quota…) — use the browser voice instead.
+      // Neural TTS unavailable (network, quota…): use the browser voice instead.
     }
   }
   if (isSpeechSynthesisSupported()) await speak(text, opts.lang, opts);

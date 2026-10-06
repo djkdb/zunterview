@@ -44,7 +44,7 @@ const { rolePrompt } = await import("./prompts/rolePrompt");
 const { getDomain, guessDomain } = await import("../shared/roles");
 const { setDataLoader } = await import("../shared/dataLoader");
 const { TtsRequestSchema } = await import("../shared/schemas");
-const { TtsError, isFishConfigured, synthesize } = await import("./tts");
+const { TtsError, isTtsConfigured, synthesize, ttsProviders } = await import("./tts");
 type PromptParts = import("./claude").PromptParts;
 
 const PORT = Number(process.env.PORT ?? 8787);
@@ -181,12 +181,12 @@ const server = createServer(async (req, res) => {
   res.setHeader("Permissions-Policy", "microphone=(self), camera=()");
 
   if (url.pathname === "/api/health") {
-    return send(res, 200, { ok: true, ai: isAIConfigured(), model: isAIConfigured() ? MODEL : null, tts: isFishConfigured() ? "fish" : null });
+    return send(res, 200, { ok: true, ai: isAIConfigured(), model: isAIConfigured() ? MODEL : null, tts: ttsProviders()[0] ?? null });
   }
 
   if (url.pathname === "/api/tts") {
     if (req.method !== "POST") return send(res, 405, { error: "method_not_allowed" });
-    if (!isFishConfigured()) return send(res, 503, { error: "tts_not_configured" });
+    if (!isTtsConfigured()) return send(res, 503, { error: "tts_not_configured" });
     const ip = req.socket.remoteAddress ?? "unknown";
     if (rateLimited(`tts:${ip}`)) return send(res, 429, { error: "rate_limited" });
     let body: unknown;
@@ -198,8 +198,8 @@ const server = createServer(async (req, res) => {
     const parsed = TtsRequestSchema.safeParse(body);
     if (!parsed.success) return send(res, 400, { error: "invalid_request" });
     try {
-      const { audio, cached } = await synthesize(parsed.data.text, parsed.data.voice, parsed.data.speed);
-      console.log(`[tts] ${parsed.data.voice} ${audio.length}B ${cached ? "cache" : `${Date.now() - started}ms`}`);
+      const { audio, cached, provider } = await synthesize(parsed.data.text, parsed.data.voice, parsed.data.speed);
+      console.log(`[tts] ${provider} ${parsed.data.voice} ${audio.length}B ${cached ? "cache" : `${Date.now() - started}ms`}`);
       res.writeHead(200, { "Content-Type": "audio/mpeg", "Content-Length": audio.length, "Cache-Control": "no-store" });
       return res.end(audio);
     } catch (err) {
@@ -253,6 +253,6 @@ const server = createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(
-    `INTERVIEW//AI api → http://localhost:${PORT}  (${isAIConfigured() ? `AI MODE · ${MODEL}` : "no ANTHROPIC_API_KEY → clients run in MOCK MODE"}; TTS: ${isFishConfigured() ? "Fish Audio" : "browser speech"})`,
+    `INTERVIEW//AI api → http://localhost:${PORT}  (${isAIConfigured() ? `AI MODE · ${MODEL}` : "no ANTHROPIC_API_KEY → clients run in MOCK MODE"}; TTS: ${ttsProviders().join(" → ") || "browser speech"})`,
   );
 });

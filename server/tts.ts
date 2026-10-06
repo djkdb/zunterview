@@ -1,39 +1,57 @@
 /**
- * Fish Audio text-to-speech (https://docs.fish.audio). The API key stays on the
- * server; each interviewer seat maps to its own Fish Audio voice model.
+ * Interviewer text-to-speech. API keys stay on the server; each interviewer seat has its own voice.
+ * Two providers; ElevenLabs is used first when both are configured, and the other one takes over
+ * if a call fails (no credit, outage), so the panel keeps its neural voices.
  *
- *   FISH_AUDIO_API_KEY=...            required to enable (secret — server env only)
- *   FISH_VOICE_CENTER=<model id>      면접위원장        ┐ optional: override the
- *   FISH_VOICE_LEFT=<model id>        인사팀 면접관     │ built-in voices below
- *   FISH_VOICE_RIGHT=<model id>       실무 면접관       │
- *   FISH_VOICE_STAFF=<model id>       호명하는 안내 직원 │
- *   FISH_VOICE_DEFAULT=<model id>     any seat without its own voice ┘
- *   FISH_AUDIO_MODEL=s2.1-pro         optional TTS model header
- *   FISH_AUDIO_API_URL=...            optional endpoint override (proxy / testing)
+ * ElevenLabs (https://elevenlabs.io/docs/api-reference/text-to-speech/convert)
+ *   ELEVEN_API_KEY=...                 enables it (ELEVENLABS_API_KEY also works; secret, server env only)
+ *   ELEVEN_VOICE_CENTER / _LEFT / _RIGHT / _STAFF / _DEFAULT = <voice id>   optional seat overrides
+ *   ELEVEN_MODEL=eleven_multilingual_v2   optional (eleven_flash_v2_5 is faster and half the credits)
+ *   ELEVEN_API_URL=...                 optional endpoint override (proxy / testing)
+ *
+ * Fish Audio (https://docs.fish.audio)
+ *   FISH_AUDIO_API_KEY=...             enables it (secret, server env only)
+ *   FISH_VOICE_CENTER / _LEFT / _RIGHT / _STAFF / _DEFAULT = <model id>     optional seat overrides
+ *   FISH_AUDIO_MODEL=s2.1-pro          optional TTS model header
+ *   FISH_AUDIO_API_URL=...             optional endpoint override (proxy / testing)
  */
 import type { Voice } from "../shared/schemas";
 
-const API_URL = process.env.FISH_AUDIO_API_URL?.trim() || "https://api.fish.audio/v1/tts";
+export type TtsProvider = "elevenlabs" | "fish";
 
-export function isFishConfigured(): boolean {
-  return Boolean(process.env.FISH_AUDIO_API_KEY?.trim());
+const env = (k: string) => process.env[k]?.trim() || "";
+const elevenKey = () => env("ELEVEN_API_KEY") || env("ELEVENLABS_API_KEY");
+
+/** Configured providers, in the order they are tried. */
+export function ttsProviders(): TtsProvider[] {
+  return [elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
 }
 
+export const isTtsConfigured = (): boolean => ttsProviders().length > 0;
+
 /**
- * The panel's own voices (public Fish Audio model ids, not secrets), so a deployment only needs
- * the API key. fish.audio/app/text-to-speech/?modelId=<id> plays each one.
+ * Built-in voices (public ids, not secrets), so a deployment only needs an API key.
+ * ElevenLabs: default voices every account has, read in Korean by the multilingual model.
+ * Fish Audio: fish.audio/app/text-to-speech/?modelId=<id> plays each one.
  */
-const BUILT_IN_VOICES: Record<Voice, string> = {
-  left: "3d31499f0e13438bbce8dcce7b7c4298", // 이서연 책임 (인사팀)
-  center: "7bae2c48d30048c3a27b946279ac05ef", // 김도윤 팀장 (면접위원장)
-  right: "d7ec83d63be940f19abd933eb7b28816", // 박준호 선임 (실무)
-  staff: "7bae2c48d30048c3a27b946279ac05ef", // 안내 직원 (호명)
+const BUILT_IN: Record<TtsProvider, Record<Voice, string>> = {
+  elevenlabs: {
+    left: "EXAVITQu4vr4xnSDxMaL", // 이서연 책임 (인사팀): Sarah, calm female
+    center: "JBFqnCBsd6RMkjVDRZzb", // 김도윤 팀장 (면접위원장): George, low mature male
+    right: "iP95p4xoKVk53GoZ742B", // 박준호 선임 (실무): Chris, younger male
+    staff: "cgSgspJ2msm6clMCkdW9", // 안내 직원 (호명): Jessica
+  },
+  fish: {
+    left: "3d31499f0e13438bbce8dcce7b7c4298",
+    center: "7bae2c48d30048c3a27b946279ac05ef",
+    right: "d7ec83d63be940f19abd933eb7b28816",
+    staff: "7bae2c48d30048c3a27b946279ac05ef",
+  },
 };
 
-export function voiceId(voice: Voice): string {
-  const env = process.env;
-  const own = { left: env.FISH_VOICE_LEFT, center: env.FISH_VOICE_CENTER, right: env.FISH_VOICE_RIGHT, staff: env.FISH_VOICE_STAFF }[voice];
-  return own?.trim() || env.FISH_VOICE_DEFAULT?.trim() || BUILT_IN_VOICES[voice];
+export function voiceId(voice: Voice, provider: TtsProvider = "fish"): string {
+  const prefix = provider === "elevenlabs" ? "ELEVEN_VOICE_" : "FISH_VOICE_";
+  return env(prefix + voice.toUpperCase()) || env(`${prefix}DEFAULT`) || BUILT_IN[provider][voice];
 }
 
 export class TtsError extends Error {
@@ -54,51 +72,68 @@ function remember(key: string, audio: Buffer) {
   while (cache.size > CACHE_MAX) cache.delete(cache.keys().next().value!);
 }
 
-export async function synthesize(text: string, voice: Voice, speed?: number): Promise<{ audio: Buffer; cached: boolean }> {
-  const key = `${voice}|${speed ?? 1}|${text}`;
-  const hit = cache.get(key);
-  if (hit) {
-    remember(key, hit);
-    return { audio: hit, cached: true };
+export async function synthesize(text: string, voice: Voice, speed?: number): Promise<{ audio: Buffer; cached: boolean; provider: TtsProvider }> {
+  const providers = ttsProviders();
+  for (const provider of providers) {
+    const hit = cache.get(`${provider}|${voice}|${speed ?? 1}|${text}`);
+    if (hit) return { audio: hit, cached: true, provider };
   }
+  let last: TtsError | null = null;
+  for (const provider of providers) {
+    try {
+      const audio = await (provider === "elevenlabs" ? eleven : fish)(text, voice, speed);
+      remember(`${provider}|${voice}|${speed ?? 1}|${text}`, audio);
+      return { audio, cached: false, provider };
+    } catch (err) {
+      last = err instanceof TtsError ? err : new TtsError(502, String(err));
+      if (providers.length > 1) console.warn(`[tts] ${provider} failed, trying the next provider — ${last.message}`);
+    }
+  }
+  throw last ?? new TtsError(503, "no TTS provider configured");
+}
 
-  const reference = voiceId(voice);
-  const headers: Record<string, string> = {
-    Authorization: `Bearer ${process.env.FISH_AUDIO_API_KEY}`,
-    "Content-Type": "application/json",
-  };
-  if (process.env.FISH_AUDIO_MODEL?.trim()) headers.model = process.env.FISH_AUDIO_MODEL.trim();
-
+/** POST with a timeout; turns a failed response into a TtsError whose message says why (logged server-side only). */
+async function post(name: string, url: string, headers: Record<string, string>, body: unknown): Promise<Buffer> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 20_000);
   let res: Response;
   try {
-    res = await fetch(API_URL, {
-      method: "POST",
-      headers,
-      signal: controller.signal,
-      body: JSON.stringify({
-        text,
-        reference_id: reference,
-        format: "mp3",
-        mp3_bitrate: 128,
-        latency: "balanced",
-        normalize: true,
-        ...(speed && speed !== 1 ? { prosody: { speed } } : {}),
-      }),
-    });
+    res = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json", ...headers }, signal: controller.signal, body: JSON.stringify(body) });
   } catch {
-    throw new TtsError(504, "Fish Audio did not respond");
+    throw new TtsError(504, `${name} did not respond`);
   } finally {
     clearTimeout(timer);
   }
   if (!res.ok) {
-    // Fish's error body says why (bad key, no API credit, unknown voice…); logged server-side only.
     const detail = (await res.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 200);
-    throw new TtsError(res.status === 401 || res.status === 402 ? 503 : 502, `Fish Audio ${res.status}${detail ? `: ${detail}` : ""}`);
+    throw new TtsError(res.status === 401 || res.status === 402 ? 503 : 502, `${name} ${res.status}${detail ? `: ${detail}` : ""}`);
   }
   const audio = Buffer.from(await res.arrayBuffer());
-  if (!audio.length) throw new TtsError(502, "Fish Audio returned no audio");
-  remember(key, audio);
-  return { audio, cached: false };
+  if (!audio.length) throw new TtsError(502, `${name} returned no audio`);
+  return audio;
+}
+
+function eleven(text: string, voice: Voice, speed?: number): Promise<Buffer> {
+  const base = env("ELEVEN_API_URL") || "https://api.elevenlabs.io/v1/text-to-speech";
+  return post("ElevenLabs", `${base}/${encodeURIComponent(voiceId(voice, "elevenlabs"))}?output_format=mp3_44100_128`, { "xi-api-key": elevenKey(), Accept: "audio/mpeg" }, {
+    text,
+    model_id: env("ELEVEN_MODEL") || "eleven_multilingual_v2",
+    language_code: /[가-힣]/.test(text) ? "ko" : undefined,
+    // Steady, unhurried interviewer delivery. ElevenLabs accepts speed 0.7–1.2.
+    voice_settings: { stability: 0.6, similarity_boost: 0.75, style: 0, use_speaker_boost: true, ...(speed && speed !== 1 ? { speed: Math.min(1.2, Math.max(0.7, speed)) } : {}) },
+  });
+}
+
+function fish(text: string, voice: Voice, speed?: number): Promise<Buffer> {
+  const headers: Record<string, string> = { Authorization: `Bearer ${env("FISH_AUDIO_API_KEY")}` };
+  if (env("FISH_AUDIO_MODEL")) headers.model = env("FISH_AUDIO_MODEL");
+  return post("Fish Audio", env("FISH_AUDIO_API_URL") || "https://api.fish.audio/v1/tts", headers, {
+    text,
+    reference_id: voiceId(voice, "fish"),
+    format: "mp3",
+    mp3_bitrate: 128,
+    latency: "balanced",
+    normalize: true,
+    ...(speed && speed !== 1 ? { prosody: { speed } } : {}),
+  });
 }

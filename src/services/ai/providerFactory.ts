@@ -26,7 +26,7 @@ export async function detectProviderStatus(): Promise<ProviderStatus> {
     clearTimeout(timer);
     const health = HealthSchema.safeParse(await res.json());
     if (!health.success) return { mode: "mock", reason: "unreachable", model: null };
-    setNeuralTts(health.data.tts === "fish");
+    setNeuralTts(Boolean(health.data.tts));
     return health.data.ai
       ? { mode: "ai", reason: "ok", model: health.data.model }
       : { mode: "mock", reason: "no-key", model: null };

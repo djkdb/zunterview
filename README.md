@@ -134,15 +134,14 @@ public/data/roles/<domain>.json      도메인별 질문     ┘
 
 ## 스크립트
 
-- `npm run eval:prompts`: AI 프롬프트 평가(실제 모델, 자동 검사, `--save`로 `docs/eval/`에 기록)
-- `npm run mock:anthropic`: 키 없이 쓰는 가짜 Anthropic API(`MODE=ok|tells|badjson|slow|refusal`)
-
 | 명령 | 내용 |
 |---|---|
 | `npm run dev` | API 서버(tsx watch) + Vite |
 | `npm run lint` | ESLint (react-hooks 포함) |
 | `npm run typecheck` | 클라이언트 + 서버 `tsc --noEmit` |
 | `npm test` | Vitest — 상태 머신, Mock 면접관, 직무 매칭, 직무별 질문 적합도, 기업+직무 조합, 프롬프트 |
+| `npm run eval:prompts` | AI 프롬프트 평가: 실제 모델로 실패 사례 9가지를 자동 검사, `--save`로 `docs/eval/`에 기록 |
+| `npm run mock:anthropic` | 키 없이 쓰는 가짜 Anthropic API (`MODE=ok\|tells\|badjson\|slow\|refusal`) |
 | `npm run build:data` | 직무 데이터 + 기업 데이터 재생성 |
 | `npm run validate:roles` | 직무 분류·프로필·별칭 검증 |
 | `npm run validate:questions` | 질문 스키마·출처·의미 중복·직무 적합도 검증 (`-- --verbose`로 직무별 PASS/FAIL) |

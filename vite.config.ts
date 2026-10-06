@@ -18,7 +18,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
   },
   test: {
-    include: ["src/**/*.test.ts", "shared/**/*.test.ts", "server/**/*.test.ts"],
+    include: ["src/**/*.test.ts", "shared/**/*.test.ts", "server/**/*.test.ts", "scripts/**/*.test.ts"],
     setupFiles: ["./vitest.setup.ts"],
   },
 });

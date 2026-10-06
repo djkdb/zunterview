@@ -41,6 +41,7 @@ const { followUpPrompt } = await import("./prompts/followupPrompt");
 const { analysisPrompt } = await import("./prompts/analysisPrompt");
 const { reportPrompt } = await import("./prompts/reportPrompt");
 const { rolePrompt } = await import("./prompts/rolePrompt");
+const { PROMPT_VERSION } = await import("./prompts/version");
 const { getDomain, guessDomain } = await import("../shared/roles");
 const { setDataLoader } = await import("../shared/dataLoader");
 const { TtsRequestSchema } = await import("../shared/schemas");
@@ -237,7 +238,7 @@ const server = createServer(async (req, res) => {
       }
       const u = result.usage;
       const cents = costCents(u);
-      console.log(`[ai] ${url.pathname} 200 ${Date.now() - started}ms in=${u.inputTokens} cache_read=${u.cacheReadTokens ?? 0} cache_write=${u.cacheWriteTokens ?? 0} out=${u.outputTokens}${cents === null ? "" : ` ≈${cents}¢`}`);
+      console.log(`[ai] ${url.pathname} 200 prompt=${PROMPT_VERSION} ${Date.now() - started}ms in=${u.inputTokens} cache_read=${u.cacheReadTokens ?? 0} cache_write=${u.cacheWriteTokens ?? 0} out=${u.outputTokens}${cents === null ? "" : ` ≈${cents}¢`}`);
       return send(res, 200, result);
     } catch (err) {
       const code = err instanceof AIError ? err.code : "upstream";

@@ -21,7 +21,9 @@
     "validate:roles": "tsx scripts/validate-data.ts --roles",
     "validate:questions": "tsx scripts/validate-data.ts --questions",
     "validate:data": "tsx scripts/build-role-data.ts --check && tsx scripts/validate-data.ts",
-    "qa": "npm run lint && npm run typecheck && npm run test && npm run validate:data && npm run build"
+    "qa": "npm run lint && npm run typecheck && npm run test && npm run validate:data && npm run build",
+    "eval:prompts": "tsx scripts/eval-prompts.ts",
+    "mock:anthropic": "node scripts/mock-anthropic.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

@@ -134,6 +134,9 @@ public/data/roles/<domain>.json      도메인별 질문     ┘
 
 ## 스크립트
 
+- `npm run eval:prompts`: AI 프롬프트 평가(실제 모델, 자동 검사, `--save`로 `docs/eval/`에 기록)
+- `npm run mock:anthropic`: 키 없이 쓰는 가짜 Anthropic API(`MODE=ok|tells|badjson|slow|refusal`)
+
 | 명령 | 내용 |
 |---|---|
 | `npm run dev` | API 서버(tsx watch) + Vite |

@@ -7,6 +7,7 @@ import { getCompany } from "../../shared/companies";
 import type { Interview } from "../types/interview";
 import { durationLabel, longDate, pad2 } from "./format";
 import { strongestAndWeakest } from "./scoring";
+import { interviewHabits } from "./habits";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
@@ -22,6 +23,20 @@ export function buildReportHtml(i: Interview): string {
   const checkLabel = { mismatch: "다름", unexplained: "설명 부족", match: "일치" } as const;
   const checks = i.documentChecks?.length
     ? `<h2>4. 서류와 답변 비교</h2><ul>${i.documentChecks.map((c) => `<li><b>${checkLabel[c.status]}</b> ${c.source === "resume" ? "이력서" : "자기소개서"} ‘${esc(c.claim)}’: ${esc(c.detail)} (${c.questionNo}번 문항)</li>`).join("")}</ul>`
+    : "";
+  const habits = interviewHabits(i);
+  const habitsNo = i.documentChecks?.length ? 5 : 4;
+  const habitItems = habits
+    ? [
+        ...(habits.hedges && habits.hedges.count >= 2 ? [`‘~것 같습니다’ ${habits.hedges.count}번 (${habits.hedges.questionNos.join(", ")}번 문항)`] : []),
+        ...(habits.casualEndings ? [`‘~요’로 끝난 문장 ${habits.casualEndings.count}번 (${habits.casualEndings.questionNos.join(", ")}번 문항)`] : []),
+        ...habits.fillers.map((f) => `‘${f.label}’ ${f.count}번 (${f.questionNos.join(", ")}번 문항)`),
+        ...(habits.short.length ? [`너무 짧은 답: ${habits.short.join(", ")}번 문항`] : []),
+        ...(habits.long.length ? [`너무 긴 답: ${habits.long.join(", ")}번 문항`] : []),
+      ]
+    : [];
+  const habitsHtml = habits
+    ? `<h2>${habitsNo}. 말버릇 점검</h2>${habitItems.length ? list(habitItems) : "<p>눈에 띄는 말버릇이 없었습니다.</p>"}`
     : "";
   const questions = i.questions
     .map((q, idx) => {
@@ -69,7 +84,7 @@ ${r ? `<p><b>${esc(r.headline)}</b></p>` : ""}
 <p>가장 좋은 항목은 <b>${CATEGORY_KO[strongest]}</b>, 보완이 필요한 항목은 <b>${CATEGORY_KO[weakest]}</b>입니다.</p>
 <h2>2. 항목별 평가</h2>${bars}
 ${r ? `<h2>3. 면접위원 종합 의견</h2><p><b>“${esc(r.topFeedback)}”</b></p><h3>강점</h3>${list(r.strengths)}<h3>보완점</h3>${list(r.improvements)}<h3>다음 연습 과제</h3>${list(r.nextSteps)}` : ""}
-${checks}<h2>${i.documentChecks?.length ? 5 : 4}. 문항별 평가</h2>${questions}
+${checks}${habitsHtml}<h2>${habitsNo + (habits ? 1 : 0)}. 문항별 평가</h2>${questions}
 <p class="note">${DISCLAIMER} 예시 답변은 참고용이며 본인의 경험에 대한 사실이 아닙니다.</p>
 </body></html>`;
 }

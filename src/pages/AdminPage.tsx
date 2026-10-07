@@ -58,11 +58,13 @@ export function AdminPage({ onHome }: { onHome: () => void }) {
   const columns: [string, (d: Day) => string | number][] = [
     ["날짜", (d) => d.day.slice(5)],
     ["방문", (d) => d.events.landing_viewed ?? 0],
+    ["재방문", (d) => d.events.landing_returning ?? 0],
     ["접수 시작", (d) => d.events.setup_started ?? 0],
     ["면접 시작", (d) => d.events.interview_started ?? 0],
     ["완료", (d) => d.events.interview_completed ?? 0],
     ["완료율", (d) => pct(d.events.interview_completed ?? 0, d.events.interview_started ?? 0)],
     ["다시 답하기", (d) => d.events.reanswer ?? 0],
+    ["답변 노트 열람/작성", (d) => `${d.events.notes_viewed ?? 0}/${d.events.note_written ?? 0}`],
     ["도움 됨/아쉬움", (d) => `${d.feedback.up}/${d.feedback.down}`],
     ["AI 호출", (d) => d.aiCalls],
     ["AI 실패", (d) => d.aiFailures],

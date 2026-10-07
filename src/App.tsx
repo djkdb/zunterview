@@ -10,6 +10,7 @@ import { CompaniesPage } from "./pages/CompaniesPage";
 import { CompanyPage } from "./pages/CompanyPage";
 import { LegalPage, type LegalDoc } from "./pages/LegalPage";
 import { AdminPage } from "./pages/AdminPage";
+import { NotesPage } from "./pages/NotesPage";
 import type { InterviewSummary } from "./types/interview";
 import { track } from "./services/events";
 import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview } from "./utils/storage";
@@ -19,8 +20,8 @@ const ResultPage = lazy(loadResultPage);
 
 const DEBUG = new URLSearchParams(window.location.search).get("debug") === "true";
 
-type Screen = "landing" | "history" | "companies" | "company" | "legal" | "admin" | "setup" | "interview" | "result";
-type IdleView = "landing" | "history" | "companies" | "company" | "legal" | "admin";
+type Screen = "landing" | "history" | "notes" | "companies" | "company" | "legal" | "admin" | "setup" | "interview" | "result";
+type IdleView = "landing" | "history" | "notes" | "companies" | "company" | "legal" | "admin";
 
 /** /terms, /privacy and /admin open those pages directly (links from outside, search results). */
 function initialView(): { view: IdleView; legal: LegalDoc } {
@@ -89,6 +90,10 @@ export default function App() {
   );
   const goHome = useCallback(() => goIdle("landing"), [goIdle]);
   const goHistory = useCallback(() => goIdle("history"), [goIdle]);
+  const goNotes = useCallback(() => {
+    track("notes_viewed");
+    goIdle("notes");
+  }, [goIdle]);
   const goCompanies = useCallback(() => goIdle("companies"), [goIdle]);
   const openCompany = useCallback(
     (id: string) => {
@@ -140,6 +145,7 @@ export default function App() {
                 history={history}
                 onStart={() => goSetup()}
                 onHistory={goHistory}
+                onNotes={goNotes}
                 onCompanies={goCompanies}
                 onOpenCompany={openCompany}
                 onOpenInterview={openInterview}
@@ -155,7 +161,8 @@ export default function App() {
             )}
             {screen === "legal" && <LegalPage doc={legalDoc} onHome={goHome} onSwitch={openLegal} />}
             {screen === "admin" && <AdminPage onHome={goHome} />}
-            {screen === "history" && <HistoryPage history={history} onOpen={openInterview} canOpen={canOpen} onStart={() => goSetup()} onHome={goHome} onClear={clearData} />}
+            {screen === "history" && <HistoryPage history={history} onOpen={openInterview} canOpen={canOpen} onStart={() => goSetup()} onHome={goHome} onClear={clearData} onNotes={goNotes} />}
+            {screen === "notes" && <NotesPage onStart={() => goSetup()} onHistory={goHistory} onHome={goHome} />}
             {screen === "companies" && <CompaniesPage onOpen={openCompany} onHome={goHome} onStart={() => goSetup()} />}
             {screen === "company" && companyView && (
               <CompanyPage id={companyView} onStart={(companyId, track) => goSetup({ companyId, track })} onBack={goCompanies} onHome={goHome} />
@@ -175,6 +182,7 @@ export default function App() {
                   actions.start(state.interview!.config);
                 }}
                 onHistory={goHistory}
+                onNotes={goNotes}
                 onHome={goHome}
                 onReanswer={actions.reanswer}
               />

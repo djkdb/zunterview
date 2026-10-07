@@ -156,6 +156,8 @@ export function recordLimited() {
 export async function recordEvent(name: EventName, props: Record<string, string | number | boolean>) {
   roll();
   counters.events[name] = (counters.events[name] ?? 0) + 1;
+  // Returning visitors are the plainest sign the service is worth coming back to.
+  if (name === "landing_viewed" && props.returning === true) counters.events.landing_returning = (counters.events.landing_returning ?? 0) + 1;
   if (name === "feedback" && (props.rating === 1 || props.rating === -1)) counters.feedback[props.rating === 1 ? "up" : "down"]++;
   save();
   try {

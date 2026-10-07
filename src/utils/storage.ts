@@ -16,6 +16,7 @@ const KEYS = {
   active: "interview-ai:active:v1",
   prefs: "interview-ai:prefs:v1",
   documents: "interview-ai:documents:v1",
+  scripts: "interview-ai:scripts:v1",
 } as const;
 const MAX_FULL_RECORDS = 10;
 
@@ -106,6 +107,32 @@ export function clearAllLocalData() {
   remove(KEYS.active);
   remove(KEYS.prefs);
   remove(KEYS.documents);
+  remove(KEYS.scripts);
+}
+
+/** Every interview whose full sheet is still kept (the most recent ten), newest first. */
+export function loadFullInterviews(): Interview[] {
+  return loadHistory().flatMap((s) => {
+    const i = loadInterview(s.id);
+    return i ? [i] : [];
+  });
+}
+
+/* Answers the candidate wrote down in the answer notebook, by question. They outlive the interviews they came from. */
+export interface Script {
+  question: string;
+  text: string;
+  at: number;
+}
+export function loadScripts(): Record<string, Script> {
+  const s = read<Record<string, Script>>(KEYS.scripts, {});
+  return s && typeof s === "object" && !Array.isArray(s) ? s : {};
+}
+export function saveScript(key: string, question: string, text: string): boolean {
+  const all = loadScripts();
+  if (text.trim()) all[key] = { question, text, at: Date.now() };
+  else delete all[key];
+  return write(KEYS.scripts, all);
 }
 
 /* In-progress interview, so a refresh or closed tab doesn't lose everything. */

@@ -13,9 +13,10 @@ interface Props {
   onStart: () => void;
   onHome: () => void;
   onClear: () => void;
+  onNotes: () => void;
 }
 
-export function HistoryPage({ history, onOpen, canOpen, onStart, onHome, onClear }: Props) {
+export function HistoryPage({ history, onOpen, canOpen, onStart, onHome, onClear, onNotes }: Props) {
   const [confirm, setConfirm] = useState(false);
   const avg = history.length ? Math.round(history.reduce((s, h) => s + h.score, 0) / history.length) : null;
   const best = history.length ? Math.max(...history.map((h) => h.score)) : null;
@@ -24,9 +25,16 @@ export function HistoryPage({ history, onOpen, canOpen, onStart, onHome, onClear
       <TopBar
         onHome={onHome}
         right={
-          <Button size="sm" variant="primary" onClick={onStart}>
-            새 면접 보기
-          </Button>
+          <>
+            {history.length > 0 && (
+              <Button size="sm" variant="ghost" onClick={onNotes}>
+                답변 노트
+              </Button>
+            )}
+            <Button size="sm" variant="primary" onClick={onStart}>
+              새 면접 보기
+            </Button>
+          </>
         }
       />
       <main className="mx-auto w-full max-w-3xl px-4 sm:px-6">
@@ -91,7 +99,7 @@ export function HistoryPage({ history, onOpen, canOpen, onStart, onHome, onClear
           </>
         }
       >
-        이 브라우저에 저장된 모든 면접 기록과 설정이 삭제되며, 되돌릴 수 없습니다.
+        이 브라우저에 저장된 모든 면접 기록, 설정, 답변 노트에 적은 답이 삭제되며, 되돌릴 수 없습니다.
       </Dialog>
     </div>
   );

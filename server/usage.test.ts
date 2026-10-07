@@ -43,4 +43,11 @@ describe("usage limits", () => {
     expect(day.events).toEqual({ interview_completed: 1, feedback: 2 });
     expect(day.feedback).toEqual({ up: 1, down: 1 });
   });
+
+  it("counts returning visits on top of all visits", async () => {
+    await recordEvent("landing_viewed", { returning: false });
+    await recordEvent("landing_viewed", { returning: true });
+    const [day] = await metrics(1);
+    expect(day.events).toMatchObject({ landing_viewed: 2, landing_returning: 1 });
+  });
 });

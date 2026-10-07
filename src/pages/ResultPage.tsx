@@ -24,6 +24,8 @@ import { documentsLabel } from "../utils/documents";
 import { DocumentChecks } from "../components/DocumentChecks";
 import { ReanswerPractice } from "../components/ReanswerPractice";
 import { SheetFeedback } from "../components/SheetFeedback";
+import { SpeechHabits } from "../components/SpeechHabits";
+import { interviewHabits } from "../utils/habits";
 import { track } from "../services/events";
 import { josa } from "../../shared/korean";
 
@@ -37,6 +39,7 @@ interface Props {
   /** Answer a question again and get it scored (absent when the sheet is read-only). */
   onReanswer?: (questionId: string, answer: string) => Promise<Reanswer | null>;
   onHistory: () => void;
+  onNotes: () => void;
   onHome: () => void;
 }
 
@@ -71,8 +74,12 @@ function SheetSection({ no, title, children }: { no: number; title: string; chil
   );
 }
 
-export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onRetake, onHistory, onHome, onReanswer }: Props) {
+export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onRetake, onHistory, onNotes, onHome, onReanswer }: Props) {
   const checks = i.documentChecks ?? [];
+  const habits = useMemo(() => interviewHabits(i), [i]);
+  // Sections 4 and up are numbered by what this interview has.
+  const habitsNo = checks.length > 0 ? 5 : 4;
+  const questionsNo = habitsNo + (habits ? 1 : 0);
   const [open, setOpen] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const panel = useMemo(() => buildPanel(i.config), [i.config]);
@@ -265,7 +272,13 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
             </SheetSection>
           )}
 
-          <SheetSection no={checks.length > 0 ? 5 : 4} title="문항별 평가" delay={0.45}>
+          {habits && (
+            <SheetSection no={habitsNo} title="말버릇 점검">
+              <SpeechHabits habits={habits} />
+            </SheetSection>
+          )}
+
+          <SheetSection no={questionsNo} title="문항별 평가" delay={0.45}>
             <p className="mb-3 text-[13px] text-faint">문항을 누르면 내 답변, 평가 근거, 개선 방향을 볼 수 있습니다.</p>
             <ol className="space-y-2" lang={i.config.language}>
               {i.questions.map((q, idx) => (
@@ -288,6 +301,16 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
         </motion.article>
 
         {onReanswer && <ReanswerPractice interview={i} onReanswer={onReanswer} />}
+        {storageOk && (
+          <section className="no-print mt-8 flex flex-col items-start gap-3 rounded-xl border border-line bg-surface px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-[14px] leading-relaxed text-ink/90">
+              <b className="text-navy">답변 노트</b>에 이번 질문 {i.questions.filter((q) => q.answer).length}개가 모였습니다. 실전에서 말할 답을 적어 두고, 면접 전날 답을 가린 채 다시 말해 보세요.
+            </p>
+            <Button size="sm" variant="secondary" onClick={onNotes} className="shrink-0">
+              답변 노트 열기
+            </Button>
+          </section>
+        )}
         {!fromHistory && <SheetFeedback score={i.overallScore} mode={i.providers.includes("ai") ? "ai" : "mock"} />}
 
         <section className="no-print mt-8 flex flex-wrap items-center justify-center gap-2.5">

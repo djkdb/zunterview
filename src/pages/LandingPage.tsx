@@ -85,6 +85,7 @@ interface Props {
   history: InterviewSummary[];
   onStart: () => void;
   onHistory: () => void;
+  onNotes: () => void;
   onCompanies: () => void;
   onOpenCompany: (id: string) => void;
   onOpenInterview: (id: string) => void;
@@ -127,7 +128,7 @@ function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview
 /** A couple from each category so the section shows the range. */
 const FEATURED = COMPANY_CATEGORIES.flatMap((cat) => COMPANIES.filter((c) => c.category === cat).slice(0, 2)).slice(0, 8);
 
-export function LandingPage({ status, history, onStart, onHistory, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard, onLegal }: Props) {
+export function LandingPage({ status, history, onStart, onHistory, onNotes, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard, onLegal }: Props) {
   return (
     <div className="flex min-h-dvh flex-col">
       <TopBar
@@ -143,6 +144,11 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
             <Button size="sm" variant="ghost" onClick={onHistory}>
               <span className="hidden sm:inline">나의 </span>면접 기록
             </Button>
+            {history.length > 0 && (
+              <Button size="sm" variant="ghost" onClick={onNotes} className="hidden sm:inline-flex">
+                답변 노트
+              </Button>
+            )}
           </>
         }
       />
@@ -237,11 +243,18 @@ export function LandingPage({ status, history, onStart, onHistory, onCompanies, 
         <section className="pb-12" aria-label="최근 면접">
           <div className="mb-3 flex items-center justify-between">
             <h2 className="text-base font-bold text-ink">최근 면접</h2>
-            {history.length > 3 && (
-              <button type="button" onClick={onHistory} className="text-[13px] text-muted hover:text-ink">
-                기록 전체 보기
-              </button>
-            )}
+            <span className="flex gap-4">
+              {history.length > 0 && (
+                <button type="button" onClick={onNotes} className="text-[13px] font-semibold text-accent hover:text-navy">
+                  받은 질문 모아 보기
+                </button>
+              )}
+              {history.length > 3 && (
+                <button type="button" onClick={onHistory} className="text-[13px] text-muted hover:text-ink">
+                  기록 전체 보기
+                </button>
+              )}
+            </span>
           </div>
           <InterviewHistory items={history.slice(0, 3)} onOpen={onOpenInterview} onStart={onStart} canOpen={canOpen} compact />
         </section>

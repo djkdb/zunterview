@@ -28,6 +28,7 @@ import { SpeechHabits } from "../components/SpeechHabits";
 import { interviewHabits } from "../utils/habits";
 import { track } from "../services/events";
 import { josa } from "../../shared/korean";
+import { pickForPractice } from "../utils/practice";
 
 interface Props {
   interview: Interview;
@@ -65,7 +66,7 @@ function talentWords(talent: string[]): string[] {
 /** One numbered part of the sheet. The sheet arrives once and the stamp lands; its parts don't animate on their own. */
 function SheetSection({ no, title, children }: { no: number; title: string; children: ReactNode; delay?: number }) {
   return (
-    <section className="mt-8">
+    <section id={`sheet-${no}`} className="mt-8 scroll-mt-20">
       <h2 className="mb-3 border-b-2 border-navy pb-1.5 text-[15px] font-extrabold text-navy">
         {no}. {title}
       </h2>
@@ -101,6 +102,20 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
     flash(res === "shared" ? "공유했습니다." : res === "downloaded" ? "결과 카드 이미지를 저장했습니다." : res === "copied" ? "결과 요약을 복사했습니다." : "이 환경에서는 공유할 수 없습니다.");
   };
 
+  const download = () => {
+    downloadReport(i);
+    track("report_downloaded");
+  };
+  const practice = useMemo(() => pickForPractice(i).length, [i]);
+  const sections: [number, string][] = [
+    [1, "종합 평가"],
+    [2, "항목별 평가"],
+    ...(r ? ([[3, "면접위원 종합 의견"]] as [number, string][]) : []),
+    ...(checks.length ? ([[4, "서류와 답변 비교"]] as [number, string][]) : []),
+    ...(habits ? ([[habitsNo, "말버릇 점검"]] as [number, string][]) : []),
+    [questionsNo, "문항별 평가"],
+  ];
+
   const company = getCompany(i.config.companyId);
   const info: [string, ReactNode][] = [
     ["지원번호", applicantNumber(i.id)],
@@ -130,7 +145,8 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
         }
       />
 
-      <main className="mx-auto w-full max-w-4xl px-3 pt-6 sm:px-6 sm:pt-10">
+      <main className="mx-auto w-full max-w-4xl px-3 pt-6 sm:px-6 sm:pt-10 lg:grid lg:max-w-6xl lg:grid-cols-[minmax(0,1fr)_272px] lg:items-start lg:gap-8">
+        <div className="min-w-0">
         {!fromHistory && (
           <motion.p {...reveal(0)} className="no-print mb-4 text-center text-sm text-muted">
             {i.terminated ? "면접이 중단되었습니다. 면접위원이 작성한 평가표입니다." : "수고하셨습니다. 면접위원이 작성한 평가표입니다."}
@@ -302,7 +318,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
 
         {onReanswer && <ReanswerPractice interview={i} onReanswer={onReanswer} />}
         {storageOk && (
-          <section className="no-print mt-8 flex flex-col items-start gap-3 rounded-xl border border-line bg-surface px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+          <section className="no-print mt-8 flex flex-col lg:hidden items-start gap-3 rounded-xl border border-line bg-surface px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-[14px] leading-relaxed text-ink/90">
               <b className="text-navy">답변 노트</b>에 이번 질문 {i.questions.filter((q) => q.answer).length}개가 모였습니다. 실전에서 말할 답을 적어 두고, 면접 전날 답을 가린 채 다시 말해 보세요.
             </p>
@@ -313,11 +329,8 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
         )}
         {!fromHistory && <SheetFeedback score={i.overallScore} mode={i.providers.includes("ai") ? "ai" : "mock"} />}
 
-        <section className="no-print mt-8 flex flex-wrap items-center justify-center gap-2.5">
-          <Button variant="secondary" onClick={() => {
-              downloadReport(i);
-              track("report_downloaded");
-            }} icon={<DownloadIcon width={16} height={16} />}>
+        <section className="no-print mt-8 flex flex-wrap items-center justify-center gap-2.5 lg:hidden">
+          <Button variant="secondary" onClick={download} icon={<DownloadIcon width={16} height={16} />}>
             평가표 다운로드
           </Button>
           <Button variant="secondary" onClick={share} icon={<ShareIcon width={16} height={16} />}>
@@ -330,8 +343,66 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
             같은 조건으로 다시 보기
           </Button>
         </section>
-        <p className="no-print mt-3 text-center text-[12px] text-faint">공유 카드에는 직무·점수·강점만 담기며, 답변 내용은 포함되지 않습니다.</p>
+        <p className="no-print mt-3 text-center text-[12px] text-faint lg:hidden">공유 카드에는 직무·점수·강점만 담기며, 답변 내용은 포함되지 않습니다.</p>
         {!storageOk && <p className="mt-4 text-center text-[13px] text-warn">브라우저 저장소를 사용할 수 없어 이 면접은 기록에 저장되지 않았습니다.</p>}
+        </div>
+
+        <aside className="no-print sticky top-20 hidden space-y-3 lg:block" aria-label="평가표 바로 가기">
+          <div className="rounded-xl border border-line bg-surface p-4">
+            <p className="text-[12px] text-faint">종합</p>
+            <p className="mt-0.5 flex items-baseline gap-2">
+              <span className={`tabular-nums text-3xl font-extrabold ${TONE_TEXT[scoreTone(overall)]}`}>{overall}</span>
+              <span className="text-[13px] text-muted">/ 100점 · {grade(overall)}등급</span>
+            </p>
+            {previous && delta !== null && (
+              <p className="mt-1 text-[12px] text-muted">
+                지난 면접 대비 <b className={delta > 0 ? "text-good" : delta < 0 ? "text-warn" : "text-muted"}>{delta > 0 ? `+${delta}` : delta}</b>
+              </p>
+            )}
+            <nav className="mt-3 border-t border-line pt-3">
+              <ol className="space-y-1 text-[13px]">
+                {sections.map(([no, title]) => (
+                  <li key={no}>
+                    <a href={`#sheet-${no}`} className="flex gap-2 rounded px-1.5 py-1 text-muted hover:bg-surface-2 hover:text-ink">
+                      <span className="tabular-nums text-faint">{no}</span>
+                      {title}
+                    </a>
+                  </li>
+                ))}
+                {onReanswer && practice > 0 && (
+                  <li>
+                    <a href="#reanswer" className="flex gap-2 rounded px-1.5 py-1 font-semibold text-accent hover:bg-accent-soft">
+                      <span aria-hidden>↻</span>막힌 질문 다시 답하기 <span className="tabular-nums">{practice}</span>
+                    </a>
+                  </li>
+                )}
+              </ol>
+            </nav>
+          </div>
+          <div className="space-y-2 rounded-xl border border-line bg-surface p-4">
+            <Button variant="primary" className="w-full" onClick={onRetake}>
+              같은 조건으로 다시 보기
+            </Button>
+            <Button variant="secondary" className="w-full" onClick={onNew}>
+              설정 바꿔서 보기
+            </Button>
+            <div className="grid grid-cols-2 gap-2">
+              <Button size="sm" variant="ghost" className="w-full" onClick={download} icon={<DownloadIcon width={15} height={15} />}>
+                다운로드
+              </Button>
+              <Button size="sm" variant="ghost" className="w-full" onClick={share} icon={<ShareIcon width={15} height={15} />}>
+                공유
+              </Button>
+            </div>
+            <p className="text-[11px] leading-relaxed text-faint">공유 카드에는 직무·점수·강점만 담기며, 답변은 포함되지 않습니다.</p>
+          </div>
+          {storageOk && (
+            <button type="button" onClick={onNotes} className="block w-full rounded-xl border border-line bg-surface p-4 text-left hover:border-line-strong">
+              <span className="text-[14px] font-bold text-navy">답변 노트 열기</span>
+              <span className="mt-1 block text-[12px] leading-relaxed text-muted">이번 질문 {i.questions.filter((q) => q.answer).length}개가 모였습니다. 실전에서 말할 답을 적어 두세요.</span>
+            </button>
+          )}
+        </aside>
       </main>
 
       {toast && (

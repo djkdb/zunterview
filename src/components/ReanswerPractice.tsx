@@ -104,7 +104,7 @@ export function ReanswerPractice({ interview: i, onReanswer }: { interview: Inte
   if (!items.length) return null;
   const low = items.some((q) => (q.score ?? 0) < PICK_BELOW);
   return (
-    <section className="no-print mt-10" aria-labelledby="reanswer-title">
+    <section id="reanswer" className="no-print mt-10 scroll-mt-20" aria-labelledby="reanswer-title">
       <h2 id="reanswer-title" className="text-lg font-extrabold text-navy">
         막힌 질문 다시 답하기
       </h2>

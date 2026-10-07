@@ -49,7 +49,8 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
           </Button>
         }
       />
-      <main className="mx-auto w-full max-w-4xl px-4 sm:px-6">
+      <main className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:grid lg:max-w-6xl lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-8">
+        <div className="min-w-0">
         <motion.header initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="pt-8">
           <p className="text-sm font-semibold text-accent">
             {c.category}, {c.industry}
@@ -154,11 +155,42 @@ export function CompanyPage({ id, onStart, onBack, onHome }: Props) {
           <p className="mt-4 text-[12px] leading-relaxed text-faint">{COMPANY_DISCLAIMER}</p>
         </section>
 
-        <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur sm:static sm:mt-8 sm:border-0 sm:bg-transparent sm:p-0">
+        <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur sm:static sm:mt-8 sm:border-0 sm:bg-transparent sm:p-0 lg:hidden">
           <Button variant="primary" size="lg" className="w-full sm:w-auto sm:px-10" onClick={() => onStart(c.id, track)}>
             {c.shortName ?? c.name} 모의면접 보기
           </Button>
         </div>
+        </div>
+
+        <aside className="sticky top-20 mt-8 hidden rounded-xl border border-line bg-surface p-5 lg:block" aria-label="면접 접수">
+          <p className="text-[12px] text-faint">{c.category}</p>
+          <p className="mt-0.5 text-[17px] font-extrabold text-navy">{c.name} 모의면접</p>
+          <p className="mt-2 text-[13px] leading-relaxed text-muted">
+            이 기업의 연습 질문 {c.questionCount}개 중에서 면접관이 질문을 고르고, 답변에 따라 꼬리질문을 이어 갑니다.
+          </p>
+          {tracks.length > 1 && (
+            <div className="mt-4">
+              <p className="label mb-1.5">지원 트랙</p>
+              <div className="flex flex-wrap gap-1.5">
+                {tracks.map((t) => (
+                  <button
+                    key={t}
+                    type="button"
+                    aria-pressed={track === t}
+                    onClick={() => setTrack(t)}
+                    className={`rounded-full border px-3 py-1 text-[12px] ${track === t ? "border-navy bg-navy text-white" : "border-line-strong bg-surface text-muted hover:text-ink"}`}
+                  >
+                    {t === "공통" ? "전체" : t}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          <Button variant="primary" size="lg" className="mt-5 w-full" onClick={() => onStart(c.id, track)}>
+            이 기업으로 면접 보기
+          </Button>
+          <p className="mt-2 text-center text-[11px] text-faint">다음 화면에서 직무와 서류를 고릅니다.</p>
+        </aside>
       </main>
     </div>
   );

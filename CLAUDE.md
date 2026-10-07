@@ -11,7 +11,8 @@ INTERVIEW//AI: 한국식 다대일 AI 모의면접 웹앱 (React + Vite, Node �
 
 ## 개발 규칙
 
-- 품질 검사는 `npm run qa`. 타입 검사는 `--noEmit`으로만 한다(`tsc -b`는 `.js`를 만들어 `.ts`를 가린다).
+- 품질 검사는 `npm run qa`. `tsconfig.json`은 `noEmit`이라 `.js`를 만들지 않는다. `src`나 `shared`에 `.js`가 보이면 `.ts`를 가리는 옛 빌드 결과이니 지운다(TROUBLESHOOTING 21).
+- 화면을 바꾸면 모바일(390px)과 데스크톱(1440px, 1024px) 둘 다 확인한다.
 - API 키는 `.env`에만 둔다. 절대 커밋하지 않는다.
 - 유료 외부 API(TTS 등)는 요청을 몰아서 보내지 않는다(Typecast 계정 차단 사례, TROUBLESHOOTING 14번).
 - 서버를 끌 때는 `pkill -f` 대신 PID로 `kill`한다.

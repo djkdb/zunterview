@@ -351,7 +351,7 @@ export type Health = z.infer<typeof HealthSchema>;
 /* ───────────────────────────── Product events ───────────────────────────── */
 
 /** What the app reports about its own use (counts only; never answers, documents or names). */
-export const EVENT_NAMES = ["landing_viewed", "setup_started", "interview_started", "interview_completed", "interview_ended_early", "interview_terminated", "reanswer", "report_downloaded", "result_shared", "feedback", "notes_viewed", "note_written", "notes_drill", "notes_downloaded", "notes_practice", "intro_practiced"] as const;
+export const EVENT_NAMES = ["landing_viewed", "setup_started", "interview_started", "interview_completed", "interview_ended_early", "interview_terminated", "reanswer", "report_downloaded", "result_shared", "feedback", "notes_viewed", "note_written", "notes_drill", "notes_downloaded", "notes_practice", "intro_practiced", "stories_viewed"] as const;
 export type EventName = (typeof EVENT_NAMES)[number];
 
 /** An event says a little about the setup (archetype, mode, …), never the content; this bounds how much. */

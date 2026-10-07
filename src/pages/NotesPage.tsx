@@ -8,6 +8,8 @@ import { track } from "../services/events";
 import { shortDate } from "../utils/format";
 import { NOTE_GROUP_KO, NOTE_GROUPS, REVIEW_BELOW, buildNotebook, notebookText, practiceQuestions, sortForReview, sourceInterviewId, type Note, type NoteGroup } from "../utils/notebook";
 import type { PresetQuestion } from "../types/interview";
+import { StoryMap } from "../components/StoryMap";
+import { buildStoryMap } from "../utils/storyMap";
 import { scoreTone } from "../utils/scoring";
 import { TONE_TEXT } from "../utils/tones";
 import { loadFullInterviews, loadScripts, saveScript } from "../utils/storage";
@@ -40,6 +42,9 @@ export function NotesPage({ onStart, onPractice, onHistory, onHome }: Props) {
   }, [version]);
   const [filter, setFilter] = useState<Filter>("all");
   const [hide, setHide] = useState(false);
+  const [view, setView] = useState<"questions" | "stories">("questions");
+  const latest = useMemo(() => loadFullInterviews()[0] ?? null, []);
+  const storyMap = useMemo(() => (view === "stories" ? buildStoryMap(loadFullInterviews()) : null), [view]);
 
   const review = notes.filter((n) => n.best !== null && n.best < REVIEW_BELOW);
   const written = notes.filter((n) => n.script);
@@ -173,6 +178,30 @@ export function NotesPage({ onStart, onPractice, onHistory, onHome }: Props) {
           <p className="mt-2 max-w-3xl text-[14px] leading-relaxed text-muted">
             지금까지 받은 질문과 내 답, 면접관이 짚은 점을 한곳에 모았습니다. 점수가 낮았던 질문이 위에 옵니다. 실전에서 말할 답을 적어 두면 면접 기록이 지워져도 남습니다.
           </p>
+          {notes.length > 0 && (
+            <div className="mt-4 inline-flex rounded-lg border border-line-strong bg-surface p-0.5" role="tablist" aria-label="보기 방식">
+              {(
+                [
+                  ["questions", "질문별"],
+                  ["stories", "경험별"],
+                ] as const
+              ).map(([v, label]) => (
+                <button
+                  key={v}
+                  type="button"
+                  role="tab"
+                  aria-selected={view === v}
+                  onClick={() => {
+                    setView(v);
+                    if (v === "stories") track("stories_viewed");
+                  }}
+                  className={`rounded-md px-4 py-1.5 text-[13px] font-semibold transition-colors ${view === v ? "bg-navy text-white" : "text-muted hover:text-ink"}`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {notes.length === 0 ? (
@@ -183,6 +212,15 @@ export function NotesPage({ onStart, onPractice, onHistory, onHome }: Props) {
               면접 접수하기
             </Button>
           </div>
+        ) : view === "stories" && storyMap ? (
+          <StoryMap
+            map={storyMap}
+            position={latest?.config.position ?? ""}
+            onPractice={(qs) => {
+              track("notes_practice", { count: qs.length, from: "stories" });
+              onPractice(qs, latest?.id ?? null);
+            }}
+          />
         ) : wide ? (
           <div className="grid grid-cols-[340px_minmax(0,1fr)] items-start gap-6 xl:grid-cols-[380px_minmax(0,1fr)]">
             <div className="min-w-0">

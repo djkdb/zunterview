@@ -9,6 +9,7 @@ import { durationLabel, longDate, pad2 } from "./format";
 import { strongestAndWeakest } from "./scoring";
 import { interviewHabits } from "./habits";
 import { interviewJdChecks } from "./jdCheck";
+import { predictedFollowUps } from "./predict";
 import { SHEET_TITLE, sheetNo, sheetParts, type SheetPart } from "./sheetSections";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
@@ -46,9 +47,11 @@ export function buildReportHtml(i: Interview): string {
   const habitsHtml = habits
     ? `${h2("habits")}${habitItems.length ? list(habitItems) : "<p>눈에 띄는 말버릇이 없었습니다.</p>"}`
     : "";
+  const predicted = predictedFollowUps(i);
   const questions = i.questions
     .map((q, idx) => {
       const f = q.feedback!;
+      const next = predicted[q.id] ?? [];
       return `<section class="q">
   <h3>Q${pad2(idx + 1)} ${q.isFollowUp ? "<em>↳ 꼬리질문</em>" : ""} <small>${QUESTION_TYPE_KO[q.type]}, ${q.score}점 (${grade(q.score ?? 0)})</small></h3>
   <p class="question">${esc(q.text)}</p>
@@ -56,7 +59,8 @@ export function buildReportHtml(i: Interview): string {
   <p><b>잘한 점:</b> ${esc(f.strength)}</p>
   <p><b>보완할 점:</b> ${esc(f.improve)}</p>${f.roleSignal ? `
   <p><b>직무 관점(${esc(f.roleSignal.label)}):</b> ${esc(f.roleSignal.note)}</p>` : ""}
-  <p><b>예시(참고용):</b> <i>${esc(f.betterAnswer.example)}</i></p>
+  <p><b>예시(참고용):</b> <i>${esc(f.betterAnswer.example)}</i></p>${next.length ? `
+  <p><b>예상 꼬리질문:</b></p><ul>${next.map((n) => `<li>${esc(n.question)}</li>`).join("")}</ul>` : ""}
 </section>`;
     })
     .join("");

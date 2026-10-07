@@ -7,6 +7,7 @@ import { scoreTone } from "../utils/scoring";
 import { TONE_TEXT } from "../utils/tones";
 import { ScoreBadge } from "./ScoreBadge";
 import { ChevronIcon } from "./ui/icons";
+import type { Predicted } from "../utils/predict";
 
 const STAR_MARK = { present: "○", partial: "△", missing: "×" } as const;
 const STAR_COLOR = { present: "text-good", partial: "text-warn", missing: "text-low" } as const;
@@ -18,10 +19,12 @@ interface Props {
   open: boolean;
   onToggle: () => void;
   asker: PanelMember;
+  /** Follow-ups this answer could still get (rule-based), when there are any. */
+  predicted?: Predicted[];
 }
 
 /** One row of 문항별 평가: question → my answer → feedback → how to improve. */
-export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
+export function FeedbackCard({ q, index, open, onToggle, asker, predicted }: Props) {
   const f = q.feedback;
   if (!f || q.score === null) return null;
   const tone = scoreTone(q.score);
@@ -125,6 +128,21 @@ export function FeedbackCard({ q, index, open, onToggle, asker }: Props) {
                   {(["result", "action", "task", "situation"] as const).map((k) => f.star[k]).find((p) => p.status !== "present")?.note && (
                     <p className="mt-2 text-[13px] text-muted">{(["result", "action", "task", "situation"] as const).map((k) => f.star[k]).find((p) => p.status !== "present")?.note}</p>
                   )}
+                </div>
+              )}
+
+              {predicted && predicted.length > 0 && (
+                <div>
+                  <p className="label mb-1">예상 꼬리질문</p>
+                  <p className="mb-2 text-[12px] text-faint">이 답을 듣고 면접관이 더 물을 수 있는 질문입니다. 이번 면접에서 실제로 나온 질문은 뺐습니다.</p>
+                  <ol className="space-y-1.5">
+                    {predicted.map((p) => (
+                      <li key={p.question} className="rounded-lg border border-line px-3 py-2 text-[14px]">
+                        <span className="font-semibold text-ink">↳ {p.question}</span>
+                        <span className="mt-0.5 block text-[12px] text-muted">{p.reason}</span>
+                      </li>
+                    ))}
+                  </ol>
                 </div>
               )}
 

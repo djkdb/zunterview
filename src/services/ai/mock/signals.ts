@@ -189,7 +189,7 @@ export function readSignals(text: string, question: string, lang: Language): Sig
     dontKnow: t.replace(/\s/g, "").length < 60 && /잘\s?모르|모르겠|몰라|모릅니다|모름|기억이\s?(?:잘\s?)?안|패스|넘어가겠|해\s?본\s?적(?:이)?\s?없|경험이\s?없|don'?t know|not sure|no idea|\bpass\b|\bskip\b/i.test(t),
     roleClaim: roleClaimPhrase(t),
     project: projectPhrase(t),
-    metric: (t.match(/\d+(?:[.,]\d+)?\s?(?:%|퍼센트|배|초|ms|분|시간|명|개|건|만\s?건|만\s?명|만|천|x|times|users|percent)/i)?.[0] ?? "").trim(),
+    metric: pickMetric(t),
   };
 }
 
@@ -203,6 +203,18 @@ export function topicPhrase(text: string, pattern: RegExp): string {
 }
 
 /** Shortest verbatim clause from the answer that contains `needle`. */
+const METRIC = /\d+(?:[.,]\d+)?\s?(?:%|퍼센트|배|개월|주일|주|일|년|초|ms|분|시간|명|개|건|만\s?건|만\s?명|만\s?원|억\s?원|원|만|천|점|x|times|users|percent)/gi;
+const DURATION = /(?:개월|주일|주|일|년)$/;
+
+/**
+ * The number worth asking about, with its unit: a result ("1,200명", "40%") before a period
+ * ("3개월 동안"), and never a unit cut short ("3개월" is not "3개").
+ */
+export function pickMetric(text: string): string {
+  const all = [...text.matchAll(METRIC)].map((m) => m[0].trim());
+  return all.find((m) => !DURATION.test(m)) ?? all[0] ?? "";
+}
+
 export function quoteAround(text: string, needle: string, max = 48): string {
   const idx = text.toLowerCase().indexOf(needle.toLowerCase());
   if (idx < 0) return "";

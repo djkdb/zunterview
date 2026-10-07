@@ -27,6 +27,7 @@ import { SheetFeedback } from "../components/SheetFeedback";
 import { SpeechHabits } from "../components/SpeechHabits";
 import { interviewHabits } from "../utils/habits";
 import { interviewJdChecks } from "../utils/jdCheck";
+import { predictedFollowUps } from "../utils/predict";
 import { JdChecks } from "../components/JdChecks";
 import { SHEET_TITLE, sheetNo, sheetParts, type SheetPart } from "../utils/sheetSections";
 import { track } from "../services/events";
@@ -82,6 +83,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
   const checks = i.documentChecks ?? [];
   const habits = useMemo(() => interviewHabits(i), [i]);
   const jd = useMemo(() => interviewJdChecks(i), [i]);
+  const predicted = useMemo(() => predictedFollowUps(i), [i]);
   // Optional parts are numbered by what this interview has.
   const parts = sheetParts({ opinion: Boolean(i.report), documents: checks.length > 0, jobPosting: jd.length > 0, habits: Boolean(habits) });
   const no = (p: SheetPart) => sheetNo(parts, p);
@@ -308,6 +310,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
                   open={open === q.id}
                   onToggle={() => setOpen(open === q.id ? null : q.id)}
                   asker={panel[seatFor(q.type, q.isFollowUp)]}
+                  predicted={predicted[q.id]}
                 />
               ))}
             </ol>

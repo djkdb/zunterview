@@ -67,6 +67,7 @@ export function AdminPage({ onHome }: { onHome: () => void }) {
     ["답변 노트 열람/작성", (d) => `${d.events.notes_viewed ?? 0}/${d.events.note_written ?? 0}`],
     ["노트 면접", (d) => d.events.notes_practice ?? 0],
     ["자기소개 연습", (d) => d.events.intro_practiced ?? 0],
+    ["경험 지도", (d) => d.events.stories_viewed ?? 0],
     ["도움 됨/아쉬움", (d) => `${d.feedback.up}/${d.feedback.down}`],
     ["AI 호출", (d) => d.aiCalls],
     ["AI 실패", (d) => d.aiFailures],

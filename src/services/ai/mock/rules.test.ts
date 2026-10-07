@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { readSignals } from "./signals";
+import { pickMetric, readSignals } from "./signals";
 import { assertive, capFor, CAP, noStory, withoutFillers, conclusionFirst, exampleFromAnswer, groundedReaction, improveFromAnswer, plannedInsteadOfDone, ro, splitLong } from "./rules";
 
 const sig = (answer: string, question = "가장 어려웠던 경험을 말씀해 주세요.") => readSignals(answer, question, "ko");
@@ -86,5 +86,14 @@ describe("feedback in the candidate's own words", () => {
     expect(lines.filter(Boolean).length).toBeGreaterThanOrEqual(3);
     expect(lines).toContain(null);
     expect(lines.filter(Boolean).every((l) => !/것 같|!/.test(l!))).toBe(true);
+  });
+});
+
+describe("pickMetric", () => {
+  it("prefers a result to a period and keeps the whole unit", () => {
+    expect(pickMetric("출시 후 3개월 동안 학생 1,200명이 가입했습니다.")).toBe("1,200명");
+    expect(pickMetric("3개월 동안 진행했습니다.")).toBe("3개월");
+    expect(pickMetric("응답 시간을 1.2초에서 0.7초로 줄였습니다.")).toBe("1.2초");
+    expect(pickMetric("협찬 420만 원을 받았습니다.")).toBe("420만 원");
   });
 });

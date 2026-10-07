@@ -25,7 +25,7 @@ import { getCompany, loadCompanyQuestions, questionsForTrack, type CompanyQuesti
 import { blueprintFor, planInterview, TYPE_BUCKET } from "../../../shared/blueprints";
 import { roleContextFor, type RoleContext } from "../../../shared/roles";
 import { loadRoleProfile, questionPool, rankCandidates, typesFor } from "../../../shared/roleBank";
-import { fillSlots } from "../../../shared/korean";
+import { fillSlots, hasBatchim } from "../../../shared/korean";
 import { isDuplicateQuestion } from "../../utils/fingerprint";
 import { NEEDS_MATERIAL, refersToDocuments } from "../../../shared/questionRules";
 import { documentClaims, documentQuestion, hasDocuments } from "../../../shared/documents";
@@ -225,6 +225,20 @@ export class MockAIProvider implements AIProvider {
 
   async generateFollowUp(ctx: InterviewContext, turn: CurrentTurn, depth: number): Promise<FollowUpDecision> {
     await this.wait(600, 1100);
+    return this.followUpOptions(ctx, turn, depth)[0];
+  }
+
+  /**
+   * Follow-ups this answer could get, best first (the first one is what the panel asks).
+   * Shown on the sheet as "예상 꼬리질문": the ones the interview didn't get to.
+   */
+  predictFollowUps(ctx: InterviewContext, turn: CurrentTurn): FollowUpDecision[] {
+    const seen = new Set<string>();
+    return this.followUpOptions(ctx, turn, 0).filter((f) => f.needed && !seen.has(f.question) && Boolean(seen.add(f.question)));
+  }
+
+  /** The follow-up rules. Returns a single "no follow-up" decision when the answer shouldn't be followed up. */
+  private followUpOptions(ctx: InterviewContext, turn: CurrentTurn, depth: number): FollowUpDecision[] {
     const lang = ctx.config.language;
     const s = readSignals(turn.answer, turn.question, lang);
     const none = (reason: string): FollowUpDecision => ({ needed: false, question: "", type: "deep_dive", reason, anchor: "" });
@@ -232,16 +246,16 @@ export class MockAIProvider implements AIProvider {
     const ok = (f: FollowUpDecision) => (isDuplicateQuestion(f.question, asked) ? null : sanitizeFollowUp(f, turn.answer));
 
     if (s.dontKnow) {
-      return none(L(lang, "지원자가 잘 모른다고 답해 다른 주제로 넘어갑니다.", "The candidate didn't know; moving to another topic."));
+      return [none(L(lang, "지원자가 잘 모른다고 답해 다른 주제로 넘어갑니다.", "The candidate didn't know; moving to another topic."))];
     }
     const triage = triageAnswer(turn.answer, lang);
-    if (triage) return none(L(lang, "평가할 수 있는 답변이 아니어서 다음 질문으로 넘어갑니다.", "Not an answer that can be followed up; moving on."));
+    if (triage) return [none(L(lang, "평가할 수 있는 답변이 아니어서 다음 질문으로 넘어갑니다.", "Not an answer that can be followed up; moving on."))];
     if (repeatsEarlier(turn.answer, earlierAnswers(ctx, turn))) {
-      return none(L(lang, "앞선 답변을 반복해 다음 질문으로 넘어갑니다.", "Repeated an earlier answer; moving on."));
+      return [none(L(lang, "앞선 답변을 반복해 다음 질문으로 넘어갑니다.", "Repeated an earlier answer; moving on."))];
     }
     const dodge = dodgedQuestion(turn, s);
     if (dodge) {
-      if (depth > 0) return none(L(lang, "다시 물었지만 질문과 다른 답변이어서 넘어갑니다.", "Still off the question; moving on."));
+      if (depth > 0) return [none(L(lang, "다시 물었지만 질문과 다른 답변이어서 넘어갑니다.", "Still off the question; moving on."))];
       const f = ok({
         needed: true,
         type: "deep_dive",
@@ -249,15 +263,15 @@ export class MockAIProvider implements AIProvider {
         question: L(lang, `제가 여쭌 건 ${dodge}에 관한 부분이었는데요, 그 부분에 대해 다시 말씀해 주시겠어요?`, `What I asked about was ${dodge} — could you answer that part?`),
         reason: L(lang, "답변이 질문의 핵심을 다루지 않아 같은 질문으로 다시 확인합니다.", "The answer missed the point of the question; asking again."),
       });
-      if (f?.needed) return f;
+      if (f?.needed) return [f];
     }
     // Already asked them to elaborate and it's still one line — a real interviewer moves on.
     const concrete = s.topics.length > 0 || s.methods.length > 0 || s.techs.length > 0 || Boolean(s.project || s.roleClaim || s.metric);
     if (turn.isFollowUp && s.chars < 25 && !concrete) {
-      return none(L(lang, "추가 설명을 요청했지만 답변이 짧아 다음 질문으로 넘어갑니다.", "Still brief after a follow-up; moving on."));
+      return [none(L(lang, "추가 설명을 요청했지만 답변이 짧아 다음 질문으로 넘어갑니다.", "Still brief after a follow-up; moving on."))];
     }
     if (isOffTopic(s)) {
-      return none(L(lang, "질문과 관련성이 낮아 다음 주제로 넘어갑니다.", "Answer drifted off-topic; moving on."));
+      return [none(L(lang, "질문과 관련성이 낮아 다음 주제로 넘어갑니다.", "Answer drifted off-topic; moving on."))];
     }
 
     const topic = s.topics[0];
@@ -381,7 +395,7 @@ export class MockAIProvider implements AIProvider {
       push(
         { ko: `말씀하신 '${s.metric}'${josa(s.metric, "은/는")} 어떻게 측정하거나 확인하셨나요?`, en: `How did you measure or verify the '${s.metric}' you mentioned?` },
         "result",
-        { ko: `'${s.metric}'이라는 수치를 제시했지만 측정 방법은 언급되지 않았습니다.`, en: `Gives '${s.metric}' but not how it was measured.` },
+        { ko: `'${s.metric}'${hasBatchim(s.metric) ? "이라는" : "라는"} 수치를 제시했지만 측정 방법은 언급되지 않았습니다.`, en: `Gives '${s.metric}' but not how it was measured.` },
         s.metric,
       );
     }
@@ -421,12 +435,9 @@ export class MockAIProvider implements AIProvider {
     }
 
     // Deeper threads need a stronger reason to continue.
-    if (depth >= 2) return none(L(lang, "이 주제는 충분히 다뤘습니다.", "This thread has been covered enough."));
-    for (const c of candidates) {
-      const f = ok(c);
-      if (f && f.needed) return f;
-    }
-    return none(L(lang, "답변이 충분히 구체적이어서 다음 주제로 넘어갑니다.", "The answer was specific enough; moving on."));
+    if (depth >= 2) return [none(L(lang, "이 주제는 충분히 다뤘습니다.", "This thread has been covered enough."))];
+    const usable = candidates.map(ok).filter((f): f is FollowUpDecision => Boolean(f?.needed));
+    return usable.length ? usable : [none(L(lang, "답변이 충분히 구체적이어서 다음 주제로 넘어갑니다.", "The answer was specific enough; moving on."))];
   }
 
   /* ───────────────────────────── analysis ────────────────────────────── */
@@ -870,7 +881,10 @@ function reasonFor(k: CategoryKey, s: Signals): string {
         ? ko ? "원인과 결과를 연결해 설명했습니다." : "Connects causes and effects."
         : ko ? "왜 그렇게 했는지에 대한 이유가 드러나지 않습니다." : "The 'why' behind decisions is missing.";
     case "specificity":
-      if (s.numbers.length) return ko ? `수치(${s.numbers[0].trim()})를 사용해 구체성이 높습니다.` : `Uses numbers (${s.numbers[0].trim()}), which adds precision.`;
+      if (s.numbers.length) {
+        const n = s.metric || s.numbers[0].trim();
+        return ko ? `수치(${n})를 사용해 구체성이 높습니다.` : `Uses numbers (${n}), which adds precision.`;
+      }
       if (s.methods.length || s.techs.length) {
         const k2 = [...s.methods, ...s.techs].slice(0, 2).join(", ");
         return ko ? `사용한 방법(${k2})을 언급했지만 수치는 없습니다.` : `Names methods (${k2}) but gives no numbers.`;

@@ -2,7 +2,7 @@
  * The answer notebook: every question from the interviews kept in this browser, with the
  * candidate's latest answer, the interviewer's note, and the answer they wrote down to say next time.
  */
-import type { Interview, QuestionType } from "../types/interview";
+import type { Interview, PresetQuestion, QuestionType } from "../types/interview";
 import { getCompany } from "../../shared/companies";
 import type { Script } from "./storage";
 
@@ -70,6 +70,8 @@ export interface Note {
   attempts: Attempt[];
   best: number | null;
   script?: Script;
+  /** What to ask to practise this note again: the question itself, or for a follow-up the main question it came from. */
+  ask?: PresetQuestion;
 }
 
 export function buildNotebook(interviews: Interview[], scripts: Record<string, Script>): Note[] {
@@ -82,7 +84,9 @@ export function buildNotebook(interviews: Interview[], scripts: Record<string, S
       const parent = q.parentId ? i.questions.find((p) => p.id === q.parentId)?.text : undefined;
       // A follow-up like "조금 더 구체적으로 말씀해 주시겠어요?" means something different under each main question.
       const key = parent ? `${noteKey(parent)} ↳ ${noteKey(q.text)}` : noteKey(q.text);
-      const note = notes.get(key) ?? { key, question: q.text, group: GROUP_OF[q.type] ?? null, isFollowUp: q.isFollowUp, attempts: [], best: null };
+      const parentQ = q.parentId ? i.questions.find((p) => p.id === q.parentId) : undefined;
+      const ask: PresetQuestion = parentQ ? { text: parentQ.text, type: parentQ.type } : { text: q.text, type: q.type };
+      const note = notes.get(key) ?? { key, question: q.text, group: GROUP_OF[q.type] ?? null, isFollowUp: q.isFollowUp, attempts: [], best: null, ask };
       const base = { interviewId: i.id, where, ...(parent ? { parent } : {}) };
       note.attempts.push({ ...base, at: q.askedAt || i.createdAt, answer: q.answer, score: q.score, improve: q.feedback.improve, example: q.feedback.betterAnswer.example });
       for (const r of i.reanswers ?? []) {
@@ -104,6 +108,28 @@ export function buildNotebook(interviews: Interview[], scripts: Record<string, S
 }
 
 export const REVIEW_BELOW = 60;
+export const PRACTICE_MAX = 5;
+
+/**
+ * Main questions for a notebook interview, in the order shown (weakest first). A follow-up is
+ * practised through its main question; the interviewer will dig in again from the new answer.
+ * The candidate's own self-introduction, if picked, goes first as it would in a real room.
+ */
+export function practiceQuestions(notes: Note[], max = PRACTICE_MAX): PresetQuestion[] {
+  const out: PresetQuestion[] = [];
+  for (const n of notes) {
+    const q = n.ask ?? { text: n.question, type: "experience" as const };
+    if (!out.some((o) => noteKey(o.text) === noteKey(q.text))) out.push(q);
+    if (out.length >= max) break;
+  }
+  return out.sort((a, b) => Number(b.type === "opening") - Number(a.type === "opening"));
+}
+
+/** The interview whose settings a notebook interview borrows: the newest one among the picked questions. */
+export function sourceInterviewId(notes: Note[]): string | null {
+  const attempts = notes.flatMap((n) => n.attempts);
+  return attempts.sort((a, b) => b.at - a.at)[0]?.interviewId ?? null;
+}
 
 /** Weakest first (a question never answered well is what to review), then the ones asked most often. */
 export function sortForReview(notes: Note[]): Note[] {

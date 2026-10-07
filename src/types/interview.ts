@@ -15,6 +15,16 @@ export interface InterviewConfig extends AIConfig {
   voiceEnabled: boolean;
   /** Show per-answer scores in the Interview Notes during the interview. */
   liveFeedback: boolean;
+  /**
+   * Main questions chosen in advance (from the answer notebook), asked in order instead of
+   * generated ones. Follow-ups are still decided from each answer. Kept in the browser only.
+   */
+  preset?: PresetQuestion[];
+}
+
+export interface PresetQuestion {
+  text: string;
+  type: QuestionType;
 }
 
 export type ProviderKind = "ai" | "mock";

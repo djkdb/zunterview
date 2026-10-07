@@ -17,7 +17,9 @@ export type JosaPair = "을/를" | "이/가" | "은/는" | "와/과";
 
 /** Pick the particle form that fits the word: josa("캐시", "을/를") → "를". */
 export function josa(word: string, pair: JosaPair): string {
-  const [withB, without] = pair.split("/");
+  // 을/를, 이/가, 은/는 are written "after a consonant / after a vowel"; 와/과 the other way round.
+  const [first, second] = pair.split("/");
+  const [withB, without] = pair === "와/과" ? [second, first] : [first, second];
   // "(재무회계)" / "(PM)" at the end is read as part of the word before it.
   const spoken = word.replace(/\s*\([^)]*\)\s*$/, "");
   return hasBatchim(spoken) ? withB : without;

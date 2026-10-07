@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { Interview, InterviewQuestion, Reanswer } from "../types/interview";
 import { DEFAULT_CONFIG } from "../config/options";
-import { buildNotebook, noteKey, notebookText, sortForReview } from "./notebook";
+import { buildNotebook, noteKey, notebookText, practiceQuestions, sortForReview, sourceInterviewId } from "./notebook";
 
 const feedback = (improve: string) =>
   ({ improve, strength: "s", betterAnswer: { problem: "p", suggestion: "g", example: `예시: ${improve}` } }) as unknown as InterviewQuestion["feedback"];
@@ -63,5 +63,23 @@ describe("buildNotebook", () => {
     const text = notebookText(notes);
     expect(text).toContain("1. 약점");
     expect(text).toContain("최근 답변(45점): b 답변");
+  });
+
+  it("turns notes into interview questions: follow-ups through their main question, self-introduction first", () => {
+    const notes = sortForReview(
+      buildNotebook(
+        [
+          interview("i", 100, [
+            q("m", "프로젝트 경험", 70),
+            q("f", "그 수치는 어떻게 측정했나요?", 30, { isFollowUp: true, parentId: "m" }),
+            q("o", "자기소개 부탁드립니다", 55, { type: "opening" }),
+            q("x", "실패 경험", 40),
+          ]),
+        ],
+        {},
+      ),
+    );
+    expect(practiceQuestions(notes).map((p) => p.text)).toEqual(["자기소개 부탁드립니다", "프로젝트 경험", "실패 경험"]);
+    expect(sourceInterviewId(notes)).toBe("i");
   });
 });

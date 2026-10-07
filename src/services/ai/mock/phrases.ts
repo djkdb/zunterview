@@ -16,11 +16,11 @@ const REACTIONS: Record<AnswerQuality, Pool> = {
     en: ["That sounds a bit abstract.", "I get the direction, but I'd like more specifics."],
   },
   insufficient: {
-    ko: ["답변이 조금 짧았던 것 같습니다.", "네, 조금 더 자세히 들을 수 있으면 좋겠네요.", "알겠습니다. 근거가 조금 더 있었으면 좋겠습니다.", "네. 다음에는 예를 하나 들어 주시면 좋겠습니다."],
+    ko: ["답변이 조금 짧았습니다.", "네, 조금 더 자세히 들을 수 있으면 좋겠네요.", "알겠습니다. 근거가 조금 더 있었으면 좋겠습니다.", "네. 다음에는 예를 하나 들어 주시면 좋겠습니다."],
     en: ["That answer was a little short.", "Okay. I'd have liked a bit more detail.", "Understood. A bit more support would help.", "Okay. An example next time would help."],
   },
   off_topic: {
-    ko: ["질문의 의도와 조금 다른 방향의 답변인 것 같습니다."],
+    ko: ["제가 여쭌 것과는 조금 다른 이야기입니다."],
     en: ["That seems a bit off from what I asked."],
   },
 };
@@ -51,7 +51,7 @@ export function reactionFor(quality: AnswerQuality, persona: Persona, lang: Lang
 
 export const CLOSING: Record<Persona, Record<Language, string>> = {
   professional: { ko: "오늘 면접은 여기까지입니다. 수고하셨습니다.", en: "That concludes our interview. Thank you for your time." },
-  friendly: { ko: "오늘 이야기 정말 즐거웠어요. 수고 많으셨습니다!", en: "I really enjoyed our conversation today. Great work!" },
+  friendly: { ko: "오늘 이야기 즐거웠어요. 수고 많으셨습니다.", en: "I enjoyed our conversation today. Thank you." },
   strict: { ko: "면접을 마치겠습니다. 피드백을 꼭 확인해주세요.", en: "We're done. Review the feedback carefully." },
   technical: { ko: "좋은 기술 대화였습니다. 여기서 마치겠습니다.", en: "Good technical discussion. Let's wrap up here." },
 };

@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { DIFFICULTIES, EXPERIENCE_LEVELS, INTERVIEW_TYPES, LIMITS, PERSONAS, type Documents } from "../../shared/schemas";
 import { ModeBadge, TopBar } from "../components/TopBar";
 import { CompanyPicker } from "../components/CompanyPicker";
+import { jdRequirements } from "../utils/jdCheck";
 import { COMPANIES, companyTracks, getCompany, guessTrack, type CompanyCategory } from "../../shared/companies";
 import { RolePicker } from "../components/RolePicker";
 import { FollowUpPath } from "../components/FollowUpPath";
@@ -406,6 +407,7 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
                             placeholder="지원하는 공고의 자격요건·우대사항을 붙여넣으면 그 요건을 실제 경험으로 검증하는 질문이 나옵니다. (예: GA4·SQL 활용 능력, B2B 영업 경험 우대)"
                             className="w-full resize-y rounded-lg border border-line-strong bg-surface px-4 py-3 text-[14px] leading-relaxed text-ink placeholder:text-faint focus:border-accent focus:ring-2 focus:ring-accent/15 focus:outline-none"
                           />
+                          <JdPreview jd={c.jobDescription} />
                           <p className="mt-1.5 flex justify-between text-[12px] text-faint">
                             <span>질문을 맞추는 데에만 사용됩니다.</span>
                             <span>
@@ -531,6 +533,27 @@ export function SetupPage({ status, onStart, onHome, preset }: SetupProps) {
           </aside>
         </div>
       </main>
+    </div>
+  );
+}
+
+/** What the panel will check from the pasted posting, so the candidate sees it was read. */
+function JdPreview({ jd }: { jd: string }) {
+  const reqs = useMemo(() => jdRequirements(jd), [jd]);
+  if (!jd.trim()) return null;
+  if (!reqs.length)
+    return <p className="mt-2 text-[12px] text-faint">요건 문장을 찾지 못했습니다. ‘~ 경험’, ‘~ 능력’, ‘~ 우대’처럼 적힌 줄이 있으면 그 요건을 확인하는 질문이 나옵니다.</p>;
+  return (
+    <div className="mt-2 rounded-lg bg-surface-2 px-3 py-2.5">
+      <p className="text-[12px] font-semibold text-muted">면접관이 확인할 요건</p>
+      <ul className="mt-1.5 flex flex-wrap gap-1.5">
+        {reqs.map((r) => (
+          <li key={r.text} className="rounded-md border border-line bg-surface px-2 py-0.5 text-[12px] text-ink">
+            {r.text} <span className="text-faint">{r.preferred ? "우대" : "필수"}</span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-1.5 text-[11px] text-faint">면접이 끝나면 평가표에서 요건마다 답변으로 보여 줬는지 확인합니다.</p>
     </div>
   );
 }

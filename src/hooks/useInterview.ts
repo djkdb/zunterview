@@ -18,6 +18,7 @@ import { cancelLine, isVoiceOutputAvailable, speakLine } from "../services/speec
 import { currentQuestion, initialState, reducer, type Action, type InterviewState } from "../state/interviewMachine";
 import type { Interview, InterviewConfig, InterviewQuestion, ProviderKind, QuestionOrigin, Reanswer } from "../types/interview";
 import { buildContext, toAIConfig, toCurrentTurn } from "../utils/context";
+import { eventProps } from "../utils/eventProps";
 import { isDuplicateQuestion } from "../utils/fingerprint";
 import { createId, delay } from "../utils/id";
 import { clarifyLine } from "../utils/clarify";
@@ -57,11 +58,6 @@ async function originOf(text: string, config: InterviewConfig): Promise<Question
   });
   if (!match || match.basis === "일반면접") return undefined;
   return match.basis;
-}
-
-/** What an event may say about an interview: the setup, never what was answered. */
-function eventProps(c: InterviewConfig) {
-  return { archetype: roleContextFor(c).archetype, questions: c.questionLimit, difficulty: c.difficulty, documents: hasDocuments(c.documents), company: Boolean(c.companyId), language: c.language };
 }
 
 /** The interview's answered turns, grouped by main question, for the document check. */
@@ -205,6 +201,11 @@ export function useInterview() {
   const nextMainQuestion = useCallback(async (interview: Interview): Promise<NextQuestion> => {
     const ctx = buildContext(interview);
     const provider = providerRef.current;
+    // Questions picked from the answer notebook come first, in the order they were picked.
+    const preset = interview.config.preset?.[ctx.progress.asked];
+    if (preset) {
+      return { gen: { question: preset.text, type: preset.type, intent: "답변 노트에서 고른 질문입니다." }, isFollowUp: false, parentId: null, source: provider.kind, origin: await originOf(preset.text, interview.config) };
+    }
     // A repeat, or something this room can't support (résumé, live coding, a second self-intro).
     const bad = (q: string) => isDuplicateQuestion(q, ctx.askedQuestions) || unaskable(q, ctx.progress.asked, hasDocuments(ctx.config.documents));
     let [gen, source] = await withFallback(provider, (p) => p.generateQuestion(ctx));

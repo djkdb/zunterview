@@ -108,7 +108,7 @@ export function HistoryPage({ history, onOpen, canOpen, onStart, onHome, onClear
           </>
         }
       >
-        이 브라우저에 저장된 모든 면접 기록, 설정, 답변 노트에 적은 답이 삭제되며, 되돌릴 수 없습니다.
+        이 브라우저에 저장된 모든 면접 기록, 설정, 답변 노트에 적은 답, 자기소개 연습 기록이 삭제되며, 되돌릴 수 없습니다.
       </Dialog>
     </div>
   );

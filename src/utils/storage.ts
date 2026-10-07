@@ -4,6 +4,7 @@
  * Data never leaves this browser.
  */
 import type { Interview, InterviewConfig, InterviewSummary } from "../types/interview";
+import type { IntroAttempt } from "./intro";
 import { strongestAndWeakest } from "./scoring";
 import { getCompany } from "../../shared/companies";
 import { hasDocuments } from "../../shared/documents";
@@ -17,6 +18,7 @@ const KEYS = {
   prefs: "interview-ai:prefs:v1",
   documents: "interview-ai:documents:v1",
   scripts: "interview-ai:scripts:v1",
+  intro: "interview-ai:intro:v1",
 } as const;
 const MAX_FULL_RECORDS = 10;
 
@@ -108,6 +110,7 @@ export function clearAllLocalData() {
   remove(KEYS.prefs);
   remove(KEYS.documents);
   remove(KEYS.scripts);
+  remove(KEYS.intro);
 }
 
 /** Every interview whose full sheet is still kept (the most recent ten), newest first. */
@@ -156,7 +159,7 @@ export function loadActiveInterview(): ActiveInterview | null {
 }
 
 export const loadLastConfig = (): Partial<InterviewConfig> | null => read(KEYS.lastConfig, null);
-export const saveLastConfig = (c: InterviewConfig) => write(KEYS.lastConfig, { ...c, documents: undefined });
+export const saveLastConfig = (c: InterviewConfig) => write(KEYS.lastConfig, { ...c, documents: undefined, preset: undefined });
 
 /* The résumé / cover letter, kept in this browser only when the candidate ticks "remember". */
 export function loadSavedDocuments(): Documents | null {
@@ -170,4 +173,14 @@ export const forgetDocuments = () => remove(KEYS.documents);
 export function previousFor(i: Interview): InterviewSummary | null {
   const others = loadHistory().filter((x) => x.id !== i.id && x.createdAt < i.createdAt);
   return others.find((x) => x.position === i.config.position) ?? others[0] ?? null;
+}
+
+/* 1분 자기소개 attempts, newest first. */
+const MAX_INTRO_ATTEMPTS = 20;
+export function loadIntroAttempts(): IntroAttempt[] {
+  const list = read<IntroAttempt[]>(KEYS.intro, []);
+  return Array.isArray(list) ? list.filter((a) => a && typeof a.text === "string" && typeof a.score === "number") : [];
+}
+export function saveIntroAttempt(a: IntroAttempt): boolean {
+  return write(KEYS.intro, [a, ...loadIntroAttempts()].slice(0, MAX_INTRO_ATTEMPTS));
 }

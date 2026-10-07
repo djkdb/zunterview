@@ -6,7 +6,8 @@ import { DownloadIcon } from "../components/ui/icons";
 import { ScoreBadge } from "../components/ScoreBadge";
 import { track } from "../services/events";
 import { shortDate } from "../utils/format";
-import { NOTE_GROUP_KO, NOTE_GROUPS, REVIEW_BELOW, buildNotebook, notebookText, sortForReview, type Note, type NoteGroup } from "../utils/notebook";
+import { NOTE_GROUP_KO, NOTE_GROUPS, REVIEW_BELOW, buildNotebook, notebookText, practiceQuestions, sortForReview, sourceInterviewId, type Note, type NoteGroup } from "../utils/notebook";
+import type { PresetQuestion } from "../types/interview";
 import { scoreTone } from "../utils/scoring";
 import { TONE_TEXT } from "../utils/tones";
 import { loadFullInterviews, loadScripts, saveScript } from "../utils/storage";
@@ -15,6 +16,8 @@ type Filter = "all" | "review" | "written" | NoteGroup;
 
 interface Props {
   onStart: () => void;
+  /** Start an interview made of these questions, with the settings of that earlier interview. */
+  onPractice: (questions: PresetQuestion[], fromInterviewId: string | null) => void;
   onHistory: () => void;
   onHome: () => void;
 }
@@ -29,7 +32,7 @@ function download(text: string) {
 }
 
 /** Every question the candidate has faced, what they said, and the answer they mean to give next time. */
-export function NotesPage({ onStart, onHistory, onHome }: Props) {
+export function NotesPage({ onStart, onPractice, onHistory, onHome }: Props) {
   const [version, setVersion] = useState(0);
   const notes = useMemo(() => {
     void version;
@@ -78,6 +81,12 @@ export function NotesPage({ onStart, onHistory, onHome }: Props) {
   }, [wide]);
   const saved = () => setVersion((v) => v + 1);
 
+  const practice = practiceQuestions(shown);
+  const startPractice = () => {
+    track("notes_practice", { count: practice.length });
+    onPractice(practice, sourceInterviewId(shown));
+  };
+
   const toolbar = (
     <>
       <div className={`flex gap-1.5 ${wide ? "flex-wrap" : "-mx-4 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0"}`} role="radiogroup" aria-label="질문 고르기">
@@ -123,6 +132,16 @@ export function NotesPage({ onStart, onHistory, onHome }: Props) {
           내려받기
         </Button>
       </div>
+      {practice.length > 0 && (
+        <div className="mt-3 flex items-center justify-between gap-3 rounded-lg border border-navy/15 bg-surface px-3 py-2.5">
+          <p className="text-[12px] leading-relaxed text-muted">
+            보이는 질문 중 위에서부터 <b className="text-ink">{practice.length}개</b>로 면접을 봅니다. 꼬리질문은 새 답변을 듣고 다시 나옵니다.
+          </p>
+          <Button size="sm" variant="primary" className="shrink-0" onClick={startPractice}>
+            이 질문으로 면접
+          </Button>
+        </div>
+      )}
       {hide && (
         <p className="mt-2.5 rounded-lg border border-accent/25 bg-accent-soft px-3 py-2.5 text-[13px] text-ink/90">
           질문만 보고 소리 내어 답해 보세요. 다 말한 뒤 ‘내 답 보기’로 적어 둔 답과 비교하면 됩니다.

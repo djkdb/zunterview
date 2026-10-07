@@ -42,6 +42,8 @@ import {
   type Localized,
 } from "./mock/questionBank";
 import { CLOSING, hash, reactionFor } from "./mock/phrases";
+import { jdRequirements } from "../../utils/jdCheck";
+import { capFor, conclusionFirst, exampleFromAnswer, groundedReaction, improveFromAnswer, noStory as answeredWithoutStory, plannedInsteadOfDone, strengthFromAnswer } from "./mock/rules";
 import { extractMethods, extractTechs, josa, objectParticle, quoteAround, readSignals, ROLE_TOPICS, splitSentences, topicPhrase, TOPICS, type Signals } from "./mock/signals";
 
 const L = (lang: Language, ko: string, en: string) => (lang === "ko" ? ko : en);
@@ -127,8 +129,9 @@ export class MockAIProvider implements AIProvider {
 
     // Job posting: verify a stated requirement against real experience (once or twice per interview).
     const jdAsked = asked.filter((q) => q.includes("채용공고") || /job (?:description|posting)/i.test(q)).length;
-    const jdReqs = extractJdRequirements(config.jobDescription);
-    if (TYPE_BUCKET[planned] === "job" && jdAsked < Math.min(2, jdReqs.length) && mainIndex >= (config.interviewType === "technical" ? 1 : 2)) {
+    // Required lines before "우대" ones: those are what the sheet's 공고 요건 확인 counts first.
+    const jdReqs = [...jdRequirements(config.jobDescription)].sort((a, b) => Number(a.preferred) - Number(b.preferred)).map((r) => r.text);
+    if (TYPE_BUCKET[planned] === "job" && jdAsked < Math.min(config.questionLimit >= 10 ? 3 : 2, jdReqs.length) && mainIndex >= (config.interviewType === "technical" ? 1 : 2)) {
       const req = jdReqs[jdAsked];
       const q = L(lang, `채용공고에서 ${req}${josa(req, "을/를")} 요구하고 있는데, 실제 업무나 경험에서 어떻게 해 보셨나요?`, `The job posting asks for ${req}. How have you actually done that in your work or experience?`);
       if (!isDuplicateQuestion(q, asked)) return { question: q, type: "experience", intent: L(lang, "채용공고의 요구 역량을 실제 경험으로 검증합니다.", "Verify a posted requirement against real experience.") };
@@ -443,6 +446,13 @@ export class MockAIProvider implements AIProvider {
     const dodge = s.dontKnow || repeated ? null : dodgedQuestion(turn, s);
     const profane = hasProfanity(turn.answer);
 
+    // Rules shared with the AI interviewer's prompt (mock/rules.ts).
+    const order = conclusionFirst(s);
+    const late = order === "late";
+    const plannedOnly = !s.dontKnow && plannedInsteadOfDone(turn.question, turn.answer);
+    const noStory = !s.dontKnow && !plannedOnly && answeredWithoutStory(turn.question, turn.answer);
+    const casualEndings = lang === "ko" ? s.sentences.filter((x) => /요[.?!]*$/.test(x) && !/(?:필요|중요|주요|안녕하세요)[.?!]*$/.test(x)).length : 0;
+
     const lengthBase = s.chars < 20 ? 34 : s.chars < 60 ? 52 : s.chars < 150 ? 64 : s.chars < 700 ? 71 : 65;
     // Complete, owned stories (situation → action → result, in first person, with numbers) earn a bonus.
     const completeness = (s.firstPerson ? 3 : 0) + (s.numbers.length ? 3 : 0) + (s.star.situation && s.star.action && s.star.result ? 4 : 0);
@@ -465,10 +475,27 @@ export class MockAIProvider implements AIProvider {
       raw.communication -= 25;
       raw.confidence -= 10;
     }
+    if (order === "first") {
+      raw.relevance += 4;
+      raw.structure += 3;
+    }
+    if (late) {
+      raw.relevance -= 4;
+      raw.structure -= 6;
+    }
+    raw.communication -= Math.min(8, casualEndings * 4);
+    if (plannedOnly || noStory) raw.relevance -= 10;
+    const cap = capFor(s, { platitude, plannedOnly, noStory });
     const scores = {} as AnswerAnalysis["scores"];
     CATEGORY_KEYS.forEach((k, i) => {
-      scores[k] = { score: clampScore(raw[k] + jitter(i * 3)), reason: reasonFor(k, s) };
+      // The cap moves a little per category so a capped answer doesn't score the same in all six.
+      scores[k] = { score: clampScore(Math.min(raw[k], cap + (cap < 100 ? jitter(i * 3 + 1) : 0)) + jitter(i * 3)), reason: reasonFor(k, s) };
     });
+    if (order === "first") scores.relevance.reason = L(lang, "첫 문장에서 질문에 바로 답했습니다.", "Answered the question in the first sentence.");
+    if (late) scores.structure.reason = L(lang, "배경 설명으로 시작해 결론이 늦게 나옵니다.", "Opens with background, so the point comes late.");
+    if (casualEndings) scores.communication.reason = L(lang, `‘~요’로 끝난 문장이 ${casualEndings}개 있습니다. 면접 답변은 ‘~습니다’로 맺는 편이 안정적입니다.`, scores.communication.reason);
+    if (plannedOnly) scores.relevance.reason = L(lang, "실제 경험을 물었는데 앞으로의 계획으로 답했습니다.", "Asked for an experience; answered with a plan.");
+    if (noStory) scores.relevance.reason = L(lang, "실제 경험을 물었는데 평소의 생각만 말했습니다.", "Asked for an experience; answered with general attitudes.");
     if (repeated) scores.relevance.reason = L(lang, "앞선 답변과 같은 내용을 반복했습니다.", "Repeats an earlier answer.");
     if (dodge) scores.relevance.reason = L(lang, `질문의 핵심('${dodge}')에 대한 답이 없습니다.`, `Doesn't address the question ('${dodge}').`);
 
@@ -501,7 +528,9 @@ export class MockAIProvider implements AIProvider {
 
     const sorted = [...CATEGORY_KEYS].sort((a, b) => scores[b].score - scores[a].score);
     const best = sorted[0];
-    const worst = sorted[sorted.length - 1];
+    // A self-introduction isn't a STAR story or a decision to justify: point at the next weakest thing instead.
+    const forImprove = turn.type === "opening" ? sorted.filter((k) => k !== "logic" && k !== "structure") : sorted;
+    const worst = forImprove[forImprove.length - 1];
 
     return sanitizeAnalysis(
       {
@@ -513,10 +542,14 @@ export class MockAIProvider implements AIProvider {
           : avg < 45 || repeated || dodge
             ? L(lang, "이 답변에서는 뚜렷한 강점을 찾기 어려웠습니다.", "No clear strength came through in this answer.")
             : avg < 55
-              ? s.firstPerson && s.chars >= 40
+              ? s.firstPerson && s.chars >= 40 && s.hedges === 0 && !plannedOnly && !noStory
                 ? L(lang, "본인의 입장을 분명하게 말했습니다.", "You stated your own position clearly.")
                 : L(lang, "질문에 답하려는 시도는 보였습니다.", "You made an attempt at the question.")
-              : strengthFor(best, s),
+              : plannedOnly
+                ? L(lang, "어떻게 하겠다는 방향은 분명하게 말했습니다.", "The plan itself was clear.")
+                : noStory
+                  ? L(lang, "이 일을 대하는 본인의 관점은 말했습니다.", "You stated your view of the work.")
+                : (strengthFromAnswer(best, s) ?? strengthFor(best, s)),
         improve: s.dontKnow
           ? L(lang, "모르는 질문도 '직접 해 보진 않았지만 저라면 ~부터 확인하겠습니다'처럼 접근 방법을 말하면 좋습니다.", "Even when you don't know, explain how you would approach it.")
           : platitude
@@ -529,14 +562,14 @@ export class MockAIProvider implements AIProvider {
                 ? L(lang, "면접에서 비속어는 내용과 상관없이 큰 감점 요인입니다. 정중한 표현으로 바꿔 말해 보세요.", "Profanity costs heavily in an interview whatever the content — rephrase politely.")
                 : s.chars < 25
                   ? L(lang, "답변이 너무 짧습니다. 결론 한 문장에 근거가 되는 경험을 2~3문장 덧붙여 보세요.", "Too short — add two or three sentences of supporting experience.")
-                  : improveFor(worst, s),
+                  : (improveFromAnswer(plannedOnly ? "plan" : worst, s, { late, plannedOnly, noStory }) ?? improveFor(worst, s)),
         betterAnswer: s.dontKnow
           ? {
               problem: L(lang, "답변을 포기함", "Declined to answer"),
               suggestion: L(lang, "모른다고 끝내지 말고 생각의 순서를 보여주기", "Show how you'd reason about it"),
               example: L(lang, "“직접 경험은 없지만, 저라면 먼저 [확인할 지표]를 보고 [접근 방법]으로 원인을 좁혀 보겠습니다.”", "“I haven't done it myself, but I'd start by checking [metric] and narrow it down with [approach].”"),
             }
-          : betterAnswerFor(worst, s),
+          : withOwnWords(betterAnswerFor(worst, s), exampleFromAnswer(plannedOnly ? "plan" : noStory ? "story" : worst, s)),
         roleSignal: roleSignalFor(ctx, turn.answer, s),
         evidence,
         notFound,
@@ -546,8 +579,8 @@ export class MockAIProvider implements AIProvider {
             ? L(lang, "각오는 잘 들었습니다. 다만 제가 여쭌 것에 대한 답을 듣고 싶었습니다.", "I hear the commitment, but I was looking for an answer to the question.")
           : repeated
             ? L(lang, "앞에서 하신 말씀과 같은 내용이네요.", "That's the same as your earlier answer.")
-            : // Rotate by turn so the same kind of answer doesn't get the same line every time.
-              reactionFor(quality, ctx.config.persona, lang, ctx.progress.asked + (ctx.progress.followUps ?? 0)),
+            : // Name what the candidate said when there's something concrete; otherwise rotate by turn.
+              (groundedReaction(quality, s, seed + ctx.progress.asked) ?? reactionFor(quality, ctx.config.persona, lang, ctx.progress.asked + (ctx.progress.followUps ?? 0))),
       },
       turn.answer,
     );
@@ -626,26 +659,6 @@ const EN_TEMPLATES: Record<"job" | "experience" | "situation" | "fit", string[]>
   situation: ["Suppose something went wrong with {topic} right before a deadline. What would you do first?", "If your manager and a client disagreed about {topic}, how would you handle it?"],
   fit: ["What draws you to {topic} as part of a {role} role?", "What have you done to prepare yourself for {topic}?"],
 };
-
-/**
- * Requirements stated in a job posting ("GA4 및 SQL 활용 능력", "B2B 영업 경험 우대")
- * → short phrases to verify ("GA4 및 SQL 활용", "B2B 영업").
- */
-export function extractJdRequirements(jd: string): string[] {
-  const out: string[] = [];
-  for (const raw of jd.split(/\n|[•·▪■◦\-*]\s|[,;]|(?<=[.])\s/)) {
-    const line = raw.replace(/^\s*(?:\d+[.)]|[-*•])\s*/, "").trim();
-    const m = line.match(/^(.{2,28}?)\s*(?:에\s?대한|관련|업무)?\s*(?:경험|능력|역량|지식|이해|활용\s?능력|가능자|가능|보유자|우대|자격증|숙련|역량 보유)/);
-    if (!m) continue;
-    const phrase = m[1].replace(/\s*(?:을|를|의|에|과|와|및)$/u, "").replace(/^(?:관련|유관)\s*/, "").trim();
-    if (phrase.length >= 2 && phrase.length <= 24 && !/^(?:해당|관련|직무|업무|원활한|우수한|뛰어난)$/.test(phrase)) out.push(phrase);
-  }
-  // Named tools come first ("React와 TypeScript"): they're the most concrete thing to verify.
-  const tools = [...extractTechs(jd), ...extractMethods(jd)].slice(0, 2);
-  const toolPhrase = tools.length === 2 ? `${tools[0]}${josa(tools[0], "와/과")} ${tools[1]}` : (tools[0] ?? "");
-  const rest = out.filter((o) => !tools.some((t) => o.includes(t)));
-  return [...new Set([toolPhrase, ...rest].filter(Boolean))].slice(0, 4);
-}
 
 /** "회계(재무회계) 직무의 실무 판단을 확인합니다." */
 function roleIntent(type: QuestionType, role: RoleContext, lang: Language): string {
@@ -906,6 +919,11 @@ function improveFor(k: CategoryKey, s: Signals): string {
     confidence: ko ? "'저는 ~을 했습니다'처럼 본인의 행동을 주어로 말해보세요." : "Use 'I did…' to make your own actions explicit.",
   };
   return m[k];
+}
+
+/** The template's problem and suggestion, with the example rebuilt from the candidate's own sentence when possible. */
+function withOwnWords(b: AnswerAnalysis["betterAnswer"], example: string | null): AnswerAnalysis["betterAnswer"] {
+  return example ? { ...b, example } : b;
 }
 
 function betterAnswerFor(k: CategoryKey, s: Signals): AnswerAnalysis["betterAnswer"] {

@@ -86,6 +86,7 @@ interface Props {
   onStart: () => void;
   onHistory: () => void;
   onNotes: () => void;
+  onIntro: () => void;
   onCompanies: () => void;
   onOpenCompany: (id: string) => void;
   onOpenInterview: (id: string) => void;
@@ -128,7 +129,7 @@ function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview
 /** A couple from each category so the section shows the range. */
 const FEATURED = COMPANY_CATEGORIES.flatMap((cat) => COMPANIES.filter((c) => c.category === cat).slice(0, 2)).slice(0, 8);
 
-export function LandingPage({ status, history, onStart, onHistory, onNotes, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard, onLegal }: Props) {
+export function LandingPage({ status, history, onStart, onHistory, onNotes, onIntro, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard, onLegal }: Props) {
   return (
     <div className="flex min-h-dvh flex-col">
       <TopBar
@@ -143,6 +144,9 @@ export function LandingPage({ status, history, onStart, onHistory, onNotes, onCo
             )}
             <Button size="sm" variant="ghost" onClick={onHistory}>
               <span className="hidden sm:inline">나의 </span>면접 기록
+            </Button>
+            <Button size="sm" variant="ghost" onClick={onIntro} className="hidden md:inline-flex">
+              자기소개 연습
             </Button>
             {history.length > 0 && (
               <Button size="sm" variant="ghost" onClick={onNotes} className="hidden sm:inline-flex">
@@ -175,6 +179,9 @@ export function LandingPage({ status, history, onStart, onHistory, onNotes, onCo
                   </Button>
                 )}
               </div>
+              <button type="button" onClick={onIntro} className="text-[14px] font-semibold text-accent underline-offset-4 hover:text-navy hover:underline">
+                시간이 없다면, 1분 자기소개만 연습하기
+              </button>
               <ol className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-[13px] text-faint lg:justify-start" aria-label="진행 순서">
                 {STEPS.map((step, i) => (
                   <li key={step}>

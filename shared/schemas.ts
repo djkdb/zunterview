@@ -351,14 +351,17 @@ export type Health = z.infer<typeof HealthSchema>;
 /* ───────────────────────────── Product events ───────────────────────────── */
 
 /** What the app reports about its own use (counts only; never answers, documents or names). */
-export const EVENT_NAMES = ["landing_viewed", "setup_started", "interview_started", "interview_completed", "interview_ended_early", "interview_terminated", "reanswer", "report_downloaded", "result_shared", "feedback", "notes_viewed", "note_written", "notes_drill", "notes_downloaded"] as const;
+export const EVENT_NAMES = ["landing_viewed", "setup_started", "interview_started", "interview_completed", "interview_ended_early", "interview_terminated", "reanswer", "report_downloaded", "result_shared", "feedback", "notes_viewed", "note_written", "notes_drill", "notes_downloaded", "notes_practice", "intro_practiced"] as const;
 export type EventName = (typeof EVENT_NAMES)[number];
+
+/** An event says a little about the setup (archetype, mode, …), never the content; this bounds how much. */
+export const EVENT_MAX_PROPS = 12;
 
 export const EventSchema = z.object({
   name: z.enum(EVENT_NAMES),
   props: z
     .record(z.string().regex(/^[a-z_]{1,24}$/), z.union([z.string().max(300), z.number(), z.boolean()]))
-    .refine((p) => Object.keys(p).length <= 8, "too many props")
+    .refine((p) => Object.keys(p).length <= EVENT_MAX_PROPS, "too many props")
     .optional(),
 });
 export type ProductEvent = z.infer<typeof EventSchema>;

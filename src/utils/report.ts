@@ -8,6 +8,8 @@ import type { Interview } from "../types/interview";
 import { durationLabel, longDate, pad2 } from "./format";
 import { strongestAndWeakest } from "./scoring";
 import { interviewHabits } from "./habits";
+import { interviewJdChecks } from "./jdCheck";
+import { SHEET_TITLE, sheetNo, sheetParts, type SheetPart } from "./sheetSections";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
@@ -20,12 +22,18 @@ export function buildReportHtml(i: Interview): string {
   const bars = CATEGORY_KEYS.map(
     (k) => `<div class="bar"><span>${CATEGORY_KO[k]}</span><div class="track"><div style="width:${scores[k]}%"></div></div><b>${scores[k]}점 ${grade(scores[k])}</b></div>`,
   ).join("");
-  const checkLabel = { mismatch: "다름", unexplained: "설명 부족", match: "일치" } as const;
-  const checks = i.documentChecks?.length
-    ? `<h2>4. 서류와 답변 비교</h2><ul>${i.documentChecks.map((c) => `<li><b>${checkLabel[c.status]}</b> ${c.source === "resume" ? "이력서" : "자기소개서"} ‘${esc(c.claim)}’: ${esc(c.detail)} (${c.questionNo}번 문항)</li>`).join("")}</ul>`
-    : "";
   const habits = interviewHabits(i);
-  const habitsNo = i.documentChecks?.length ? 5 : 4;
+  const jd = interviewJdChecks(i);
+  const parts = sheetParts({ opinion: Boolean(r), documents: Boolean(i.documentChecks?.length), jobPosting: jd.length > 0, habits: Boolean(habits) });
+  const h2 = (p: SheetPart) => `<h2>${sheetNo(parts, p)}. ${SHEET_TITLE[p]}</h2>`;
+  const checkLabel = { mismatch: "다름", unexplained: "설명 부족", match: "일치" } as const;
+  const jdLabel = { shown: "경험으로 보여 줌", mentioned: "언급만 함", missing: "답변에 없음" } as const;
+  const jdHtml = jd.length
+    ? `${h2("jobPosting")}<ul>${jd.map((c) => `<li><b>${jdLabel[c.status]}</b> ${esc(c.text)} (${c.preferred ? "우대" : "필수"})${c.quote ? `: ‘${esc(c.quote)}’ (${c.questionNo}번 문항)` : ""}</li>`).join("")}</ul>`
+    : "";
+  const checks = i.documentChecks?.length
+    ? `${h2("documents")}<ul>${i.documentChecks.map((c) => `<li><b>${checkLabel[c.status]}</b> ${c.source === "resume" ? "이력서" : "자기소개서"} ‘${esc(c.claim)}’: ${esc(c.detail)} (${c.questionNo}번 문항)</li>`).join("")}</ul>`
+    : "";
   const habitItems = habits
     ? [
         ...(habits.hedges && habits.hedges.count >= 2 ? [`‘~것 같습니다’ ${habits.hedges.count}번 (${habits.hedges.questionNos.join(", ")}번 문항)`] : []),
@@ -36,7 +44,7 @@ export function buildReportHtml(i: Interview): string {
       ]
     : [];
   const habitsHtml = habits
-    ? `<h2>${habitsNo}. 말버릇 점검</h2>${habitItems.length ? list(habitItems) : "<p>눈에 띄는 말버릇이 없었습니다.</p>"}`
+    ? `${h2("habits")}${habitItems.length ? list(habitItems) : "<p>눈에 띄는 말버릇이 없었습니다.</p>"}`
     : "";
   const questions = i.questions
     .map((q, idx) => {
@@ -78,13 +86,13 @@ h1{font-size:26px;letter-spacing:.3em;color:#0f1b2e;margin:0}.brand{font-size:11
 <div><span>답변 문항</span>${i.questions.length}문항${i.terminated === "informal" ? " (면접관 중단: 반말과 무성의한 답변)" : i.terminated ? " (면접관 중단 — 부적절한 발언)" : i.endedEarly ? " (조기 종료)" : ""}</div>
 <div><span>면접 위원</span>${panel.center.name}(위원장), ${panel.left.name}, ${panel.right.name}</div>
 </div>
-<h2>1. 종합 평가</h2>
+${h2("summary")}
 <p class="overall">${i.overallScore}<small> / 100점, ${grade(i.overallScore ?? 0)}등급</small></p>
 ${r ? `<p><b>${esc(r.headline)}</b></p>` : ""}
 <p>가장 좋은 항목은 <b>${CATEGORY_KO[strongest]}</b>, 보완이 필요한 항목은 <b>${CATEGORY_KO[weakest]}</b>입니다.</p>
-<h2>2. 항목별 평가</h2>${bars}
-${r ? `<h2>3. 면접위원 종합 의견</h2><p><b>“${esc(r.topFeedback)}”</b></p><h3>강점</h3>${list(r.strengths)}<h3>보완점</h3>${list(r.improvements)}<h3>다음 연습 과제</h3>${list(r.nextSteps)}` : ""}
-${checks}${habitsHtml}<h2>${habitsNo + (habits ? 1 : 0)}. 문항별 평가</h2>${questions}
+${h2("categories")}${bars}
+${r ? `${h2("opinion")}<p><b>“${esc(r.topFeedback)}”</b></p><h3>강점</h3>${list(r.strengths)}<h3>보완점</h3>${list(r.improvements)}<h3>다음 연습 과제</h3>${list(r.nextSteps)}` : ""}
+${checks}${jdHtml}${habitsHtml}${h2("questions")}${questions}
 <p class="note">${DISCLAIMER} 예시 답변은 참고용이며 본인의 경험에 대한 사실이 아닙니다.</p>
 </body></html>`;
 }

@@ -32,6 +32,7 @@ describe("speechHabits", () => {
     const h = speechHabits([
       { no: 1, text: "그때 제가 직접 고쳤어요. 확인 절차가 중요." },
       { no: 2, text: "결과는 두 배였거든요." },
+      { no: 3, text: "안녕하세요. 지원자 김민수입니다." },
     ]);
     expect(h.casualEndings?.count).toBe(2);
     expect(h.casualEndings?.questionNos).toEqual([1, 2]);

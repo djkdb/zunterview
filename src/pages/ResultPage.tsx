@@ -26,6 +26,9 @@ import { ReanswerPractice } from "../components/ReanswerPractice";
 import { SheetFeedback } from "../components/SheetFeedback";
 import { SpeechHabits } from "../components/SpeechHabits";
 import { interviewHabits } from "../utils/habits";
+import { interviewJdChecks } from "../utils/jdCheck";
+import { JdChecks } from "../components/JdChecks";
+import { SHEET_TITLE, sheetNo, sheetParts, type SheetPart } from "../utils/sheetSections";
 import { track } from "../services/events";
 import { josa } from "../../shared/korean";
 import { pickForPractice } from "../utils/practice";
@@ -78,9 +81,10 @@ function SheetSection({ no, title, children }: { no: number; title: string; chil
 export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onRetake, onHistory, onNotes, onHome, onReanswer }: Props) {
   const checks = i.documentChecks ?? [];
   const habits = useMemo(() => interviewHabits(i), [i]);
-  // Sections 4 and up are numbered by what this interview has.
-  const habitsNo = checks.length > 0 ? 5 : 4;
-  const questionsNo = habitsNo + (habits ? 1 : 0);
+  const jd = useMemo(() => interviewJdChecks(i), [i]);
+  // Optional parts are numbered by what this interview has.
+  const parts = sheetParts({ opinion: Boolean(i.report), documents: checks.length > 0, jobPosting: jd.length > 0, habits: Boolean(habits) });
+  const no = (p: SheetPart) => sheetNo(parts, p);
   const [open, setOpen] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const panel = useMemo(() => buildPanel(i.config), [i.config]);
@@ -107,14 +111,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
     track("report_downloaded");
   };
   const practice = useMemo(() => pickForPractice(i).length, [i]);
-  const sections: [number, string][] = [
-    [1, "종합 평가"],
-    [2, "항목별 평가"],
-    ...(r ? ([[3, "면접위원 종합 의견"]] as [number, string][]) : []),
-    ...(checks.length ? ([[4, "서류와 답변 비교"]] as [number, string][]) : []),
-    ...(habits ? ([[habitsNo, "말버릇 점검"]] as [number, string][]) : []),
-    [questionsNo, "문항별 평가"],
-  ];
+  const sections: [number, string][] = parts.map((p) => [no(p), SHEET_TITLE[p]]);
 
   const company = getCompany(i.config.companyId);
   const info: [string, ReactNode][] = [
@@ -165,7 +162,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
             ))}
           </dl>
 
-          <SheetSection no={1} title="종합 평가" delay={0.15}>
+          <SheetSection no={no("summary")} title={SHEET_TITLE.summary} delay={0.15}>
             <div className="grid items-center gap-6 sm:grid-cols-[auto_1fr]">
               <div className="flex items-center gap-5">
                 <ScoreRing score={overall} size={160} />
@@ -212,7 +209,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
             </div>
           </SheetSection>
 
-          <SheetSection no={2} title="항목별 평가" delay={0.25}>
+          <SheetSection no={no("categories")} title={SHEET_TITLE.categories} delay={0.25}>
             <div className="grid gap-4 lg:grid-cols-[1fr_280px]">
               <table className="w-full border-collapse text-[13px] sm:text-[14px]">
                 <thead>
@@ -253,7 +250,7 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
           </SheetSection>
 
           {r && (
-            <SheetSection no={3} title="면접위원 종합 의견" delay={0.35}>
+            <SheetSection no={no("opinion")} title={SHEET_TITLE.opinion} delay={0.35}>
               <div className="rounded-lg border border-line bg-surface-2/60 p-4 sm:p-5">
                 <p className="text-[16px] leading-relaxed font-bold text-navy">“{r.topFeedback}”</p>
                 <div className="mt-4 grid gap-5 md:grid-cols-3">
@@ -283,18 +280,24 @@ export function ResultPage({ interview: i, fromHistory, storageOk, onNew, onReta
           )}
 
           {checks.length > 0 && (
-            <SheetSection no={4} title="서류와 답변 비교">
+            <SheetSection no={no("documents")} title={SHEET_TITLE.documents}>
               <DocumentChecks checks={checks} />
             </SheetSection>
           )}
 
+          {jd.length > 0 && (
+            <SheetSection no={no("jobPosting")} title={SHEET_TITLE.jobPosting}>
+              <JdChecks checks={jd} />
+            </SheetSection>
+          )}
+
           {habits && (
-            <SheetSection no={habitsNo} title="말버릇 점검">
+            <SheetSection no={no("habits")} title={SHEET_TITLE.habits}>
               <SpeechHabits habits={habits} />
             </SheetSection>
           )}
 
-          <SheetSection no={questionsNo} title="문항별 평가" delay={0.45}>
+          <SheetSection no={no("questions")} title={SHEET_TITLE.questions} delay={0.45}>
             <p className="mb-3 text-[13px] text-faint">문항을 누르면 내 답변, 평가 근거, 개선 방향을 볼 수 있습니다.</p>
             <ol className="space-y-2" lang={i.config.language}>
               {i.questions.map((q, idx) => (

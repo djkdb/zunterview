@@ -61,7 +61,8 @@ const sentences = (text: string) =>
     .filter(Boolean);
 
 const CASUAL_END = /요[.?!~…]*$/;
-const NOT_CASUAL = /(?:필요|중요|수요|주요|요요)[.?!~…]*$/;
+// Words that end in 요, and greetings ("안녕하세요"), which are polite as they are.
+const NOT_CASUAL = /(?:필요|중요|수요|주요|요요|안녕하세요)[.?!~…]*$/;
 
 function tokenOf(raw: string): string {
   const t = raw.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");

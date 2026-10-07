@@ -11,23 +11,26 @@ import { CompanyPage } from "./pages/CompanyPage";
 import { LegalPage, type LegalDoc } from "./pages/LegalPage";
 import { AdminPage } from "./pages/AdminPage";
 import { NotesPage } from "./pages/NotesPage";
-import type { InterviewSummary } from "./types/interview";
+import { IntroPage } from "./pages/IntroPage";
+import type { InterviewConfig, InterviewSummary, PresetQuestion } from "./types/interview";
+import { DEFAULT_CONFIG } from "./config/options";
 import { track } from "./services/events";
-import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview } from "./utils/storage";
+import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview, loadLastConfig } from "./utils/storage";
 
 const loadResultPage = () => import("./pages/ResultPage").then((m) => ({ default: m.ResultPage }));
 const ResultPage = lazy(loadResultPage);
 
 const DEBUG = new URLSearchParams(window.location.search).get("debug") === "true";
 
-type Screen = "landing" | "history" | "notes" | "companies" | "company" | "legal" | "admin" | "setup" | "interview" | "result";
-type IdleView = "landing" | "history" | "notes" | "companies" | "company" | "legal" | "admin";
+type Screen = "landing" | "history" | "notes" | "intro" | "companies" | "company" | "legal" | "admin" | "setup" | "interview" | "result";
+type IdleView = "landing" | "history" | "notes" | "intro" | "companies" | "company" | "legal" | "admin";
 
 /** /terms, /privacy and /admin open those pages directly (links from outside, search results). */
 function initialView(): { view: IdleView; legal: LegalDoc } {
   const path = window.location.pathname.replace(/\/+$/, "");
   if (path === "/terms" || path === "/privacy") return { view: "legal", legal: path === "/terms" ? "terms" : "privacy" };
   if (path === "/admin") return { view: "admin", legal: "privacy" };
+  if (path === "/intro") return { view: "intro", legal: "privacy" };
   return { view: "landing", legal: "privacy" };
 }
 
@@ -75,7 +78,7 @@ export default function App() {
       actions.reset();
       window.scrollTo(0, 0);
       // Keep the address bar meaningful for the pages people link to.
-      const path = v === "legal" ? `/${legalDocRef.current}` : v === "admin" ? "/admin" : "/";
+      const path = v === "legal" ? `/${legalDocRef.current}` : v === "admin" ? "/admin" : v === "intro" ? "/intro" : "/";
       if (window.location.pathname !== path) window.history.replaceState(null, "", path + window.location.search);
     },
     [actions],
@@ -90,6 +93,7 @@ export default function App() {
   );
   const goHome = useCallback(() => goIdle("landing"), [goIdle]);
   const goHistory = useCallback(() => goIdle("history"), [goIdle]);
+  const goIntro = useCallback(() => goIdle("intro"), [goIdle]);
   const goNotes = useCallback(() => {
     track("notes_viewed");
     goIdle("notes");
@@ -123,6 +127,21 @@ export default function App() {
     [actions],
   );
   const canOpen = useCallback((id: string) => loadInterview(id) !== null, []);
+  /** A notebook interview borrows the settings of the interview the questions came from. */
+  const practiceFromNotes = useCallback(
+    (preset: PresetQuestion[], fromId: string | null) => {
+      const base: InterviewConfig = (fromId && loadInterview(fromId)?.config) || { ...DEFAULT_CONFIG, ...loadLastConfig() };
+      // Nothing to borrow a job from (only written answers left): choose it in setup first.
+      if (!base.position.trim()) return goSetup();
+      const config: InterviewConfig = { ...base, preset, questionLimit: preset.length };
+      delete config.documents;
+      void loadResultPage();
+      setFromHistory(false);
+      window.scrollTo(0, 0);
+      actions.start(config);
+    },
+    [actions, goSetup],
+  );
   const clearData = useCallback(() => {
     clearAllLocalData();
     setHistoryVersion((v) => v + 1);
@@ -146,6 +165,7 @@ export default function App() {
                 onStart={() => goSetup()}
                 onHistory={goHistory}
                 onNotes={goNotes}
+                onIntro={goIntro}
                 onCompanies={goCompanies}
                 onOpenCompany={openCompany}
                 onOpenInterview={openInterview}
@@ -162,7 +182,8 @@ export default function App() {
             {screen === "legal" && <LegalPage doc={legalDoc} onHome={goHome} onSwitch={openLegal} />}
             {screen === "admin" && <AdminPage onHome={goHome} />}
             {screen === "history" && <HistoryPage history={history} onOpen={openInterview} canOpen={canOpen} onStart={() => goSetup()} onHome={goHome} onClear={clearData} onNotes={goNotes} />}
-            {screen === "notes" && <NotesPage onStart={() => goSetup()} onHistory={goHistory} onHome={goHome} />}
+            {screen === "intro" && <IntroPage status={status} onHome={goHome} onNotes={goNotes} onStart={() => goSetup()} />}
+            {screen === "notes" && <NotesPage onStart={() => goSetup()} onPractice={practiceFromNotes} onHistory={goHistory} onHome={goHome} />}
             {screen === "companies" && <CompaniesPage onOpen={openCompany} onHome={goHome} onStart={() => goSetup()} />}
             {screen === "company" && companyView && (
               <CompanyPage id={companyView} onStart={(companyId, track) => goSetup({ companyId, track })} onBack={goCompanies} onHome={goHome} />

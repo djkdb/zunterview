@@ -12,10 +12,14 @@ import { LegalPage, type LegalDoc } from "./pages/LegalPage";
 import { AdminPage } from "./pages/AdminPage";
 import { NotesPage } from "./pages/NotesPage";
 import { IntroPage } from "./pages/IntroPage";
+import { PlanCard } from "./components/PlanCard";
+import { COMPANIES } from "../shared/companies";
+import { dayKey, daysBetween, type TaskKind } from "./utils/plan";
+import { practiceState } from "./utils/planState";
 import type { InterviewConfig, InterviewSummary, PresetQuestion } from "./types/interview";
 import { DEFAULT_CONFIG } from "./config/options";
 import { track } from "./services/events";
-import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview, loadLastConfig } from "./utils/storage";
+import { clearActiveInterview, clearAllLocalData, loadActiveInterview, loadHistory, loadInterview, loadLastConfig, loadPlan, savePlan, clearPlan } from "./utils/storage";
 
 const loadResultPage = () => import("./pages/ResultPage").then((m) => ({ default: m.ResultPage }));
 const ResultPage = lazy(loadResultPage);
@@ -142,8 +146,29 @@ export default function App() {
     },
     [actions, goSetup],
   );
+  /* 면접 준비 플랜: re-read whenever the landing page shows, so today's ticks are current. */
+  const [plan, setPlan] = useState(loadPlan);
+  const planState = useMemo(() => {
+    void historyVersion;
+    void state.phase;
+    void idleView;
+    return practiceState();
+  }, [historyVersion, state.phase, idleView]);
+  const planAction = useCallback(
+    (kind: TaskKind) => {
+      track("plan_task", { kind });
+      if (kind === "intro") return goIntro();
+      if (kind === "script" || kind === "review") return goNotes();
+      if (kind === "weak" && planState.weak.length) return practiceFromNotes(planState.weak, planState.fromInterviewId);
+      if (kind === "gaps" && planState.gaps.length) return practiceFromNotes(planState.gaps, planState.fromInterviewId);
+      const company = COMPANIES.find((c) => c.name === plan?.company || c.shortName === plan?.company);
+      goSetup(company ? { companyId: company.id } : null);
+    },
+    [goIntro, goNotes, goSetup, plan, planState, practiceFromNotes],
+  );
   const clearData = useCallback(() => {
     clearAllLocalData();
+    setPlan(null);
     setHistoryVersion((v) => v + 1);
   }, []);
 
@@ -177,6 +202,24 @@ export default function App() {
                   setActiveVersion((v) => v + 1);
                 }}
                 onLegal={openLegal}
+                hasPlan={Boolean(plan)}
+                plan={
+                  <PlanCard
+                    plan={plan}
+                    state={planState}
+                    defaultPosition={planState.position}
+                    onSave={(p) => {
+                      savePlan(p);
+                      setPlan(p);
+                      track("plan_set", { days: daysBetween(dayKey(Date.now()), p.date), company: Boolean(p.company) });
+                    }}
+                    onClear={() => {
+                      clearPlan();
+                      setPlan(null);
+                    }}
+                    onAction={planAction}
+                  />
+                }
               />
             )}
             {screen === "legal" && <LegalPage doc={legalDoc} onHome={goHome} onSwitch={openLegal} />}

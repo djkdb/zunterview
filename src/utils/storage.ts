@@ -5,6 +5,7 @@
  */
 import type { Interview, InterviewConfig, InterviewSummary } from "../types/interview";
 import type { IntroAttempt } from "./intro";
+import type { InterviewPlan } from "./plan";
 import { strongestAndWeakest } from "./scoring";
 import { getCompany } from "../../shared/companies";
 import { hasDocuments } from "../../shared/documents";
@@ -19,6 +20,7 @@ const KEYS = {
   documents: "interview-ai:documents:v1",
   scripts: "interview-ai:scripts:v1",
   intro: "interview-ai:intro:v1",
+  plan: "interview-ai:plan:v1",
 } as const;
 const MAX_FULL_RECORDS = 10;
 
@@ -111,6 +113,7 @@ export function clearAllLocalData() {
   remove(KEYS.documents);
   remove(KEYS.scripts);
   remove(KEYS.intro);
+  remove(KEYS.plan);
 }
 
 /** Every interview whose full sheet is still kept (the most recent ten), newest first. */
@@ -184,3 +187,12 @@ export function loadIntroAttempts(): IntroAttempt[] {
 export function saveIntroAttempt(a: IntroAttempt): boolean {
   return write(KEYS.intro, [a, ...loadIntroAttempts()].slice(0, MAX_INTRO_ATTEMPTS));
 }
+
+/* The real interview date the candidate is preparing for. */
+export function loadPlan(): InterviewPlan | null {
+  const p = read<InterviewPlan | null>(KEYS.plan, null);
+  return p && /^\d{4}-\d{2}-\d{2}$/.test(p.date) && typeof p.position === "string" ? p : null;
+}
+export const savePlan = (p: InterviewPlan) => write(KEYS.plan, p);
+export const clearPlan = () => remove(KEYS.plan);
+

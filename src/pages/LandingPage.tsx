@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { InterviewHistory } from "../components/InterviewHistory";
 import { CompanyCard } from "../components/CompanyCard";
@@ -95,6 +95,9 @@ interface Props {
   onResume: () => void;
   onDiscard: () => void;
   onLegal: (doc: "terms" | "privacy") => void;
+  /** 면접 준비 플랜: shown at the top once a date is set, below the hero before that. */
+  plan: ReactNode;
+  hasPlan: boolean;
 }
 
 function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview; onResume: () => void; onDiscard: () => void }) {
@@ -129,7 +132,7 @@ function ResumeBanner({ active, onResume, onDiscard }: { active: ActiveInterview
 /** A couple from each category so the section shows the range. */
 const FEATURED = COMPANY_CATEGORIES.flatMap((cat) => COMPANIES.filter((c) => c.category === cat).slice(0, 2)).slice(0, 8);
 
-export function LandingPage({ status, history, onStart, onHistory, onNotes, onIntro, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard, onLegal }: Props) {
+export function LandingPage({ status, history, onStart, onHistory, onNotes, onIntro, onCompanies, onOpenCompany, onOpenInterview, canOpen, active, onResume, onDiscard, onLegal, plan, hasPlan }: Props) {
   return (
     <div className="flex min-h-dvh flex-col">
       <TopBar
@@ -145,19 +148,25 @@ export function LandingPage({ status, history, onStart, onHistory, onNotes, onIn
             <Button size="sm" variant="ghost" onClick={onHistory}>
               <span className="hidden sm:inline">나의 </span>면접 기록
             </Button>
-            <Button size="sm" variant="ghost" onClick={onIntro} className="hidden md:inline-flex">
-              자기소개 연습
-            </Button>
-            {history.length > 0 && (
-              <Button size="sm" variant="ghost" onClick={onNotes} className="hidden sm:inline-flex">
-                답변 노트
+            {/* A wrapper hides it: the button's own inline-flex would win over a "hidden" class. */}
+            <span className="hidden md:contents">
+              <Button size="sm" variant="ghost" onClick={onIntro}>
+                자기소개 연습
               </Button>
+            </span>
+            {history.length > 0 && (
+              <span className="hidden sm:contents">
+                <Button size="sm" variant="ghost" onClick={onNotes}>
+                  답변 노트
+                </Button>
+              </span>
             )}
           </>
         }
       />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 sm:px-6">
         {active && <ResumeBanner active={active} onResume={onResume} onDiscard={onDiscard} />}
+        {hasPlan && <div className="pt-6">{plan}</div>}
         <section className="grid items-center gap-10 py-10 lg:grid-cols-[1fr_1.15fr] lg:py-16">
           <div className="text-center lg:text-left">
             <h1 className="text-[30px] leading-[1.25] font-extrabold tracking-tight text-navy sm:text-[44px]">
@@ -196,6 +205,8 @@ export function LandingPage({ status, history, onStart, onHistory, onNotes, onIn
           </div>
           <RoomPreview />
         </section>
+
+        {!hasPlan && <div className="pb-10">{plan}</div>}
 
         <section className="pb-12" aria-labelledby="follow-up-title">
           <h2 id="follow-up-title" className="text-base font-bold text-ink">

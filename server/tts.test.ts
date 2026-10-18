@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { resetTtsState, synthesize, ttsProviders, voiceId } from "./tts";
+import { audioType, resetTtsState, synthesize, ttsProviders, voiceId } from "./tts";
 
 afterEach(() => {
   vi.unstubAllEnvs();
@@ -112,5 +112,37 @@ describe("a provider that refuses the account", () => {
     vi.spyOn(console, "warn").mockImplementation(() => {});
     for (const line of ["첫째 줄입니다.", "둘째 줄입니다.", "셋째 줄입니다."]) expect((await synthesize(line, "center")).provider).toBe("elevenlabs");
     expect(calls.filter((c) => c === "typecast")).toHaveLength(1);
+  });
+});
+
+describe("VoxCPM (self-hosted)", () => {
+  afterEach(() => vi.unstubAllGlobals());
+
+  it("goes first when VOXCPM_URL is set and sends each seat's reference clip", async () => {
+    vi.stubEnv("VOXCPM_URL", "http://gpu-box:8000/");
+    vi.stubEnv("TYPECAST_API_KEY", "t");
+    for (const k of ["ELEVEN_API_KEY", "ELEVENLABS_API_KEY", "FISH_AUDIO_API_KEY"]) vi.stubEnv(k, "");
+    expect(ttsProviders()).toEqual(["voxcpm", "typecast"]);
+    let seen: { url: string; body: Record<string, string> } | null = null;
+    vi.stubGlobal("fetch", async (url: string, init: { body: string }) => {
+      seen = { url, body: JSON.parse(init.body) };
+      return new Response(new Uint8Array([82, 73, 70, 70]), { status: 200 });
+    });
+    const out = await synthesize("그 결과 어떤 변화가 있었나요?", "center");
+    expect(out.provider).toBe("voxcpm");
+    expect(audioType(out.provider)).toBe("audio/wav");
+    expect(seen!.url).toBe("http://gpu-box:8000/v1/audio/speech");
+    expect(seen!.body).toMatchObject({ model: "openbmb/VoxCPM2", input: "그 결과 어떤 변화가 있었나요?", response_format: "wav" });
+    expect(seen!.body.ref_audio).toMatch(/^data:audio\/wav;base64,UklGR/);
+  });
+
+  it("falls back to the next provider when the VoxCPM server is down", async () => {
+    vi.stubEnv("VOXCPM_URL", "http://gpu-box:8000");
+    vi.stubEnv("TYPECAST_API_KEY", "t");
+    vi.stubGlobal("fetch", async (url: string) => {
+      if (url.includes("gpu-box")) throw new Error("connect ECONNREFUSED");
+      return new Response(new Uint8Array([1, 2, 3]), { status: 200 });
+    });
+    expect((await synthesize("네, 알겠습니다.", "left")).provider).toBe("typecast");
   });
 });

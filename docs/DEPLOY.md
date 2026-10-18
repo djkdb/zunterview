@@ -22,6 +22,7 @@ Render를 쓰면 저장소의 `render.yaml`로 바로 만들 수 있습니다(�
 - [ ] `DATA_DIR`에 영구 디스크 연결 (재배포해도 그날 예산이 이어지도록)
 - [ ] `src/pages/LegalPage.tsx`의 운영자 정보(상호, 개인정보 보호책임자, 연락처) 채우기, 약관과 방침 법률 검토
 - [ ] TTS 키 상태 확인 (Typecast 차단 여부, TROUBLESHOOTING 14)
+- [ ] VoxCPM을 쓰면 GPU 서버에 띄우고 `VOXCPM_URL` 설정. `/api/health`의 `tts`가 `voxcpm`인지 확인 (CPU로는 질문당 16~25초라 실시간으로 쓰기 어려움)
 - [ ] 도메인 연결 후 `index.html`의 `og:image`를 전체 주소로 바꾸기 (일부 메신저는 상대 경로 미리보기를 못 읽음)
 
 ## 운영 중 보는 것

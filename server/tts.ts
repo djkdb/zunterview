@@ -1,7 +1,16 @@
 /**
  * Interviewer text-to-speech. API keys stay on the server; each interviewer seat has its own voice.
- * Configured providers are tried in order (Typecast, ElevenLabs, Fish Audio); when one fails
+ * Configured providers are tried in order (VoxCPM, Typecast, ElevenLabs, Fish Audio); when one fails
  * (no credit, outage) the next one reads the line, so the panel keeps its neural voices.
+ *
+ * VoxCPM2 (https://github.com/OpenBMB/VoxCPM): open-source TTS (Apache-2.0) you run yourself
+ *   VOXCPM_URL=http://gpu-host:8000     enables it: a server with the OpenAI-style /v1/audio/speech
+ *                                       (vLLM-Omni `vllm serve openbmb/VoxCPM2 --omni`, or scripts/voxcpm_server.py)
+ *   VOXCPM_MODEL=openbmb/VoxCPM2        optional
+ *   VOXCPM_API_KEY=...                  optional bearer token for that server
+ *   VOXCPM_TIMEOUT_MS=60000             optional (a CPU server is slow)
+ *   Each seat keeps one voice by cloning a short reference clip in server/voices/voxcpm/<seat>.wav,
+ *   sent as `ref_audio`. Those clips were made with VoxCPM2's voice design (no real person's voice).
  *
  * Typecast (https://typecast.ai/docs): Korean voices
  *   TYPECAST_API_KEY=...               enables it (secret, server env only)
@@ -22,16 +31,19 @@
  *   FISH_AUDIO_MODEL=s2.1-pro          optional TTS model header
  *   FISH_AUDIO_API_URL=...             optional endpoint override (proxy / testing)
  */
+import { existsSync, readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import type { Voice } from "../shared/schemas";
 
-export type TtsProvider = "typecast" | "elevenlabs" | "fish";
+export type TtsProvider = "voxcpm" | "typecast" | "elevenlabs" | "fish";
 
 const env = (k: string) => process.env[k]?.trim() || "";
 const elevenKey = () => env("ELEVEN_API_KEY") || env("ELEVENLABS_API_KEY");
 
 /** Configured providers, in the order they are tried. */
 export function ttsProviders(): TtsProvider[] {
-  return [env("TYPECAST_API_KEY") ? "typecast" : null, elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
+  return [env("VOXCPM_URL") ? "voxcpm" : null, env("TYPECAST_API_KEY") ? "typecast" : null, elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
 }
 
 export const isTtsConfigured = (): boolean => ttsProviders().length > 0;
@@ -44,7 +56,7 @@ export const isTtsConfigured = (): boolean => ttsProviders().length > 0;
  * added them) each seat falls back to a default voice every account has (ELEVEN_PREMADE).
  * Fish Audio: fish.audio/app/text-to-speech/?modelId=<id> plays each one.
  */
-const BUILT_IN: Record<TtsProvider, Record<Voice, string>> = {
+const BUILT_IN: Record<Exclude<TtsProvider, "voxcpm">, Record<Voice, string>> = {
   typecast: {
     left: "tc_69f2e455ea79fd197aa0476f", // 이서연 책임 (인사팀): Seohyeon, announcer-like young female
     center: "tc_685cdfad4027aeec7d097a28", // 김도윤 팀장 (면접위원장): Cheolhoon, middle-aged male
@@ -73,7 +85,7 @@ const ELEVEN_PREMADE: Record<Voice, string> = {
   staff: "cgSgspJ2msm6clMCkdW9", // Jessica
 };
 
-export function voiceId(voice: Voice, provider: TtsProvider = "fish"): string {
+export function voiceId(voice: Voice, provider: Exclude<TtsProvider, "voxcpm"> = "fish"): string {
   const prefix = { typecast: "TYPECAST_VOICE_", elevenlabs: "ELEVEN_VOICE_", fish: "FISH_VOICE_" }[provider];
   return env(prefix + voice.toUpperCase()) || env(`${prefix}DEFAULT`) || BUILT_IN[provider][voice];
 }
@@ -109,7 +121,7 @@ export async function synthesize(text: string, voice: Voice, speed?: number): Pr
   const ready = providers.filter((p) => (resting.get(p) ?? 0) <= now);
   for (const provider of ready.length ? ready : providers.slice(-1)) {
     try {
-      const audio = await { typecast, elevenlabs: eleven, fish }[provider](text, voice, speed);
+      const audio = await { voxcpm, typecast, elevenlabs: eleven, fish }[provider](text, voice, speed);
       resting.delete(provider);
       remember(`${provider}|${voice}|${speed ?? 1}|${text}`, audio);
       return { audio, cached: false, provider };
@@ -133,9 +145,9 @@ export const resetTtsState = () => {
 };
 
 /** POST with a timeout; turns a failed response into a TtsError whose message says why (logged server-side only). */
-async function post(name: string, url: string, headers: Record<string, string>, body: unknown): Promise<Buffer> {
+async function post(name: string, url: string, headers: Record<string, string>, body: unknown, timeoutMs = 20_000): Promise<Buffer> {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20_000);
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   let res: Response;
   try {
     res = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json", ...headers }, signal: controller.signal, body: JSON.stringify(body) });
@@ -152,6 +164,31 @@ async function post(name: string, url: string, headers: Record<string, string>, 
   if (!audio.length) throw new TtsError(502, `${name} returned no audio`);
   return audio;
 }
+
+/** Reference clips that give each seat a steady VoxCPM voice, read once. */
+const refClips = new Map<Voice, string | null>();
+function refAudio(voice: Voice): string | null {
+  if (!refClips.has(voice)) {
+    const file = join(dirname(fileURLToPath(import.meta.url)), "voices", "voxcpm", `${voice}.wav`);
+    refClips.set(voice, existsSync(file) ? `data:audio/wav;base64,${readFileSync(file).toString("base64")}` : null);
+  }
+  return refClips.get(voice) ?? null;
+}
+
+function voxcpm(text: string, voice: Voice): Promise<Buffer> {
+  const ref = refAudio(voice);
+  const headers: Record<string, string> = env("VOXCPM_API_KEY") ? { Authorization: `Bearer ${env("VOXCPM_API_KEY")}` } : {};
+  return post(
+    "VoxCPM",
+    `${env("VOXCPM_URL").replace(/\/+$/, "")}/v1/audio/speech`,
+    headers,
+    { model: env("VOXCPM_MODEL") || "openbmb/VoxCPM2", input: text, voice: "default", response_format: "wav", ...(ref ? { ref_audio: ref } : {}) },
+    Number(env("VOXCPM_TIMEOUT_MS")) || 60_000,
+  );
+}
+
+/** What each provider returns. */
+export const audioType = (p: TtsProvider) => (p === "voxcpm" ? "audio/wav" : "audio/mpeg");
 
 function typecast(text: string, voice: Voice, speed?: number): Promise<Buffer> {
   return post("Typecast", env("TYPECAST_API_URL") || "https://api.typecast.ai/v1/text-to-speech", { "X-API-KEY": env("TYPECAST_API_KEY") }, {

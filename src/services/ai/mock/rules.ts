@@ -273,7 +273,8 @@ export function groundedReaction(quality: string, s: Signals, seed: number): str
   if (s.lang !== "ko") return null;
   if (quality === "strong" || quality === "adequate") {
     const options: string[] = [];
-    if (s.metric) options.push(`네, ${s.metric}까지 말씀해 주셔서 이해가 됩니다.`);
+    // A period ("4년", "3개월") is background, not a result worth acknowledging.
+    if (s.metric && !/(?:개월|주일|주|일|년|년간)$/.test(s.metric)) options.push(`네, ${s.metric}까지 말씀해 주셔서 이해가 됩니다.`);
     if (s.methods[0]) options.push(`네, ${s.methods[0]}${ro(s.methods[0])} 접근하셨군요.`);
     if (s.project) options.push(`네, ${s.project} 이야기는 잘 들었습니다.`);
     if (s.roleClaim) options.push(`네, ${s.roleClaim}${josa(s.roleClaim, "을/를")} 맡으셨군요.`);

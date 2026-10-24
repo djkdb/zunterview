@@ -97,3 +97,12 @@ describe("pickMetric", () => {
     expect(pickMetric("협찬 420만 원을 받았습니다.")).toBe("420만 원");
   });
 });
+
+describe("groundedReaction with a period", () => {
+  it("doesn't acknowledge a duration as if it were a result", () => {
+    const s = readSignals("제조업체 재무팀에서 4년간 월 결산을 맡았습니다. 결산 체크리스트를 만들어 마감을 앞당겼습니다.", "자기소개", "ko");
+    const lines = [1, 2, 4, 5].map((seed) => groundedReaction("strong", s, seed)).filter(Boolean);
+    expect(lines.some((l) => /4년/.test(l!))).toBe(false);
+  });
+});
+

@@ -1,6 +1,6 @@
 /**
  * Interviewer text-to-speech. API keys stay on the server; each interviewer seat has its own voice.
- * Configured providers are tried in order (VoxCPM, Typecast, ElevenLabs, Fish Audio); when one fails
+ * Configured providers are tried in order (VoxCPM, Fish Audio, Typecast, ElevenLabs; TTS_ORDER changes it); when one fails
  * (no credit, outage) the next one reads the line, so the panel keeps its neural voices.
  *
  * VoxCPM2 (https://github.com/OpenBMB/VoxCPM): open-source TTS (Apache-2.0) you run yourself
@@ -30,7 +30,7 @@
  * Fish Audio (https://docs.fish.audio)
  *   FISH_AUDIO_API_KEY=...             enables it (secret, server env only)
  *   FISH_VOICE_CENTER / _LEFT / _RIGHT / _STAFF / _DEFAULT = <model id>     optional seat overrides
- *   FISH_AUDIO_MODEL=s2.1-pro          optional TTS model header
+ *   FISH_AUDIO_MODEL=s2.1-pro-free     default: the free S2.1 Pro model (fair use, no published cap); s2.1-pro is paid
  *   FISH_AUDIO_API_URL=...             optional endpoint override (proxy / testing)
  */
 import { existsSync, readFileSync } from "node:fs";
@@ -44,8 +44,27 @@ const env = (k: string) => process.env[k]?.trim() || "";
 const elevenKey = () => env("ELEVEN_API_KEY") || env("ELEVENLABS_API_KEY");
 
 /** Configured providers, in the order they are tried. */
+const DEFAULT_ORDER: TtsProvider[] = ["voxcpm", "fish", "typecast", "elevenlabs"];
+
+/**
+ * Configured providers, in the order they are tried. Free ones come first: Fish Audio's free model
+ * reads a whole interview, while Typecast's free account was blocked partway through one
+ * (TROUBLESHOOTING 28), which left the panel switching voices mid-interview.
+ * TTS_ORDER=typecast,fish,… sets another order.
+ */
 export function ttsProviders(): TtsProvider[] {
-  return [env("VOXCPM_URL") || env("PIXAZO_API_KEY") ? "voxcpm" : null, env("TYPECAST_API_KEY") ? "typecast" : null, elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
+  const configured: Record<TtsProvider, boolean> = {
+    voxcpm: Boolean(env("VOXCPM_URL") || env("PIXAZO_API_KEY")),
+    fish: Boolean(env("FISH_AUDIO_API_KEY")),
+    typecast: Boolean(env("TYPECAST_API_KEY")),
+    elevenlabs: Boolean(elevenKey()),
+  };
+  const asked = env("TTS_ORDER")
+    .split(",")
+    .map((x) => x.trim().toLowerCase())
+    .filter((x): x is TtsProvider => DEFAULT_ORDER.includes(x as TtsProvider));
+  const order = [...new Set([...asked, ...DEFAULT_ORDER])];
+  return order.filter((p) => configured[p]);
 }
 
 export const isTtsConfigured = (): boolean => ttsProviders().length > 0;
@@ -75,7 +94,7 @@ const BUILT_IN: Record<Exclude<TtsProvider, "voxcpm">, Record<Voice, string>> = 
     left: "3d31499f0e13438bbce8dcce7b7c4298",
     center: "7bae2c48d30048c3a27b946279ac05ef",
     right: "d7ec83d63be940f19abd933eb7b28816",
-    staff: "7bae2c48d30048c3a27b946279ac05ef",
+    staff: "9aae54921dd944948ee08d35f6b5f984", // a calm young female voice, so the staff call isn't the chair's voice
   },
 };
 
@@ -264,7 +283,7 @@ async function eleven(text: string, voice: Voice, speed?: number): Promise<Buffe
 
 function fish(text: string, voice: Voice, speed?: number): Promise<Buffer> {
   const headers: Record<string, string> = { Authorization: `Bearer ${env("FISH_AUDIO_API_KEY")}` };
-  if (env("FISH_AUDIO_MODEL")) headers.model = env("FISH_AUDIO_MODEL");
+  headers.model = env("FISH_AUDIO_MODEL") || "s2.1-pro-free";
   return post("Fish Audio", env("FISH_AUDIO_API_URL") || "https://api.fish.audio/v1/tts", headers, {
     text,
     reference_id: voiceId(voice, "fish"),

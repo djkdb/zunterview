@@ -23,16 +23,32 @@ describe("voiceId", () => {
 });
 
 describe("providers", () => {
-  it("prefers ElevenLabs and keeps Fish Audio as the fallback", () => {
+  it("tries the free Fish Audio model first, then the paid services, and TTS_ORDER can change that", () => {
+    vi.stubEnv("VOXCPM_URL", "");
+    vi.stubEnv("PIXAZO_API_KEY", "");
     vi.stubEnv("TYPECAST_API_KEY", "t");
     vi.stubEnv("ELEVEN_API_KEY", "x");
     vi.stubEnv("FISH_AUDIO_API_KEY", "y");
-    expect(ttsProviders()).toEqual(["typecast", "elevenlabs", "fish"]);
-    vi.stubEnv("TYPECAST_API_KEY", "");
-    expect(ttsProviders()).toEqual(["elevenlabs", "fish"]);
-    vi.stubEnv("ELEVEN_API_KEY", "");
-    vi.stubEnv("ELEVENLABS_API_KEY", "");
-    expect(ttsProviders()).toEqual(["fish"]);
+    expect(ttsProviders()).toEqual(["fish", "typecast", "elevenlabs"]);
+    vi.stubEnv("TTS_ORDER", "elevenlabs, typecast");
+    expect(ttsProviders()).toEqual(["elevenlabs", "typecast", "fish"]);
+    vi.stubEnv("TTS_ORDER", "");
+    vi.stubEnv("FISH_AUDIO_API_KEY", "");
+    expect(ttsProviders()).toEqual(["typecast", "elevenlabs"]);
+  });
+
+  it("asks Fish Audio for its free model unless told otherwise", async () => {
+    vi.stubEnv("FISH_AUDIO_API_KEY", "y");
+    vi.stubEnv("FISH_AUDIO_MODEL", "");
+    for (const k of ["VOXCPM_URL", "PIXAZO_API_KEY", "TYPECAST_API_KEY", "ELEVEN_API_KEY", "ELEVENLABS_API_KEY"]) vi.stubEnv(k, "");
+    let model = "";
+    vi.stubGlobal("fetch", async (_url: string, init: { headers: Record<string, string> }) => {
+      model = init.headers.model;
+      return new Response(new Uint8Array([255, 251, 0]), { status: 200 });
+    });
+    expect((await synthesize("네, 알겠습니다.", "staff")).provider).toBe("fish");
+    expect(model).toBe("s2.1-pro-free");
+    vi.unstubAllGlobals();
   });
 
   it("gives every seat its own ElevenLabs voice and lets the environment override one", () => {
@@ -121,7 +137,7 @@ describe("VoxCPM (self-hosted)", () => {
   it("goes first when VOXCPM_URL is set and sends each seat's reference clip", async () => {
     vi.stubEnv("VOXCPM_URL", "http://gpu-box:8000/");
     vi.stubEnv("TYPECAST_API_KEY", "t");
-    for (const k of ["ELEVEN_API_KEY", "ELEVENLABS_API_KEY", "FISH_AUDIO_API_KEY"]) vi.stubEnv(k, "");
+    for (const k of ["ELEVEN_API_KEY", "ELEVENLABS_API_KEY", "FISH_AUDIO_API_KEY", "TTS_ORDER"]) vi.stubEnv(k, "");
     expect(ttsProviders()).toEqual(["voxcpm", "typecast"]);
     let seen: { url: string; body: Record<string, string> } | null = null;
     vi.stubGlobal("fetch", async (url: string, init: { body: string }) => {

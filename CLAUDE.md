@@ -15,5 +15,5 @@ INTERVIEW//AI: 한국식 다대일 AI 모의면접 웹앱 (React + Vite, Node �
 - 화면을 바꾸면 모바일(390px)과 데스크톱(1440px, 1024px) 둘 다 확인한다.
 - API 키는 `.env`에만 둔다. 절대 커밋하지 않는다.
 - 유료 외부 API(TTS 등)는 요청을 몰아서 보내지 않는다(Typecast 계정 차단 사례, TROUBLESHOOTING 14번).
-- 서버를 끌 때는 `pkill -f` 대신 PID로 `kill`한다.
+- 서버를 끌 때는 `pkill -f` 대신 PID로 `kill`한다. `npx tsx`로 띄우면 npx만 죽고 node가 남으므로 `node --import tsx server/index.ts`로 띄워 그 PID를 쓴다(TROUBLESHOOTING 29).
 - UI는 `.claude/skills/frontend-design` 기준을 따른다.

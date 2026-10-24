@@ -72,6 +72,7 @@ URL로 강제 목업: `/?mode=mock`
 ```bash
 # 서버 환경변수 (배포 서비스의 Environment Variables 또는 로컬 .env, 브라우저로 전달되지 않음)
 VOXCPM_URL=http://gpu:8000    # VoxCPM2(직접 띄운 오픈소스 TTS). 있으면 가장 먼저 씁니다
+FISH_AUDIO_API_KEY=...        # Fish Audio. 무료 모델(s2.1-pro-free)로 VoxCPM 다음에 씁니다
 TYPECAST_API_KEY=...          # Typecast. 한국어 목소리
 ELEVEN_API_KEY=...            # ElevenLabs
 FISH_AUDIO_API_KEY=...        # Fish Audio. 하나만 있어도 되고, 여러 개면 위 순서대로 쓰다가 실패하면 다음으로 넘어갑니다
@@ -80,6 +81,7 @@ FISH_AUDIO_API_KEY=...        # Fish Audio. 하나만 있어도 되고, 여러 �
 - **VoxCPM2**([OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM), Apache-2.0)는 API 비용 없이 직접 띄우는 TTS입니다. GPU 서버에서 `vllm serve openbmb/VoxCPM2 --omni --port 8000`(vLLM-Omni) 또는 `python scripts/voxcpm_server.py --device cuda --port 8000`으로 띄우고 `VOXCPM_URL`을 넣습니다. 면접관마다 `server/voices/voxcpm/<자리>.wav`의 짧은 기준 음성을 복제해 같은 목소리를 유지합니다. 이 기준 음성은 VoxCPM2의 목소리 설계(문장으로 목소리를 묘사하는 기능)로 만든 것이라 실존 인물의 목소리가 아닙니다. 다른 목소리를 쓰려면 이 파일을 바꾸면 됩니다.
 - GPU가 없으면 `PIXAZO_API_KEY`를 넣어 Pixazo가 대신 돌리는 VoxCPM2를 쓸 수 있습니다(호출당 0.003달러, [pixazo.ai](https://www.pixazo.ai/models/voxcpm)). 기준 음성은 Pixazo가 공개 URL로 받아 가야 해서 기본값으로 이 저장소의 GitHub 주소를 씁니다(`VOXCPM_REF_BASE_URL`로 변경).
 - VoxCPM2를 GPU 없이(CPU 4코어) 돌려 보면 질문 하나에 16~25초가 걸렸습니다. 브라우저는 15초를 기다린 뒤 내장 음성으로 읽으므로 면접이 멈추지는 않지만, 실제 면접관 목소리로 들으려면 GPU가 필요합니다(TROUBLESHOOTING 26).
+- **무료로 쓰려면 Fish Audio 키 하나면 됩니다.** Fish Audio의 `s2.1-pro-free` 모델은 API 요금이 0원(공정 사용 조건, 상한은 공개되지 않음)이라 기본으로 이 모델을 쓰고, 유료 서비스보다 먼저 시도합니다. Typecast 무료 계정은 면접 도중 차단되어 목소리가 섞였습니다(TROUBLESHOOTING 28). 순서는 `TTS_ORDER=typecast,fish,elevenlabs`처럼 바꿀 수 있습니다.
 - 목소리는 코드에 기본 지정돼 있어(`server/tts.ts`의 `BUILT_IN`), 배포 환경에는 API 키만 넣으면 됩니다. Typecast는 면접위원장 Cheolhoon, 인사팀 Seohyeon, 실무 Wonwoo, 호명 직원 Gowoon을 씁니다(`TYPECAST_VOICE_*`로 변경). ElevenLabs는 계정에 추가해 둔 한국어 Voice Library 목소리를 씁니다: 면접위원장 Hyunbin, 인사팀 Juha, 실무 MJ, 호명 직원 Sola. 목소리 ID는 비밀이 아닙니다.
 - Voice Library 목소리를 API로 쓰려면 ElevenLabs 유료 플랜(Starter 이상)이 필요합니다. 무료 플랜이면 서버 로그에 `can't be used with this plan` 한 줄을 남기고, 자리마다 모든 계정에 있는 기본 목소리(Sarah, George, Chris, Jessica)로 자동으로 바꿔 읽습니다. 플랜을 올리면 코드 수정 없이 서버 재시작만으로 한국어 목소리가 나옵니다.
 - 다른 목소리를 쓰려면 자리별로 `ELEVEN_VOICE_LEFT`, `ELEVEN_VOICE_CENTER`, `ELEVEN_VOICE_RIGHT`, `ELEVEN_VOICE_STAFF`(또는 전체 `ELEVEN_VOICE_DEFAULT`)를 넣습니다. ElevenLabs Voice Library에서 한국어 목소리를 내 목소리에 추가한 뒤 그 voice ID를 쓰면 억양이 더 자연스럽습니다. Fish Audio는 `FISH_VOICE_*`에 fish.audio 목소리 URL의 `modelId`를 넣습니다.

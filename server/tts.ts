@@ -9,6 +9,8 @@
  *   VOXCPM_MODEL=openbmb/VoxCPM2        optional
  *   VOXCPM_API_KEY=...                  optional bearer token for that server
  *   VOXCPM_TIMEOUT_MS=60000             optional (a CPU server is slow)
+ *   PIXAZO_API_KEY=...                  or, without a GPU: VoxCPM2 hosted by Pixazo ($0.003 a call), which
+ *                                       fetches the reference clips by URL (VOXCPM_REF_BASE_URL, default GitHub)
  *   Each seat keeps one voice by cloning a short reference clip in server/voices/voxcpm/<seat>.wav,
  *   sent as `ref_audio`. Those clips were made with VoxCPM2's voice design (no real person's voice).
  *
@@ -43,7 +45,7 @@ const elevenKey = () => env("ELEVEN_API_KEY") || env("ELEVENLABS_API_KEY");
 
 /** Configured providers, in the order they are tried. */
 export function ttsProviders(): TtsProvider[] {
-  return [env("VOXCPM_URL") ? "voxcpm" : null, env("TYPECAST_API_KEY") ? "typecast" : null, elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
+  return [env("VOXCPM_URL") || env("PIXAZO_API_KEY") ? "voxcpm" : null, env("TYPECAST_API_KEY") ? "typecast" : null, elevenKey() ? "elevenlabs" : null, env("FISH_AUDIO_API_KEY") ? "fish" : null].filter((p): p is TtsProvider => p !== null);
 }
 
 export const isTtsConfigured = (): boolean => ttsProviders().length > 0;
@@ -175,7 +177,39 @@ function refAudio(voice: Voice): string | null {
   return refClips.get(voice) ?? null;
 }
 
+/** The line every reference clip says, so a cloning service can line the audio up with its words. */
+const REF_TEXT = "안녕하세요. 오늘 면접을 함께 진행하게 되었습니다. 편하게 답변해 주시면 됩니다.";
+const REF_BASE_DEFAULT = "https://raw.githubusercontent.com/djkdb/zunterview/claude/ai-interview-webapp-setup-a4hgp6/server/voices/voxcpm";
+
+/**
+ * VoxCPM2 hosted by Pixazo (https://www.pixazo.ai/models/voxcpm), for when there is no GPU:
+ * voice cloning from the seat's reference clip, which it fetches by public URL.
+ */
+async function pixazo(text: string, voice: Voice): Promise<Buffer> {
+  const base = (env("VOXCPM_REF_BASE_URL") || REF_BASE_DEFAULT).replace(/\/+$/, "");
+  const res = await post(
+    "Pixazo VoxCPM",
+    env("PIXAZO_VOXCPM_URL") || "https://gateway.pixazo.ai/voxcpm/v1/voice-cloning",
+    { "Ocp-Apim-Subscription-Key": env("PIXAZO_API_KEY"), "Cache-Control": "no-cache" },
+    { text, reference_audio_url: `${base}/${voice}.wav`, prompt_text: REF_TEXT },
+    Number(env("VOXCPM_TIMEOUT_MS")) || 60_000,
+  );
+  let link: string | undefined;
+  try {
+    const body = JSON.parse(res.toString("utf8")) as { url?: string; audio_url?: string; output?: string; status?: string };
+    link = body.url || body.audio_url || body.output;
+  } catch {
+    /* not JSON: handled below */
+  }
+  if (!link) throw new TtsError(502, `Pixazo VoxCPM returned no audio link: ${res.toString("utf8").slice(0, 160)}`);
+  const audio = await fetch(link).then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(`audio ${r.status}`)))).catch((e: Error) => {
+    throw new TtsError(502, `Pixazo VoxCPM audio download failed: ${e.message}`);
+  });
+  return Buffer.from(audio);
+}
+
 function voxcpm(text: string, voice: Voice): Promise<Buffer> {
+  if (!env("VOXCPM_URL")) return pixazo(text, voice);
   const ref = refAudio(voice);
   const headers: Record<string, string> = env("VOXCPM_API_KEY") ? { Authorization: `Bearer ${env("VOXCPM_API_KEY")}` } : {};
   return post(
@@ -187,8 +221,8 @@ function voxcpm(text: string, voice: Voice): Promise<Buffer> {
   );
 }
 
-/** What each provider returns. */
-export const audioType = (p: TtsProvider) => (p === "voxcpm" ? "audio/wav" : "audio/mpeg");
+/** The audio's format, read from its first bytes (VoxCPM servers send WAV, the others MP3). */
+export const audioType = (audio: Buffer) => (audio.subarray(0, 4).toString("latin1") === "RIFF" ? "audio/wav" : "audio/mpeg");
 
 function typecast(text: string, voice: Voice, speed?: number): Promise<Buffer> {
   return post("Typecast", env("TYPECAST_API_URL") || "https://api.typecast.ai/v1/text-to-speech", { "X-API-KEY": env("TYPECAST_API_KEY") }, {

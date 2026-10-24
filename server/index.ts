@@ -269,7 +269,7 @@ const server = createServer(async (req, res) => {
       const { audio, cached, provider } = await synthesize(parsed.data.text, parsed.data.voice, parsed.data.speed);
       usage.recordTts(ip, parsed.data.text.length, cached);
       console.log(`[tts] ${provider} ${parsed.data.voice} ${audio.length}B ${cached ? "cache" : `${Date.now() - started}ms`}`);
-      res.writeHead(200, { "Content-Type": audioType(provider), "Content-Length": audio.length, "Cache-Control": "no-store" });
+      res.writeHead(200, { "Content-Type": audioType(audio), "Content-Length": audio.length, "Cache-Control": "no-store" });
       return res.end(audio);
     } catch (err) {
       const status = err instanceof TtsError ? err.status : 502;

@@ -130,7 +130,7 @@ describe("VoxCPM (self-hosted)", () => {
     });
     const out = await synthesize("그 결과 어떤 변화가 있었나요?", "center");
     expect(out.provider).toBe("voxcpm");
-    expect(audioType(out.provider)).toBe("audio/wav");
+    expect(audioType(out.audio)).toBe("audio/wav");
     expect(seen!.url).toBe("http://gpu-box:8000/v1/audio/speech");
     expect(seen!.body).toMatchObject({ model: "openbmb/VoxCPM2", input: "그 결과 어떤 변화가 있었나요?", response_format: "wav" });
     expect(seen!.body.ref_audio).toMatch(/^data:audio\/wav;base64,UklGR/);
@@ -144,5 +144,25 @@ describe("VoxCPM (self-hosted)", () => {
       return new Response(new Uint8Array([1, 2, 3]), { status: 200 });
     });
     expect((await synthesize("네, 알겠습니다.", "left")).provider).toBe("typecast");
+  });
+
+  it("uses Pixazo's hosted VoxCPM2 without a GPU server, cloning the seat's clip from a public URL", async () => {
+    vi.stubEnv("VOXCPM_URL", "");
+    vi.stubEnv("PIXAZO_API_KEY", "pk");
+    for (const k of ["TYPECAST_API_KEY", "ELEVEN_API_KEY", "ELEVENLABS_API_KEY", "FISH_AUDIO_API_KEY"]) vi.stubEnv(k, "");
+    expect(ttsProviders()).toEqual(["voxcpm"]);
+    const calls: { url: string; headers?: Record<string, string>; body?: Record<string, string> }[] = [];
+    vi.stubGlobal("fetch", async (url: string, init?: { headers: Record<string, string>; body: string }) => {
+      calls.push({ url, headers: init?.headers, body: init?.body ? JSON.parse(init.body) : undefined });
+      if (url.includes("gateway.pixazo.ai")) return new Response(JSON.stringify({ status: "done", url: "https://cdn.example/out.wav" }), { status: 200 });
+      return new Response(new Uint8Array([82, 73, 70, 70, 0]), { status: 200 });
+    });
+    const out = await synthesize("지원 동기를 말씀해 주세요.", "left");
+    expect(audioType(out.audio)).toBe("audio/wav");
+    expect(calls[0].url).toBe("https://gateway.pixazo.ai/voxcpm/v1/voice-cloning");
+    expect(calls[0].headers?.["Ocp-Apim-Subscription-Key"]).toBe("pk");
+    expect(calls[0].body).toMatchObject({ text: "지원 동기를 말씀해 주세요.", prompt_text: expect.stringContaining("편하게 답변해") });
+    expect(calls[0].body?.reference_audio_url).toMatch(/\/server\/voices\/voxcpm\/left\.wav$/);
+    expect(calls[1].url).toBe("https://cdn.example/out.wav");
   });
 });
